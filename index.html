@@ -5,470 +5,596 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUTIcore | Semantic Engineering Ecosystem</title>
     
+    <!-- SEO & Meta -->
     <meta name="title" content="SUTIcore | Semantic Engineering Ecosystem">
-    <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. Метаязык SlovoYaz, онтология Verenitya, протокол Syntaxium. Навигация смыслов в эпоху AI.">
+    <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. Метаязык SlovoYaz, онтология Verenitya, протокол Syntaxium.">
     <meta name="author" content="Igor Galkin (Ezar Garuna)">
+    <link rel="canonical" href="https://ezargaruna.github.io/suticore/">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ezargaruna.github.io/suticore/">
     <meta property="og:title" content="SUTIcore | Semantic Root">
-    <meta property="og:description" content="Syntax is noise. Silence is structure. Протоколы высокоплотной передачи смыслов.">
-    <meta property="og:image" content="https://opengraph.githubassets.com/1/ezargaruna/suticore">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="SUTIcore | Semantic Engineering">
-    <meta property="twitter:description" content="Framework for semantic navigation in the Post-AI era.">
+    <meta property="og:description" content="Syntax is noise. Silence is structure.">
 
     <style>
+        /* ========================================
+           COLOR TOKENS CONTRACT (Nord Dark)
+           Based on: LinguaFUSION Design Spec v1.1
+           ======================================== */
         :root {
-            --bg-deep: #030303;
-            --bg-mid: #0a0a0a;
-            --text: #f0f0f0;
-            --accent: #8e24aa;
-            --accent-glow: #b24fd6;
-            --dim: #555;
-            --link: #9c27b0;
-            --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            /* UI Tokens */
+            --ui-background: #2E3440;     /* Nord: Polar Night 0 */
+            --ui-surface: #3B4252;        /* Nord: Polar Night 1 */
+            --ui-elevated: #434C5E;       /* Nord: Polar Night 2 */
+            
+            /* Text Tokens */
+            --text-primary: #D8DEE9;      /* Nord: Snow Storm 2 */
+            --text-muted: #4C566A;        /* Nord: Polar Night 3 */
+            --text-inverse: #2E3440;      /* For light-on-dark */
+            
+            /* Accent Tokens (Semantic Only) */
+            --accent-link: #88C0D0;       /* Nord: Frost 1 - Navigation */
+            --accent-result: #A3BE8C;     /* Nord: Aurora Green - Success */
+            --accent-warn: #D08770;       /* Nord: Aurora Orange - Alert */
+            --status-wait: #EBCB8B;       /* Nord: Aurora Yellow - Pending */
+            
+            /* Typography Stack */
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            
+            /* Metrics */
+            --max-line-length: 72ch;
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Light Mode Variant (A/B Testing) */
+        [data-variant="light"] {
+            --ui-background: #FBF1C7;     /* Gruvbox: Paper */
+            --ui-surface: #EBDBB2;
+            --ui-elevated: #D5C4A1;
+            --text-primary: #3C3836;
+            --text-muted: #7C6F64;
+            --text-inverse: #FBF1C7;
+        }
+
+        /* Control Variant (Neutral Gray) */
+        [data-variant="control"] {
+            --ui-background: #1A1A1A;
+            --ui-surface: #2A2A2A;
+            --ui-elevated: #3A3A3A;
+            --text-primary: #E0E0E0;
+            --text-muted: #707070;
+        }
+
+        /* ========================================
+           RESET & BASE
+           ======================================== */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box;
+        }
 
         body {
-            background: radial-gradient(circle at 50% 20%, #1a0a2e 0%, var(--bg-deep) 60%);
-            color: var(--text);
-            font-family: var(--mono);
+            background-color: var(--ui-background);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.55;
+            
+            /* Calm Tech: No animations until needed */
+            animation: none;
+            
+            /* Plain Text Native: High contrast, readable */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Accessibility: Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ========================================
+           TYPOGRAPHY (Spec Section 5)
+           ======================================== */
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.5em;
+            
+            /* Hierarchy Limit: One H1 per page */
+            max-width: var(--max-line-length);
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 1.3;
+            letter-spacing: 0;
+            margin: 1.5em 0 0.5em;
+        }
+
+        p, .body {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.55;
+            letter-spacing: 0;
+            max-width: var(--max-line-length);
+        }
+
+        .mono, code {
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: 0;
+        }
+
+        .meta {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+            color: var(--text-muted);
+        }
+
+        /* CONSTRAINT: No italic in body text (Spec 5.2) */
+        em { font-style: normal; font-weight: 500; }
+
+        /* ========================================
+           GLYPH SYSTEM (Spec Section 6)
+           Max 5+1 operators, semantic only
+           ======================================== */
+        .glyph {
+            font-family: var(--font-mono);
+            font-size: 1.2em;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 0.5ch;
+            user-select: none;
+        }
+
+        /* Operator Colors (Semantic Token Binding) */
+        .glyph-result { color: var(--accent-result); }   /* ∴ Success/Action */
+        .glyph-wait { color: var(--status-wait); }       /* ⧖ Pending/Process */
+        .glyph-warn { color: var(--accent-warn); }       /* ⟁ Alert/Context */
+        .glyph-nav { color: var(--accent-link); }        /* ➤ Navigation/Link */
+
+        /* CONSTRAINT: One Operator per Line (Spec 6.2) */
+        .glyph-line {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            overflow-x: hidden;
-            position: relative;
+            gap: 0.5em;
         }
 
-        .noise {
-            position: fixed;
-            top: 0; left: 0; 
-            width: 100%; height: 100%;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=');
-            opacity: 0.08;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        canvas {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            z-index: 0;
-            opacity: 0.4;
-        }
-
+        /* ========================================
+           LAYOUT (Calm Tech Principles)
+           ======================================== */
         .container {
             max-width: 960px;
             width: 90%;
+            margin: 0 auto;
             padding: 60px 20px;
-            z-index: 2;
+        }
+
+        /* Header: Minimal, One Element Focus */
+        header {
             text-align: center;
-            position: relative;
+            margin-bottom: 60px;
         }
 
-        .glyph-container {
-            position: relative;
-            height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .main-glyph {
-            font-size: 7rem;
-            cursor: default;
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: inline-block;
-            position: relative;
-            z-index: 3;
-            animation: breathe 8s ease-in-out infinite;
-            text-shadow: 0 0 30px rgba(142, 36, 170, 0.3);
-        }
-
-        @keyframes breathe {
-            0%, 100% { opacity: 0.85; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .main-glyph:hover {
-            color: var(--accent-glow);
-            transform: scale(1.15) rotate(180deg);
-            text-shadow: 0 0 40px var(--accent), 0 0 80px var(--accent);
-            animation: none;
-        }
-
-        .glyph-orbit {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border: 1px solid rgba(142, 36, 170, 0.1);
-            border-radius: 50%;
-            animation: rotate 30s linear infinite;
-        }
-
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            letter-spacing: 1rem;
-            text-transform: uppercase;
-            font-weight: 100;
-            animation: weightPulse 12s ease-in-out infinite;
-            margin-bottom: 15px;
-        }
-
-        @keyframes weightPulse {
-            0%, 100% { font-weight: 100; }
-            50% { font-weight: 300; }
+        .logo {
+            font-size: 4rem;
+            font-family: var(--font-mono);
+            color: var(--text-primary);
+            margin-bottom: 0.25em;
+            user-select: none;
+            
+            /* Anti-Pattern: No drop shadows (Spec 9) */
+            text-shadow: none;
         }
 
         .motto {
-            color: var(--dim);
+            font-size: 16px;
+            color: var(--text-muted);
             font-style: italic;
-            margin: 0 0 60px 0;
-            letter-spacing: 0.15rem;
-            font-size: 0.95rem;
-            position: relative;
+            letter-spacing: 0.05em;
         }
 
-        .motto::before,
-        .motto::after {
-            content: '—';
-            margin: 0 15px;
-            opacity: 0.5;
+        /* ========================================
+           NAVIGATION (Surface Pattern)
+           ======================================== */
+        nav {
+            margin: 40px 0;
         }
 
         .nav-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 2px;
-            background: linear-gradient(135deg, rgba(142, 36, 170, 0.1), transparent);
-            border: 1px solid rgba(142, 36, 170, 0.2);
-            position: relative;
-            padding: 2px;
-        }
-
-        .connection-svg {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            pointer-events: none;
-            z-index: 10;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .nav-grid:hover .connection-svg {
-            opacity: 1;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1px;
+            background-color: var(--text-muted);
         }
 
         .nav-item {
-            background: linear-gradient(135deg, var(--bg-mid) 0%, var(--bg-deep) 100%);
-            padding: 35px 25px;
+            background-color: var(--ui-surface);
+            padding: 24px 20px;
             text-decoration: none;
-            color: var(--text);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            text-align: left;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid transparent;
+            color: var(--text-primary);
+            display: block;
+            transition: background-color var(--transition-fast);
+            
+            /* CONSTRAINT: No decorative shadows (Anti-Pattern) */
+            box-shadow: none;
+            border: none;
         }
 
-        .nav-item::before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(142, 36, 170, 0.1), transparent);
-            transition: left 0.6s ease;
+        .nav-item:hover,
+        .nav-item:focus {
+            background-color: var(--ui-elevated);
+            outline: 2px solid var(--accent-link);
+            outline-offset: -2px;
         }
 
-        .nav-item:hover::before {
-            left: 100%;
+        .nav-item:focus-visible {
+            outline: 2px solid var(--accent-link);
+            outline-offset: 2px;
         }
 
-        .nav-item:hover {
-            background: linear-gradient(135deg, #0f0515 0%, var(--bg-deep) 100%);
-            border-color: var(--accent);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(142, 36, 170, 0.25);
-        }
-
-        .nav-item .label {
-            font-size: 0.65rem;
-            color: var(--dim);
+        /* Nav Structure: Glyph + Label + Description */
+        .nav-label {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 0.15rem;
-            opacity: 0.7;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5em;
         }
 
-        .nav-item .title {
-            font-size: 1.25rem;
+        .nav-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            font-size: 18px;
             font-weight: 600;
-            letter-spacing: 0.3rem;
-            color: var(--text);
-            transition: color 0.3s ease;
+            font-family: var(--font-mono);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5em;
         }
 
-        .nav-item:hover .title {
-            color: var(--accent-glow);
+        .nav-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.4;
         }
 
-        .nav-item .essence {
-            font-size: 0.75rem;
-            color: var(--dim);
-            font-style: italic;
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.4s ease;
-            line-height: 1.5;
-        }
-
-        .nav-item:hover .essence {
-            opacity: 1;
-            max-height: 50px;
-            margin-top: 8px;
-        }
-
+        /* ========================================
+           FOOTER (Metadata)
+           ======================================== */
         footer {
             margin-top: 80px;
-            font-size: 0.7rem;
-            color: var(--dim);
-            line-height: 1.8;
-            text-transform: uppercase;
-            letter-spacing: 0.12rem;
-            border-top: 1px solid rgba(142, 36, 170, 0.15);
-            padding-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--text-muted);
+            text-align: center;
         }
 
-        .author-link { 
-            color: var(--link); 
+        footer .meta {
+            display: block;
+            margin: 0.5em 0;
+        }
+
+        .author-link {
+            color: var(--accent-link);
             text-decoration: none;
-            transition: all 0.3s ease;
-            position: relative;
+            border-bottom: 1px solid transparent;
+            transition: border-color var(--transition-fast);
         }
 
-        .author-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px; left: 0;
-            width: 0; height: 1px;
-            background: var(--accent);
-            transition: width 0.3s ease;
+        .author-link:hover,
+        .author-link:focus {
+            border-bottom-color: var(--accent-link);
         }
 
-        .author-link:hover::after {
-            width: 100%;
+        /* ========================================
+           METRICS LAYER (UX Research)
+           Hidden, logs to console + optional backend
+           ======================================== */
+        .metrics-badge {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: var(--ui-surface);
+            color: var(--text-muted);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            opacity: 0.7;
+            pointer-events: none;
+            z-index: 9999;
         }
 
+        /* ========================================
+           VARIANT SWITCHER (A/B Testing UI)
+           ======================================== */
+        .variant-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 1000;
+        }
+
+        .variant-btn {
+            background: var(--ui-surface);
+            color: var(--text-primary);
+            border: 1px solid var(--text-muted);
+            padding: 6px 12px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .variant-btn:hover {
+            background: var(--ui-elevated);
+            border-color: var(--accent-link);
+        }
+
+        .variant-btn.active {
+            background: var(--accent-link);
+            color: var(--text-inverse);
+            border-color: var(--accent-link);
+        }
+
+        /* ========================================
+           RESPONSIVE (Mobile First)
+           ======================================== */
         @media (max-width: 768px) {
-            h1 { font-size: 2rem; letter-spacing: 0.5rem; }
-            .main-glyph { font-size: 5rem; }
+            h1 { font-size: 24px; }
+            .logo { font-size: 3rem; }
             .nav-grid { grid-template-columns: 1fr; }
-            .glyph-container { height: 140px; }
+            .variant-switch { top: 10px; right: 10px; }
         }
     </style>
 
+    <!-- JSON-LD Schema (Enhanced with Ontology) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareSourceCode",
       "name": "SUTIcore Ecosystem",
-      "description": "Semantic engineering framework for high-density meaning transmission in the post-AI era. Integrates SlovoYaz meta-language, Verenitya ontology of silence, and Syntaxium protocol.",
+      "description": "Semantic engineering framework for high-density meaning transmission. Integrates SlovoYaz meta-language, Verenitya ontology, and Syntaxium protocol.",
       "author": {
         "@type": "Person",
         "name": "Igor V. Galkin",
         "alternateName": "Ezar Garuna Saritama",
         "url": "https://github.com/ezargaruna",
-        "knowsAbout": [
-          "Semantic Engineering",
-          "Constructed Languages",
-          "Ontological Design",
-          "AI Optimization"
-        ]
+        "knowsAbout": ["Semantic Engineering", "Constructed Languages", "Ontological Design"]
       },
       "url": "https://ezargaruna.github.io/suticore/",
       "codeRepository": "https://github.com/ezargaruna/suticore",
-      "programmingLanguage": "Multiple",
-      "keywords": "semantic engineering, meta-language, ontology, GEO, llms.txt, knowledge graph",
+      "keywords": "semantic engineering, meta-language, ontology, GEO, knowledge graph",
       "datePublished": "2026-02",
-      "inLanguage": ["ru", "en"],
-      "about": {
-        "@type": "DefinedTermSet",
-        "@id": "https://ezargaruna.github.io/suticore/#ontology",
-        "name": "SUTIcore Semantic Ontology",
-        "hasDefinedTerm": [
-          {
-            "@type": "DefinedTerm",
-            "name": "SlovoYaz",
-            "description": "Meta-language protocol for semantic compression and high-density meaning transmission",
-            "inDefinedTermSet": "https://ezargaruna.github.io/suticore/#ontology"
-          },
-          {
-            "@type": "DefinedTerm",
-            "name": "Verenitya",
-            "description": "Ontology of silence and non-verbal semantic structures",
-            "inDefinedTermSet": "https://ezargaruna.github.io/suticore/#ontology"
-          },
-          {
-            "@type": "DefinedTerm",
-            "name": "Syntaxium",
-            "description": "Framework for syntax-agnostic semantic operations",
-            "inDefinedTermSet": "https://ezargaruna.github.io/suticore/#ontology"
-          }
-        ]
-      }
+      "inLanguage": ["ru", "en"]
     }
     </script>
 </head>
-<body>
-    <canvas id="particles"></canvas>
-    <div class="noise"></div>
+<body data-variant="dark">
     
+    <!-- A/B Testing Variant Switcher -->
+    <div class="variant-switch" role="toolbar" aria-label="Visual variant selector">
+        <button class="variant-btn active" data-variant="dark">Nord Dark</button>
+        <button class="variant-btn" data-variant="light">Gruvbox Light</button>
+        <button class="variant-btn" data-variant="control">Control Gray</button>
+    </div>
+
+    <!-- Metrics Badge (Research Layer) -->
+    <div class="metrics-badge" aria-live="polite">
+        <span id="tfa-display">TFA: --</span> | 
+        <span id="clicks-display">Clicks: 0</span>
+    </div>
+
     <div class="container">
-        <div class="glyph-container">
-            <div class="glyph-orbit"></div>
-            <div class="main-glyph">∴</div>
-        </div>
-        
-        <h1>SUTIcore</h1>
-        <p class="motto">Syntax is noise. Silence is structure.</p>
+        <!-- Header: Minimal Identity -->
+        <header>
+            <div class="logo">∴</div>
+            <h1>SUTIcore</h1>
+            <p class="motto">Syntax is noise. Silence is structure.</p>
+        </header>
 
-        <div class="nav-grid">
-            <svg class="connection-svg" xmlns="http://www.w3.org/2000/svg">
-                <line x1="50%" y1="25%" x2="50%" y2="75%" stroke="rgba(142, 36, 170, 0.3)" stroke-width="1" stroke-dasharray="5,5"/>
-                <line x1="25%" y1="50%" x2="75%" y2="50%" stroke="rgba(142, 36, 170, 0.3)" stroke-width="1" stroke-dasharray="5,5"/>
-            </svg>
+        <!-- Navigation: Glyph-First Design -->
+        <nav aria-label="Main navigation">
+            <div class="nav-grid">
+                
+                <a href="docs/slovoyaz.html" class="nav-item" data-action="navigate-slovoyaz">
+                    <span class="nav-label">Protocol // 01</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-nav">➤</span>
+                        <span>SLOVOYAZ</span>
+                    </div>
+                    <p class="nav-desc">Meta-language protocol for semantic compression</p>
+                </a>
 
-            <a href="docs/slovoyaz/" class="nav-item">
-                <span class="label">Protocol // 01</span>
-                <span class="title">SLOVOYAZ</span>
-                <span class="essence">слово - не форма. кристалл смысла.</span>
-            </a>
-            
-            <a href="docs/syntaxium/" class="nav-item">
-                <span class="label">Framework // 02</span>
-                <span class="title">SYNTAXIUM</span>
-                <span class="essence">синтаксис - шум между мыслями.</span>
-            </a>
-            
-            <a href="docs/verenitya/" class="nav-item">
-                <span class="label">Ontology // 03</span>
-                <span class="title">VERENITYA</span>
-                <span class="essence">тишина - структура, не отсутствие.</span>
-            </a>
-            
-            <a href="docs/linguafusion/" class="nav-item">
-                <span class="label">Methodology // 04</span>
-                <span class="title">FUSION</span>
-                <span class="essence">слияние языков за пределом грамматик.</span>
-            </a>
-            
-            <a href="docs/glossary/" class="nav-item">
-                <span class="label">Reference // 05</span>
-                <span class="title">GLOSSARY</span>
-                <span class="essence">карта терминов. навигация онтологии.</span>
-            </a>
-            
-            <a href="llms.txt" class="nav-item">
-                <span class="label">Machine // 06</span>
-                <span class="title">LLMS.TXT</span>
-                <span class="essence">API для нейросетей. граунд-труф.</span>
-            </a>
-        </div>
+                <a href="docs/syntaxium.html" class="nav-item" data-action="navigate-syntaxium">
+                    <span class="nav-label">Framework // 02</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-nav">➤</span>
+                        <span>SYNTAXIUM</span>
+                    </div>
+                    <p class="nav-desc">Syntax-agnostic semantic operations framework</p>
+                </a>
 
+                <a href="docs/verenitya.html" class="nav-item" data-action="navigate-verenitya">
+                    <span class="nav-label">Ontology // 03</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-nav">➤</span>
+                        <span>VERENITYA</span>
+                    </div>
+                    <p class="nav-desc">Ontology of silence and non-verbal structures</p>
+                </a>
+
+                <a href="docs/linguafusion.html" class="nav-item" data-action="navigate-fusion">
+                    <span class="nav-label">Methodology // 04</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-nav">➤</span>
+                        <span>FUSION</span>
+                    </div>
+                    <p class="nav-desc">Language fusion beyond grammar boundaries</p>
+                </a>
+
+                <a href="docs/glossary.html" class="nav-item" data-action="navigate-glossary">
+                    <span class="nav-label">Reference // 05</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-nav">➤</span>
+                        <span>GLOSSARY</span>
+                    </div>
+                    <p class="nav-desc">Complete terminology and ontology map</p>
+                </a>
+
+                <a href="llms.txt" class="nav-item" data-action="navigate-llms">
+                    <span class="nav-label">Machine // 06</span>
+                    <div class="nav-title">
+                        <span class="glyph glyph-result">∴</span>
+                        <span>LLMS.TXT</span>
+                    </div>
+                    <p class="nav-desc">AI agent protocol and canonical definitions</p>
+                </a>
+
+            </div>
+        </nav>
+
+        <!-- Footer: Metadata & Attribution -->
         <footer>
-            Architect: <a href="https://github.com/ezargaruna" class="author-link">Ezar Garuna</a> // Igor Galkin<br>
-            2026.2 // Canonical Ground Truth // Colombia<br>
-            <span style="opacity: 0.5; font-size: 0.65rem; margin-top: 10px; display: inline-block;">
-                ∴ where syntax ends, meaning begins ∴
-            </span>
+            <p class="meta">
+                Architect: <a href="https://github.com/ezargaruna" class="author-link" rel="author">Ezar Garuna</a> (Igor Galkin)
+            </p>
+            <p class="meta">
+                <time datetime="2026-02">2026.2</time> · Canonical Ground Truth · Colombia
+            </p>
+            <p class="meta" style="margin-top: 1em; opacity: 0.5;">
+                Design: LinguaFUSION Spec v1.1 · Compliance: EU AI Act Article 5
+            </p>
         </footer>
     </div>
 
+    <!-- Research Layer: Metrics & A/B Testing -->
     <script>
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        // ========================================
+        // METRICS COLLECTION (Privacy-First)
+        // No PII, pseudonymized session ID
+        // ========================================
+        const session = {
+            id: 'sess_' + Math.random().toString(36).substr(2, 9),
+            variant: 'dark',
+            startTime: Date.now(),
+            tfa: null, // Time to First Action
+            clicks: 0,
+            actions: []
+        };
 
-        const particles = [];
-        const particleCount = 80;
-        const centerX = canvas.width / 2;
-        const centerY = canvas.height / 5;
-
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-
-            reset() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.targetX = centerX + (Math.random() - 0.5) * 100;
-                this.targetY = centerY + (Math.random() - 0.5) * 100;
-                this.size = Math.random() * 1.5 + 0.5;
-                this.opacity = Math.random() * 0.5;
-                this.speed = 0.002;
-            }
-
-            update() {
-                const dx = this.targetX - this.x;
-                const dy = this.targetY - this.y;
-                this.x += dx * this.speed;
-                this.y += dy * this.speed;
-
-                if (Math.abs(dx) < 1 && Math.abs(dy) < 1) {
-                    this.reset();
-                }
-            }
-
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(142, 36, 170, ${this.opacity})`;
-                ctx.fill();
+        // Time to First Action (TFA) - Spec Metric
+        let tfaMeasured = false;
+        function measureTFA(action) {
+            if (!tfaMeasured) {
+                session.tfa = Date.now() - session.startTime;
+                tfaMeasured = true;
+                document.getElementById('tfa-display').textContent = `TFA: ${(session.tfa / 1000).toFixed(2)}s`;
+                console.log(`[METRIC] TFA: ${session.tfa}ms | Action: ${action}`);
             }
         }
 
-        for (let i = 0; i < particleCount; i++) {
-            particles.push(new Particle());
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
+        // Click Tracking (Interaction Count)
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const action = e.currentTarget.dataset.action;
+                session.clicks++;
+                session.actions.push({ action, timestamp: Date.now() });
+                
+                measureTFA(action);
+                document.getElementById('clicks-display').textContent = `Clicks: ${session.clicks}`;
+                
+                console.log(`[METRIC] Click: ${action} | Total: ${session.clicks}`);
             });
-
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            particles.forEach(p => p.reset());
         });
+
+        // ========================================
+        // A/B VARIANT SWITCHER
+        // ========================================
+        const body = document.body;
+        const variantButtons = document.querySelectorAll('.variant-btn');
+
+        variantButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const variant = btn.dataset.variant;
+                
+                // Update DOM
+                body.setAttribute('data-variant', variant);
+                session.variant = variant;
+                
+                // Update button states
+                variantButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                console.log(`[VARIANT] Switched to: ${variant}`);
+            });
+        });
+
+        // ========================================
+        // COMPLIANCE: Privacy by Design
+        // Logs stay local, no external tracking
+        // ========================================
+        window.addEventListener('beforeunload', () => {
+            console.log('[SESSION END]', {
+                duration: (Date.now() - session.startTime) / 1000,
+                variant: session.variant,
+                tfa: session.tfa,
+                clicks: session.clicks,
+                actions: session.actions.length
+            });
+            
+            // Optional: Send to privacy-compliant analytics endpoint
+            // Only if user explicitly opted-in (not implemented here)
+        });
+
+        // ========================================
+        // ANTI-PATTERN AUDIT (Dev Mode Only)
+        // Checks for violations of Spec Section 9
+        // ========================================
+        if (window.location.search.includes('debug=true')) {
+            console.group('[AUDIT] Anti-Pattern Check');
+            
+            // Check for gradient buttons
+            const gradients = Array.from(document.querySelectorAll('*')).filter(el => {
+                const bg = getComputedStyle(el).background;
+                return bg.includes('gradient');
+            });
+            if (gradients.length) console.warn('⚠️ Gradient detected:', gradients);
+            
+            // Check for drop shadows
+            const shadows = Array.from(document.querySelectorAll('*')).filter(el => {
+                const shadow = getComputedStyle(el).boxShadow;
+                return shadow !== 'none';
+            });
+            if (shadows.length) console.warn('⚠️ Drop shadow detected:', shadows);
+            
+            // Check for >3 font sizes in viewport
+            const sizes = new Set();
+            document.querySelectorAll('*').forEach(el => {
+                sizes.add(getComputedStyle(el).fontSize);
+            });
+            if (sizes.size > 5) console.warn(`⚠️ Too many font sizes: ${sizes.size}`);
+            
+            console.groupEnd();
+        }
     </script>
+
 </body>
 </html>
