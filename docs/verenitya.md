@@ -37,5 +37,5 @@ Verenitya использует психонетические техники у�
 
 ## 4. Семантическая Связность
 * **Корень:** [SUTIcore](../README.md)
-* **Инструмент:** [SlovoYaz](docs/slovoyaz.md)
-* **Метод:** [LinguaFUSION](docs/linguafusion.md)
+* **Инструмент:** [SlovoYaz](/docs/slovoyaz.md)
+* **Метод:** [LinguaFUSION](/docs/linguafusion.md)
