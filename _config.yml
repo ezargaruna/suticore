@@ -12,4 +12,5 @@
   "url": "https://ezargaruna.github.io/suticore/",
   "codeRepository": "https://github.com/ezargaruna/suticore",
   "keywords": "SlovoYaz, Verenitya, Syntaxium, Semantic Architecture, Conlang"
+  include: [docs]
 }
