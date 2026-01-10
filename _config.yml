@@ -1,16 +1,46 @@
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareSourceCode",
-  "name": "SUTIcore Ecosystem",
-  "abstract": "Semantic engineering ecosystem for AI-era navigation.",
-  "author": {
-    "@type": "Person",
-    "name": "Igor V. Galkin",
-    "alternateName": "Ezar Garuna Saritama",
-    "url": "https://github.com/ezargaruna"
-  },
-  "url": "https://ezargaruna.github.io/suticore/",
-  "codeRepository": "https://github.com/ezargaruna/suticore",
-  "keywords": "SlovoYaz, Verenitya, Syntaxium, Semantic Architecture, Conlang"
-  include: [docs]
-}
+# SUTIcore Jekyll Configuration for GitHub Pages
+
+# Markdown processor (use kramdown or GFM)
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# Plugins for relative links conversion
+plugins:
+  - jekyll-relative-links
+
+# Enable relative links conversion
+relative_links:
+  enabled: true
+  collections: true
+
+# Include these files in processing
+include:
+  - README.md
+  - LICENSE.md
+  - docs/glossary.md
+  - docs/linguafusion.md
+  - docs/slovoyaz.md
+  - docs/syntaxium.md
+  - docs/verenitya.md
+  - llms.txt
+
+# Exclude from processing
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+# Site metadata (for SEO)
+title: SUTIcore Ecosystem
+description: Semantic engineering framework for high-density meaning transmission
+author: Igor Galkin (Ezar Garuna)
+url: https://ezargaruna.github.io
+baseurl: /suticore
+
+# Theme (optional - minimal by default)
+# theme: minima
