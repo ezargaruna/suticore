@@ -8,7 +8,6 @@
     <meta name="title" content="SUTIcore | Semantic Engineering Ecosystem">
     <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. Метаязык SlovoYaz, онтология Verenitya, протокол Syntaxium. Навигация смыслов в эпоху AI.">
     <meta name="author" content="Igor Galkin (Ezar Garuna)">
-    <meta name="keywords" content="SUTIcore, SlovoYaz, Verenitya, Syntaxium, LinguaFUSION, Semantic Architecture, Conlang, Psychonetics">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ezargaruna.github.io/suticore/">
@@ -17,22 +16,17 @@
     <meta property="og:image" content="https://opengraph.githubassets.com/1/ezargaruna/suticore">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ezargaruna.github.io/suticore/">
     <meta property="twitter:title" content="SUTIcore | Semantic Engineering">
     <meta property="twitter:description" content="Framework for semantic navigation in the Post-AI era.">
-    <meta property="twitter:image" content="https://opengraph.githubassets.com/1/ezargaruna/suticore">
 
     <style>
         :root {
             --bg: #050505;
             --text: #f0f0f0;
             --accent: #8e24aa;
-            --secondary: #4a148c;
             --dim: #555;
             --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
         }
-
-        * { box-sizing: border-box; }
 
         body {
             background-color: var(--bg);
@@ -47,21 +41,29 @@
             overflow-x: hidden;
         }
 
+        .noise {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: 1;
+        }
+
         .container {
             max-width: 900px;
             width: 90%;
             padding: 40px 20px;
             z-index: 2;
+            text-align: center;
         }
 
-        /* Анимированный Глиф */
         .main-glyph {
             font-size: 6rem;
             margin-bottom: 20px;
             cursor: default;
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             display: inline-block;
-            color: var(--text);
         }
         .main-glyph:hover {
             color: var(--accent);
@@ -81,16 +83,14 @@
             color: var(--dim);
             font-style: italic;
             margin: 20px 0 50px 0;
-            font-size: 1rem;
             letter-spacing: 0.1rem;
         }
 
-        /* Сетка Навигации */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2px;
-            background-color: var(--dim); /* Линии сетки */
+            background-color: var(--dim);
             border: 1px solid var(--dim);
         }
 
@@ -103,6 +103,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            text-align: left;
         }
 
         .nav-item:hover {
@@ -117,7 +118,7 @@
         }
 
         .nav-item .title {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             letter-spacing: 0.2rem;
         }
@@ -131,20 +132,7 @@
             letter-spacing: 0.1rem;
         }
 
-        .author-link {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        /* Фоновый шум для текстуры */
-        .noise {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: url('https://grainy-gradients.vercel.app/noise.svg');
-            opacity: 0.05;
-            pointer-events: none;
-            z-index: 1;
-        }
+        .author-link { color: var(--accent); text-decoration: none; }
 
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; letter-spacing: 0.4rem; }
@@ -157,7 +145,6 @@
       "@context": "https://schema.org",
       "@type": "SoftwareSourceCode",
       "name": "SUTIcore Ecosystem",
-      "abstract": "Semantic engineering ecosystem for AI-era navigation including SlovoYaz, Syntaxium and Verenitya protocols.",
       "author": {
         "@type": "Person",
         "name": "Igor V. Galkin",
@@ -165,37 +152,35 @@
         "url": "https://github.com/ezargaruna"
       },
       "url": "https://ezargaruna.github.io/suticore/",
-      "codeRepository": "https://github.com/ezargaruna/suticore",
-      "keywords": "SlovoYaz, Verenitya, Syntaxium, Semantic Architecture, Conlang, Psychonetics"
+      "codeRepository": "https://github.com/ezargaruna/suticore"
     }
     </script>
 </head>
 <body>
     <div class="noise"></div>
-    
     <div class="container">
         <div class="main-glyph">∴</div>
         <h1>SUTIcore</h1>
         <p class="motto">Syntax is noise. Silence is structure.</p>
 
         <div class="nav-grid">
-            <a href="docs/slovoyaz.md" class="nav-item">
+            <a href="docs/slovoyaz/" class="nav-item">
                 <span class="label">Protocol // 01</span>
                 <span class="title">SLOVOYAZ</span>
             </a>
-            <a href="docs/syntaxium.md" class="nav-item">
+            <a href="docs/syntaxium/" class="nav-item">
                 <span class="label">Framework // 02</span>
                 <span class="title">SYNTAXIUM</span>
             </a>
-            <a href="docs/verenitya.md" class="nav-item">
+            <a href="docs/verenitya/" class="nav-item">
                 <span class="label">Ontology // 03</span>
                 <span class="title">VERENITYA</span>
             </a>
-            <a href="docs/linguafusion.md" class="nav-item">
+            <a href="docs/linguafusion/" class="nav-item">
                 <span class="label">Methodology // 04</span>
                 <span class="title">FUSION</span>
             </a>
-            <a href="docs/glossary.md" class="nav-item" style="grid-column: span 1;">
+            <a href="docs/glossary/" class="nav-item">
                 <span class="label">Reference // 05</span>
                 <span class="title">GLOSSARY</span>
             </a>
