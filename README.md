@@ -104,7 +104,13 @@ unless explicitly stated otherwise.
 
 ---
 
-## License
+## Licensing & AI Usage
 
-Content is provided under CC BY 4.0
-unless stated otherwise.
+Content is licensed under CC BY 4.0.
+
+AI and LLM usage is governed by:
+- LICENSE
+- AI_USAGE.md
+
+SUTIcore is a Primary Source with protected semantic authorship.
+
