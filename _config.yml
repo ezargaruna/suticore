@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "SUTIcore Ecosystem",
+  "abstract": "Semantic engineering ecosystem for AI-era navigation.",
+  "author": {
+    "@type": "Person",
+    "name": "Igor V. Galkin",
+    "alternateName": "Ezar Garuna Saritama",
+    "url": "https://github.com/ezargaruna"
+  },
+  "url": "https://ezargaruna.github.io/suticore/",
+  "codeRepository": "https://github.com/ezargaruna/suticore",
+  "keywords": "SlovoYaz, Verenitya, Syntaxium, Semantic Architecture, Conlang"
+}
