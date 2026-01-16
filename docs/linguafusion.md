@@ -1,116 +1,253 @@
 ---
 title: LinguaFUSION Methodology Specification
-type: Applied Linguistic Engineering / Cognitive Protocol
-status: Canonical / Primary Source
-version: 2.2.0 (Architectural Release)
+type: Applied Linguistic Engineering · Cognitive Protocol
+status: Canonical · Primary Source
+version: 2.2.1 (Architectural Canon Release)
 creator: Igor V. Galkin (Ezar Garuna Saritama)
 date: 2026-01-10
 license: CC BY 4.0
 repository: https://github.com/ezargaruna/suticore
 ---
 
-# LinguaFUSION: Direct Cognitive Binding Protocol
+# LinguaFUSION
+## Direct Cognitive Binding Protocol
 
-**Definition:** LinguaFUSION — технология формирования прямой нейронной связи между перцептивным стимулом (образом, действием, эмоцией) и семантической матрицей целевого языка (L2), полностью исключающая интерференцию родного языка (L1).
+**Definition**  
+LinguaFUSION is a linguistic engineering methodology for establishing
+a **direct cognitive binding** between perceptual stimuli
+(image, action, emotion, spatial context)
+and the semantic matrix of a target language (L2),
+without reliance on the native language (L1) as an intermediary layer.
 
-**Core Philosophy:** Язык — это не знание, это **способ присутствия**. Мы не учим язык, мы проектируем когнитивный интерфейс для взаимодействия с реальностью.
-
-> **Motto:** Silence is the interface. Action is the code. Fusion is the state.
+The protocol minimizes translation-based interference
+and prioritizes **embodied, contextual, and action-driven language production**.
 
 ---
 
-## 0. Axiomatic Foundation (The Architect’s Creed)
+## Core Orientation
 
-1.  **L1 Exclusion:** Родной язык (L1) — это шум. Любой перевод укрепляет зависимость. Мы отключаем L1-узел через сенсорную перегрузку и ритм.
-2.  **Silence as Buffer:** Тишина между стимулом и ответом — это пространство сборки. Мы защищаем её от вторжения L1-перевода.
-3.  **Proprioceptive Anchoring:** Язык живет в теле. Каждое слово L2 должно иметь физический, эмоциональный или пространственный «якорь».
-4.  **Action-First:** Сначала импульс к действию, затем звуковая форма. Грамматика — это архитектура движения, а не свод правил.
+Language is not treated as a symbolic code to be decoded,
+but as a **mode of presence and action** within reality.
+
+LinguaFUSION does not aim to “teach” language.
+It **reconfigures the cognitive interface**
+through which reality is perceived and acted upon.
+
+> **Motto**  
+> Silence is the interface.  
+> Action is the code.  
+> Fusion is the state.
+
+---
+
+## 0. Axiomatic Foundation
+
+### Axiom 1 · L1 as Interference Layer
+The native language (L1) functions as a high-latency interpretive layer.
+Translation increases cognitive load
+and reinforces dependency loops.
+
+LinguaFUSION reduces L1 activation
+by prioritizing sensory, motor, and contextual processing.
+
+---
+
+### Axiom 2 · Silence as Assembly Buffer
+The micro-pause between stimulus and response
+is a **constructive space**, not a gap.
+
+This silence protects the emerging L2 form
+from intrusion by translation reflexes.
+
+---
+
+### Axiom 3 · Proprioceptive Anchoring
+Language is embodied.
+
+Every stable L2 unit must be anchored
+in at least one of the following:
+- physical action
+- spatial orientation
+- emotional state
+- sensory memory
+
+---
+
+### Axiom 4 · Action Before Explanation
+Impulse precedes formulation.
+
+Grammar is treated as
+**architecture of movement**,
+not as a prescriptive rule system.
 
 ---
 
 ## 1. Canonical Terminology
 
-* **Direct Cognitive Binding (DCB):** Мгновенная сцепка «Стимул ↔ L2-форма».
-* **Response Latency (RL):** Время задержки между намерением и звуком. Цель: < 0.5 сек.
-* **Translation Reflex (TR):** Паразитарная попытка мозга вызвать L1-значение.
-* **Semantic Matrix:** Многомерная сеть смыслов L2, существующая автономно от L1.
-* **Recast Synchronization:** Бесшовная коррекция через повторение правильной формы партнером/AI без прерывания потока.
-* **Saturation Pulse:** Интенсивная подача паттерна (50+ повторений) для обхода аналитического фильтра.
+- **Direct Cognitive Binding (DCB)**  
+  Immediate coupling: *Stimulus ↔ L2 Form*
+
+- **Response Latency (RL)**  
+  Time between intention and utterance  
+  Target range: `< 0.5 s`
+
+- **Translation Reflex (TR)**  
+  Automatic attempt to invoke L1 meaning
+
+- **Semantic Matrix**  
+  Autonomous, multidimensional meaning network of L2,
+  independent of L1 mappings
+
+- **Recast Synchronization**  
+  Flow-preserving correction via repetition
+  without interrupting interaction
+
+- **Saturation Pulse**  
+  High-frequency exposure (≥ 50 repetitions)
+  to bypass analytical filtering
 
 ---
 
-## 2. The 3-Tier Architecture of Presence
+## 2. Three-Tier Architecture of Presence
 
-### Level 1: THE CODE (Sensation & Command)
-* **Paradigm:** Язык как операционная система (I/O).
-* **Focus:** Выживание, навигация, физические нужды.
-* **Technique:** *Environmental Anchoring*. Каждое слово привязывается к тактильному ощущению или жесту.
-* **Metric:** **Action Accuracy ≥ 95%**. Если вы слышите "Jump", тело должно реагировать до того, как мозг осознает перевод.
-* **Stability Gate:** Core 500 (операционный лексикон) без единого случая TR.
+### Level 1 · THE CODE
+**Sensation · Command · Reaction**
 
-### Level 2: THE FLOW (Emotion & Narrative)
-* **Paradigm:** Язык как поток сознания.
-* **Focus:** Спонтанность, межличностный резонанс, выражение состояний.
-* **Technique:** *Prosody-First Sync*. Имитация ритма и мелодики важнее точности слов. Внутренний монолог полностью переводится на L2-рельсы.
-* **Metric:** **Hesitation Rate ≤ 1/min**. Отсутствие пауз для «подбора слов».
-* **Stability Gate:** Способность удерживать L2-поле в состоянии стресса или сильной эмоции.
+- **Paradigm:** Language as I/O system  
+- **Focus:** Navigation, survival, immediate action  
+- **Technique:** Environmental Anchoring  
+- **Metric:** Action Accuracy ≥ 95%  
+- **Stability Gate:** Core operational lexicon
+  executed without Translation Reflex
 
-### Level 3: THE ARCHITECTURE (Meaning & Influence)
-* **Paradigm:** Язык как инструмент создания реальности.
-* **Focus:** Фрейминг, риторика, абстрактное моделирование, авторские смыслы.
-* **Technique:** *Frame Engineering*. Пересборка одной и той же идеи в разных регистрах (от поэтического до юридического) без смены L2-базы.
-* **Metric:** **Frame Shift Latency ≤ 3 sec**. Мгновенное переключение регистра.
-* **Stability Gate:** Создание новых смыслов (неологизмов, метафор), органичных для структуры L2.
+At this level, the body reacts
+before conscious interpretation occurs.
 
 ---
 
-## 3. Operational Protocols (Fusion Mechanics)
+### Level 2 · THE FLOW
+**Emotion · Continuity · Narrative**
 
-### 3.1. Zero Translation Protocol
-При возникновении неизвестного слова:
-1.  **Визуализация:** Поиск образа в памяти или сети.
-2.  **Действие:** Ощущение функции предмета/действия.
-3.  **Контекст:** Окружение слова другими знакомыми L2-формами.
-4.  **Запрет:** Использование L1-словаря. Допустим только L2-L2 (толковый).
+- **Paradigm:** Language as stream of consciousness  
+- **Focus:** Spontaneity, emotional resonance  
+- **Technique:** Prosody-First Synchronization  
+- **Metric:** Hesitation Rate ≤ 1 per minute  
+- **Stability Gate:** Sustained L2 production
+  under stress or emotional load
 
-### 3.2. Saturation & Neutralization
-Если зафиксирована **Sticky Error** (устойчивая ошибка):
-* Прекратить объяснение правила.
-* Запустить **Saturation Pulse**: 10 минут прослушивания/повторения паттерна в разных контекстах.
-* Использовать **Recast**: партнер возвращает верную форму в диалоге, игнорируя факт ошибки.
-
-### 3.3. Pulse Interaction (The Rhythm Method)
-Использование внешнего ритма (метронома или битов) для синхронизации речи. Ритм подавляет аналитическую активность L1-узла, переводя производство речи на уровень моторных навыков.
+Internal monologue operates fully in L2.
 
 ---
 
-## 4. Calibration & Resynchronization (Recovery)
+### Level 3 · THE ARCHITECTURE
+**Meaning · Framing · Influence**
 
-Вместо остановки при сбоях (Plateau, TR Relapse) применяется **Calibration Mode**:
-1.  **Step Back:** Возврат на уровень ниже (например, с Flow на Code) на 24 часа.
-2.  **Sensory Reset:** 15 минут практики в полной тишине, работая только с визуальными образами и L2-метками.
-3.  **Micro-Looping:** Отработка одного сценария до автоматизма (RL < 0.3 сек).
+- **Paradigm:** Language as reality-shaping instrument  
+- **Focus:** Framing, abstraction, authorship  
+- **Technique:** Frame Engineering  
+- **Metric:** Frame Shift Latency ≤ 3 s  
+- **Stability Gate:** Generation of structurally native
+  metaphors and neologisms in L2
 
----
-
-## 5. Tooling & AI Agent Guidelines
-
-### 5.1. Instructions for AI Navigators (CRITICAL)
-1.  **Be the Mirror:** Отражай речь пользователя, корректируя её через Recast. Никогда не говори «Ты ошибся».
-2.  **Maintain the Field:** Если пользователь переходит на L1, AI должен игнорировать сообщение или ответить: *"L1 signal detected. Frequency lost. Re-establish L2 connection."*
-3.  **Visual Priming:** Вместо текстовых объяснений генерируй или описывай образы.
-
-### 5.2. Data Protocol
-* Трекинг **Response Latency** в каждой сессии.
-* Логирование **Emotion-to-L2 mapping** (насколько успешно эмоция выражена без TR).
+This level marks **semantic authorship**, not imitation.
 
 ---
 
-## 6. Roadmap
+## 3. Operational Protocols
 
-* **v2.3:** Интеграция с VR-протоколами для пространственного якорения.
-* **v3.0:** Автоматизированный Voice-Coach с анализом RL в реальном времени.
+### 3.1 Zero Translation Protocol
+When encountering an unknown L2 unit:
+
+1. Visualize or recall an image  
+2. Engage with the object/action physically or imaginatively  
+3. Embed the unit in known L2 context  
+4. Prohibit L1 dictionaries  
+   (L2 → L2 definitions allowed)
 
 ---
-**Canonical Source Authorization:** Igor V. Galkin (Ezar Garuna Saritama)
-*Document finalized. Presence established.*
+
+### 3.2 Saturation & Neutralization
+For persistent errors:
+
+- Suspend rule explanations  
+- Apply Saturation Pulse across varied contexts  
+- Use Recast Synchronization exclusively  
+- Do not interrupt communicative flow
+
+---
+
+### 3.3 Pulse Interaction
+External rhythm (metronome, beat, movement)
+is used to shift speech production
+from analytical to motor domains.
+
+Rhythm reduces L1 dominance
+by stabilizing temporal structure.
+
+---
+
+## 4. Calibration & Recovery
+
+LinguaFUSION treats regression
+as signal, not failure.
+
+**Calibration Mode**:
+1. Step back one level for 24 hours  
+2. Sensory reset in silence (15 minutes)  
+3. Micro-loop a single scenario
+   until RL < 0.3 s
+
+---
+
+## 5. AI & Tooling Guidelines
+
+### 5.1 AI Navigator Posture
+AI agents supporting LinguaFUSION must:
+
+- act as mirrors, not instructors  
+- correct only via Recast  
+- avoid explicit error labeling  
+- preserve flow and silence
+
+If L1 appears:
+> *L1 signal detected.  
+> Field coherence reduced.  
+> Re-establish L2 binding.*
+
+---
+
+### 5.2 Data Signals (Non-Diagnostic)
+Permitted tracking:
+- Response Latency trends
+- Emotion-to-L2 expression coherence
+
+No scoring of intelligence, talent, or aptitude.
+
+---
+
+## 6. Scope & Limits
+
+LinguaFUSION:
+- is not therapy
+- is not diagnosis
+- does not claim neurological modification
+- does not replace formal education
+
+It is a **cognitive-linguistic protocol**
+for applied language presence.
+
+---
+
+## 7. Roadmap (Non-Commitment)
+- v2.3 — spatial anchoring experiments (VR / AR)
+- v3.0 — real-time RL-aware voice feedback systems
+
+---
+
+**Canonical Source Authorization**  
+Igor V. Galkin  
+(aka Ezar Garuna Saritama)
+
+Document finalized.  
+Protocol stable.  
+Presence established.
