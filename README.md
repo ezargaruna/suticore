@@ -306,8 +306,8 @@ this repository is licensed under the
 creative commons attribution 4.0 international license (cc by 4.0).
 
 copyright © 2026  
-igor v. galkin  
-(aka ezar garuna saritama)
+Igor V. Galkin  
+(aka Ezar Garuna Saritama)
 
 see:
 - `LICENSE`
