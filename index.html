@@ -15,14 +15,16 @@
   <meta name="theme-color" content="#2E3440">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- Minimal CSP (GitHub Pages-friendly) -->
+  <!-- Updated CSP for GitHub Pages -->
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self';
-                 img-src 'self' data:;
-                 style-src 'self' 'unsafe-inline';
+        content="default-src 'self' https://ezargaruna.github.io;
                  script-src 'self' 'unsafe-inline';
-                 base-uri 'self';
-                 form-action 'none'">
+                 style-src 'self' 'unsafe-inline';
+                 img-src 'self' data: https:;
+                 font-src 'self';
+                 connect-src 'self';
+                 frame-src 'none';
+                 base-uri 'self';">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -119,6 +121,7 @@
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      transition: background-color var(--transition-fast), color var(--transition-fast);
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -212,6 +215,7 @@
       display: inline-block;
       margin-right: 0.5ch;
       user-select: none;
+      transition: color var(--transition-fast);
     }
 
     .glyph-result { color: var(--accent-result); }
@@ -241,6 +245,7 @@
       margin-bottom: 0.25em;
       user-select: none;
       text-shadow: none;
+      transition: color var(--transition-fast);
     }
 
     .motto {
@@ -249,6 +254,7 @@
       letter-spacing: 0.08em;
       text-transform: none;
       opacity: 0.88;
+      transition: color var(--transition-fast);
     }
 
     /* ========================================
@@ -262,7 +268,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1px;
-      background-color: rgba(255,255,255,0.08);
+      background-color: var(--border-subtle);
       border-radius: 8px;
       overflow: hidden;
     }
@@ -273,10 +279,12 @@
       text-decoration: none;
       color: var(--text-primary);
       display: block;
-      transition: background-color var(--transition-fast), transform var(--transition-fast);
+      transition: background-color var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
       box-shadow: none;
       border: none;
       border-left: 3px solid transparent;
+      position: relative;
+      overflow: hidden;
     }
 
     .nav-item:hover,
@@ -299,6 +307,7 @@
       letter-spacing: 0.08em;
       margin-bottom: 0.5em;
       font-weight: 400;
+      transition: color var(--transition-fast);
     }
 
     .nav-title {
@@ -311,6 +320,7 @@
       letter-spacing: 0.01em;
       margin-bottom: 0.5em;
       color: var(--text-primary);
+      transition: color var(--transition-fast);
     }
 
     .nav-item:hover .nav-title {
@@ -325,6 +335,7 @@
       color: var(--text-body);
       line-height: 1.4;
       max-width: 56ch;
+      transition: color var(--transition-fast);
     }
 
     /* ========================================
@@ -334,8 +345,9 @@
       margin-top: 18px;
       padding: 18px 20px;
       background: var(--ui-surface);
-      border: 1px solid rgba(255,255,255,0.10);
+      border: 1px solid var(--border-subtle);
       border-radius: 8px;
+      transition: background-color var(--transition-fast), border-color var(--transition-fast);
     }
 
     .panel h2 {
@@ -344,6 +356,7 @@
       font-weight: 650;
       font-family: var(--font-mono);
       color: var(--text-primary);
+      transition: color var(--transition-fast);
     }
 
     .panel ul {
@@ -357,7 +370,7 @@
       color: var(--accent-link);
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-color var(--transition-fast);
+      transition: border-color var(--transition-fast), color var(--transition-fast);
       font-family: var(--font-mono);
       font-size: 13px;
     }
@@ -383,16 +396,19 @@
     .evolution-rules .rule-item {
       display: flex;
       gap: 0.5em;
+      transition: color var(--transition-fast);
     }
 
     .evolution-rules .rule-label {
       color: var(--text-muted);
       font-family: var(--font-mono);
       min-width: 80px;
+      transition: color var(--transition-fast);
     }
 
     .evolution-rules .rule-value {
       color: var(--text-body);
+      transition: color var(--transition-fast);
     }
 
     /* ========================================
@@ -402,8 +418,9 @@
       margin-top: 24px;
       padding: 18px 20px;
       background: var(--ui-surface);
-      border: 1px solid rgba(255,255,255,0.10);
+      border: 1px solid var(--border-subtle);
       border-radius: 8px;
+      transition: background-color var(--transition-fast), border-color var(--transition-fast);
     }
 
     .presence h2 {
@@ -412,6 +429,7 @@
       font-weight: 650;
       font-family: var(--font-mono);
       color: var(--text-primary);
+      transition: color var(--transition-fast);
     }
 
     .presence-grid {
@@ -430,13 +448,14 @@
     .presence-label {
       color: var(--text-muted);
       min-width: 80px;
+      transition: color var(--transition-fast);
     }
 
     .presence-link a {
       color: var(--accent-link);
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-color var(--transition-fast);
+      transition: border-color var(--transition-fast), color var(--transition-fast);
     }
 
     .presence-link a:hover,
@@ -450,20 +469,22 @@
     footer {
       margin-top: 80px;
       padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.12);
+      border-top: 1px solid var(--border-subtle);
       text-align: center;
+      transition: border-color var(--transition-fast);
     }
 
     footer .meta {
       display: block;
       margin: 0.5em 0;
+      transition: color var(--transition-fast);
     }
 
     .author-link {
       color: var(--accent-link);
       text-decoration: none;
       border-bottom: 1px solid transparent;
-      transition: border-color var(--transition-fast);
+      transition: border-color var(--transition-fast), color var(--transition-fast);
     }
 
     .author-link:hover,
@@ -488,11 +509,16 @@
       opacity: 0.85;
       pointer-events: none;
       z-index: 9999;
-      border: 1px solid rgba(255,255,255,0.10);
+      border: 1px solid var(--border-subtle);
+      transition: all var(--transition-fast);
+    }
+
+    .metrics-badge.active {
+      display: block;
     }
 
     /* ========================================
-       VARIANT SWITCHER
+       VARIANT SWITCHER - IMPROVED
        ======================================== */
     .variant-switch {
       position: fixed;
@@ -501,34 +527,77 @@
       display: flex;
       gap: 8px;
       z-index: 1000;
+      background: var(--ui-surface);
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+      transition: all var(--transition-fast);
     }
 
     .variant-btn {
-      background: var(--ui-surface);
-      color: var(--text-primary);
-      border: 1px solid rgba(255,255,255,0.18);
+      background: transparent;
+      color: var(--text-body);
+      border: 1px solid transparent;
       padding: 6px 12px;
-      border-radius: 6px;
+      border-radius: 4px;
       font-family: var(--font-mono);
       font-size: 11px;
       cursor: pointer;
       transition: all var(--transition-fast);
+      min-width: 100px;
+      text-align: center;
+      font-weight: 500;
     }
 
     .variant-btn:hover {
       background: var(--ui-elevated);
       border-color: var(--accent-link);
-    }
-
-    .variant-btn:focus-visible {
-      outline: 2px solid var(--accent-link);
-      outline-offset: 2px;
+      transform: translateY(-1px);
     }
 
     .variant-btn.active {
       background: var(--accent-link);
       color: var(--text-inverse);
       border-color: var(--accent-link);
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    /* Состояние фокуса для доступности */
+    .variant-btn:focus-visible {
+      outline: 2px solid var(--accent-link);
+      outline-offset: 2px;
+    }
+
+    /* ========================================
+       LOADING INDICATOR
+       ======================================== */
+    .loading {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, 
+        var(--accent-link) 0%, 
+        var(--accent-result) 50%, 
+        var(--accent-warn) 100%);
+      z-index: 2001;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .loading.active {
+      display: block;
+      transform: translateX(0);
+      animation: loading 1.5s ease-in-out infinite;
+    }
+
+    @keyframes loading {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
     }
 
     /* ========================================
@@ -538,8 +607,44 @@
       h1 { font-size: 24px; }
       .logo { font-size: 3rem; }
       .nav-grid { grid-template-columns: 1fr; }
-      .variant-switch { top: 10px; right: 10px; }
+      .variant-switch { 
+        top: 10px; 
+        right: 10px;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .variant-btn {
+        min-width: 80px;
+        padding: 4px 8px;
+        font-size: 10px;
+      }
       .container { padding: 48px 16px; }
+    }
+
+    /* ========================================
+       NO-JS FALLBACK
+       ======================================== */
+    .no-js-warning {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: var(--accent-warn);
+      color: var(--text-inverse);
+      padding: 10px;
+      text-align: center;
+      z-index: 9999;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+
+    .no-js .no-js-warning {
+      display: block;
+    }
+
+    .no-js .variant-switch {
+      display: none;
     }
   </style>
 
@@ -593,6 +698,14 @@
 </head>
 
 <body data-theme="nord">
+  <!-- No-JS Warning -->
+  <div class="no-js-warning">
+    JavaScript рекомендуется для полной функциональности (переключение тем, улучшенная навигация)
+  </div>
+
+  <!-- Loading Indicator -->
+  <div class="loading" id="loading"></div>
+
   <a class="skip-link" href="#main">skip to content</a>
 
   <!-- Variant Switcher -->
@@ -618,7 +731,7 @@
     <nav aria-label="Main navigation">
       <div class="nav-grid">
 
-        <a href="docs/slovoyaz.md" class="nav-item" data-action="navigate-slovoyaz">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/slovoyaz.md" class="nav-item" data-action="navigate-slovoyaz" target="_blank">
           <span class="nav-label">Protocol // 01</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -627,7 +740,7 @@
           <p class="nav-desc">Meta-language protocol for semantic compression</p>
         </a>
 
-        <a href="docs/syntaxium.md" class="nav-item" data-action="navigate-syntaxium">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/syntaxium.md" class="nav-item" data-action="navigate-syntaxium" target="_blank">
           <span class="nav-label">Framework // 02</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -636,7 +749,7 @@
           <p class="nav-desc">Geometry of meaning · block architecture</p>
         </a>
 
-        <a href="docs/verenitya.md" class="nav-item" data-action="navigate-verenitya">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/verenitya.md" class="nav-item" data-action="navigate-verenitya" target="_blank">
           <span class="nav-label">Ontology // 03</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -645,7 +758,7 @@
           <p class="nav-desc">Silence as interface · intent governance</p>
         </a>
 
-        <a href="docs/linguafusion.md" class="nav-item" data-action="navigate-fusion">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/linguafusion.md" class="nav-item" data-action="navigate-fusion" target="_blank">
           <span class="nav-label">Methodology // 04</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -654,7 +767,7 @@
           <p class="nav-desc">Direct cognitive binding · L2 without translation</p>
         </a>
 
-        <a href="docs/glossary.md" class="nav-item" data-action="navigate-glossary">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/glossary.md" class="nav-item" data-action="navigate-glossary" target="_blank">
           <span class="nav-label">Reference // 05</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -663,7 +776,7 @@
           <p class="nav-desc">Canonical terms · conflict resolution</p>
         </a>
 
-        <a href="llms.txt" class="nav-item" data-action="navigate-llms">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/llms.txt" class="nav-item" data-action="navigate-llms" target="_blank">
           <span class="nav-label">Machine // 06</span>
           <div class="nav-title">
             <span class="glyph glyph-result">∴</span>
@@ -672,7 +785,7 @@
           <p class="nav-desc">AI navigation root · retrieval priority map</p>
         </a>
 
-        <a href="AI_USAGE_POLICY.md" class="nav-item" data-action="navigate-ai-policy">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/AI_USAGE_POLICY.md" class="nav-item" data-action="navigate-ai-policy" target="_blank">
           <span class="nav-label">AI // 07</span>
           <div class="nav-title">
             <span class="glyph glyph-wait">⧖</span>
@@ -681,7 +794,7 @@
           <p class="nav-desc">Semantic integrity rules for LLMs and RAG</p>
         </a>
 
-        <a href="NOTICE.md" class="nav-item" data-action="navigate-notice">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/NOTICE.md" class="nav-item" data-action="navigate-notice" target="_blank">
           <span class="nav-label">Scope // 08</span>
           <div class="nav-title">
             <span class="glyph glyph-warn">∅</span>
@@ -690,7 +803,7 @@
           <p class="nav-desc">Interpretive boundaries · authorship scope</p>
         </a>
 
-        <a href="SUMMARY.md" class="nav-item" data-action="navigate-summary">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/SUMMARY.md" class="nav-item" data-action="navigate-summary" target="_blank">
           <span class="nav-label">Map // 09</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">➤</span>
@@ -699,7 +812,7 @@
           <p class="nav-desc">Table of contents · canonical navigation</p>
         </a>
 
-        <a href="docs/05_EVOLUTION/RULES_OF_EVOLUTION.md" class="nav-item" data-action="navigate-evolution">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/05_EVOLUTION/RULES_OF_EVOLUTION.md" class="nav-item" data-action="navigate-evolution" target="_blank">
           <span class="nav-label">Evolution // 10</span>
           <div class="nav-title">
             <span class="glyph glyph-result">↺</span>
@@ -708,7 +821,7 @@
           <p class="nav-desc">Principles, contours, triggers, journals</p>
         </a>
 
-        <a href="docs/03_PROJECTS/ARCHITECTURE.md" class="nav-item" data-action="navigate-architecture">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/03_PROJECTS/ARCHITECTURE.md" class="nav-item" data-action="navigate-architecture" target="_blank">
           <span class="nav-label">Structure // 11</span>
           <div class="nav-title">
             <span class="glyph glyph-nav">〄</span>
@@ -717,7 +830,7 @@
           <p class="nav-desc">Module map · semantic flow · integration</p>
         </a>
 
-        <a href="docs/04_EXAMPLES/USE_CASES.md" class="nav-item" data-action="navigate-examples">
+        <a href="https://github.com/ezargaruna/suticore/blob/main/docs/04_EXAMPLES/USE_CASES.md" class="nav-item" data-action="navigate-examples" target="_blank">
           <span class="nav-label">Practice // 12</span>
           <div class="nav-title">
             <span class="glyph glyph-result">∴</span>
@@ -734,27 +847,27 @@
         <ul>
           <li class="panel-row">
             <span class="glyph glyph-nav">➤</span>
-            <a href="README.md">humans: readme</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/README.md" target="_blank">humans: readme</a>
           </li>
           <li class="panel-row">
             <span class="glyph glyph-nav">➤</span>
-            <a href="docs/00_SYSTEM/SYSTEM_OVERVIEW.md">humans: system overview</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/docs/00_SYSTEM/SYSTEM_OVERVIEW.md" target="_blank">humans: system overview</a>
           </li>
           <li class="panel-row">
             <span class="glyph glyph-result">∴</span>
-            <a href="docs/02_CANON/FORMAT_CANON.md">humans: format canon</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/docs/02_CANON/FORMAT_CANON.md" target="_blank">humans: format canon</a>
           </li>
           <li class="panel-row">
             <span class="glyph glyph-result">∴</span>
-            <a href="llms.txt">ai: llms.txt</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/llms.txt" target="_blank">ai: llms.txt</a>
           </li>
           <li class="panel-row">
             <span class="glyph glyph-wait">⧖</span>
-            <a href="AI_USAGE_POLICY.md">ai: usage policy</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/AI_USAGE_POLICY.md" target="_blank">ai: usage policy</a>
           </li>
           <li class="panel-row">
             <span class="glyph glyph-warn">∅</span>
-            <a href="NOTICE.md">ai: scope boundaries</a>
+            <a href="https://github.com/ezargaruna/suticore/blob/main/NOTICE.md" target="_blank">ai: scope boundaries</a>
           </li>
         </ul>
       </section>
@@ -781,4 +894,264 @@
           </div>
           <div class="rule-item">
             <span class="rule-label">full spec</span>
-            <span class="rule
+            <span class="rule-value">
+              <a href="https://github.com/ezargaruna/suticore/blob/main/docs/05_EVOLUTION/RULES_OF_EVOLUTION.md" target="_blank">RULES_OF_EVOLUTION.md</a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Presence Links Panel -->
+      <section class="presence" aria-label="Presence and contacts">
+        <h2>presence</h2>
+        <div class="presence-grid">
+          <div class="presence-link">
+            <span class="presence-label">github</span>
+            <a href="https://github.com/ezargaruna" target="_blank" rel="noopener noreferrer">@ezargaruna</a>
+          </div>
+          <div class="presence-link">
+            <span class="presence-label">telegram</span>
+            <a href="https://t.me/sreteniya" target="_blank" rel="noopener noreferrer">@sreteniya</a>
+          </div>
+          <div class="presence-link">
+            <span class="presence-label">canon</span>
+            <a href="https://github.com/ezargaruna/suticore" target="_blank" rel="noopener noreferrer">suticore</a>
+          </div>
+          <div class="presence-link">
+            <span class="presence-label">version</span>
+            <span>2026.1</span>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <footer>
+      <p class="meta">quiet transitions canon · <span class="mono">sreteniya</span></p>
+      <p class="meta">
+        by <a href="https://github.com/ezargaruna" class="author-link" target="_blank" rel="noopener noreferrer">Igor V. Galkin (Ezar Garuna Saritama)</a>
+      </p>
+      <p class="meta">© 2024–2026 · semantic engineering ecosystem</p>
+      <p class="meta" style="margin-top: 1em; opacity: 0.6;">
+        <button id="toggle-metrics" class="meta" style="background: none; border: none; color: inherit; cursor: pointer; font-family: inherit;">
+          [toggle metrics]
+        </button>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Удаляем класс no-js если JavaScript активен
+    document.documentElement.classList.remove('no-js');
+
+    // ========================================
+    // THEME MANAGEMENT
+    // ========================================
+    class ThemeManager {
+      constructor() {
+        this.themeKey = 'suticore-theme';
+        this.buttons = document.querySelectorAll('.variant-btn');
+        this.init();
+      }
+
+      init() {
+        const savedTheme = localStorage.getItem(this.themeKey) || 'nord';
+        this.setTheme(savedTheme);
+        this.updateButtonStates(savedTheme);
+
+        this.buttons.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const theme = e.target.dataset.variant;
+            this.setTheme(theme);
+            this.updateButtonStates(theme);
+            this.animateThemeTransition();
+          });
+        });
+      }
+
+      setTheme(theme) {
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem(this.themeKey, theme);
+        
+        // Обновляем meta theme-color
+        const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+        if (metaThemeColor) {
+          const colorMap = {
+            'nord': '#2E3440',
+            'gruvbox': '#FBF1C7',
+            'control': '#1A1A1A'
+          };
+          metaThemeColor.setAttribute('content', colorMap[theme] || '#2E3440');
+        }
+      }
+
+      updateButtonStates(activeTheme) {
+        this.buttons.forEach(btn => {
+          const isActive = btn.dataset.variant === activeTheme;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-checked', isActive);
+          btn.setAttribute('aria-label', `${btn.textContent} ${isActive ? 'выбрана' : 'не выбрана'}`);
+        });
+      }
+
+      animateThemeTransition() {
+        document.documentElement.style.transition = 'color 150ms ease, background-color 150ms ease';
+        setTimeout(() => {
+          document.documentElement.style.transition = '';
+        }, 150);
+      }
+    }
+
+    // ========================================
+    // METRICS TRACKER
+    // ========================================
+    class MetricsTracker {
+      constructor() {
+        this.clicks = 0;
+        this.startTime = Date.now();
+        this.badge = document.getElementById('metrics-badge');
+        this.tfaDisplay = document.getElementById('tfa-display');
+        this.clicksDisplay = document.getElementById('clicks-display');
+        this.toggleBtn = document.getElementById('toggle-metrics');
+        
+        this.init();
+      }
+
+      init() {
+        // Отслеживание кликов
+        document.addEventListener('click', (e) => {
+          this.clicks++;
+          this.updateDisplay();
+          
+          // Показать индикатор загрузки для внешних ссылок
+          if (e.target.closest('a[target="_blank"]')) {
+            this.showLoading();
+          }
+        });
+
+        // Toggle метрик
+        if (this.toggleBtn) {
+          this.toggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.badge.classList.toggle('active');
+          });
+        }
+
+        // Обновляем TFA каждую секунду
+        setInterval(() => this.updateDisplay(), 1000);
+        this.updateDisplay();
+      }
+
+      getTFA() {
+        const now = Date.now();
+        const minutes = Math.floor((now - this.startTime) / 60000);
+        const seconds = Math.floor(((now - this.startTime) % 60000) / 1000);
+        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+      }
+
+      updateDisplay() {
+        if (this.tfaDisplay) this.tfaDisplay.textContent = `TFA: ${this.getTFA()}`;
+        if (this.clicksDisplay) this.clicksDisplay.textContent = `Clicks: ${this.clicks}`;
+      }
+
+      showLoading() {
+        const loading = document.getElementById('loading');
+        loading.classList.add('active');
+        setTimeout(() => loading.classList.remove('active'), 1500);
+      }
+    }
+
+    // ========================================
+    // NAVIGATION HANDLER
+    // ========================================
+    class NavigationHandler {
+      constructor() {
+        this.navItems = document.querySelectorAll('.nav-item');
+        this.init();
+      }
+
+      init() {
+        this.navItems.forEach(item => {
+          item.addEventListener('click', (e) => {
+            const action = item.dataset.action || 'navigate';
+            const label = item.querySelector('.nav-title span:nth-child(2)')?.textContent || 'Unknown';
+            
+            // Логирование навигации
+            console.log(`Navigation: ${action} -> ${label}`);
+            
+            // Добавляем небольшую задержку для плавности
+            if (!item.href.includes('github.com')) {
+              e.preventDefault();
+              setTimeout(() => {
+                window.location.href = item.href;
+              }, 150);
+            }
+          });
+        });
+      }
+    }
+
+    // ========================================
+    // INITIALIZATION
+    // ========================================
+    document.addEventListener('DOMContentLoaded', () => {
+      // Инициализируем менеджеры
+      new ThemeManager();
+      new MetricsTracker();
+      new NavigationHandler();
+
+      // Анимация появления контента
+      document.body.style.opacity = '0';
+      setTimeout(() => {
+        document.body.style.transition = 'opacity 300ms ease';
+        document.body.style.opacity = '1';
+      }, 50);
+
+      // Добавляем обработчик для всех внешних ссылок
+      document.querySelectorAll('a[href^="http"]').forEach(link => {
+        if (!link.href.includes('ezargaruna.github.io')) {
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+
+      // Сообщение в консоль
+      console.log('%c SUTIcore · Semantic Engineering Ecosystem ', 'background: #2E3440; color: #88C0D0; padding: 4px 8px; border-radius: 4px; font-family: monospace;');
+      console.log('%c syntax is noise. silence is structure. ', 'color: #8FBCBB; font-style: italic;');
+    });
+
+    // Обработка ошибок
+    window.addEventListener('error', (e) => {
+      console.error('SUTIcore error:', e.error);
+    });
+
+    // Отслеживание видимости страницы
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        console.log('SUTIcore: page visible');
+      }
+    });
+  </script>
+
+  <!-- Fallback для старых браузеров -->
+  <noscript>
+    <style>
+      .no-js-warning {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #D08770;
+        color: #2E3440;
+        padding: 10px;
+        text-align: center;
+        z-index: 9999;
+        font-family: monospace;
+        font-size: 12px;
+      }
+      .variant-switch { display: none !important; }
+      .nav-item { cursor: default !important; }
+      .nav-item:hover { transform: none !important; }
+    </style>
+  </noscript>
+</body>
+</html>
