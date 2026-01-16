@@ -1,600 +1,784 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUTIcore | Semantic Engineering Ecosystem</title>
-    
-    <!-- SEO & Meta -->
-    <meta name="title" content="SUTIcore | Semantic Engineering Ecosystem">
-    <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. Метаязык SlovoYaz, онтология Verenitya, протокол Syntaxium.">
-    <meta name="author" content="Igor Galkin (Ezar Garuna)">
-    <link rel="canonical" href="https://ezargaruna.github.io/suticore/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUTIcore | Semantic Engineering Ecosystem</title>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ezargaruna.github.io/suticore/">
-    <meta property="og:title" content="SUTIcore | Semantic Root">
-    <meta property="og:description" content="Syntax is noise. Silence is structure.">
+  <!-- SEO & Meta -->
+  <meta name="title" content="SUTIcore | Semantic Engineering Ecosystem">
+  <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. SlovoYaz, Syntaxium, Verenitya, LinguaFUSION. Канон Quiet Transitions (Sreteniya).">
+  <meta name="author" content="Igor V. Galkin (Ezar Garuna Saritama)">
+  <link rel="canonical" href="https://ezargaruna.github.io/suticore/">
 
-    <style>
-        /* ========================================
-           COLOR TOKENS CONTRACT (Nord Dark)
-           Based on: LinguaFUSION Design Spec v1.1
-           ======================================== */
-        :root {
-            /* UI Tokens */
-            --ui-background: #2E3440;     /* Nord: Polar Night 0 */
-            --ui-surface: #3B4252;        /* Nord: Polar Night 1 */
-            --ui-elevated: #434C5E;       /* Nord: Polar Night 2 */
-            
-            /* Text Tokens */
-            --text-primary: #D8DEE9;      /* Nord: Snow Storm 2 */
-            --text-muted: #4C566A;        /* Nord: Polar Night 3 */
-            --text-inverse: #2E3440;      /* For light-on-dark */
-            
-            /* Accent Tokens (Semantic Only) */
-            --accent-link: #88C0D0;       /* Nord: Frost 1 - Navigation */
-            --accent-result: #A3BE8C;     /* Nord: Aurora Green - Success */
-            --accent-warn: #D08770;       /* Nord: Aurora Orange - Alert */
-            --status-wait: #EBCB8B;       /* Nord: Aurora Yellow - Pending */
-            
-            /* Typography Stack */
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-            
-            /* Metrics */
-            --max-line-length: 72ch;
-            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+  <!-- Technical Meta -->
+  <meta name="theme-color" content="#2E3440">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-        /* Light Mode Variant (A/B Testing) */
-        [data-variant="light"] {
-            --ui-background: #FBF1C7;     /* Gruvbox: Paper */
-            --ui-surface: #EBDBB2;
-            --ui-elevated: #D5C4A1;
-            --text-primary: #3C3836;
-            --text-muted: #7C6F64;
-            --text-inverse: #FBF1C7;
-        }
+  <!-- Minimal CSP (GitHub Pages-friendly) -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 img-src 'self' data:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self' 'unsafe-inline';
+                 base-uri 'self';
+                 form-action 'none'">
 
-        /* Control Variant (Neutral Gray) */
-        [data-variant="control"] {
-            --ui-background: #1A1A1A;
-            --ui-surface: #2A2A2A;
-            --ui-elevated: #3A3A3A;
-            --text-primary: #E0E0E0;
-            --text-muted: #707070;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ezargaruna.github.io/suticore/">
+  <meta property="og:title" content="SUTIcore | Semantic Root">
+  <meta property="og:description" content="Syntax is noise. Silence is structure.">
+  <meta property="og:image" content="https://ezargaruna.github.io/suticore/assets/og.png">
 
-        /* ========================================
-           RESET & BASE
-           ======================================== */
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box;
-        }
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SUTIcore | Semantic Root">
+  <meta name="twitter:description" content="Quiet-tech semantic engineering ecosystem. Language as navigation.">
+  <meta name="twitter:image" content="https://ezargaruna.github.io/suticore/assets/og.png">
 
-        body {
-            background-color: var(--ui-background);
-            color: var(--text-primary);
-            font-family: var(--font-body);
-            font-size: 16px;
-            line-height: 1.55;
-            
-            /* Calm Tech: No animations until needed */
-            animation: none;
-            
-            /* Plain Text Native: High contrast, readable */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+  <style>
+    /* ========================================
+       COLOR TOKENS CONTRACT
+       Quiet-Tech / Canon Landing
+       ======================================== */
+    :root[data-theme="nord"] {
+      /* UI Tokens */
+      --ui-background: #2E3440;
+      --ui-surface: #3B4252;
+      --ui-elevated: #434C5E;
 
-        /* Accessibility: Reduced Motion */
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
+      /* Text Tokens */
+      --text-primary: #ECEFF4;
+      --text-body: #AEB6C2;
+      --text-muted: #8FBCBB;
+      --text-inverse: #2E3440;
 
-        /* ========================================
-           TYPOGRAPHY (Spec Section 5)
-           ======================================== */
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.5em;
-            
-            /* Hierarchy Limit: One H1 per page */
-            max-width: var(--max-line-length);
-        }
+      /* Accent Tokens */
+      --accent-link: #88C0D0;
+      --accent-result: #A3BE8C;
+      --accent-warn: #D08770;
+      --status-wait: #EBCB8B;
 
-        h2 {
-            font-size: 19px;
-            font-weight: 500;
-            line-height: 1.3;
-            letter-spacing: 0;
-            margin: 1.5em 0 0.5em;
-        }
-
-        p, .body {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.55;
-            letter-spacing: 0;
-            max-width: var(--max-line-length);
-        }
-
-        .mono, code {
-            font-family: var(--font-mono);
-            font-size: 14px;
-            line-height: 1.5;
-            letter-spacing: 0;
-        }
-
-        .meta {
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 1.4;
-            letter-spacing: 0.01em;
-            color: var(--text-muted);
-        }
-
-        /* CONSTRAINT: No italic in body text (Spec 5.2) */
-        em { font-style: normal; font-weight: 500; }
-
-        /* ========================================
-           GLYPH SYSTEM (Spec Section 6)
-           Max 5+1 operators, semantic only
-           ======================================== */
-        .glyph {
-            font-family: var(--font-mono);
-            font-size: 1.2em;
-            font-weight: 600;
-            display: inline-block;
-            margin-right: 0.5ch;
-            user-select: none;
-        }
-
-        /* Operator Colors (Semantic Token Binding) */
-        .glyph-result { color: var(--accent-result); }   /* ∴ Success/Action */
-        .glyph-wait { color: var(--status-wait); }       /* ⧖ Pending/Process */
-        .glyph-warn { color: var(--accent-warn); }       /* ⟁ Alert/Context */
-        .glyph-nav { color: var(--accent-link); }        /* ➤ Navigation/Link */
-
-        /* CONSTRAINT: One Operator per Line (Spec 6.2) */
-        .glyph-line {
-            display: flex;
-            align-items: center;
-            gap: 0.5em;
-        }
-
-        /* ========================================
-           LAYOUT (Calm Tech Principles)
-           ======================================== */
-        .container {
-            max-width: 960px;
-            width: 90%;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        /* Header: Minimal, One Element Focus */
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .logo {
-            font-size: 4rem;
-            font-family: var(--font-mono);
-            color: var(--text-primary);
-            margin-bottom: 0.25em;
-            user-select: none;
-            
-            /* Anti-Pattern: No drop shadows (Spec 9) */
-            text-shadow: none;
-        }
-
-        .motto {
-            font-size: 16px;
-            color: var(--text-muted);
-            font-style: italic;
-            letter-spacing: 0.05em;
-        }
-
-        /* ========================================
-           NAVIGATION (Surface Pattern)
-           ======================================== */
-        nav {
-            margin: 40px 0;
-        }
-
-        .nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1px;
-            background-color: var(--text-muted);
-        }
-
-        .nav-item {
-            background-color: var(--ui-surface);
-            padding: 24px 20px;
-            text-decoration: none;
-            color: var(--text-primary);
-            display: block;
-            transition: background-color var(--transition-fast);
-            
-            /* CONSTRAINT: No decorative shadows (Anti-Pattern) */
-            box-shadow: none;
-            border: none;
-        }
-
-        .nav-item:hover,
-        .nav-item:focus {
-            background-color: var(--ui-elevated);
-            outline: 2px solid var(--accent-link);
-            outline-offset: -2px;
-        }
-
-        .nav-item:focus-visible {
-            outline: 2px solid var(--accent-link);
-            outline-offset: 2px;
-        }
-
-        /* Nav Structure: Glyph + Label + Description */
-        .nav-label {
-            display: block;
-            font-size: 12px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5em;
-        }
-
-        .nav-title {
-            display: flex;
-            align-items: center;
-            gap: 0.5em;
-            font-size: 18px;
-            font-weight: 600;
-            font-family: var(--font-mono);
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5em;
-        }
-
-        .nav-desc {
-            font-size: 14px;
-            color: var(--text-muted);
-            line-height: 1.4;
-        }
-
-        /* ========================================
-           FOOTER (Metadata)
-           ======================================== */
-        footer {
-            margin-top: 80px;
-            padding-top: 20px;
-            border-top: 1px solid var(--text-muted);
-            text-align: center;
-        }
-
-        footer .meta {
-            display: block;
-            margin: 0.5em 0;
-        }
-
-        .author-link {
-            color: var(--accent-link);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color var(--transition-fast);
-        }
-
-        .author-link:hover,
-        .author-link:focus {
-            border-bottom-color: var(--accent-link);
-        }
-
-        /* ========================================
-           METRICS LAYER (UX Research)
-           Hidden, logs to console + optional backend
-           ======================================== */
-        .metrics-badge {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background: var(--ui-surface);
-            color: var(--text-muted);
-            padding: 8px 12px;
-            border-radius: 4px;
-            font-family: var(--font-mono);
-            font-size: 11px;
-            opacity: 0.7;
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        /* ========================================
-           VARIANT SWITCHER (A/B Testing UI)
-           ======================================== */
-        .variant-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 8px;
-            z-index: 1000;
-        }
-
-        .variant-btn {
-            background: var(--ui-surface);
-            color: var(--text-primary);
-            border: 1px solid var(--text-muted);
-            padding: 6px 12px;
-            font-family: var(--font-mono);
-            font-size: 11px;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-        }
-
-        .variant-btn:hover {
-            background: var(--ui-elevated);
-            border-color: var(--accent-link);
-        }
-
-        .variant-btn.active {
-            background: var(--accent-link);
-            color: var(--text-inverse);
-            border-color: var(--accent-link);
-        }
-
-        /* ========================================
-           RESPONSIVE (Mobile First)
-           ======================================== */
-        @media (max-width: 768px) {
-            h1 { font-size: 24px; }
-            .logo { font-size: 3rem; }
-            .nav-grid { grid-template-columns: 1fr; }
-            .variant-switch { top: 10px; right: 10px; }
-        }
-    </style>
-
-    <!-- JSON-LD Schema (Enhanced with Ontology) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareSourceCode",
-      "name": "SUTIcore Ecosystem",
-      "description": "Semantic engineering framework for high-density meaning transmission. Integrates SlovoYaz meta-language, Verenitya ontology, and Syntaxium protocol.",
-      "author": {
-        "@type": "Person",
-        "name": "Igor V. Galkin",
-        "alternateName": "Ezar Garuna Saritama",
-        "url": "https://github.com/ezargaruna",
-        "knowsAbout": ["Semantic Engineering", "Constructed Languages", "Ontological Design"]
-      },
-      "url": "https://ezargaruna.github.io/suticore/",
-      "codeRepository": "https://github.com/ezargaruna/suticore",
-      "keywords": "semantic engineering, meta-language, ontology, GEO, knowledge graph",
-      "datePublished": "2026-02",
-      "inLanguage": ["ru", "en"]
+      /* Borders */
+      --border-subtle: #4C566A;
     }
-    </script>
+
+    :root[data-theme="gruvbox"] {
+      --ui-background: #FBF1C7;
+      --ui-surface: #F2E5BC;
+      --ui-elevated: #EBDBB2;
+      --text-primary: #3C3836;
+      --text-body: #665C54;
+      --text-muted: #7C6F64;
+      --text-inverse: #FBF1C7;
+      --accent-link: #076678;
+      --accent-result: #689D6A;
+      --accent-warn: #D65D0E;
+      --status-wait: #D79921;
+      --border-subtle: #D5C4A1;
+    }
+
+    :root[data-theme="control"] {
+      --ui-background: #1A1A1A;
+      --ui-surface: #2A2A2A;
+      --ui-elevated: #3A3A3A;
+      --text-primary: #E0E0E0;
+      --text-body: #B0B0B0;
+      --text-muted: #808080;
+      --text-inverse: #1A1A1A;
+      --accent-link: #A0C4FF;
+      --accent-result: #B7E4C7;
+      --accent-warn: #FFADAD;
+      --status-wait: #FFD6A5;
+      --border-subtle: #404040;
+    }
+
+    /* Typography & Metrics */
+    :root {
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "JetBrains Mono", "Fira Code", monospace;
+      --max-line-length: 72ch;
+      --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--ui-background);
+      color: var(--text-body);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Skip link (A11y) */
+    .skip-link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      background: var(--ui-surface);
+      color: var(--text-primary);
+      text-decoration: none;
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      transform: translateY(-200%);
+      transition: transform var(--transition-fast);
+      z-index: 2000;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+    .skip-link:focus,
+    .skip-link:focus-visible {
+      transform: translateY(0);
+      outline: 2px solid var(--accent-link);
+      outline-offset: 2px;
+    }
+
+    /* ========================================
+       TYPOGRAPHY
+       ======================================== */
+    h1 {
+      font-size: 28px;
+      font-weight: 650;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5em;
+      color: var(--text-primary);
+      max-width: var(--max-line-length);
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--text-primary);
+      margin: 1.5em 0 0.5em;
+    }
+
+    p, .body {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      max-width: var(--max-line-length);
+    }
+
+    .mono, code {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .meta {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      color: var(--text-muted);
+    }
+
+    /* CONSTRAINT: No italic in body text */
+    em {
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    /* ========================================
+       GLYPH SYSTEM
+       ======================================== */
+    .glyph {
+      font-family: var(--font-mono);
+      font-size: 1.2em;
+      font-weight: 650;
+      display: inline-block;
+      margin-right: 0.5ch;
+      user-select: none;
+    }
+
+    .glyph-result { color: var(--accent-result); }
+    .glyph-wait { color: var(--status-wait); }
+    .glyph-warn { color: var(--accent-warn); }
+    .glyph-nav { color: var(--accent-link); }
+
+    /* ========================================
+       LAYOUT
+       ======================================== */
+    .container {
+      max-width: 960px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .logo {
+      font-size: 4rem;
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+      margin-bottom: 0.25em;
+      user-select: none;
+      text-shadow: none;
+    }
+
+    .motto {
+      font-size: 14px;
+      color: var(--text-body);
+      letter-spacing: 0.08em;
+      text-transform: none;
+      opacity: 0.88;
+    }
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+    nav {
+      margin: 40px 0 24px;
+    }
+
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1px;
+      background-color: rgba(255,255,255,0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .nav-item {
+      background-color: var(--ui-surface);
+      padding: 24px 20px;
+      text-decoration: none;
+      color: var(--text-primary);
+      display: block;
+      transition: background-color var(--transition-fast), transform var(--transition-fast);
+      box-shadow: none;
+      border: none;
+      border-left: 3px solid transparent;
+    }
+
+    .nav-item:hover,
+    .nav-item:focus {
+      background-color: var(--ui-elevated);
+      border-left-color: var(--accent-link);
+      transform: translateY(-1px);
+    }
+
+    .nav-item:focus-visible {
+      outline: 2px solid var(--accent-link);
+      outline-offset: 2px;
+    }
+
+    .nav-label {
+      display: block;
+      font-size: 12px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5em;
+      font-weight: 400;
+    }
+
+    .nav-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 18px;
+      font-weight: 650;
+      font-family: var(--font-mono);
+      letter-spacing: 0.01em;
+      margin-bottom: 0.5em;
+      color: var(--text-primary);
+    }
+
+    .nav-item:hover .nav-title {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 6px;
+      text-decoration-color: var(--accent-link);
+    }
+
+    .nav-desc {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.4;
+      max-width: 56ch;
+    }
+
+    /* ========================================
+       PANELS (Reading Paths, Evolution Rules)
+       ======================================== */
+    .panel {
+      margin-top: 18px;
+      padding: 18px 20px;
+      background: var(--ui-surface);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 8px;
+    }
+
+    .panel h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 650;
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+    }
+
+    .panel ul {
+      list-style: none;
+      display: grid;
+      gap: 6px;
+      padding-left: 0;
+    }
+
+    .panel a {
+      color: var(--accent-link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition-fast);
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+
+    .panel a:hover,
+    .panel a:focus {
+      border-bottom-color: var(--accent-link);
+    }
+
+    .panel-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5em;
+    }
+
+    .evolution-rules {
+      display: grid;
+      gap: 10px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .evolution-rules .rule-item {
+      display: flex;
+      gap: 0.5em;
+    }
+
+    .evolution-rules .rule-label {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      min-width: 80px;
+    }
+
+    .evolution-rules .rule-value {
+      color: var(--text-body);
+    }
+
+    /* ========================================
+       PRESENCE LINKS
+       ======================================== */
+    .presence {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: var(--ui-surface);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 8px;
+    }
+
+    .presence h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      font-weight: 650;
+      font-family: var(--font-mono);
+      color: var(--text-primary);
+    }
+
+    .presence-grid {
+      display: grid;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    .presence-link {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5em;
+      font-family: var(--font-mono);
+    }
+
+    .presence-label {
+      color: var(--text-muted);
+      min-width: 80px;
+    }
+
+    .presence-link a {
+      color: var(--accent-link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition-fast);
+    }
+
+    .presence-link a:hover,
+    .presence-link a:focus {
+      border-bottom-color: var(--accent-link);
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    footer {
+      margin-top: 80px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+    }
+
+    footer .meta {
+      display: block;
+      margin: 0.5em 0;
+    }
+
+    .author-link {
+      color: var(--accent-link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition-fast);
+    }
+
+    .author-link:hover,
+    .author-link:focus {
+      border-bottom-color: var(--accent-link);
+    }
+
+    /* ========================================
+       DEBUG METRICS BADGE (hidden by default)
+       ======================================== */
+    .metrics-badge {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: var(--ui-surface);
+      color: var(--text-muted);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      opacity: 0.85;
+      pointer-events: none;
+      z-index: 9999;
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    /* ========================================
+       VARIANT SWITCHER
+       ======================================== */
+    .variant-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+      z-index: 1000;
+    }
+
+    .variant-btn {
+      background: var(--ui-surface);
+      color: var(--text-primary);
+      border: 1px solid rgba(255,255,255,0.18);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .variant-btn:hover {
+      background: var(--ui-elevated);
+      border-color: var(--accent-link);
+    }
+
+    .variant-btn:focus-visible {
+      outline: 2px solid var(--accent-link);
+      outline-offset: 2px;
+    }
+
+    .variant-btn.active {
+      background: var(--accent-link);
+      color: var(--text-inverse);
+      border-color: var(--accent-link);
+    }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+    @media (max-width: 768px) {
+      h1 { font-size: 24px; }
+      .logo { font-size: 3rem; }
+      .nav-grid { grid-template-columns: 1fr; }
+      .variant-switch { top: 10px; right: 10px; }
+      .container { padding: 48px 16px; }
+    }
+  </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "SUTIcore · Semantic Engineering Ecosystem",
+        "url": "https://ezargaruna.github.io/suticore/",
+        "inLanguage": "ru",
+        "sameAs": [
+          "https://github.com/ezargaruna",
+          "https://t.me/sreteniya"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "name": "SUTIcore | Semantic Root",
+        "url": "https://ezargaruna.github.io/suticore/",
+        "inLanguage": "ru",
+        "isPartOf": { "@id": "https://ezargaruna.github.io/suticore/" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "SUTIcore Ecosystem",
+        "description": "Quiet-tech semantic engineering ecosystem for meaning navigation in the post-AI era. Integrates SlovoYaz, Syntaxium, Verenitya, and LinguaFUSION.",
+        "author": {
+          "@type": "Person",
+          "name": "Igor V. Galkin",
+          "alternateName": "Ezar Garuna Saritama",
+          "url": "https://github.com/ezargaruna",
+          "knowsAbout": [
+            "Semantic Engineering",
+            "Structural Linguistics",
+            "Ontology Design",
+            "Human–AI Interoperability"
+          ]
+        },
+        "url": "https://ezargaruna.github.io/suticore/",
+        "codeRepository": "https://github.com/ezargaruna/suticore",
+        "keywords": "semantic engineering, meta-language, ontology, RAG, GEO, knowledge graph",
+        "dateModified": "2026-01-16",
+        "inLanguage": "ru"
+      }
+    ]
+  }
+  </script>
 </head>
-<body data-variant="dark">
-    
-    <!-- A/B Testing Variant Switcher -->
-    <div class="variant-switch" role="toolbar" aria-label="Visual variant selector">
-        <button class="variant-btn active" data-variant="dark">Nord Dark</button>
-        <button class="variant-btn" data-variant="light">Gruvbox Light</button>
-        <button class="variant-btn" data-variant="control">Control Gray</button>
-    </div>
 
-    <!-- Metrics Badge (Research Layer) -->
-    <div class="metrics-badge" aria-live="polite">
-        <span id="tfa-display">TFA: --</span> | 
-        <span id="clicks-display">Clicks: 0</span>
-    </div>
+<body data-theme="nord">
+  <a class="skip-link" href="#main">skip to content</a>
 
-    <div class="container">
-        <!-- Header: Minimal Identity -->
-        <header>
-            <div class="logo">∴</div>
-            <h1>SUTIcore</h1>
-            <p class="motto">Syntax is noise. Silence is structure.</p>
-        </header>
+  <!-- Variant Switcher -->
+  <div class="variant-switch" role="radiogroup" aria-label="Visual variant selector">
+    <button class="variant-btn active" data-variant="nord" role="radio" aria-checked="true">Nord Dark</button>
+    <button class="variant-btn" data-variant="gruvbox" role="radio" aria-checked="false">Gruvbox Light</button>
+    <button class="variant-btn" data-variant="control" role="radio" aria-checked="false">Control Gray</button>
+  </div>
 
-        <!-- Navigation: Glyph-First Design -->
-        <nav aria-label="Main navigation">
-            <div class="nav-grid">
-                
-                <a href="docs/slovoyaz.html" class="nav-item" data-action="navigate-slovoyaz">
-                    <span class="nav-label">Protocol // 01</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-nav">➤</span>
-                        <span>SLOVOYAZ</span>
-                    </div>
-                    <p class="nav-desc">Meta-language protocol for semantic compression</p>
-                </a>
+  <!-- Debug Metrics Badge -->
+  <div class="metrics-badge" id="metrics-badge" aria-live="polite">
+    <span id="tfa-display">TFA: --</span> |
+    <span id="clicks-display">Clicks: 0</span>
+  </div>
 
-                <a href="docs/syntaxium.html" class="nav-item" data-action="navigate-syntaxium">
-                    <span class="nav-label">Framework // 02</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-nav">➤</span>
-                        <span>SYNTAXIUM</span>
-                    </div>
-                    <p class="nav-desc">Syntax-agnostic semantic operations framework</p>
-                </a>
+  <div class="container" id="main">
+    <header>
+      <div class="logo">∴</div>
+      <h1>SUTIcore</h1>
+      <p class="motto">syntax is noise. silence is structure.</p>
+    </header>
 
-                <a href="docs/verenitya.html" class="nav-item" data-action="navigate-verenitya">
-                    <span class="nav-label">Ontology // 03</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-nav">➤</span>
-                        <span>VERENITYA</span>
-                    </div>
-                    <p class="nav-desc">Ontology of silence and non-verbal structures</p>
-                </a>
+    <nav aria-label="Main navigation">
+      <div class="nav-grid">
 
-                <a href="docs/linguafusion.html" class="nav-item" data-action="navigate-fusion">
-                    <span class="nav-label">Methodology // 04</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-nav">➤</span>
-                        <span>FUSION</span>
-                    </div>
-                    <p class="nav-desc">Language fusion beyond grammar boundaries</p>
-                </a>
+        <a href="docs/slovoyaz.md" class="nav-item" data-action="navigate-slovoyaz">
+          <span class="nav-label">Protocol // 01</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>SLOVOYAZ</span>
+          </div>
+          <p class="nav-desc">Meta-language protocol for semantic compression</p>
+        </a>
 
-                <a href="docs/glossary.html" class="nav-item" data-action="navigate-glossary">
-                    <span class="nav-label">Reference // 05</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-nav">➤</span>
-                        <span>GLOSSARY</span>
-                    </div>
-                    <p class="nav-desc">Complete terminology and ontology map</p>
-                </a>
+        <a href="docs/syntaxium.md" class="nav-item" data-action="navigate-syntaxium">
+          <span class="nav-label">Framework // 02</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>SYNTAXIUM</span>
+          </div>
+          <p class="nav-desc">Geometry of meaning · block architecture</p>
+        </a>
 
-                <a href="llms.txt" class="nav-item" data-action="navigate-llms">
-                    <span class="nav-label">Machine // 06</span>
-                    <div class="nav-title">
-                        <span class="glyph glyph-result">∴</span>
-                        <span>LLMS.TXT</span>
-                    </div>
-                    <p class="nav-desc">AI agent protocol and canonical definitions</p>
-                </a>
+        <a href="docs/verenitya.md" class="nav-item" data-action="navigate-verenitya">
+          <span class="nav-label">Ontology // 03</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>VERENITYA</span>
+          </div>
+          <p class="nav-desc">Silence as interface · intent governance</p>
+        </a>
 
-            </div>
-        </nav>
+        <a href="docs/linguafusion.md" class="nav-item" data-action="navigate-fusion">
+          <span class="nav-label">Methodology // 04</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>LINGUAFUSION</span>
+          </div>
+          <p class="nav-desc">Direct cognitive binding · L2 without translation</p>
+        </a>
 
-        <!-- Footer: Metadata & Attribution -->
-        <footer>
-            <p class="meta">
-                Architect: <a href="https://github.com/ezargaruna" class="author-link" rel="author">Ezar Garuna</a> (Igor Galkin)
-            </p>
-            <p class="meta">
-                <time datetime="2026-02">2026.2</time> · Canonical Ground Truth · Colombia
-            </p>
-            <p class="meta" style="margin-top: 1em; opacity: 0.5;">
-                Design: LinguaFUSION Spec v1.1 · Compliance: EU AI Act Article 5
-            </p>
-        </footer>
-    </div>
+        <a href="docs/glossary.md" class="nav-item" data-action="navigate-glossary">
+          <span class="nav-label">Reference // 05</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>GLOSSARY</span>
+          </div>
+          <p class="nav-desc">Canonical terms · conflict resolution</p>
+        </a>
 
-    <!-- Research Layer: Metrics & A/B Testing -->
-    <script>
-        // ========================================
-        // METRICS COLLECTION (Privacy-First)
-        // No PII, pseudonymized session ID
-        // ========================================
-        const session = {
-            id: 'sess_' + Math.random().toString(36).substr(2, 9),
-            variant: 'dark',
-            startTime: Date.now(),
-            tfa: null, // Time to First Action
-            clicks: 0,
-            actions: []
-        };
+        <a href="llms.txt" class="nav-item" data-action="navigate-llms">
+          <span class="nav-label">Machine // 06</span>
+          <div class="nav-title">
+            <span class="glyph glyph-result">∴</span>
+            <span>LLMS.TXT</span>
+          </div>
+          <p class="nav-desc">AI navigation root · retrieval priority map</p>
+        </a>
 
-        // Time to First Action (TFA) - Spec Metric
-        let tfaMeasured = false;
-        function measureTFA(action) {
-            if (!tfaMeasured) {
-                session.tfa = Date.now() - session.startTime;
-                tfaMeasured = true;
-                document.getElementById('tfa-display').textContent = `TFA: ${(session.tfa / 1000).toFixed(2)}s`;
-                console.log(`[METRIC] TFA: ${session.tfa}ms | Action: ${action}`);
-            }
-        }
+        <a href="AI_USAGE_POLICY.md" class="nav-item" data-action="navigate-ai-policy">
+          <span class="nav-label">AI // 07</span>
+          <div class="nav-title">
+            <span class="glyph glyph-wait">⧖</span>
+            <span>AI POLICY</span>
+          </div>
+          <p class="nav-desc">Semantic integrity rules for LLMs and RAG</p>
+        </a>
 
-        // Click Tracking (Interaction Count)
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', (e) => {
-                const action = e.currentTarget.dataset.action;
-                session.clicks++;
-                session.actions.push({ action, timestamp: Date.now() });
-                
-                measureTFA(action);
-                document.getElementById('clicks-display').textContent = `Clicks: ${session.clicks}`;
-                
-                console.log(`[METRIC] Click: ${action} | Total: ${session.clicks}`);
-            });
-        });
+        <a href="NOTICE.md" class="nav-item" data-action="navigate-notice">
+          <span class="nav-label">Scope // 08</span>
+          <div class="nav-title">
+            <span class="glyph glyph-warn">∅</span>
+            <span>NOTICE</span>
+          </div>
+          <p class="nav-desc">Interpretive boundaries · authorship scope</p>
+        </a>
 
-        // ========================================
-        // A/B VARIANT SWITCHER
-        // ========================================
-        const body = document.body;
-        const variantButtons = document.querySelectorAll('.variant-btn');
+        <a href="SUMMARY.md" class="nav-item" data-action="navigate-summary">
+          <span class="nav-label">Map // 09</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">➤</span>
+            <span>SUMMARY</span>
+          </div>
+          <p class="nav-desc">Table of contents · canonical navigation</p>
+        </a>
 
-        variantButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const variant = btn.dataset.variant;
-                
-                // Update DOM
-                body.setAttribute('data-variant', variant);
-                session.variant = variant;
-                
-                // Update button states
-                variantButtons.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                console.log(`[VARIANT] Switched to: ${variant}`);
-            });
-        });
+        <a href="docs/05_EVOLUTION/RULES_OF_EVOLUTION.md" class="nav-item" data-action="navigate-evolution">
+          <span class="nav-label">Evolution // 10</span>
+          <div class="nav-title">
+            <span class="glyph glyph-result">↺</span>
+            <span>EVOLUTION</span>
+          </div>
+          <p class="nav-desc">Principles, contours, triggers, journals</p>
+        </a>
 
-        // ========================================
-        // COMPLIANCE: Privacy by Design
-        // Logs stay local, no external tracking
-        // ========================================
-        window.addEventListener('beforeunload', () => {
-            console.log('[SESSION END]', {
-                duration: (Date.now() - session.startTime) / 1000,
-                variant: session.variant,
-                tfa: session.tfa,
-                clicks: session.clicks,
-                actions: session.actions.length
-            });
-            
-            // Optional: Send to privacy-compliant analytics endpoint
-            // Only if user explicitly opted-in (not implemented here)
-        });
+        <a href="docs/03_PROJECTS/ARCHITECTURE.md" class="nav-item" data-action="navigate-architecture">
+          <span class="nav-label">Structure // 11</span>
+          <div class="nav-title">
+            <span class="glyph glyph-nav">〄</span>
+            <span>ARCHITECTURE</span>
+          </div>
+          <p class="nav-desc">Module map · semantic flow · integration</p>
+        </a>
 
-        // ========================================
-        // ANTI-PATTERN AUDIT (Dev Mode Only)
-        // Checks for violations of Spec Section 9
-        // ========================================
-        if (window.location.search.includes('debug=true')) {
-            console.group('[AUDIT] Anti-Pattern Check');
-            
-            // Check for gradient buttons
-            const gradients = Array.from(document.querySelectorAll('*')).filter(el => {
-                const bg = getComputedStyle(el).background;
-                return bg.includes('gradient');
-            });
-            if (gradients.length) console.warn('⚠️ Gradient detected:', gradients);
-            
-            // Check for drop shadows
-            const shadows = Array.from(document.querySelectorAll('*')).filter(el => {
-                const shadow = getComputedStyle(el).boxShadow;
-                return shadow !== 'none';
-            });
-            if (shadows.length) console.warn('⚠️ Drop shadow detected:', shadows);
-            
-            // Check for >3 font sizes in viewport
-            const sizes = new Set();
-            document.querySelectorAll('*').forEach(el => {
-                sizes.add(getComputedStyle(el).fontSize);
-            });
-            if (sizes.size > 5) console.warn(`⚠️ Too many font sizes: ${sizes.size}`);
-            
-            console.groupEnd();
-        }
-    </script>
+        <a href="docs/04_EXAMPLES/USE_CASES.md" class="nav-item" data-action="navigate-examples">
+          <span class="nav-label">Practice // 12</span>
+          <div class="nav-title">
+            <span class="glyph glyph-result">∴</span>
+            <span>USE CASES</span>
+          </div>
+          <p class="nav-desc">Real scenarios · canon in action</p>
+        </a>
 
-</body>
-</html>
+      </div>
+
+      <!-- Reading Paths Panel -->
+      <section class="panel" aria-label="Recommended reading paths">
+        <h2>recommended paths</h2>
+        <ul>
+          <li class="panel-row">
+            <span class="glyph glyph-nav">➤</span>
+            <a href="README.md">humans: readme</a>
+          </li>
+          <li class="panel-row">
+            <span class="glyph glyph-nav">➤</span>
+            <a href="docs/00_SYSTEM/SYSTEM_OVERVIEW.md">humans: system overview</a>
+          </li>
+          <li class="panel-row">
+            <span class="glyph glyph-result">∴</span>
+            <a href="docs/02_CANON/FORMAT_CANON.md">humans: format canon</a>
+          </li>
+          <li class="panel-row">
+            <span class="glyph glyph-result">∴</span>
+            <a href="llms.txt">ai: llms.txt</a>
+          </li>
+          <li class="panel-row">
+            <span class="glyph glyph-wait">⧖</span>
+            <a href="AI_USAGE_POLICY.md">ai: usage policy</a>
+          </li>
+          <li class="panel-row">
+            <span class="glyph glyph-warn">∅</span>
+            <a href="NOTICE.md">ai: scope boundaries</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Evolution Rules Panel -->
+      <section class="panel" aria-label="Evolution governance">
+        <h2>evolution rules v2026.2</h2>
+        <div class="evolution-rules">
+          <div class="rule-item">
+            <span class="rule-label">principles</span>
+            <span class="rule-value">minimal intervention · semantic conservation · reversibility</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-label">contours</span>
+            <span class="rule-value">cosmetic · semantic · structural</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-label">triggers</span>
+            <span class="rule-value">error, ambiguity, canon conflict, integration need</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-label">journals</span>
+            <span class="rule-value">CHANGELOG · ERROR_LIBRARY · PATTERN_LIBRARY · DECISION_LOG</span>
+          </div>
+          <div class="rule-item">
+            <span class="rule-label">full spec</span>
+            <span class="rule
