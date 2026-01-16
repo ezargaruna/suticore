@@ -5,7 +5,7 @@
 
 ![semantic integrity](https://img.shields.io/badge/semantic_integrity-high-blueviolet)
 ![version](https://img.shields.io/badge/version-2026.2-blue)
-![license](https://img.shields.io/badge/license-cc_by_nc_sa-lightgrey)
+![license](https://img.shields.io/badge/license-cc_by_4.0-lightgrey)
 
 ---
 
@@ -51,6 +51,7 @@ purpose:
 public contents:
 - system overview
 - prime directive
+- role binding
 - decision stack
 - validation gates
 - format canon
@@ -241,6 +242,12 @@ rules:
 ai is a shadow.  
 not a voice.
 
+ai usage boundaries are defined in:
+- `AI_USAGE_POLICY.md`
+- `NOTICE.md`
+
+these do not modify the license.
+
 ---
 
 ## ethics and limits
@@ -286,22 +293,25 @@ fields:
 ---
 
 ## presence
-## presence
 - telegram (field): [@sreteniya](https://t.me/sreteniya)
 - github: [@ezargaruna](https://github.com/ezargaruna)
 - website: [ezargaruna.github.io/suticore](https://ezargaruna.github.io/suticore/)
 - contact (private): [@saritamah](https://t.me/saritamah)
-- email (formal): mailto:ezargaruna@gmail.com
+- email (formal): [ezargaruna@gmail.com](mailto:ezargaruna@gmail.com)
 
 ---
 
 ## license
-creative commons  
-by-nc-sa  
+this repository is licensed under the  
+creative commons attribution 4.0 international license (cc by 4.0).
 
-reuse with attribution  
-no commercial use  
-share alike  
+copyright © 2026  
+igor v. galkin  
+(aka ezar garuna saritama)
+
+see:
+- `LICENSE`
+- `NOTICE.md`
 
 ---
 
