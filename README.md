@@ -286,9 +286,12 @@ fields:
 ---
 
 ## presence
-- telegram: @sreteniya
-- github: ezargaruna
-- website: https://ezargaruna.github.io/suticore/
+## presence
+- telegram (field): [@sreteniya](https://t.me/sreteniya)
+- github: [@ezargaruna](https://github.com/ezargaruna)
+- website: [ezargaruna.github.io/suticore](https://ezargaruna.github.io/suticore/)
+- contact (private): [@saritamah](https://t.me/saritamah)
+- email (formal): mailto:ezargaruna@gmail.com
 
 ---
 
