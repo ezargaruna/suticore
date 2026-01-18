@@ -3,352 +3,464 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUTIcore | Semantic Engineering Ecosystem</title>
+  <title>SUTIcore | Fractal Semantic Ecosystem</title>
 
-  <!-- SEO & Meta -->
-  <meta name="title" content="SUTIcore | Semantic Engineering Ecosystem">
-  <meta name="description" content="SUTIcore: Экосистема смыслового инжиниринга. SlovoYaz, Syntaxium, Verenitya, LinguaFUSION. Канон Quiet Transitions (Sreteniya).">
+  <!-- Meta & SEO -->
+  <meta name="description" content="SUTIcore: Neuro-minimalist Fractal Ecosystem. Quiet-tech navigation of presence and meaning.">
   <meta name="author" content="Igor V. Galkin (Ezar Garuna Saritama)">
-  <link rel="canonical" href="https://ezargaruna.github.io/suticore/">
-
-  <!-- Technical Meta -->
-  <meta name="theme-color" content="#2E3440">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <!-- Minimal CSP (GitHub Pages-friendly) -->
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' https://ezargaruna.github.io;
-                 script-src 'self' 'unsafe-inline';
-                 style-src 'self' 'unsafe-inline';
-                 img-src 'self' data: https:;
-                 font-src 'self';
-                 connect-src 'self';
-                 frame-src 'none';
-                 base-uri 'self';">
 
   <style>
     /* ========================================
-       COLOR TOKENS & THEMES
+       NEURO-MINIMALISM 2.0: FRACTAL DESIGN
        ======================================== */
     :root {
-      /* Default: Nord Dark */
-      --ui-background: #2E3440;
-      --ui-surface: #3B4252;
-      --ui-elevated: #434C5E;
-      --text-primary: #ECEFF4;
-      --text-body: #AEB6C2;
-      --text-muted: #8FBCBB;
-      --text-inverse: #2E3440;
-      --accent-link: #88C0D0;
-      --accent-result: #A3BE8C;
-      --accent-warn: #D08770;
-      --status-wait: #EBCB8B;
-      --border-subtle: #4C566A;
-
-      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      --transition-fast: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+      /* Nord Dark (Default) */
+      --bg: #2E3440;
+      --surf: rgba(59, 66, 82, 0.7);
+      --elev: rgba(67, 76, 94, 0.8);
+      --p-text: #ECEFF4;
+      --s-text: #AEB6C2;
+      --m-text: #8FBCBB;
+      --accent: #88C0D0;
+      --accent-glow: rgba(136, 192, 208, 0.2);
+      --success: #A3BE8C;
+      --warn: #D08770;
+      --border: rgba(76, 86, 106, 0.4);
+      
+      --font-mono: "JetBrains Mono", "Fira Code", monospace;
+      --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+      --transition-fractal: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     body[data-theme="gruvbox"] {
-      --ui-background: #FBF1C7;
-      --ui-surface: #F2E5BC;
-      --ui-elevated: #EBDBB2;
-      --text-primary: #3C3836;
-      --text-body: #665C54;
-      --text-muted: #7C6F64;
-      --text-inverse: #FBF1C7;
-      --accent-link: #076678;
-      --accent-result: #689D6A;
-      --accent-warn: #D65D0E;
-      --status-wait: #D79921;
-      --border-subtle: #D5C4A1;
+      --bg: #FBF1C7;
+      --surf: rgba(242, 229, 188, 0.7);
+      --elev: rgba(235, 219, 178, 0.8);
+      --p-text: #3C3836;
+      --s-text: #665C54;
+      --m-text: #7C6F64;
+      --accent: #076678;
+      --accent-glow: rgba(7, 102, 120, 0.1);
+      --success: #689D6A;
+      --warn: #D65D0E;
+      --border: rgba(213, 196, 161, 0.6);
     }
 
     body[data-theme="control"] {
-      --ui-background: #1A1A1A;
-      --ui-surface: #2A2A2A;
-      --ui-elevated: #3A3A3A;
-      --text-primary: #E0E0E0;
-      --text-body: #B0B0B0;
-      --text-muted: #808080;
-      --text-inverse: #1A1A1A;
-      --accent-link: #A0C4FF;
-      --accent-result: #B7E4C7;
-      --accent-warn: #FFADAD;
-      --status-wait: #FFD6A5;
-      --border-subtle: #404040;
+      --bg: #050505;
+      --surf: rgba(20, 20, 20, 0.8);
+      --elev: rgba(30, 30, 30, 0.9);
+      --p-text: #F0F0F0;
+      --s-text: #808080;
+      --m-text: #505050;
+      --accent: #00E5FF;
+      --accent-glow: rgba(0, 229, 255, 0.15);
+      --success: #00FF95;
+      --warn: #FF4D4D;
+      --border: #1A1A1A;
     }
 
-    /* Reset & Base */
+    /* Base Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: var(--ui-background);
-      color: var(--text-body);
-      font-family: var(--font-body);
+      background-color: var(--bg);
+      color: var(--s-text);
+      font-family: var(--font-sans);
       line-height: 1.6;
-      transition: background-color var(--transition-fast), color var(--transition-fast);
+      transition: background-color var(--transition-fractal);
       overflow-x: hidden;
+      cursor: default;
+    }
+
+    .glass-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: radial-gradient(circle at 50% 50%, var(--accent-glow) 0%, transparent 80%);
+      z-index: -1;
+      pointer-events: none;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 80px 24px;
+      padding: 60px 24px;
     }
+
+    /* Animations */
+    .reveal { opacity: 0; transform: translateY(20px); transition: all var(--transition-fractal); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
 
     /* Header */
-    header { text-align: center; margin-bottom: 70px; }
-    .logo {
-      font-size: 4.5rem;
-      font-family: var(--font-mono);
-      color: var(--text-primary);
-      margin-bottom: 10px;
-      user-select: none;
+    header { text-align: left; margin-bottom: 80px; display: flex; align-items: center; gap: 30px; }
+    .logo-box {
+      width: 100px; height: 100px;
+      display: flex; justify-content: center; align-items: center;
+      background: var(--surf);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      font-size: 3rem;
+      color: var(--p-text);
+      box-shadow: 0 0 30px var(--accent-glow);
+      transition: transform 0.5s ease;
     }
-    h1 {
-      font-size: 32px;
-      font-weight: 700;
-      color: var(--text-primary);
-      letter-spacing: -0.01em;
-    }
-    .motto {
-      font-size: 14px;
-      letter-spacing: 0.12em;
-      opacity: 0.7;
-      text-transform: lowercase;
-    }
+    .logo-box:hover { transform: rotate(180deg); color: var(--accent); }
+    h1 { font-size: 48px; font-weight: 800; color: var(--p-text); letter-spacing: -0.05em; }
+    .motto { font-family: var(--font-mono); font-size: 12px; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.4em; }
 
-    /* Navigation Grid */
-    .nav-grid {
+    /* SRETENIYA_OS Hologram */
+    .os-shell {
+      background: var(--surf);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      margin-bottom: 80px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin-bottom: 40px;
+      grid-template-columns: 1fr 350px;
+      min-height: 450px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
     }
-    .nav-item {
-      background: var(--ui-surface);
-      padding: 24px;
-      border-radius: 12px;
-      text-decoration: none;
-      color: inherit;
-      border: 1px solid var(--border-subtle);
-      transition: all var(--transition-fast);
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+    .os-viz {
+      padding: 40px;
+      display: flex; justify-content: center; align-items: center;
+      position: relative;
+      border-right: 1px solid var(--border);
     }
-    .nav-item:hover {
-      background: var(--ui-elevated);
-      transform: translateY(-2px);
-      border-color: var(--accent-link);
+    .fractal-svg { width: 100%; height: 100%; max-width: 350px; }
+    .node-circle { fill: transparent; stroke: var(--accent); stroke-width: 1; stroke-dasharray: 2; transition: 0.5s; }
+    .node-active { stroke-width: 2; stroke-dasharray: none; filter: drop-shadow(0 0 5px var(--accent)); }
+    
+    .os-terminal {
+      padding: 30px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--s-text);
+      display: flex; flex-direction: column; gap: 10px;
+      background: rgba(0,0,0,0.2);
     }
-    .nav-label {
+    .term-entry { border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 5px; }
+    .prompt { color: var(--accent); font-weight: bold; margin-right: 8px; }
+
+    /* Fractal Hierarchy */
+    .fractal-layer {
+      margin-bottom: 100px;
+    }
+    .layer-title {
       font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--text-muted);
       text-transform: uppercase;
+      letter-spacing: 0.5em;
+      color: var(--m-text);
+      margin-bottom: 30px;
+      display: flex; align-items: center; gap: 20px;
     }
-    .nav-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-primary);
-      font-family: var(--font-mono);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .nav-desc { font-size: 14px; opacity: 0.8; }
+    .layer-title::after { content: ''; flex-grow: 1; height: 1px; background: var(--border); }
 
-    /* Panels */
-    .panel {
-      background: var(--ui-surface);
+    .grid-fractal {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    /* Cards 2.0 */
+    .node-card {
+      background: var(--surf);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all var(--transition-fractal);
+      position: relative;
+      overflow: hidden;
+    }
+    .node-card:hover {
+      border-color: var(--accent);
+      background: var(--elev);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .node-card::before {
+      content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      opacity: 0; transition: 0.5s;
+    }
+    .node-card:hover::before { opacity: 1; }
+
+    .card-meta { font-family: var(--font-mono); font-size: 10px; color: var(--m-text); margin-bottom: 12px; }
+    .card-h { font-size: 24px; font-weight: 700; color: var(--p-text); margin-bottom: 12px; font-family: var(--font-mono); }
+    .card-p { font-size: 15px; margin-bottom: 24px; opacity: 0.8; }
+
+    .expand-btn {
+      background: transparent; border: 1px solid var(--border);
+      color: var(--p-text); padding: 8px 16px; border-radius: 30px;
+      font-family: var(--font-mono); font-size: 11px; cursor: pointer;
+      transition: 0.3s;
+    }
+    .expand-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* Expanded Content */
+    .node-detail {
+      display: none;
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      animation: fadeIn 0.5s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    .code-snippet {
+      background: rgba(0,0,0,0.2);
+      padding: 16px;
       border-radius: 12px;
-      padding: 24px;
-      margin-bottom: 16px;
-      border: 1px solid var(--border-subtle);
-    }
-    .panel h2 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      color: var(--text-primary);
       font-family: var(--font-mono);
+      font-size: 12px;
+      margin-bottom: 16px;
+      color: var(--p-text);
+      border-left: 2px solid var(--accent);
     }
-    .panel ul { list-style: none; }
-    .panel li { margin-bottom: 8px; display: flex; align-items: baseline; gap: 10px; }
-    .panel a {
-      color: var(--accent-link);
-      text-decoration: none;
-      font-family: var(--font-mono);
-      font-size: 14px;
-    }
-    .panel a:hover { text-decoration: underline; }
-
-    /* Presence */
-    .presence-grid { display: flex; flex-wrap: wrap; gap: 20px; font-family: var(--font-mono); font-size: 13px; }
-    .presence-item span { color: var(--text-muted); margin-right: 8px; }
 
     /* Theme Switcher */
-    .theme-switcher {
+    .theme-dock {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 8px;
-      background: var(--ui-surface);
-      padding: 6px;
-      border-radius: 30px;
-      border: 1px solid var(--border-subtle);
-      z-index: 100;
+      top: 30px; right: 30px;
+      display: flex; gap: 10px;
+      background: var(--surf);
+      padding: 8px; border-radius: 40px;
+      border: 1px solid var(--border);
+      z-index: 1000;
     }
-    .theme-btn {
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      transition: transform 0.2s;
+    .t-dot {
+      width: 16px; height: 16px; border-radius: 50%; border: none; cursor: pointer;
+      transition: 0.3s; opacity: 0.5;
     }
-    .theme-btn:hover { transform: scale(1.2); }
-    .btn-nord { background: #88C0D0; }
-    .btn-gruv { background: #D79921; }
-    .btn-ctrl { background: #808080; }
+    .t-dot.active { opacity: 1; transform: scale(1.2); outline: 2px solid var(--p-text); outline-offset: 2px; }
+    .d-nord { background: #88C0D0; }
+    .d-gruv { background: #D79921; }
+    .d-ctrl { background: #FFFFFF; }
 
-    /* Glyph System */
-    .glyph { font-family: var(--font-mono); font-weight: bold; }
-    .glyph-nav { color: var(--accent-link); }
-    .glyph-res { color: var(--accent-result); }
-    .glyph-wait { color: var(--status-wait); }
+    footer { text-align: center; padding: 100px 0; font-family: var(--font-mono); font-size: 11px; opacity: 0.4; }
 
-    footer {
-      margin-top: 100px;
-      text-align: center;
-      font-size: 12px;
-      font-family: var(--font-mono);
-      opacity: 0.6;
-    }
-    footer a { color: inherit; text-decoration: underline; }
-
-    @media (max-width: 600px) {
-      .container { padding: 40px 20px; }
-      .nav-grid { grid-template-columns: 1fr; }
+    @media (max-width: 850px) {
+      .os-shell { grid-template-columns: 1fr; }
+      .os-viz { height: 300px; border-right: none; border-bottom: 1px solid var(--border); }
+      header { flex-direction: column; text-align: center; }
     }
   </style>
 </head>
 
 <body data-theme="nord">
 
-  <div class="theme-switcher">
-    <button class="theme-btn btn-nord" onclick="setTheme('nord')" title="Nord"></button>
-    <button class="theme-btn btn-gruv" onclick="setTheme('gruvbox')" title="Gruvbox"></button>
-    <button class="theme-btn btn-ctrl" onclick="setTheme('control')" title="Control"></button>
-  </div>
+  <div class="glass-bg"></div>
+
+  <nav class="theme-dock">
+    <button class="t-dot d-nord active" onclick="setTheme('nord')" id="dot-nord"></button>
+    <button class="t-dot d-gruv" onclick="setTheme('gruvbox')" id="dot-gruvbox"></button>
+    <button class="t-dot d-ctrl" onclick="setTheme('control')" id="dot-control"></button>
+  </nav>
 
   <div class="container">
-    <header>
-      <div class="logo">∴</div>
-      <h1>SUTIcore</h1>
-      <p class="motto">syntax is noise. silence is structure.</p>
+    
+    <header class="reveal">
+      <div class="logo-box">∴</div>
+      <div>
+        <h1>SUTIcore</h1>
+        <p class="motto">architect of meaning // quiet tech</p>
+      </div>
     </header>
 
-    <main>
-      <div class="nav-grid">
-        <!-- 
-          Используем точные пути согласно вашему скриншоту репозитория.
-          GitHub Pages чувствителен к регистру (Case Sensitive).
-        -->
-
-        <a href="docs/01_PROTOCOL/SLOVOYAZ.md" class="nav-item">
-          <span class="nav-label">Protocol // 01</span>
-          <div class="nav-title"><span class="glyph glyph-nav">➤</span> SLOVOYAZ</div>
-          <p class="nav-desc">Методика семантического сжатия и навигации смыслов.</p>
-        </a>
-
-        <a href="docs/01_PROTOCOL/SYNTAXIUM.md" class="nav-item">
-          <span class="nav-label">Framework // 02</span>
-          <div class="nav-title"><span class="glyph glyph-nav">➤</span> SYNTAXIUM</div>
-          <p class="nav-desc">Геометрия смысла: архитектура блоков и связей.</p>
-        </a>
-
-        <a href="docs/01_PROTOCOL/VERENITYA.md" class="nav-item">
-          <span class="nav-label">Ontology // 03</span>
-          <div class="nav-title"><span class="glyph glyph-nav">➤</span> VERENITYA</div>
-          <p class="nav-desc">Тишина как интерфейс. Управление интенциями.</p>
-        </a>
-
-        <a href="docs/LinguaFUSION.md" class="nav-item">
-          <span class="nav-label">Methodology // 04</span>
-          <div class="nav-title"><span class="glyph glyph-nav">➤</span> LINGUAFUSION</div>
-          <p class="nav-desc">Прямое когнитивное связывание без перевода.</p>
-        </a>
-
-        <a href="docs/GLOSSARY.md" class="nav-item">
-          <span class="nav-label">Reference // 05</span>
-          <div class="nav-title"><span class="glyph glyph-nav">➤</span> GLOSSARY</div>
-          <p class="nav-desc">Канонические термины и разрешение конфликтов.</p>
-        </a>
-
-        <a href="llms.txt" class="nav-item">
-          <span class="nav-label">Machine // 06</span>
-          <div class="nav-title"><span class="glyph glyph-res">∴</span> LLMS.TXT</div>
-          <p class="nav-desc">Корневой навигатор для ИИ и приоритеты RAG.</p>
-        </a>
+    <!-- OS SIMULATION -->
+    <div class="os-shell reveal">
+      <div class="os-viz">
+        <svg class="fractal-svg" viewBox="0 0 200 200">
+          <!-- Central Silence Node -->
+          <circle cx="100" cy="100" r="10" class="node-circle node-active" />
+          <!-- Fractal Branches -->
+          <line x1="100" y1="100" x2="100" y2="50" stroke="var(--border)" stroke-width="0.5" />
+          <line x1="100" y1="100" x2="150" y2="130" stroke="var(--border)" stroke-width="0.5" />
+          <line x1="100" y1="100" x2="50" y2="130" stroke="var(--border)" stroke-width="0.5" />
+          
+          <circle cx="100" cy="50" r="6" class="node-circle" />
+          <circle cx="150" cy="130" r="6" class="node-circle" />
+          <circle cx="50" cy="130" r="6" class="node-circle" />
+          
+          <!-- Orbits -->
+          <circle cx="100" cy="100" r="40" fill="none" stroke="var(--border)" stroke-width="0.2" stroke-dasharray="5" />
+          <circle cx="100" cy="100" r="70" fill="none" stroke="var(--border)" stroke-width="0.1" />
+        </svg>
       </div>
+      <div class="os-terminal" id="terminal">
+        <div class="term-entry"><span class="prompt">></span>SRETENIYA_OS: Status - Stable Resonance</div>
+        <div class="term-entry"><span class="prompt">></span>Loading Fractal Engine...</div>
+        <div class="term-entry"><span class="prompt">></span>Silence buffer initialized at 0.001ms</div>
+      </div>
+    </div>
 
-      <section class="panel">
-        <h2>Recommended Paths</h2>
-        <ul>
-          <li><span class="glyph glyph-nav">➤</span> <a href="README.md">human: readme</a></li>
-          <li><span class="glyph glyph-nav">➤</span> <a href="docs/00_SYSTEM/SYSTEM_OVERVIEW.md">human: system overview</a></li>
-          <li><span class="glyph glyph-res">∴</span> <a href="docs/02_CANON/FORMAT_CANON.md">human: format canon</a></li>
-          <li><span class="glyph glyph-res">∴</span> <a href="docs/03_PROJECTS/ARCHITECTURE.md">human: architecture map</a></li>
-          <li><span class="glyph glyph-wait">⧖</span> <a href="AI_USAGE_POLICY.md">ai: usage policy</a></li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <h2>Evolution & Practice</h2>
-        <ul>
-          <li><span class="glyph glyph-res">↺</span> <a href="docs/05_EVOLUTION/RULES_OF_EVOLUTION.md">rules of evolution</a></li>
-          <li><span class="glyph glyph-res">∴</span> <a href="docs/04_EXAMPLES/USE_CASES.md">use cases in action</a></li>
-          <li><span class="glyph glyph-nav">➤</span> <a href="SUMMARY.md">repository summary</a></li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <h2>Presence</h2>
-        <div class="presence-grid">
-          <div class="presence-item"><span>github</span><a href="https://github.com/ezargaruna" target="_blank">@ezargaruna</a></div>
-          <div class="presence-item"><span>telegram</span><a href="https://t.me/sreteniya" target="_blank">@sreteniya</a></div>
-          <div class="presence-item"><span>version</span>2026.1</div>
+    <!-- LEVEL 0: SYSTEM & ROOTS -->
+    <section class="fractal-layer reveal">
+      <div class="layer-title">Level 0 // The Root</div>
+      <div class="grid-fractal">
+        <div class="node-card" id="card-00">
+          <span class="card-meta">System Overview</span>
+          <h2 class="card-h">00_SYSTEM</h2>
+          <p class="card-p">Карта всей экосистемы. Понимание целого до начала работы с частями.</p>
+          <button class="expand-btn" onclick="toggleNode('card-00')">Details 〄</button>
+          <div class="node-detail">
+            <p>Здесь описываются базовые константы SUTIcore: время отклика, семантическая плотность и правила взаимодействия модулей.</p>
+            <div class="code-snippet">
+              root_integrity: 1.0;<br>
+              sync_mode: direct_resonance;<br>
+              access: <a href="docs/00_SYSTEM/SYSTEM_OVERVIEW.md" style="color:var(--accent)">SYSTEM_OVERVIEW.md</a>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="node-card" id="card-02">
+          <span class="card-meta">Format Standards</span>
+          <h2 class="card-h">02_CANON</h2>
+          <p class="card-p">Правила форматирования смыслов. Как превратить речь в действие через канон.</p>
+          <button class="expand-btn" onclick="toggleNode('card-02')">Details ∴</button>
+          <div class="node-detail">
+            <p>Каноны Quiet Transitions определяют, как структура текста влияет на восприятие его сути.</p>
+            <div class="code-snippet">
+              syntax_noise_limit: 0.05;<br>
+              semantic_depth: [3, 5, 8];<br>
+              canon: <a href="docs/02_CANON/FORMAT_CANON.md" style="color:var(--accent)">FORMAT_CANON.md</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 1: PROTOCOLS & CORE -->
+    <section class="fractal-layer reveal">
+      <div class="layer-title">Level 1 // The Core</div>
+      <div class="grid-fractal">
+        <div class="node-card" id="card-p1">
+          <span class="card-meta">Meta-language</span>
+          <h2 class="card-h">SLOVOYAZ</h2>
+          <p class="card-p">Протокол семантической компрессии. Максимум смысла при минимуме знаков.</p>
+          <button class="expand-btn" onclick="toggleNode('card-p1')">Details ➤</button>
+          <div class="node-detail">
+            <div class="code-snippet">
+              // Пример Словояза<br>
+              [i] -> (see) -> {truth};<br>
+              compress(syntax) => silence;
+            </div>
+            <p>Основной инструмент навигатора для быстрой сборки сложных концептов.</p>
+          </div>
+        </div>
+        <div class="node-card" id="card-p2">
+          <span class="card-meta">Geometric Architecture</span>
+          <h2 class="card-h">SYNTAXIUM</h2>
+          <p class="card-p">Проектирование визуальной топологии связей. Смысл как форма.</p>
+          <button class="expand-btn" onclick="toggleNode('card-p2')">Details 〄</button>
+          <div class="node-detail">
+            <p>Создание графов, где расстояние между узлами равно семантическому сходству.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEVEL 2: EVOLUTION & CHANGE -->
+    <section class="fractal-layer reveal">
+      <div class="layer-title">Level 2 // The Flow</div>
+      <div class="grid-fractal">
+        <div class="node-card" id="card-e1">
+          <span class="card-meta">Governance</span>
+          <h2 class="card-h">05_EVOLUTION</h2>
+          <p class="card-p">Правила развития системы. Как вносить изменения, не разрушая резонанс.</p>
+          <button class="expand-btn" onclick="toggleNode('card-e1')">Details ↺</button>
+          <div class="node-detail">
+            <p>Принципы минимального вмешательства и семантической консервации.</p>
+            <div class="code-snippet">
+              rule: reversible_change;<br>
+              trigger: ambiguity_threshold > 0.4;<br>
+              doc: <a href="docs/05_EVOLUTION/RULES_OF_EVOLUTION.md" style="color:var(--accent)">RULES_OF_EVOLUTION.md</a>
+            </div>
+          </div>
+        </div>
+        <div class="node-card" id="card-e2">
+          <span class="card-meta">Machine Interop</span>
+          <h2 class="card-h">AI_POLICY</h2>
+          <p class="card-p">Правила взаимодействия с ИИ. Сохранение человеческой интенции.</p>
+          <button class="expand-btn" onclick="toggleNode('card-e2')">Details ⧖</button>
+          <div class="node-detail">
+            <p>Как использовать LLM, не превращая живое в шум.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <p>
-        architect: <a href="https://github.com/ezargaruna">igor v. galkin</a> (ezar garuna saritama)
-      </p>
-      <p style="margin-top: 10px;">
-        license: <a href="LICENSE.md">cc by 4.0</a> · 2026 · canonical ground truth
-      </p>
+      <p>SUTIcore // Ecosystem of Meaning // v2026.2</p>
+      <p style="margin-top: 10px;">Architect: <a href="https://github.com/ezargaruna" style="color:var(--accent); text-decoration:none;">Ezar Garuna Saritama</a></p>
     </footer>
+
   </div>
 
   <script>
+    // Theme Management
     function setTheme(theme) {
       document.body.setAttribute('data-theme', theme);
       localStorage.setItem('suticore-theme', theme);
+      document.querySelectorAll('.t-dot').forEach(dot => {
+        dot.classList.toggle('active', dot.id === `dot-${theme}`);
+      });
+      addLog(`Theme set to: ${theme.toUpperCase()}`, 'info');
     }
 
-    // Load saved theme
-    const savedTheme = localStorage.getItem('suticore-theme') || 'nord';
-    setTheme(savedTheme);
+    // Node Interaction
+    function toggleNode(id) {
+      const card = document.getElementById(id);
+      const detail = card.querySelector('.node-detail');
+      const isVisible = detail.style.display === 'block';
+      
+      detail.style.display = isVisible ? 'none' : 'block';
+      addLog(`Exploration: ${id.replace('card-', '').toUpperCase()} - ${isVisible ? 'Collapsed' : 'Expanded'}`, 'nav');
+    }
 
-    console.log('%c SUTIcore %c Semantic Root Active ', 'background: #2E3440; color: #88C0D0; padding: 4px; border-radius: 4px 0 0 4px;', 'background: #88C0D0; color: #2E3440; padding: 4px; border-radius: 0 4px 4px 0;');
+    // Terminal Logging
+    const terminal = document.getElementById('terminal');
+    function addLog(text, type) {
+      const div = document.createElement('div');
+      div.className = 'term-entry';
+      div.innerHTML = `<span class="prompt">></span>${text}`;
+      terminal.appendChild(div);
+      terminal.scrollTop = terminal.scrollHeight;
+    }
+
+    // Simulation sequence
+    const bootLogs = [
+      "Mapping neuro-minimalist surface...",
+      "Fractal nodes: 12 detected.",
+      "Silence protocol: Resonating.",
+      "SUTIcore is ready for navigation."
+    ];
+    let bootIdx = 0;
+    function runBoot() {
+      if (bootIdx < bootLogs.length) {
+        addLog(bootLogs[bootIdx], 'boot');
+        bootIdx++;
+        setTimeout(runBoot, 1200);
+      }
+    }
+
+    // Reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Initialization
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('suticore-theme') || 'nord';
+      setTheme(savedTheme);
+      runBoot();
+    };
+
+    console.log('%c ∴ SUTIcore Fractal Hub ∴ %c Meaning Navigating ', 'background:#2E3440; color:#88C0D0; padding:5px; border-radius:3px 0 0 3px;', 'background:#88C0D0; color:#2E3440; padding:5px; border-radius:0 3px 3px 0;');
   </script>
 </body>
 </html>
