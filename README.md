@@ -7,10 +7,10 @@
 
 > "Code is Law. Semantics is the Logic."
 
-- 🛠 Current Focus: Developing SRETENIYA_OS & Syntaxium.
+- 🛠 Current Focus: SRETENIYA_OS & Syntaxium Deployment.
 - ❄️ Infrastructure: NixOS (Declarative Sovereignty).
 - 🧠 Research: Semantic Noise Reduction ($SNR$) in LLM environments.
-- 📍 Location: Colombia, Digital Citadel.
+- 📍 Location: Colombia.
 
 ![semantic integrity](https://img.shields.io/badge/semantic_integrity-high-blueviolet)
 ![version](https://img.shields.io/badge/version-2026.2-blue)
