@@ -3,6 +3,15 @@
 > in the post-ai era  
 > public canon built on suticore
 
+# system.init(Ezar_Garuna)
+
+> "Code is Law. Semantics is the Logic."
+
+- 🛠 Current Focus: Developing SRETENIYA_OS & Syntaxium.
+- ❄️ Infrastructure: NixOS (Declarative Sovereignty).
+- 🧠 Research: Semantic Noise Reduction ($SNR$) in LLM environments.
+- 📍 Location: Colombia, Digital Citadel.
+
 ![semantic integrity](https://img.shields.io/badge/semantic_integrity-high-blueviolet)
 ![version](https://img.shields.io/badge/version-2026.2-blue)
 ![license](https://img.shields.io/badge/license-cc_by_4.0-lightgrey)
