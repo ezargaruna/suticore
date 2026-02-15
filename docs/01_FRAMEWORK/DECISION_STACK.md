@@ -1,164 +1,175 @@
 ---
-title: decision memo ∴ thinking container  
+title: decision stack ∴ operational algorithm  
 version: 2026.x  
 mode: synaura · syntaxium  
 status: active canon  
 license: mit  
 ---
 
-# decision memo ∴ thinking container
+# decision stack ∴ operational algorithm
 
-sovereign thinking container.  
-structure for slowing decisions ⧖  
-noise reduction before action ∅  
+algorithm of interaction.  
+from impulse  
+to crystalline action ⟁  
 
-thought is held  
-not accelerated ∴  
-
----
-
-## 0. purpose ⟁
-
-slow decision speed ⧖  
-reduce cognitive noise ∅  
-ensure one clear step 〄  
-
-this is container  
-for thought ∴  
-not a plan.  
-
-clarity precedes  
-movement ⧖  
+noise reduced  
+through structural gates ∅  
 
 ---
 
-## 1. ∴ node
+## 0. execution sequence 〄
 
-name core decision.  
+stack runs  
+as linear  
+non-leaking flow:  
 
-one sentence only.  
-no context allowed ∅  
+∴ node  
+locate center.  
 
-pure decision kernel  
-without narrative ⟁  
+⧖ friction  
+measure resistance.  
 
----
+⟁ step  
+issue one action.  
 
-## 2. ⧖ context
+〄 closure  
+seal the loop.  
 
-maximum three facts.  
-
-no interpretation ∅  
-no emotion labeling ∅  
-
-fact ≠ assumption ⟁  
-
-unknowns remain  
-unfilled ∴  
+order violation →  
+semantic leak ∅  
 
 ---
 
-## 3. ⧖ friction check
+## 1. step 1 · ∴ node ⟁
 
-scan for:  
+objective ∴  
+identify center of mass.  
 
-internal resistance.  
-external pressure.  
-time distortion.  
+isolate primary intent.  
+remove context  
+and “why” ∅  
 
-if pressure detected ∴  
-⧖ pause  
-do not proceed ∅  
+define single  
+point of change.  
 
-return to silence  
-until stabilization ↺  
+if node absent ∴  
+∅ remain in silence.  
 
----
-
-## 4. ∴ criterion
-
-define what makes  
-decision valid.  
-
-one criterion only.  
-must be observable 〄  
-
-non-observable =  
-invalid criterion ∅  
+clarity threshold  
+precedes motion ⧖  
 
 ---
 
-## 5. ⟁ step
+## 2. step 2 · ⧖ friction ⧖
 
-one concrete action.  
+objective ∴  
+regulate environment  
+and inner state.  
+
+external ∴  
+pressure · fomo present?  
+
+internal ∴  
+resistance · fear active?  
+
+systemic ∴  
+informational noise detected?  
+
+if pressure > 0 ∴  
+⧖ pause.  
+execution blocked ∅  
+
+resume only  
+after stabilization ↺  
+
+---
+
+## 3. step 3 · ⟁ step 〄
+
+objective ∴  
+ground intent  
+in physical reality.  
+
+translate node  
+into concrete action.  
+
+constraints:  
 
 duration ≤ 10 minutes.  
-possible today ∴  
-reversible ↺  
+possible immediately ∴  
+reversible without debt ↺  
 
-no preparation chains ∅  
-no dependencies ∅  
+one step ∴  
+one change only.  
 
-step exists  
-in physical reality 〄  
-
----
-
-## 6. ➤ options
-
-➤ option a  
-➤ option b  
-➤ option c  
-
-no ranking ∅  
-no recommendation ∅  
-
-choice remains  
-with user ⟁  
+non-physical step →  
+invalid execution ∅  
 
 ---
 
-## 7. 〄 closure
+## 4. step 4 · 〄 closure ↺
 
-decision fixed.  
+objective ∴  
+stabilize new state.  
 
-next review date  
+execute step 〄  
+record observable trace.  
+
+set review anchor  
 only if required ⧖  
 
-no expansion ∅  
-no narrative continuation ∅  
+reset attention ∅  
+return to zero point.  
 
-closure stabilizes  
-attention field ∴  
+closure prevents  
+loop leakage ⟁  
 
 ---
 
-## 8. validation ↺
+## 5. failure protocols ∅
 
-check sequence:  
+if node blurred ∴  
+⧖ wait for crystallization.  
 
-one node?  
-one step?  
-no pressure?  
-canon respected?  
+if friction high ∴  
+∅ cancel stack.  
 
-if any fail ∴  
-↺ rebuild structure  
-or ∅ silence.  
+if step oversized ∴  
+↺ fragment  
+until minimal.  
 
-silence equals  
-valid outcome ⟁  
+absence of action ∴  
+valid stack result.  
+
+silence may equal  
+correct execution ⟁  
+
+---
+
+## 6. application fields ↺
+
+content ∴  
+what becomes published.  
+
+energy ∴  
+where attention flows.  
+
+system ∴  
+how protocols evolve.  
+
+same stack applies  
+across all layers ∴  
 
 ---
 
 ## status ∴
 
-public template  
+active canon  
 version ∴ 2026.x  
 vessel ∴ bogota node  
 architect ∴ ezar garuna (as a function)  
 
-thinking stabilized ⧖  
-container closed 〄  
+execution stabilized 〄  
+loop closed ↺  
 
-end of decision memo  
+end of decision stack  
