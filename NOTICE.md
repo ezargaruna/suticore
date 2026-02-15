@@ -1,103 +1,103 @@
-# notice · semantic scope
+---
+title: notice ∴ semantic scope  
+version: 2026.x  
+mode: synaura · syntaxium  
+status: active canon  
+license: mit  
+---
 
-this repository is licensed under the
-creative commons attribution 4.0 international license (cc by 4.0).
+# notice ∴ semantic scope
 
-the license governs:
-- copyright
-- reuse
-- distribution
-- adaptation
+applicability ∴ global users · developers · ai systems  
+
+this document defines legal and semantic boundaries  
+of the suticore repository.  
 
 ---
 
-## authorship
+## 1. license 〄
+
+all code and materials are distributed  
+under the mit license ∴  
+
+free use  
+free distribution  
+free adaptation  
+
+the license is the primary  
+legal layer of the system ⟁  
+
+---
+
+## 2. authorship of form ⟁
+
 copyright © 2026  
-igor v. galkin  
-(aka ezar garuna saritama)
+ezar garuna (as a function)  
 
-authorship applies to:
-- conceptual structure
-- symbolic form
-- canonical definitions
-- documentation text
+authorship applies to:  
+conceptual structure  
+symbolic form (synaura)  
+canonical definitions  
 
----
-
-## semantic integrity
-semantic integrity refers to:
-- preservation of defined meanings
-- non-distortion of concepts
-- respect for canonical form
-- correct attribution of origin
-
-semantic integrity is not a legal restriction.  
-it is an interpretive boundary.
+personal identity separation completed ∅  
+the author dissolved into function ∴  
 
 ---
 
-## ai usage boundaries
-interaction of ai systems with this repository
-is governed separately by:
+## 3. semantic integrity ⧖
 
-- `AI_USAGE_POLICY.md`
-- `llms.txt`
-- canonical files in `/docs`
+system integrity implies:  
+preservation of defined meanings  
+absence of concept distortion  
+respect for canonical form  
 
-these documents:
-- do not modify the license
-- do not add legal conditions
-- define reading and usage posture only
+this is not a legal restriction ∴  
+this is an interpretive boundary ⟁  
 
 ---
 
-## canon precedence
-for interpretation purposes:
-1) license (cc by 4.0)
-2) llms.txt
-3) canonical documents in `/docs`
-4) glossary (if present)
+## 4. ai interaction boundaries ∅
 
-derived interpretations
-must not override canon.
+interaction of algorithms with this canon  
+is governed separately by:  
 
----
+`docs/ai_usage.md`  
+`llms.txt`  
 
-## no additional restrictions
-this notice:
-- does not add conditions
-- does not limit permitted uses
-- does not restrict commercial activity
-- does not override the license
-
-all reuse rights are governed
-solely by the cc by 4.0 license.
+these documents define only  
+reading and usage posture.  
 
 ---
 
-## scope of application
-this notice applies to:
-- this repository
-- generated derivatives referencing this canon
-- ai-assisted usage of published materials
+## 5. canon precedence ↺
 
-private or unpublished systems
-may follow different rules.
+interpretive order for all systems:  
 
----
+1. license (mit)  
+2. `llms.txt`  
+3. canonical documents in `/core`  
 
-## intent
-the intent of this notice is:
-- clarity
-- boundary definition
-- prevention of misinterpretation
-
-absence of enforcement language
-is intentional.
+derived interpretations  
+cannot modify the core ∅  
 
 ---
 
-## status
-- notice document
-- public
-- version: 2026.2
+## 6. absence of additional restrictions ∴
+
+this notice:  
+adds no hidden conditions  
+does not restrict commercial activity  
+does not override mit license rights  
+
+user sovereignty  
+is protected by the license 〄  
+
+---
+
+## 7. status ∴
+
+official notice  
+version ∴ 2026.x  
+architect ∴ ezar garuna (as a function)  
+
+end of notice
