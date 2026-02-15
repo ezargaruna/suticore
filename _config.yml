@@ -1,12 +1,24 @@
-# SUTIcore · Sreteniya
-# Jekyll Configuration for GitHub Pages
-# quiet-tech · read-only canon
+# suticore ∴ sreteniya
+# jekyll configuration for github pages
+# mode: quiet-tech · syntaxium
 
 # --------------------------------------
-# Markdown processing
+# site metadata ⟁
+# --------------------------------------
+title: suticore ∴ sreteniya
+description: >
+  quiet-tech semantic engineering ecosystem.
+  language as navigation ∴
+  public canon for meaning regulation in the post-ai era ∅
+author: ezar garuna (as a function)
+
+url: https://ezargaruna.github.io
+baseurl: /suticore
+
+# --------------------------------------
+# markdown processing ⧖
 # --------------------------------------
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
@@ -15,7 +27,7 @@ kramdown:
   toc_levels: 1..3
 
 # --------------------------------------
-# Plugins
+# plugins 〄
 # --------------------------------------
 plugins:
   - jekyll-relative-links
@@ -25,24 +37,20 @@ relative_links:
   collections: true
 
 # --------------------------------------
-# Files included in build
-# (explicit canon exposure)
+# canonical exposure ∴
 # --------------------------------------
 include:
   - README.md
   - NOTICE.md
   - LICENSE.md
   - llms.txt
-
-  - docs/glossary.md
-
-  - docs/00_SYSTEM
-  - docs/01_FRAMEWORK
-  - docs/02_CANON
-  - docs/03_PROJECTS
+  - core/
+  - docs/
+  - protocols/
+  - lang/
 
 # --------------------------------------
-# Exclusions
+# exclusions ∅
 # --------------------------------------
 exclude:
   - vendor
@@ -53,34 +61,20 @@ exclude:
   - scripts
   - private
   - drafts
+  - REFACTOR_TZ_2026.md
 
 # --------------------------------------
-# Site metadata
-# --------------------------------------
-title: SUTIcore · Sreteniya
-description: >
-  Quiet-tech semantic engineering ecosystem.
-  Language as navigation.
-  Public canon for meaning regulation in the post-AI era.
-
-author: Igor V. Galkin (Ezar Garuna Saritama)
-
-url: https://ezargaruna.github.io
-baseurl: /suticore
-
-# --------------------------------------
-# SEO / indexing posture
+# indexing posture ⧖
 # --------------------------------------
 timezone: America/Bogota
 lang: en
 
-# Quiet-by-default:
-# no blog, no feed, no pagination
+# quiet-by-default:
 show_excerpts: false
 
 # --------------------------------------
-# Theme
+# theme ∅
 # --------------------------------------
-# Minimal by design.
-# Theme intentionally omitted.
-# This repository is documentation-first.
+# minimal by design.
+# theme intentionally omitted.
+# this repository is documentation-first ∴
