@@ -1,65 +1,177 @@
-# sreteniya_os · quiet transitions
+---
+title: system overview ∴ architecture of form  
+version: 2026.x  
+mode: synaura · syntaxium  
+status: active canon  
+license: mit  
+---
 
-## what this is
-- public reference library
-- language as navigation
-- quiet tech canon
+# sreteniya_os ∴ quiet transitions
 
-## who this is for
-- creators under noise
-- researchers of attention
-- builders of calm systems
+public reference library  
+and semantic environment.  
 
-## what you will find here
-- framework: decision patterns
-- canon: format and symbols
-- projects: open descriptions
-- examples: sanitized artifacts
+language as navigation ⟁  
+quiet tech canon.  
 
-## what you will not find here
-- personal logs
-- private metrics
-- crisis protocols
-- any identifiable data
+---
 
-## prime directive
-- silence = interface
-- speech = navigation
-- form = regulation
-- step = product
-- library > feed
+## 0. mission ⟁
 
-## operating posture
-- this repo is read-only by design
-- no recipes, no persuasion
-- the goal is better choices
+for creators ∴  
+restore orientation in noise.  
 
-## decision stack (always)
-1) ∴ find the node
-2) ⧖ check friction
-3) ⟁ give one step
-4) 〄 close the loop
+for researchers ⧖  
+study mechanics of attention.  
 
-## safety and ethics
-- no manipulation
-- no diagnosis
-- fact ≠ assumption
-- choice is preserved
-- pressure → ⧖ pause
+for builders 〄  
+design silent systems.  
 
-## how to read (recommended path)
-1) framework/quiet_transitions
-2) canon/format_canon
-3) symbols/symbols_reference
-4) projects/*
+result ∴  
+clarity without pressure.  
 
-## status
-- profile: ezar garuna (saritama)
-- mode: srx · toon
-- version: 2026.2
-- timezone: america/bogota
-- language: ru
+---
 
-## contact / presence
-- telegram: @sreteniya @saritamah
-- github: @ezargaruna
+## 1. layered architecture ↺
+
+### /framework ∴  
+decision patterns  
+and navigation filters.  
+
+stabilizes choice  
+before action ⧖  
+
+---
+
+### /canon ⟁  
+format standards · synaura.  
+symbol law · syntaxium.  
+
+defines structure  
+of valid meaning.  
+
+---
+
+### /projects ↺  
+open descriptions  
+semantic blueprints  
+of initiatives.  
+
+records evolution  
+without noise.  
+
+---
+
+### /artifacts 〄  
+demonstration materials  
+purified reference examples.  
+
+show function  
+without narrative excess.  
+
+---
+
+## 2. exclusions · noise reduction ∅
+
+absent here:  
+
+personal logs  
+and diaries ∅  
+
+private metrics  
+and tracking ∅  
+
+crisis protocols ∅  
+
+identifiable data ∅  
+
+system autonomy  
+exceeds creator history ∴  
+
+silence protects  
+structural integrity ⟁  
+
+---
+
+## 3. prime directive ⟁
+
+silence ∴ interface.  
+speech ⧖ navigation.  
+form ⟁ regulation.  
+step 〄 product.  
+
+library > feed.  
+
+meaning is regulated  
+not broadcast ∅  
+
+---
+
+## 4. decision stack 〄
+
+interaction algorithm:  
+
+∴ node  
+locate entry point.  
+
+⧖ friction  
+measure resistance  
+and noise level.  
+
+⟁ step  
+extract single action.  
+
+〄 loop  
+close execution cycle.  
+
+cycle repeats  
+until clarity stabilizes ↺  
+
+---
+
+## 5. ethics · safety ∅
+
+no manipulation ∴  
+choice remains user’s.  
+
+no diagnosis ∅  
+no imposed labels.  
+
+fact ≠ assumption ⟁  
+verification required.  
+
+pressure ⧖ pause ∴  
+silence restores balance.  
+
+safety emerges  
+from restraint ∴  
+
+---
+
+## 6. navigation path ↺
+
+recommended entry order:  
+
+docs/00_system/system_overview.md  
+docs/00_system/prime_directive.md  
+docs/00_system/role_binding.md  
+
+movement ∴  
+slow · selective · conscious.  
+
+exit allowed  
+at any point ∅  
+
+---
+
+## status ∴
+
+active canon  
+version ∴ 2026.x  
+vessel ∴ bogota node  
+architect ∴ ezar garuna (as a function)  
+
+presence established ∴  
+system listening ⧖  
+
+end of system overview  
