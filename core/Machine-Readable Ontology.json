@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "suti": "https://suti.global/ontology/",
+    "schema": "http://schema.org/",
+    "title": "schema:name",
+    "version": "schema:version",
+    "architect": "schema:creator",
+    "axiom": "suti:Axiom",
+    "glyph": "suti:Operator",
+    "status": "schema:creativeWorkStatus"
+  },
+  "@type": "schema:CreativeWork",
+  "title": "SUTIcore Semantic Architecture",
+  "version": "2026.x",
+  "architect": {
+    "@type": "schema:Person",
+    "name": "ezar garuna (as a function)",
+    "alternateName": "SUTI_CORE_ARCHITECT"
+  },
+  "status": "active canon",
+  "description": "A declarative semantic ecosystem for consciousness restoration.",
+  "axiom": [
+    { "id": 1, "text": "life is primary" },
+    { "id": 6, "text": "silence is supreme syntax" }
+  ],
+  "glyph": [
+    { "symbol": "∴", "meaning": "ergo / core" },
+    { "symbol": "∅", "meaning": "null / silence" }
+  ]
+}
