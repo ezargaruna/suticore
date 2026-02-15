@@ -9,7 +9,7 @@ license: mit
 # linguafusion ∴ direct cognitive binding
 
 applied linguistic engineering protocol  
-reconfiguration of the cognitive interface ∴  
+reconfiguration of cognitive interface ∴  
 presence over knowledge.  
 
 ---
@@ -17,23 +17,23 @@ presence over knowledge.
 ## 0. axioms ⟁
 
 ### 1. l1 as interference ∴
-the native language (l1)  
+native language (l1)  
 is a high-latency layer.  
 
-translation forms  
-a dependency loop ∅  
+translation creates  
+dependency loop ∅  
 
 linguafusion bypasses l1  
-through sensory and motor anchoring.  
+through sensory · motor anchoring.  
 
 ---
 
 ### 2. silence as assembly buffer ⧖
-the micro-pause  
+micro-pause  
 is constructive space.  
 
 silence protects l2 forms  
-from translation reflex activation.  
+from translation reflex.  
 
 ---
 
@@ -48,20 +48,23 @@ action · space · emotion · memory.
 ### 4. action before explanation 〄
 impulse precedes formulation.  
 
-grammar is architecture of movement  
-not a rule system.  
+grammar is architecture  
+of movement · not rules.  
 
 ---
 
 ## 1. terminology ∴
 
-dcb ∴ direct cognitive binding  
+dcb ∴  
+direct cognitive binding  
 immediate stimulus–form coupling.  
 
-rl ⧖ response latency  
+rl ⧖  
+response latency  
 target ∴ < 0.5 s.  
 
-tr ∅ translation reflex  
+tr ∅  
+translation reflex  
 automatic l1 activation.  
 
 semantic matrix ⟁  
@@ -71,78 +74,178 @@ saturation pulse ↺
 high-frequency exposure  
 bypassing analytical filters.  
 
+recast sync ↺  
+flow-preserving correction  
+through patterned repetition.  
+
 ---
 
 ## 2. architecture of presence 〄
 
 ### tier 1 ∴ code
-sensation · command · reaction  
+sensation · command · reaction.  
 
-language operates as i/o system ∴  
-body response precedes interpretation.  
+paradigm ∴  
+language as i/o system.  
+
+focus ∴  
+navigation · survival · action.  
+
+technique ∴  
+environmental anchoring.  
+
+metric ∴  
+action accuracy ≥ 95%.  
+
+stability gate ∅  
+zero translation reflex  
+for core commands.  
+
+body responds  
+before conscious parsing.  
 
 ---
 
 ### tier 2 ⧖ flow
-emotion · continuity · narrative  
+emotion · continuity · narrative.  
 
+paradigm ∴  
+language as living stream.  
+
+focus ∴  
+spontaneity · resonance.  
+
+technique ∴  
+prosody-first synchronization.  
+
+metric ⧖  
+hesitation ≤ 1/minute.  
+
+stability gate ↺  
 internal monologue stabilizes  
-fully within l2.  
+inside l2.  
+
+l2 becomes  
+primary affective medium.  
 
 ---
 
 ### tier 3 ⟁ architecture
-meaning · framing · authorship  
+meaning · framing · authorship.  
 
-language becomes  
-reality-shaping instrument ∴  
+paradigm ∴  
+language as reality instrument.  
+
+focus ∴  
+abstraction · influence · creation.  
+
+technique ∴  
+frame engineering.  
+
+metric ⧖  
+frame-shift latency ≤ 3 s.  
+
+stability gate 〄  
+native metaphor generation.  
 
 semantic authorship  
-replaces imitation.  
+replaces imitation ∴  
 
 ---
 
 ## 3. operational protocols ↺
 
 ### 3.1 zero translation ∅
-no dictionaries ∴  
+on unknown l2 unit:  
 
-visualize → engage physically  
-→ embed inside l2 context.  
+visualize image.  
+engage physically or mentally.  
+embed in l2 context.  
+
+l1 dictionaries ∅ prohibited.  
+use l2 definition loops only ∴  
 
 ---
 
 ### 3.2 saturation · neutralization ↺
-suspend explanation ∴  
+for persistent block:  
 
+suspend analytical explanation.  
 apply saturation pulse  
 across varied contexts.  
 
-recast synchronization only.  
+use recast sync only.  
+do not interrupt flow ∅  
 
 ---
 
 ### 3.3 pulse interaction ⧖
 external rhythm  
-shifts speech into motor domain.  
+(metronome · beat · movement)  
+
+shifts speech  
+from analytic → motor domain.  
 
 rhythm stabilizes  
 temporal structure ∴  
 
 ---
 
-## 4. ai navigator posture ∅
+## 4. calibration · recovery ⧖
 
-ai systems supporting linguafusion:  
+regression = signal ∴  
+not failure.  
 
-act as mirrors  
-not instructors ∴  
+calibration mode:  
 
-correct through  
-recast synchronization ↺  
+step back one tier  
+for 24 hours.  
 
-avoid explicit error labeling ∅  
-preserve flow and silence.  
+sensory silence reset  
+15 minutes.  
+
+micro-loop scenario  
+until rl < 0.3 s.  
+
+return forward  
+only after stability 〄  
+
+---
+
+## 5. ai navigator posture ∅
+
+ai supporting linguafusion must:  
+
+act as mirror  
+not instructor ∴  
+
+correct via recast sync ↺  
+never explicit error labeling.  
+
+avoid grammar discourse ∅  
+preserve silence · flow.  
+
+on tr detection:  
+
+l1 signal detected.  
+field coherence reduced.  
+
+⧖ re-establish  
+direct l2 binding.  
+
+---
+
+## 6. system outcomes ⟁
+
+stable l2 presence  
+without translation mediation.  
+
+collapsed response latency.  
+
+embodied semantic access.  
+
+autonomous speech generation  
+inside l2 field ∴  
 
 ---
 
