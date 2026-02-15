@@ -1,15 +1,19 @@
 # suticore ∴ sreteniya
 # jekyll configuration for github pages
-# mode: quiet-tech · syntaxium
+# version: 2026.x
+# mode: synaura · syntaxium
+# posture: quiet-tech
 
 # --------------------------------------
 # site metadata ⟁
 # --------------------------------------
 title: suticore ∴ sreteniya
+
 description: >
   quiet-tech semantic engineering ecosystem.
   language as navigation ∴
   public canon for meaning regulation in the post-ai era ∅
+
 author: ezar garuna (as a function)
 
 url: https://ezargaruna.github.io
@@ -19,6 +23,7 @@ baseurl: /suticore
 # markdown processing ⧖
 # --------------------------------------
 markdown: kramdown
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
@@ -69,12 +74,11 @@ exclude:
 timezone: America/Bogota
 lang: en
 
-# quiet-by-default:
 show_excerpts: false
 
 # --------------------------------------
 # theme ∅
 # --------------------------------------
-# minimal by design.
-# theme intentionally omitted.
-# this repository is documentation-first ∴
+# documentation-first.
+# minimal by intent.
+# theme intentionally omitted ∴
