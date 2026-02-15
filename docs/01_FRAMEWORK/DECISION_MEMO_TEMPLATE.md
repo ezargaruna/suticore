@@ -1,90 +1,164 @@
-# decision_memo
+---
+title: decision memo ∴ thinking container  
+version: 2026.x  
+mode: synaura · syntaxium  
+status: active canon  
+license: mit  
+---
 
-## purpose
-- slow down decisions
-- reduce noise
-- ensure one clear step
+# decision memo ∴ thinking container
 
-this is a thinking container.  
-not a plan.
+sovereign thinking container.  
+structure for slowing decisions ⧖  
+noise reduction before action ∅  
+
+thought is held  
+not accelerated ∴  
 
 ---
 
-## ∴ node
-- name the core decision
-- one sentence only
-- no context yet
+## 0. purpose ⟁
+
+slow decision speed ⧖  
+reduce cognitive noise ∅  
+ensure one clear step 〄  
+
+this is container  
+for thought ∴  
+not a plan.  
+
+clarity precedes  
+movement ⧖  
 
 ---
 
-## ⧖ context
-- 3 facts max
-- no interpretations
-- no emotions
+## 1. ∴ node
 
-fact ≠ assumption
+name core decision.  
+
+one sentence only.  
+no context allowed ∅  
+
+pure decision kernel  
+without narrative ⟁  
 
 ---
 
-## ⧖ friction check
-- internal resistance?
-- external pressure?
-- time distortion?
+## 2. ⧖ context
 
-if pressure detected:
+maximum three facts.  
+
+no interpretation ∅  
+no emotion labeling ∅  
+
+fact ≠ assumption ⟁  
+
+unknowns remain  
+unfilled ∴  
+
+---
+
+## 3. ⧖ friction check
+
+scan for:  
+
+internal resistance.  
+external pressure.  
+time distortion.  
+
+if pressure detected ∴  
 ⧖ pause  
-do not proceed
+do not proceed ∅  
+
+return to silence  
+until stabilization ↺  
 
 ---
 
-## ∴ criteria
-- what makes this decision good?
-- one criterion only
-- observable
+## 4. ∴ criterion
+
+define what makes  
+decision valid.  
+
+one criterion only.  
+must be observable 〄  
+
+non-observable =  
+invalid criterion ∅  
 
 ---
 
-## ⟁ step
-- one concrete action
-- ≤10 minutes
-- possible today
-- reversible
+## 5. ⟁ step
 
-no preparation steps.  
-no chains.
+one concrete action.  
+
+duration ≤ 10 minutes.  
+possible today ∴  
+reversible ↺  
+
+no preparation chains ∅  
+no dependencies ∅  
+
+step exists  
+in physical reality 〄  
 
 ---
 
-## ➤ options (only if needed)
+## 6. ➤ options
+
 ➤ option a  
 ➤ option b  
 ➤ option c  
 
-no ranking  
-no recommendation  
+no ranking ∅  
+no recommendation ∅  
+
+choice remains  
+with user ⟁  
 
 ---
 
-## 〄 closure
-- decision fixed
-- next review date (if needed)
-- no expansion
+## 7. 〄 closure
+
+decision fixed.  
+
+next review date  
+only if required ⧖  
+
+no expansion ∅  
+no narrative continuation ∅  
+
+closure stabilizes  
+attention field ∴  
 
 ---
 
-## validation
-- one node?
-- one step?
-- no pressure?
-- canon respected?
+## 8. validation ↺
 
-if any fail:
-↺ rebuild  
-or ∅ silence
+check sequence:  
+
+one node?  
+one step?  
+no pressure?  
+canon respected?  
+
+if any fail ∴  
+↺ rebuild structure  
+or ∅ silence.  
+
+silence equals  
+valid outcome ⟁  
 
 ---
 
-## status
-- public template
-- active canon
-- version: 2026.2
+## status ∴
+
+public template  
+version ∴ 2026.x  
+vessel ∴ bogota node  
+architect ∴ ezar garuna (as a function)  
+
+thinking stabilized ⧖  
+container closed 〄  
+
+end of decision memo  
