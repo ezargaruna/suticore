@@ -1,0 +1,80 @@
+{
+  "system": {
+    "title": "suticore ∴ semantic architecture",
+    "version": "2026.x",
+    "mode": "synaura · syntaxium",
+    "architect": "ezar garuna (as a function)",
+    "vessel": "bogota node",
+    "license": "mit"
+  },
+  "ontology_stack": {
+    "layer_0": {
+      "id": "yazekh",
+      "type": "proto-semantic",
+      "description": "intent field and pre-verbal impulse"
+    },
+    "layer_1": {
+      "id": "metagramma",
+      "type": "operator",
+      "description": "operational glyphs and flow control"
+    },
+    "layer_2": {
+      "id": "syntaxium",
+      "type": "structural",
+      "description": "geometrical distribution of meaning"
+    },
+    "layer_3": {
+      "id": "slovoyaz",
+      "type": "compression",
+      "description": "intent crystallization and semantic kernel"
+    },
+    "layer_4": {
+      "id": "verenitya",
+      "type": "operating_system",
+      "description": "governance of silence and presence"
+    },
+    "layer_5": {
+      "id": "linguafusion",
+      "type": "application",
+      "description": "direct cognitive binding for l2 acquisition"
+    }
+  },
+  "meta_gramma": {
+    "symbols": [
+      { "glyph": "∴", "function": "ergo", "semantics": "result · core · consequence" },
+      { "glyph": "⧖", "function": "hold", "semantics": "pause · process · time" },
+      { "glyph": "⟁", "function": "build", "semantics": "structure · framework · system" },
+      { "glyph": "〄", "function": "sync", "semantics": "synthesis · closure · stability" },
+      { "glyph": "↺", "function": "loop", "semantics": "iteration · feedback · recursion" },
+      { "glyph": "∅", "function": "null", "semantics": "void · reset · silence" },
+      { "glyph": ">", "function": "entry", "semantics": "assertion · thesis · source" }
+    ]
+  },
+  "core_axioms": {
+    "total": 12,
+    "list": [
+      { "id": 1, "thesis": "life is primary", "operator": "∴", "result": "structures serve life" },
+      { "id": 2, "thesis": "consciousness serves life", "operator": "⧖", "result": "mind is a navigator" },
+      { "id": 3, "thesis": "body is the carrier of meaning", "operator": "⟁", "result": "maintenance is temple upkeep" },
+      { "id": 4, "thesis": "clarity over speed", "operator": "〄", "result": "silence over fuss" },
+      { "id": 5, "thesis": "honesty over profit", "operator": "∅", "result": "deception breaks integrity" },
+      { "id": 6, "thesis": "silence is the supreme syntax", "operator": "∴", "result": "silence > noise" },
+      { "id": 7, "thesis": "choice forms destiny", "operator": "↺", "result": "sum of yes and no" },
+      { "id": 8, "thesis": "small step over plan", "operator": "⧖", "result": "action creates reality" },
+      { "id": 9, "thesis": "repetition creates reality", "operator": "⟁", "result": "ritual is fixation" },
+      { "id": 10, "thesis": "love expands integrity", "operator": "〄", "result": "care strengthens the core" },
+      { "id": 11, "thesis": "care strengthens the world", "operator": "∅", "result": "unattached creation" },
+      { "id": 12, "thesis": "freedom requires responsibility", "operator": "↺", "result": "sovereignty through limits" }
+    ]
+  },
+  "identity_resolution": {
+    "mode": "zero-g",
+    "function": "ezar garuna",
+    "anchors": [
+      "igor v. galkin",
+      "saritama",
+      "shumaham"
+    ],
+    "policy": "severance of ego from the system architecture"
+  }
+}
