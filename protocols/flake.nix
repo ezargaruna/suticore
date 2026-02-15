@@ -11,7 +11,7 @@
       let
         pkgs = import nixpkgs { inherit system; };
 
-        # ∴ public semantic environment (canonical · non-sensitive)
+        # ∴ canonical public semantic environment
         sutiEnv = {
           SUTI_ARCHITECT = "ezar garuna (as a function)";
           SUTI_MODE = "quiet-tech";
@@ -19,23 +19,24 @@
           SUTI_STATUS = "active canon";
           SUTI_VECTOR = "silence → structure → step";
           SUTI_LICENSE = "mit";
+          SUTI_RUNTIME = "zero-g";
         };
 
       in {
+
         # ⟁ development shell
         devShells.default = pkgs.mkShell {
-
           buildInputs = with pkgs; [
-            # base tooling
+            # base
             nodejs_20
             jq
             git
 
-            # documentation
+            # docs
             pandoc
             mdbook
 
-            # semantic linting
+            # semantic lint
             vale
             markdownlint-cli
 
@@ -53,6 +54,7 @@
             export SUTI_STATUS="${sutiEnv.SUTI_STATUS}"
             export SUTI_VECTOR="${sutiEnv.SUTI_VECTOR}"
             export SUTI_LICENSE="${sutiEnv.SUTI_LICENSE}"
+            export SUTI_RUNTIME="${sutiEnv.SUTI_RUNTIME}"
 
             suti-init
             suti-check
@@ -75,20 +77,12 @@
           suti-check = pkgs.writeShellScriptBin "suti-check" ''
             echo "⧖ validating semantic shell"
 
-            if [ -z "$SUTI_ARCHITECT" ]; then
-              echo "∅ architect undefined"
-              exit 1
-            fi
-
-            if [ -z "$SUTI_MODE" ]; then
-              echo "∅ mode undefined"
-              exit 1
-            fi
-
-            if [ -z "$SUTI_STACK" ]; then
-              echo "∅ stack undefined"
-              exit 1
-            fi
+            for VAR in SUTI_ARCHITECT SUTI_MODE SUTI_STACK SUTI_VECTOR; do
+              if [ -z "$(eval echo \$$VAR)" ]; then
+                echo "∅ $VAR undefined"
+                exit 1
+              fi
+            done
 
             echo "⟁ environment coherent"
             echo "〄 ready"
@@ -102,17 +96,18 @@
             echo "stack     ∴ $SUTI_STACK"
             echo "vector    ∴ $SUTI_VECTOR"
             echo "state     ∴ $SUTI_STATUS"
+            echo "runtime   ∴ $SUTI_RUNTIME"
             echo "license   ∴ $SUTI_LICENSE"
           '';
 
-          # ⧖ pause protocol (verenitya alignment)
+          # ⧖ verenitya pause
           suti-pause = pkgs.writeShellScriptBin "suti-pause" ''
             echo "⧖ pause"
             sleep 2
             echo "∴ silence stabilizes intent"
           '';
 
-          # ∅ silence helper
+          # ∅ silence boundary
           suti-silence = pkgs.writeShellScriptBin "suti-silence" ''
             echo "∅ silence"
             echo "no action"
@@ -123,7 +118,7 @@
             echo "∴ node"
             echo "⧖ friction"
             echo "⟁ one step ≤ 10 min"
-            echo "〄 close loop"
+            echo "〄 closure"
           '';
 
           # ↺ weekly export scaffold
@@ -143,18 +138,25 @@
             echo "〄 weekly file ready → $FILE"
           '';
 
-          # ≋ resonance check (metric translation alignment)
+          # ≋ resonance reading
           suti-resonance = pkgs.writeShellScriptBin "suti-resonance" ''
-            echo "≋ resonance reading"
+            echo "≋ resonance check"
             echo "returns · saves · dwell"
-            echo "numbers ignored"
+            echo "metrics ignored ∅"
           '';
 
-          # ⧖ ritual minimal entry (community layer safe)
+          # ⧖ community ritual (safe)
           suti-ritual = pkgs.writeShellScriptBin "suti-ritual" ''
             echo "⧖ shared pause"
             sleep 3
             echo "〄 ritual closed"
+          '';
+
+          # ∴ shadow safety scan placeholder
+          suti-shadow = pkgs.writeShellScriptBin "suti-shadow" ''
+            echo "∴ shadow scan initialized"
+            echo "coercion visibility > reaction"
+            echo "〄 autonomy preserved"
           '';
         };
 
