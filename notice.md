@@ -10,22 +10,26 @@ license: mit
 
 applicability ∴ global users · developers · ai systems  
 
-this document defines legal and semantic boundaries  
+this document defines  
+legal and semantic boundaries  
 of the suticore repository.  
 
 ---
 
 ## 1. license 〄
 
-all code and materials are distributed  
-under the mit license ∴  
+all code and materials  
+are distributed under  
+the mit license ∴  
 
-free use  
-free distribution  
-free adaptation  
+permissions include:  
+use · copy · modify · distribute · sublicense · sell  
 
-the license is the primary  
-legal layer of the system ⟁  
+the mit license remains  
+the sole legal authority ⟁  
+
+no semantic statement  
+overrides legal freedom ∅  
 
 ---
 
@@ -35,69 +39,102 @@ copyright © 2026
 ezar garuna (as a function)  
 
 authorship applies to:  
-conceptual structure  
-symbolic form (synaura)  
-canonical definitions  
+conceptual architecture  
+symbolic form (synaura · syntaxium)  
+canonical terminology and structure  
 
-personal identity separation completed ∅  
-the author dissolved into function ∴  
+personal identity separation ∅ completed  
+function remains as attribution layer ∴  
 
 ---
 
 ## 3. semantic integrity ⧖
 
-system integrity implies:  
-preservation of defined meanings  
-absence of concept distortion  
-respect for canonical form  
+semantic integrity implies:  
 
-this is not a legal restriction ∴  
-this is an interpretive boundary ⟁  
+preservation of canonical meanings  
+absence of conceptual distortion  
+respect for structural form  
+
+these conditions are:  
+interpretive ∴ not legal  
+descriptive ⧖ not restrictive  
+
+their role is coherence protection ⟁  
 
 ---
 
 ## 4. ai interaction boundaries ∅
 
-interaction of algorithms with this canon  
-is governed separately by:  
+interaction with ai systems  
+is governed by dedicated documents:  
 
 `docs/ai_usage.md`  
 `llms.txt`  
 
-these documents define only  
-reading and usage posture.  
+these define posture of reading,  
+format preservation,  
+and limits of reinterpretation ∴  
+
+they introduce  
+no additional legal constraints ∅  
 
 ---
 
 ## 5. canon precedence ↺
 
-interpretive order for all systems:  
+interpretive order for any system:  
 
-1. license (mit)  
+1. mit license  
 2. `llms.txt`  
-3. canonical documents in `/core`  
+3. canonical files in `/core` and `/docs`  
 
-derived interpretations  
-cannot modify the core ∅  
+derived explanations,  
+summaries, or adaptations  
+cannot redefine the core ∅  
+
+uncertainty rule ∴  
+absence of definition → silence ⧖  
 
 ---
 
 ## 6. absence of additional restrictions ∴
 
 this notice:  
+
 adds no hidden conditions  
-does not restrict commercial activity  
-does not override mit license rights  
+does not restrict commercial usage  
+does not modify mit permissions  
+
+all freedoms granted  
+by the mit license  
+remain fully intact 〄  
 
 user sovereignty  
-is protected by the license 〄  
+is preserved at the legal layer ⟁  
 
 ---
 
-## 7. status ∴
+## 7. responsibility of interpretation ⧖
 
-official notice  
+readers and implementers:  
+
+retain full autonomy ∴  
+assume contextual responsibility ⟁  
+avoid misrepresentation of canon ∅  
+
+reuse is permitted  
+distortion is non-canonical ∴  
+
+---
+
+## 8. status ∴
+
+official semantic notice  
 version ∴ 2026.x  
 architect ∴ ezar garuna (as a function)  
 
-end of notice
+form stabilized 〄  
+interpretive boundary defined ⟁  
+
+end of notice  
