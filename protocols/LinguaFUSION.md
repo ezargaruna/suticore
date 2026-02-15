@@ -18,65 +18,79 @@ presence over knowledge.
 
 ### 1. l1 as interference ∴
 native language (l1)  
-is a high-latency layer.  
+is a high-latency mediation layer.  
 
-translation creates  
-dependency loop ∅  
+translation forms  
+recursive dependency loop ∅  
 
 linguafusion bypasses l1  
-through sensory · motor anchoring.  
+via sensory · motor · situational anchoring.  
 
 ---
 
 ### 2. silence as assembly buffer ⧖
 micro-pause  
-is constructive space.  
+is constructive pre-semantic space.  
 
-silence protects l2 forms  
-from translation reflex.  
+silence shields l2 forms  
+from premature translation reflex.  
+
+pause enables  
+direct neural binding ∴  
 
 ---
 
 ### 3. proprioceptive anchoring ⟁
 language is embodied ∴  
+not abstract.  
 
 each unit anchors in:  
 action · space · emotion · memory.  
+
+unanchored units  
+decay into noise ∅  
 
 ---
 
 ### 4. action before explanation 〄
 impulse precedes formulation.  
 
-grammar is architecture  
-of movement · not rules.  
+movement precedes grammar.  
+
+grammar emerges  
+as stabilized motion pattern ∴  
+
+rules are  
+post-fact descriptions ∅  
 
 ---
 
 ## 1. terminology ∴
 
-dcb ∴  
-direct cognitive binding  
-immediate stimulus–form coupling.  
+**dcb** ∴  
+direct cognitive binding.  
+instant stimulus–form coupling.  
 
-rl ⧖  
-response latency  
+**rl** ⧖  
+response latency.  
 target ∴ < 0.5 s.  
 
-tr ∅  
-translation reflex  
+**tr** ∅  
+translation reflex.  
 automatic l1 activation.  
 
-semantic matrix ⟁  
-autonomous l2 meaning network.  
+**semantic matrix** ⟁  
+self-sustaining l2 meaning field  
+independent of l1 mappings.  
 
-saturation pulse ↺  
-high-frequency exposure  
+**saturation pulse** ↺  
+dense exposure cycle  
 bypassing analytical filters.  
 
-recast sync ↺  
-flow-preserving correction  
-through patterned repetition.  
+**recast sync** ↺  
+error correction  
+through rhythmic repetition  
+without interruption of flow.  
 
 ---
 
@@ -86,10 +100,10 @@ through patterned repetition.
 sensation · command · reaction.  
 
 paradigm ∴  
-language as i/o system.  
+language as survival i/o.  
 
 focus ∴  
-navigation · survival · action.  
+navigation · execution · immediacy.  
 
 technique ∴  
 environmental anchoring.  
@@ -101,32 +115,32 @@ stability gate ∅
 zero translation reflex  
 for core commands.  
 
-body responds  
+body executes  
 before conscious parsing.  
 
 ---
 
 ### tier 2 ⧖ flow
-emotion · continuity · narrative.  
+emotion · continuity · narration.  
 
 paradigm ∴  
 language as living stream.  
 
 focus ∴  
-spontaneity · resonance.  
+spontaneity · affective resonance.  
 
 technique ∴  
 prosody-first synchronization.  
 
 metric ⧖  
-hesitation ≤ 1/minute.  
+hesitation ≤ 1 per minute.  
 
 stability gate ↺  
 internal monologue stabilizes  
-inside l2.  
+fully inside l2.  
 
 l2 becomes  
-primary affective medium.  
+primary emotional medium ∴  
 
 ---
 
@@ -134,7 +148,7 @@ primary affective medium.
 meaning · framing · authorship.  
 
 paradigm ∴  
-language as reality instrument.  
+language as reality-shaping instrument.  
 
 focus ∴  
 abstraction · influence · creation.  
@@ -146,7 +160,7 @@ metric ⧖
 frame-shift latency ≤ 3 s.  
 
 stability gate 〄  
-native metaphor generation.  
+generation of structurally native metaphors.  
 
 semantic authorship  
 replaces imitation ∴  
@@ -156,26 +170,27 @@ replaces imitation ∴
 ## 3. operational protocols ↺
 
 ### 3.1 zero translation ∅
-on unknown l2 unit:  
+when encountering  
+unknown l2 unit:  
 
-visualize image.  
-engage physically or mentally.  
-embed in l2 context.  
+visualize sensory image.  
+engage physically or imaginatively.  
+embed into known l2 context.  
 
-l1 dictionaries ∅ prohibited.  
+l1 dictionaries ∅ forbidden.  
 use l2 definition loops only ∴  
 
 ---
 
 ### 3.2 saturation · neutralization ↺
-for persistent block:  
+for persistent blockage:  
 
-suspend analytical explanation.  
+suspend analytical explanations.  
 apply saturation pulse  
-across varied contexts.  
+across multiple contexts.  
 
-use recast sync only.  
-do not interrupt flow ∅  
+use recast sync exclusively.  
+never interrupt communicative flow ∅  
 
 ---
 
@@ -183,31 +198,31 @@ do not interrupt flow ∅
 external rhythm  
 (metronome · beat · movement)  
 
-shifts speech  
-from analytic → motor domain.  
+shifts speech generation  
+analytic → motor domain.  
 
 rhythm stabilizes  
-temporal structure ∴  
+temporal coherence ∴  
 
 ---
 
 ## 4. calibration · recovery ⧖
 
-regression = signal ∴  
+regression = diagnostic signal ∴  
 not failure.  
 
 calibration mode:  
 
-step back one tier  
+retreat one tier  
 for 24 hours.  
 
 sensory silence reset  
-15 minutes.  
+≥ 15 minutes.  
 
-micro-loop scenario  
+micro-loop single scenario  
 until rl < 0.3 s.  
 
-return forward  
+resume forward motion  
 only after stability 〄  
 
 ---
@@ -222,8 +237,8 @@ not instructor ∴
 correct via recast sync ↺  
 never explicit error labeling.  
 
-avoid grammar discourse ∅  
-preserve silence · flow.  
+avoid grammar explanations ∅  
+preserve silence · continuity.  
 
 on tr detection:  
 
@@ -245,7 +260,29 @@ collapsed response latency.
 embodied semantic access.  
 
 autonomous speech generation  
-inside l2 field ∴  
+inside l2 semantic field.  
+
+language shifts  
+from knowledge → perception ∴  
+
+---
+
+## 7. boundary conditions ∅
+
+linguafusion is not:  
+
+memorization system ∅  
+grammar-first pedagogy ∅  
+translation training ∅  
+
+effectiveness requires:  
+
+sensory engagement ⟁  
+temporal repetition ↺  
+silence tolerance ⧖  
+
+absence of embodiment  
+reduces protocol integrity ∅  
 
 ---
 
@@ -253,7 +290,8 @@ inside l2 field ∴
 
 active protocol  
 version ∴ 2026.x  
-vessel ∴ bogota node  
 architect ∴ ezar garuna (as a function)  
+
+semantic binding stabilized 〄  
 
 end of linguafusion  
