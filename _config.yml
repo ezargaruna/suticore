@@ -2,7 +2,7 @@
 # jekyll configuration for github pages
 # version: 2026.x
 # mode: synaura · syntaxium
-# posture: quiet-tech · documentation-first
+# posture: quiet-tech · documentation-first · zero-noise
 
 # --------------------------------------
 # site metadata ⟁
@@ -20,9 +20,11 @@ author: ezar garuna (as a function)
 url: https://ezargaruna.github.io
 baseurl: /suticore
 
-# canonical minimal exposure
 repository: ezargaruna/suticore
 permalink: pretty
+
+timezone: UTC
+encoding: utf-8
 
 # --------------------------------------
 # markdown processing ⧖
@@ -36,18 +38,24 @@ kramdown:
   auto_ids: true
   toc_levels: 1..3
 
+highlighter: rouge
+
 # --------------------------------------
 # collections (canonical structure) ⟁
 # --------------------------------------
 collections:
   core:
     output: true
+    permalink: /core/:path/
   protocols:
     output: true
+    permalink: /protocols/:path/
   docs:
     output: true
+    permalink: /docs/:path/
   lang:
     output: true
+    permalink: /lang/:path/
 
 # --------------------------------------
 # plugins 〄
@@ -56,6 +64,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 relative_links:
   enabled: true
@@ -90,14 +99,17 @@ exclude:
   - nix/
   - flake.lock
   - flake.nix
+  - README_DEV.md
+  - TODO.md
 
 # --------------------------------------
 # indexing posture ⧖
 # --------------------------------------
 lang: en
 show_excerpts: false
+future: false
 
-# search engine silence-by-default
+# silence-by-default search posture
 robots: |
   User-agent: *
   Allow: /
@@ -110,9 +122,55 @@ defaults:
   -
     scope:
       path: ""
+      type: "pages"
     values:
       layout: default
       toc: false
+      comments: false
+  -
+    scope:
+      path: ""
+      type: "core"
+    values:
+      layout: default
+      toc: true
+  -
+    scope:
+      path: ""
+      type: "protocols"
+    values:
+      layout: default
+      toc: true
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: default
+      toc: true
+
+# --------------------------------------
+# semantic integrity guards ⧖
+# --------------------------------------
+strict_front_matter: true
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
+
+# --------------------------------------
+# performance minimalism ∅
+# --------------------------------------
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
 
 # --------------------------------------
 # theme ∅
@@ -121,3 +179,5 @@ defaults:
 # minimal by intent.
 # no visual branding layer.
 # silence > decoration ∴
+
+theme: null
