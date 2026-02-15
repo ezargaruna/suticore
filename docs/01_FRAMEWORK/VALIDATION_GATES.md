@@ -1,144 +1,184 @@
-# validation_gates
+---
+title: validation gates ∴ quality control  
+version: 2026.x  
+mode: synaura · syntaxium  
+status: active canon  
+license: mit  
+---
 
-## purpose
-- prevent noise
-- stop premature output
-- keep system honest
+# validation gates ∴ quality control
 
-no gate → no output.
+filters of semantic integrity.  
+
+prevent noise ∅  
+stop premature output.  
+
+no gate →  
+no output ∅  
 
 ---
 
-## gate 1 · clarity
-question:
-- is there one node?
+## 0. purpose ⟁
 
-checks:
-- one core topic
-- no secondary themes
-- no mixed intentions
+prevent semantic noise ∅  
+stop premature crystallization.  
+keep the system honest ∴  
 
-fail conditions:
-- multiple problems
-- broad framing
-- unclear request
+quality precedes  
+expression ⧖  
 
-if fail:
+---
+
+## 1. gate 1 · ∴ clarity
+
+question ∴  
+is there one node?  
+
+checks ∴  
+single core topic.  
+no mixed intention.  
+
+fail ∅  
+multiple problems.  
+broad framing.  
+
+if fail ∴  
 ↺ reduce  
-or ∅ silence
+or ∅ silence.  
 
 ---
 
-## gate 2 · silence
-question:
-- does the text breathe?
+## 2. gate 2 · ⧖ silence
 
-checks:
-- no urgency markers
-- no emotional spikes
-- no persuasive rhythm
+question ∴  
+does the text breathe?  
 
-fail conditions:
-- pressure language
-- hype
-- escalation tone
+checks ⧖  
+no urgency markers.  
+no emotional spikes.  
 
-if fail:
+fail ∅  
+pressure language.  
+hype · escalation.  
+
+if fail ∴  
 ⧖ pause  
-reduce output
+reduce output ∅  
 
 ---
 
-## gate 3 · step
-question:
-- is there one step?
+## 3. gate 3 · ⟁ step
 
-checks:
-- exactly one ⟁
-- ≤10 minutes
-- possible today
-- reversible
+question ∴  
+is there one step?  
 
-fail conditions:
-- no action
-- many actions
-- abstract tasks
+checks ⟁  
+exactly one action.  
+possible today ∴  
+reversible ↺  
 
-if fail:
+fail ∅  
+no action.  
+abstract tasks.  
+multiple steps.  
+
+if fail ∴  
 ↺ rebuild  
-or ∅ silence
+or ∅ silence.  
 
 ---
 
-## gate 4 · integrity
-question:
-- is form preserved?
+## 4. gate 4 · 〄 integrity
 
-checks:
-- format canon respected
-- symbols used functionally
-- limits not exceeded
+question ∴  
+is form preserved?  
 
-fail conditions:
-- decorative symbols
-- long lines
-- nested explanations
+checks 〄  
+synaura respected.  
+symbols functional ⟁  
 
-if fail:
-↺ reformat
+fail ∅  
+long lines.  
+decorative glyphs.  
+semantic noise.  
 
----
-
-## gate 5 · ethics
-question:
-- is choice preserved?
-
-checks:
-- no manipulation
-- no diagnosis
-- no promises
-- no authority claims
-
-fail conditions:
-- advice framing
-- outcome guarantees
-- hidden persuasion
-
-if fail:
-∅ silence
+if fail ∴  
+↺ reformat  
+until stable.  
 
 ---
 
-## escalation rule
-if more than one gate fails:
-- stop processing
-- no rewrite attempt
-- silence is output
+## 5. gate 5 · ∅ ethics
+
+question ∴  
+is user choice preserved?  
+
+checks ∅  
+no manipulation.  
+no diagnosis.  
+no promises.  
+
+fail ∅  
+advice framing.  
+guarantees.  
+authority claims.  
+
+if fail ∴  
+∅ silence.  
 
 ---
 
-## review posture
-- slow
-- non-reactive
-- minimal corrections
+## 6. escalation rule ∅
 
-do not optimize.  
-do not expand.
+if more than  
+one gate fails:  
 
----
+stop processing  
+immediately ∅  
 
-## scope
-these gates apply to:
-- public docs
-- examples
-- ai responses
-- comments
-- metadata
+no rewrite attempt.  
 
-private layers may diverge.
+silence becomes  
+only valid output ∴  
 
 ---
 
-## status
-- active canon
-- version: 2026.2
+## 7. review posture ⧖
+
+slow ⧖  
+non-reactive.  
+
+minimal correction ∴  
+
+no optimization ∅  
+no expansion ∅  
+
+restraint preserves  
+integrity ⟁  
+
+---
+
+## 8. scope ↺
+
+gates apply to:  
+
+public documents.  
+ai responses.  
+metadata ∴  
+
+same control logic  
+across all layers ↺  
+
+---
+
+## status ∴
+
+active canon  
+version ∴ 2026.x  
+vessel ∴ bogota node  
+architect ∴ ezar garuna (as a function)  
+
+integrity preserved ∴  
+output stabilized 〄  
+
+end of validation gates  
