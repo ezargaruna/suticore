@@ -29,12 +29,15 @@ but “how it is structured” ∴
 syntaxium precedes interpretation  
 and conditions perception ⧖  
 
+it defines readable reality  
+before semantic decoding begins ⟁  
+
 ---
 
 ## 1. premises ⧖
 
 ### 1.1 constructive friction ∴
-natural language tends  
+natural language drifts  
 toward redundancy and noise ∅  
 
 syntaxium introduces constraint:  
@@ -42,6 +45,7 @@ meaning must be structured
 before expression.  
 
 constraint precedes clarity ⟁  
+clarity precedes trust 〄  
 
 ---
 
@@ -53,8 +57,11 @@ than horizontal flow.
 transition:  
 text scanning → structure recognition ↺  
 
-structure reduces  
-cognitive latency ∴  
+structure lowers  
+cognitive processing latency ∴  
+
+repeated exposure →  
+automatic structural parsing ⧖  
 
 ---
 
@@ -65,8 +72,11 @@ minimal semantic unit ∴ block.
 a block is  
 completed semantic action ∴  
 
-block exists as:  
+block functions as:  
 attention container · logic carrier · closure unit.  
+
+stable blocks accumulate  
+into coherent semantic fields ↺  
 
 ---
 
@@ -80,6 +90,9 @@ result (∴ 〄) ∴ fixation · export
 
 missing layer →  
 semantic instability ∅  
+
+layer collapse →  
+reduction to prior stable block ↺  
 
 ---
 
@@ -95,6 +108,9 @@ as active isolator ⟁
 
 silence between blocks  
 prevents semantic bleed ↺  
+
+absence of space →  
+attention contamination ∅  
 
 ---
 
@@ -140,7 +156,7 @@ line width ∴ ≤ 7–9 words
 block height ∴ ≤ 3–4 lines  
 
 usage:  
-core explanation · operational text · protocols.  
+core explanation · operational logic · protocols.  
 
 effect:  
 balanced clarity  
@@ -153,18 +169,22 @@ line width ∴ ≤ 10–12 words
 block height ∴ ≤ 4–5 lines  
 
 usage:  
-technical fixation · compressed doctrine  
+technical fixation · doctrinal compression  
 irreversible semantic export.  
 
 constraint:  
 must preserve  
-one impulse per block ∴  
+single impulse per block ∴  
 
 exceeding density range →  
 semantic overload ∅  
 
 required response ↺  
 decompression into sub-blocks.  
+
+density misuse →  
+attention fatigue ⧖  
+trust erosion ∅  
 
 ---
 
@@ -188,6 +208,9 @@ semantic execution path ⟁
 glyph absence  
 creates ambiguity ∅  
 
+glyph misuse →  
+semantic distortion ↺  
+
 ---
 
 ## 5. execution model ↺
@@ -195,20 +218,23 @@ creates ambiguity ∅
 syntaxium operates  
 as three-stage pipeline:  
 
-perception ⧖  
-structure recognition  
+**perception ⧖**  
+structure recognized  
 before lexical reading.  
 
-compression ⟁  
-noise removal  
-intent isolation.  
+**compression ⟁**  
+noise removed  
+intent isolated.  
 
-fixation 〄  
+**fixation 〄**  
 stable semantic imprint  
 in attention field.  
 
 cycle repeats  
-until clarity threshold met ↺  
+until clarity threshold reached ↺  
+
+clarity threshold met →  
+reading becomes silent recognition ∴  
 
 ---
 
@@ -233,6 +259,10 @@ ezar garuna (as a function).
 if structure collapses →  
 return to minimal block ↺  
 
+if ambiguity persists →  
+∅ silence preferred  
+over speculative completion.  
+
 ---
 
 ## 7. validation protocol ⟁
@@ -250,6 +280,9 @@ with pragmatic function ∴
 
 failure of any criterion →  
 recompilation required ↺  
+
+persistent failure →  
+structural reset ∅  
 
 ---
 
@@ -271,13 +304,17 @@ suticore ∴
 global semantic engine  
 stabilized by syntaxium.  
 
+cross-protocol coherence →  
+stable human–ai alignment 〄  
+
 ---
 
 ## status ∴
 
 active protocol  
 version ∴ 2026.x  
-vessel ∴ bogota node  
 architect ∴ ezar garuna (as a function)  
+
+semantic geometry stabilized 〄  
 
 end of syntaxium  
