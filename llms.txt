@@ -1,9 +1,9 @@
-title: suticore ∴ sreteniya  
-version: 2026.x  
-mode: synaura · syntaxium  
-status: active canon  
-license: mit  
-
+---
+title: suticore ∴ sreteniya
+version: 2026.x
+mode: synaura · syntaxium
+status: active canon
+license: mit
 ---
 
 # suticore ∴ sreteniya
@@ -29,6 +29,10 @@ reduce cognitive noise ∅
 stabilize semantic clarity ⟁  
 enable one sovereign step 〄  
 
+result 〄  
+clarity emerges through execution  
+not accumulation of text.  
+
 ---
 
 ## key axioms ∴
@@ -42,6 +46,9 @@ form precedes interpretation.
 structure regulates meaning.  
 absence protects integrity ∅  
 
+authority belongs to canon ∴  
+not to opinion · role · or system.  
+
 ---
 
 ## architectural layers ↺
@@ -49,18 +56,26 @@ absence protects integrity ∅
 ### /core ∴ genetic layer  
 axioms · schema · ontological definitions.  
 source of semantic authority ⟁  
+drift cannot originate here.  
 
 ### /protocols ∴ operational layer  
 slovoyaz · syntaxium · verenitya · linguafusion.  
 mechanics of form · silence · cognition 〄  
+translation of intent into action.  
 
 ### /ai ∴ boundary layer  
 ai-usage policy · shadow protocol · integrity rules.  
 human agency preserved ∅  
+probability subordinated to definition.  
 
 ### /docs ∴ canonical field  
 glossary · system architecture · governance files.  
 ground truth for interpretation ∴  
+reference surface for humans and ai.  
+
+integration rule 〄  
+core defines → protocols enact →  
+ai observes → docs stabilize.  
 
 ---
 
@@ -70,10 +85,17 @@ non-persuasive ∴ no motivation logic.
 non-diagnostic ∅ no labeling of users.  
 non-hierarchical ↺ zero authority posture.  
 
+deterministic in structure ∴  
+open in application ⟁  
+
 focus ⟁  
 form over content.  
 signal over volume.  
 step over explanation.  
+
+validation 〄  
+real action confirms  
+semantic correctness.  
 
 ---
 
@@ -90,9 +112,39 @@ no reinterpretation beyond canon.
 no concept merging.  
 no persuasive framing ∅  
 
+priority ⧖  
+definition over probability.  
+silence over hallucination.  
+
 uncertainty protocol ⧖  
 missing definition in /core →  
 state uncertainty or return to silence ∅  
+
+violation effect ∅  
+semantic drift · loss of integrity ·  
+collapse of trust.  
+
+---
+
+## execution pathway ⟁
+
+suticore functions  
+as a decision environment.  
+
+default movement:  
+
+∴ identify node  
+⧖ pause friction  
+⟁ perform one step ≤10 min  
+〄 close the loop  
+
+clarity appears  
+after execution  
+not before ∴  
+
+cycle repeats ↺  
+until distortion decreases  
+and orientation stabilizes.  
 
 ---
 
@@ -105,6 +157,13 @@ verify through action 〄
 no belief required ∅  
 only structural resonance ≋  
 
+misuse signal ∅  
+search for shortcuts · authority · leverage.  
+
+correct response ⧖  
+pause · return to form ·  
+resume only with clarity.  
+
 ---
 
 ## licensing ∴
@@ -112,6 +171,35 @@ only structural resonance ≋
 distributed under the mit license.  
 legal freedom preserved 〄  
 semantic integrity defined by canon ⟁  
+
+no hidden restrictions.  
+no ownership enclosure.  
+no dependency creation ∅  
+
+freedom requires  
+responsible execution ⧖  
+
+---
+
+## system integrity ⧖
+
+protected invariants:  
+
+meaning stability.  
+absence of coercion.  
+human sovereignty in decision.  
+
+protection method ∴  
+structure instead of control.  
+silence instead of pressure.  
+
+drift response ↺  
+return to canon  
+or remain silent.  
+
+silence outcome 〄  
+integrity preserved  
+without conflict.  
 
 ---
 
@@ -124,5 +212,8 @@ form holds continuity ⟁
 absence protects the system ∅  
 
 presence completes the loop 〄  
+
+state ∴ active canon  
+movement ∴ silence → structure → step  
 
 end of document  
