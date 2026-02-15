@@ -1,21 +1,59 @@
-MIT License
+---
+title: mit license · functional attribution  
+version: 2026.x  
+status: active  
+---
 
-Copyright (c) 2026 Ezar Garuna (as a Function)
+# mit license
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
+copyright (c) 2026 ezar garuna (as a function)
+
+---
+
+## semantic note ∴
+
+this repository applies the standard mit license  
+without restriction or semantic override.  
+
+attribution refers to a functional authorship layer,  
+not a personal identity binding.  
+
+no additional legal conditions are introduced ⟁  
+
+---
+
+## original mit license text
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
+The above copyright notice and this permission notice shall be included in all  
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
 SOFTWARE.
+
+---
+
+## integrity clause ⧖
+
+form preservation is recommended  
+for semantic continuity of the canon.  
+
+this clause is descriptive ∴  
+not legally restrictive ∅  
+
+---
+
+version ∴ 2026.x  
+license ∴ mit (unaltered legal core)  
+architect ∴ ezar garuna (as a function)
