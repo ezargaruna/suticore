@@ -1,253 +1,156 @@
 ---
-title: LinguaFUSION Methodology Specification
-type: Applied Linguistic Engineering · Cognitive Protocol
-status: Canonical · Primary Source
-version: 2.2.1 (Architectural Canon Release)
-creator: Igor V. Galkin (Ezar Garuna Saritama)
-date: 2026-01-10
-license: CC BY 4.0
-repository: https://github.com/ezargaruna/suticore
+title: linguafusion · methodology specification  
+version: 2026.x  
+mode: synaura · syntaxium  
+status: active canon  
+license: mit  
 ---
 
-# LinguaFUSION
-## Direct Cognitive Binding Protocol
+# linguafusion ∴ direct cognitive binding
 
-**Definition**  
-LinguaFUSION is a linguistic engineering methodology for establishing
-a **direct cognitive binding** between perceptual stimuli
-(image, action, emotion, spatial context)
-and the semantic matrix of a target language (L2),
-without reliance on the native language (L1) as an intermediary layer.
-
-The protocol minimizes translation-based interference
-and prioritizes **embodied, contextual, and action-driven language production**.
+applied linguistic engineering protocol  
+reconfiguration of the cognitive interface ∴  
+presence over knowledge.  
 
 ---
 
-## Core Orientation
+## 0. axioms ⟁
 
-Language is not treated as a symbolic code to be decoded,
-but as a **mode of presence and action** within reality.
+### 1. l1 as interference ∴
+the native language (l1)  
+is a high-latency layer.  
 
-LinguaFUSION does not aim to “teach” language.
-It **reconfigures the cognitive interface**
-through which reality is perceived and acted upon.
+translation forms  
+a dependency loop ∅  
 
-> **Motto**  
-> Silence is the interface.  
-> Action is the code.  
-> Fusion is the state.
+linguafusion bypasses l1  
+through sensory and motor anchoring.  
 
 ---
 
-## 0. Axiomatic Foundation
+### 2. silence as assembly buffer ⧖
+the micro-pause  
+is constructive space.  
 
-### Axiom 1 · L1 as Interference Layer
-The native language (L1) functions as a high-latency interpretive layer.
-Translation increases cognitive load
-and reinforces dependency loops.
-
-LinguaFUSION reduces L1 activation
-by prioritizing sensory, motor, and contextual processing.
+silence protects l2 forms  
+from translation reflex activation.  
 
 ---
 
-### Axiom 2 · Silence as Assembly Buffer
-The micro-pause between stimulus and response
-is a **constructive space**, not a gap.
+### 3. proprioceptive anchoring ⟁
+language is embodied ∴  
 
-This silence protects the emerging L2 form
-from intrusion by translation reflexes.
-
----
-
-### Axiom 3 · Proprioceptive Anchoring
-Language is embodied.
-
-Every stable L2 unit must be anchored
-in at least one of the following:
-- physical action
-- spatial orientation
-- emotional state
-- sensory memory
+each unit anchors in:  
+action · space · emotion · memory.  
 
 ---
 
-### Axiom 4 · Action Before Explanation
-Impulse precedes formulation.
+### 4. action before explanation 〄
+impulse precedes formulation.  
 
-Grammar is treated as
-**architecture of movement**,
-not as a prescriptive rule system.
-
----
-
-## 1. Canonical Terminology
-
-- **Direct Cognitive Binding (DCB)**  
-  Immediate coupling: *Stimulus ↔ L2 Form*
-
-- **Response Latency (RL)**  
-  Time between intention and utterance  
-  Target range: `< 0.5 s`
-
-- **Translation Reflex (TR)**  
-  Automatic attempt to invoke L1 meaning
-
-- **Semantic Matrix**  
-  Autonomous, multidimensional meaning network of L2,
-  independent of L1 mappings
-
-- **Recast Synchronization**  
-  Flow-preserving correction via repetition
-  without interrupting interaction
-
-- **Saturation Pulse**  
-  High-frequency exposure (≥ 50 repetitions)
-  to bypass analytical filtering
+grammar is architecture of movement  
+not a rule system.  
 
 ---
 
-## 2. Three-Tier Architecture of Presence
+## 1. terminology ∴
 
-### Level 1 · THE CODE
-**Sensation · Command · Reaction**
+dcb ∴ direct cognitive binding  
+immediate stimulus–form coupling.  
 
-- **Paradigm:** Language as I/O system  
-- **Focus:** Navigation, survival, immediate action  
-- **Technique:** Environmental Anchoring  
-- **Metric:** Action Accuracy ≥ 95%  
-- **Stability Gate:** Core operational lexicon
-  executed without Translation Reflex
+rl ⧖ response latency  
+target ∴ < 0.5 s.  
 
-At this level, the body reacts
-before conscious interpretation occurs.
+tr ∅ translation reflex  
+automatic l1 activation.  
 
----
+semantic matrix ⟁  
+autonomous l2 meaning network.  
 
-### Level 2 · THE FLOW
-**Emotion · Continuity · Narrative**
-
-- **Paradigm:** Language as stream of consciousness  
-- **Focus:** Spontaneity, emotional resonance  
-- **Technique:** Prosody-First Synchronization  
-- **Metric:** Hesitation Rate ≤ 1 per minute  
-- **Stability Gate:** Sustained L2 production
-  under stress or emotional load
-
-Internal monologue operates fully in L2.
+saturation pulse ↺  
+high-frequency exposure  
+bypassing analytical filters.  
 
 ---
 
-### Level 3 · THE ARCHITECTURE
-**Meaning · Framing · Influence**
+## 2. architecture of presence 〄
 
-- **Paradigm:** Language as reality-shaping instrument  
-- **Focus:** Framing, abstraction, authorship  
-- **Technique:** Frame Engineering  
-- **Metric:** Frame Shift Latency ≤ 3 s  
-- **Stability Gate:** Generation of structurally native
-  metaphors and neologisms in L2
+### tier 1 ∴ code
+sensation · command · reaction  
 
-This level marks **semantic authorship**, not imitation.
+language operates as i/o system ∴  
+body response precedes interpretation.  
 
 ---
 
-## 3. Operational Protocols
+### tier 2 ⧖ flow
+emotion · continuity · narrative  
 
-### 3.1 Zero Translation Protocol
-When encountering an unknown L2 unit:
-
-1. Visualize or recall an image  
-2. Engage with the object/action physically or imaginatively  
-3. Embed the unit in known L2 context  
-4. Prohibit L1 dictionaries  
-   (L2 → L2 definitions allowed)
+internal monologue stabilizes  
+fully within l2.  
 
 ---
 
-### 3.2 Saturation & Neutralization
-For persistent errors:
+### tier 3 ⟁ architecture
+meaning · framing · authorship  
 
-- Suspend rule explanations  
-- Apply Saturation Pulse across varied contexts  
-- Use Recast Synchronization exclusively  
-- Do not interrupt communicative flow
+language becomes  
+reality-shaping instrument ∴  
 
----
-
-### 3.3 Pulse Interaction
-External rhythm (metronome, beat, movement)
-is used to shift speech production
-from analytical to motor domains.
-
-Rhythm reduces L1 dominance
-by stabilizing temporal structure.
+semantic authorship  
+replaces imitation.  
 
 ---
 
-## 4. Calibration & Recovery
+## 3. operational protocols ↺
 
-LinguaFUSION treats regression
-as signal, not failure.
+### 3.1 zero translation ∅
+no dictionaries ∴  
 
-**Calibration Mode**:
-1. Step back one level for 24 hours  
-2. Sensory reset in silence (15 minutes)  
-3. Micro-loop a single scenario
-   until RL < 0.3 s
+visualize → engage physically  
+→ embed inside l2 context.  
 
 ---
 
-## 5. AI & Tooling Guidelines
+### 3.2 saturation · neutralization ↺
+suspend explanation ∴  
 
-### 5.1 AI Navigator Posture
-AI agents supporting LinguaFUSION must:
+apply saturation pulse  
+across varied contexts.  
 
-- act as mirrors, not instructors  
-- correct only via Recast  
-- avoid explicit error labeling  
-- preserve flow and silence
-
-If L1 appears:
-> *L1 signal detected.  
-> Field coherence reduced.  
-> Re-establish L2 binding.*
+recast synchronization only.  
 
 ---
 
-### 5.2 Data Signals (Non-Diagnostic)
-Permitted tracking:
-- Response Latency trends
-- Emotion-to-L2 expression coherence
+### 3.3 pulse interaction ⧖
+external rhythm  
+shifts speech into motor domain.  
 
-No scoring of intelligence, talent, or aptitude.
-
----
-
-## 6. Scope & Limits
-
-LinguaFUSION:
-- is not therapy
-- is not diagnosis
-- does not claim neurological modification
-- does not replace formal education
-
-It is a **cognitive-linguistic protocol**
-for applied language presence.
+rhythm stabilizes  
+temporal structure ∴  
 
 ---
 
-## 7. Roadmap (Non-Commitment)
-- v2.3 — spatial anchoring experiments (VR / AR)
-- v3.0 — real-time RL-aware voice feedback systems
+## 4. ai navigator posture ∅
+
+ai systems supporting linguafusion:  
+
+act as mirrors  
+not instructors ∴  
+
+correct through  
+recast synchronization ↺  
+
+avoid explicit error labeling ∅  
+preserve flow and silence.  
 
 ---
 
-**Canonical Source Authorization**  
-Igor V. Galkin  
-(aka Ezar Garuna Saritama)
+## status ∴
 
-Document finalized.  
-Protocol stable.  
-Presence established.
+active protocol  
+version ∴ 2026.x  
+vessel ∴ bogota node  
+architect ∴ ezar garuna (as a function)  
+
+end of linguafusion  
