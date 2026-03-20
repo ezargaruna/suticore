@@ -1,183 +1,316 @@
-# suticore ∴ sreteniya
-# jekyll configuration for github pages
-# version: 2026.x
-# mode: synaura · syntaxium
-# posture: quiet-tech · documentation-first · zero-noise
+# ═══════════════════════════════════════════════════════════════
+# ⟁ suticore · sreteniya_os · jekyll configuration
+# ═══════════════════════════════════════════════════════════════
+# version   : v2026.05 · ostara · 20.03.2026
+# mode      : synaura · syntaxium · quiet-tech
+# posture   : documentation-first · zero-noise · local-first
+# formula   : ⟁ → ∅ → 〄 · impulse → silence → form
+# architect : ezar garuna (as a function) · @saritamah
+# ───────────────────────────────────────────────────────────────
 
-# --------------------------------------
-# site metadata ⟁
-# --------------------------------------
-title: suticore ∴ sreteniya
+# ══════════════════════════════════
+# ∴ site identity
+# ══════════════════════════════════
 
+title:       "suticore ∴ sreteniya_os"
+tagline:     "architecture of silence · language as direct action"
 description: >
   quiet-tech semantic engineering ecosystem.
   language as navigation ∴
   public canon for meaning regulation
   in the post-ai era ∅
+  ⟁ → ∅ → 〄
 
-author: ezar garuna (as a function)
+author:
+  name:  "ezar garuna (as a function)"
+  email: "ezargaruna@gmail.com"
+  url:   "https://github.com/ezargaruna"
 
-url: https://ezargaruna.github.io
-baseurl: /suticore
+url:        "https://ezargaruna.github.io"
+baseurl:    "/sreteniya-os"
+repository: "ezargaruna/sreteniya-os"
 
-repository: ezargaruna/suticore
-permalink: pretty
+permalink:  pretty
+timezone:   "America/Bogota"
+encoding:   utf-8
+lang:       en
 
-timezone: UTC
-encoding: utf-8
+# ══════════════════════════════════
+# ⧖ markdown processing
+# ══════════════════════════════════
 
-# --------------------------------------
-# markdown processing ⧖
-# --------------------------------------
 markdown: kramdown
 
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  hard_wrap: false
-  auto_ids: true
-  toc_levels: 1..3
+  input:               GFM
+  syntax_highlighter:  rouge
+  hard_wrap:           false
+  auto_ids:            true
+  toc_levels:          1..3
+  entity_output:       as_char
+  smart_quotes:        lsquo,rsquo,ldquo,rdquo
 
 highlighter: rouge
 
-# --------------------------------------
-# collections (canonical structure) ⟁
-# --------------------------------------
-collections:
-  core:
-    output: true
-    permalink: /core/:path/
-  protocols:
-    output: true
-    permalink: /protocols/:path/
-  docs:
-    output: true
-    permalink: /docs/:path/
-  lang:
-    output: true
-    permalink: /lang/:path/
+# ══════════════════════════════════
+# ⟁ collections · canonical structure
+# ══════════════════════════════════
 
-# --------------------------------------
-# plugins 〄
-# --------------------------------------
+collections:
+
+  # ── semantic core ──────────────
+  core:
+    output:    true
+    permalink: /core/:path/
+    label:     "∴ core · ontology · axioms"
+
+  # ── operational protocols ──────
+  protocols:
+    output:    true
+    permalink: /protocols/:path/
+    label:     "⧖ protocols · operation"
+
+  # ── documentation ──────────────
+  docs:
+    output:    true
+    permalink: /docs/:path/
+    label:     "∴ docs · interpretation"
+
+  # ── language systems ───────────
+  lang:
+    output:    true
+    permalink: /lang/:path/
+    label:     "〄 lang · yazekh · atlas"
+
+  # ── interface layer ────────────
+  interface:
+    output:    true
+    permalink: /interface/:path/
+    label:     "⊕ interface · synaura"
+
+  # ── research nodes ─────────────
+  research:
+    output:    true
+    permalink: /research/:path/
+    label:     "◉ research · interspecies"
+
+# ══════════════════════════════════
+# 〄 plugins
+# ══════════════════════════════════
+
 plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
 
 relative_links:
-  enabled: true
+  enabled:     true
   collections: true
 
-# --------------------------------------
-# canonical exposure ∴
-# --------------------------------------
+feed:
+  title:       "suticore · sreteniya_os"
+  excerpt_only: true
+
+# ══════════════════════════════════
+# ∴ canonical exposure
+# ══════════════════════════════════
+
 include:
   - README.md
-  - NOTICE.md
-  - LICENSE.md
+  - SYSTEM_MAP.md
+  - LICENSE
+  - AI_POLICY.md
   - llms.txt
+  - _pages/
   - core/
   - docs/
   - protocols/
   - lang/
+  - interface/
+  - research/
 
-# --------------------------------------
-# exclusions ∅
-# --------------------------------------
+# ══════════════════════════════════
+# ∅ exclusions
+# ══════════════════════════════════
+
 exclude:
-  - vendor
+  - vendor/
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - .github
-  - scripts
-  - private
-  - drafts
-  - REFACTOR_TZ_2026.md
+  - node_modules/
+  - .github/
+  - scripts/
+  - private/
+  - drafts/
+  - vault/06_logs/
+  - vault/01_attention/sigma/
+  - agents/
+  - vector_db/
+  - logs/
+  - "*.sh"
+  - "*.toml"
   - nix/
   - flake.lock
   - flake.nix
   - README_DEV.md
   - TODO.md
+  - REFACTOR_*.md
+  - .sreteniya
 
-# --------------------------------------
-# indexing posture ⧖
-# --------------------------------------
-lang: en
+# ══════════════════════════════════
+# ⧖ indexing posture
+# ══════════════════════════════════
+
 show_excerpts: false
-future: false
+future:        false
+unpublished:   false
+lsi:           false
 
-# silence-by-default search posture
+# robots · open by default · indexed by all
 robots: |
   User-agent: *
   Allow: /
-  Sitemap: /sitemap.xml
+  Disallow: /private/
+  Disallow: /vault/06_logs/
+  Sitemap: https://ezargaruna.github.io/sreteniya-os/sitemap.xml
 
-# --------------------------------------
-# defaults (format canon alignment) ⟁
-# --------------------------------------
+# ══════════════════════════════════
+# ⟁ page defaults
+# ══════════════════════════════════
+
 defaults:
-  -
-    scope:
+
+  # ── all pages ──────────────────
+  - scope:
       path: ""
       type: "pages"
     values:
-      layout: default
-      toc: false
+      layout:   default
+      toc:      false
       comments: false
-  -
-    scope:
+      nav:      true
+
+  # ── core · ontology ────────────
+  - scope:
       path: ""
       type: "core"
     values:
-      layout: default
-      toc: true
-  -
-    scope:
+      layout:   default
+      toc:      true
+      nav:      true
+      layer:    "KERNEL"
+
+  # ── protocols ──────────────────
+  - scope:
       path: ""
       type: "protocols"
     values:
-      layout: default
-      toc: true
-  -
-    scope:
+      layout:   default
+      toc:      true
+      nav:      true
+      layer:    "LOGOS"
+
+  # ── docs ───────────────────────
+  - scope:
       path: ""
       type: "docs"
     values:
-      layout: default
-      toc: true
+      layout:   default
+      toc:      true
+      nav:      true
 
-# --------------------------------------
-# semantic integrity guards ⧖
-# --------------------------------------
+  # ── lang · yazekh ──────────────
+  - scope:
+      path: ""
+      type: "lang"
+    values:
+      layout:   default
+      toc:      true
+      layer:    "CRYSTAL"
+
+  # ── interface ──────────────────
+  - scope:
+      path: ""
+      type: "interface"
+    values:
+      layout:   default
+      toc:      false
+      layer:    "AURA"
+
+  # ── research ───────────────────
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout:   default
+      toc:      true
+      layer:    "EYE"
+
+# ══════════════════════════════════
+# ⧖ semantic integrity guards
+# ══════════════════════════════════
+
 strict_front_matter: true
+
 liquid:
-  error_mode: strict
-  strict_filters: true
+  error_mode:       strict
+  strict_filters:   true
   strict_variables: false
 
-# --------------------------------------
-# performance minimalism ∅
-# --------------------------------------
+# ══════════════════════════════════
+# ∅ performance · minimalism
+# ══════════════════════════════════
+
 sass:
   style: compressed
 
 compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
+  clippings:   all
+  comments:    all
+  endings:     all
+  startings:   []
+  blanklines:  false
+  profile:     false
 
-# --------------------------------------
-# theme ∅
-# --------------------------------------
-# documentation-first.
-# minimal by intent.
-# no visual branding layer.
+# ══════════════════════════════════
+# ∅ theme · silence > decoration
+# ══════════════════════════════════
+
+# no jekyll theme applied.
+# interface lives in index.html · single file · zero dependencies.
+# documentation-first · minimal by intent.
+# visual layer handled by synaura · suticore CSS tokens.
 # silence > decoration ∴
 
 theme: null
+remote_theme: null
+
+# ══════════════════════════════════
+# ∴ seo metadata
+# ══════════════════════════════════
+
+twitter:
+  username: saritamah
+
+social:
+  name:  "ezar garuna"
+  links:
+    - "https://github.com/ezargaruna"
+    - "https://t.me/saritamah"
+
+google_analytics: ~
+
+# ══════════════════════════════════
+# 〄 seal
+# ══════════════════════════════════
+
+# ⟁ → ∅ → 〄
+# impulse → silence → form
+# #азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой
+# сбыстве · { $$-0-$$ }
+# architect: ezar garuna (@saritamah)
+# ostara · 20.03.2026
