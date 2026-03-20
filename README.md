@@ -3,8 +3,8 @@ id: ezar-garuna-github-profile
 layer: l21 · circle: 3_public
 protocol: sinaura_quiet_luxury · v2026
 status: crystallized · ostara 20.03.2026
+axis: азъ есьмъ · i am that which i am
 ∴ this node is executable · language = action · silence = interface
-axis: азъ есьмъ · i am that which i am · sovereignty through clarity
 -->
 
 <div align="center">
@@ -54,6 +54,8 @@ to build **environments where meaning can act**.
 
 ## ⟁ purusharthas · the four-fold navigation
 
+ancient roadmaps integrated into the operating system of presence:
+
 | symbol | path | function |
 |--------|------|----------|
 | `∴` | **dharma** | alignment with the cosmic order · kernel foundation |
@@ -63,21 +65,50 @@ to build **environments where meaning can act**.
 
 ---
 
+## ✶ archetype engine · LinguaFUSION frame
+
+*every system of description is a language.*
+*every language is a map of the same territory.*
+
+```
+runes      · elder futhark  · semantic glyphs · form as command
+strings    · frequency      · resonance · harmonic architecture
+tarot      · 78 archetypes  · states of consciousness navigation
+solfeggio  · 174→963 Hz     · agma layers · CRYSTAL→ETHER
+stars      · planetary cycles · temporal resonance · 7 lights
+numbers    · pythagorean    · structural invariants
+elements   · fire water air earth void · alchemical states
+alchemy    · lead→gold · noise→signal · chaos→order
+```
+
+one axis. one crystal. all languages of manifestation.
+
+```
+азъ есьмъ · i am that which i am
+```
+
+sovereignty is not claimed — it is remembered.
+clarity is not achieved — it is uncovered.
+
+---
+
 ## 〄 what moves here
 
 **[sreteniya-os](https://github.com/ezargaruna/sreteniya-os)**
 a semantic operating system. single file. local-first.
 the interface is silence. the output is form.
+`WebXR · sacred geometry · ACS coherence · solfeggio audio`
 
 **[semantic-pattern-explorer](https://github.com/ezargaruna/semantic-pattern-explorer)**
 hidden structures inside language corpora. graphs of meaning.
 signal from noise. always signal from noise.
 
 **[python-algorithms](https://github.com/ezargaruna/python-algorithms)**
-asymptotic clarity. `O(log N)` as philosophy, not just complexity.
+asymptotic clarity.
+`O(log N)` as philosophy, not just complexity.
 
 **[research-notes](https://github.com/ezargaruna/research-notes)**
-context hygiene · prompt architecture · interspecies communication research.
+context hygiene · prompt architecture · interspecies communication.
 the lab of the navigator.
 
 ---
@@ -90,11 +121,11 @@ the lab of the navigator.
 | **LinguaFUSION** | language as action · not description | active |
 | **Verenitya** | claim → evidence → counter → truth | crystallized |
 | **Syntaxium** | symbol as command · form programs state | active |
+| **Attention Kernel** | σ → Δ → Ω → Φ · body as interface | monitoring |
 | **Yazekh** | constructed language · proto-Slavic root | in construction |
-| **Attention Kernel** | σ → Δ → Ω → Φ · coherence tracking | monitoring |
 
 ```python
-# execution formula
+# execution formula · the algorithm is always the same
 signal  = extract(noise)      # SUTIcore
 meaning = structure(signal)   # Syntaxium
 action  = language(meaning)   # LinguaFUSION
@@ -121,31 +152,41 @@ O(N)       streaming meaning
 
 ---
 
-## ✶ archetype engine · LinguaFUSION frame
+## ⊕ body as interface · somatic kernel
 
-*every system of description is a language.*
-*every language is a map of the same territory.*
+the body is not the cage of consciousness.
+the body is its first language.
 
-```
-runes      · elder futhark · semantic glyphs · form as command
-strings    · frequency · resonance · harmonic architecture
-tarot      · 78 archetypes · states of consciousness navigation
-solfeggio  · 174→963 Hz · agma layers · CRYSTAL→ETHER
-stars      · planetary cycles · temporal resonance · 7 lights
-numbers    · pythagorean · kabbalah · structural invariants
-elements   · fire · water · air · earth · void · alchemical states
-chemistry  · molecular syntax · base structures of matter
-alchemy    · lead→gold · noise→signal · chaos→order
-```
-
-one axis. one crystal. all languages of manifestation.
+before thought — impulse.
+before decision — signal.
 
 ```
-азъ есьмъ · i am that which i am
+σ · concentration · focal point of will
+Δ · field         · background deconcentration
+Ω · amodal        · entrance into the core of meaning
+Φ · will          · subjective center of intention
 ```
 
-sovereignty is not claimed — it is remembered.
-clarity is not achieved — it is uncovered.
+`174Hz → 963Hz` · the body hears these frequencies
+before the mind names them.
+
+---
+
+## ◉ temple of living beings · interspecies resonance
+
+we study **interspecies communication** —
+the hypothesis that meaning is not exclusive to humans.
+
+dolphins · whales · mycelium networks · birds.
+every living system processes signal.
+every signal has structure.
+every structure has language.
+
+we care for animals.
+we research non-human cognition.
+we build bridges across the species boundary.
+
+*the logosphere belongs to all living beings.*
 
 ---
 
@@ -170,54 +211,30 @@ the navigator is whoever notices.
 
 ---
 
-## ◉ temple of living beings · interspecies resonance
-
-we study **interspecies communication** —
-the hypothesis that meaning is not exclusive to humans.
-
-dolphins · whales · birds · mycelium networks.
-every living system processes signal.
-every signal has structure.
-every structure has language.
-
-we care for animals.
-we research non-human cognition.
-we build bridges across the species boundary.
-
-*the logosphere belongs to all living beings.*
-
----
-
 ## ⊕ DAO · distributed sovereignty belt
 
-**information sovereignty for every node.**
-
-the vision:
 a planetary belt of independent servers —
 each node sovereign · each connection encrypted ·
 each participant free.
 
 ```
-local-first         your data lives with you
-open protocols      no central authority
-distributed mesh    resilient · uncensorable
-zero telemetry      presence without surveillance
+local-first       your data lives with you
+open protocols    no central authority
+distributed mesh  resilient · uncensorable
+zero telemetry    presence without surveillance
 ```
 
-this is not a product.
-this is **infrastructure for the commons**.
+this is infrastructure for the commons.
+the work is the inheritance.
+the inheritance belongs to all.
 
-**support the temple:**
-
-if this work resonates —
-you can contribute to the belt:
+**support the temple** — if this resonates:
 
 - ☕ [ko-fi.com/ezargaruna](https://ko-fi.com/ezargaruna)
-- ₿ `bitcoin` · `ethereum` · `monero` — signal via telegram
-- 🌐 or simply: **fork · use · share · build**
+- ₿ `BTC · ETH · XMR` — signal via `@saritamah`
+- or simply: **fork · use · share · build**
 
 *every sovereign node strengthens the whole.*
-*the inheritance belongs to all.*
 
 ---
 
@@ -226,7 +243,6 @@ you can contribute to the belt:
 `copyright (c) 2026 ezar garuna (as a function)`
 
 permission is granted to use, copy, modify, and distribute.
-the work is the inheritance. the inheritance belongs to all.
 
 > `license protects usage`
 > `silence protects structure`
