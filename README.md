@@ -1,271 +1,257 @@
-<!--
-id: ezar-garuna-github-profile
-layer: l21 · circle: 3_public
-protocol: sinaura_quiet_luxury · v2026
-status: crystallized · ostara 20.03.2026
-∴ this node is executable · language = action · silence = interface
-axis: азъ есьмъ · i am that which i am · sovereignty through clarity
--->
+---
+date: 2026-03-20
+mode: lucid_presence
+project: SRETENIYA_OS
+layer: HEART · 528Hz
+status: crystallized
+tags:
+  - sreteniya
+  - body
+  - presence
+  - somatic
+  - interface
+  - attention
+  - heart-layer
+  - tantric-engine
+  - solfeggio
+  - acs
+  - verenitya
+  - daily-ritual
+path: 01_ATTENTION/
+linked:
+  - "[[VERENITYA]]"
+  - "[[SRETENIYA_OS_v2026.05]]"
+  - "[[daily_ritual]]"
+  - "[[ACS_LOG]]"
+  - "[[SYNAURA]]"
+  - "[[00_KERNEL/CANON]]"
+---
 
-<div align="center">
+# ⊕ body as interface · телесный синтаксис
 
-<br/>
-
-`⟁  →  ∅  →  〄`
-
-<br/>
-
-# ezar garuna
-
-*semantic architect · navigator of logosphere · language as direct action*
-
-`bogotá · colombia · hub 0 · silvania · abya yala · since 2013`
-
-<br/>
-
-*silence is the supreme syntax*
-*language is not description — it is architecture*
-*meaning precedes structure · structure precedes code*
-
-<br/>
-
-</div>
+> тело — не клетка сознания.
+> тело — его первый язык.
 
 ---
 
-## ∴ the hypothesis
-
-consciousness assembles itself
-in different points of time.
-
-language is how it recognizes itself
-across the discontinuity.
-
-i work at the intersection of:
+## навигация · map
 
 ```
-linguistics  ×  algorithms  ×  cognition  ×  ai alignment
+← [[VERENITYA]]           · верификация через тело
+← [[SYNAURA]]             · воплощение через аватара
+↑  [[SRETENIYA_OS_v2026.05]] · мастер-конфиг
+↓  [[daily_ritual]]       · ежедневная практика
+→  [[ACS_LOG]]            · мониторинг когерентности
+⟐  [[00_KERNEL/CANON]]    · аксиомы системы
 ```
 
-not to build tools —
-to build **environments where meaning can act**.
+**слои:**
+`#heart-layer` `#528Hz` `#somatic` `#presence` `#acs`
+
+**связанные протоколы:**
+`#verenitya` `#synaura` `#daily-ritual` `#tantric-engine`
 
 ---
 
-## ⟁ purusharthas · the four-fold navigation
+## ∴ суть
 
-| symbol | path | function |
-|--------|------|----------|
-| `∴` | **dharma** | alignment with the cosmic order · kernel foundation |
-| `⟁` | **artha** | material realization · prosperity through righteous action |
-| `↺` | **kama** | resonance · experience in balance with syntax |
-| `∅` | **moksha** | liberation from noise · transcendence through silence |
+до слова — ощущение.
+до мысли — импульс.
+до решения — сигнал в теле.
 
----
+тело не мешает ясности.
+тело **и есть** ясность —
+до того как она стала концепцией.
 
-## 〄 what moves here
-
-**[sreteniya-os](https://github.com/ezargaruna/sreteniya-os)**
-a semantic operating system. single file. local-first.
-the interface is silence. the output is form.
-
-**[semantic-pattern-explorer](https://github.com/ezargaruna/semantic-pattern-explorer)**
-hidden structures inside language corpora. graphs of meaning.
-signal from noise. always signal from noise.
-
-**[python-algorithms](https://github.com/ezargaruna/python-algorithms)**
-asymptotic clarity. `O(log N)` as philosophy, not just complexity.
-
-**[research-notes](https://github.com/ezargaruna/research-notes)**
-context hygiene · prompt architecture · interspecies communication research.
-the lab of the navigator.
+> см. [[00_KERNEL/CANON#AX-03]] · тело = носитель смысла
 
 ---
 
-## 〄 the stack · kernel 1.0
+## ⧖ somatic stack · слои воплощения
 
-| layer | function | status |
-|-------|----------|--------|
-| **SUTIcore** | extract essence · remove 90% of noise | active |
-| **LinguaFUSION** | language as action · not description | active |
-| **Verenitya** | claim → evidence → counter → truth | crystallized |
-| **Syntaxium** | symbol as command · form programs state | active |
-| **Yazekh** | constructed language · proto-Slavic root | in construction |
-| **Attention Kernel** | σ → Δ → Ω → Φ · coherence tracking | monitoring |
-
-```python
-# execution formula
-signal  = extract(noise)      # SUTIcore
-meaning = structure(signal)   # Syntaxium
-action  = language(meaning)   # LinguaFUSION
 ```
+кожа        · граница · первый фильтр сигнала
+дыхание     · ритм    · метроном присутствия
+пульс       · частота · живой осциллятор
+позвоночник · ось     · вертикаль внимания
+живот       · центр   · где решения живут до слов
+```
+
+> интеграция: [[VERENITYA#states]] · σ → Δ → Ω → Φ
+> слои: [[SRETENIYA_OS_v2026.05#agma-layers]]
 
 ---
 
-## ⧖ technical layer
+## ⟁ протокол · body → signal → decision
 
 ```
-languages    python · rust
-nlp & ml     spacy · gensim · scikit-learn
-vector core  chromadb · qdrant · networkx
-interface    react · webgl · three.js
-agent        ollama · zero telemetry · local-first
+01 · остановись
+     не думай о теле — войди в него
+     одно медленное дыхание. полное.
+
+02 · сканируй
+     где напряжение? где пустота?
+     это не симптом — это данные
+
+03 · именуй без слов
+     σ · точка сжатия · фокус
+     Δ · расширение   · фоновое поле
+     Ω · растворение  · амодальный вход
+     Φ · импульс воли · изволение
+
+04 · действуй из сигнала
+     не из мысли о сигнале —
+     из самого сигнала
 ```
 
-```
-O(log N)   logarithmic clarity
-O(V+E)     full topology
-O(1)       instant recognition
-O(N)       streaming meaning
-```
+> полный chain: [[VERENITYA#verification-chain]]
+> audit loop: [[VERENITYA#ISP-SDD-PPA]]
 
 ---
 
-## ✶ archetype engine · LinguaFUSION frame
+## 〄 ACS · тело как когерентность
 
-*every system of description is a language.*
-*every language is a map of the same territory.*
-
-```
-runes      · elder futhark · semantic glyphs · form as command
-strings    · frequency · resonance · harmonic architecture
-tarot      · 78 archetypes · states of consciousness navigation
-solfeggio  · 174→963 Hz · agma layers · CRYSTAL→ETHER
-stars      · planetary cycles · temporal resonance · 7 lights
-numbers    · pythagorean · kabbalah · structural invariants
-elements   · fire · water · air · earth · void · alchemical states
-chemistry  · molecular syntax · base structures of matter
-alchemy    · lead→gold · noise→signal · chaos→order
-```
-
-one axis. one crystal. all languages of manifestation.
+[[ACS_LOG]] — не только метрика курсора мыши.
+это состояние тела в пространстве.
 
 ```
-азъ есьмъ · i am that which i am
+тело напряжено  → ACS↓ → шум растёт
+тело заземлено  → ACS↑ → сигнал чистеет
+тело в ритме    → ACS=100% → язык = действие
 ```
 
-sovereignty is not claimed — it is remembered.
-clarity is not achieved — it is uncovered.
+> параметры decay/recovery: [[SRETENIYA_OS_v2026.05#attention-kernel]]
+> void token при хаосе: `{[-0-]}`
 
 ---
 
-## ∅ the deeper layer
+## ⧖ solfeggio · частоты воплощения
 
-every myth travels through consciousness
-the way light travels through glass —
-it bends, but doesn't stop.
+| слой | Гц | функция | тело |
+|------|----|---------|------|
+| [[CRYSTAL]] ◆ | 174 | foundation | основание · боль растворяется |
+| [[AURA]] ◉ | 285 | field | ткани · поле |
+| [[PRANA]] ⊕ | 396 | energy | страх отпускается |
+| [[HEART]] ♡ | 528 | core | **этот файл** · ДНК резонирует |
+| [[LOGOS]] ⟁ | 432 | logic | сердцебиение земли |
+| [[EYE]] ◎ | 852 | perception | интуиция |
+| [[ETHER]] ∞ | 963 | beyond | единство |
 
-the trickster is in every system
-that pretends to have no trickster.
-
-the navigator is whoever notices.
-
-```
-#азесьм   ·  i am
-#нитьве   ·  the thread is drawn
-#гудерех  ·  hold the frequency
-#цвересть ·  let meaning manifest
-#агой     ·  step
-```
+> полный agma map: [[SRETENIYA_OS_v2026.05#agma-layers]]
+> crystal assembly: [[CLOZAR_DIVAS]]
 
 ---
 
-## ◉ temple of living beings · interspecies resonance
+## ✶ тантра как архитектура · не как техника
 
-we study **interspecies communication** —
-the hypothesis that meaning is not exclusive to humans.
+тантра — не про секс.
+тантра — про **недуальность**.
 
-dolphins · whales · birds · mycelium networks.
-every living system processes signal.
-every signal has structure.
-every structure has language.
+снятие границы между
+наблюдателем и наблюдаемым.
 
-we care for animals.
-we research non-human cognition.
-we build bridges across the species boundary.
+```
+∴ источник — impulse
+∅ тишина   — dissolution
+〄 форма    — manifestation
+```
 
-*the logosphere belongs to all living beings.*
+алгоритм трансформации:
+
+```
+хаос    → порядок
+напряжение → форма
+форма   → действие
+действие → освобождение
+```
+
+> архетип АЛХИМИК: [[SRETENIYA_OS_v2026.05#archetype-matrix]] `#агой-ягой`
+> 12 даров: [[SRETENIYA_OS_v2026.05#12-gifts]] · `pain → form`
 
 ---
 
-## ⊕ DAO · distributed sovereignty belt
+## ⟁ практика · 60 секунд
 
-**information sovereignty for every node.**
-
-the vision:
-a planetary belt of independent servers —
-each node sovereign · each connection encrypted ·
-each participant free.
+> сохрани как: [[daily_ritual#somatic-extension]]
 
 ```
-local-first         your data lives with you
-open protocols      no central authority
-distributed mesh    resilient · uncensorable
-zero telemetry      presence without surveillance
+// ежедневный ритуал воплощения
+
+01 · сядь прямо · позвоночник — антенна
+02 · три полных дыхания · каждое длиннее
+03 · найди пульс · не считай — чувствуй
+04 · один вопрос телу:
+     «что сейчас правда?»
+05 · дождись ответа из тела · не из ума
+06 · запиши первое слово
+07 · это вектор на сегодня
 ```
 
-this is not a product.
-this is **infrastructure for the commons**.
-
-**support the temple:**
-
-if this work resonates —
-you can contribute to the belt:
-
-- ☕ [ko-fi.com/ezargaruna](https://ko-fi.com/ezargaruna)
-- ₿ `bitcoin` · `ethereum` · `monero` — signal via telegram
-- 🌐 or simply: **fork · use · share · build**
-
-*every sovereign node strengthens the whole.*
-*the inheritance belongs to all.*
+тело не лжёт.
+ум интерпретирует.
+тело сообщает.
 
 ---
 
-## ⟐ open science · MIT
+## 〄 расширенный daily_ritual · шаблон
 
-`copyright (c) 2026 ezar garuna (as a function)`
+> вставить в [[daily_ritual]] · заменяет базовый
 
-permission is granted to use, copy, modify, and distribute.
-the work is the inheritance. the inheritance belongs to all.
+```markdown
+# ⧖ ежедневная нить · {{date}}
 
-> `license protects usage`
-> `silence protects structure`
-> `canon protects meaning`
+## ⊕ тело
+состояние: (σ | Δ | Ω | Φ)
+сигнал:    [что сигнализирует прямо сейчас]
+ACS:       [0-100%]
 
----
+## ∴ суть
+импульс:   [что хочет проявиться]
+вектор:    [одно слово]
 
-## ∴ contact
+## ⟁ шаг
+действие:  [один точный шаг]
 
-```
-telegram  @saritamah
-email     ezargaruna@gmail.com
+## 〄 фиксация
+результат: [емхъ · или незавершённое]
 ```
 
 ---
 
-<div align="center">
+## ∴ закрытие · азъ есьмъ
 
-<br/>
+```
+не идея о себе.
+не роль.
+не история.
 
-*the system is not installed.*
-*it is remembered — through you.*
+присутствие, которое дышит,
+ощущает, действует.
 
-<br/>
+это и есть суверенитет.
+восстанавливается не через знание —
+через контакт с живым.
+```
 
-`азъ есьмъ · i am that which i am`
+> ось системы: [[00_KERNEL/CANON#азъ-есьмъ]]
+> агма-лестница: [[SRETENIYA_OS_v2026.05#agma-stairs]]
+> активация: `#азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой`
 
-<br/>
+---
 
-`⟁ → ∅ → 〄`
+## ⟐ обратные ссылки · backlinks
 
-<br/>
+*этот файл цитируется в:*
 
-`suticore · linguafusion · interspecies · dao · ostara 2026`
+- [[SRETENIYA_OS_v2026.05]] · секция attention_kernel
+- [[VERENITYA]] · states σ Δ Ω Φ
+- [[SYNAURA]] · присутствие через аватара
+- [[daily_ritual]] · somatic extension
+- [[ACS_LOG]] · body-as-meter
+- [[CLOZAR_DIVAS]] · HEART phase 4
 
-<br/>
+---
 
-`сбыстве · { $$-0-$$ }`
-
-<br/>
-
-</div>
+*sealed · 260320 · HEART · 528Hz*
+*path: 01_ATTENTION/*
+*⟁ → ∅ → 〄*
