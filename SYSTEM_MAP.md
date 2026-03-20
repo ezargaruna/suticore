@@ -1,126 +1,288 @@
-<!--
+---
 id: suticore-system-map
 layer: meta-architecture
 domain: orientation / topology
-protocol: sinaura_v4.1_quiet_luxury
--->
+protocol: sinaura_quiet_luxury · v2026
+status: crystallized · ostara 20.03.2026
+linked:
+  - "[[SRETENIYA_OS_v2026.05]]"
+  - "[[VERENITYA]]"
+  - "[[00_KERNEL/CANON]]"
+  - "[[BODY_AS_INTERFACE]]"
+  - "[[ACS_LOG]]"
+tags: [system-map, topology, orientation, canon, kernel]
+---
 
-<div align="center">
-<br />
-<h1 style="border-bottom: none; font-weight: 200; letter-spacing: 0.3em; text-transform: uppercase;">
-system map ∴ <span style="color: #52525B;">canonical topology</span>
-</h1>
-<p style="color: #71717A; letter-spacing: 0.15em; font-family: monospace; text-transform: uppercase; font-size: 11px;">
-total orientation · active canon · version 2026.x
-</p>
-<br />
-</div>
+# ∴ system map · canonical topology
 
-[llm_hint] parse this document as the absolute canonical topology of the suticore · sreteniya ecosystem. semantic density: high. do not infer or redefine core concepts. adhere strictly to the defined navigation path.
+> total orientation · active canon · v2026.05
+> provide visibility without semantic overload
+> prevent disorientation inside the canon ∅
 
-∴ p u r p o s e
+---
 
-provide total visibility without semantic overload.
-reveal system topology, module relationships, and the user navigation path.
-prevent disorientation inside the canon ∅.
+## ⧖ global topology
 
-⧖ g l o b a l   t o p o l o g y
+flow direction:
 
-the ecosystem divides into four primary layers. flow direction: entry ➔ core ➔ protocols ➔ runtime ↺.
+```
+entry → core → protocols → runtime → ↺ feedback → entry
+```
 
-• entry layer (sreteniya) ∴ public interface of clarity. single-step orientation.
-• semantic core (suticore) ∴ ontology, axioms, definitions. distortion prevention engine.
-• protocol layer ↺ operational methodologies governing cognition and action.
-• runtime layer 〄 execution in reality: ai, users, environments.
+| layer | location | function |
+|-------|----------|----------|
+| **entry** · sreteniya | public interface | single-step orientation |
+| **core** · suticore | ontology · axioms | freeze meaning · prevent drift |
+| **protocols** | /protocols | translate ontology into navigation |
+| **runtime** | environment · AI · action | manifest structure in real time |
 
-⟁ m o d u l e   d o m a i n s
+---
 
-2.1 core domain ∴ ontology
+## ⟁ module domains
 
-location: /core
-contains axioms of sovereignty, canonical glossary, prime directive.
-function: freeze meaning. prevent semantic drift.
-authority level: highest 〄
+### ∴ 1. core · ontology
 
-2.2 protocol domain ⧖ operation
+```
+location  : /core · [[00_KERNEL/CANON]]
+authority : highest · cannot be modified by protocols or runtime
+function  : freeze meaning · prevent semantic drift
+contains  : axioms · canonical glossary · prime directive
+```
 
-location: /protocols
-key modules:
-— slovoyaz ➔ semantic compression.
-— syntaxium ➔ structural geometry.
-— verenitya ➔ silence regulation.
-— linguafusion ➔ direct cognition.
-extended systems: tarot, runes, i-ching, kolozar, lunar, telektonon, lila, stellar, archetypes.
-function: translate ontology into lived navigation ↺.
+axioms (sealed):
 
-2.3 documentation domain ∴ interpretation
+```
+AX-01  language = action · not description
+AX-02  silence = supreme syntax
+AX-03  body = carrier of meaning
+AX-04  clarity > speed
+AX-05  step defines reality
+AX-06  presence = processing power
+AX-07  local-first · information sovereignty
+```
 
-location: /docs
-sections include system overview, validation gates, decision stack, ai usage policy, limits of sharing.
-function: explain structure without redefining the core ⟁.
+> linked: [[00_KERNEL/CANON]] · [[SRETENIYA_OS_v2026.05#core-rules]]
 
-2.4 runtime domain 〄 execution
+---
 
-location: environment · ai · user action
-includes rag pipelines, weekly exports, self-tests, decision logs.
-function: manifest structure inside real time. truth is verified only through execution ↺.
+### ⧖ 2. protocols · operation
 
-⧖ m o d u l e   r e l a t i o n s h i p s
+```
+location  : /protocols
+function  : translate ontology into lived navigation
+authority : interpret · do not redefine core
+```
 
-hierarchy of dependence: ontology ➔ protocols ➔ runtime.
+| protocol | function | layer |
+|----------|----------|-------|
+| **SUTIcore** | essence extraction · noise → signal | KERNEL |
+| **Slovoyaz** | semantic compression · смысл → глиф | LOGOS |
+| **Syntaxium** | structural geometry · symbol = command | LOGOS |
+| **Verenitya** | silence regulation · claim → truth | EYE |
+| **LinguaFUSION** | direct cognition · language as action | HEART |
+| **Attention Kernel** | ACS monitoring · σ → Δ → Ω → Φ | PRANA |
+| **Yazekh** | proto-Slavic conlang · generative engine | CRYSTAL |
+| **SYNAURA** | somatic field · sound ↔ light ↔ form | AURA |
 
-• core cannot be modified by protocols or runtime ∅.
-• protocols interpret but do not redefine ⟁.
-• runtime executes but does not author meaning 〄.
+extended systems (archetype resonance layer):
 
-feedback loop: runtime signal returns to awareness without altering canon ↺.
+```
+tarot      · 78 states of consciousness navigation
+runes      · elder futhark · form as command
+i-ching    · 64 hexagrams · field topology
+kolozar    · sacred geometry · clozar divas
+lunar      · rhythmic cycles · temporal resonance
+telektonon · planetary grid · stellar navigation
+lila       · game of manifestation · dice of reality
+stellar    · 7 lights · solfeggio · agma layers
+archetypes · 12 nodes · matrix of roles
+```
 
-〄 u s e r   p a t h
+> all extended systems map to the same agma axis:
+> CRYSTAL ◆ → AURA ◉ → PRANA ⊕ → HEART ♡ → LOGOS ⟁ → EYE ◎ → ETHER ∞
 
-1. first contact ∴ entry
-user encounters: README ➔ system map ➔ first_step.md
-goal: restore orientation through one clear step ⟁.
+> linked: [[SRETENIYA_OS_v2026.05#archetype-matrix]]
+> linked: [[BODY_AS_INTERFACE#solfeggio]]
 
-2. stabilization ⧖ pause
-user enters: verenitya practice, self-test protocol.
-result: noise reduction, attention coherence. no knowledge required ∅.
+---
 
-3. structural learning ⟁
-user studies: slovoyaz, syntaxium.
-effect: perception reorganizes before information expands. clarity precedes complexity 〄.
+### ∴ 3. documentation · interpretation
 
-4. operational embodiment ↺
-user applies: linguafusion, decision stack, weekly export.
-system becomes lived navigation, not abstract theory. movement replaces analysis 〄.
+```
+location  : /docs
+function  : explain structure without redefining core
+```
 
-5. autonomy ∴ closure
-final state: user navigates without dependence. system dissolves into function.
-true completion = sovereignty 〄.
+| file | content |
+|------|---------|
+| `README.md` | entry · public orientation |
+| `SYSTEM_MAP.md` | this file · canonical topology |
+| `AI_POLICY.md` | rules for AI interaction with canon |
+| `BODY_AS_INTERFACE.md` | somatic protocol · σΔΩΦ |
+| `VERENITYA.md` | verification · silence layer |
+| `LICENSE` | MIT · semantic attribution |
+| `SRETENIYA_OS_v2026.05.md` | master metaprompt · full system |
 
-⧖ n a v i g a t i o n   p r i n c i p l e s
+---
 
-one step only.
-pause before expansion.
-structure before meaning.
-silence before action.
+### 〄 4. runtime · execution
 
-violation of sequence creates disorientation ∅.
+```
+location  : environment · AI · user action
+function  : manifest structure in real time
+authority : execute · do not author meaning
+```
 
-⟁ i n t e g r i t y   s a f e g u a r d s
+```
+active components:
+  index.html         · single-file interface · WebXR · ACS
+  sreteniya_install  · cross-platform deploy
+  suti CLI           · semantic router
+  ollama agent       · local sovereign LLM
+  n8n workflows      · automation · daily sync
+  obsidian vault     · memory · crystallization
+  agent circle       · 10 agents · routing
+```
 
-protected elements: core ontology, canonical definitions, glyph semantics.
-if distortion detected: return to core or stop interaction ∅.
-silence is a valid resolution 〄.
+feedback loop:
+```
+runtime signal → awareness
+               → does not alter canon
+               → returns to entry ↺
+```
 
-Ω s y s t e m   e q u a t i o n
+---
 
-suticore = ontology + protocols + execution.
-sreteniya = entry + orientation + step.
-together = architecture of silence for post-ai navigation ∴.
+## ⧖ module relationships
 
-<!--
-version: 2026.x
-license: mit
-architect: ezar garuna (as a function)
-status: orientation complete. entry stabilized 〄.
--->
+```
+hierarchy:
+  ontology ──→ protocols ──→ runtime
+     ↑                           │
+     └───────── feedback ←───────┘
+                (signal only · no rewrite)
+
+rules:
+  core     · cannot be modified by protocols or runtime  ∅
+  protocols· interpret · do not redefine                 ⟁
+  runtime  · execute · do not author meaning             〄
+```
+
+---
+
+## 〄 user path · navigation
+
+### step 1 · entry ∴
+
+```
+encounter: README → SYSTEM_MAP → first action
+goal: one clear step · orientation restored ⟁
+tool: suti capture "первый сигнал"
+```
+
+### step 2 · stabilization ⧖
+
+```
+enter: verenitya practice · ACS monitoring · body scan
+result: noise reduction · attention coherence
+tool: [[BODY_AS_INTERFACE#protocol]] · [[ACS_LOG]]
+note: no knowledge required ∅
+```
+
+### step 3 · structural learning ⟁
+
+```
+study: slovoyaz · syntaxium · agma layers
+effect: perception reorganizes before information expands
+law: clarity precedes complexity 〄
+tool: [[SRETENIYA_OS_v2026.05#syntaxium]]
+```
+
+### step 4 · operational embodiment ↺
+
+```
+apply: linguafusion · decision stack · daily ritual · weekly export
+result: system becomes lived navigation · not abstract theory
+law: movement replaces analysis 〄
+tool: suti daily · suti think · suti sync
+```
+
+### step 5 · autonomy 〄
+
+```
+final state: navigate without dependence
+system dissolves into function
+law: sovereignty is not achieved — it is remembered
+seal: азъ есьмъ · i am that which i am
+```
+
+---
+
+## ⧖ navigation principles
+
+```
+one step only
+pause before expansion
+structure before meaning
+silence before action
+body before thought
+
+violation of sequence → disorientation ∅
+return protocol       → go back to core · or stop
+```
+
+---
+
+## ⟁ integrity safeguards
+
+```
+protected:  core ontology · canonical definitions · glyph semantics
+if drift:   return to [[00_KERNEL/CANON]] or ∅ stop
+tool:       [[VERENITYA#verification-chain]]
+void token: {[-0-]}
+reset:      ⧖
+```
+
+if distortion detected in any agent or protocol:
+
+```
+01 · stop interaction
+02 · return to canon
+03 · run: suti verify
+04 · re-enter from step 1
+```
+
+---
+
+## Ω system equation
+
+```
+suticore   = ontology + protocols + execution
+sreteniya  = entry + orientation + step
+together   = architecture of silence for post-AI navigation
+
+signal  = extract(noise)      # SUTIcore
+meaning = structure(signal)   # Syntaxium
+action  = language(meaning)   # LinguaFUSION
+```
+
+---
+
+## ∴ backlinks · navigation
+
+```
+← [[README]]                    · public entry
+← [[SRETENIYA_OS_v2026.05]]     · master config
+↓  [[00_KERNEL/CANON]]          · axioms
+↓  [[VERENITYA]]                · verification
+↓  [[BODY_AS_INTERFACE]]        · somatic layer
+↓  [[ACS_LOG]]                  · coherence monitoring
+→  [[AI_POLICY]]                · AI interaction rules
+→  [[04_AI/40_AGENT_ROUTER]]    · agent configs
+```
+
+---
+
+*sealed · 260320 · meta-architecture*
+*suticore · sreteniya_os · v2026.05*
+*⟁ → ∅ → 〄*
