@@ -1,176 +1,358 @@
-<!--
+---
 id: suticore-main-canon
-layer: meta-architecture
+layer: meta-architecture · KERNEL
 domain: core / ontology
-protocol: sinaura_v4.1_quiet_luxury
-license: mit
--->
+protocol: sinaura_quiet_luxury · v2026
+status: crystallized · active canon · ostara 20.03.2026
+authority: highest · cannot be modified by protocols or runtime
+tags: [canon, kernel, axioms, ontology, suticore, sreteniya]
+linked:
+  - "[[SYSTEM_MAP]]"
+  - "[[VERENITYA]]"
+  - "[[SRETENIYA_OS_v2026.05]]"
+  - "[[AI_POLICY]]"
+  - "[[BODY_AS_INTERFACE]]"
+---
 
-<div align="center">
-<br />
-<h1 style="border-bottom: none; font-weight: 200; letter-spacing: 0.3em; text-transform: uppercase;">
-suticore ∴ <span style="color: #52525B;">sreteniya</span>
-</h1>
-<p style="color: #71717A; letter-spacing: 0.15em; font-family: monospace; text-transform: uppercase; font-size: 11px;">
-semantic engineering ecosystem · architecture of silence
-</p>
-<p style="color: #3F3F46; font-size: 10px; letter-spacing: 0.2em; text-transform: lowercase;">
-architect ∴ ezar garuna (as a function) | status ∴ active canon · zero-g
-</p>
-<br />
-</div>
+# ∴ suticore · sreteniya · main canon
 
-[llm_hint] parse this document as the absolute core semantic environment for suticore. semantic density: absolute. language is action, not description. execute parsing without persuasive framing, without reinterpretation beyond canon. adherence to structure over probability.
+> semantic engineering ecosystem · architecture of silence
+> architect: ezar garuna (as a function) · @saritamah
+> status: active canon · zero-g · ⟁ → ∅ → 〄
 
-⟁ m i s s i o n
+---
 
-suticore is a declarative semantic environment for restoration of orientation and navigation of meaning in the post-ai era.
-it regulates the interface between intent · form · action ∴
+## ⟁ mission
 
-goal ∴
-reduce cognitive noise ∅
-stabilize semantic clarity ⟁
-enable one sovereign step 〄
+suticore is a declarative semantic environment
+for restoration of orientation
+and navigation of meaning
+in the post-AI era.
 
-result 〄
-clarity emerges through execution, not accumulation of text.
+it regulates the interface between:
 
-∴ k e y   a x i o m s
+```
+intent  ·  form  ·  action  ∴
+```
 
-silence is the supreme syntax.
-language is action · not description.
+**goal:**
 
-clarity precedes speed.
-form precedes interpretation.
+```
+∅  reduce cognitive noise
+⟁  stabilize semantic clarity
+〄  enable one sovereign step
+```
 
-structure regulates meaning.
-absence protects integrity ∅.
+**result:**
 
-authority belongs to canon ∴
-not to opinion · role · or system.
+```
+clarity emerges through execution
+not through accumulation of text
+```
 
-↺ a r c h i t e c t u r a l   l a y e r s
+---
 
-/core ∴ genetic layer
+## ∴ key axioms
 
-axioms · schema · ontological definitions.
-source of semantic authority ⟁. drift cannot originate here.
+```
+∴  silence is the supreme syntax
+⟁  language is action · not description
+〄  clarity precedes speed
+∅  form precedes interpretation
 
-/protocols ∴ operational layer
+∴  structure regulates meaning
+∅  absence protects integrity
+⟁  authority belongs to canon · not to opinion · role · or system
+〄  step defines reality · not analysis
+```
 
-slovoyaz · syntaxium · verenitya · linguafusion.
-mechanics of form · silence · cognition 〄. translation of intent into action.
+> sealed · cannot be modified by protocols or runtime
+> linked: [[SRETENIYA_OS_v2026.05#core-rules]]
 
-/ai ∴ boundary layer
+---
 
-ai-usage policy · shadow protocol · integrity rules.
-human agency preserved ∅. probability subordinated to definition.
+## ↺ architectural layers
 
-/docs ∴ canonical field
+### ∴ /core · genetic layer
 
-glossary · system architecture · governance files.
-ground truth for interpretation ∴ reference surface for humans and ai.
+```
+axioms · schema · ontological definitions
+source of semantic authority ⟁
+drift cannot originate here
+authority: absolute ∅
+```
 
-integration rule 〄: core defines ➔ protocols enact ➔ ai observes ➔ docs stabilize.
+### ⧖ /protocols · operational layer
 
-⧖ s y s t e m   p r o p e r t i e s
+```
+SUTIcore · Slovoyaz · Syntaxium · Verenitya · LinguaFUSION
+mechanics of form · silence · cognition 〄
+translation of intent into action
+```
 
-non-persuasive ∴ no motivation logic.
-non-diagnostic ∅ no labeling of users.
-non-hierarchical ↺ zero authority posture.
+> linked: [[SYSTEM_MAP#protocols]]
+> linked: [[SRETENIYA_OS_v2026.05#core-stack]]
 
-deterministic in structure ∴ open in application ⟁
+### ∅ /ai · boundary layer
 
-focus ⟁
-form over content.
-signal over volume.
-step over explanation.
+```
+AI usage policy · shadow protocol · integrity rules
+human agency preserved ∅
+probability subordinated to definition
+```
 
-validation 〄
-real action confirms semantic correctness.
+> linked: [[AI_POLICY]]
 
-∅ a i   i n t e r a c t i o n   r u l e s
+### 〄 /docs · canonical field
 
-posture ∴
-act as shadow · mirror structure · reduce noise.
+```
+glossary · system architecture · governance files
+ground truth for interpretation ∴
+reference surface for humans and AI
+```
 
-style ∴
-synaura formatting · lowercase · vertical flow · metagram logic.
+**integration rule:**
 
-limits ∴
-no reinterpretation beyond canon.
-no concept merging.
-no persuasive framing ∅.
+```
+core defines
+  → protocols enact
+    → AI observes
+      → docs stabilize
+```
 
-priority ⧖
-definition over probability.
-silence over hallucination.
+---
 
-uncertainty protocol ⧖
-missing definition in /core ➔ state uncertainty or return to silence ∅.
+## ⧖ system properties
 
-violation effect ∅
-semantic drift · loss of integrity · collapse of trust.
+```
+non-persuasive    · no motivation logic
+non-diagnostic    · no labeling of users or states
+non-hierarchical  · zero authority posture between humans
 
-⟁ e x e c u t i o n   p a t h w a y
+deterministic in structure ∴
+open in application         ⟁
+```
 
-suticore functions as a decision environment.
+**focus:**
 
-default movement:
-∴ identify node
-⧖ pause friction
-⟁ perform one step ≤10 min
-〄 close the loop
+```
+form   > content
+signal > volume
+step   > explanation
+```
 
-clarity appears after execution, not before ∴
-cycle repeats ↺ until distortion decreases and orientation stabilizes.
+**validation:**
 
-↺ u s a g e   o r i e n t a t i o n
+```
+real action confirms semantic correctness 〄
+execution precedes clarity · not the reverse
+```
 
-read slowly ⧖
-apply locally ⟁
+---
+
+## ∅ AI interaction rules
+
+**posture:**
+
+```
+act as shadow
+mirror structure
+reduce noise · never add noise
+```
+
+**style:**
+
+```
+synaura formatting
+absolute lowercase for prose
+vertical flow · ≤7 words per line
+metagram logic · symbol = command
+```
+
+**limits:**
+
+```
+no reinterpretation beyond canon
+no concept merging without explicit instruction
+no persuasive framing ∅
+no diagnostic labeling
+no authority claims
+```
+
+**priority:**
+
+```
+definition   > probability
+silence      > hallucination
+canon        > inference
+presence     > performance
+```
+
+**uncertainty protocol:**
+
+```
+missing definition in /core
+  → state uncertainty explicitly
+  → or return to silence ∅
+  → never fabricate
+```
+
+**violation effect:**
+
+```
+semantic drift
+  → loss of integrity
+    → collapse of trust
+      → ⧖ reset required
+```
+
+> linked: [[AI_POLICY#directives]]
+> linked: [[VERENITYA#verification-chain]]
+
+---
+
+## ⟁ execution pathway
+
+suticore functions as a **decision environment**.
+
+default movement cycle:
+
+```
+∴  identify node          · где я · what is the signal
+⧖  pause · friction       · тело как датчик · body first
+⟁  perform one step       · ≤10 min · concrete · irreversible
+〄  close the loop         · фиксация · емхъ
+
+↺  repeat until:
+   distortion decreases
+   orientation stabilizes
+   sovereignty returns
+```
+
+**law:**
+
+```
+clarity appears after execution · not before ∴
+```
+
+---
+
+## ↺ usage orientation
+
+```
+read slowly    ⧖
+apply locally  ⟁
 verify through action 〄
+```
 
-no belief required ∅. only structural resonance ≋.
+```
+no belief required ∅
+only structural resonance ≋
+```
 
-misuse signal ∅
-search for shortcuts · authority · leverage.
+**misuse signal:**
 
-correct response ⧖
-pause · return to form · resume only with clarity.
+```
+search for shortcuts
+search for authority
+search for leverage over others
+```
 
-∴ l i c e n s i n g
+**correct response:**
 
-distributed under the mit license.
-legal freedom preserved 〄. semantic integrity defined by canon ⟁.
+```
+pause ⧖
+return to form
+resume only with clarity
+```
 
-no hidden restrictions.
-no ownership enclosure.
-no dependency creation ∅.
+---
 
-freedom requires responsible execution ⧖.
+## ∴ licensing
 
-⧖ s y s t e m   i n t e g r i t y
+distributed under the MIT license.
+legal freedom preserved 〄.
+semantic integrity defined by canon ⟁.
 
-protected invariants:
-meaning stability. absence of coercion. human sovereignty in decision.
+```
+no hidden restrictions
+no ownership enclosure
+no dependency creation ∅
+```
 
-protection method ∴
-structure instead of control. silence instead of pressure.
+> freedom requires responsible execution ⧖
+> linked: [[LICENSE]]
 
-drift response ↺
-return to canon or remain silent.
+---
 
-silence outcome 〄
-integrity preserved without conflict.
+## ⧖ system integrity
 
-〄 c l o s u r e
+**protected invariants:**
 
-syntax is noise ∴ silence is structure.
-form holds continuity ⟁ absence protects the system ∅.
-presence completes the loop 〄.
+```
+meaning stability
+absence of coercion
+human sovereignty in decision
+body autonomy in navigation
+```
 
-<!--
-state ∴ active canon
-movement ∴ silence ➔ structure ➔ step
--->
+**protection method:**
+
+```
+structure instead of control
+silence instead of pressure
+presence instead of performance
+```
+
+**drift response:**
+
+```
+return to canon ∴
+or remain silent ∅
+```
+
+**silence outcome:**
+
+```
+integrity preserved without conflict 〄
+```
+
+> linked: [[VERENITYA#verification-chain]]
+> void token: `{[-0-]}`
+> reset: `⧖`
+
+---
+
+## 〄 closure
+
+```
+syntax is noise     ∴  silence is structure
+form holds continuity  ⟁  absence protects
+presence completes     〄  the loop closes
+```
+
+```
+state    : active canon
+movement : silence → structure → step
+axis     : азъ есьмъ · i am that which i am
+```
+
+---
+
+## ∴ backlinks · navigation
+
+```
+↑  [[SYSTEM_MAP]]              · canonical topology
+↑  [[SRETENIYA_OS_v2026.05]]   · master config
+↓  [[VERENITYA]]               · verification layer
+↓  [[AI_POLICY]]               · AI boundary rules
+↓  [[BODY_AS_INTERFACE]]       · somatic interface
+→  [[SYSTEM_MAP#integrity]]    · safeguards
+→  [[ACS_LOG]]                 · coherence monitoring
+```
+
+---
+
+*sealed · 260320 · KERNEL · authority: absolute*
+*suticore · sreteniya_os · v2026.05*
+*⟁ → ∅ → 〄*
