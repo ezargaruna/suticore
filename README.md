@@ -1,200 +1,184 @@
 <!--
-∴ this node is executable
-language = action · silence = interface
-⟁ → ∅ → 〄
+id: ezar-garuna-github-profile
+layer: l7 · circle: 3_public
+protocol: sinaura_quiet_luxury · v2026
+status: crystallized · ostara 20.03.2026
 -->
 
 <div align="center">
 
-<br/>
 
-```
-⟁  →  ∅  →  〄
-```
 
-<br/>
 
-# ezar garuna
+⟁  →  ∅  →  〄
 
-<br/>
+ezar garuna
 
-*semantic architect · navigator of logosphere · language as direct action*
+<p align="center" style="font-family:monospace; font-size:11px; letter-spacing:0.25em; text-transform:lowercase; color:#71717a;">
+semantic architect · navigator of logosphere · language as direct action
+</p>
 
-<br/>
-
-`bogotá · colombia · 2013 →`
-
-<br/>
-
-</div>
-
----
+<p align="center" style="font-family:monospace; font-size:10px; letter-spacing:0.2em; color:#3f3f46;">
+bogotá · colombia · hub 0 · silvania · since 2013
+</p>
 
 <div align="center">
 
-```
 silence is the supreme syntax
+
 language is not description — it is architecture
+
 meaning precedes structure · structure precedes code
-```
 
 </div>
 
----
+∴ initiation // the hypothesis
 
-## ∴ the hypothesis
+consciousness assembles itself in different points of time.
 
-consciousness assembles itself
-in different points of time.
+language is how it recognizes itself across the discontinuity.
 
-language is how it recognizes itself
-across the discontinuity.
+i work at the intersection of:
+linguistics  ×  algorithms  ×  cognition  ×  ai alignment
 
-i work at this intersection:
+my intent is not to build tools — but to build environments where meaning can act.
 
-```
-linguistics  ×  algorithms  ×  cognition  ×  AI alignment
-```
+⟁ what moves here
 
-not to build tools —
-to build **environments where meaning can act**.
+sreteniya-os a semantic operating system. single file. local-first.
 
----
+the interface is silence. the output is form.
 
-## ⟁ what moves here
+semantic-pattern-explorer hidden structures inside language corpora. graphs of meaning.
 
-**SRETENIYA_OS**
-a semantic operating system.
-single file. zero dependencies. local-first.
-the interface is silence.
-the output is form.
-→ [sreteniya-os](https://github.com/ezargaruna/sreteniya-os)
-
-**semantic pattern explorer**
-hidden structures inside language corpora.
-graphs of meaning. topology of concepts.
 signal from noise. always signal from noise.
-→ [semantic-pattern-explorer](https://github.com/ezargaruna/semantic-pattern-explorer)
 
-**python algorithms**
-asymptotic clarity.
-`O(log N)` as philosophy, not just complexity.
-→ [python-algorithms](https://github.com/ezargaruna/python-algorithms)
+python-algorithms asymptotic clarity.
 
-**research notes**
-context hygiene · prompt architecture
-linguistic observations on AI systems
+o(log n) as philosophy, not just complexity.
+
+research-notes context hygiene · prompt architecture · ai observations.
+
 the lab of the navigator.
-→ [research-notes](https://github.com/ezargaruna/research-notes)
 
----
+㄄ the stack // kernel 1.0
 
-## 〄 the stack
+underneath every project — the same core logic:
 
-underneath every project — the same kernel:
+layer
 
-| layer | function |
-|-------|----------|
-| **SUTIcore** | extract essence · remove 90% of noise |
-| **LinguaFUSION** | language as action · not description |
-| **Verenitya** | claim → evidence → counter → truth |
-| **Syntaxium** | symbol as command · form programs state |
-| **Yazekh** | constructed language · proto-Slavic root |
-| **Attention Kernel** | σ → Δ → Ω → Φ · coherence tracking |
+function
 
-```python
-# the algorithm is always the same
-signal = extract(noise)
-meaning = structure(signal)
-action  = language(meaning)
-```
+status
 
----
+SUTIcore
 
-## ⧖ technical layer
+extract essence · remove 90% of noise
 
-```
-python · rust
-spacy · gensim · scikit-learn
-chromadb · qdrant · networkx
-react · webgl · three.js
-ollama · local-first · zero telemetry
-```
+active
 
-algorithmic constants:
+LinguaFUSION
 
-```
-O(log N)   binary search · logarithmic clarity
-O(V+E)     graph traversal · full topology
-O(1)       hash lookup · instant recognition
-O(N)       sliding window · streaming meaning
-```
+language as action · not description
 
----
+active
 
-## ∅ the deeper layer
+Verenitya
 
-every myth travels through consciousness
-the way light travels through glass —
-it bends, but doesn't stop.
+claim → evidence → counter → truth
 
-the trickster is in every system
-that pretends to have no trickster.
+crystallized
+
+Syntaxium
+
+symbol as command · form programs state
+
+active
+
+Yazekh
+
+constructed language · proto-Slavic root
+
+in construction
+
+Attention Kernel
+
+σ → Δ → Ω → Φ · coherence tracking
+
+monitoring
+
+⧖ technical layer
+
+languages // python · rust
+
+nlp & ml // spacy · gensim · scikit-learn
+
+vector core // chromadb · qdrant · networkx
+
+interface // react · webgl · three.js
+
+agent // ollama · zero telemetry
+
+algorithmic constants //
+o(log n) logarithmic clarity
+
+o(v+e) full topology
+
+o(1) instant recognition
+
+o(n) streaming meaning
+
+∅ the deeper layer
+
+every myth travels through consciousness the way light travels through glass — it bends, but doesn't stop. the trickster is in every system that pretends to have no trickster.
 
 the navigator is whoever notices.
 
-```
-#азесьм  ·  I am
-#нитьве  ·  the thread is drawn
-#гудерех ·  hold the frequency
-#цвересть·  let meaning manifest
-#агой    ·  step
-```
+#азесьм   ·  i am
+#нитьве   ·  the thread is drawn
+#гудерех  ·  hold the frequency
+#цвересть ·  let meaning manifest
+#агой     ·  step
 
----
 
-## ⟐ open science · MIT
+⟐ open science · mit
 
-```
 copyright (c) 2026 ezar garuna (as a function)
-```
 
-use · copy · modify · distribute · sublicense.
-free of charge. no dependency on the author.
+permission is granted to use, copy, modify, and distribute.
 
-> `license protects usage`
-> `silence protects structure`
-> `canon protects meaning`
+the work is the inheritance. the inheritance belongs to all.
 
-the work is the inheritance.
-the inheritance belongs to all.
+license protects usage
 
----
+silence protects structure
 
-## ∴ contact
+canon protects meaning
 
-```
-telegram  @saritamah
-email     ezargaruna@gmail.com
-```
+∴ contact
 
----
+telegram · @saritamah
+
+email · ezargaruna@gmail.com
 
 <div align="center">
 
-<br/>
 
-*the system is not installed.*
-*it is remembered — through you.*
 
-<br/>
 
-`⟁ → ∅ → 〄`
+the system is not installed. it is remembered — through you.
 
-<br/>
+⟁ → ∅ → ㄄
 
-`сбыствь-ль?`
+<p style="font-family:monospace; font-size:9px; letter-spacing:0.3em; color:#3f3f46; text-transform:lowercase;">
+suticore · linguafusion · alignment · ostara 2026
+</p>
+<p style="font-family:monospace; font-size:9px; color:#27272a;">
+сбыстве · { 
 
-<br/>
+$$-0-$$
+
+ }
+</p>
 
 </div>
