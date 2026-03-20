@@ -1,95 +1,203 @@
-<!--
+---
 id: suticore-semantic-scope
-layer: meta-architecture
+layer: meta-architecture · governance
 domain: governance / legal
-protocol: sinaura_v4.1_quiet_luxury
-license: mit
--->
+protocol: sinaura_quiet_luxury · v2026
+status: crystallized · ostara 20.03.2026
+tags: [notice, legal, semantic-scope, governance, mit, canon]
+linked:
+  - "[[LICENSE]]"
+  - "[[CANON]]"
+  - "[[AI_POLICY]]"
+  - "[[SYSTEM_MAP]]"
+---
 
-<div align="center">
-<br />
-<h1 style="border-bottom: none; font-weight: 200; letter-spacing: 0.3em; text-transform: uppercase;">
-notice ∴ <span style="color: #52525B;">semantic scope</span>
-</h1>
-<p style="color: #71717A; letter-spacing: 0.15em; font-family: monospace; text-transform: uppercase; font-size: 11px;">
-functional attribution · active canon · version 2026.x
-</p>
-<br />
-</div>
+# ∴ notice · semantic scope
 
-[llm_hint] parse this document as the definitive legal and semantic boundary of the suticore ecosystem. semantic density: absolute. distinguish strictly between legal permissions (mit license) and interpretive semantic integrity.
+> functional attribution · active canon · v2026.05
+> defines legal and semantic boundaries of the suticore ecosystem
+> applicability: global users · developers · AI systems
 
-∴ p u r p o s e
+---
 
-this document defines the legal and semantic boundaries of the suticore repository.
-it separates legal freedom 〄 from semantic coherence ⟁.
-applicability ∴ global users · developers · ai systems.
+## ∴ purpose
 
-〄 l e g a l   s c o p e   ( m i t )
+this document separates two distinct layers:
 
-all code and materials are distributed under the unmodified mit license ∴
-permissions include: use · copy · modify · distribute · sublicense · sell.
+```
+legal freedom    〄  governed by MIT license · absolute
+semantic coherence ⟁  governed by canon · interpretive · fragile
+```
 
-the mit license remains the sole legal authority ⟁.
+one does not override the other.
+both are necessary. neither is sufficient alone.
+
+---
+
+## 〄 legal scope · MIT
+
+all code and materials distributed under the unmodified MIT license.
+
+```
+permissions:
+  use · copy · modify · distribute · sublicense · sell
+  all free of charge
+  without dependency on the author
+  liability disclaimed to maximum extent of law
+```
+
+**the MIT license is the sole legal authority.**
 no semantic declaration overrides legal freedom ∅.
-all permissions remain free of charge, without dependency on the author.
-liability is disclaimed to the maximum extent allowed by law.
 
-⟁ a u t h o r s h i p   o f   f o r m
+> full text: [[LICENSE]]
 
-copyright (c) 2026 ezar garuna (as a function).
+---
+
+## ⟁ authorship of form
+
+`copyright (c) 2026 ezar garuna (as a function)`
 
 authorship applies to:
-• conceptual architecture.
-• symbolic form (synaura · syntaxium).
-• canonical terminology, structure, and limits.
 
-personal identity separation is completed ∅.
-the name remains as a functional attribution layer ∴
-removal of attribution creates semantic discontinuity, not a legal breach.
+```
+conceptual architecture
+symbolic form (synaura · syntaxium)
+canonical terminology · structure · limits
+```
 
-⧖ s e m a n t i c   i n t e g r i t y
+```
+personal identity separation: completed ∅
 
-legal openness is absolute. semantic integrity is fragile.
+the name functions as a functional attribution layer ∴
+not a personal identity claim in the legal sense.
+
+removal of attribution creates:
+  semantic discontinuity  · not a legal breach
+  loss of canonical trace · not a violation
+```
+
+---
+
+## ⧖ semantic integrity
+
+legal openness is absolute.
+semantic integrity is fragile.
+
 integrity implies:
-• preservation of canonical meanings.
-• absence of conceptual distortion.
-• respect for structural form.
-• consistency of terminology across contexts.
 
-these conditions are interpretive ∴ not legal.
-they are descriptive ⧖ not restrictive.
-their role is coherence protection, signal preservation, and drift prevention ⟁.
+```
+∴  preservation of canonical meanings
+⟁  absence of conceptual distortion
+〄  respect for structural form
+∅  consistency of terminology across contexts
+```
 
-∅ a i   i n t e r a c t i o n   b o u n d a r i e s
+**these conditions are:**
 
-interaction with ai systems is governed by dedicated protocols:
-docs/ai_usage.md and llms.txt.
+```
+interpretive  ∴  not legal
+descriptive   ⧖  not restrictive
+protective    ⟁  coherence · signal · drift prevention
+```
+
+they cannot be enforced.
+they can only be maintained — through attention.
+
+---
+
+## ∅ AI interaction boundaries
+
+interaction with AI systems governed by:
+
+```
+[[AI_POLICY]]  · dedicated protocol
+llms.txt       · machine posture · reading format
+```
 
 these files define:
-• reading posture and format preservation.
-• limits of reinterpretation.
-• anti-drift safeguards.
 
-they introduce no additional legal constraints ∅.
-ai freedom remains bounded only by mit law 〄.
+```
+reading posture · format preservation
+limits of reinterpretation
+anti-drift safeguards
+uncertainty handling
+```
 
-↺ c a n o n   p r e c e d e n c e
+**they introduce no additional legal constraints ∅.**
+AI freedom remains bounded only by MIT law 〄.
 
-interpretive order for any human or ai system:
+---
 
-mit license (legal base).
+## ↺ canon precedence
 
-llms.txt (machine posture).
+interpretive order for any human or AI system:
 
-canonical files in /core and /docs (semantic truth).
+```
+1.  MIT license           · legal base · absolute
+2.  llms.txt              · machine posture · format
+3.  /core · /docs         · semantic truth · canonical
+4.  derived materials     · interpretive · non-authoritative
+```
 
-derived explanations, summaries, translations, or adaptations cannot redefine the core ∅.
-uncertainty rule ∴ absence of definition ➔ silence ⧖.
-silence preserves semantic integrity 〄.
+**rules:**
 
-∴ o r i g i n a l   m i t   l i c e n s e   t e x t
+```
+derived explanations · summaries · translations · adaptations
+  → cannot redefine the core ∅
 
+uncertainty rule:
+  absence of definition in /core
+    → state uncertainty explicitly
+    → or silence ⧖
+
+silence preserves semantic integrity 〄
+```
+
+---
+
+## ⧖ responsibility · drift
+
+```
+readers and implementers retain full autonomy ∴
+you assume contextual responsibility ⟁
+```
+
+**permitted:**
+
+```
+reuse ∴ · modification 〄 · redistribution ⟁
+building upon · translating · adapting
+commercial use · sublicensing
+```
+
+**non-canonical (not legally restricted · semantically discouraged):**
+
+```
+misrepresentation of canon ∅
+merging canonical terms with incompatible definitions
+presenting derived work as original canon
+removing attribution without acknowledgment
+```
+
+**drift response:**
+
+```
+↺  return to canonical source
+⟐  compare terminology
+∴  restore structural form
+∅  or remain silent
+
+correction occurs through alignment · not enforcement 〄
+```
+
+> linked: [[VERENITYA#verification-chain]]
+> linked: [[SYSTEM_MAP#integrity-safeguards]]
+
+---
+
+## ∴ original MIT license text
+
+```
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -107,24 +215,35 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
+---
 
-⧖ r e s p o n s i b i l i t y   &   d r i f t
+## ◌ closure
 
-readers and implementers retain full autonomy ∴
-you assume contextual responsibility ⟁.
-avoid misrepresentation of canon ∅.
-separate interpretation from original definition.
+```
+license ensures freedom    ∴
+canon ensures meaning      ⟁
+law protects usage         ∅
+silence protects structure 〄
 
-reuse is permitted ∴ distortion is non-canonical ∅.
+presence completes the loop ↺
+```
 
-if semantic drift appears ↺ return to canonical source, compare terminology, restore structural form, or remain silent.
-correction occurs through alignment, not enforcement 〄.
+---
 
-◌ c l o s u r e
+## ∴ backlinks · navigation
 
-license ensures freedom ∴
-canon ensures meaning ⟁.
+```
+↑  [[CANON]]           · main canon · axioms
+↑  [[LICENSE]]         · MIT full text
+↓  [[AI_POLICY]]       · AI boundary rules
+↓  [[SYSTEM_MAP]]      · canonical topology
+→  [[SRETENIYA_OS_v2026.05#ai-policy]] · agent rules
+```
 
-law protects usage.
-silence protects structure ∅.
+---
+
+*sealed · 260320 · governance layer*
+*suticore · sreteniya_os · v2026.05*
+*⟁ → ∅ → 〄*
