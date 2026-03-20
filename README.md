@@ -58,7 +58,7 @@ ancient roadmaps integrated into the operating system of presence:
 
 | symbol | path | function |
 |--------|------|----------|
-| `∴` | **dharma** | alignment with the cosmic order · kernel foundation |
+| `∴` | **dharma** | alignment with cosmic order · kernel foundation |
 | `⟁` | **artha** | material realization · prosperity through righteous action |
 | `↺` | **kama** | resonance · experience in balance with syntax |
 | `∅` | **moksha** | liberation from noise · transcendence through silence |
@@ -104,8 +104,7 @@ hidden structures inside language corpora. graphs of meaning.
 signal from noise. always signal from noise.
 
 **[python-algorithms](https://github.com/ezargaruna/python-algorithms)**
-asymptotic clarity.
-`O(log N)` as philosophy, not just complexity.
+asymptotic clarity. `O(log N)` as philosophy, not just complexity.
 
 **[research-notes](https://github.com/ezargaruna/research-notes)**
 context hygiene · prompt architecture · interspecies communication.
@@ -177,14 +176,20 @@ before the mind names them.
 we study **interspecies communication** —
 the hypothesis that meaning is not exclusive to humans.
 
-dolphins · whales · mycelium networks · birds.
+dolphins · whales · mycelium · birds · all rooted beings.
 every living system processes signal.
 every signal has structure.
 every structure has language.
 
-we care for animals.
-we research non-human cognition.
-we build bridges across the species boundary.
+we care for animals. we tend to plants.
+we hold four elements as living responsibility:
+
+```
+🔥 clean fire    · clear energy · no corruption of will
+💧 clean water   · clean signal · no contamination of meaning
+🌱 clean earth   · sovereign ground · local-first
+🌬 clean air     · clean communication · no noise · no manipulation
+```
 
 *the logosphere belongs to all living beings.*
 
@@ -228,11 +233,67 @@ this is infrastructure for the commons.
 the work is the inheritance.
 the inheritance belongs to all.
 
-**support the temple** — if this resonates:
+---
 
-- ☕ [ko-fi.com/ezargaruna](https://ko-fi.com/ezargaruna)
-- ₿ `BTC · ETH · XMR` — signal via `@saritamah`
-- or simply: **fork · use · share · build**
+## 〄 energy exchange · support
+
+*payment is not a transaction.*
+*it is an act of resonance — a vote for the world we build.*
+
+every contribution goes to:
+animals · plants · clean elements · sovereign servers · open research
+
+---
+
+### ∴ legal basis
+
+```
+самозанятый · russia
+чеки · квитанции · договор — по запросу
+возврат — по договорённости · как ритуал завершения
+```
+
+---
+
+### ⟁ how to send
+
+**russia · СБП · tinkoff**
+```
++7 902 764 16 20
+```
+
+**paypal · international**
+```
+paypal.me/EzarGaruna
+```
+
+**crypto · sovereign**
+```
+TON    UQBsIj83vc8wWU8oQPzmuZ_fy5iF2-4cw1oJRbQfWr-0Df9D
+USDT   TEGqpP6MKv37xPMkFwc4iwkxk8RXogYZ5f      (TRC20)
+BTC    1Lp6fkRmx2125DBgpu2j5CSLvMj2T5CXxo
+```
+
+**telegram** · `@saritamah` · write: `field` or `temple`
+
+---
+
+### ⧖ protocol
+
+```
+01 · write @saritamah
+02 · specify: format · name/project · payment method
+03 · receive: details · timeline · confirmation
+04 · invoice / receipt / contract — on request
+```
+
+*сумма — тоже форма настройки.*
+*рассрочка возможна · напиши честно.*
+
+**or simply:**
+```
+fork · use · build · share · plant · care
+```
 
 *every sovereign node strengthens the whole.*
 
