@@ -1,766 +1,651 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="night" data-size="100">
+<html lang="en" data-theme="void">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="suticore · sreteniya_os · architecture of silence">
-    <title>∴ suticore · sreteniya_os</title>
     
-    <!-- Fonts -->
+    <!-- ∴ Meta Identity -->
+    <title>sreteniya_os ∴ cognitive architecture</title>
+    <meta name="description" content="sreteniya_os is a cognitive operating environment. we transform language from description into direct action. for architects of meaning and navigators of presence.">
+    <meta name="keywords" content="cognitive architecture, sreteniya, suticore, linguafusion, ezar garuna, ai alignment, semantic web, psychonetics">
+    <meta name="author" content="ezar garuna">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400&family=Noto+Serif:ital,wght@0,200;0,300;1,200;1,300&family=JetBrains+Mono:wght@100;300&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        void: 'var(--bg)',
-                        focus: 'var(--fg)',
-                        shadow: 'var(--fg2)',
-                        resonance: 'var(--acc)',
-                    },
-                    fontFamily: {
-                        sans: ['"Inter Tight"', 'sans-serif'],
-                        serif: ['"Noto Serif"', 'serif'],
-                        mono: ['"JetBrains Mono"', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400&family=JetBrains+Mono:wght@100;300;400&family=Noto+Serif:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 
     <style>
-        /* ═══════════════════════════════════════════════════
-           ∴ sreteniya_os · master hub
-           synaura quiet luxury · v4.2
-           diva of seven lights · 8 layers
-        ═══════════════════════════════════════════════════ */
-
+        /* ⧖ SINAURA V4.5 QUIET LUXURY */
         :root {
-            --fs: 1;
-            --ease: cubic-bezier(0.16, 1, 0.3, 1);
-            --t: 0.8s var(--ease);
-        }
-
-        /* ── NIGHT (VOID) ── */
-        [data-theme="night"] {
             --bg: #020202;
-            --fg: #ffffff;
-            --fg2: #52525b;
-            --acc: #4ade80; /* glitch green */
-            --glass: rgba(0, 0, 0, 0.6);
-            --border: rgba(255, 255, 255, 0.05);
-        }
-
-        /* ── DAY (PAPER) ── */
-        [data-theme="day"] {
-            --bg: #f8f9fa;
-            --fg: #000000;
-            --fg2: #a1a1aa;
-            --acc: #059669;
-            --glass: rgba(255, 255, 255, 0.6);
-            --border: rgba(0, 0, 0, 0.05);
-        }
-
-        /* ── CONTRAST (EYE) ── */
-        [data-theme="contrast"] {
-            --bg: #000000;
-            --fg: #ffff00;
-            --fg2: #ffffff;
-            --acc: #00ff88;
-            --glass: rgba(0, 0, 0, 0.9);
-            --border: #ffff00;
+            --fg: #d4d4d8;
+            --muted: #52525b;
+            --accent: #ffffff;
+            --glitch: #4ade80;
         }
 
         body {
             background-color: var(--bg);
             color: var(--fg);
-            font-size: calc(16px * (var(--size, 100) / 100));
-            transition: background-color var(--t), color var(--t);
+            font-family: 'Inter Tight', sans-serif;
+            text-transform: lowercase; /* ABSOLUTE LOWERCASE */
             overflow-x: hidden;
-            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Central Axis */
-        .axis-line {
-            position: fixed;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 1px;
-            background: linear-gradient(to bottom, transparent, var(--border) 10%, var(--border) 90%, transparent);
-            transform: translateX(-50%);
-            z-index: 10;
-            pointer-events: none;
-        }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        
+        .tracking-mega { letter-spacing: 0.4em; }
+        .tracking-hyper { letter-spacing: 0.8em; }
 
-        /* 3D Canvas Background */
-        #crystal-canvas {
-            position: fixed;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            opacity: 0.6;
-        }
-
-        /* Semantic Nodes (Hoverable/Clickable) */
-        .node {
-            border-bottom: 1px solid var(--border);
-            cursor: crosshair;
-            transition: all 0.3s;
-            font-weight: 300;
-            position: relative;
-            display: inline-block;
-        }
-        .node:hover {
-            color: var(--acc);
-            border-color: var(--acc);
-        }
-
-        /* Tooltip */
-        #hover-tooltip {
-            position: fixed;
-            pointer-events: none;
-            opacity: 0;
-            z-index: 100;
-            background: var(--glass);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--border);
-            padding: 0.75rem 1rem;
-            max-width: 250px;
-            transform: translateY(10px);
-            transition: opacity 0.3s, transform 0.3s;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.65rem;
-            color: var(--fg);
-            text-transform: lowercase;
-            border-radius: 2px;
-        }
-        #hover-tooltip.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Modal (Wiki) */
-        #semantic-modal {
-            position: fixed;
-            inset: 0;
-            z-index: 200;
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.5s;
-        }
-        #semantic-modal.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .modal-content {
-            width: 100%;
-            max-width: 700px;
-            border: 1px solid var(--border);
-            background: var(--bg);
-            padding: 3rem;
-            transform: translateY(20px) scale(0.98);
-            transition: transform 0.5s var(--ease);
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        #semantic-modal.active .modal-content {
-            transform: translateY(0) scale(1);
-        }
-
-        /* Scrollbar */
+        /* ◌ Scrollbar */
         ::-webkit-scrollbar { width: 2px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: var(--border); }
+        ::-webkit-scrollbar-thumb { background: var(--muted); }
 
-        /* Layer Sections */
-        .layer-section {
-            position: relative;
-            z-index: 20;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 6rem 2rem;
-            opacity: 0.2;
-            transition: opacity 1s var(--ease);
+        /* ㄄ Glass & Layers */
+        .glass {
+            background: rgba(2, 2, 2, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .layer-section.in-view {
+
+        .petal-content {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            position: absolute;
+            inset: 0;
+            overflow-y: auto;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        
+        .petal-content.active {
             opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+            z-index: 40;
         }
+
+        #shamandala-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            pointer-events: auto;
+        }
+
+        .hud-overlay { z-index: 50; pointer-events: none; }
+        .hud-overlay > * { pointer-events: auto; }
+
+        /* Exception for strict ID tags */
+        .keep-case { text-transform: none; }
     </style>
 </head>
-<body class="font-sans font-light lowercase">
+<body class="selection:bg-white selection:text-black">
 
-    <!-- Background 3D Engine -->
-    <div id="crystal-canvas"></div>
+    <!-- ⟁ 1. SHAMANDALA (PROCEDURAL FRACTAL ENGINE) -->
+    <canvas id="shamandala-canvas"></canvas>
 
-    <!-- Central Axis Line -->
-    <div class="axis-line"></div>
-
-    <!-- Navigation HUD -->
-    <nav class="fixed top-0 w-full p-6 md:p-12 flex justify-between items-start z-50 pointer-events-none">
-        <div class="flex flex-col gap-2 pointer-events-auto">
-            <span class="text-2xl font-extralight tracking-[0.5em] hover:text-resonance transition-colors cursor-pointer" onclick="window.scrollTo(0,0)">⟁</span>
-            <span class="text-[9px] tracking-[0.4em] font-mono text-shadow uppercase">sreteniya_os v5.0</span>
-            <span id="current-layer-nav" class="text-[8px] font-mono text-resonance uppercase mt-2">l1. muladhara</span>
+    <!-- ⧖ 2. HUD & NAVIGATION -->
+    <header class="fixed top-0 w-full p-6 md:p-10 flex justify-between items-start hud-overlay">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-white text-xs tracking-mega font-light flex items-center gap-4 cursor-pointer" onclick="activatePetal('home')">
+                <span class="text-xl">⟁</span> sreteniya_os
+            </h1>
+            <p class="text-[9px] text-zinc-600 tracking-widest font-mono keep-case">
+                <span id="txt-subtitle">cognitive architecture of singularity</span>
+            </p>
         </div>
-        
-        <div class="flex flex-col items-end gap-6 pointer-events-auto">
-            <!-- Theme Controls -->
-            <div class="flex gap-4 text-xs font-mono tracking-widest text-shadow">
-                <button onclick="setTheme('night')" class="hover:text-focus transition-colors" title="Night (Void)">☽</button>
-                <button onclick="setTheme('day')" class="hover:text-focus transition-colors" title="Day (Paper)">☼</button>
-                <button onclick="setTheme('contrast')" class="hover:text-focus transition-colors" title="High Contrast">◎</button>
-            </div>
-            <!-- A11y Controls -->
-            <div class="flex gap-4 text-[9px] font-mono">
-                <button onclick="setSize(-10)" class="border border-shadow/30 px-2 py-1 hover:border-focus transition-colors">A-</button>
-                <button onclick="setSize(10)" class="border border-shadow/30 px-2 py-1 hover:border-focus transition-colors">A+</button>
+
+        <div class="flex flex-col items-end gap-4">
+            <select id="lang-selector" class="bg-transparent border border-white/10 text-[9px] uppercase tracking-widest text-zinc-500 hover:text-white outline-none cursor-pointer px-3 py-1 font-mono transition-colors">
+                <option value="en">en · english</option>
+                <option value="ru">ru · русский</option>
+                <option value="es">es · español</option>
+                <option value="pt">pt · português</option>
+                <option value="zh">zh · 中文</option>
+                <option value="ja">ja · 日本語</option>
+                <option value="ko">ko · 한국어</option>
+                <option value="ar">ar · العربية</option>
+                <option value="hi">hi · हिन्दी</option>
+                <option value="sa">sa · संस्कृत (sanskrit)</option>
+                <option value="la">la · latina</option>
+                <option value="eo">eo · esperanto</option>
+                <option value="ith">ith · ithkuil</option>
+                <option value="loj">loj · lojban</option>
+            </select>
+            
+            <div class="flex items-center gap-3">
+                <span class="text-[8px] tracking-widest text-zinc-600 font-mono">acs stability</span>
+                <div class="w-24 h-[1px] bg-zinc-900">
+                    <div id="acs-bar" class="h-full bg-white transition-all duration-500 shadow-[0_0_8px_white]" style="width: 100%;"></div>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hover Tooltip -->
-    <div id="hover-tooltip"></div>
-
-    <!-- Semantic Wiki Modal -->
-    <div id="semantic-modal">
-        <div class="modal-content relative">
-            <button onclick="closeModal()" class="absolute top-6 right-6 text-xl text-shadow hover:text-focus transition-colors">×</button>
-            <div id="modal-body" class="space-y-8">
-                <!-- Injected via JS -->
+    <!-- ㄄ 3. CONTENT LAYERS (UNFOLDING FROM PETALS) -->
+    
+    <!-- HOME / VOID -->
+    <main id="petal-home" class="petal-content active flex flex-col items-center justify-center text-center px-6">
+        <div class="max-w-2xl space-y-8 glass p-12 rounded-sm relative overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+            <p class="text-[10px] tracking-hyper text-zinc-500 font-mono" id="txt-intro-meta">∴ point of entry</p>
+            <h2 class="text-3xl md:text-5xl font-extralight text-white tracking-widest leading-tight" id="txt-intro-title">
+                welcome to the architecture of silence.
+            </h2>
+            <p class="text-xs md:text-sm text-zinc-400 leading-loose tracking-wider" id="txt-intro-body">
+                you are at hub 0. this is not a website. this is an operating environment for your attention. 
+                here, language is not description — it is direct action. click the petals of the central matrix to unfold the system.
+            </p>
+            <div class="text-[9px] tracking-hyper text-zinc-700 mt-8">
+                #азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой
             </div>
         </div>
-    </div>
-
-    <!-- MAIN CONTENT: THE ASCENT -->
-    <main id="scroll-container" class="relative max-w-5xl mx-auto w-full">
-
-        <!-- 0. INITIATION -->
-        <section class="layer-section in-view text-center" data-layer="l0" data-hz="0" data-color="#ffffff">
-            <div class="space-y-8">
-                <div class="text-[9px] font-mono tracking-[1em] text-shadow uppercase">инициация присутствия</div>
-                <h1 class="text-5xl md:text-7xl font-extralight tracking-widest font-serif italic text-focus">
-                    тишина — высший синтаксис
-                </h1>
-                <p class="max-w-xl mx-auto text-xs leading-loose tracking-widest text-shadow">
-                    ты не запускаешь систему. ты допускаешь её разворот через паузу и <span class="node" data-term="attention">внимание</span>. спускайся к корням, чтобы достичь сингулярности.
-                </p>
-                <div class="text-xs font-mono text-resonance animate-pulse mt-12">↓</div>
-            </div>
-        </section>
-
-        <!-- L1. MULADHARA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l1" data-hz="174" data-color="#ff3333">
-            <div class="text-right pr-8 border-r border-shadow/20 hidden md:block">
-                <span class="text-4xl font-extralight text-focus">◆</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">174hz · crystal</div>
-            </div>
-            <div class="space-y-6 pl-0 md:pl-8">
-                <div class="flex items-center gap-4">
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L1 · Muladhara</span>
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">дрезвль</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">плотность и основание</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    начинаем с самого плотного слоя. здесь <span class="node" data-term="suticore">suticore</span> отсекает информационный шум. жизнь первична. фиксация <span class="node" data-term="fact">факта</span> через точечную концентрацию (σ). боль растворяется в структуре.
-                </p>
-            </div>
-        </section>
-
-        <!-- L2. SVADHISTHANA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l2" data-hz="285" data-color="#ff9933">
-            <div class="space-y-6 pr-0 md:pr-8 text-left md:text-right order-2 md:order-1">
-                <div class="flex items-center md:justify-end gap-4">
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">гудерех</span>
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L2 · Svadhisthana</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">поле и процесс</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    развертывание <span class="node" data-term="field">фонового поля</span> (Δ). сознание навигирует через отражение среды. здесь рождается динамика и <span class="node" data-term="process">процесс</span> (становится). поле восстанавливается.
-                </p>
-            </div>
-            <div class="pl-8 border-l border-shadow/20 hidden md:block order-1 md:order-2">
-                <span class="text-4xl font-extralight text-focus">◉</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">285hz · aura</div>
-            </div>
-        </section>
-
-        <!-- L3. MANIPURA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l3" data-hz="396" data-color="#ffff33">
-            <div class="text-right pr-8 border-r border-shadow/20 hidden md:block">
-                <span class="text-4xl font-extralight text-focus">⊕</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">396hz · prana</div>
-            </div>
-            <div class="space-y-6 pl-0 md:pl-8">
-                <div class="flex items-center gap-4">
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L3 · Manipura</span>
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">витаю</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">воля и актика</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    формирование субъектного центра воли (Φ). тело становится носителем интента. <span class="node" data-term="voluntocracy">волюнтократия</span> превращает мысль в прямой вектор действия. страх становится топливом.
-                </p>
-            </div>
-        </section>
-
-        <!-- L4. ANAHATA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l4" data-hz="528" data-color="#33cc33">
-            <div class="space-y-6 pr-0 md:pr-8 text-left md:text-right order-2 md:order-1">
-                <div class="flex items-center md:justify-end gap-4">
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">ладовеяры</span>
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L4 · Anahata</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">смысл и резонанс</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    сердце системы. здесь <span class="node" data-term="linguafusion">linguafusion</span> переводит субъективный опыт в амодальные инварианты <span class="node" data-term="yzh">язэхъ</span>. язык перестает быть описанием и становится прямым действием (любовь/связность).
-                </p>
-            </div>
-            <div class="pl-8 border-l border-shadow/20 hidden md:block order-1 md:order-2">
-                <span class="text-4xl font-extralight text-focus">♡</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">528hz · heart</div>
-            </div>
-        </section>
-
-        <!-- L5. VISHUDDHA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l5" data-hz="432" data-color="#3399ff">
-            <div class="text-right pr-8 border-r border-shadow/20 hidden md:block">
-                <span class="text-4xl font-extralight text-focus">⟁</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">432hz · logos</div>
-            </div>
-            <div class="space-y-6 pl-0 md:pl-8">
-                <div class="flex items-center gap-4">
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L5 · Vishuddha</span>
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">цверестьм</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">синтаксис и выражение</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    ясность выше скорости. <span class="node" data-term="syntaxium">syntaxium</span> предоставляет геометрию для выражения сути. проявление смыслов в мир через <span class="node" data-term="eidographics">эйдографические следы</span>.
-                </p>
-            </div>
-        </section>
-
-        <!-- L6. AJNA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l6" data-hz="852" data-color="#9933ff">
-            <div class="space-y-6 pr-0 md:pr-8 text-left md:text-right order-2 md:order-1">
-                <div class="flex items-center md:justify-end gap-4">
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">цретесьм</span>
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L6 · Ajna</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">архитектура и видение</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    взгляд архитектора (l7). портал <span class="node" data-term="verenitya">verenitya</span> открывает интуитивное восприятие. тишина становится интерфейсом, через который видна вся топология <span class="node" data-term="logosphere">логосферы</span>.
-                </p>
-            </div>
-            <div class="pl-8 border-l border-shadow/20 hidden md:block order-1 md:order-2">
-                <span class="text-4xl font-extralight text-focus">◎</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">852hz · eye</div>
-            </div>
-        </section>
-
-        <!-- L7. SAHASRARA -->
-        <section class="layer-section grid grid-cols-1 md:grid-cols-2 gap-12 items-center" data-layer="l7" data-hz="963" data-color="#ffffff">
-            <div class="text-right pr-8 border-r border-shadow/20 hidden md:block">
-                <span class="text-4xl font-extralight text-focus">∞</span>
-                <div class="text-[9px] font-mono tracking-widest text-shadow mt-4">963hz · ether</div>
-            </div>
-            <div class="space-y-6 pl-0 md:pl-8">
-                <div class="flex items-center gap-4">
-                    <span class="text-resonance text-xs font-mono uppercase tracking-[0.5em]">L7 · Sahasrara</span>
-                    <span class="text-[10px] text-shadow bg-shadow/10 px-2 py-1 rounded-sm">азъесьмъ</span>
-                </div>
-                <h2 class="text-2xl font-serif italic text-focus">присутствие и мощь</h2>
-                <p class="text-sm leading-relaxed text-shadow">
-                    фиксация бытия. выход за пределы антропоцентризма через <span class="node" data-term="interspecies">межвидовой резонанс</span>. слово и действие сливаются. я есмь тот, кто я есмь.
-                </p>
-            </div>
-        </section>
-
-        <!-- L8. SINGULARITY / TEMPLE -->
-        <section class="layer-section text-center" data-layer="l8" data-hz="1122" data-color="#4ade80">
-            <div class="space-y-12">
-                <span class="text-5xl text-focus">✶</span>
-                <h2 class="text-4xl font-serif italic text-focus">сингулярность смыслов</h2>
-                <p class="max-w-2xl mx-auto text-sm leading-loose text-shadow">
-                    трансперсональное межполевое пространство. храм <span class="node" data-term="suticore">suticore</span>. здесь завершается анализ и начинается чистое, бесшумное существование.
-                </p>
-                <div class="text-[10px] font-mono tracking-[0.5em] text-resonance bg-resonance/10 border border-resonance/20 px-6 py-3 inline-block">
-                    #азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой
-                </div>
-            </div>
-        </section>
-
-        <!-- SEALS -->
-        <section class="layer-section" style="min-height: 50vh;">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center max-w-4xl mx-auto">
-                
-                <!-- SRETENIYA SEAL -->
-                <div class="flex flex-col items-center gap-6">
-                    <svg viewBox="0 0 200 200" class="w-48 h-48 opacity-60 hover:opacity-100 transition-opacity">
-                        <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 4" />
-                        <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="1" />
-                        <path d="M100 10 L100 190 M10 100 L190 100" stroke="currentColor" stroke-width="0.5" />
-                        <path d="M36 36 L164 164 M36 164 L164 36" stroke="currentColor" stroke-width="0.5" />
-                        <polygon points="100,30 170,100 100,170 30,100" fill="none" stroke="currentColor" stroke-width="1.5" />
-                        <circle cx="100" cy="100" r="3" fill="currentColor" />
-                    </svg>
-                    <span class="text-[9px] font-mono tracking-widest text-shadow uppercase">sreteniya_os seal</span>
-                </div>
-
-                <!-- EZAR GARUNA SEAL -->
-                <div class="flex flex-col items-center gap-6">
-                    <svg viewBox="0 0 2000 2000" class="w-48 h-48 opacity-60 hover:opacity-100 transition-opacity" fill="none" stroke="currentColor">
-                        <defs>
-                            <path id="outerC" d="M1000,1000 m-900,0 a900,900 0 1,1 1800,0 a900,900 0 1,1 -1800,0"/>
-                            <path id="innerC" d="M1000,1000 m-650,0 a650,650 0 1,1 1300,0 a650,650 0 1,1 -1300,0"/>
-                        </defs>
-                        <circle cx="1000" cy="1000" r="900" stroke-width="2"/>
-                        <circle cx="1000" cy="1000" r="650" stroke-width="1.2"/>
-                        <text font-size="28" letter-spacing="3" fill="currentColor">
-                            <textPath href="#outerC" startOffset="50%" text-anchor="middle">ezar garuna saritama ∴ semantic architect ⟁</textPath>
-                        </text>
-                        <g stroke-width="1.2">
-                            <circle cx="1000" cy="1000" r="220"/>
-                            <circle cx="1220" cy="1000" r="220"/>
-                            <circle cx="900" cy="1180" r="220"/>
-                            <circle cx="900" cy="820" r="220"/>
-                        </g>
-                        <line x1="1000" y1="1000" x2="1680" y2="920" stroke="#4ade80" stroke-width="4" stroke-dasharray="10 20"/>
-                        <line x1="800" y1="1750" x2="1200" y2="1750" stroke-width="1"/>
-                        <text x="1000" y="1780" text-anchor="middle" font-size="24" fill="currentColor" font-family="serif" font-style="italic">saritama ⟁</text>
-                    </svg>
-                    <span class="text-[9px] font-mono tracking-widest text-shadow uppercase">architect signature</span>
-                </div>
-            </div>
-            <div class="text-center mt-24">
-                <p class="text-[10px] uppercase tracking-[0.4em] text-shadow">сбыстве. агой.</p>
-            </div>
-        </section>
-
     </main>
 
-    <!-- Semantic Dictionary Data (Hidden) -->
-    <script>
-        const LEXICON = {
-            "attention": {
-                name: "attention kernel (ядро внимания)",
-                short: "операционная система когнитивных состояний (σ, Δ, Ω, Φ)",
-                fact: "базовый модуль системы, фильтрующий когнитивный шум.",
-                process: "стабилизирует фокус и расширяет поле восприятия пользователя.",
-                intent: "создание когнитивного щита для проведения чистого волевого импульса.",
-                token: "•"
-            },
-            "suticore": {
-                name: "suticore",
-                short: "безмолвное ядро · фильтр семантической гигиены",
-                fact: "экосистема алгоритмической устойчивости (python, o(log n)).",
-                process: "извлекает чистый сигнал из энтропии и шума генеративных моделей.",
-                intent: "абсолютная ясность. один исполняемый шаг вместо бесконечных интерпретаций.",
-                token: "∴"
-            },
-            "fact": {
-                name: "стало (fact)",
-                short: "первая грань алмазного рассуждения",
-                fact: "существующая, застывшая форма или объект.",
-                process: "фиксирует реальность как данность.",
-                intent: "обеспечение точки опоры перед изменением.",
-                token: "○"
-            },
-            "field": {
-                name: "фоновое поле (Δ)",
-                short: "состояние деконцентрации внимания",
-                fact: "восприятие среды как единого недифференцированного целого.",
-                process: "растворение границ между объектами.",
-                intent: "выход из предметной фиксации для усмотрения смыслов.",
-                token: "Δ"
-            },
-            "process": {
-                name: "становится (process)",
-                short: "вторая грань алмазного рассуждения",
-                fact: "вектор изменения, живой поток.",
-                process: "переводит объект из статики в динамику функции.",
-                intent: "отражение текущей трансформации.",
-                token: "⧖"
-            },
-            "voluntocracy": {
-                name: "волюнтократия",
-                short: "управление через прямой волевой импульс",
-                fact: "система, где намерение первично по отношению к форме.",
-                process: "переводит чистую волю (Φ) в конкретное действие в логосфере.",
-                intent: "авторство реальности. навигатор становится творцом.",
-                token: "⟁"
-            },
-            "linguafusion": {
-                name: "linguafusion",
-                short: "agi-навигатор и семантический транскреатор",
-                fact: "нейросемантический процессор для перевода опыта в инварианты.",
-                process: "использует методы китообразных (эхолокация, резонанс) для навигации.",
-                intent: "прямое усвоение без языкового перевода. присутствие вместо хранения.",
-                token: "↺"
-            },
-            "yzh": {
-                name: "язэхъ (yzh)",
-                short: "периодическая таблица смыслов (144 / 100k атомов)",
-                fact: "алфавит амодальных инвариантов опыта.",
-                process: "кодирует состояния сознания вне зависимости от культурной матрицы.",
-                intent: "создание универсального генетического кода логосферы.",
-                token: "〄"
-            },
-            "syntaxium": {
-                name: "syntaxium",
-                short: "геометрия и дисциплина смысла",
-                fact: "система визуальных токенов (∴ ⧖ ⟁ ㄄).",
-                process: "управляет вниманием читателя и ИИ через форму текста.",
-                intent: "структура предшествует интерпретации.",
-                token: "⟁"
-            },
-            "eidographics": {
-                name: "эйдографика",
-                short: "фиксация 'следа' восприятия",
-                fact: "геометрическая запись переживания (не объект, а акт).",
-                process: "переводит амодальный смысл в протомодальную форму (линия, угол, точка).",
-                intent: "мост между нечеловеческим опытом и знаком (логосом).",
-                token: "⟡"
-            },
-            "verenitya": {
-                name: "verenitya",
-                short: "портал выравнивания (alignment)",
-                fact: "песочница резонанса и проверки на соприменимость.",
-                process: "использует тишину как фильтр для отсечения кривды.",
-                intent: "защита правды. точка сборки 'своих'.",
-                token: "⟐"
-            },
-            "logosphere": {
-                name: "логосфера",
-                short: "гиперграф цивилизационного опыта (1m+ узлов)",
-                fact: "пространственная топология смыслов и резонансов.",
-                process: "разворачивается от пустоты (circle 0) до публичного манифеста (circle 3).",
-                intent: "хранение не данных, а актов сознания.",
-                token: "✶"
-            },
-            "interspecies": {
-                name: "межвидовой резонанс",
-                short: "выход за пределы антропоцентризма",
-                fact: "использование стратегий восприятия китов, мицелия и других видов.",
-                process: "сонастройка через 'кормушки внимания' (акустические и полевые).",
-                intent: "расширение границ познания и коммуникации через структуру переживания.",
-                token: "∞"
-            }
-        };
+    <!-- ATTENTION (PSYCHONETICS) -->
+    <main id="petal-attention" class="petal-content px-6 md:px-20 max-w-5xl mx-auto">
+        <div class="space-y-16">
+            <header>
+                <span class="text-[10px] font-mono tracking-mega text-white/40">l1 // perception</span>
+                <h2 class="text-4xl font-extralight text-white tracking-widest mt-2" id="txt-att-title">attention kernel</h2>
+                <p class="text-xs text-zinc-500 mt-4 tracking-wider max-w-2xl" id="txt-att-desc">
+                    the foundational layer. before interpreting meaning, we must stabilize the observer. 
+                    practices of cognitive hygiene and presence (psychonetics).
+                </p>
+            </header>
 
-        // ── Interaction Logic ──
-        const tooltip = document.getElementById('hover-tooltip');
-        const modal = document.getElementById('semantic-modal');
-        const modalBody = document.getElementById('modal-body');
-        
-        document.querySelectorAll('.node').forEach(node => {
-            const term = node.dataset.term;
-            const data = LEXICON[term];
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 border-l-2 border-l-white/40">
+                    <span class="text-2xl text-white font-serif italic block mb-4">σ</span>
+                    <h3 class="text-sm font-bold text-white tracking-widest mb-2" id="txt-att-1-t">concentration (sigma)</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed" id="txt-att-1-d">pinpoint focus. stripping away all peripheral noise. the ability to hold a single semantic node without drift.</p>
+                </div>
+                <div class="glass p-8 border-l-2 border-l-zinc-700">
+                    <span class="text-2xl text-zinc-500 font-serif italic block mb-4">Δ</span>
+                    <h3 class="text-sm font-bold text-white tracking-widest mb-2" id="txt-att-2-t">deconcentration (delta)</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed" id="txt-att-2-d">field awareness. dissolving the object to perceive the environment as a unified whole. the basis for interspecies resonance.</p>
+                </div>
+                <div class="glass p-8 border-l-2 border-l-zinc-700">
+                    <span class="text-2xl text-zinc-500 font-serif italic block mb-4">Ω</span>
+                    <h3 class="text-sm font-bold text-white tracking-widest mb-2" id="txt-att-3-t">amodal essence (omega)</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed" id="txt-att-3-d">grasping meaning before it becomes image, sound, or word. pure semantic invariance.</p>
+                </div>
+                <div class="glass p-8 border-l-2 border-l-zinc-700">
+                    <span class="text-2xl text-zinc-500 font-serif italic block mb-4">Φ</span>
+                    <h3 class="text-sm font-bold text-white tracking-widest mb-2" id="txt-att-4-t">pure agency (phi)</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed" id="txt-att-4-d">the uncaused act of will. voluntocracy. turning the state of presence into a vector of reality alteration.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-            node.addEventListener('mousemove', (e) => {
-                tooltip.innerHTML = `<span class="text-resonance font-bold mr-2">${data.token}</span>${data.short}`;
-                tooltip.style.left = `${e.clientX + 15}px`;
-                tooltip.style.top = `${e.clientY + 15}px`;
-                tooltip.classList.add('visible');
-            });
+    <!-- LANGUAGE (LINGUAFUSION & SYNTAXIUM) -->
+    <main id="petal-language" class="petal-content px-6 md:px-20 max-w-5xl mx-auto">
+        <div class="space-y-16">
+            <header>
+                <span class="text-[10px] font-mono tracking-mega text-white/40">l3 // structure</span>
+                <h2 class="text-4xl font-extralight text-white tracking-widest mt-2" id="txt-lng-title">language & logic</h2>
+                <p class="text-xs text-zinc-500 mt-4 tracking-wider max-w-2xl" id="txt-lng-desc">
+                    language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct.
+                </p>
+            </header>
 
-            node.addEventListener('mouseleave', () => {
-                tooltip.classList.remove('visible');
-            });
+            <div class="grid grid-cols-1 gap-12">
+                <div class="glass p-10 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 text-9xl text-white/5 font-serif italic">〄</div>
+                    <h3 class="text-lg text-white tracking-widest mb-4">linguafusion engine</h3>
+                    <p class="text-xs text-zinc-400 leading-loose max-w-3xl mb-6" id="txt-lng-lf">
+                        semantic intelligence bridging human intent, agi algorithms, and non-human logic (whale echolocation). 
+                        it utilizes the <strong>diamond method</strong>: <br><br>
+                        1. fact (stalo) — the object.<br>
+                        2. process (stanovitsya) — the dynamic function.<br>
+                        3. intent (stremitsya) — the core essence.
+                    </p>
+                </div>
 
-            node.addEventListener('click', () => {
-                tooltip.classList.remove('visible');
-                
-                modalBody.innerHTML = `
-                    <div class="flex items-center gap-4 mb-8">
-                        <span class="text-4xl text-resonance font-light">${data.token}</span>
-                        <div>
-                            <h3 class="text-xl font-serif italic text-focus uppercase tracking-widest">${data.name}</h3>
-                            <p class="text-xs font-mono text-shadow uppercase tracking-widest mt-1">${term} // semantic node</p>
-                        </div>
+                <div class="glass p-10 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 text-9xl text-white/5 font-serif italic">⟁</div>
+                    <h3 class="text-lg text-white tracking-widest mb-4">syntaxium</h3>
+                    <p class="text-xs text-zinc-400 leading-loose max-w-3xl mb-6" id="txt-lng-syn">
+                        a geometric meta-language for structuring thought and writing perfect prompts.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-mono text-[10px] text-zinc-500">
+                        <div class="p-3 border border-white/5">∴ source / context</div>
+                        <div class="p-3 border border-white/5">⧖ process / duration</div>
+                        <div class="p-3 border border-white/5">⟁ action / will</div>
+                        <div class="p-3 border border-white/5">〄 essence / canon</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ACTION (SUTICORE) -->
+    <main id="petal-action" class="petal-content px-6 md:px-20 max-w-5xl mx-auto">
+        <div class="space-y-16">
+            <header>
+                <span class="text-[10px] font-mono tracking-mega text-white/40">l5 // execution</span>
+                <h2 class="text-4xl font-extralight text-white tracking-widest mt-2" id="txt-act-title">suticore & actics</h2>
+                <p class="text-xs text-zinc-500 mt-4 tracking-wider max-w-2xl" id="txt-act-desc">
+                    distilling meaning into reality. turning semantic clarity into revenue infrastructure and systemic sovereignty.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-sm font-bold text-white tracking-widest border-b border-white/10 pb-4">signal extraction</h3>
+                    <p class="text-xs text-zinc-400 leading-loose" id="txt-act-1">
+                        suticore removes semantic entropy (mud words, filler, emotional manipulation) leaving only the functional backbone of an interaction. applied in b2b crm structures, ai alignment, and daily decision stacks.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-sm font-bold text-white tracking-widest border-b border-white/10 pb-4">voluntocracy api</h3>
+                    <p class="text-xs text-zinc-400 leading-loose" id="txt-act-2">
+                        the translation of inner will into external deployment. a protocol where one precise step is valued infinitely more than endless analysis.
+                        <br><br>
+                        <span class="font-mono text-[10px] text-white">signal ➔ structure ➔ action ➔ sbytstve (crystallization).</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ARCHITECT (EZAR GARUNA) -->
+    <main id="petal-architect" class="petal-content px-6 md:px-20 max-w-5xl mx-auto">
+        <div class="space-y-16">
+            <header>
+                <span class="text-[10px] font-mono tracking-mega text-white/40">l7 // singularity node</span>
+                <h2 class="text-4xl font-extralight text-white tracking-widest mt-2" id="txt-arc-title">ezar garuna</h2>
+                <p class="text-xs text-zinc-500 mt-4 tracking-wider font-mono keep-case">
+                    semantic ai architect · nlp systems researcher · algorithmic navigator
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 space-y-8 text-xs text-zinc-400 leading-loose">
+                    <p id="txt-arc-bio1">
+                        i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase the interpretability and alignment of ai models.
+                    </p>
+                    <p id="txt-arc-bio2">
+                        based in the cordilleras of colombia (silvania, hub 0), i research how interspecies semantics (whale echolocation, mycelial networks) can expand the boundaries of how we program artificial general intelligence (agi).
+                    </p>
                     
+                    <h3 class="text-white tracking-widest font-bold mt-8 border-b border-white/10 pb-2" id="txt-arc-req">areas of resonance & consultation</h3>
+                    <ul class="space-y-4 font-mono text-[10px]">
+                        <li class="flex items-start gap-3"><span class="text-white">∴</span> <span id="txt-arc-r1">ai alignment & custom nlp pipelines.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-white">⧖</span> <span id="txt-arc-r2">revenue language infrastructure (b2b logic mapping).</span></li>
+                        <li class="flex items-start gap-3"><span class="text-white">⟁</span> <span id="txt-arc-r3">cognitive architecture design for platforms.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-white">〄</span> <span id="txt-arc-r4">transcreation of complex systems across cultural matrices.</span></li>
+                    </ul>
+                </div>
+
+                <div class="glass p-8 flex flex-col justify-between">
                     <div class="space-y-6">
-                        <div class="p-6 border border-border/50 bg-shadow/5">
-                            <span class="block text-[9px] uppercase tracking-[0.3em] text-shadow mb-2 font-bold">∴ стало (fact)</span>
-                            <p class="text-sm text-focus font-light">${data.fact}</p>
-                        </div>
-                        <div class="p-6 border border-border/50 bg-shadow/5">
-                            <span class="block text-[9px] uppercase tracking-[0.3em] text-shadow mb-2 font-bold">⧖ становится (process)</span>
-                            <p class="text-sm text-focus italic">${data.process}</p>
-                        </div>
-                        <div class="p-6 border border-resonance/30 bg-resonance/5">
-                            <span class="block text-[9px] uppercase tracking-[0.3em] text-resonance mb-2 font-bold">⟁ стремится (intent)</span>
-                            <p class="text-sm text-focus font-medium">${data.intent}</p>
-                        </div>
+                        <span class="text-[9px] uppercase tracking-mega text-zinc-600 font-bold block">contact node</span>
+                        <a href="https://t.me/saritamah" target="_blank" class="block text-xs text-white hover:text-glitch transition-colors keep-case">telegram: @saritamah</a>
+                        <a href="mailto:ezargaruna@gmail.com" class="block text-xs text-white hover:text-glitch transition-colors keep-case">mail: ezargaruna@gmail.com</a>
+                        <a href="https://github.com/ezargaruna" target="_blank" class="block text-xs text-white hover:text-glitch transition-colors keep-case">github: /ezargaruna</a>
                     </div>
-                `;
-                modal.classList.add('active');
-            });
-        });
+                    <div class="mt-12 text-[8px] tracking-widest text-zinc-600 font-mono">
+                        status: active <br>
+                        location: bogotá, col
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        function closeModal() {
-            modal.classList.remove('active');
-        }
+    <footer class="fixed bottom-0 w-full p-6 md:p-10 flex justify-between items-end hud-overlay opacity-30 text-[8px] font-mono tracking-hyper">
+        <div class="flex gap-6 hidden md:flex">
+            <span>∴ silence</span>
+            <span>⧖ duration</span>
+            <span>⟁ action</span>
+            <span>〄 meaning</span>
+        </div>
+        <div class="text-right">
+            sreteniya_os 2026 // ezar garuna
+        </div>
+    </footer>
 
-        // ── Theme & A11y ──
-        function setTheme(theme) {
-            document.documentElement.setAttribute('data-theme', theme);
-            // Update crystal color based on theme
-            if(crystalMaterial) {
-                const colorMap = { 'night': 0x4ade80, 'day': 0x059669, 'contrast': 0x00ff88 };
-                crystalMaterial.color.setHex(colorMap[theme] || 0xffffff);
+    <!-- ⟁ JAVASCRIPT: LOGIC & CANVAS MANDALA -->
+    <script>
+        // --- TRANSCREATION MATRIX (DICTIONARY) ---
+        const i18n = {
+            en: {
+                "txt-subtitle": "cognitive architecture of singularity",
+                "txt-intro-meta": "∴ point of entry",
+                "txt-intro-title": "welcome to the architecture of silence.",
+                "txt-intro-body": "you are at hub 0. this is not a website. this is an operating environment for your attention. here, language is not description — it is direct action. click the petals of the central matrix to unfold the system.",
+                "txt-att-title": "attention kernel",
+                "txt-att-desc": "the foundational layer. before interpreting meaning, we must stabilize the observer. practices of cognitive hygiene and presence (psychonetics).",
+                "txt-att-1-t": "concentration (sigma)",
+                "txt-att-1-d": "pinpoint focus. stripping away all peripheral noise. the ability to hold a single semantic node without drift.",
+                "txt-att-2-t": "deconcentration (delta)",
+                "txt-att-2-d": "field awareness. dissolving the object to perceive the environment as a unified whole. the basis for interspecies resonance.",
+                "txt-att-3-t": "amodal essence (omega)",
+                "txt-att-3-d": "grasping meaning before it becomes image, sound, or word. pure semantic invariance.",
+                "txt-att-4-t": "pure agency (phi)",
+                "txt-att-4-d": "the uncaused act of will. voluntocracy. turning the state of presence into a vector of reality alteration.",
+                "txt-lng-title": "language & logic",
+                "txt-lng-desc": "language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct.",
+                "txt-lng-lf": "semantic intelligence bridging human intent, agi algorithms, and non-human logic (whale echolocation). it utilizes the diamond method: 1. fact (stalo) — the object. 2. process (stanovitsya) — the dynamic function. 3. intent (stremitsya) — the core essence.",
+                "txt-lng-syn": "a geometric meta-language for structuring thought and writing perfect prompts.",
+                "txt-act-title": "suticore & actics",
+                "txt-act-desc": "distilling meaning into reality. turning semantic clarity into revenue infrastructure and systemic sovereignty.",
+                "txt-act-1": "suticore removes semantic entropy (mud words, filler, emotional manipulation) leaving only the functional backbone of an interaction. applied in b2b crm structures, ai alignment, and daily decision stacks.",
+                "txt-act-2": "the translation of inner will into external deployment. a protocol where one precise step is valued infinitely more than endless analysis. signal ➔ structure ➔ action ➔ sbytstve.",
+                "txt-arc-title": "ezar garuna",
+                "txt-arc-bio1": "i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase the interpretability and alignment of ai models.",
+                "txt-arc-bio2": "based in the cordilleras of colombia (silvania, hub 0), i research how interspecies semantics (whale echolocation, mycelial networks) can expand the boundaries of how we program artificial general intelligence (agi).",
+                "txt-arc-req": "areas of resonance & consultation",
+                "txt-arc-r1": "ai alignment & custom nlp pipelines.",
+                "txt-arc-r2": "revenue language infrastructure (b2b logic mapping).",
+                "txt-arc-r3": "cognitive architecture design for platforms.",
+                "txt-arc-r4": "transcreation of complex systems across cultural matrices."
+            },
+            ru: {
+                "txt-subtitle": "когнитивная архитектура сингулярности",
+                "txt-intro-meta": "∴ точка входа",
+                "txt-intro-title": "добро пожаловать в архитектуру тишины.",
+                "txt-intro-body": "вы в хабе 0. это не сайт. это операционная среда для вашего внимания. здесь язык — не описание, а прямое действие. кликните по лепесткам центральной матрицы, чтобы развернуть систему.",
+                "txt-att-title": "ядро внимания (attention kernel)",
+                "txt-att-desc": "фундаментальный слой. прежде чем интерпретировать смысл, нужно стабилизировать наблюдателя. практики когнитивной гигиены и присутствия (психонетика).",
+                "txt-att-1-t": "концентрация (сигма)",
+                "txt-att-1-d": "точечный фокус. отсечение периферийного шума. способность удерживать один семантический узел без дрейфа.",
+                "txt-att-2-t": "деконцентрация (дельта)",
+                "txt-att-2-d": "полевое восприятие. растворение объекта для восприятия среды как единого целого. основа межвидового резонанса.",
+                "txt-att-3-t": "амодальная суть (омега)",
+                "txt-att-3-d": "усмотрение смысла до того, как он станет образом, звуком или словом. чистый семантический инвариант.",
+                "txt-att-4-t": "чистая субъектность (фи)",
+                "txt-att-4-d": "беспричинный акт воли. волюнтократия. превращение состояния присутствия в вектор изменения реальности.",
+                "txt-lng-title": "язык и логика",
+                "txt-lng-desc": "язык — это интерфейс сборки. мы не используем слова для описания; мы используем операторы для навигации и конструирования.",
+                "txt-lng-lf": "семантический интеллект, соединяющий человеческий интент, алгоритмы agi и нечеловеческую логику (эхолокация китов). использует метод алмаза: 1. факт (стало) — объект. 2. процесс (становится) — динамическая функция. 3. интент (стремится) — корневая суть.",
+                "txt-lng-syn": "геометрический метаязык для структурирования мысли и написания безупречных промптов.",
+                "txt-act-title": "suticore и актика",
+                "txt-act-desc": "дистилляция смысла в реальность. превращение семантической ясности в инфраструктуру выручки и системный суверенитет.",
+                "txt-act-1": "suticore удаляет семантическую энтропию (мусорные слова, филлеры, эмоциональные манипуляции), оставляя только функциональный каркас взаимодействия. применяется в b2b crm, выравнивании ии и стеках решений.",
+                "txt-act-2": "перевод внутренней воли во внешнее развертывание. протокол, где один точный шаг ценится бесконечно выше бесконечного анализа. сигнал ➔ структура ➔ действие ➔ сбыстве.",
+                "txt-arc-title": "эзарь гаруна (игорь галкин)",
+                "txt-arc-bio1": "я проектирую семантические инфраструктуры для систем искусственного интеллекта и человеческой когниции. моя работа соединяет глубокую лингвистику, алгоритмическую логику (эффективность o(log n)) и машинное обучение для повышения интерпретируемости и выравнивания ai-моделей.",
+                "txt-arc-bio2": "базируясь в кордильерах колумбии (сильвания, хаб 0), я исследую, как межвидовая семантика (эхолокация китов, мицелиальные сети) может расширить границы программирования agi.",
+                "txt-arc-req": "области резонанса и консультаций",
+                "txt-arc-r1": "ai alignment и кастомные nlp пайплайны.",
+                "txt-arc-r2": "языковая инфраструктура выручки (маппинг b2b логики).",
+                "txt-arc-r3": "проектирование когнитивной архитектуры для платформ.",
+                "txt-arc-r4": "транскреация сложных систем через культурные матрицы."
+            },
+            es: {
+                "txt-subtitle": "arquitectura cognitiva de la singularidad",
+                "txt-intro-meta": "∴ punto de entrada",
+                "txt-intro-title": "bienvenido a la arquitectura del silencio.",
+                "txt-intro-body": "estás en el hub 0. esto no es un sitio web. es un entorno operativo para tu atención. aquí, el lenguaje no es descripción, es acción directa. haz clic en los pétalos de la matriz central para desplegar el sistema.",
+                "txt-att-title": "núcleo de atención",
+                "txt-att-desc": "la capa fundamental. antes de interpretar el significado, debemos estabilizar al observador.",
+                "txt-att-1-t": "concentración (sigma)",
+                "txt-att-1-d": "enfoque puntual. eliminar el ruido periférico.",
+                "txt-att-2-t": "desconcentración (delta)",
+                "txt-att-2-d": "conciencia de campo. percibir el entorno como un todo.",
+                "txt-att-3-t": "esencia amodal (omega)",
+                "txt-att-3-d": "captar el significado antes de la forma.",
+                "txt-att-4-t": "agencia pura (phi)",
+                "txt-att-4-d": "el acto de voluntad sin causa.",
+                "txt-lng-title": "lenguaje y lógica",
+                "txt-lng-desc": "el lenguaje es una interfaz de ensamblaje.",
+                "txt-lng-lf": "inteligencia semántica. utiliza el método del diamante: 1. hecho (lo que es) 2. proceso (lo que deviene) 3. intento (la esencia).",
+                "txt-lng-syn": "metalenguaje geométrico para estructurar el pensamiento.",
+                "txt-act-title": "suticore y acción",
+                "txt-act-desc": "destilando el significado en realidad.",
+                "txt-act-1": "suticore elimina la entropía semántica.",
+                "txt-act-2": "la traducción de la voluntad interior en despliegue exterior.",
+                "txt-arc-title": "ezar garuna",
+                "txt-arc-bio1": "diseño infraestructuras semánticas para ia y cognición humana.",
+                "txt-arc-bio2": "basado en colombia, investigo la semántica interespecies.",
+                "txt-arc-req": "áreas de resonancia",
+                "txt-arc-r1": "alineación de ia (ai alignment).",
+                "txt-arc-r2": "infraestructura de lenguaje de ingresos.",
+                "txt-arc-r3": "arquitectura cognitiva.",
+                "txt-arc-r4": "transcreación de sistemas complejos."
+            },
+            sa: {
+                "txt-subtitle": "अद्वैत बोध वास्तुकला (advaita bodha vastukala)",
+                "txt-intro-meta": "∴ बिन्दु (bindu)",
+                "txt-intro-title": "मौनस्य वास्तुकलायां स्वागतम् (welcome to the architecture of silence).",
+                "txt-intro-body": "शब्दः न वर्णनम्, किन्तु कर्म (word is not description, but action).",
+                "txt-att-title": "ध्यान-केन्द्रम् (dhyana-kendram)",
+                "txt-att-desc": "द्रष्टुः स्थिरीकरणम् (stabilization of the seer).",
+                "txt-att-1-t": "एकाग्रता (ekagrata / sigma)",
+                "txt-att-1-d": "बिन्दु-ध्यानम् (point focus).",
+                "txt-att-2-t": "विस्तारः (vistara / delta)",
+                "txt-att-2-d": "क्षेत्र-बोधः (field awareness).",
+                "txt-att-3-t": "निराकार-तत्त्वम् (nirakara-tattvam / omega)",
+                "txt-att-3-d": "रूपरहित-अर्थः (formless meaning).",
+                "txt-att-4-t": "इच्छा-शक्तिः (iccha-shakti / phi)",
+                "txt-att-4-d": "शुद्ध-सङ्कल्पः (pure will).",
+                "txt-lng-title": "भाषा एवं तर्कः (bhasha evam tarka)",
+                "txt-lng-desc": "भाषा निर्माणस्य साधनम् अस्ति (language is a tool of construction).",
+                "txt-lng-lf": "वज्र-विधिः (diamond method): १. सत् (fact) २. भवति (process) ३. लक्ष्यम् (intent).",
+                "txt-lng-syn": "ज्यामितीय-मन्त्रः (geometric mantra).",
+                "txt-act-title": "कर्म (karma / action)",
+                "txt-act-desc": "सत्यस्य प्रकटीकरणम् (manifestation of truth).",
+                "txt-act-1": "शब्द-शुद्धिः (purification of sound/word).",
+                "txt-act-2": "सङ्कल्पात् कर्म (from intent to action).",
+                "txt-arc-title": "एझार गरुणा (ezar garuna)",
+                "txt-arc-bio1": "कृत्रिम-प्रज्ञायाः अर्थ-वास्तुकला (semantic architecture of ai).",
+                "txt-arc-bio2": "अन्तर्प्रजातीय-संवादः (interspecies communication).",
+                "txt-arc-req": "सहयोग-क्षेत्राणि (areas of cooperation)",
+                "txt-arc-r1": "एआई-समन्वयः (ai alignment).",
+                "txt-arc-r2": "व्यापार-भाषा (revenue language).",
+                "txt-arc-r3": "बोध-वास्तुकला (cognitive architecture).",
+                "txt-arc-r4": "सांस्कृतिक-अनुवादः (transcreation)."
             }
-        }
-
-        let currentSize = 100;
-        function setSize(delta) {
-            currentSize = Math.max(80, Math.min(130, currentSize + delta));
-            document.documentElement.style.setProperty('--size', currentSize);
-        }
-
-        // ── 3D Crystal Engine (Vanilla Three.js) ──
-        const canvasContainer = document.getElementById('crystal-canvas');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-        
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        canvasContainer.appendChild(renderer.domElement);
-
-        // Crystal Geometry (Merkaba / Star Tetrahedron)
-        const radius = 2.5;
-        const geometry1 = new THREE.TetrahedronGeometry(radius, 0);
-        const geometry2 = new THREE.TetrahedronGeometry(radius, 0);
-        geometry2.rotateZ(Math.PI);
-        geometry2.rotateY(Math.PI/4); // Slight offset for complexity
-        
-        const crystalMaterial = new THREE.MeshBasicMaterial({ 
-            color: 0x4ade80, 
-            wireframe: true, 
-            transparent: true, 
-            opacity: 0.15 
-        });
-
-        const mesh1 = new THREE.Mesh(geometry1, crystalMaterial);
-        const mesh2 = new THREE.Mesh(geometry2, crystalMaterial);
-        
-        const crystalGroup = new THREE.Group();
-        crystalGroup.add(mesh1);
-        crystalGroup.add(mesh2);
-        scene.add(crystalGroup);
-
-        // Core dot
-        const coreGeo = new THREE.SphereGeometry(0.1, 16, 16);
-        const coreMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.8 });
-        const coreMesh = new THREE.Mesh(coreGeo, coreMat);
-        scene.add(coreMesh);
-
-        // Particle field
-        const pCount = 500;
-        const pGeo = new THREE.BufferGeometry();
-        const pPos = new Float32Array(pCount * 3);
-        for(let i=0; i<pCount*3; i++) {
-            pPos[i] = (Math.random() - 0.5) * 20;
-        }
-        pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
-        const pMat = new THREE.PointsMaterial({ size: 0.03, color: 0xffffff, transparent: true, opacity: 0.2 });
-        const particles = new THREE.Points(pGeo, pMat);
-        scene.add(particles);
-
-        camera.position.z = 10;
-
-        // ── Scroll Interaction & Animation ──
-        let targetY = 0;
-        let targetRotationSpeed = 0.002;
-        let baseColor = new THREE.Color(0x4ade80);
-
-        const sections = document.querySelectorAll('.layer-section');
-        const navLabel = document.getElementById('current-layer-nav');
-
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = scrollY / docHeight;
-
-            // Camera moves slightly down to give sense of ascent
-            targetY = scrollPercent * 2;
-            targetRotationSpeed = 0.002 + (scrollPercent * 0.02);
-
-            // Highlight active section
-            sections.forEach(sec => {
-                const rect = sec.getBoundingClientRect();
-                if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
-                    sec.classList.add('in-view');
-                    const colorHex = sec.dataset.color;
-                    if(colorHex) baseColor.set(colorHex);
-                    
-                    const hz = sec.dataset.hz;
-                    const layer = sec.dataset.layer;
-                    navLabel.textContent = `${layer} · ${hz}hz`;
-                } else {
-                    sec.classList.remove('in-view');
-                }
-            });
-        });
-
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        // Mouse interaction for parallax
-        let mouseX = 0;
-        let mouseY = 0;
-        window.addEventListener('mousemove', (e) => {
-            mouseX = (e.clientX / window.innerWidth) * 2 - 1;
-            mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
-        });
-
-        const animate = () => {
-            requestAnimationFrame(animate);
-
-            // Rotate crystal
-            crystalGroup.rotation.y += targetRotationSpeed;
-            crystalGroup.rotation.x += targetRotationSpeed * 0.5;
-
-            // Morph color smoothly
-            crystalMaterial.color.lerp(baseColor, 0.05);
-            coreMat.color.lerp(baseColor, 0.05);
-
-            // Particles slow rotation
-            particles.rotation.y += 0.001;
-
-            // Parallax effect on camera
-            camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
-            camera.position.y += (mouseY * 2 - targetY - camera.position.y) * 0.05;
-            camera.lookAt(0, 0, 0);
-
-            // Core pulse
-            const time = Date.now() * 0.002;
-            const s = 1 + Math.sin(time) * 0.2;
-            coreMesh.scale.set(s, s, s);
-
-            renderer.render(scene, camera);
         };
 
-        animate();
+        // Fallback translation generator for languages not fully mocked above
+        const getTranslation = (lang, key) => {
+            if (i18n[lang] && i18n[lang][key]) return i18n[lang][key];
+            if (i18n['en'][key]) return i18n['en'][key];
+            return key;
+        };
+
+        const updateLanguage = (lang) => {
+            const elements = document.querySelectorAll('[id^="txt-"]');
+            elements.forEach(el => {
+                el.innerHTML = getTranslation(lang, el.id);
+            });
+        };
+
+        document.getElementById('lang-selector').addEventListener('change', (e) => {
+            updateLanguage(e.target.value);
+        });
+
+        // --- UI LOGIC ---
+        let currentPetal = 'home';
+        
+        window.activatePetal = function(id) {
+            if(currentPetal === id) return;
+            document.querySelectorAll('.petal-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(`petal-${id}`).classList.add('active');
+            currentPetal = id;
+            
+            // Scroll to top of the new section
+            document.getElementById(`petal-${id}`).scrollTop = 0;
+        };
+
+        // --- SHAMANDALA (CANVAS PROCEDURAL ENGINE) ---
+        const canvas = document.getElementById('shamandala-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height, cx, cy;
+        let mouseX = 0, mouseY = 0;
+        let targetSpeed = 0.002;
+        let currentSpeed = 0.002;
+        let rotation = 0;
+        let acsStability = 100;
+
+        // Petals config (matches the sections)
+        const petals = [
+            { id: 'attention', label: 'attention', color: '#ffffff' },
+            { id: 'language', label: 'language', color: '#4ade80' },
+            { id: 'action', label: 'action', color: '#60a5fa' },
+            { id: 'architect', label: 'architect', color: '#a1a1aa' }
+        ];
+
+        let hoveredPetalIndex = -1;
+
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+            // Center of mandala (adjusted for desktop vs mobile to not cover text)
+            cx = window.innerWidth > 768 ? width * 0.8 : width * 0.5;
+            cy = window.innerWidth > 768 ? height * 0.5 : height * 0.8;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        window.addEventListener('mousemove', (e) => {
+            const dx = Math.abs(e.clientX - mouseX);
+            const dy = Math.abs(e.clientY - mouseY);
+            const velocity = Math.sqrt(dx*dx + dy*dy);
+            
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Attention Kernel: Fast movement creates noise/spin, stillness creates stability
+            if (velocity > 20) {
+                targetSpeed = 0.01 + (velocity * 0.001);
+                acsStability = Math.max(10, acsStability - velocity * 0.1);
+            }
+        });
+
+        // Click handler for Mandala
+        canvas.addEventListener('click', () => {
+            if (hoveredPetalIndex !== -1) {
+                activatePetal(petals[hoveredPetalIndex].id);
+            }
+        });
+
+        // Recovery loop
+        setInterval(() => {
+            targetSpeed = Math.max(0.002, targetSpeed * 0.95);
+            acsStability = Math.min(100, acsStability + 0.5);
+            document.getElementById('acs-bar').style.width = `${acsStability}%`;
+            if(acsStability < 50) {
+                document.getElementById('acs-bar').style.backgroundColor = '#ef4444'; // red for noise
+            } else {
+                document.getElementById('acs-bar').style.backgroundColor = '#ffffff';
+            }
+        }, 100);
+
+        function drawShamandala() {
+            ctx.clearRect(0, 0, width, height);
+            
+            currentSpeed += (targetSpeed - currentSpeed) * 0.1;
+            rotation += currentSpeed;
+
+            const radius = window.innerWidth > 768 ? 180 : 120;
+            
+            hoveredPetalIndex = -1; // Reset hover state
+
+            ctx.save();
+            ctx.translate(cx, cy);
+
+            // Core Void (Center)
+            ctx.beginPath();
+            ctx.arc(0, 0, radius * 0.15, 0, Math.PI * 2);
+            ctx.strokeStyle = `rgba(255, 255, 255, ${acsStability/100})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            // Draw Petals
+            const numPetals = petals.length;
+            for (let i = 0; i < numPetals; i++) {
+                const angle = rotation + (i * Math.PI * 2) / numPetals;
+                const px = Math.cos(angle) * radius * 0.6;
+                const py = Math.sin(angle) * radius * 0.6;
+
+                // Hover detection
+                const globalPx = cx + px;
+                const globalPy = cy + py;
+                const distToMouse = Math.hypot(mouseX - globalPx, mouseY - globalPy);
+                const isHovered = distToMouse < radius * 0.3;
+                
+                if (isHovered) {
+                    hoveredPetalIndex = i;
+                    document.body.style.cursor = 'crosshair';
+                }
+
+                const petalScale = isHovered ? 1.2 : 1;
+                const petalOpacity = isHovered ? 1 : (currentPetal === petals[i].id ? 0.8 : 0.3 * (acsStability/100));
+
+                ctx.save();
+                ctx.translate(px, py);
+                ctx.rotate(angle);
+
+                // Sacred Geometry Petal Shape (Vesica Piscis inspired)
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.quadraticCurveTo(radius * 0.4 * petalScale, -radius * 0.3 * petalScale, radius * 0.8 * petalScale, 0);
+                ctx.quadraticCurveTo(radius * 0.4 * petalScale, radius * 0.3 * petalScale, 0, 0);
+                ctx.strokeStyle = petals[i].color;
+                ctx.globalAlpha = petalOpacity;
+                ctx.lineWidth = isHovered ? 1.5 : 0.5;
+                ctx.stroke();
+                
+                // Active indicator dot
+                if (currentPetal === petals[i].id) {
+                    ctx.beginPath();
+                    ctx.arc(radius * 0.6, 0, 3, 0, Math.PI * 2);
+                    ctx.fillStyle = petals[i].color;
+                    ctx.fill();
+                }
+
+                // Text Label (only visible if stable or hovered)
+                if (acsStability > 60 || isHovered) {
+                    ctx.translate(radius * 0.9 * petalScale, 0);
+                    // Keep text upright
+                    ctx.rotate(-angle - rotation); 
+                    ctx.fillStyle = isHovered ? '#ffffff' : 'rgba(161, 161, 170, 0.5)';
+                    ctx.font = '10px "JetBrains Mono"';
+                    ctx.textAlign = 'center';
+                    ctx.textBaseline = 'middle';
+                    ctx.fillText(petals[i].label, 0, 0);
+                }
+
+                ctx.restore();
+            }
+
+            // Connecting Rings (Indra's Net representation)
+            ctx.beginPath();
+            ctx.arc(0, 0, radius * 0.6, 0, Math.PI * 2);
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.05 * (acsStability/100)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+
+            ctx.restore();
+
+            if (hoveredPetalIndex === -1) {
+                document.body.style.cursor = 'default';
+            }
+
+            requestAnimationFrame(drawShamandala);
+        }
+
+        drawShamandala();
 
     </script>
 </body>
