@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <title>sreteniya_os ∴ cognitive architecture</title>
-    <meta name="description" content="sreteniya_os: an operating environment for attention and semantic architecture.">
+    <meta name="description" content="sreteniya_os: an operating environment for attention and semantic architecture. designed by ezar garuna.">
     <meta name="author" content="ezar garuna">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,23 +17,27 @@
         /* ⧖ SINAURA V4.5 QUIET LUXURY */
         :root {
             --bg: #020202;
-            --fg: #d4d4d8;
-            --muted: #52525b;
-            /* --accent is dynamically injected by the Diva Engine */
-            --accent: #ffffff; 
-            --base-size: 16px;
+            --fg: #e4e4e7; /* Улучшенный контраст текста */
+            --muted: #71717a;
+            --accent: #ffffff;
+            --glitch: #4ade80;
+            --base-size: 18px; /* Увеличен базовый размер для читабельности */
         }
 
         [data-theme="paper"] {
             --bg: #f8f9fa;
             --fg: #18181b;
-            --muted: #a1a1aa;
+            --muted: #71717a;
+            --accent: #000000;
+            --glitch: #059669;
         }
 
         [data-theme="contrast"] {
             --bg: #000000;
             --fg: #ffff00;
             --muted: #ffffff;
+            --accent: #00ff88;
+            --glitch: #ff00ff;
         }
 
         body {
@@ -56,16 +60,16 @@
         .tracking-hyper { letter-spacing: 0.8em; }
 
         /* ◌ scrollbar */
-        ::-webkit-scrollbar { width: 2px; }
+        ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 0; }
+        ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 2px; }
 
         /* ㄄ glass & structural elements */
         .glass {
             background: rgba(var(--bg-rgb, 2, 2, 2), 0.6);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(var(--fg-rgb, 255, 255, 255), 0.05);
+            border: 1px solid rgba(var(--fg-rgb, 255, 255, 255), 0.08);
         }
 
         [data-theme="paper"] .glass {
@@ -76,7 +80,7 @@
         /* ⟁ scroll animations */
         .reveal {
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(40px);
             transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .reveal.active {
@@ -97,17 +101,13 @@
 
         .hud-overlay { z-index: 50; }
         .content-layer { position: relative; z-index: 10; }
+
+        /* overrides */
         .keep-case { text-transform: none; }
         button, select { outline: none; }
-
-        /* dynamic accent color classes */
-        .text-accent { color: var(--accent); transition: color 1s ease; }
-        .border-accent { border-color: var(--accent); transition: border-color 1s ease; }
-        .bg-accent { background-color: var(--accent); transition: background-color 1s ease; }
-        .shadow-accent { box-shadow: 0 0 15px var(--accent); transition: box-shadow 1s ease; }
     </style>
 </head>
-<body class="selection:bg-white selection:text-black">
+<body class="selection:bg-accent selection:text-bg">
 
     <!-- ⟁ 1. SHAMANDALA (PROCEDURAL BACKGROUND ENGINE) -->
     <canvas id="shamandala-canvas"></canvas>
@@ -119,26 +119,29 @@
                 <span class="text-xl">⟁</span> sreteniya_os
             </h1>
             <p class="text-[9px] text-[var(--muted)] tracking-widest font-mono keep-case mt-1">
-                <span id="diva-label" class="text-accent font-bold">diva syncing...</span> // <span id="diva-focus">resonance setup</span>
+                <span id="txt-nav-subtitle">cognitive architecture of singularity</span>
             </p>
         </div>
 
         <div class="flex flex-col items-end gap-4 pointer-events-auto">
             <!-- Global Controls -->
             <div class="flex flex-wrap items-center justify-end gap-4">
-                <div class="flex items-center gap-2 border border-[var(--muted)]/30 rounded-sm px-2 py-1">
-                    <button onclick="adjustFontSize(-2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-accent transition-colors">a-</button>
+                <!-- A11y & Size -->
+                <div class="flex items-center gap-2 border border-[var(--muted)]/30 rounded-sm px-3 py-1">
+                    <button onclick="adjustFontSize(-2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors" aria-label="Decrease font size">a-</button>
                     <span class="text-[8px] text-[var(--muted)]">|</span>
-                    <button onclick="adjustFontSize(2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-accent transition-colors">a+</button>
+                    <button onclick="adjustFontSize(2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors" aria-label="Increase font size">a+</button>
                 </div>
                 
-                <div class="flex items-center gap-3 text-[10px] font-mono tracking-widest hidden md:flex">
-                    <button data-theme-btn="void" class="theme-btn text-[var(--muted)] hover:text-accent transition-colors">void</button>
-                    <button data-theme-btn="paper" class="theme-btn text-[var(--muted)] hover:text-accent transition-colors">paper</button>
-                    <button data-theme-btn="contrast" class="theme-btn text-[var(--muted)] hover:text-accent transition-colors">contrast</button>
+                <!-- Theme -->
+                <div class="flex items-center gap-4 text-[10px] font-mono tracking-widest">
+                    <button data-theme-btn="void" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">void</button>
+                    <button data-theme-btn="paper" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">paper</button>
+                    <button data-theme-btn="contrast" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">contrast</button>
                 </div>
 
-                <select id="lang-selector" class="bg-transparent border border-[var(--muted)]/30 text-[9px] uppercase tracking-widest text-[var(--muted)] hover:text-accent transition-colors cursor-pointer px-2 py-1 font-mono rounded-sm">
+                <!-- Language -->
+                <select id="lang-selector" class="bg-transparent border border-[var(--muted)]/30 text-[9px] uppercase tracking-widest text-[var(--muted)] hover:text-[var(--accent)] transition-colors cursor-pointer px-2 py-1 font-mono rounded-sm">
                     <option value="en">en</option>
                     <option value="ru">ru</option>
                 </select>
@@ -148,8 +151,8 @@
             <div class="flex items-center gap-3 w-full justify-end mt-2">
                 <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono hidden md:inline">acs stability</span>
                 <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono md:hidden">acs</span>
-                <div class="w-24 md:w-32 h-[1px] bg-[var(--muted)]/30 relative overflow-hidden">
-                    <div id="acs-bar" class="absolute top-0 left-0 h-full bg-accent transition-all duration-300 shadow-accent" style="width: 100%;"></div>
+                <div class="w-32 h-[1px] bg-[var(--muted)]/30 relative overflow-hidden">
+                    <div id="acs-bar" class="absolute top-0 left-0 h-full bg-[var(--accent)] transition-all duration-300 shadow-[0_0_8px_var(--accent)]" style="width: 100%;"></div>
                 </div>
             </div>
         </div>
@@ -160,17 +163,17 @@
 
         <!-- L0: INITIATION (HERO) -->
         <section id="initiation" class="min-h-[70vh] flex flex-col justify-center reveal active pt-10">
-            <div class="max-w-3xl space-y-8 glass p-8 md:p-12 rounded-sm relative overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent opacity-40"></div>
-                <p class="text-[10px] tracking-hyper text-accent font-mono uppercase" id="txt-l0-meta">∴ point of entry</p>
-                <h2 class="text-4xl md:text-6xl font-extralight text-accent tracking-widest leading-tight" id="txt-l0-title">
+            <div class="max-w-4xl space-y-8 glass p-8 md:p-12 rounded-sm relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-[var(--accent)]/40 to-transparent"></div>
+                <p class="text-[10px] tracking-hyper text-[var(--glitch)] font-mono uppercase" id="txt-l0-meta">∴ point of entry</p>
+                <h2 class="text-4xl md:text-6xl font-extralight text-[var(--accent)] tracking-widest leading-tight" id="txt-l0-title">
                     welcome to the architecture of silence.
                 </h2>
-                <div class="text-sm md:text-base text-[var(--muted)] leading-relaxed tracking-wide space-y-4">
+                <div class="text-sm md:text-base text-[var(--muted)] leading-loose tracking-wide space-y-6">
                     <p id="txt-l0-p1">you are at hub 0. this is not a standard interface. this is an operating environment for your attention.</p>
                     <p id="txt-l0-p2">here, language is not description — it is direct action. we reduce semantic entropy to extract the pure signal of intent.</p>
                 </div>
-                <div class="text-[9px] tracking-hyper text-[var(--muted)] font-mono mt-8 border-t border-[var(--muted)]/20 pt-6">
+                <div class="text-[10px] tracking-hyper text-[var(--muted)] font-mono mt-10 border-t border-[var(--muted)]/20 pt-8">
                     #азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой
                 </div>
             </div>
@@ -180,33 +183,41 @@
         <section id="attention" class="min-h-[50vh] flex flex-col justify-center reveal">
             <header class="mb-12">
                 <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l1 // perception engine</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-accent tracking-widest mt-2" id="txt-l1-title">attention kernel</h3>
-                <p class="text-xs text-[var(--muted)] mt-4 tracking-wider max-w-2xl" id="txt-l1-desc">
+                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2" id="txt-l1-title">attention kernel</h3>
+                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose" id="txt-l1-desc">
                     before interpreting meaning, the observer must be stabilized. the system tracks your velocity to calculate the attention coherence score (acs). move erratically, and clarity drops.
                 </p>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="glass p-6 border-t-2 border-accent hover:bg-white/5 transition-colors">
-                    <span class="text-2xl text-accent font-serif italic block mb-4">σ</span>
-                    <h4 class="text-xs font-bold text-accent tracking-widest mb-2" id="txt-l1-s-t">concentration</h4>
-                    <p class="text-[10px] text-[var(--muted)] leading-relaxed" id="txt-l1-s-d">pinpoint focus. stripping peripheral noise to hold a single semantic node.</p>
+                <!-- Sigma -->
+                <div class="glass p-8 border-t-2 border-t-[var(--accent)]/60 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
+                    <span class="text-3xl text-[var(--accent)] font-serif italic block mb-6">σ</span>
+                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-s-t">concentration</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1" id="txt-l1-s-d">pinpoint focus. stripping peripheral noise to hold a single semantic node.</p>
                 </div>
-                <div class="glass p-6 border-t-2 border-t-[var(--muted)]/30 hover:border-accent transition-colors">
-                    <span class="text-2xl text-[var(--muted)] font-serif italic block mb-4">Δ</span>
-                    <h4 class="text-xs font-bold text-accent tracking-widest mb-2" id="txt-l1-d-t">deconcentration</h4>
-                    <p class="text-[10px] text-[var(--muted)] leading-relaxed" id="txt-l1-d-d">field awareness. dissolving boundaries to perceive the environment as a whole.</p>
+                <!-- Delta -->
+                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
+                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Δ</span>
+                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-d-t">deconcentration</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1" id="txt-l1-d-d">field awareness. dissolving boundaries to perceive the environment as a whole.</p>
                 </div>
-                <div class="glass p-6 border-t-2 border-t-[var(--muted)]/30 hover:border-accent transition-colors">
-                    <span class="text-2xl text-[var(--muted)] font-serif italic block mb-4">Ω</span>
-                    <h4 class="text-xs font-bold text-accent tracking-widest mb-2" id="txt-l1-o-t">amodal essence</h4>
-                    <p class="text-[10px] text-[var(--muted)] leading-relaxed" id="txt-l1-o-d">grasping meaning prior to its manifestation as image, sound, or word.</p>
+                <!-- Omega -->
+                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
+                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Ω</span>
+                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-o-t">amodal essence</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1" id="txt-l1-o-d">grasping meaning prior to its manifestation as image, sound, or word.</p>
                 </div>
-                <div class="glass p-6 border-t-2 border-t-[var(--muted)]/30 hover:border-accent transition-colors">
-                    <span class="text-2xl text-[var(--muted)] font-serif italic block mb-4">Φ</span>
-                    <h4 class="text-xs font-bold text-accent tracking-widest mb-2" id="txt-l1-p-t">pure agency</h4>
-                    <p class="text-[10px] text-[var(--muted)] leading-relaxed" id="txt-l1-p-d">the uncaused act of will. turning presence into a vector of reality alteration.</p>
+                <!-- Phi -->
+                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
+                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Φ</span>
+                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-p-t">pure agency</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1" id="txt-l1-p-d">the uncaused act of will. turning presence into a vector of reality alteration.</p>
                 </div>
+            </div>
+            
+            <div class="mt-8" id="txt-l1-link">
+                <!-- Injected via JS -->
             </div>
         </section>
 
@@ -214,38 +225,42 @@
         <section id="language" class="min-h-[60vh] flex flex-col justify-center reveal">
             <header class="mb-12">
                 <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l3 // structural geometry</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-accent tracking-widest mt-2" id="txt-l3-title">language & logic</h3>
-                <p class="text-xs text-[var(--muted)] mt-4 tracking-wider max-w-2xl" id="txt-l3-desc">
+                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2" id="txt-l3-title">language & logic</h3>
+                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose" id="txt-l3-desc">
                     language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct paths for both human and ai cognition.
                 </p>
             </header>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <div class="glass p-8 relative overflow-hidden">
-                    <div class="absolute -right-8 -top-8 text-8xl text-[var(--muted)]/10 font-serif italic">〄</div>
-                    <h4 class="text-sm font-bold text-accent tracking-widest mb-4 uppercase">linguafusion engine</h4>
-                    <p class="text-xs text-[var(--muted)] leading-loose mb-6" id="txt-l3-lf">
+                <!-- LinguaFUSION -->
+                <div class="glass p-10 relative overflow-hidden flex flex-col">
+                    <div class="absolute -right-8 -top-8 text-9xl text-[var(--muted)]/10 font-serif italic pointer-events-none">〄</div>
+                    <h4 class="text-sm font-bold text-[var(--accent)] tracking-widest mb-6 uppercase">linguafusion engine</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-loose mb-8 flex-1" id="txt-l3-lf">
                         semantic intelligence bridging human intent and agi algorithms. it utilizes the <strong>diamond method</strong> for processing meaning:
                     </p>
-                    <ul class="text-[11px] text-[var(--fg)] space-y-2 font-mono border-l border-[var(--muted)]/30 pl-4">
+                    <ul class="text-[11px] text-[var(--fg)] space-y-4 font-mono border-l-2 border-[var(--muted)]/30 pl-6 mb-8">
                         <li id="txt-l3-lf-1">1. fact (stalo) — the solidified object.</li>
                         <li id="txt-l3-lf-2">2. process (stanovitsya) — the dynamic function.</li>
                         <li id="txt-l3-lf-3">3. intent (stremitsya) — the core essence.</li>
                     </ul>
+                    <div id="txt-l3-lf-link" class="mt-auto"></div>
                 </div>
 
-                <div class="glass p-8 relative overflow-hidden">
-                    <div class="absolute -right-8 -top-8 text-8xl text-[var(--muted)]/10 font-serif italic">⟁</div>
-                    <h4 class="text-sm font-bold text-accent tracking-widest mb-4 uppercase">syntaxium protocol</h4>
-                    <p class="text-xs text-[var(--muted)] leading-loose mb-6" id="txt-l3-syn">
+                <!-- Syntaxium -->
+                <div class="glass p-10 relative overflow-hidden flex flex-col">
+                    <div class="absolute -right-8 -top-8 text-9xl text-[var(--muted)]/10 font-serif italic pointer-events-none">⟁</div>
+                    <h4 class="text-sm font-bold text-[var(--accent)] tracking-widest mb-6 uppercase">syntaxium protocol</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-loose mb-8 flex-1" id="txt-l3-syn">
                         a geometric meta-language for structuring thought and writing deterministic ai prompts. symbols equal execution.
                     </p>
-                    <div class="grid grid-cols-2 gap-3 font-mono text-[10px] text-[var(--muted)]">
-                        <div class="p-2 border border-[var(--muted)]/20 hover:border-accent transition-colors">∴ source / context</div>
-                        <div class="p-2 border border-[var(--muted)]/20 hover:border-accent transition-colors">⧖ process / duration</div>
-                        <div class="p-2 border border-[var(--muted)]/20 hover:border-accent transition-colors">⟁ action / will</div>
-                        <div class="p-2 border border-[var(--muted)]/20 hover:border-accent transition-colors">〄 essence / canon</div>
+                    <div class="grid grid-cols-2 gap-4 font-mono text-[11px] text-[var(--muted)] mb-8">
+                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">∴ source / context</div>
+                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">⧖ process / duration</div>
+                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">⟁ action / will</div>
+                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">〄 essence / canon</div>
                     </div>
+                    <div id="txt-l3-syn-link" class="mt-auto"></div>
                 </div>
             </div>
         </section>
@@ -254,106 +269,111 @@
         <section id="matrix" class="min-h-[80vh] flex flex-col justify-center reveal">
             <header class="mb-12">
                 <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l5 // civilization scale</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-accent tracking-widest mt-2" id="txt-l5-title">civilizational codes</h3>
-                <p class="text-xs text-[var(--muted)] mt-4 tracking-wider max-w-2xl" id="txt-l5-desc">
+                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2" id="txt-l5-title">civilizational codes</h3>
+                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose" id="txt-l5-desc">
                     mapping the semantic invariant of "silence" across human and constructed languages. this is not translation; it is ontological transfer of a state.
                 </p>
             </header>
 
             <div class="glass rounded-sm overflow-hidden flex flex-col md:flex-row border border-[var(--muted)]/30">
                 <!-- Selectors -->
-                <div class="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-[var(--muted)]/30 bg-[var(--bg)]/50 p-6 max-h-[500px] overflow-y-auto flex flex-col gap-2">
-                    <span class="text-[9px] uppercase tracking-widest text-[var(--muted)] mb-2 font-mono">cultural matrices</span>
+                <div class="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-[var(--muted)]/30 bg-[var(--bg)]/50 p-8 max-h-[500px] overflow-y-auto custom-scrollbar flex flex-col gap-3">
+                    <span class="text-[9px] uppercase tracking-widest text-[var(--muted)] mb-4 font-mono">cultural matrices</span>
+                    <!-- Populated by JS -->
                     <div id="matrix-btns" class="flex flex-col gap-2"></div>
                 </div>
                 
                 <!-- Display -->
-                <div class="w-full md:w-2/3 p-8 md:p-12 bg-transparent relative flex flex-col justify-center">
-                    <div class="flex items-center gap-4 mb-10">
-                        <span class="text-4xl text-accent font-serif italic">◌</span>
+                <div class="w-full md:w-2/3 p-8 md:p-14 bg-transparent relative flex flex-col justify-center">
+                    <div class="flex items-center gap-6 mb-12">
+                        <span class="text-5xl text-[var(--accent)] font-serif italic">◌</span>
                         <div>
-                            <div class="text-[9px] font-mono text-accent uppercase tracking-widest mb-1">YZH-VOD-001 :: INVARIANT</div>
-                            <h4 class="text-2xl font-light uppercase tracking-widest text-[var(--fg)]">silence</h4>
+                            <div class="text-[10px] font-mono text-[var(--glitch)] uppercase tracking-widest mb-2">YZH-VOD-001 :: INVARIANT</div>
+                            <h4 class="text-3xl font-light uppercase tracking-widest text-[var(--fg)]">silence</h4>
                         </div>
                     </div>
 
-                    <div class="space-y-8">
+                    <div class="space-y-10">
                         <div>
-                            <span class="text-[9px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest border-b border-[var(--muted)]/30 pb-1 block">target projection</span>
-                            <p class="text-3xl font-serif italic text-accent pt-4" id="mx-translation">...</p>
+                            <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest border-b border-[var(--muted)]/30 pb-2 block">target projection</span>
+                            <p class="text-4xl font-serif italic text-[var(--accent)] pt-6" id="mx-translation">...</p>
                         </div>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="glass p-4 border-l-2 border-l-[var(--muted)] hover:border-l-accent transition-colors">
-                                <span class="text-[9px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2">cognitive logic (process)</span>
-                                <p class="text-xs leading-relaxed text-[var(--fg)]" id="mx-logic">...</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+                            <div className="space-y-3">
+                                <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2 border-l-2 border-[var(--muted)] pl-3">cognitive logic</span>
+                                <p class="text-xs leading-relaxed text-[var(--fg)] pl-3" id="mx-logic">...</p>
                             </div>
-                            <div class="glass p-4 border-l-2 border-l-[var(--muted)] hover:border-l-accent transition-colors">
-                                <span class="text-[9px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2">action vector (intent)</span>
-                                <p class="text-xs leading-relaxed text-[var(--fg)]" id="mx-action">...</p>
+                            <div className="space-y-3">
+                                <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2 border-l-2 border-[var(--muted)] pl-3">action vector</span>
+                                <p class="text-xs leading-relaxed text-[var(--fg)] pl-3" id="mx-action">...</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="mt-8" id="txt-l5-link"></div>
         </section>
 
         <!-- L7: ARCHITECT -->
         <section id="architect" class="min-h-[50vh] flex flex-col justify-center reveal">
-            <header class="mb-12 border-b border-[var(--muted)]/20 pb-8">
+            <header class="mb-14 border-b border-[var(--muted)]/20 pb-10">
                 <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l7 // singularity node</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-accent tracking-widest mt-2" id="txt-l7-title">ezar garuna</h3>
-                <p class="text-xs text-[var(--muted)] mt-2 font-mono keep-case uppercase tracking-widest">
+                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-widest mt-2" id="txt-l7-title">ezar garuna</h3>
+                <p class="text-xs text-[var(--muted)] mt-4 font-mono keep-case uppercase tracking-widest">
                     semantic ai architect · nlp researcher
                 </p>
             </header>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                <div class="lg:col-span-2 space-y-6 text-sm text-[var(--fg)] leading-relaxed font-light">
-                    <p id="txt-l7-bio1">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div class="lg:col-span-2 space-y-8 text-sm text-[var(--fg)] leading-relaxed font-light">
+                    <p id="txt-l7-bio1" class="text-[15px] leading-loose">
                         i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.
                     </p>
-                    <p id="txt-l7-bio2">
+                    <p id="txt-l7-bio2" class="text-[15px] leading-loose">
                         based in the cordilleras of colombia (silvania, hub 0), i research how interspecies semantics and formal structural grammars can expand the boundaries of artificial general intelligence (agi).
                     </p>
                     
-                    <div class="mt-8 pt-6 border-t border-[var(--muted)]/20">
-                        <h4 class="text-xs text-accent tracking-widest uppercase font-bold mb-4" id="txt-l7-req">areas of research & implementation</h4>
-                        <ul class="space-y-3 font-mono text-[10px] text-[var(--muted)]">
-                            <li class="flex items-start gap-3"><span class="text-accent">∴</span> <span id="txt-l7-r1">ai alignment & custom nlp pipelines.</span></li>
-                            <li class="flex items-start gap-3"><span class="text-accent">⧖</span> <span id="txt-l7-r2">revenue language infrastructure (b2b logic).</span></li>
-                            <li class="flex items-start gap-3"><span class="text-accent">⟁</span> <span id="txt-l7-r3">cognitive architecture design for platforms.</span></li>
+                    <div class="mt-12 pt-8 border-t border-[var(--muted)]/20">
+                        <h4 class="text-xs text-[var(--accent)] tracking-widest uppercase font-bold mb-6" id="txt-l7-req">areas of research & implementation</h4>
+                        <ul class="space-y-5 font-mono text-xs text-[var(--muted)]">
+                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">∴</span> <span id="txt-l7-r1" class="leading-relaxed">ai alignment & custom nlp pipelines.</span></li>
+                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">⧖</span> <span id="txt-l7-r2" class="leading-relaxed">revenue language infrastructure (b2b logic).</span></li>
+                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">⟁</span> <span id="txt-l7-r3" class="leading-relaxed">cognitive architecture design for platforms.</span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="glass p-8 flex flex-col justify-between">
-                    <div class="space-y-6">
-                        <span class="text-[9px] uppercase tracking-mega text-[var(--muted)] font-bold block">contact node</span>
-                        <a href="https://t.me/saritamah" target="_blank" rel="noreferrer" class="block text-xs text-[var(--fg)] hover:text-accent transition-colors keep-case">telegram: @saritamah</a>
-                        <a href="mailto:ezargaruna@gmail.com" class="block text-xs text-[var(--fg)] hover:text-accent transition-colors keep-case">mail: ezargaruna@gmail.com</a>
-                        <a href="https://github.com/ezargaruna" target="_blank" rel="noreferrer" class="block text-xs text-[var(--fg)] hover:text-accent transition-colors keep-case">github: /ezargaruna</a>
+                <div class="glass p-10 flex flex-col justify-between">
+                    <div class="space-y-8">
+                        <span class="text-[10px] uppercase tracking-mega text-[var(--muted)] font-bold block border-b border-[var(--muted)]/20 pb-4">contact node</span>
+                        <a href="https://t.me/saritamah" target="_blank" rel="noreferrer" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">telegram: @saritamah</a>
+                        <a href="mailto:ezargaruna@gmail.com" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">mail: ezargaruna@gmail.com</a>
+                        <a href="https://github.com/ezargaruna" target="_blank" rel="noreferrer" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">github: /ezargaruna</a>
                     </div>
-                    <div class="mt-12 text-[9px] tracking-widest text-[var(--muted)] font-mono uppercase">
+                    <div class="mt-16 text-[10px] tracking-widest text-[var(--muted)] font-mono uppercase leading-loose border-t border-[var(--muted)]/20 pt-6">
                         status: active <br>
-                        location: silvania, colombia
+                        location: bogotá, col
                     </div>
                 </div>
             </div>
+            
+            <div class="mt-12" id="txt-l7-link"></div>
         </section>
 
     </div>
 
     <!-- ⟁ FOOTER -->
-    <footer class="border-t border-[var(--muted)]/20 bg-[var(--bg)]/80 backdrop-blur-md py-12 relative z-20 transition-colors duration-1000">
-        <div class="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex gap-6 text-[9px] font-mono tracking-widest uppercase text-[var(--muted)]">
+    <footer class="border-t border-[var(--muted)]/20 bg-[var(--bg)]/80 backdrop-blur-md py-16 relative z-20 transition-colors duration-1000">
+        <div class="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex flex-wrap justify-center gap-8 text-[10px] font-mono tracking-widest uppercase text-[var(--muted)]">
                 <span>∴ signal</span>
                 <span>⧖ process</span>
                 <span>⟁ action</span>
                 <span>㄄ meaning</span>
             </div>
-            <div class="text-[9px] font-mono text-[var(--muted)] uppercase tracking-widest text-center md:text-right leading-loose">
+            <div class="text-[10px] font-mono text-[var(--muted)] uppercase tracking-widest text-center md:text-right leading-loose">
                 sreteniya_os 2026 // ezar garuna<br/>
                 <span class="opacity-50 italic">silence is the supreme syntax</span>
             </div>
@@ -362,29 +382,7 @@
 
     <!-- ⟁ JAVASCRIPT LOGIC -->
     <script>
-        // --- 1. DIVA OF SEVEN LIGHTS (Planetary Days) ---
-        const DIVA_LIGHTS = [
-            { day: 0, name: "Sun (☉)", theme: "sun", color: "#F59E0B", focus: "identity & singularity", freq: "126Hz" }, 
-            { day: 1, name: "Moon (☽)", theme: "moon", color: "#E5E7EB", focus: "reflection & rhythm", freq: "210Hz" }, 
-            { day: 2, name: "Mars (♂)", theme: "mars", color: "#EF4444", focus: "will & action", freq: "144Hz" }, 
-            { day: 3, name: "Mercury (☿)", theme: "mercury", color: "#14B8A6", focus: "syntax & logic", freq: "141Hz" }, 
-            { day: 4, name: "Jupiter (♃)", theme: "jupiter", color: "#8B5CF6", focus: "expansion & logosphere", freq: "183Hz" }, 
-            { day: 5, name: "Venus (♀)", theme: "venus", color: "#10B981", focus: "resonance & aesthetics", freq: "221Hz" }, 
-            { day: 6, name: "Saturn (♄)", theme: "saturn", color: "#A1A1AA", focus: "structure & boundary", freq: "147Hz" }  
-        ];
-
-        const initDiva = () => {
-            const today = new Date().getDay();
-            const diva = DIVA_LIGHTS[today];
-            document.documentElement.style.setProperty('--accent', diva.color);
-            
-            const labelEl = document.getElementById('diva-label');
-            const focusEl = document.getElementById('diva-focus');
-            if(labelEl) labelEl.innerText = `${diva.name} · ${diva.freq}`;
-            if(focusEl) focusEl.innerText = `resonance: ${diva.focus}`;
-        };
-
-        // --- 2. TRANSLATION & CONTENT DATA ---
+        // --- 1. TRANSLATION, CONTENT DATA & GITHUB LINKS ---
         const DATA = {
             i18n: {
                 en: {
@@ -404,6 +402,7 @@
                     "txt-l1-o-d": "grasping meaning prior to its manifestation as image, sound, or word.",
                     "txt-l1-p-t": "pure agency (phi)",
                     "txt-l1-p-d": "the uncaused act of will. turning presence into a vector of reality alteration.",
+                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ view core spec: suticore_system.md ↗</a>",
                     
                     "txt-l3-title": "language & logic",
                     "txt-l3-desc": "language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct paths for both human and ai cognition.",
@@ -411,10 +410,13 @@
                     "txt-l3-lf-1": "1. fact (stalo) — the solidified object.",
                     "txt-l3-lf-2": "2. process (stanovitsya) — the dynamic function.",
                     "txt-l3-lf-3": "3. intent (stremitsya) — the core essence.",
+                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ engine spec: linguafusion_v5.md ↗</a>",
                     "txt-l3-syn": "a geometric meta-language for structuring thought and writing deterministic ai prompts. symbols equal execution.",
+                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ lexicon: syntaxium_128.md ↗</a>",
                     
                     "txt-l5-title": "civilizational codes",
                     "txt-l5-desc": "mapping the semantic invariant of 'silence' across human and constructed languages. this is not translation; it is ontological transfer of a state.",
+                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ explore full atlas: yzh_100k_map.md ↗</a>",
                     
                     "txt-l7-title": "ezar garuna",
                     "txt-l7-bio1": "i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.",
@@ -422,7 +424,8 @@
                     "txt-l7-req": "areas of research & implementation",
                     "txt-l7-r1": "ai alignment & custom nlp pipelines.",
                     "txt-l7-r2": "revenue language infrastructure (b2b logic).",
-                    "txt-l7-r3": "cognitive architecture design for platforms."
+                    "txt-l7-r3": "cognitive architecture design for platforms.",
+                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ access master blueprint v2.5 ↗</a>"
                 },
                 ru: {
                     "txt-nav-subtitle": "когнитивная архитектура сингулярности",
@@ -441,6 +444,7 @@
                     "txt-l1-o-d": "усмотрение смысла до того, как он проявится в виде образа или слова.",
                     "txt-l1-p-t": "чистая субъектность (фи)",
                     "txt-l1-p-d": "беспричинный акт воли. превращение присутствия в изменение реальности.",
+                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ спецификация: suticore_system.md ↗</a>",
                     
                     "txt-l3-title": "язык и логика",
                     "txt-l3-desc": "язык — это интерфейс сборки. мы не описываем; мы используем операторы для конструирования путей когниции человека и ии.",
@@ -448,10 +452,13 @@
                     "txt-l3-lf-1": "1. факт (стало) — зафиксированный объект.",
                     "txt-l3-lf-2": "2. процесс (становится) — динамическая функция.",
                     "txt-l3-lf-3": "3. интент (стремится) — корневая суть.",
+                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ спецификация: linguafusion_v5.md ↗</a>",
                     "txt-l3-syn": "геометрический метаязык для структурирования мысли и детерминированных промптов. символ = исполнение.",
+                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ лексикон: syntaxium_128.md ↗</a>",
                     
                     "txt-l5-title": "цивилизационные коды",
                     "txt-l5-desc": "перенос инварианта 'тишина' через 15 языковых матриц. это не перевод, а онтологический перенос состояния.",
+                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ открыть атлас: yzh_100k_map.md ↗</a>",
                     
                     "txt-l7-title": "эзарь гаруна (игорь галкин)",
                     "txt-l7-bio1": "я проектирую семантические инфраструктуры для систем ии. работа соединяет лингвистику, алгоритмику (o(log n)) и ml для повышения интерпретируемости.",
@@ -459,7 +466,8 @@
                     "txt-l7-req": "области исследований и внедрения",
                     "txt-l7-r1": "ai alignment и кастомные nlp пайплайны.",
                     "txt-l7-r2": "языковая инфраструктура выручки (b2b).",
-                    "txt-l7-r3": "проектирование когнитивной архитектуры."
+                    "txt-l7-r3": "проектирование когнитивной архитектуры.",
+                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ манифест архитектуры v2.5 ↗</a>"
                 }
             },
             matrix: [
@@ -481,13 +489,13 @@
             ]
         };
 
-        // --- 3. CORE STATE & KERNEL LOGIC ---
+        // --- 2. CORE STATE & KERNEL LOGIC ---
         const STATE = {
             acs: 100,
             lastMouse: { x: 0, y: 0 },
-            baseFontSize: 16,
+            baseFontSize: 18, // Default larger font size for better readability
             theme: 'void',
-            lang: 'en'
+            lang: 'ru' // Defaulting to RU as requested
         };
 
         const Kernel = {
@@ -515,17 +523,24 @@
             }
         };
 
-        // --- 4. UI CONTROLLER ---
+        // --- 3. UI CONTROLLER ---
         const UI = {
             init() {
                 this.bindEvents();
+                // Initialize default language
+                const langSelect = document.getElementById('lang-selector');
+                if (langSelect) langSelect.value = STATE.lang;
                 this.updateLanguage(STATE.lang);
+                
                 this.renderMatrix();
                 this.initObserver();
+                
+                // Initialize root font size
+                document.documentElement.style.setProperty('--base-size', `${STATE.baseFontSize}px`);
             },
             bindEvents() {
                 window.adjustFontSize = (delta) => {
-                    STATE.baseFontSize = Math.max(12, Math.min(24, STATE.baseFontSize + delta));
+                    STATE.baseFontSize = Math.max(14, Math.min(26, STATE.baseFontSize + delta));
                     document.documentElement.style.setProperty('--base-size', `${STATE.baseFontSize}px`);
                 };
                 
@@ -576,7 +591,7 @@
 
                 DATA.matrix.forEach((lang, i) => {
                     const btn = document.createElement('button');
-                    btn.className = `mx-btn text-left px-3 py-2 text-[10px] font-mono uppercase tracking-widest transition-colors rounded-sm border border-[var(--muted)]/20 hover:border-accent/50`;
+                    btn.className = `mx-btn text-left px-4 py-3 text-[11px] font-mono uppercase tracking-widest transition-colors rounded-sm border border-[var(--muted)]/20 hover:border-accent/50`;
                     if(i === 0) btn.classList.add('bg-accent', 'text-[var(--bg)]');
                     else btn.classList.add('text-[var(--muted)]');
                     
@@ -591,12 +606,12 @@
                     entries.forEach(e => {
                         if (e.isIntersecting) e.target.classList.add('active');
                     });
-                }, { threshold: 0.15 });
+                }, { threshold: 0.12 });
                 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
             }
         };
 
-        // --- 5. 2D CANVAS SHAMANDALA (Performance Optimized) ---
+        // --- 4. 2D CANVAS SHAMANDALA (Performance Optimized) ---
         const Engine2D = {
             init() {
                 const canvas = document.getElementById('shamandala-canvas');
@@ -634,7 +649,7 @@
                     const scrollOffset = scrollY * 0.05;
                     ctx.rotate(time + scrollOffset * 0.01);
                     
-                    ctx.globalAlpha = 0.1 + (STATE.acs / 100) * 0.15;
+                    ctx.globalAlpha = 0.15 + (STATE.acs / 100) * 0.15;
                     ctx.strokeStyle = accentColor;
                     ctx.lineWidth = 1;
 
@@ -657,7 +672,7 @@
 
                     ctx.beginPath();
                     ctx.arc(0, 0, radius * 1.1, 0, Math.PI * 2);
-                    ctx.globalAlpha = 0.05;
+                    ctx.globalAlpha = 0.08;
                     ctx.stroke();
 
                     ctx.restore();
@@ -668,7 +683,6 @@
 
         // --- BOOTSTRAP ---
         document.addEventListener('DOMContentLoaded', () => {
-            initDiva(); // Initialize Planetary Colors
             Kernel.init();
             UI.init();
             Engine2D.init();
