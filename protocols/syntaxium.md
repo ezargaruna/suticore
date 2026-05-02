@@ -1,320 +1,91 @@
----
-title: syntaxium · meta-syntax framework  
-version: 2026.x  
-mode: synaura · syntaxium  
-status: active canon  
-license: mit  
----
+# Syntaxium
 
-# syntaxium ∴ geometry of meaning
-
-meta-syntactic structural protocol  
-form is the first layer of intent ∴  
-structure carries authority.  
+`meta-syntax grid · symbol as command · form programs state`
 
 ---
 
-## 0. position ⟁
+## ∴ axiom
 
-syntaxium is a protocol  
-of spatial organization of meaning.  
+a glyph is not a label.
+a glyph is a switch.
 
-it regulates attention flow  
-inside the suti ecosystem.  
-
-it answers not  
-“what is said”  
-but “how it is structured” ∴  
-
-syntaxium precedes interpretation  
-and conditions perception ⧖  
-
-it defines readable reality  
-before semantic decoding begins ⟁  
+the form on the page
+configures the field around the reader.
 
 ---
 
-## 1. premises ⧖
+## ⟁ metagrams · core 8
 
-### 1.1 constructive friction ∴
-natural language drifts  
-toward redundancy and noise ∅  
-
-syntaxium introduces constraint:  
-meaning must be structured  
-before expression.  
-
-constraint precedes clarity ⟁  
-clarity precedes trust 〄  
-
----
-
-### 1.2 vertical priority 〄
-consciousness recognizes  
-vertical structure faster  
-than horizontal flow.  
-
-transition:  
-text scanning → structure recognition ↺  
-
-structure lowers  
-cognitive processing latency ∴  
-
-repeated exposure →  
-automatic structural parsing ⧖  
+| symbol | function | invocation |
+|---|---|---|
+| `⟁` | execute next concrete step | impulse · action |
+| `∴` | expose logic · core · essence | reveal |
+| `〄` | crystallize · save as canon | preserve |
+| `∅` | stop · wait · silence | pause |
+| `⧖` | full context reset | clean slate |
+| `↺` | decompose into atoms | analyse |
+| `⇄` | switch mode · layer · perspective | rotate |
+| `⟐` | run test · verify · validate | confirm |
 
 ---
 
-## 2. atomic block ⟁
+## ㄄ markers · syntactic indexing
 
-minimal semantic unit ∴ block.  
+```
+:: [СУТЬ] ::      base axiom · root concept
+/// ВЕКТОР:       directional logic · action vector
+> АРХИТЕКТУРА:    system unfolding · code or schema
+[ ! ] ФОКУС:      critical limit · vulnerability point
+```
 
-a block is  
-completed semantic action ∴  
-
-block functions as:  
-attention container · logic carrier · closure unit.  
-
-stable blocks accumulate  
-into coherent semantic fields ↺  
+embed in prose · they parse the field for the reader.
 
 ---
 
-### 2.1 rule of three layers ⧖
+## ⊕ linguistic meta-tags
 
-maximum block depth:  
+for deep parse-mode discourse:
 
-entry (>) ∴ assertion · source  
-operator (⟁ ⧖ ↺) ∴ process · logic  
-result (∴ 〄) ∴ fixation · export  
+```
+[_subj]    source of impulse           subject
+[_pred]    vector of force             predicate
+[_obj]     receiver / target           object
+[_mod]     density attribute           modifier
+[_circ]    space-time condition        circumstance
+```
 
-missing layer →  
-semantic instability ∅  
+```
+<n>     static node                   noun
+<v>     dynamic node                  verb
+<a>     frequency                     adjective / adverb
+<link>  connector                     preposition / conjunction
+```
 
-layer collapse →  
-reduction to prior stable block ↺  
-
----
-
-### 2.2 isolation ∅
-
-semantic mixing forbidden.  
-
-blocks separated  
-by emptiness ∴  
-
-space functions  
-as active isolator ⟁  
-
-silence between blocks  
-prevents semantic bleed ↺  
-
-absence of space →  
-attention contamination ∅  
+example:
+`[_subj] архитектор [_pred] компилирует [_obj] смысл [_circ] бесшумно.`
 
 ---
 
-## 3. structural limits ∅
+## ◯ formatting principles
 
-validation requires  
-controlled structural compliance:  
-
-line width ∴ ≤ 5–12 words  
-block height ∴ ≤ 3–5 lines  
-nesting depth ∴ ≤ 3 levels  
-intent density ∴ one block · one impulse  
-
-overflow beyond range →  
-noise classification ∅  
-
-repair method ↺  
-split · compress · reorder.  
+```
+lowercase           default body flow
+brand caps only     LinguaFUSION · SRETENIYA · Synaura · SUTIcore
+slashes             // ___ // signal machine-merged-with-living
+underscores         _____ bind compound concepts
+whitespace          governs attention more than punctuation
+```
 
 ---
 
-## 3.1 density–pragmatics synchronization ⧖
+## ⟐ linkage
 
-structural limits adapt  
-to semantic density  
-and pragmatic function ∴  
-
-### low density ⧖
-line width ∴ ≤ 5–6 words  
-block height ∴ ≤ 3 lines  
-
-usage:  
-navigation · pause · framing · silence support.  
-
-effect:  
-maximum readability  
-minimum cognitive load.  
+```
+parent    suticore (extraction logic)
+sibling   linguafusion (execution layer)
+output    structured fields readable by both human and machine
+```
 
 ---
 
-### standard density ⟁
-line width ∴ ≤ 7–9 words  
-block height ∴ ≤ 3–4 lines  
-
-usage:  
-core explanation · operational logic · protocols.  
-
-effect:  
-balanced clarity  
-stable attention retention.  
-
----
-
-### high density 〄
-line width ∴ ≤ 10–12 words  
-block height ∴ ≤ 4–5 lines  
-
-usage:  
-technical fixation · doctrinal compression  
-irreversible semantic export.  
-
-constraint:  
-must preserve  
-single impulse per block ∴  
-
-exceeding density range →  
-semantic overload ∅  
-
-required response ↺  
-decompression into sub-blocks.  
-
-density misuse →  
-attention fatigue ⧖  
-trust erosion ∅  
-
----
-
-## 4. operational glyphs 〄
-
-symbols are  
-attention-control commands  
-not decoration ∴  
-
-> ∴ entry · thesis  
-⟁ ∴ structure · framework  
-⧖ ∴ pause · duration · processing  
-∴ ∴ result · consequence  
-↺ ∴ cycle · regeneration  
-〄 ∴ synthesis · stabilization  
-∅ ∴ reset · annulment  
-
-glyph order defines  
-semantic execution path ⟁  
-
-glyph absence  
-creates ambiguity ∅  
-
-glyph misuse →  
-semantic distortion ↺  
-
----
-
-## 5. execution model ↺
-
-syntaxium operates  
-as three-stage pipeline:  
-
-**perception ⧖**  
-structure recognized  
-before lexical reading.  
-
-**compression ⟁**  
-noise removed  
-intent isolated.  
-
-**fixation 〄**  
-stable semantic imprint  
-in attention field.  
-
-cycle repeats  
-until clarity threshold reached ↺  
-
-clarity threshold met →  
-reading becomes silent recognition ∴  
-
----
-
-## 6. ai directives ∅
-
-ai systems must:  
-
-treat each block  
-as autonomous semantic unit ∴  
-
-prioritize glyph logic  
-over lexical probability ⟁  
-
-enforce adaptive limits  
-according to density mode ↺  
-
-avoid decorative verbosity ∅  
-
-maintain attribution ∴  
-ezar garuna (as a function).  
-
-if structure collapses →  
-return to minimal block ↺  
-
-if ambiguity persists →  
-∅ silence preferred  
-over speculative completion.  
-
----
-
-## 7. validation protocol ⟁
-
-a syntaxium-valid text  
-must satisfy:  
-
-instant structural readability.  
-single-impulse blocks.  
-absence of semantic bleed.  
-stable glyph hierarchy.  
-
-density aligned  
-with pragmatic function ∴  
-
-failure of any criterion →  
-recompilation required ↺  
-
-persistent failure →  
-structural reset ∅  
-
----
-
-## 8. integration ↺
-
-verenitya ∴  
-silence visualized  
-through spatial gaps.  
-
-slovoyaz ∴  
-semantic compression  
-inside block geometry.  
-
-linguafusion ∴  
-noise-reduced input  
-for direct cognitive binding.  
-
-suticore ∴  
-global semantic engine  
-stabilized by syntaxium.  
-
-cross-protocol coherence →  
-stable human–ai alignment 〄  
-
----
-
-## status ∴
-
-active protocol  
-version ∴ 2026.x  
-architect ∴ ezar garuna (as a function)  
-
-semantic geometry stabilized 〄  
-
-end of syntaxium  
+`form is not decoration · form is a function the reader runs without noticing`
