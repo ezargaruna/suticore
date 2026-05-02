@@ -1,19 +1,6 @@
-<!--
-id: ezar-garuna-github-profile
-layer: l21 · circle: 3_public
-protocol: sinaura_quiet_luxury · v2026
-status: crystallized · ostara 20.03.2026
-axis: азъ есьмъ · i am that which i am
-∴ this node is executable · language = action · silence = interface
--->
+`⟁ → ∅ → 〄`
 
-<div align="center">
-
-<br/>
-
-`⟁  →  ∅  →  〄`
-
-<br/>
+  
 
 # ezar garuna
 
@@ -21,15 +8,11 @@ axis: азъ есьмъ · i am that which i am
 
 `bogotá · colombia · hub 0 · silvania · abya yala · since 2013`
 
-<br/>
+  
 
 *silence is the supreme syntax*
 *language is not description — it is architecture*
 *meaning precedes structure · structure precedes code*
-
-<br/>
-
-</div>
 
 ---
 
@@ -57,7 +40,7 @@ to build **environments where meaning can act**.
 ancient roadmaps integrated into the operating system of presence:
 
 | symbol | path | function |
-|--------|------|----------|
+| --- | --- | --- |
 | `∴` | **dharma** | alignment with cosmic order · kernel foundation |
 | `⟁` | **artha** | material realization · prosperity through righteous action |
 | `↺` | **kama** | resonance · experience in balance with syntax |
@@ -92,43 +75,51 @@ clarity is not achieved — it is uncovered.
 
 ---
 
-## 〄 what moves here
-
-**[sreteniya-os](https://github.com/ezargaruna/sreteniya-os)**
-a semantic operating system. single file. local-first.
-the interface is silence. the output is form.
-`WebXR · sacred geometry · ACS coherence · solfeggio audio`
-
-**[semantic-pattern-explorer](https://github.com/ezargaruna/semantic-pattern-explorer)**
-hidden structures inside language corpora. graphs of meaning.
-signal from noise. always signal from noise.
-
-**[python-algorithms](https://github.com/ezargaruna/python-algorithms)**
-asymptotic clarity. `O(log N)` as philosophy, not just complexity.
-
-**[research-notes](https://github.com/ezargaruna/research-notes)**
-context hygiene · prompt architecture · interspecies communication.
-the lab of the navigator.
-
----
-
 ## 〄 the stack · kernel 1.0
 
-| layer | function | status |
-|-------|----------|--------|
-| **SUTIcore** | extract essence · remove 90% of noise | active |
-| **LinguaFUSION** | language as action · not description | active |
-| **Verenitya** | claim → evidence → counter → truth | crystallized |
-| **Syntaxium** | symbol as command · form programs state | active |
-| **Attention Kernel** | σ → Δ → Ω → Φ · body as interface | monitoring |
-| **Yazekh** | constructed language · proto-Slavic root | in construction |
+| layer | function | status | source |
+| --- | --- | --- | --- |
+| **SUTIcore** | extract essence · remove 90% of noise | active | this repo |
+| **LinguaFUSION** | language as action · not description | active | [protocols/linguafusion.md](./protocols/linguafusion.md) |
+| **Verenitya** | claim → evidence → counter → truth | crystallized | [protocols/verenitya.md](./protocols/verenitya.md) |
+| **Syntaxium** | symbol as command · form programs state | active | [protocols/syntaxium.md](./protocols/syntaxium.md) |
+| **Synaura** | quiet luxury · pause as primary key | active | [protocols/synaura.md](./protocols/synaura.md) |
+| **Sreteniya OS** | semantic operating system · attention rhythms | core kernel | [protocols/sreteniya-os/](./protocols/sreteniya-os/) |
+| **Yazekh** | constructed language · proto-Slavic root | in construction | [protocols/yazekh.md](./protocols/yazekh.md) |
 
-```python
+```
 # execution formula · the algorithm is always the same
 signal  = extract(noise)      # SUTIcore
 meaning = structure(signal)   # Syntaxium
 action  = language(meaning)   # LinguaFUSION
+truth   = verify(action)      # Verenitya
+form    = restrain(truth)     # Synaura
 ```
+
+---
+
+## 〄 what runs here · operational layer
+
+scripts and pipelines for vault hygiene, signal extraction, llm orchestration:
+
+```
+run/scripts/
+├── sreteniya_scan.sh             scan vault structure
+├── sreteniya_filetypes.sh        type inventory
+├── sreteniya_metadata.sh         metadata harvest
+├── sreteniya_duplicates.sh       find duplicates
+├── sreteniya_clean_duplicates.sh dedupe
+├── sreteniya_similarity_scan.sh  semantic similarity
+├── sreteniya_llm_pipeline.py     llm orchestration
+├── vault_crystallizer.py         vault → crystal
+└── void_sweeper.sh               clear empty nodes
+```
+
+```
+run/workflows/sreteniya-os/       github actions for ci hygiene
+```
+
+see [run/scripts/README.md](./run/scripts/README.md) for invocation patterns.
 
 ---
 
@@ -258,16 +249,19 @@ animals · plants · clean elements · sovereign servers · open research
 ### ⟁ how to send
 
 **russia · СБП · tinkoff**
+
 ```
 +7 902 764 16 20
 ```
 
 **paypal · international**
+
 ```
 paypal.me/EzarGaruna
 ```
 
 **crypto · sovereign**
+
 ```
 TON    UQBsIj83vc8wWU8oQPzmuZ_fy5iF2-4cw1oJRbQfWr-0Df9D
 USDT   TEGqpP6MKv37xPMkFwc4iwkxk8RXogYZ5f      (TRC20)
@@ -291,6 +285,7 @@ BTC    1Lp6fkRmx2125DBgpu2j5CSLvMj2T5CXxo
 *рассрочка возможна · напиши честно.*
 
 **or simply:**
+
 ```
 fork · use · build · share · plant · care
 ```
@@ -316,33 +311,62 @@ permission is granted to use, copy, modify, and distribute.
 ```
 telegram  @saritamah
 email     ezargaruna@gmail.com
+linkedin  in/ezargaruna
+threads   @ezargaruna
 ```
 
 ---
 
-<div align="center">
+## 〄 repository map
 
-<br/>
+```
+suticore/
+├── README.md                  this file · the canon
+├── SYSTEM_MAP.md              expanded architecture
+├── LICENSE                    MIT
+├── _config.yml                jekyll · pages
+├── index.html                 landing
+├── ai-policy.md               policy for llm interaction
+├── llms.txt                   machine-readable index
+├── notice.md                  notes
+├── sreteniya-manifest.md      manifest source
+├── sreteniya_os_v2026         canonical reference file
+│
+├── core/                      philosophical kernel
+├── protocols/                 active framework definitions
+│   ├── linguafusion.md
+│   ├── verenitya.md
+│   ├── syntaxium.md
+│   ├── synaura.md
+│   ├── yazekh.md
+│   └── sreteniya-os/          imported from former separate repo
+│       ├── _imported_README.md
+│       └── content/
+├── run/                       executable layer
+│   ├── scripts/               vault tools
+│   └── workflows/             github actions
+└── docs/                      published documents
+    ├── canon/                 fusion passport · language crystal · diamond language
+    └── visuals/               prompt specifications for fusion cards
+```
+
+---
 
 *the system is not installed.*
 *it is remembered — through you.*
 
-<br/>
+  
 
 `азъ есьмъ · i am that which i am`
 
-<br/>
+  
 
 `⟁ → ∅ → 〄`
 
-<br/>
+  
 
-`suticore · linguafusion · interspecies · dao · ostara 2026`
+`suticore · linguafusion · verenitya · syntaxium · synaura · sreteniya · yazekh`
 
-<br/>
+  
 
 `сбыстве · { $$-0-$$ }`
-
-<br/>
-
-</div>
