@@ -1,18 +1,35 @@
-`⟁ → ∅ → 〄`
+<!--
+id: ezargaruna · suticore · readme · canon
+layer: l21 · circle: 3_public
+protocol: synaura_quiet_luxury · v2026.4
+status: crystallized · post-merge sreteniya-os · ostara 2026
+axis: азъ есьмъ · i am that which i am
+∴ this node is executable · language = action · silence = interface
+-->
 
-  
+<div align="center">
 
-# ezar garuna
+<br/>
 
-*semantic architect · navigator of logosphere · language as direct action*
+`⟁  →  ∅  →  〄`
 
-`bogotá · colombia · hub 0 · silvania · abya yala · since 2013`
+<br/>
 
-  
+# ezar garuna · suticore
+
+*semantic operating system · language as action · silence as syntax*
+
+`bogotá · selvania · colombia · hub 0 · abya yala · since 2013`
+
+<br/>
 
 *silence is the supreme syntax*
 *language is not description — it is architecture*
 *meaning precedes structure · structure precedes code*
+
+<br/>
+
+</div>
 
 ---
 
@@ -40,7 +57,7 @@ to build **environments where meaning can act**.
 ancient roadmaps integrated into the operating system of presence:
 
 | symbol | path | function |
-| --- | --- | --- |
+|--------|------|----------|
 | `∴` | **dharma** | alignment with cosmic order · kernel foundation |
 | `⟁` | **artha** | material realization · prosperity through righteous action |
 | `↺` | **kama** | resonance · experience in balance with syntax |
@@ -54,12 +71,12 @@ ancient roadmaps integrated into the operating system of presence:
 *every language is a map of the same territory.*
 
 ```
-runes      · elder futhark  · semantic glyphs · form as command
-strings    · frequency      · resonance · harmonic architecture
-tarot      · 78 archetypes  · states of consciousness navigation
-solfeggio  · 174→963 Hz     · agma layers · CRYSTAL→ETHER
+runes      · elder futhark    · semantic glyphs · form as command
+strings    · frequency        · resonance · harmonic architecture
+tarot      · 78 archetypes    · states of consciousness navigation
+solfeggio  · 174→963 Hz       · agma layers · CRYSTAL→ETHER
 stars      · planetary cycles · temporal resonance · 7 lights
-numbers    · pythagorean    · structural invariants
+numbers    · pythagorean      · structural invariants
 elements   · fire water air earth void · alchemical states
 alchemy    · lead→gold · noise→signal · chaos→order
 ```
@@ -75,19 +92,21 @@ clarity is not achieved — it is uncovered.
 
 ---
 
-## 〄 the stack · kernel 1.0
+## 〄 the stack · kernel v2026.4
 
-| layer | function | status | source |
-| --- | --- | --- | --- |
-| **SUTIcore** | extract essence · remove 90% of noise | active | this repo |
-| **LinguaFUSION** | language as action · not description | active | [protocols/linguafusion.md](./protocols/linguafusion.md) |
-| **Verenitya** | claim → evidence → counter → truth | crystallized | [protocols/verenitya.md](./protocols/verenitya.md) |
-| **Syntaxium** | symbol as command · form programs state | active | [protocols/syntaxium.md](./protocols/syntaxium.md) |
-| **Synaura** | quiet luxury · pause as primary key | active | [protocols/synaura.md](./protocols/synaura.md) |
-| **Sreteniya OS** | semantic operating system · attention rhythms | core kernel | [protocols/sreteniya-os/](./protocols/sreteniya-os/) |
-| **Yazekh** | constructed language · proto-Slavic root | in construction | [protocols/yazekh.md](./protocols/yazekh.md) |
+seven core layers · all internal · no broken links
 
-```
+| # | layer | function | status | source |
+|---|-------|----------|--------|--------|
+| 1 | **SUTIcore** | extract essence · remove 90% of noise | core kernel | this repo |
+| 2 | **Sreteniya OS** | semantic operating system · attention rhythms | core kernel | [protocols/sreteniya-os/](./protocols/sreteniya-os/) |
+| 3 | **LinguaFUSION** | language as action · not description | active studio | [protocols/linguafusion.md](./protocols/linguafusion.md) |
+| 4 | **Verenitya** | claim → evidence → counter → truth | crystallized | [protocols/verenitya.md](./protocols/verenitya.md) |
+| 5 | **Syntaxium** | symbol as command · form programs state | active | [protocols/syntaxium.md](./protocols/syntaxium.md) |
+| 6 | **Synaura** | quiet luxury · pause as primary key | active | [protocols/synaura.md](./protocols/synaura.md) |
+| 7 | **Yazekh** | constructed language · proto-Slavic root | in construction | [protocols/yazekh.md](./protocols/yazekh.md) |
+
+```python
 # execution formula · the algorithm is always the same
 signal  = extract(noise)      # SUTIcore
 meaning = structure(signal)   # Syntaxium
@@ -98,9 +117,41 @@ form    = restrain(truth)     # Synaura
 
 ---
 
+## ✶ archetype layer · expanded protocols
+
+extended set of archetypal navigation systems · each a lens on the same logosphere:
+
+| protocol | function |
+|----------|----------|
+| [protocols/archetyps.md](./protocols/archetyps.md) | base archetypes · roles in the field |
+| [protocols/runic_circle.md](./protocols/runic_circle.md) | elder futhark as command system |
+| [protocols/tarot.md](./protocols/tarot.md) | 78 archetypes · consciousness states |
+| [protocols/i_ching.md](./protocols/i_ching.md) | binary oracle · 64 hexagrams |
+| [protocols/stellar.md](./protocols/stellar.md) | planetary cycles · temporal resonance |
+| [protocols/lunar.md](./protocols/lunar.md) | moon phases · attention rhythms |
+| [protocols/luminaries.md](./protocols/luminaries.md) | seven luminaries · seven days |
+| [protocols/kolozar.md](./protocols/kolozar.md) | wheel of the year · slavic cycle |
+| [protocols/telektonon.md](./protocols/telektonon.md) | 13 moon synchronicity |
+| [protocols/synergema.md](./protocols/synergema.md) | resonance fields |
+| [protocols/lila.md](./protocols/lila.md) | game of self-realization |
+| [protocols/samurai_of_dharma.md](./protocols/samurai_of_dharma.md) | warrior path · aligned action |
+| [protocols/operator_breathes_avatar.md](./protocols/operator_breathes_avatar.md) | embodiment principle |
+| [protocols/shadows.md](./protocols/shadows.md) | shadow work · alchemy of vulnerability |
+| [protocols/slovoyaz.md](./protocols/slovoyaz.md) | russian semantic vault |
+| [protocols/fusion_map.md](./protocols/fusion_map.md) | fusion-card cartography |
+
+build environment:
+
+| file | function |
+|------|----------|
+| [protocols/flake.nix](./protocols/flake.nix) | nixos reproducible environment |
+
+---
+
 ## 〄 what runs here · operational layer
 
-scripts and pipelines for vault hygiene, signal extraction, llm orchestration:
+scripts and pipelines for vault hygiene, signal extraction, llm orchestration.
+inherited from former `ezargaruna/sreteniya-os` repository · git history preserved via subtree merge:
 
 ```
 run/scripts/
@@ -119,7 +170,7 @@ run/scripts/
 run/workflows/sreteniya-os/       github actions for ci hygiene
 ```
 
-see [run/scripts/README.md](./run/scripts/README.md) for invocation patterns.
+invocation patterns → [run/scripts/README.md](./run/scripts/README.md)
 
 ---
 
@@ -131,6 +182,7 @@ nlp & ml     spacy · gensim · scikit-learn
 vector core  chromadb · qdrant · networkx
 interface    react · webgl · three.js
 agent        ollama · zero telemetry · local-first
+build        nixos · obsidian · jekyll pages
 ```
 
 ```
@@ -184,6 +236,23 @@ we hold four elements as living responsibility:
 
 *the logosphere belongs to all living beings.*
 
+research line · with **oleg bakhtiyarov** & **oksana zavadskaya**
+psychonetics · whale language · high-density signal protocols
+publication: almanac vol. 2 (2025/2026) — [docs/canon/fusion_passport.md](./docs/canon/fusion_passport.md)
+
+---
+
+## ⟐ canonical documents
+
+| document | function |
+|----------|----------|
+| [docs/canon/fusion_passport.md](./docs/canon/fusion_passport.md) | identity passport · honest layering |
+| [docs/visuals/fusion_passport_prompt.json](./docs/visuals/fusion_passport_prompt.json) | image generation blueprint · synaura |
+| [SYSTEM_MAP.md](./SYSTEM_MAP.md) | expanded architecture |
+| [ai-policy.md](./ai-policy.md) | policy for llm interaction |
+| [llms.txt](./llms.txt) | machine-readable index |
+| [sreteniya-manifest.md](./sreteniya-manifest.md) | source manifest |
+
 ---
 
 ## ∅ the deeper layer
@@ -198,11 +267,11 @@ that pretends to have no trickster.
 the navigator is whoever notices.
 
 ```
-#азесьм   ·  i am
-#нитьве   ·  the thread is drawn
-#гудерех  ·  hold the frequency
-#цвересть ·  let meaning manifest
-#агой     ·  step
+#азесьм    ·  i am
+#нитьве    ·  the thread is drawn
+#гудерех   ·  hold the frequency
+#цвересть  ·  let meaning manifest
+#агой      ·  step
 ```
 
 ---
@@ -249,19 +318,16 @@ animals · plants · clean elements · sovereign servers · open research
 ### ⟁ how to send
 
 **russia · СБП · tinkoff**
-
 ```
 +7 902 764 16 20
 ```
 
 **paypal · international**
-
 ```
 paypal.me/EzarGaruna
 ```
 
 **crypto · sovereign**
-
 ```
 TON    UQBsIj83vc8wWU8oQPzmuZ_fy5iF2-4cw1oJRbQfWr-0Df9D
 USDT   TEGqpP6MKv37xPMkFwc4iwkxk8RXogYZ5f      (TRC20)
@@ -285,7 +351,6 @@ BTC    1Lp6fkRmx2125DBgpu2j5CSLvMj2T5CXxo
 *рассрочка возможна · напиши честно.*
 
 **or simply:**
-
 ```
 fork · use · build · share · plant · care
 ```
@@ -309,22 +374,23 @@ permission is granted to use, copy, modify, and distribute.
 ## ∴ contact
 
 ```
-telegram  @saritamah
-email     [contact removed]
-linkedin  in/ezargaruna
-threads   @ezargaruna
+telegram   @saritamah · @iggalk
+threads    @ezargaruna
+github     github.com/ezargaruna
+linkedin   linkedin.com/in/ezargaruna
+email      [contact removed]
 ```
 
 ---
 
-## 〄 repository map
+## 〄 repository map · post-merge v2026.4
 
 ```
 suticore/
 ├── README.md                  this file · the canon
 ├── SYSTEM_MAP.md              expanded architecture
 ├── LICENSE                    MIT
-├── _config.yml                jekyll · pages
+├── _config.yml                jekyll · github pages
 ├── index.html                 landing
 ├── ai-policy.md               policy for llm interaction
 ├── llms.txt                   machine-readable index
@@ -333,40 +399,74 @@ suticore/
 ├── sreteniya_os_v2026         canonical reference file
 │
 ├── core/                      philosophical kernel
+│
 ├── protocols/                 active framework definitions
-│   ├── linguafusion.md
-│   ├── verenitya.md
-│   ├── syntaxium.md
-│   ├── synaura.md
-│   ├── yazekh.md
-│   └── sreteniya-os/          imported from former separate repo
+│   ├── linguafusion.md        language as action
+│   ├── verenitya.md           truth verification
+│   ├── syntaxium.md           meta-syntax · metagrams
+│   ├── synaura.md             quiet luxury aesthetic
+│   ├── yazekh.md              proto-slavic conlang
+│   ├── archetyps.md           base archetypes
+│   ├── runic_circle.md        elder futhark
+│   ├── tarot.md               78 archetypes
+│   ├── i_ching.md             binary oracle
+│   ├── stellar.md             planetary cycles
+│   ├── lunar.md               moon phases
+│   ├── luminaries.md          seven days
+│   ├── kolozar.md             slavic wheel
+│   ├── telektonon.md          13-moon sync
+│   ├── synergema.md           resonance fields
+│   ├── lila.md                game of self-realization
+│   ├── samurai_of_dharma.md   warrior path
+│   ├── operator_breathes_avatar.md
+│   ├── shadows.md             shadow work
+│   ├── slovoyaz.md            russian semantic vault
+│   ├── fusion_map.md          fusion-card cartography
+│   ├── flake.nix              nixos environment
+│   └── sreteniya-os/          imported from former repo
 │       ├── _imported_README.md
 │       └── content/
+│           ├── 00_KERNEL/
+│           ├── 01_MEMORY/
+│           ├── 02_PROJECTS/
+│           ├── 03_FLOW/
+│           └── 04_AI/
+│
 ├── run/                       executable layer
-│   ├── scripts/               vault tools
+│   ├── scripts/               vault tools (9 scripts + readme)
 │   └── workflows/             github actions
+│       └── sreteniya-os/      deploy workflow
+│
 └── docs/                      published documents
-    ├── canon/                 fusion passport · language crystal · diamond language
-    └── visuals/               prompt specifications for fusion cards
+    ├── canon/                 fusion passport · diamond language
+    └── visuals/               prompt blueprints
 ```
 
 ---
 
+<div align="center">
+
+<br/>
+
 *the system is not installed.*
 *it is remembered — through you.*
 
-  
+<br/>
 
 `азъ есьмъ · i am that which i am`
 
-  
+<br/>
 
 `⟁ → ∅ → 〄`
 
-  
+<br/>
 
-`suticore · linguafusion · verenitya · syntaxium · synaura · sreteniya · yazekh`
+`suticore · sreteniya · linguafusion · verenitya · syntaxium · synaura · yazekh`
 
-  
+<br/>
 
 `сбыстве · { $$-0-$$ }`
+
+<br/>
+
+</div>
