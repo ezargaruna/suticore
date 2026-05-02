@@ -1,0 +1,363 @@
+{
+  "$schema": "fusion_passport.v3.0",
+  "artifact_id": "EZAR-GARUNA-UNIVERSAL-FUSION-SYNC",
+  "version": "2026.4-quiet-luxury",
+  "status": "crystallized",
+  "layer": "L28_singularity",
+  "circle": "0_void / 22_arch_structure",
+
+  "_README_FOR_GENERATOR": {
+    "purpose": "Generate a luxury cosmic passport visual artifact. Render only visual structure, geometry, lighting, materials. ALL TEXT must be drawn as latin or short cyrillic placeholder ONLY 1-3 letters per slot. Long phrases will be added later in vector editor. Treat ALL long text fields as 'text overlay zones' — leave clean rectangular areas with correct background but without rendering the full text content.",
+    "anti_hallucination_rules": [
+      "DO NOT render long Cyrillic phrases as image pixels",
+      "DO NOT invent words or symbols not listed in this JSON",
+      "DO NOT add extra logos, brand marks, or framework names beyond the seven listed",
+      "DO NOT generate text longer than 3 characters in any text element",
+      "Where long text is required, render a clean dark panel with subtle texture as a placeholder — typography is added externally"
+    ],
+    "render_targets": ["midjourney_v7", "imagen_4", "flux_pro_1.1", "dall-e-3"],
+    "aspect_ratios": {
+      "primary": "21:9 (cinematic horizontal)",
+      "alternates": ["16:9 (web hero)", "1:1 (instagram square)", "9:16 (story / vertical)"]
+    }
+  },
+
+  "global_style": {
+    "aesthetic_codename": "Synaura Quiet Luxury",
+    "core_descriptors": [
+      "ultra-detailed cosmic infographic poster",
+      "futuristic crystalline holography",
+      "obsidian-and-light contrast",
+      "swiss-design-grid meets sacred-geometry",
+      "scientific blueprint precision with ritual reverence",
+      "no neon excess — restrained luminosity"
+    ],
+    "mood": "contemplative · architectural · sovereign · silent",
+    "negative_prompt": [
+      "no busy crowded composition",
+      "no random esoteric clutter (no tarot cards, no coins, no zodiac wheels unless specified)",
+      "no anime, no cartoon, no kitsch fantasy",
+      "no bright pure red, no acid green",
+      "no pure white background",
+      "no photorealistic human face",
+      "no watermarks",
+      "no fake text, no garbled letters, no OCR-noise pseudowords"
+    ]
+  },
+
+  "color_system": {
+    "primary_palette": {
+      "void_black": "#05060A",
+      "deep_indigo": "#0E1230",
+      "midnight_steel": "#1A1F3C"
+    },
+    "accent_palette": {
+      "diamond_white": "#F4F1E8",
+      "soft_gold": "#D4B97C",
+      "warm_amber": "#E8B468",
+      "ice_cyan": "#9EE8F2",
+      "lavender_violet": "#A89CD9"
+    },
+    "luminescence": {
+      "core_glow": "#FFE7B3",
+      "edge_resonance": "#7AC7E0",
+      "particle_dust": "#FFFFFF at 8% opacity"
+    },
+    "rules": [
+      "void_black dominates 60% of canvas",
+      "soft_gold and warm_amber used only for sacred geometry edges and metagrams",
+      "ice_cyan reserved for energy threads and resonance lines",
+      "no gradient soup — every color zone has clean boundaries"
+    ]
+  },
+
+  "composition": {
+    "layout": "central_axis_with_three_columns",
+    "central_axis": {
+      "subject": "luminous diamond crystal sphere suspended on a base of crystal shards",
+      "details": [
+        "transparent quartz-diamond hybrid sphere",
+        "internal nervous-system-like golden filaments radiating from a single luminous core",
+        "fractal lightning branches reaching upward like a tree of consciousness",
+        "ascending silver-gold particles around the sphere",
+        "fluid translucent water-like ribbons spiraling at the base"
+      ],
+      "symbolism": "the crystallized identity — silence as supreme syntax"
+    },
+    "left_column": {
+      "title_zone": "КОСМИЧЕСКИЙ ПАСПОРТ",
+      "blocks": [
+        {
+          "id": "identity_block",
+          "shape": "rectangular_dark_panel_with_gold_corners",
+          "text_overlay_zone": true,
+          "placeholder_label": "ID"
+        },
+        {
+          "id": "tech_stack_block",
+          "shape": "horizontal_strip_with_seven_circular_icon_slots",
+          "icon_slots": ["py", "ai", "ml", "git", "nx", "ob", "fx"],
+          "icon_style": "monochrome_glass_circles_with_gold_glyph_inside"
+        }
+      ]
+    },
+    "right_column": {
+      "title_zone": "BLUEPRINT — АЛХИМИЯ ПУТИ",
+      "blocks": [
+        {
+          "id": "core_configuration",
+          "shape": "hexagonal_panel",
+          "internal_geometry": "merkaba_inside_hexagon",
+          "text_overlay_zone": true
+        },
+        {
+          "id": "shadow_gift_siddhi_triangle",
+          "shape": "downward_pointing_triangle_with_three_anchor_points",
+          "anchor_glyphs": ["▼", "▲", "⟁"]
+        },
+        {
+          "id": "small_gift_panel",
+          "shape": "icosahedron_in_dark_frame",
+          "title": "ЗЕРНО ИДЕИ"
+        }
+      ]
+    },
+    "bottom_band": {
+      "frameworks_strip": {
+        "count": 7,
+        "layout": "vertical_left_aligned_list",
+        "items": [
+          {"id": "synaura", "glyph": "S", "function": "quiet_luxury_aesthetic"},
+          {"id": "sreteniya_os", "glyph": "∴", "function": "operational_kernel"},
+          {"id": "linguafusion", "glyph": "F", "function": "language_as_action"},
+          {"id": "suticore", "glyph": "⧖", "function": "signal_extraction"},
+          {"id": "syntaxium", "glyph": "X", "function": "meta_syntax_grid"},
+          {"id": "verenitya", "glyph": "V", "function": "truth_verification"},
+          {"id": "yazekh", "glyph": "Я", "function": "constructed_language_proto-slavic"}
+        ],
+        "rendering_rule": "each item is a horizontal pill — left side glyph in soft_gold inside a glass disk, right side dark text overlay zone (placeholder, no rendered text)"
+      },
+      "linguistic_matrix_strip": {
+        "count": 5,
+        "layout": "horizontal_right_aligned_columns",
+        "columns": [
+          {"code": "RU", "function_glyph": "∴", "color_accent": "diamond_white"},
+          {"code": "ES", "function_glyph": "⧖", "color_accent": "warm_amber"},
+          {"code": "PT", "function_glyph": "⟁", "color_accent": "ice_cyan"},
+          {"code": "EN", "function_glyph": "㄄", "color_accent": "soft_gold"},
+          {"code": "M+", "function_glyph": "◌", "color_accent": "lavender_violet"}
+        ]
+      },
+      "resonance_coordinates": {
+        "type": "luminous_river_at_bottom_of_canvas",
+        "node_count": 4,
+        "node_labels_short": ["[пульт]", "[поле]", "[храм]", "[код]"],
+        "rendering_rule": "four glowing orbs connected by a flowing river of light — each orb has a tiny tag panel below, but the @-handles themselves are NOT rendered as text in the image; they are placed in vector overlay later"
+      }
+    },
+    "header_bar": {
+      "layout": "thin_strip_top_of_canvas",
+      "content_slots": [
+        "UNIVERSAL FUSION SYNC",
+        "ID placeholder",
+        "LAYER placeholder",
+        "STATUS placeholder",
+        "8_moon_phases_icon_set"
+      ],
+      "moon_phase_icons": "small monochrome circles representing waxing-to-waning lunar cycle"
+    },
+    "footer_bar": {
+      "content": "{ \"$$-0-$$\" } — single signature glyph, centered, soft_gold"
+    }
+  },
+
+  "sacred_geometry_layer": {
+    "metagrams_to_embed": ["⟁", "∴", "〄", "∅", "⧖", "↺", "⇄", "⟐"],
+    "placement_rules": [
+      "metagrams appear as small constellations between blocks",
+      "each metagram glows soft_gold with subtle particle halo",
+      "no metagram larger than 3% of canvas height"
+    ],
+    "background_geometry": {
+      "deep_layer": "barely-visible Flower of Life pattern at 4% opacity",
+      "mid_layer": "thin grid of golden meridian lines connecting major blocks",
+      "front_layer": "faint constellation map dust in deep_indigo"
+    }
+  },
+
+  "typography_overlay_specification": {
+    "_critical": "These fields are NEVER rendered by the image generator. They are exported as a separate layer for vector editor (Figma/Affinity/InDesign) overlay.",
+    "primary_font_recommendation": "IBM Plex Serif (cyrillic) + IBM Plex Mono (codes)",
+    "alternate": "Inter Tight + JetBrains Mono",
+    "sizes": {
+      "main_title": "48pt",
+      "subtitle": "18pt",
+      "block_titles": "14pt uppercase tracking +120",
+      "body": "11pt",
+      "code_tags": "9pt mono"
+    },
+    "rules": [
+      "all latin in lowercase except ID strings",
+      "all cyrillic in lowercase quiet style — no CAPS shouting",
+      "tracking always loose for that 'quiet luxury' feel",
+      "every block has 24px internal padding minimum"
+    ]
+  },
+
+  "content_data_for_overlay": {
+    "_note": "This is the source-of-truth text content. It is NOT rendered by the image generator. It is applied externally by vector editor on top of the placeholder zones defined above.",
+
+    "header_bar_content": {
+      "left": "UNIVERSAL FUSION SYNC",
+      "id": "EZAR-GARUNA-UNIVERSAL-FUSION-SYNC",
+      "layer": "L28_SINGULARITY",
+      "status": "CRYSTALLIZED"
+    },
+
+    "central_title": {
+      "main": "Ezar Garuna · Cosmic Passport",
+      "russian": "Игорь Галкин (Эзар Гаруна) // Saritama",
+      "subtitle_en": "Semantic Architect · Linguist · Educator · NLP Systems Builder",
+      "location": "Selvania / Bogotá, Colombia (Hub 0) · amid the Andes",
+      "essence_marker": "Harmony / Identity Alignment",
+      "core_phrase": "нитьве держит-се"
+    },
+
+    "passport_left_panel": {
+      "role_lines": [
+        "Игорь Галкин (Эзарь Гаруна Саритама)",
+        "Semantic Architect · NLP Systems Researcher",
+        "Linguist · Translator · Educator (15+ лет)",
+        "Algorithmic Navigator · Field Designer"
+      ],
+      "credo": "«Тишина — высший синтаксис. Язык — форма сознания. Речь — действие.»"
+    },
+
+    "blueprint_panel": {
+      "core_configuration": {
+        "design": "Generator 4/6 — respond to living",
+        "jyotish_asc": "Libra (Тула) — balance",
+        "essence": "harmony / identity alignment"
+      },
+      "alchemy_triangle": {
+        "shadow": "Семантический шум · контроль хаоса умом",
+        "gift": "Транскреация · перевод амодального в структуру",
+        "siddhi": "Тишина · слово = код = действие"
+      }
+    },
+
+    "small_gift_idea_panel": {
+      "title": "МАЛЕНЬКИЙ ДАР · Зерно идеи",
+      "body": "Linguistic-Semantic Fusion Profiles — sigil cognitive maps combining neurophysiology, jyotish, human design, and voice signature. Speech becomes magic; ML becomes mirror."
+    },
+
+    "tech_stack_strip": [
+      {"slot": "py",  "label": "Python"},
+      {"slot": "ai",  "label": "AI / LLM"},
+      {"slot": "ml",  "label": "ML / NLP"},
+      {"slot": "git", "label": "GitHub"},
+      {"slot": "nx",  "label": "NixOS"},
+      {"slot": "ob",  "label": "Obsidian"},
+      {"slot": "fx",  "label": "Figma"}
+    ],
+
+    "frameworks_2026": [
+      {"order": 1, "name": "Synaura",       "function": "Quiet-luxury aesthetic protocol — pause as primary key",                       "status": "active"},
+      {"order": 2, "name": "Sreteniya_OS",  "function": "Operational system for consciousness rhythms and attention navigation",         "status": "core_kernel"},
+      {"order": 3, "name": "LinguaFUSION",  "function": "Language as action — ontological transfer engine, immersive language teaching", "status": "active_studio"},
+      {"order": 4, "name": "SUTIcore",      "function": "Signal extraction · invariant distillation from noise",                          "status": "github_open_source"},
+      {"order": 5, "name": "Syntaxium",     "function": "Meta-syntax grid · multi-layer code-language",                                   "status": "in_construction"},
+      {"order": 6, "name": "Verenitya",     "function": "Truth verification protocol · field of contemplation",                           "status": "active_portal"},
+      {"order": 7, "name": "Yazekh",        "function": "Proto-slavic constructed language · morphology lab",                             "status": "research_phase"}
+    ],
+
+    "linguistic_matrix": [
+      {"code": "RU", "role": "Native — core meaning-making"},
+      {"code": "ES", "role": "C1 — embodiment, rhythm, Latin-American field"},
+      {"code": "PT", "role": "C1 (700h, ИГЛУ certified) — flow, soulfulness"},
+      {"code": "EN", "role": "B1–B2 — global interface, code, IT"},
+      {"code": "M+", "role": "Latin A2 · Sanskrit A1 · Esperanto reading · Quechua/Aymara/Shipibo/Arawako reserve"}
+    ],
+
+    "resonance_coordinates": [
+      {"node": "[пульт]", "handle": "@sreteniya",   "function": "control of meaning · state transmission"},
+      {"node": "[поле]",  "handle": "@verenitya",   "function": "field · contemplation · FUSION Nexus DAO"},
+      {"node": "[храм]",  "handle": "@shamnambula", "function": "temple of silence · intuition"},
+      {"node": "[код]",   "handle": "github / suticore", "function": "open-source semantic code"}
+    ],
+
+    "additional_handles": [
+      "@iggalk", "@FUSIONNEXUS", "@VereniumAI", "@LinguaFUSION", "@syntaxium",
+      "ezargaruna.github.io/suticore",
+      "threads.com/@ezargaruna",
+      "t.me/iggalk", "t.me/FUSIONstudium"
+    ],
+
+    "tags": [
+      "#architect", "#fusion_profile", "#nlp", "#sreteniya_os",
+      "#азесьм", "#нитьве", "#гудерех-резонанс", "#протограммы",
+      "#manifestjivy"
+    ],
+
+    "footer_signature": "{ \"$$-0-$$\" }",
+
+    "verification_layers": {
+      "verified_external": [
+        "ezargaruna.github.io/suticore — public attribution: Igor V. Galkin (Ezar Garuna Saritama)",
+        "threads.com/@ezargaruna — active spanish posts as fusion designer"
+      ],
+      "verified_documents": [
+        "ИГЛУ diploma КФ № 35641, 2013, linguist/translator (Spanish, English)",
+        "ИГЛУ certificate, Portuguese B1, 700 hours, 2009-2011",
+        "SENAC Recife, Decoração Prática Residencial, 80h, 2014",
+        "LLC «1Т», UI/UX Designer, 256h, with honors, 2023",
+        "ABC Language Centre Irkutsk, 2010-2013 (4 independent reference letters)"
+      ],
+      "claimed_self_reported": [
+        "Human Design Generator 4/6",
+        "Jyotish ASC Libra (Tula)",
+        "Massotherapy 8+ years (2010-2018)",
+        "Voice artist Moonly App (Spanish meditations) since 2021",
+        "Guide-interpreter across 9 LATAM countries",
+        "Velesovo Rotanie initiation (2012)",
+        "Bicycle research expedition Krasnoyarsk Krai",
+        "Collaboration with Oleg Bakhtiyarov / Oksana Zavadskaya — interspecies communication research, almanac vol. 2"
+      ]
+    }
+  },
+
+  "rendering_passes": {
+    "pass_1_base": {
+      "description": "Generate the dark cosmic background with central crystalline diamond sphere, sacred geometry, and all empty placeholder panels.",
+      "prompt_seed": "ultra-detailed cinematic cosmic passport poster, central luminous diamond crystal sphere on crystalline base, golden nervous-system filaments radiating from inner core, void black background with deep indigo undertones, sacred geometry meridian grid in soft gold at 12% opacity, swiss design layout with three columns, dark hexagonal and rectangular panels with thin gold borders awaiting text, no rendered text, ultra-luxury minimal aesthetic, 8k, photorealistic crystal, ethereal lighting"
+    },
+    "pass_2_geometry": {
+      "description": "Add metagram constellations and energy threads.",
+      "prompt_seed": "subtle metagram constellation layer (triangle, three dots, kanji-like glyphs, infinity, hourglass, recurrence, exchange, target circle) floating between panels in soft gold, thin ice-cyan energy threads spiraling from the central sphere outward, glowing particle dust"
+    },
+    "pass_3_overlay": {
+      "description": "External vector pass in Figma — apply all typography from content_data_for_overlay onto the placeholder zones. Do NOT do this in image model.",
+      "tool_recommendation": "Figma · Affinity Designer · Adobe InDesign",
+      "export": "PDF/X-4 + 4K PNG with transparent background"
+    }
+  },
+
+  "iteration_variants": [
+    {"name": "v1_horizontal_hero",     "aspect": "21:9", "use_case": "site banner, conference deck cover"},
+    {"name": "v2_square_social",       "aspect": "1:1",  "use_case": "instagram, threads, telegram preview"},
+    {"name": "v3_vertical_story",      "aspect": "9:16", "use_case": "instagram story, telegram story"},
+    {"name": "v4_portrait_passport",   "aspect": "2:3",  "use_case": "printable cosmic passport card / poster"},
+    {"name": "v5_obsidian_dark_seal",  "aspect": "1:1",  "use_case": "Obsidian vault cover, GitHub social preview"}
+  ],
+
+  "delivery_checklist": [
+    "Anti-hallucination block read by generator",
+    "Long Cyrillic phrases NOT in image prompt",
+    "Typography applied externally in vector editor",
+    "All seven frameworks present in correct order",
+    "Five linguistic columns (RU/ES/PT/EN/M+) present",
+    "Four resonance nodes connected by light river",
+    "Eight metagrams scattered subtly across canvas",
+    "Verification layer attached as separate metadata file"
+  ]
+}
