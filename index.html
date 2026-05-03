@@ -4,621 +4,1280 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
-    <title>sreteniya_os ∴ cognitive architecture</title>
-    <meta name="description" content="sreteniya_os: an operating environment for attention and semantic architecture. designed by ezar garuna.">
+    <title>suticore ∴ semantic operating system · ezar garuna</title>
+    <meta name="description" content="suticore: language as action. silence as syntax. open protocols, closed temple, sovereign support.">
     <meta name="author" content="ezar garuna">
+    <meta property="og:title" content="suticore · semantic operating system">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezargaruna.github.io/suticore/">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400&family=JetBrains+Mono:wght@100;300;400&family=Noto+Serif:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500&family=JetBrains+Mono:wght@100;300;400&family=Noto+Serif:ital,wght@0,300;1,300&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
-        /* ⧖ SINAURA V4.5 QUIET LUXURY */
         :root {
             --bg: #020202;
+            --bg-soft: #0a0a0c;
             --fg: #e4e4e7;
             --muted: #71717a;
             --accent: #ffffff;
+            --gold: #d4b97c;
+            --gold-soft: #8a6e2c;
             --glitch: #4ade80;
+            --temple: #c89b6a;
+            --support: #9ec5d4;
         }
-
         [data-theme="paper"] {
-            --bg: #f8f9fa;
-            --fg: #18181b;
-            --muted: #71717a;
-            --accent: #000000;
-            --glitch: #059669;
+            --bg: #f8f9fa; --bg-soft: #ffffff;
+            --fg: #18181b; --muted: #71717a;
+            --accent: #000000; --gold: #8a6e2c; --gold-soft: #5a4a1c;
+            --glitch: #059669; --temple: #8a5e2c; --support: #2a6c8c;
         }
-
         [data-theme="contrast"] {
-            --bg: #000000;
-            --fg: #ffff00;
-            --muted: #ffffff;
-            --accent: #00ff88;
-            --glitch: #ff00ff;
+            --bg: #000000; --bg-soft: #111111;
+            --fg: #ffff00; --muted: #ffffff;
+            --accent: #00ff88; --gold: #ffaa00; --gold-soft: #ff8800;
+            --glitch: #ff00ff; --temple: #ff66ff; --support: #00ffff;
         }
-
-        /* Корневой размер шрифта для корректной a11y работы Tailwind (rem).
-           Кнопки a- / a+ будут изменять это значение через JS.
-        */
-        html {
-            font-size: 16px;
-            transition: font-size 0.3s ease;
-        }
-
+        html { font-size: 16px; transition: font-size .3s ease; }
         body {
-            background-color: var(--bg);
-            color: var(--fg);
+            background: var(--bg); color: var(--fg);
             font-family: 'Inter Tight', sans-serif;
-            text-transform: lowercase; /* absolute lowercase */
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-            transition: background-color 0.5s ease, color 0.5s ease;
+            text-transform: lowercase; overflow-x: hidden;
+            margin: 0; -webkit-font-smoothing: antialiased;
+            transition: background-color .5s ease, color .5s ease;
         }
-
+        body[data-lang="zh"] { font-family: 'Noto Sans SC', 'Inter Tight', sans-serif; text-transform: none; }
         .font-mono { font-family: 'JetBrains Mono', monospace; }
         .font-serif { font-family: 'Noto Serif', serif; }
-        
-        .tracking-mega { letter-spacing: 0.4em; }
-        .tracking-hyper { letter-spacing: 0.8em; }
-
-        /* ◌ scrollbar */
+        .tracking-mega { letter-spacing: .4em; }
+        .tracking-hyper { letter-spacing: .6em; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 2px; }
-
-        /* ㄄ glass & structural elements */
+        
         .glass {
-            background: rgba(var(--bg-rgb, 2, 2, 2), 0.6);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(var(--fg-rgb, 255, 255, 255), 0.08);
+            background: rgba(2,2,2,.55); backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,.08);
         }
-
         [data-theme="paper"] .glass {
-            background: rgba(248, 249, 250, 0.7);
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(248,249,250,.75);
+            border: 1px solid rgba(0,0,0,.1);
         }
-
-        /* ⟁ scroll animations */
+        
         .reveal {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            opacity: 0; transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(.16,1,.3,1);
         }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* 3d procedural background */
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
         #shamandala-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: 0;
-            pointer-events: none;
+            position: fixed; top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            z-index: 0; pointer-events: none;
         }
-
         .hud-overlay { z-index: 50; }
         .content-layer { position: relative; z-index: 10; }
-
-        /* overrides */
         .keep-case { text-transform: none; }
         button, select { outline: none; }
         
-        /* Trickster styling */
-        .trickster-glitch {
-            animation: textGlitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-            color: var(--glitch);
-            text-shadow: 2px 0 var(--accent), -2px 0 var(--muted);
+        .ring-card {
+            transition: all .4s cubic-bezier(.16,1,.3,1);
+            position: relative;
         }
-        @keyframes textGlitch {
-            0% { transform: translate(0) }
-            20% { transform: translate(-2px, 1px) }
-            40% { transform: translate(-1px, -1px) }
-            60% { transform: translate(2px, 1px) }
-            80% { transform: translate(1px, -1px) }
-            100% { transform: translate(0) }
+        .ring-card:hover {
+            transform: translateY(-4px);
         }
+        .ring-card.open:hover { border-color: var(--glitch); box-shadow: 0 8px 32px rgba(74,222,128,.15); }
+        .ring-card.temple:hover { border-color: var(--temple); box-shadow: 0 8px 32px rgba(200,155,106,.15); }
+        .ring-card.support:hover { border-color: var(--support); box-shadow: 0 8px 32px rgba(158,197,212,.15); }
+        
+        .wiki-link {
+            color: var(--gold); text-decoration: none;
+            border-bottom: 1px dashed rgba(212,185,124,.3);
+            transition: all .3s ease; padding-bottom: 1px;
+        }
+        .wiki-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+        
+        /* ring-specific badges */
+        .badge-open    { background: rgba(74,222,128,.1);  color: var(--glitch); border: 1px solid rgba(74,222,128,.3); }
+        .badge-temple  { background: rgba(200,155,106,.1); color: var(--temple); border: 1px solid rgba(200,155,106,.3); }
+        .badge-support { background: rgba(158,197,212,.1); color: var(--support); border: 1px solid rgba(158,197,212,.3); }
+        
+        /* big ring divider */
+        .ring-divider {
+            display: flex; align-items: center; gap: 1.5rem;
+            margin: 6rem 0 3rem;
+            border-top: 1px solid rgba(255,255,255,.1);
+            padding-top: 2rem;
+        }
+        .ring-glyph {
+            font-size: 3rem; line-height: 1;
+            opacity: .8;
+        }
+        .ring-glyph.open { color: var(--glitch); }
+        .ring-glyph.temple { color: var(--temple); }
+        .ring-glyph.support { color: var(--support); }
+        
+        /* layer number */
+        .layer-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 8rem;
+            font-weight: 100;
+            line-height: 1;
+            color: var(--muted);
+            opacity: .15;
+            position: absolute;
+            top: -2rem; right: 0;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        /* protocol stack item */
+        .stack-item {
+            display: flex; align-items: center; gap: 1.5rem;
+            padding: 1.25rem 1.5rem;
+            border: 1px solid rgba(255,255,255,.06);
+            background: rgba(2,2,2,.4);
+            border-radius: 4px;
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+        .stack-item:hover {
+            border-color: var(--gold);
+            background: rgba(212,185,124,.04);
+            transform: translateX(8px);
+        }
+        [data-theme="paper"] .stack-item { background: rgba(255,255,255,.5); border-color: rgba(0,0,0,.08); }
+        
+        /* tier card */
+        .tier-card {
+            border: 1px solid rgba(255,255,255,.08);
+            background: rgba(2,2,2,.5);
+            backdrop-filter: blur(16px);
+            border-radius: 6px;
+            padding: 2rem;
+            transition: all .4s cubic-bezier(.16,1,.3,1);
+            display: flex; flex-direction: column;
+            height: 100%;
+        }
+        .tier-card.featured {
+            border-color: var(--gold);
+            background: linear-gradient(180deg, rgba(212,185,124,.06) 0%, rgba(2,2,2,.5) 100%);
+        }
+        [data-theme="paper"] .tier-card { background: rgba(255,255,255,.65); }
+        
+        .tier-price {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2rem; font-weight: 300;
+            color: var(--accent); margin: 1rem 0;
+        }
+        
+        /* lang button active state */
+        .lang-btn.active { color: var(--gold); border-color: var(--gold); }
+        
+        /* section header */
+        .section-header { position: relative; }
+        
+        /* matrix button */
+        .mx-btn {
+            text-align: left; padding: .5rem .75rem;
+            font-size: 11px; font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase; letter-spacing: .15em;
+            border: 1px solid rgba(113,113,122,.2);
+            border-radius: 2px;
+            color: var(--muted);
+            background: transparent;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+        .mx-btn:hover { border-color: var(--gold); color: var(--fg); }
+        .mx-btn.active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
     </style>
 </head>
-<body class="selection:bg-accent selection:text-bg">
+<body class="selection:bg-accent" data-lang="en">
 
-    <!-- ⟁ 1. SHAMANDALA (PROCEDURAL BACKGROUND ENGINE) -->
     <canvas id="shamandala-canvas"></canvas>
 
-    <!-- ⧖ 2. HUD & NAVIGATION -->
-    <header class="fixed top-0 w-full p-4 md:p-8 flex justify-between items-start hud-overlay glass border-t-0 border-l-0 border-r-0 transition-colors duration-1000">
+    <!-- HUD -->
+    <header class="fixed top-0 w-full p-4 md:p-6 flex justify-between items-start hud-overlay glass border-t-0 border-l-0 border-r-0">
         <div class="flex flex-col gap-1">
-            <h1 class="text-accent text-sm tracking-mega font-light flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <span class="text-xl">⟁</span> sreteniya_os
+            <h1 class="text-[var(--accent)] text-sm tracking-mega font-light flex items-center gap-3 cursor-pointer" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                <span class="text-xl text-[var(--gold)]">⟁</span> suticore
             </h1>
-            <p class="text-[9px] text-[var(--muted)] tracking-widest font-mono keep-case mt-1">
-                <span id="txt-nav-subtitle">cognitive architecture of singularity</span>
+            <p class="text-[9px] text-[var(--muted)] tracking-widest font-mono mt-1">
+                v2026.5 · 3-ring architecture
             </p>
         </div>
-
-        <div class="flex flex-col items-end gap-4 pointer-events-auto">
-            <!-- Global Controls -->
-            <div class="flex flex-wrap items-center justify-end gap-4">
-                <!-- A11y & Size -->
+        <div class="flex flex-col items-end gap-3 pointer-events-auto">
+            <div class="flex flex-wrap items-center justify-end gap-3">
+                <!-- a11y -->
                 <div class="flex items-center gap-2 border border-[var(--muted)]/30 rounded-sm px-3 py-1">
-                    <button onclick="adjustFontSize(-2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors" aria-label="Decrease font size">a-</button>
+                    <button onclick="adjustFontSize(-2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)]">a-</button>
                     <span class="text-[8px] text-[var(--muted)]">|</span>
-                    <button onclick="adjustFontSize(2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)] transition-colors" aria-label="Increase font size">a+</button>
+                    <button onclick="adjustFontSize(2)" class="text-[10px] font-mono text-[var(--muted)] hover:text-[var(--accent)]">a+</button>
                 </div>
-                
-                <!-- Theme -->
-                <div class="flex items-center gap-4 text-[10px] font-mono tracking-widest">
-                    <button data-theme-btn="void" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">void</button>
-                    <button data-theme-btn="paper" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">paper</button>
-                    <button data-theme-btn="contrast" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)] transition-colors">contrast</button>
+                <!-- theme -->
+                <div class="flex items-center gap-3 text-[10px] font-mono tracking-widest">
+                    <button data-theme-btn="void" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)]">void</button>
+                    <button data-theme-btn="paper" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)]">paper</button>
+                    <button data-theme-btn="contrast" class="theme-btn text-[var(--muted)] hover:text-[var(--accent)]">contrast</button>
                 </div>
-
-                <!-- Language Selector: Strict Order EN > RU > ES > PT -->
-                <select id="lang-selector" class="bg-transparent border border-[var(--muted)]/30 text-[9px] uppercase tracking-widest text-[var(--muted)] hover:text-[var(--accent)] transition-colors cursor-pointer px-2 py-1 font-mono rounded-sm">
-                    <option value="en">en · english</option>
-                    <option value="ru">ru · русский</option>
-                    <option value="es">es · español</option>
-                    <option value="pt">pt · português</option>
-                </select>
             </div>
-            
-            <!-- ACS Monitor -->
-            <div class="flex items-center gap-3 w-full justify-end mt-2">
-                <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono hidden md:inline">acs stability</span>
-                <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono md:hidden">acs</span>
+            <!-- language strip -->
+            <div class="flex items-center gap-1 mt-1">
+                <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono mr-2">lang</span>
+                <button data-lang-btn="en" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">en</button>
+                <button data-lang-btn="ru" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">ru</button>
+                <button data-lang-btn="es" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">es</button>
+                <button data-lang-btn="pt" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">pt</button>
+                <button data-lang-btn="zh" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">zh</button>
+                <button data-lang-btn="eo" class="lang-btn font-mono text-[10px] uppercase tracking-widest px-2 py-1 border border-[var(--muted)]/20 rounded-sm hover:text-[var(--gold)]">eo</button>
+            </div>
+            <!-- acs -->
+            <div class="flex items-center gap-3 w-full justify-end">
+                <span class="text-[8px] tracking-widest text-[var(--muted)] font-mono">acs</span>
                 <div class="w-32 h-[1px] bg-[var(--muted)]/30 relative overflow-hidden">
-                    <div id="acs-bar" class="absolute top-0 left-0 h-full bg-[var(--accent)] transition-all duration-300 shadow-[0_0_8px_var(--accent)]" style="width: 100%;"></div>
+                    <div id="acs-bar" class="absolute top-0 left-0 h-full bg-[var(--gold)] transition-all duration-300" style="width: 100%;"></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- ㄄ 3. SCROLLABLE CONTENT LAYERS -->
-    <div id="scroll-container" class="content-layer pt-32 pb-24 px-6 md:px-12 max-w-6xl mx-auto space-y-40">
+    <div id="scroll-container" class="content-layer pt-44 pb-24 px-6 md:px-12 max-w-6xl mx-auto">
 
-        <!-- L0: INITIATION (HERO) -->
-        <section id="initiation" class="min-h-[70vh] flex flex-col justify-center reveal active pt-10">
-            <div class="max-w-4xl space-y-8 glass p-8 md:p-12 rounded-sm relative overflow-hidden shadow-2xl">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-[var(--accent)]/40 to-transparent"></div>
-                <p class="text-[10px] tracking-hyper text-[var(--glitch)] font-mono uppercase trick-target" id="txt-l0-meta">∴ point of entry</p>
-                <h2 class="text-4xl md:text-6xl font-extralight text-[var(--accent)] tracking-widest leading-tight trick-target" id="txt-l0-title">
-                    welcome to the architecture of silence.
-                </h2>
-                <div class="text-sm md:text-base text-[var(--muted)] leading-loose tracking-wide space-y-6">
-                    <p id="txt-l0-p1" class="trick-target">you are at hub 0. this is not a standard interface. this is an operating environment for your attention.</p>
-                    <p id="txt-l0-p2" class="trick-target">here, language is not description — it is direct action. we reduce semantic entropy to extract the pure signal of intent.</p>
+        <!-- L0 · INITIATION -->
+        <section id="initiation" class="min-h-[80vh] flex flex-col justify-center reveal active mb-32">
+            <div class="space-y-10">
+                <!-- meta line -->
+                <div class="flex items-center gap-4">
+                    <span class="text-[10px] tracking-hyper text-[var(--gold)] font-mono uppercase" data-i18n="hero_meta">∴ point of entry · hub 0 · bogotá</span>
                 </div>
-                <div class="text-[10px] tracking-hyper text-[var(--muted)] font-mono mt-10 border-t border-[var(--muted)]/20 pt-8 trick-target">
+                <!-- main title -->
+                <h2 class="text-5xl md:text-7xl lg:text-8xl font-extralight text-[var(--accent)] tracking-tight leading-[1.05]" data-i18n="hero_title">
+                    semantic<br>operating system.
+                </h2>
+                <!-- subtitle -->
+                <p class="text-lg md:text-2xl text-[var(--fg)] leading-relaxed font-light max-w-3xl" data-i18n="hero_sub">
+                    language as action. silence as syntax. meaning precedes structure · structure precedes code.
+                </p>
+                <!-- description -->
+                <p class="text-sm md:text-base text-[var(--muted)] leading-loose max-w-2xl" data-i18n="hero_desc">
+                    three concentric rings shape this commons: open protocols (free forever), inner temple (closed practice), and resonant support (sovereign exchange).
+                </p>
+                <!-- 3 rings · big buttons -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-8 max-w-4xl">
+                    <a href="#open-ring" class="group flex flex-col gap-3 p-6 border border-[var(--muted)]/20 rounded-lg hover:border-[var(--glitch)] hover:bg-[var(--glitch)]/5 transition-all">
+                        <span class="text-3xl text-[var(--glitch)]">⊕</span>
+                        <span class="text-xs font-mono uppercase tracking-widest text-[var(--glitch)]" data-i18n="ring_open_label">open ring</span>
+                        <span class="text-[11px] text-[var(--muted)] leading-relaxed" data-i18n="ring_open_short">free forever · MIT · fork · use · share</span>
+                    </a>
+                    <a href="#temple-ring" class="group flex flex-col gap-3 p-6 border border-[var(--muted)]/20 rounded-lg hover:border-[var(--temple)] hover:bg-[var(--temple)]/5 transition-all">
+                        <span class="text-3xl text-[var(--temple)]">⊗</span>
+                        <span class="text-xs font-mono uppercase tracking-widest text-[var(--temple)]" data-i18n="ring_temple_label">inner temple</span>
+                        <span class="text-[11px] text-[var(--muted)] leading-relaxed" data-i18n="ring_temple_short">live services · ritual · presence · bespoke</span>
+                    </a>
+                    <a href="#support-ring" class="group flex flex-col gap-3 p-6 border border-[var(--muted)]/20 rounded-lg hover:border-[var(--support)] hover:bg-[var(--support)]/5 transition-all">
+                        <span class="text-3xl text-[var(--support)]">⊙</span>
+                        <span class="text-xs font-mono uppercase tracking-widest text-[var(--support)]" data-i18n="ring_support_label">resonant support</span>
+                        <span class="text-[11px] text-[var(--muted)] leading-relaxed" data-i18n="ring_support_short">subscription · ritual · commission · all paths</span>
+                    </a>
+                </div>
+                <!-- mantra strip -->
+                <div class="text-[10px] tracking-hyper text-[var(--muted)] font-mono mt-12 border-t border-[var(--muted)]/20 pt-8">
                     #азесьм ➔ #нитьве ➔ #гудерех ➔ #цвересть ➔ #агой
                 </div>
             </div>
         </section>
 
-        <!-- L1: ATTENTION KERNEL -->
-        <section id="attention" class="min-h-[50vh] flex flex-col justify-center reveal">
-            <header class="mb-12">
-                <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l1 // perception engine</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2 trick-target" id="txt-l1-title">attention kernel</h3>
-                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose trick-target" id="txt-l1-desc">
-                    before interpreting meaning, the observer must be stabilized. the system tracks your velocity to calculate the attention coherence score (acs). move erratically, and clarity drops.
+        <!-- L1 · STACK -->
+        <section id="stack" class="reveal mb-32 section-header">
+            <span class="layer-num">l1</span>
+            <header class="mb-12 relative">
+                <span class="text-[10px] font-mono tracking-mega text-[var(--gold)]" data-i18n="stack_layer">l1 · canon stack</span>
+                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-tight mt-3" data-i18n="stack_title">seven layers · one crystal</h3>
+                <p class="text-sm text-[var(--muted)] mt-6 max-w-3xl leading-loose" data-i18n="stack_desc">
+                    each layer is a self-sufficient protocol. all are wiki-linked · cross-referenced inside this repo. nothing depends on external nodes.
                 </p>
             </header>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Sigma -->
-                <div class="glass p-8 border-t-2 border-t-[var(--accent)]/60 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
-                    <span class="text-3xl text-[var(--accent)] font-serif italic block mb-6">σ</span>
-                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-s-t">concentration</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1 trick-target" id="txt-l1-s-d">pinpoint focus. stripping peripheral noise to hold a single semantic node.</p>
-                </div>
-                <!-- Delta -->
-                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
-                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Δ</span>
-                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-d-t">deconcentration</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1 trick-target" id="txt-l1-d-d">field awareness. dissolving boundaries to perceive the environment as a whole.</p>
-                </div>
-                <!-- Omega -->
-                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
-                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Ω</span>
-                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-o-t">amodal essence</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1 trick-target" id="txt-l1-o-d">grasping meaning prior to its manifestation as image, sound, or word.</p>
-                </div>
-                <!-- Phi -->
-                <div class="glass p-8 border-t-2 border-t-[var(--muted)]/30 hover:border-t-[var(--accent)] transition-colors flex flex-col h-full">
-                    <span class="text-3xl text-[var(--muted)] font-serif italic block mb-6">Φ</span>
-                    <h4 class="text-xs font-bold text-[var(--accent)] tracking-widest mb-3" id="txt-l1-p-t">pure agency</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-relaxed flex-1 trick-target" id="txt-l1-p-d">the uncaused act of will. turning presence into a vector of reality alteration.</p>
-                </div>
-            </div>
-            
-            <div class="mt-8" id="txt-l1-link">
-                <!-- Injected via JS -->
+            <div class="space-y-2 font-mono text-[12px]">
+                <a href="https://github.com/ezargaruna/suticore" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">∴</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">suticore</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_suticore">extract essence · remove 90% of noise</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">core</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/tree/main/protocols/sreteniya-os" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">⧖</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">sreteniya os</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_sreteniya">attention rhythms · operating environment</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">core</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">⟁</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">linguafusion</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_lf">language as action · ontological transfer</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">studio</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/verenitya.md" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">⟐</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">verenitya</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_ver">claim → evidence → counter → truth</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">crystal</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/syntaxium.md" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">〄</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">syntaxium</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_syn">symbol as command · form programs state</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">active</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/synaura.md" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">∅</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">synaura</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_syna">quiet luxury · pause as primary key</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">active</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/yazekh.md" class="stack-item">
+                    <span class="text-[var(--gold)] text-2xl w-8">↺</span>
+                    <span class="text-[var(--accent)] uppercase tracking-widest text-[11px] w-32 shrink-0">yazekh</span>
+                    <span class="text-[var(--muted)] flex-1 keep-case" data-i18n="stack_ya">proto-slavic constructed language</span>
+                    <span class="text-[10px] badge-open px-2 py-1 rounded-sm">research</span>
+                </a>
             </div>
         </section>
 
-        <!-- L3: LANGUAGE & SYNTAXIUM -->
-        <section id="language" class="min-h-[60vh] flex flex-col justify-center reveal">
-            <header class="mb-12">
-                <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l3 // structural geometry</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2 trick-target" id="txt-l3-title">language & logic</h3>
-                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose trick-target" id="txt-l3-desc">
-                    language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct paths for both human and ai cognition.
+        <!-- ⊕ OPEN RING -->
+        <div class="ring-divider">
+            <span class="ring-glyph open">⊕</span>
+            <div>
+                <p class="text-[10px] font-mono tracking-mega text-[var(--glitch)] uppercase" data-i18n="open_kicker">open ring · l2</p>
+                <p class="text-2xl font-extralight text-[var(--accent)] tracking-wide mt-1" data-i18n="open_kicker_sub">free forever · MIT</p>
+            </div>
+        </div>
+        <section id="open-ring" class="reveal mb-16">
+            <p class="text-sm text-[var(--muted)] mb-10 max-w-3xl leading-loose" data-i18n="open_desc">
+                the inheritance belongs to all living beings. these protocols, scripts and forms are released into the commons under MIT — free to use, fork, build upon, redistribute, derive. every sovereign node strengthens the whole.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <a href="https://github.com/ezargaruna/suticore/tree/main/protocols" class="ring-card open glass p-7 rounded-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">∴ all 7 protocols</span>
+                        <span class="text-[10px] badge-open px-2 py-1 rounded-sm font-mono">MIT</span>
+                    </div>
+                    <h4 class="text-xl text-[var(--accent)] mb-3" data-i18n="open_canon_t">canon stack · markdown</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed mb-5" data-i18n="open_canon_d">complete 7-layer canon. read · fork · clone · adapt freely.</p>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">/protocols/ ↗</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/tree/main/run/scripts" class="ring-card open glass p-7 rounded-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">⧖ vault scripts</span>
+                        <span class="text-[10px] badge-open px-2 py-1 rounded-sm font-mono">MIT</span>
+                    </div>
+                    <h4 class="text-xl text-[var(--accent)] mb-3" data-i18n="open_scripts_t">9 vault hygiene tools</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed mb-5" data-i18n="open_scripts_d">scan · dedupe · crystallize · llm pipeline · void sweep.</p>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">/run/scripts/ ↗</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/tree/main/docs/canon" class="ring-card open glass p-7 rounded-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">⟐ canon docs</span>
+                        <span class="text-[10px] badge-open px-2 py-1 rounded-sm font-mono">MIT</span>
+                    </div>
+                    <h4 class="text-xl text-[var(--accent)] mb-3" data-i18n="open_docs_t">fusion passport · prompts</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed mb-5" data-i18n="open_docs_d">identity passport · synaura visual blueprint · cross-language matrix.</p>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">/docs/canon/ ↗</span>
+                </a>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/README.md" class="ring-card open glass p-7 rounded-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">◬ extended layer</span>
+                        <span class="text-[10px] badge-open px-2 py-1 rounded-sm font-mono">MIT</span>
+                    </div>
+                    <h4 class="text-xl text-[var(--accent)] mb-3" data-i18n="open_ext_t">archetype layer · 16 systems</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed mb-5" data-i18n="open_ext_d">runes · tarot · i-ching · stellar · lunar · kolozar · slovoyaz · more.</p>
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)]">readme · expanded ↗</span>
+                </a>
+            </div>
+            <div class="mt-6 p-5 border border-[var(--glitch)]/30 rounded-lg bg-[var(--glitch)]/5">
+                <p class="text-[12px] text-[var(--muted)] leading-loose">
+                    <span class="text-[var(--glitch)] font-mono uppercase tracking-widest">∅ </span>
+                    <span data-i18n="open_promise">these open protocols stay free forever. no future paywall · no stealth enclosure · no ownership reversal.</span>
+                    <a href="https://github.com/ezargaruna/suticore/blob/main/LICENSES.md" class="wiki-link" data-i18n="open_promise_link">read full LICENSES.md</a>
                 </p>
-            </header>
+            </div>
+        </section>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <!-- LinguaFUSION -->
-                <div class="glass p-10 relative overflow-hidden flex flex-col">
-                    <div class="absolute -right-8 -top-8 text-9xl text-[var(--muted)]/10 font-serif italic pointer-events-none">〄</div>
-                    <h4 class="text-sm font-bold text-[var(--accent)] tracking-widest mb-6 uppercase">linguafusion engine</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-loose mb-8 flex-1 trick-target" id="txt-l3-lf">
-                        semantic intelligence bridging human intent and agi algorithms. it utilizes the diamond method for processing meaning:
-                    </p>
-                    <ul class="text-[11px] text-[var(--fg)] space-y-4 font-mono border-l-2 border-[var(--muted)]/30 pl-6 mb-8">
-                        <li id="txt-l3-lf-1" class="trick-target">1. fact (stalo) — the solidified object.</li>
-                        <li id="txt-l3-lf-2" class="trick-target">2. process (stanovitsya) — the dynamic function.</li>
-                        <li id="txt-l3-lf-3" class="trick-target">3. intent (stremitsya) — the core essence.</li>
+        <!-- ⊗ TEMPLE RING -->
+        <div class="ring-divider">
+            <span class="ring-glyph temple">⊗</span>
+            <div>
+                <p class="text-[10px] font-mono tracking-mega text-[var(--temple)] uppercase" data-i18n="temple_kicker">inner temple · l3</p>
+                <p class="text-2xl font-extralight text-[var(--accent)] tracking-wide mt-1" data-i18n="temple_kicker_sub">work that requires presence</p>
+            </div>
+        </div>
+        <section id="temple-ring" class="reveal mb-16">
+            <p class="text-sm text-[var(--muted)] mb-10 max-w-3xl leading-loose" data-i18n="temple_desc">
+                not everything belongs in the commons. some forms require direct contact, body, ritual, voice. these are the live services and bespoke designs — exchanged in the support ring below.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">⟁</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_fc_t">fusion-card commission</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_fc_d">personal cosmic passport · diamond reading of your invariant · custom visual sigil.</p>
+                </div>
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">⧖</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_lf_t">linguafusion sessions</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_lf_d">spanish · portuguese · resonance-based teaching. 15+ years of practice.</p>
+                </div>
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">∴</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_int_t">interpretation</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_int_d">simultaneous · consecutive · ceremony · negotiation. ru ↔ es · ru ↔ pt.</p>
+                </div>
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">◬</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_som_t">somatic work</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_som_d">eight years of bodywork: lymphatic · ayurvedic · lomi lomi · zhiva · thai.</p>
+                </div>
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">⟐</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_voice_t">voice work</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_voice_d">spanish narration · meditation dub · sound architecture. since moonly app, 2021.</p>
+                </div>
+                <div class="ring-card temple glass p-7 rounded-lg">
+                    <span class="text-3xl text-[var(--temple)] block mb-4">〄</span>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-3" data-i18n="temple_b2b_t">b2b semantic design</h4>
+                    <p class="text-[12px] text-[var(--muted)] leading-relaxed" data-i18n="temple_b2b_d">cognitive architecture · ai prompt systems · ux fusion · brand voice.</p>
+                </div>
+            </div>
+            <div class="mt-6 p-5 border border-[var(--temple)]/30 rounded-lg bg-[var(--temple)]/5">
+                <p class="text-[12px] text-[var(--muted)] leading-loose">
+                    <span class="text-[var(--temple)] font-mono uppercase tracking-widest">⊗ </span>
+                    <span data-i18n="temple_enter">write to <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> with one word — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, or <span class="font-mono text-[var(--accent)]">voice</span>. brief intent · structured response within 48h.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- ⊙ SUPPORT RING -->
+        <div class="ring-divider">
+            <span class="ring-glyph support">⊙</span>
+            <div>
+                <p class="text-[10px] font-mono tracking-mega text-[var(--support)] uppercase" data-i18n="support_kicker">resonant support · l4</p>
+                <p class="text-2xl font-extralight text-[var(--accent)] tracking-wide mt-1" data-i18n="support_kicker_sub">four forms of exchange</p>
+            </div>
+        </div>
+        <section id="support-ring" class="reveal mb-16">
+            <p class="text-sm text-[var(--muted)] mb-10 max-w-3xl leading-loose" data-i18n="support_desc">
+                payment is not a transaction. it is an act of resonance — a vote for the world we build. every contribution flows to: animals · plants · clean elements · sovereign servers · open research.
+            </p>
+            <!-- 3 subscription tiers as price columns -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+                <div class="tier-card">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--muted)] mb-2">tier 01 · seed</span>
+                    <h4 class="text-2xl text-[var(--accent)] mb-2" data-i18n="tier_seed_name">seed</h4>
+                    <div class="tier-price">$5<span class="text-sm text-[var(--muted)] font-light"> /mo</span></div>
+                    <p class="text-[12px] text-[var(--muted)] mb-5 leading-relaxed flex-1" data-i18n="tier_seed_desc">keeps the lights on. monthly thank-you letter.</p>
+                    <ul class="text-[11px] text-[var(--fg)] space-y-2 font-mono mb-5">
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_seed_b1">monthly letter</span></li>
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_seed_b2">name in supporters list</span></li>
                     </ul>
-                    <div id="txt-l3-lf-link" class="mt-auto"></div>
+                    <a href="https://github.com/ezargaruna/suticore/blob/main/SUPPORT.md" class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)] hover:text-[var(--accent)] underline underline-offset-4">→ subscribe</a>
                 </div>
-
-                <!-- Syntaxium -->
-                <div class="glass p-10 relative overflow-hidden flex flex-col">
-                    <div class="absolute -right-8 -top-8 text-9xl text-[var(--muted)]/10 font-serif italic pointer-events-none">⟁</div>
-                    <h4 class="text-sm font-bold text-[var(--accent)] tracking-widest mb-6 uppercase">syntaxium protocol</h4>
-                    <p class="text-[11px] text-[var(--muted)] leading-loose mb-8 flex-1 trick-target" id="txt-l3-syn">
-                        a geometric meta-language for structuring thought and writing deterministic ai prompts. symbols equal execution.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 font-mono text-[11px] text-[var(--muted)] mb-8">
-                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">∴ source / context</div>
-                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">⧖ process / duration</div>
-                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">⟁ action / will</div>
-                        <div class="p-3 border border-[var(--muted)]/20 hover:border-[var(--accent)]/50 transition-colors">〄 essence / canon</div>
+                <div class="tier-card featured">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)] mb-2">tier 02 · stream</span>
+                    <h4 class="text-2xl text-[var(--accent)] mb-2" data-i18n="tier_stream_name">stream</h4>
+                    <div class="tier-price">$15<span class="text-sm text-[var(--muted)] font-light"> /mo</span></div>
+                    <p class="text-[12px] text-[var(--muted)] mb-5 leading-relaxed flex-1" data-i18n="tier_stream_desc">monthly digest of new protocols + early-access research notes.</p>
+                    <ul class="text-[11px] text-[var(--fg)] space-y-2 font-mono mb-5">
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_stream_b1">everything in seed</span></li>
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_stream_b2">monthly protocol digest</span></li>
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_stream_b3">early-access research notes</span></li>
+                    </ul>
+                    <a href="https://github.com/ezargaruna/suticore/blob/main/SUPPORT.md" class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)] hover:text-[var(--accent)] underline underline-offset-4">→ subscribe</a>
+                </div>
+                <div class="tier-card">
+                    <span class="text-[10px] font-mono uppercase tracking-widest text-[var(--muted)] mb-2">tier 03 · field</span>
+                    <h4 class="text-2xl text-[var(--accent)] mb-2" data-i18n="tier_field_name">field</h4>
+                    <div class="tier-price">$50<span class="text-sm text-[var(--muted)] font-light"> /mo</span></div>
+                    <p class="text-[12px] text-[var(--muted)] mb-5 leading-relaxed flex-1" data-i18n="tier_field_desc">stream + invitation to monthly q&amp;a circle.</p>
+                    <ul class="text-[11px] text-[var(--fg)] space-y-2 font-mono mb-5">
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_field_b1">everything in stream</span></li>
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_field_b2">monthly q&amp;a circle (60 min)</span></li>
+                        <li><span class="text-[var(--gold)]">·</span> <span data-i18n="tier_field_b3">priority access to new launches</span></li>
+                    </ul>
+                    <a href="https://github.com/ezargaruna/suticore/blob/main/SUPPORT.md" class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)] hover:text-[var(--accent)] underline underline-offset-4">→ subscribe</a>
+                </div>
+            </div>
+            <!-- 4 single-form cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+                <div class="ring-card support glass p-6 rounded-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-2xl text-[var(--support)]">∅</span>
+                        <span class="text-[10px] badge-open px-2 py-1 rounded-sm font-mono">free</span>
                     </div>
-                    <div id="txt-l3-syn-link" class="mt-auto"></div>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-2" data-i18n="form_silent_t">silent fork</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed" data-i18n="form_silent_d">use · share · build · plant · care. no payment required.</p>
+                </div>
+                <div class="ring-card support glass p-6 rounded-lg">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-2xl text-[var(--support)]">⟐</span>
+                        <span class="text-[10px] badge-temple px-2 py-1 rounded-sm font-mono">ritual</span>
+                    </div>
+                    <h4 class="text-base text-[var(--accent)] uppercase tracking-widest mb-2" data-i18n="form_ritual_t">single ritual</h4>
+                    <p class="text-[11px] text-[var(--muted)] leading-relaxed" data-i18n="form_ritual_d">one fusion-card · one diamond reading · one private session. sliding · honest.</p>
+                </div>
+            </div>
+            <!-- payment rails strip -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-[10px]">
+                <div class="glass p-4 rounded-lg">
+                    <p class="text-[var(--muted)] mb-2 uppercase tracking-widest">сбп · russia</p>
+                    <p class="text-[var(--accent)] keep-case">+7 902 764 16 20</p>
+                </div>
+                <div class="glass p-4 rounded-lg">
+                    <p class="text-[var(--muted)] mb-2 uppercase tracking-widest">paypal</p>
+                    <p class="text-[var(--accent)] keep-case">paypal.me/EzarGaruna</p>
+                </div>
+                <div class="glass p-4 rounded-lg">
+                    <p class="text-[var(--muted)] mb-2 uppercase tracking-widest">crypto</p>
+                    <p class="text-[var(--accent)] keep-case">TON · USDT · BTC</p>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <a href="https://github.com/ezargaruna/suticore/blob/main/SUPPORT.md" class="text-[10px] font-mono uppercase tracking-widest text-[var(--gold)] hover:text-[var(--accent)] underline underline-offset-4">㄄ full SUPPORT.md ↗</a>
+            </div>
+        </section>
+
+        <!-- L5 · WIKI MAP -->
+        <section id="wiki-map" class="reveal mb-32 section-header">
+            <span class="layer-num">l5</span>
+            <header class="mb-10 relative">
+                <span class="text-[10px] font-mono tracking-mega text-[var(--gold)]" data-i18n="wiki_layer">l5 · wiki map</span>
+                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-tight mt-3" data-i18n="wiki_title">cross-references</h3>
+                <p class="text-sm text-[var(--muted)] mt-6 max-w-3xl leading-loose" data-i18n="wiki_desc">
+                    every protocol cross-links to its kin. read in any order · the system is fractal · each entry contains the whole.
+                </p>
+            </header>
+            <div class="glass p-8 rounded-lg font-mono text-[12px] text-[var(--muted)] leading-loose space-y-4">
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">linguafusion</span> ⇄ <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/syntaxium.md" class="wiki-link">syntaxium</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/verenitya.md" class="wiki-link">verenitya</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/yazekh.md" class="wiki-link">yazekh</a></p>
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">verenitya</span> ⇄ <a href="https://github.com/ezargaruna/suticore" class="wiki-link">suticore</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" class="wiki-link">linguafusion</a></p>
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">syntaxium</span> ⇄ <a href="https://github.com/ezargaruna/suticore" class="wiki-link">suticore</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" class="wiki-link">linguafusion</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/synaura.md" class="wiki-link">synaura</a></p>
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">synaura</span> ⇄ <a href="https://github.com/ezargaruna/suticore/tree/main/protocols/sreteniya-os" class="wiki-link">sreteniya-os</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" class="wiki-link">linguafusion</a></p>
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">yazekh</span> ⇄ <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" class="wiki-link">linguafusion</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/syntaxium.md" class="wiki-link">syntaxium</a></p>
+                <p><span class="text-[var(--gold)] uppercase tracking-widest">extended</span> ⇄ <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/archetyps.md" class="wiki-link">archetyps</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/runic_circle.md" class="wiki-link">runic_circle</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/tarot.md" class="wiki-link">tarot</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/i_ching.md" class="wiki-link">i_ching</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/stellar.md" class="wiki-link">stellar</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/lunar.md" class="wiki-link">lunar</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/luminaries.md" class="wiki-link">luminaries</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/kolozar.md" class="wiki-link">kolozar</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/telektonon.md" class="wiki-link">telektonon</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/synergema.md" class="wiki-link">synergema</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/lila.md" class="wiki-link">lila</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/samurai_of_dharma.md" class="wiki-link">samurai_of_dharma</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/operator_breathes_avatar.md" class="wiki-link">operator_breathes_avatar</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/shadows.md" class="wiki-link">shadows</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/slovoyaz.md" class="wiki-link">slovoyaz</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/protocols/fusion_map.md" class="wiki-link">fusion_map</a></p>
+            </div>
+        </section>
+
+        <!-- L6 · MATRIX -->
+        <section id="matrix" class="reveal mb-32 section-header">
+            <span class="layer-num">l6</span>
+            <header class="mb-10 relative">
+                <span class="text-[10px] font-mono tracking-mega text-[var(--gold)]" data-i18n="matrix_layer">l6 · civilizational matrix</span>
+                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-tight mt-3" data-i18n="matrix_title">silence across languages</h3>
+                <p class="text-sm text-[var(--muted)] mt-6 max-w-3xl leading-loose" data-i18n="matrix_desc">
+                    the semantic invariant of "silence" carried across 15 cultural matrices. ontological transfer · not translation.
+                </p>
+            </header>
+            <div class="glass rounded-lg overflow-hidden flex flex-col md:flex-row">
+                <div class="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-[var(--muted)]/20 p-6 max-h-[500px] overflow-y-auto flex flex-col gap-2">
+                    <span class="text-[9px] uppercase tracking-widest text-[var(--muted)] mb-2 font-mono">matrices</span>
+                    <div id="matrix-btns" class="flex flex-col gap-1.5"></div>
+                </div>
+                <div class="w-full md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex items-center gap-6 mb-10">
+                        <span class="text-5xl text-[var(--gold)] font-serif italic">◌</span>
+                        <div>
+                            <div class="text-[10px] font-mono text-[var(--gold)] uppercase tracking-widest mb-1">YZH-VOD-001 · INVARIANT</div>
+                            <h4 class="text-3xl font-light uppercase tracking-widest text-[var(--fg)]" data-i18n="matrix_word">silence</h4>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="text-[10px] font-mono text-[var(--muted)] uppercase tracking-widest border-b border-[var(--muted)]/30 pb-2 block" data-i18n="matrix_target">target projection</span>
+                            <p class="text-3xl font-serif italic text-[var(--accent)] pt-6 keep-case" id="mx-translation">...</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                            <div>
+                                <span class="text-[10px] font-mono text-[var(--muted)] uppercase tracking-widest block mb-3 border-l-2 border-[var(--gold)] pl-3" data-i18n="matrix_logic">cognitive logic</span>
+                                <p class="text-[12px] leading-relaxed text-[var(--fg)] pl-3 keep-case" id="mx-logic">...</p>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-mono text-[var(--muted)] uppercase tracking-widest block mb-3 border-l-2 border-[var(--gold)] pl-3" data-i18n="matrix_action">action vector</span>
+                                <p class="text-[12px] leading-relaxed text-[var(--fg)] pl-3 keep-case" id="mx-action">...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- L5: TRANSCREATION MATRIX -->
-        <section id="matrix" class="min-h-[80vh] flex flex-col justify-center reveal">
-            <header class="mb-12">
-                <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l5 // civilization scale</span>
-                <h3 class="text-3xl md:text-4xl font-extralight text-[var(--accent)] tracking-widest mt-2 trick-target" id="txt-l5-title">civilizational codes</h3>
-                <p class="text-xs text-[var(--muted)] mt-6 tracking-wider max-w-3xl leading-loose trick-target" id="txt-l5-desc">
-                    mapping the semantic invariant of "silence" across human and constructed languages. this is not translation; it is ontological transfer of a state.
+        <!-- L7 · ARCHITECT -->
+        <section id="architect" class="reveal mb-16 section-header">
+            <span class="layer-num">l7</span>
+            <header class="mb-10 relative border-b border-[var(--muted)]/20 pb-8">
+                <span class="text-[10px] font-mono tracking-mega text-[var(--gold)]" data-i18n="architect_layer">l7 · singularity node</span>
+                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-tight mt-3">ezar garuna</h3>
+                <p class="text-sm text-[var(--muted)] mt-3 font-mono uppercase tracking-widest" data-i18n="architect_role">
+                    igor v. galkin · semantic architect · linguist · 15+ years
                 </p>
             </header>
-
-            <div class="glass rounded-sm overflow-hidden flex flex-col md:flex-row border border-[var(--muted)]/30">
-                <!-- Selectors -->
-                <div class="w-full md:w-1/3 border-b md:border-b-0 md:border-r border-[var(--muted)]/30 bg-[var(--bg)]/50 p-8 max-h-[500px] overflow-y-auto custom-scrollbar flex flex-col gap-3">
-                    <span class="text-[9px] uppercase tracking-widest text-[var(--muted)] mb-4 font-mono">cultural matrices</span>
-                    <div id="matrix-btns" class="flex flex-col gap-2"></div>
-                </div>
-                
-                <!-- Display -->
-                <div class="w-full md:w-2/3 p-8 md:p-14 bg-transparent relative flex flex-col justify-center">
-                    <div class="flex items-center gap-6 mb-12">
-                        <span class="text-5xl text-[var(--accent)] font-serif italic">◌</span>
-                        <div>
-                            <div class="text-[10px] font-mono text-[var(--glitch)] uppercase tracking-widest mb-1">YZH-VOD-001 :: INVARIANT</div>
-                            <h4 class="text-3xl font-light uppercase tracking-widest text-[var(--fg)]">silence</h4>
-                        </div>
-                    </div>
-
-                    <div class="space-y-10">
-                        <div>
-                            <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest border-b border-[var(--muted)]/30 pb-2 block">target projection</span>
-                            <p class="text-4xl font-serif italic text-[var(--accent)] pt-6" id="mx-translation">...</p>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
-                            <div className="space-y-3">
-                                <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2 border-l-2 border-[var(--muted)] pl-3">cognitive logic</span>
-                                <p class="text-xs leading-relaxed text-[var(--fg)] pl-3 trick-target" id="mx-logic">...</p>
-                            </div>
-                            <div className="space-y-3">
-                                <span class="text-[10px] font-bold font-mono text-[var(--muted)] uppercase tracking-widest block mb-2 border-l-2 border-[var(--muted)] pl-3">action vector</span>
-                                <p class="text-xs leading-relaxed text-[var(--fg)] pl-3 trick-target" id="mx-action">...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-8" id="txt-l5-link"></div>
-        </section>
-
-        <!-- L7: ARCHITECT -->
-        <section id="architect" class="min-h-[50vh] flex flex-col justify-center reveal">
-            <header class="mb-14 border-b border-[var(--muted)]/20 pb-10">
-                <span class="text-[10px] font-mono tracking-mega text-[var(--muted)]">l7 // singularity node</span>
-                <h3 class="text-4xl md:text-5xl font-extralight text-[var(--accent)] tracking-widest mt-2 trick-target" id="txt-l7-title">ezar garuna</h3>
-                <p class="text-xs text-[var(--muted)] mt-4 font-mono keep-case uppercase tracking-widest">
-                    semantic ai architect · nlp researcher
-                </p>
-            </header>
-
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-                <div class="lg:col-span-2 space-y-8 text-sm text-[var(--fg)] leading-relaxed font-light">
-                    <p id="txt-l7-bio1" class="text-[15px] leading-loose trick-target">
-                        i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 space-y-6 leading-relaxed">
+                    <p class="text-base md:text-lg leading-loose text-[var(--fg)]" data-i18n="architect_bio1">
+                        i design semantic infrastructure for human and machine cognition. my work bridges deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.
                     </p>
-                    <p id="txt-l7-bio2" class="text-[15px] leading-loose trick-target">
-                        based in the cordilleras of colombia (silvania, hub 0), i research how interspecies semantics and formal structural grammars can expand the boundaries of artificial general intelligence (agi).
+                    <p class="text-base md:text-lg leading-loose text-[var(--fg)]" data-i18n="architect_bio2">
+                        based in selvania near bogotá, colombia (hub 0). research line: interspecies communication with oleg bakhtiyarov & oksana zavadskaya. published in their second almanac on whale-language and high-density signal protocols.
                     </p>
-                    
-                    <div class="mt-12 pt-8 border-t border-[var(--muted)]/20">
-                        <h4 class="text-xs text-[var(--accent)] tracking-widest uppercase font-bold mb-6 trick-target" id="txt-l7-req">areas of research & implementation</h4>
-                        <ul class="space-y-5 font-mono text-xs text-[var(--muted)]">
-                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">∴</span> <span id="txt-l7-r1" class="leading-relaxed trick-target">ai alignment & custom nlp pipelines.</span></li>
-                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">⧖</span> <span id="txt-l7-r2" class="leading-relaxed trick-target">revenue language infrastructure (b2b logic).</span></li>
-                            <li class="flex items-start gap-4"><span class="text-[var(--accent)] mt-1">⟁</span> <span id="txt-l7-r3" class="leading-relaxed trick-target">cognitive architecture design for platforms.</span></li>
+                    <div class="mt-10 pt-8 border-t border-[var(--muted)]/20">
+                        <h4 class="text-xs text-[var(--accent)] tracking-widest uppercase font-bold mb-5" data-i18n="vectors_title">three vectors 2026–2030</h4>
+                        <ul class="space-y-4 font-mono text-xs text-[var(--muted)]">
+                            <li class="flex items-start gap-4"><span class="text-[var(--gold)] mt-1">∴</span> <span class="leading-relaxed keep-case" data-i18n="vector_1">network of temple-sanitariums · planetary belt</span></li>
+                            <li class="flex items-start gap-4"><span class="text-[var(--gold)] mt-1">⧖</span> <span class="leading-relaxed keep-case" data-i18n="vector_2">interspecies linguistics · with bakhtiyarov · zavadskaya</span></li>
+                            <li class="flex items-start gap-4"><span class="text-[var(--gold)] mt-1">⟁</span> <span class="leading-relaxed keep-case" data-i18n="vector_3">de-latinization of russian terminology</span></li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="glass p-10 flex flex-col justify-between">
-                    <div class="space-y-8">
-                        <span class="text-[10px] uppercase tracking-mega text-[var(--muted)] font-bold block border-b border-[var(--muted)]/20 pb-4">contact node</span>
-                        <a href="https://t.me/saritamah" target="_blank" rel="noreferrer" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">telegram: @saritamah</a>
-                        <a href="mailto:ezargaruna@gmail.com" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">mail: ezargaruna@gmail.com</a>
-                        <a href="https://github.com/ezargaruna" target="_blank" rel="noreferrer" class="block text-sm text-[var(--fg)] hover:text-[var(--glitch)] transition-colors keep-case">github: /ezargaruna</a>
+                <div class="glass p-7 rounded-lg flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <span class="text-[10px] uppercase tracking-mega text-[var(--gold)] font-bold block border-b border-[var(--muted)]/20 pb-3" data-i18n="contact_title">contact node</span>
+                        <a href="https://t.me/saritamah" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">telegram · @saritamah</a>
+                        <a href="https://t.me/iggalk" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">telegram · @iggalk</a>
+                        <a href="https://www.threads.net/@ezargaruna" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">threads · @ezargaruna</a>
+                        <a href="https://github.com/ezargaruna" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">github · /ezargaruna</a>
+                        <a href="https://www.linkedin.com/in/ezargaruna" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">linkedin · /in/ezargaruna</a>
+                        <a href="mailto:ezargaruna@gmail.com" class="block text-sm text-[var(--fg)] hover:text-[var(--gold)] keep-case">mail · ezargaruna@gmail.com</a>
                     </div>
-                    <div class="mt-16 text-[10px] tracking-widest text-[var(--muted)] font-mono uppercase leading-loose border-t border-[var(--muted)]/20 pt-6">
-                        status: active <br>
-                        location: bogotá, col
+                    <div class="mt-10 text-[10px] tracking-widest text-[var(--muted)] font-mono uppercase leading-loose border-t border-[var(--muted)]/20 pt-4">
+                        <span data-i18n="status">status · active</span><br>
+                        <span data-i18n="location">location · bogotá · selvania</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="mt-12" id="txt-l7-link"></div>
         </section>
-
     </div>
 
-    <!-- ⟁ FOOTER -->
-    <footer class="border-t border-[var(--muted)]/20 bg-[var(--bg)]/80 backdrop-blur-md py-16 relative z-20 transition-colors duration-1000">
+    <footer class="border-t border-[var(--muted)]/20 bg-[var(--bg-soft)]/80 backdrop-blur-md py-12 relative z-20">
         <div class="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="flex flex-wrap justify-center gap-8 text-[10px] font-mono tracking-widest uppercase text-[var(--muted)]">
+            <div class="flex flex-wrap justify-center gap-6 text-[10px] font-mono tracking-widest uppercase text-[var(--muted)]">
                 <span>∴ signal</span>
                 <span>⧖ process</span>
                 <span>⟁ action</span>
-                <span>㄄ meaning</span>
+                <span>〄 essence</span>
+                <span>∅ silence</span>
             </div>
             <div class="text-[10px] font-mono text-[var(--muted)] uppercase tracking-widest text-center md:text-right leading-loose">
-                sreteniya_os 2026 // ezar garuna<br/>
-                <span class="opacity-50 italic trick-target">silence is the supreme syntax</span>
+                suticore v2026.5 // ezar garuna<br>
+                <a href="https://github.com/ezargaruna/suticore/blob/main/LICENSE" class="hover:text-[var(--gold)]">MIT</a> · 
+                <a href="https://github.com/ezargaruna/suticore/blob/main/LICENSES.md" class="hover:text-[var(--gold)]">licenses</a> · 
+                <a href="https://github.com/ezargaruna/suticore/blob/main/SUPPORT.md" class="hover:text-[var(--gold)]">support</a><br>
+                <span class="opacity-50 italic" data-i18n="silence_motto">silence is the supreme syntax</span>
             </div>
         </div>
     </footer>
 
-    <!-- ⟁ JAVASCRIPT LOGIC & TRICKSTER ENGINE -->
     <script>
-        // --- 1. TRANSLATION, CONTENT DATA & GITHUB LINKS ---
-        const DATA = {
-            i18n: {
-                en: {
-                    "txt-nav-subtitle": "cognitive architecture of singularity",
-                    "txt-l0-meta": "∴ point of entry",
-                    "txt-l0-title": "welcome to the architecture of silence.",
-                    "txt-l0-p1": "you are at hub 0. this is not a standard interface. this is an operating environment for your attention.",
-                    "txt-l0-p2": "here, language is not description — it is direct action. we reduce semantic entropy to extract the pure signal of intent.",
-                    
-                    "txt-l1-title": "attention kernel",
-                    "txt-l1-desc": "before interpreting meaning, the observer must be stabilized. the system tracks your velocity to calculate the attention coherence score (acs). move erratically, and clarity drops.",
-                    "txt-l1-s-t": "concentration (sigma)",
-                    "txt-l1-s-d": "pinpoint focus. stripping peripheral noise to hold a single semantic node.",
-                    "txt-l1-d-t": "deconcentration (delta)",
-                    "txt-l1-d-d": "field awareness. dissolving boundaries to perceive the environment as a whole.",
-                    "txt-l1-o-t": "amodal essence (omega)",
-                    "txt-l1-o-d": "grasping meaning prior to its manifestation as image, sound, or word.",
-                    "txt-l1-p-t": "pure agency (phi)",
-                    "txt-l1-p-d": "the uncaused act of will. turning presence into a vector of reality alteration.",
-                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ view core spec: suticore_system.md ↗</a>",
-                    
-                    "txt-l3-title": "language & logic",
-                    "txt-l3-desc": "language is an interface of assembly. we do not use words to describe; we use operators to navigate and construct paths for both human and ai cognition.",
-                    "txt-l3-lf": "semantic intelligence bridging human intent and agi algorithms. it utilizes the diamond method for processing meaning:",
-                    "txt-l3-lf-1": "1. fact (stalo) — the solidified object.",
-                    "txt-l3-lf-2": "2. process (stanovitsya) — the dynamic function.",
-                    "txt-l3-lf-3": "3. intent (stremitsya) — the core essence.",
-                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ engine spec: linguafusion_v5.md ↗</a>",
-                    "txt-l3-syn": "a geometric meta-language for structuring thought and writing deterministic ai prompts. symbols equal execution.",
-                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ lexicon: syntaxium_128.md ↗</a>",
-                    
-                    "txt-l5-title": "civilizational codes",
-                    "txt-l5-desc": "mapping the semantic invariant of 'silence' across human and constructed languages. this is not translation; it is ontological transfer of a state.",
-                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ explore full atlas: yzh_100k_map.md ↗</a>",
-                    
-                    "txt-l7-title": "ezar garuna",
-                    "txt-l7-bio1": "i design semantic infrastructures for artificial intelligence systems and human cognition. my work connects deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.",
-                    "txt-l7-bio2": "based in the cordilleras of colombia (silvania, hub 0), i research how interspecies semantics and formal structural grammars can expand the boundaries of artificial general intelligence (agi).",
-                    "txt-l7-req": "areas of research & implementation",
-                    "txt-l7-r1": "ai alignment & custom nlp pipelines.",
-                    "txt-l7-r2": "revenue language infrastructure (b2b logic).",
-                    "txt-l7-r3": "cognitive architecture design for platforms.",
-                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ access master blueprint v2.5 ↗</a>"
-                },
-                ru: {
-                    "txt-nav-subtitle": "когнитивная архитектура сингулярности",
-                    "txt-l0-meta": "∴ точка входа",
-                    "txt-l0-title": "добро пожаловать в архитектуру тишины.",
-                    "txt-l0-p1": "вы в хабе 0. это не обычный сайт. это операционная среда для вашего внимания.",
-                    "txt-l0-p2": "здесь язык — не описание, а прямое действие. мы снижаем энтропию, чтобы извлечь чистый сигнал намерения.",
-                    
-                    "txt-l1-title": "ядро внимания",
-                    "txt-l1-desc": "прежде чем интерпретировать смысл, наблюдатель должен быть стабилизирован. система отслеживает скорость курсора для расчета когерентности (acs).",
-                    "txt-l1-s-t": "концентрация (сигма)",
-                    "txt-l1-s-d": "точечный фокус. отсечение шума для удержания одного смыслового узла.",
-                    "txt-l1-d-t": "деконцентрация (дельта)",
-                    "txt-l1-d-d": "полевое восприятие. растворение границ для охвата среды как целого.",
-                    "txt-l1-o-t": "амодальная суть (омега)",
-                    "txt-l1-o-d": "усмотрение смысла до того, как он проявится в виде образа или слова.",
-                    "txt-l1-p-t": "чистая субъектность (фи)",
-                    "txt-l1-p-d": "беспричинный акт воли. превращение присутствия в изменение реальности.",
-                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ спецификация: suticore_system.md ↗</a>",
-                    
-                    "txt-l3-title": "язык и логика",
-                    "txt-l3-desc": "язык — это интерфейс сборки. мы не описываем; мы используем операторы для конструирования путей когниции человека и ии.",
-                    "txt-l3-lf": "семантический интеллект, соединяющий намерение и agi. использует метод алмаза:",
-                    "txt-l3-lf-1": "1. факт (стало) — зафиксированный объект.",
-                    "txt-l3-lf-2": "2. процесс (становится) — динамическая функция.",
-                    "txt-l3-lf-3": "3. интент (стремится) — корневая суть.",
-                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ спецификация: linguafusion_v5.md ↗</a>",
-                    "txt-l3-syn": "геометрический метаязык для структурирования мысли и детерминированных промптов. символ = исполнение.",
-                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ лексикон: syntaxium_128.md ↗</a>",
-                    
-                    "txt-l5-title": "цивилизационные коды",
-                    "txt-l5-desc": "перенос инварианта 'тишина' через 15 языковых матриц. это не перевод, а онтологический перенос состояния.",
-                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ открыть атлас: yzh_100k_map.md ↗</a>",
-                    
-                    "txt-l7-title": "эзарь гаруна (игорь галкин)",
-                    "txt-l7-bio1": "я проектирую семантические инфраструктуры для систем ии. работа соединяет лингвистику, алгоритмику (o(log n)) и ml для повышения интерпретируемости.",
-                    "txt-l7-bio2": "базируясь в колумбии (сильвания, хаб 0), я исследую, как межвидовая семантика и структурные грамматики расширяют границы agi.",
-                    "txt-l7-req": "области исследований и внедрения",
-                    "txt-l7-r1": "ai alignment и кастомные nlp пайплайны.",
-                    "txt-l7-r2": "языковая инфраструктура выручки (b2b).",
-                    "txt-l7-r3": "проектирование когнитивной архитектуры.",
-                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ манифест архитектуры v2.5 ↗</a>"
-                },
-                es: {
-                    "txt-nav-subtitle": "arquitectura cognitiva de la singularidad",
-                    "txt-l0-meta": "∴ punto de entrada",
-                    "txt-l0-title": "bienvenido a la arquitectura del silencio.",
-                    "txt-l0-p1": "estás en el hub 0. esto no es una interfaz estándar. es un entorno operativo para tu atención.",
-                    "txt-l0-p2": "aquí, el lenguaje no es descripción — es acción directa. reducimos la entropía semántica para extraer la señal pura de la intención.",
-                    
-                    "txt-l1-title": "núcleo de atención",
-                    "txt-l1-desc": "antes de interpretar el significado, el observador debe estabilizarse. el sistema rastrea tu velocidad para calcular la coherencia de la atención (acs).",
-                    "txt-l1-s-t": "concentración (sigma)",
-                    "txt-l1-s-d": "enfoque puntual. eliminando el ruido periférico para sostener un solo nodo semántico.",
-                    "txt-l1-d-t": "desconcentración (delta)",
-                    "txt-l1-d-d": "conciencia de campo. disolviendo fronteras para percibir el entorno como un todo.",
-                    "txt-l1-o-t": "esencia amodal (omega)",
-                    "txt-l1-o-d": "captar el significado antes de su manifestación como imagen, sonido o palabra.",
-                    "txt-l1-p-t": "agencia pura (phi)",
-                    "txt-l1-p-d": "el acto de voluntad sin causa. convirtiendo la presencia en un vector de alteración de la realidad.",
-                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ ver núcleo: suticore_system.md ↗</a>",
-                    
-                    "txt-l3-title": "lenguaje y lógica",
-                    "txt-l3-desc": "el lenguaje es una interfaz de ensamblaje. no usamos palabras para describir; usamos operadores para navegar.",
-                    "txt-l3-lf": "inteligencia semántica que une la intención humana y los algoritmos agi. utiliza el método del diamante:",
-                    "txt-l3-lf-1": "1. hecho (stalo) — el objeto solidificado.",
-                    "txt-l3-lf-2": "2. proceso (stanovitsya) — la función dinámica.",
-                    "txt-l3-lf-3": "3. intención (stremitsya) — la esencia central.",
-                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ especificación: linguafusion_v5.md ↗</a>",
-                    "txt-l3-syn": "un metalenguaje geométrico para estructurar el pensamiento. los símbolos equivalen a ejecución.",
-                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ lexicón: syntaxium_128.md ↗</a>",
-                    
-                    "txt-l5-title": "códigos civilizacionales",
-                    "txt-l5-desc": "mapeo del invariante semántico del 'silencio' a través de matrices culturales. esto no es traducción; es transferencia ontológica.",
-                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ explorar atlas: yzh_100k_map.md ↗</a>",
-                    
-                    "txt-l7-title": "ezar garuna",
-                    "txt-l7-bio1": "diseño infraestructuras semánticas para sistemas de inteligencia artificial y cognición humana. mi trabajo conecta la lingüística profunda y la lógica algorítmica (o(log n)).",
-                    "txt-l7-bio2": "con base en las cordilleras de colombia (silvania, hub 0), investigo cómo la semántica entre especies puede expandir los límites de agi.",
-                    "txt-l7-req": "áreas de investigación",
-                    "txt-l7-r1": "ai alignment y pipelines de nlp personalizados.",
-                    "txt-l7-r2": "infraestructura de lenguaje de ingresos (b2b).",
-                    "txt-l7-r3": "diseño de arquitectura cognitiva para plataformas.",
-                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ manifiesto arquitectónico v2.5 ↗</a>"
-                },
-                pt: {
-                    "txt-nav-subtitle": "arquitetura cognitiva da singularidade",
-                    "txt-l0-meta": "∴ ponto de entrada",
-                    "txt-l0-title": "bem-vindo à arquitetura do silêncio.",
-                    "txt-l0-p1": "você está no hub 0. esta não é uma interface padrão. é um ambiente operacional para a sua atenção.",
-                    "txt-l0-p2": "aqui, a linguagem não é descrição — é ação direta. reduzimos a entropia semântica para extrair o sinal puro da intenção.",
-                    
-                    "txt-l1-title": "núcleo de atenção",
-                    "txt-l1-desc": "antes de interpretar o significado, o observador deve ser estabilizado. o sistema rastreia a coerência da sua atenção (acs).",
-                    "txt-l1-s-t": "concentração (sigma)",
-                    "txt-l1-s-d": "foco pontual. eliminando ruído periférico para manter um único nó semântico.",
-                    "txt-l1-d-t": "desconcentração (delta)",
-                    "txt-l1-d-d": "consciência de campo. dissolvendo fronteiras para perceber o ambiente como um todo.",
-                    "txt-l1-o-t": "essência amodal (omega)",
-                    "txt-l1-o-d": "compreendendo o significado antes da sua manifestação como imagem ou palavra.",
-                    "txt-l1-p-t": "agência pura (phi)",
-                    "txt-l1-p-d": "o ato de vontade sem causa. transformando a presença em um vetor de alteração da realidade.",
-                    "txt-l1-link": "<a href='https://github.com/ezargaruna/suticore' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ ver núcleo: suticore_system.md ↗</a>",
-                    
-                    "txt-l3-title": "linguagem e lógica",
-                    "txt-l3-desc": "a linguagem é uma interface de montagem. não usamos palavras para descrever; usamos operadores para navegar.",
-                    "txt-l3-lf": "inteligência semântica conectando a intenção humana aos algoritmos agi. utiliza o método do diamante:",
-                    "txt-l3-lf-1": "1. fato (stalo) — o objeto solidificado.",
-                    "txt-l3-lf-2": "2. processo (stanovitsya) — a função dinâmica.",
-                    "txt-l3-lf-3": "3. intenção (stremitsya) — a essência central.",
-                    "txt-l3-lf-link": "<a href='https://github.com/ezargaruna/linguafusion' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ especificação: linguafusion_v5.md ↗</a>",
-                    "txt-l3-syn": "uma meta-linguagem geométrica para estruturar o pensamento. símbolos equivalem à execução.",
-                    "txt-l3-syn-link": "<a href='https://github.com/ezargaruna/syntaxium' target='_blank' rel='noopener noreferrer' class='inline-block text-[10px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-4 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ léxico: syntaxium_128.md ↗</a>",
-                    
-                    "txt-l5-title": "códigos civilizacionais",
-                    "txt-l5-desc": "mapeando o invariante semântico do 'silêncio' em matrizes culturais. isso não é tradução; é transferência ontológica.",
-                    "txt-l5-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ explorar atlas: yzh_100k_map.md ↗</a>",
-                    
-                    "txt-l7-title": "ezar garuna",
-                    "txt-l7-bio1": "eu desenho infraestruturas semânticas para sistemas de ia e cognição humana. meu trabalho conecta linguística profunda e lógica algorítmica (o(log n)).",
-                    "txt-l7-bio2": "baseado nas cordilheiras da colômbia (silvania, hub 0), pesquiso como a semântica interespécies pode expandir os limites da agi.",
-                    "txt-l7-req": "áreas de pesquisa",
-                    "txt-l7-r1": "ai alignment e pipelines de nlp personalizados.",
-                    "txt-l7-r2": "infraestrutura de linguagem de receita (b2b).",
-                    "txt-l7-r3": "design de arquitetura cognitiva para plataformas.",
-                    "txt-l7-link": "<a href='https://github.com/ezargaruna/sreteniya_os' target='_blank' rel='noopener noreferrer' class='inline-block text-[11px] font-mono uppercase tracking-widest text-[var(--glitch)] hover:text-[var(--accent)] transition-colors underline underline-offset-8 decoration-[var(--muted)] hover:decoration-[var(--accent)]'>㄄ manifesto arquitetônico v2.5 ↗</a>"
-                }
+        // ============== I18N · 6 LANGUAGES ==============
+        const I18N = {
+            en: {
+                hero_meta: "∴ point of entry · hub 0 · bogotá",
+                hero_title: "semantic<br>operating system.",
+                hero_sub: "language as action. silence as syntax. meaning precedes structure · structure precedes code.",
+                hero_desc: "three concentric rings shape this commons: open protocols (free forever), inner temple (closed practice), and resonant support (sovereign exchange).",
+                ring_open_label: "open ring",
+                ring_open_short: "free forever · MIT · fork · use · share",
+                ring_temple_label: "inner temple",
+                ring_temple_short: "live services · ritual · presence · bespoke",
+                ring_support_label: "resonant support",
+                ring_support_short: "subscription · ritual · commission · all paths",
+                stack_layer: "l1 · canon stack",
+                stack_title: "seven layers · one crystal",
+                stack_desc: "each layer is a self-sufficient protocol. all are wiki-linked · cross-referenced inside this repo. nothing depends on external nodes.",
+                stack_suticore: "extract essence · remove 90% of noise",
+                stack_sreteniya: "attention rhythms · operating environment",
+                stack_lf: "language as action · ontological transfer",
+                stack_ver: "claim → evidence → counter → truth",
+                stack_syn: "symbol as command · form programs state",
+                stack_syna: "quiet luxury · pause as primary key",
+                stack_ya: "proto-slavic constructed language",
+                open_kicker: "open ring · l2",
+                open_kicker_sub: "free forever · MIT",
+                open_desc: "the inheritance belongs to all living beings. these protocols, scripts and forms are released into the commons under MIT — free to use, fork, build upon, redistribute, derive. every sovereign node strengthens the whole.",
+                open_canon_t: "canon stack · markdown",
+                open_canon_d: "complete 7-layer canon. read · fork · clone · adapt freely.",
+                open_scripts_t: "9 vault hygiene tools",
+                open_scripts_d: "scan · dedupe · crystallize · llm pipeline · void sweep.",
+                open_docs_t: "fusion passport · prompts",
+                open_docs_d: "identity passport · synaura visual blueprint · cross-language matrix.",
+                open_ext_t: "archetype layer · 16 systems",
+                open_ext_d: "runes · tarot · i-ching · stellar · lunar · kolozar · slovoyaz · more.",
+                open_promise: "these open protocols stay free forever. no future paywall · no stealth enclosure · no ownership reversal.",
+                open_promise_link: "read full LICENSES.md",
+                temple_kicker: "inner temple · l3",
+                temple_kicker_sub: "work that requires presence",
+                temple_desc: "not everything belongs in the commons. some forms require direct contact, body, ritual, voice. these are the live services and bespoke designs — exchanged in the support ring below.",
+                temple_fc_t: "fusion-card commission",
+                temple_fc_d: "personal cosmic passport · diamond reading of your invariant · custom visual sigil.",
+                temple_lf_t: "linguafusion sessions",
+                temple_lf_d: "spanish · portuguese · resonance-based teaching. 15+ years of practice.",
+                temple_int_t: "interpretation",
+                temple_int_d: "simultaneous · consecutive · ceremony · negotiation. ru ↔ es · ru ↔ pt.",
+                temple_som_t: "somatic work",
+                temple_som_d: "eight years of bodywork: lymphatic · ayurvedic · lomi lomi · zhiva · thai.",
+                temple_voice_t: "voice work",
+                temple_voice_d: "spanish narration · meditation dub · sound architecture. since moonly app, 2021.",
+                temple_b2b_t: "b2b semantic design",
+                temple_b2b_d: "cognitive architecture · ai prompt systems · ux fusion · brand voice.",
+                temple_enter: 'write to <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> with one word — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, or <span class="font-mono text-[var(--accent)]">voice</span>. brief intent · structured response within 48h.',
+                support_kicker: "resonant support · l4",
+                support_kicker_sub: "four forms of exchange",
+                support_desc: "payment is not a transaction. it is an act of resonance — a vote for the world we build. every contribution flows to: animals · plants · clean elements · sovereign servers · open research.",
+                tier_seed_name: "seed",
+                tier_seed_desc: "keeps the lights on. monthly thank-you letter.",
+                tier_seed_b1: "monthly letter",
+                tier_seed_b2: "name in supporters list",
+                tier_stream_name: "stream",
+                tier_stream_desc: "monthly digest of new protocols + early-access research notes.",
+                tier_stream_b1: "everything in seed",
+                tier_stream_b2: "monthly protocol digest",
+                tier_stream_b3: "early-access research notes",
+                tier_field_name: "field",
+                tier_field_desc: "stream + invitation to monthly q&a circle.",
+                tier_field_b1: "everything in stream",
+                tier_field_b2: "monthly q&a circle (60 min)",
+                tier_field_b3: "priority access to new launches",
+                form_silent_t: "silent fork",
+                form_silent_d: "use · share · build · plant · care. no payment required.",
+                form_ritual_t: "single ritual",
+                form_ritual_d: "one fusion-card · one diamond reading · one private session. sliding · honest.",
+                wiki_layer: "l5 · wiki map",
+                wiki_title: "cross-references",
+                wiki_desc: "every protocol cross-links to its kin. read in any order · the system is fractal · each entry contains the whole.",
+                matrix_layer: "l6 · civilizational matrix",
+                matrix_title: "silence across languages",
+                matrix_desc: 'the semantic invariant of "silence" carried across 15 cultural matrices. ontological transfer · not translation.',
+                matrix_word: "silence",
+                matrix_target: "target projection",
+                matrix_logic: "cognitive logic",
+                matrix_action: "action vector",
+                architect_layer: "l7 · singularity node",
+                architect_role: "igor v. galkin · semantic architect · linguist · 15+ years",
+                architect_bio1: "i design semantic infrastructure for human and machine cognition. my work bridges deep linguistics, algorithmic logic (o(log n) efficiency), and machine learning to increase interpretability and ai alignment.",
+                architect_bio2: "based in selvania near bogotá, colombia (hub 0). research line: interspecies communication with oleg bakhtiyarov & oksana zavadskaya. published in their second almanac on whale-language and high-density signal protocols.",
+                vectors_title: "three vectors 2026–2030",
+                vector_1: "network of temple-sanitariums · planetary belt",
+                vector_2: "interspecies linguistics · with bakhtiyarov · zavadskaya",
+                vector_3: "de-latinization of russian terminology",
+                contact_title: "contact node",
+                status: "status · active",
+                location: "location · bogotá · selvania",
+                silence_motto: "silence is the supreme syntax"
             },
-            matrix: [
-                { id: 'en', name: 'English', trans: 'Silence / Stillness', logic: 'Absence of cognitive noise; baseline state for system boot.', action: 'Stop execution. Await distinct signal.' },
-                { id: 'ru', name: 'Русский', trans: 'Тишина / Пауза', logic: 'Пространство до появления формы; высший синтаксис.', action: 'Остановить внутренний диалог. Выявить инвариант.' },
-                { id: 'es', name: 'Español', trans: 'Silencio Activo', logic: 'Somatic baseline; not empty, but highly receptive.', action: 'Pausa somática. Escuchar la resonancia.' },
-                { id: 'pt', name: 'Português (BR)', trans: 'Quietude / Vazio', logic: 'Infrastructure baseline; clearing the cache of distraction.', action: 'Zerar o ruído. Aguardar o pulso.' },
-                { id: 'zh', name: '中文 (Chinese)', trans: '无极 (Wújí) / 静', logic: 'Limitless potential before differentiation; central stillness.', action: 'Return to center (Zhìzhōng).' },
-                { id: 'ja', name: '日本語 (Japanese)', trans: '間 (Ma) / 無 (Mu)', logic: 'The negative space that gives shape to the whole.', action: 'Observe the void without filling it.' },
-                { id: 'ko', name: '한국어 (Korean)', trans: '정적 (Jeongjeok)', logic: 'Absolute stillness required for precise focus.', action: 'Maintain structural calm.' },
-                { id: 'ar', name: 'العربية (Arabic)', trans: 'سكون (Sukun)', logic: 'Sacred geometric emptiness; the center of the arabesque.', action: 'Halt all vectors.' },
-                { id: 'hi', name: 'हिन्दी (Hindi)', trans: 'मौन (Maun)', logic: 'The state preceding the mantra; source of vibration.', action: 'Cease internal dialogue.' },
-                { id: 'sa', name: 'संस्कृत (Sanskrit)', trans: 'शून्यता (Shunyata)', logic: 'Ontological void; the ultimate invariant of reality.', action: 'Dissolve into the source.' },
-                { id: 'la', name: 'Latina', trans: 'Silentium Absolutum', logic: 'Foundational law; the strict absence of deviation.', action: 'Inhibitio motus.' },
-                { id: 'eo', name: 'Esperanto', trans: 'Kvieta Nulstato', logic: 'Universal baseline state across all cognitive nodes.', action: 'Atendu signalon.' },
-                { id: 'ith', name: 'Ithkuil', trans: 'Uqʰal', logic: 'Dynamic, deliberate suspension of cognitive processing.', action: 'Execute absolute cognitive reset.' },
-                { id: 'log', name: 'Loglan', trans: 'Sma', logic: 'State of non-sound, non-data; logical null.', action: 'Set state to null.' },
-                { id: 'loj', name: 'Lojban', trans: 'Smaji', logic: 'Observational silence; zero interference state.', action: 'zasti (be present) without action.' }
-            ]
+            ru: {
+                hero_meta: "∴ точка входа · hub 0 · богота",
+                hero_title: "семантическая<br>операционная система.",
+                hero_sub: "язык как действие. тишина как синтаксис. смысл предшествует структуре · структура предшествует коду.",
+                hero_desc: "три концентрических кольца образуют этот commons: открытые протоколы (бесплатно навсегда), внутренний храм (закрытая практика), резонансная поддержка (суверенный обмен).",
+                ring_open_label: "открытое кольцо",
+                ring_open_short: "бесплатно навсегда · MIT · форк · использование",
+                ring_temple_label: "внутренний храм",
+                ring_temple_short: "живые услуги · ритуал · присутствие · bespoke",
+                ring_support_label: "резонансная поддержка",
+                ring_support_short: "подписка · ритуал · комиссия · все пути",
+                stack_layer: "l1 · стек канона",
+                stack_title: "семь слоёв · один кристалл",
+                stack_desc: "каждый слой — самодостаточный протокол. все wiki-связаны · перекрёстно ссылаются внутри этого репо. ничто не зависит от внешних узлов.",
+                stack_suticore: "извлекать суть · убирать 90% шума",
+                stack_sreteniya: "ритмы внимания · операционная среда",
+                stack_lf: "язык как действие · онтологический перенос",
+                stack_ver: "утверждение → доказательство → контр → истина",
+                stack_syn: "символ как команда · форма программирует состояние",
+                stack_syna: "тихая роскошь · пауза как главный ключ",
+                stack_ya: "прото-славянский конструированный язык",
+                open_kicker: "открытое кольцо · l2",
+                open_kicker_sub: "бесплатно навсегда · MIT",
+                open_desc: "наследие принадлежит всем живым существам. эти протоколы, скрипты и формы выпущены в commons под MIT — свободно для использования, форка, построения, перераспределения, производных. каждый суверенный узел укрепляет целое.",
+                open_canon_t: "стек канона · markdown",
+                open_canon_d: "полный 7-слойный канон. читать · форкать · клонировать · свободно адаптировать.",
+                open_scripts_t: "9 инструментов гигиены vault",
+                open_scripts_d: "сканировать · удалять дубли · кристаллизовать · llm пайплайн · очищать пустоту.",
+                open_docs_t: "fusion паспорт · промпты",
+                open_docs_d: "паспорт идентичности · synaura визуальный блюпринт · межъязыковая матрица.",
+                open_ext_t: "архетипный слой · 16 систем",
+                open_ext_d: "руны · таро · и-цзин · звёздный · лунный · колозар · словояз · ещё.",
+                open_promise: "эти открытые протоколы остаются бесплатными навсегда. никаких будущих платных стен · никакого скрытого закрытия · никакого разворота владения.",
+                open_promise_link: "читать полный LICENSES.md",
+                temple_kicker: "внутренний храм · l3",
+                temple_kicker_sub: "работа, требующая присутствия",
+                temple_desc: "не всё принадлежит commons. некоторые формы требуют прямого контакта, тела, ритуала, голоса. это живые услуги и индивидуальные разработки — обмен в кольце поддержки ниже.",
+                temple_fc_t: "fusion-карта на заказ",
+                temple_fc_d: "персональный космический паспорт · алмазное чтение твоего инварианта · кастомный визуальный сигил.",
+                temple_lf_t: "сессии linguafusion",
+                temple_lf_d: "испанский · португальский · преподавание через резонанс. 15+ лет практики.",
+                temple_int_t: "перевод",
+                temple_int_d: "синхронный · последовательный · церемонии · переговоры. ru ↔ es · ru ↔ pt.",
+                temple_som_t: "соматическая работа",
+                temple_som_d: "восемь лет работы с телом: лимфодренаж · аюрведа · ломи-ломи · жива · тай.",
+                temple_voice_t: "голосовая работа",
+                temple_voice_d: "испанская озвучка · медитация дубляж · звуковая архитектура. с moonly, 2021.",
+                temple_b2b_t: "b2b семантический дизайн",
+                temple_b2b_d: "когнитивная архитектура · ai prompt системы · ux fusion · brand voice.",
+                temple_enter: 'напиши <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> одним словом — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, или <span class="font-mono text-[var(--accent)]">voice</span>. краткое намерение · структурный ответ в течение 48ч.',
+                support_kicker: "резонансная поддержка · l4",
+                support_kicker_sub: "четыре формы обмена",
+                support_desc: "оплата — не транзакция. это акт резонанса — голос за мир, который мы строим. каждый вклад идёт на: животных · растения · чистые стихии · суверенные серверы · открытое исследование.",
+                tier_seed_name: "seed · зерно",
+                tier_seed_desc: "поддерживает свет. ежемесячное благодарственное письмо.",
+                tier_seed_b1: "ежемесячное письмо",
+                tier_seed_b2: "имя в списке поддержавших",
+                tier_stream_name: "stream · поток",
+                tier_stream_desc: "ежемесячный дайджест новых протоколов + ранний доступ к исследованиям.",
+                tier_stream_b1: "всё из seed",
+                tier_stream_b2: "ежемесячный дайджест протоколов",
+                tier_stream_b3: "ранний доступ к исследовательским заметкам",
+                tier_field_name: "field · поле",
+                tier_field_desc: "stream + приглашение в ежемесячный круг q&a.",
+                tier_field_b1: "всё из stream",
+                tier_field_b2: "ежемесячный круг q&a (60 мин)",
+                tier_field_b3: "приоритетный доступ к новым запускам",
+                form_silent_t: "тихий fork",
+                form_silent_d: "используй · делись · строй · сажай · заботься. оплата не требуется.",
+                form_ritual_t: "разовый ритуал",
+                form_ritual_d: "одна fusion-карта · одно алмазное чтение · одна частная сессия. плавающая · честная.",
+                wiki_layer: "l5 · wiki карта",
+                wiki_title: "перекрёстные ссылки",
+                wiki_desc: "каждый протокол перекрёстно связан со своими родственниками. читай в любом порядке · система фрактальна · каждая запись содержит целое.",
+                matrix_layer: "l6 · цивилизационная матрица",
+                matrix_title: "тишина через языки",
+                matrix_desc: 'семантический инвариант «тишины», перенесённый через 15 культурных матриц. онтологический перенос · не перевод.',
+                matrix_word: "тишина",
+                matrix_target: "целевая проекция",
+                matrix_logic: "когнитивная логика",
+                matrix_action: "вектор действия",
+                architect_layer: "l7 · узел сингулярности",
+                architect_role: "игорь в. галкин · семантический архитектор · лингвист · 15+ лет",
+                architect_bio1: "проектирую семантическую инфраструктуру для человеческого и машинного познания. работа соединяет глубокую лингвистику, алгоритмическую логику (o(log n)) и ml для повышения интерпретируемости и ai alignment.",
+                architect_bio2: "базируюсь в сильвании близ боготы, колумбия (hub 0). исследовательская линия: межвидовая коммуникация с олегом бахтияровым и оксаной завадской. публикация во втором альманахе по языку китов и протоколам сверхвысокой плотности.",
+                vectors_title: "три вектора 2026–2030",
+                vector_1: "сеть храмов-здравниц · планетарный пояс",
+                vector_2: "межвидовая лингвистика · с бахтияровым · завадской",
+                vector_3: "де-латинизация русской терминологии",
+                contact_title: "контактный узел",
+                status: "статус · активен",
+                location: "локация · богота · сильвания",
+                silence_motto: "тишина — высший синтаксис"
+            },
+            es: {
+                hero_meta: "∴ punto de entrada · hub 0 · bogotá",
+                hero_title: "sistema operativo<br>semántico.",
+                hero_sub: "lenguaje como acción. silencio como sintaxis. el significado precede a la estructura · la estructura precede al código.",
+                hero_desc: "tres anillos concéntricos forman este commons: protocolos abiertos (gratis para siempre), templo interior (práctica cerrada) y soporte resonante (intercambio soberano).",
+                ring_open_label: "anillo abierto",
+                ring_open_short: "gratis para siempre · MIT · fork · uso · compartir",
+                ring_temple_label: "templo interior",
+                ring_temple_short: "servicios en vivo · ritual · presencia · bespoke",
+                ring_support_label: "soporte resonante",
+                ring_support_short: "suscripción · ritual · comisión · todos los caminos",
+                stack_layer: "l1 · stack del canon",
+                stack_title: "siete capas · un cristal",
+                stack_desc: "cada capa es un protocolo autosuficiente. todas están wiki-enlazadas · referenciadas dentro de este repo. nada depende de nodos externos.",
+                stack_suticore: "extraer esencia · eliminar 90% del ruido",
+                stack_sreteniya: "ritmos de atención · entorno operativo",
+                stack_lf: "lenguaje como acción · transferencia ontológica",
+                stack_ver: "afirmación → evidencia → contra → verdad",
+                stack_syn: "símbolo como comando · forma programa estado",
+                stack_syna: "lujo silencioso · pausa como llave principal",
+                stack_ya: "lengua proto-eslava construida",
+                open_kicker: "anillo abierto · l2",
+                open_kicker_sub: "gratis para siempre · MIT",
+                open_desc: "la herencia pertenece a todos los seres vivos. estos protocolos, scripts y formas se liberan al commons bajo MIT — libres de usar, hacer fork, construir encima, redistribuir, derivar. cada nodo soberano fortalece el todo.",
+                open_canon_t: "stack del canon · markdown",
+                open_canon_d: "canon completo de 7 capas. leer · forkear · clonar · adaptar libremente.",
+                open_scripts_t: "9 herramientas de higiene del vault",
+                open_scripts_d: "escanear · deduplicar · cristalizar · pipeline llm · barrido del vacío.",
+                open_docs_t: "pasaporte fusion · prompts",
+                open_docs_d: "pasaporte de identidad · plano visual synaura · matriz interlingüística.",
+                open_ext_t: "capa de arquetipos · 16 sistemas",
+                open_ext_d: "runas · tarot · i-ching · estelar · lunar · kolozar · slovoyaz · más.",
+                open_promise: "estos protocolos abiertos permanecen gratis para siempre. ningún muro de pago futuro · ningún cierre furtivo · ninguna reversión de propiedad.",
+                open_promise_link: "leer LICENSES.md completo",
+                temple_kicker: "templo interior · l3",
+                temple_kicker_sub: "trabajo que requiere presencia",
+                temple_desc: "no todo pertenece al commons. algunas formas requieren contacto directo, cuerpo, ritual, voz. son los servicios en vivo y diseños bespoke — intercambiados en el anillo de soporte abajo.",
+                temple_fc_t: "comisión fusion-card",
+                temple_fc_d: "pasaporte cósmico personal · lectura diamante de tu invariante · sigilo visual personalizado.",
+                temple_lf_t: "sesiones linguafusion",
+                temple_lf_d: "español · portugués · enseñanza basada en resonancia. 15+ años de práctica.",
+                temple_int_t: "interpretación",
+                temple_int_d: "simultánea · consecutiva · ceremonia · negociación. ru ↔ es · ru ↔ pt.",
+                temple_som_t: "trabajo somático",
+                temple_som_d: "ocho años de bodywork: linfático · ayurvédico · lomi lomi · zhiva · thai.",
+                temple_voice_t: "trabajo de voz",
+                temple_voice_d: "narración en español · doblaje meditación · arquitectura sonora. desde moonly, 2021.",
+                temple_b2b_t: "diseño semántico b2b",
+                temple_b2b_d: "arquitectura cognitiva · sistemas de prompts ai · ux fusion · voz de marca.",
+                temple_enter: 'escribe a <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> con una palabra — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, o <span class="font-mono text-[var(--accent)]">voice</span>. intención breve · respuesta estructurada en 48h.',
+                support_kicker: "soporte resonante · l4",
+                support_kicker_sub: "cuatro formas de intercambio",
+                support_desc: "el pago no es una transacción. es un acto de resonancia — un voto por el mundo que construimos. cada contribución fluye a: animales · plantas · elementos limpios · servidores soberanos · investigación abierta.",
+                tier_seed_name: "seed · semilla",
+                tier_seed_desc: "mantiene las luces encendidas. carta mensual de agradecimiento.",
+                tier_seed_b1: "carta mensual",
+                tier_seed_b2: "nombre en lista de patrocinadores",
+                tier_stream_name: "stream · flujo",
+                tier_stream_desc: "digesto mensual de nuevos protocolos + acceso temprano a notas de investigación.",
+                tier_stream_b1: "todo de seed",
+                tier_stream_b2: "digesto mensual de protocolos",
+                tier_stream_b3: "acceso temprano a notas de investigación",
+                tier_field_name: "field · campo",
+                tier_field_desc: "stream + invitación al círculo mensual q&a.",
+                tier_field_b1: "todo de stream",
+                tier_field_b2: "círculo mensual q&a (60 min)",
+                tier_field_b3: "acceso prioritario a nuevos lanzamientos",
+                form_silent_t: "fork silencioso",
+                form_silent_d: "usar · compartir · construir · plantar · cuidar. no se requiere pago.",
+                form_ritual_t: "ritual único",
+                form_ritual_d: "una fusion-card · una lectura diamante · una sesión privada. deslizante · honesto.",
+                wiki_layer: "l5 · mapa wiki",
+                wiki_title: "referencias cruzadas",
+                wiki_desc: "cada protocolo se enlaza con sus parientes. leer en cualquier orden · el sistema es fractal · cada entrada contiene el todo.",
+                matrix_layer: "l6 · matriz civilizacional",
+                matrix_title: "silencio a través de las lenguas",
+                matrix_desc: 'el invariante semántico del "silencio" llevado a través de 15 matrices culturales. transferencia ontológica · no traducción.',
+                matrix_word: "silencio",
+                matrix_target: "proyección objetivo",
+                matrix_logic: "lógica cognitiva",
+                matrix_action: "vector de acción",
+                architect_layer: "l7 · nodo de singularidad",
+                architect_role: "igor v. galkin · arquitecto semántico · lingüista · 15+ años",
+                architect_bio1: "diseño infraestructura semántica para cognición humana y de máquinas. mi trabajo conecta lingüística profunda, lógica algorítmica (eficiencia o(log n)) y machine learning para aumentar interpretabilidad y ai alignment.",
+                architect_bio2: "basado en selvania cerca de bogotá, colombia (hub 0). línea de investigación: comunicación interespecies con oleg bakhtiyarov y oksana zavadskaya. publicado en su segundo almanaque sobre lenguaje de ballenas y protocolos de señal de alta densidad.",
+                vectors_title: "tres vectores 2026–2030",
+                vector_1: "red de templos-balnearios · cinturón planetario",
+                vector_2: "lingüística interespecies · con bakhtiyarov · zavadskaya",
+                vector_3: "des-latinización de la terminología rusa",
+                contact_title: "nodo de contacto",
+                status: "estado · activo",
+                location: "ubicación · bogotá · selvania",
+                silence_motto: "el silencio es la sintaxis suprema"
+            },
+            pt: {
+                hero_meta: "∴ ponto de entrada · hub 0 · bogotá",
+                hero_title: "sistema operacional<br>semântico.",
+                hero_sub: "linguagem como ação. silêncio como sintaxe. significado precede estrutura · estrutura precede código.",
+                hero_desc: "três anéis concêntricos formam este commons: protocolos abertos (livres para sempre), templo interior (prática fechada) e suporte ressonante (troca soberana).",
+                ring_open_label: "anel aberto",
+                ring_open_short: "livre para sempre · MIT · fork · uso · compartilhar",
+                ring_temple_label: "templo interior",
+                ring_temple_short: "serviços ao vivo · ritual · presença · sob medida",
+                ring_support_label: "suporte ressonante",
+                ring_support_short: "assinatura · ritual · comissão · todos os caminhos",
+                stack_layer: "l1 · stack do cânone",
+                stack_title: "sete camadas · um cristal",
+                stack_desc: "cada camada é um protocolo autossuficiente. todas estão wiki-ligadas · referenciadas dentro deste repo. nada depende de nós externos.",
+                stack_suticore: "extrair essência · remover 90% do ruído",
+                stack_sreteniya: "ritmos de atenção · ambiente operacional",
+                stack_lf: "linguagem como ação · transferência ontológica",
+                stack_ver: "afirmação → evidência → contra → verdade",
+                stack_syn: "símbolo como comando · forma programa estado",
+                stack_syna: "luxo silencioso · pausa como chave primária",
+                stack_ya: "língua proto-eslava construída",
+                open_kicker: "anel aberto · l2",
+                open_kicker_sub: "livre para sempre · MIT",
+                open_desc: "a herança pertence a todos os seres vivos. estes protocolos, scripts e formas são liberados ao commons sob MIT — livres para usar, fazer fork, construir, redistribuir, derivar. cada nó soberano fortalece o todo.",
+                open_canon_t: "stack do cânone · markdown",
+                open_canon_d: "cânone completo de 7 camadas. ler · fork · clonar · adaptar livremente.",
+                open_scripts_t: "9 ferramentas de higiene do vault",
+                open_scripts_d: "escanear · deduplicar · cristalizar · pipeline llm · varredura do vazio.",
+                open_docs_t: "passaporte fusion · prompts",
+                open_docs_d: "passaporte de identidade · blueprint visual synaura · matriz interlinguística.",
+                open_ext_t: "camada de arquétipos · 16 sistemas",
+                open_ext_d: "runas · tarot · i-ching · estelar · lunar · kolozar · slovoyaz · mais.",
+                open_promise: "estes protocolos abertos permanecem livres para sempre. nenhum paywall futuro · nenhum cerco furtivo · nenhuma reversão de propriedade.",
+                open_promise_link: "ler LICENSES.md completo",
+                temple_kicker: "templo interior · l3",
+                temple_kicker_sub: "trabalho que requer presença",
+                temple_desc: "nem tudo pertence ao commons. algumas formas exigem contato direto, corpo, ritual, voz. são serviços ao vivo e designs sob medida — trocados no anel de suporte abaixo.",
+                temple_fc_t: "comissão fusion-card",
+                temple_fc_d: "passaporte cósmico pessoal · leitura diamante do seu invariante · sigilo visual personalizado.",
+                temple_lf_t: "sessões linguafusion",
+                temple_lf_d: "espanhol · português · ensino baseado em ressonância. 15+ anos de prática.",
+                temple_int_t: "interpretação",
+                temple_int_d: "simultânea · consecutiva · cerimônia · negociação. ru ↔ es · ru ↔ pt.",
+                temple_som_t: "trabalho somático",
+                temple_som_d: "oito anos de bodywork: linfático · ayurvédico · lomi lomi · zhiva · thai.",
+                temple_voice_t: "trabalho de voz",
+                temple_voice_d: "narração em espanhol · dub meditação · arquitetura sonora. desde moonly, 2021.",
+                temple_b2b_t: "design semântico b2b",
+                temple_b2b_d: "arquitetura cognitiva · sistemas de prompts ai · ux fusion · voz de marca.",
+                temple_enter: 'escreva para <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> com uma palavra — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, ou <span class="font-mono text-[var(--accent)]">voice</span>. intenção breve · resposta estruturada em 48h.',
+                support_kicker: "suporte ressonante · l4",
+                support_kicker_sub: "quatro formas de troca",
+                support_desc: "pagamento não é transação. é um ato de ressonância — um voto pelo mundo que construímos. cada contribuição flui para: animais · plantas · elementos limpos · servidores soberanos · pesquisa aberta.",
+                tier_seed_name: "seed · semente",
+                tier_seed_desc: "mantém as luzes acesas. carta mensal de agradecimento.",
+                tier_seed_b1: "carta mensal",
+                tier_seed_b2: "nome na lista de apoiadores",
+                tier_stream_name: "stream · fluxo",
+                tier_stream_desc: "resumo mensal de novos protocolos + acesso antecipado a notas de pesquisa.",
+                tier_stream_b1: "tudo do seed",
+                tier_stream_b2: "resumo mensal de protocolos",
+                tier_stream_b3: "acesso antecipado a notas de pesquisa",
+                tier_field_name: "field · campo",
+                tier_field_desc: "stream + convite ao círculo mensal q&a.",
+                tier_field_b1: "tudo do stream",
+                tier_field_b2: "círculo mensal q&a (60 min)",
+                tier_field_b3: "acesso prioritário a novos lançamentos",
+                form_silent_t: "fork silencioso",
+                form_silent_d: "usar · compartilhar · construir · plantar · cuidar. nenhum pagamento necessário.",
+                form_ritual_t: "ritual único",
+                form_ritual_d: "uma fusion-card · uma leitura diamante · uma sessão privada. deslizante · honesto.",
+                wiki_layer: "l5 · mapa wiki",
+                wiki_title: "referências cruzadas",
+                wiki_desc: "cada protocolo se cruza com seus parentes. ler em qualquer ordem · o sistema é fractal · cada entrada contém o todo.",
+                matrix_layer: "l6 · matriz civilizacional",
+                matrix_title: "silêncio através das línguas",
+                matrix_desc: 'o invariante semântico do "silêncio" carregado através de 15 matrizes culturais. transferência ontológica · não tradução.',
+                matrix_word: "silêncio",
+                matrix_target: "projeção alvo",
+                matrix_logic: "lógica cognitiva",
+                matrix_action: "vetor de ação",
+                architect_layer: "l7 · nó da singularidade",
+                architect_role: "igor v. galkin · arquiteto semântico · linguista · 15+ anos",
+                architect_bio1: "projeto infraestrutura semântica para cognição humana e de máquina. meu trabalho conecta linguística profunda, lógica algorítmica (eficiência o(log n)) e machine learning para aumentar interpretabilidade e ai alignment.",
+                architect_bio2: "baseado em selvania perto de bogotá, colômbia (hub 0). linha de pesquisa: comunicação interespécies com oleg bakhtiyarov e oksana zavadskaya. publicado no segundo almanaque sobre linguagem de baleias e protocolos de sinal de alta densidade.",
+                vectors_title: "três vetores 2026–2030",
+                vector_1: "rede de templos-spas · cinturão planetário",
+                vector_2: "linguística interespécies · com bakhtiyarov · zavadskaya",
+                vector_3: "des-latinização da terminologia russa",
+                contact_title: "nó de contato",
+                status: "status · ativo",
+                location: "localização · bogotá · selvania",
+                silence_motto: "o silêncio é a sintaxe suprema"
+            },
+            zh: {
+                hero_meta: "∴ 入口 · hub 0 · 波哥大",
+                hero_title: "语义<br>操作系统。",
+                hero_sub: "语言即行动。寂静即语法。意义先于结构 · 结构先于代码。",
+                hero_desc: "三个同心环构成这个公地：开放协议（永久免费）、内殿（封闭实践）、共振支持（主权交换）。",
+                ring_open_label: "开放环",
+                ring_open_short: "永久免费 · MIT · fork · 使用 · 分享",
+                ring_temple_label: "内殿",
+                ring_temple_short: "现场服务 · 仪式 · 临在 · 定制",
+                ring_support_label: "共振支持",
+                ring_support_short: "订阅 · 仪式 · 委托 · 所有路径",
+                stack_layer: "l1 · 经典栈",
+                stack_title: "七层 · 一颗水晶",
+                stack_desc: "每一层都是自足的协议。所有协议都在此 repo 内 wiki 互联。不依赖任何外部节点。",
+                stack_suticore: "提取本质 · 去除 90% 的噪声",
+                stack_sreteniya: "注意力节奏 · 操作环境",
+                stack_lf: "语言即行动 · 本体论转移",
+                stack_ver: "声明 → 证据 → 反证 → 真理",
+                stack_syn: "符号即命令 · 形式编程状态",
+                stack_syna: "静奢 · 停顿作为主键",
+                stack_ya: "原始斯拉夫构造语",
+                open_kicker: "开放环 · l2",
+                open_kicker_sub: "永久免费 · MIT",
+                open_desc: "继承属于所有生灵。这些协议、脚本和形式以 MIT 协议发布到公地——可自由使用、fork、构建、再分发、衍生。每个主权节点都加强整体。",
+                open_canon_t: "经典栈 · markdown",
+                open_canon_d: "完整的 7 层经典。自由阅读 · fork · 克隆 · 改编。",
+                open_scripts_t: "9 个 vault 卫生工具",
+                open_scripts_d: "扫描 · 去重 · 结晶 · llm 管道 · 虚空清扫。",
+                open_docs_t: "fusion 护照 · 提示词",
+                open_docs_d: "身份护照 · synaura 视觉蓝图 · 跨语言矩阵。",
+                open_ext_t: "原型层 · 16 个系统",
+                open_ext_d: "符文 · 塔罗 · 易经 · 星象 · 月相 · kolozar · slovoyaz · 更多。",
+                open_promise: "这些开放协议永久免费。无未来付费墙 · 无隐秘封闭 · 无所有权逆转。",
+                open_promise_link: "阅读完整 LICENSES.md",
+                temple_kicker: "内殿 · l3",
+                temple_kicker_sub: "需要临在的工作",
+                temple_desc: "并非一切都属于公地。某些形式需要直接接触、身体、仪式、声音。这些是现场服务和定制设计——在下方支持环中交换。",
+                temple_fc_t: "fusion 卡定制",
+                temple_fc_d: "个人宇宙护照 · 你的不变量的钻石解读 · 定制视觉印记。",
+                temple_lf_t: "linguafusion 课程",
+                temple_lf_d: "西班牙语 · 葡萄牙语 · 基于共振的教学。15+ 年实践。",
+                temple_int_t: "口译",
+                temple_int_d: "同声 · 交替 · 仪式 · 谈判。ru ↔ es · ru ↔ pt。",
+                temple_som_t: "身体工作",
+                temple_som_d: "八年身体工作：淋巴 · 阿育吠陀 · 罗米罗米 · zhiva · 泰式。",
+                temple_voice_t: "声音工作",
+                temple_voice_d: "西班牙语旁白 · 冥想配音 · 声音架构。自 moonly app, 2021。",
+                temple_b2b_t: "b2b 语义设计",
+                temple_b2b_d: "认知架构 · ai 提示词系统 · ux fusion · 品牌声音。",
+                temple_enter: '用一个词写信给 <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a>—<span class="font-mono text-[var(--accent)]">field</span>、<span class="font-mono text-[var(--accent)]">temple</span>、<span class="font-mono text-[var(--accent)]">body</span> 或 <span class="font-mono text-[var(--accent)]">voice</span>。简短意图 · 48 小时内结构化回复。',
+                support_kicker: "共振支持 · l4",
+                support_kicker_sub: "四种交换形式",
+                support_desc: "支付不是交易。这是共振行为——为我们建造的世界投票。每一份贡献都流向：动物 · 植物 · 清洁元素 · 主权服务器 · 开放研究。",
+                tier_seed_name: "seed · 种子",
+                tier_seed_desc: "保持灯火。每月感谢信。",
+                tier_seed_b1: "每月信件",
+                tier_seed_b2: "在支持者名单中署名",
+                tier_stream_name: "stream · 流",
+                tier_stream_desc: "新协议每月摘要 + 提前访问研究笔记。",
+                tier_stream_b1: "包含 seed 全部",
+                tier_stream_b2: "每月协议摘要",
+                tier_stream_b3: "提前访问研究笔记",
+                tier_field_name: "field · 场域",
+                tier_field_desc: "stream + 每月 q&a 圈邀请。",
+                tier_field_b1: "包含 stream 全部",
+                tier_field_b2: "每月 q&a 圈（60 分钟）",
+                tier_field_b3: "新发布优先访问",
+                form_silent_t: "静默 fork",
+                form_silent_d: "使用 · 分享 · 构建 · 种植 · 关怀。无需付款。",
+                form_ritual_t: "单次仪式",
+                form_ritual_d: "一张 fusion 卡 · 一次钻石解读 · 一次私人会面。滑动 · 诚实。",
+                wiki_layer: "l5 · wiki 地图",
+                wiki_title: "交叉引用",
+                wiki_desc: "每个协议都与其同源相互链接。可任意顺序阅读 · 系统是分形的 · 每个条目包含整体。",
+                matrix_layer: "l6 · 文明矩阵",
+                matrix_title: "跨语言的寂静",
+                matrix_desc: '"寂静"的语义不变量穿越 15 个文化矩阵传递。本体论转移 · 非翻译。',
+                matrix_word: "寂静",
+                matrix_target: "目标投射",
+                matrix_logic: "认知逻辑",
+                matrix_action: "行动向量",
+                architect_layer: "l7 · 奇点节点",
+                architect_role: "igor v. galkin · 语义建筑师 · 语言学家 · 15+ 年",
+                architect_bio1: "我为人类和机器认知设计语义基础设施。我的工作连接深度语言学、算法逻辑（o(log n) 效率）和机器学习，以提高可解释性和 ai 对齐。",
+                architect_bio2: "驻地于哥伦比亚波哥大附近的 selvania（hub 0）。研究方向：与 oleg bakhtiyarov 和 oksana zavadskaya 合作的跨物种交流。在他们的第二期年鉴上发表了关于鲸鱼语言和高密度信号协议的论文。",
+                vectors_title: "三个矢量 2026–2030",
+                vector_1: "圣殿疗养院网络 · 行星带",
+                vector_2: "跨物种语言学 · 与 bakhtiyarov · zavadskaya 合作",
+                vector_3: "俄语术语去拉丁化",
+                contact_title: "联系节点",
+                status: "状态 · 活跃",
+                location: "位置 · 波哥大 · selvania",
+                silence_motto: "寂静是最高的语法"
+            },
+            eo: {
+                hero_meta: "∴ enirpunkto · hub 0 · bogotá",
+                hero_title: "semantika<br>operaciumo.",
+                hero_sub: "lingvo kiel ago. silento kiel sintakso. signifo antaŭas strukturon · strukturo antaŭas kodon.",
+                hero_desc: "tri samcentraj ringoj formas ĉi tiun komunaĵon: malfermaj protokoloj (senpage por ĉiam), interna templo (fermita praktiko), resona subteno (suverena interŝanĝo).",
+                ring_open_label: "malferma ringo",
+                ring_open_short: "senpage por ĉiam · MIT · forki · uzi · dividi",
+                ring_temple_label: "interna templo",
+                ring_temple_short: "vivaj servoj · rito · ĉeesto · laŭmenda",
+                ring_support_label: "resona subteno",
+                ring_support_short: "abono · rito · komisio · ĉiuj vojoj",
+                stack_layer: "l1 · kanonstako",
+                stack_title: "sep tavoloj · unu kristalo",
+                stack_desc: "ĉiu tavolo estas memsufiĉa protokolo. ĉiuj estas vikilig itaj · interreferencaj ene de ĉi tiu repo. nenio dependas de eksteraj nodoj.",
+                stack_suticore: "elĉerpi esencon · forigi 90% de bruo",
+                stack_sreteniya: "ritmoj de atento · operacia medio",
+                stack_lf: "lingvo kiel ago · ontologia transigo",
+                stack_ver: "aserto → evidento → kontra → vero",
+                stack_syn: "simbolo kiel komando · formo programas staton",
+                stack_syna: "kvieta lukso · paŭzo kiel ĉefa ŝlosilo",
+                stack_ya: "proto-slava konstruita lingvo",
+                open_kicker: "malferma ringo · l2",
+                open_kicker_sub: "senpage por ĉiam · MIT",
+                open_desc: "la heredo apartenas al ĉiuj vivaj estaĵoj. ĉi tiuj protokoloj, skriptoj kaj formoj estas liberigitaj al la komunaĵo sub MIT — libere uzeblaj, forkeblaj, konstrueblaj, redisdoneblaj, derivigeblaj. ĉiu suverena nodo plifortigas la tuton.",
+                open_canon_t: "kanonstako · markdown",
+                open_canon_d: "kompleta 7-tavola kanono. legi · forki · kloni · libere adapti.",
+                open_scripts_t: "9 iloj de higieno de la kelo",
+                open_scripts_d: "skani · senduobligi · kristaligi · llm-dukto · vakuoba balaado.",
+                open_docs_t: "fusion-pasporto · promptoj",
+                open_docs_d: "identecpasporto · synaura vida skemo · interlingva matrico.",
+                open_ext_t: "arketipa tavolo · 16 sistemoj",
+                open_ext_d: "runoj · taroto · i-ching · stelara · luna · kolozar · slovoyaz · pli.",
+                open_promise: "ĉi tiuj malfermaj protokoloj restas senpagaj por ĉiam. neniu estonta pagmuro · neniu kaŝa fermo · neniu inversigo de proprieto.",
+                open_promise_link: "legi tutan LICENSES.md",
+                temple_kicker: "interna templo · l3",
+                temple_kicker_sub: "laboro postulanta ĉeeston",
+                temple_desc: "ne ĉio apartenas al la komunaĵo. iuj formoj postulas rektan kontakton, korpon, riton, voĉon. tiuj estas la vivaj servoj kaj laŭmendaj projektoj — interŝanĝataj en la subtenringo sube.",
+                temple_fc_t: "komisio de fusion-karto",
+                temple_fc_d: "persona kosma pasporto · diamanta legaĵo de via invarianto · personigita vida sigilo.",
+                temple_lf_t: "linguafusion-sesioj",
+                temple_lf_d: "hispana · portugala · resona instruado. 15+ jaroj de praktiko.",
+                temple_int_t: "interpretado",
+                temple_int_d: "samtempa · sinsekva · ceremonio · intertraktado. ru ↔ es · ru ↔ pt.",
+                temple_som_t: "soma laboro",
+                temple_som_d: "ok jaroj de korpolaboro: limfa · ajurveda · lomi-lomi · zhiva · taja.",
+                temple_voice_t: "voĉa laboro",
+                temple_voice_d: "hispana rakontado · meditacia dublado · sona arkitekturo. ekde moonly, 2021.",
+                temple_b2b_t: "b2b semantika dezajno",
+                temple_b2b_d: "kognita arkitekturo · ai-prompt-sistemoj · ux fusion · markvoĉo.",
+                temple_enter: 'skribu al <a href="https://t.me/saritamah" class="wiki-link">@saritamah</a> per unu vorto — <span class="font-mono text-[var(--accent)]">field</span>, <span class="font-mono text-[var(--accent)]">temple</span>, <span class="font-mono text-[var(--accent)]">body</span>, aŭ <span class="font-mono text-[var(--accent)]">voice</span>. mallonga intenco · strukturita respondo ene de 48h.',
+                support_kicker: "resona subteno · l4",
+                support_kicker_sub: "kvar formoj de interŝanĝo",
+                support_desc: "pago ne estas transakcio. ĝi estas ago de resono — voĉdono por la mondo, kiun ni konstruas. ĉiu kontribuo fluas al: bestoj · plantoj · puraj elementoj · suverenaj serviloj · malferma esploro.",
+                tier_seed_name: "seed · semo",
+                tier_seed_desc: "tenas la lumojn ŝaltitaj. monata dankletero.",
+                tier_seed_b1: "monata letero",
+                tier_seed_b2: "nomo en listo de subtenantoj",
+                tier_stream_name: "stream · fluo",
+                tier_stream_desc: "monata resumo de novaj protokoloj + frua aliro al esplor-notoj.",
+                tier_stream_b1: "ĉio de seed",
+                tier_stream_b2: "monata protokol-resumo",
+                tier_stream_b3: "frua aliro al esplor-notoj",
+                tier_field_name: "field · kampo",
+                tier_field_desc: "stream + invito al monata q&a-rondo.",
+                tier_field_b1: "ĉio de stream",
+                tier_field_b2: "monata q&a-rondo (60 min)",
+                tier_field_b3: "prioritata aliro al novaj lanĉoj",
+                form_silent_t: "silenta forko",
+                form_silent_d: "uzi · dividi · konstrui · planti · zorgi. neniu pago postulata.",
+                form_ritual_t: "unuopa rito",
+                form_ritual_d: "unu fusion-karto · unu diamanta legaĵo · unu privata sesio. glita · honesta.",
+                wiki_layer: "l5 · vikia mapo",
+                wiki_title: "krucreferencoj",
+                wiki_desc: "ĉiu protokolo krucligas al siaj parencoj. legi en ajna ordo · la sistemo estas frakta · ĉiu eniro enhavas la tuton.",
+                matrix_layer: "l6 · civiliza matrico",
+                matrix_title: "silento tra lingvoj",
+                matrix_desc: 'la semantika invarianto de "silento" portita tra 15 kulturaj matricoj. ontologia transigo · ne traduko.',
+                matrix_word: "silento",
+                matrix_target: "celprojekcio",
+                matrix_logic: "kognita logiko",
+                matrix_action: "ag-vektoro",
+                architect_layer: "l7 · nodo de singularo",
+                architect_role: "igor v. galkin · semantika arkitekto · lingvisto · 15+ jaroj",
+                architect_bio1: "mi dezajnas semantikan infrastrukturon por homa kaj maŝina kogno. mia laboro pontas profundan lingvistikon, algoritman logikon (o(log n) efikeco) kaj maŝinan lernadon por pliigi interpreteblon kaj ai alignment.",
+                architect_bio2: "bazita en selvania apud bogotá, kolombio (hub 0). esplorlinio: interspeci-komunikado kun oleg bakhtiyarov kaj oksana zavadskaya. publikigita en ilia dua almanako pri lingvo de balenoj kaj alt-densaj signal-protokoloj.",
+                vectors_title: "tri vektoroj 2026–2030",
+                vector_1: "reto de templo-sanitarioj · planeda zono",
+                vector_2: "interspeci-lingvistiko · kun bakhtiyarov · zavadskaya",
+                vector_3: "mal-latinigo de rusa terminologio",
+                contact_title: "kontakta nodo",
+                status: "stato · aktiva",
+                location: "loko · bogotá · selvania",
+                silence_motto: "silento estas la suprema sintakso"
+            }
         };
 
-        // --- 2. CORE STATE & KERNEL LOGIC ---
-        const STATE = {
-            acs: 100,
-            lastMouse: { x: 0, y: 0 },
-            baseFontSize: 16, 
-            theme: 'void',
-            lang: 'en', // Defaulting to EN as requested
-            tricksterMode: false
-        };
+        const MATRIX_DATA = [
+            { name: 'English', trans: 'silence / stillness', logic: 'absence of cognitive noise; baseline state.', action: 'stop execution. await signal.' },
+            { name: 'Русский', trans: 'тишина / пауза', logic: 'пространство до появления формы; высший синтаксис.', action: 'остановить диалог. выявить инвариант.' },
+            { name: 'Español', trans: 'silencio activo', logic: 'somatic baseline; not empty, but receptive.', action: 'pausa somática. escuchar la resonancia.' },
+            { name: 'Português', trans: 'quietude / vazio', logic: 'infrastructure baseline; clearing the cache.', action: 'zerar o ruído. aguardar o pulso.' },
+            { name: '中文', trans: '无极 (wújí) / 静', logic: 'limitless potential before differentiation.', action: 'return to center (zhìzhōng).' },
+            { name: 'Esperanto', trans: 'kvieta nulstato', logic: 'universal baseline across all nodes.', action: 'atendu signalon.' },
+            { name: '日本語', trans: '間 (ma) / 無 (mu)', logic: 'negative space that gives shape to the whole.', action: 'observe the void without filling it.' },
+            { name: '한국어', trans: '정적', logic: 'absolute stillness for precise focus.', action: 'maintain structural calm.' },
+            { name: 'العربية', trans: 'سكون', logic: 'sacred geometric emptiness · center of arabesque.', action: 'halt all vectors.' },
+            { name: 'हिन्दी', trans: 'मौन', logic: 'state preceding the mantra · source of vibration.', action: 'cease internal dialogue.' },
+            { name: 'संस्कृत', trans: 'शून्यता', logic: 'ontological void · ultimate invariant of reality.', action: 'dissolve into the source.' },
+            { name: 'Latina', trans: 'silentium absolutum', logic: 'foundational law · strict absence of deviation.', action: 'inhibitio motus.' },
+            { name: 'Ithkuil', trans: 'uqʰal', logic: 'deliberate suspension of cognitive processing.', action: 'execute absolute reset.' },
+            { name: 'Yazekh', trans: 'тишь', logic: 'proto-slavic root · pre-form silence.', action: 'войти в исток.' }
+        ];
 
+        const STATE = { acs: 100, lastMouse: { x: 0, y: 0 }, baseFontSize: 16, lang: 'en' };
+        
         const Kernel = {
             init() {
                 window.addEventListener('mousemove', this.handleMove.bind(this));
-                window.addEventListener('touchmove', (e) => this.handleMove(e.touches[0]), {passive: true});
+                window.addEventListener('touchmove', e => this.handleMove(e.touches[0]), { passive: true });
                 setInterval(this.recover.bind(this), 100);
             },
             handleMove(e) {
                 const dx = e.clientX - STATE.lastMouse.x;
                 const dy = e.clientY - STATE.lastMouse.y;
-                const velocity = Math.sqrt(dx*dx + dy*dy);
+                const v = Math.sqrt(dx*dx + dy*dy);
                 STATE.lastMouse = { x: e.clientX, y: e.clientY };
-
-                if (velocity > 15) {
-                    STATE.acs = Math.max(10, STATE.acs - (velocity * 0.15));
+                if (v > 15) {
+                    STATE.acs = Math.max(10, STATE.acs - v*0.15);
                     UI.updateACS();
                 }
             },
@@ -629,124 +1288,70 @@
                 }
             }
         };
-
-        // --- 2.5 TRICKSTER ENGINE ---
-        const Trickster = {
-            init() {
-                let typedKeys = '';
-                window.addEventListener('keydown', (e) => {
-                    typedKeys += e.key.toLowerCase();
-                    if (typedKeys.length > 4) typedKeys = typedKeys.slice(-4);
-                    if (typedKeys === 'agoy') {
-                        this.activate();
-                        typedKeys = '';
-                    }
-                });
-
-                // Periodic glitch based on ACS
-                setInterval(() => {
-                    if (STATE.acs < 80 || STATE.tricksterMode) {
-                        this.glitchRandomTarget();
-                    }
-                }, 2000);
-            },
-            activate() {
-                STATE.tricksterMode = !STATE.tricksterMode;
-                document.body.style.filter = STATE.tricksterMode ? 'hue-rotate(90deg) contrast(1.2)' : 'none';
-                console.log(STATE.tricksterMode ? "∴ TRICKSTER MODE ENGAGED ⧖" : "◌ SILENCE RESTORED");
-            },
-            glitchRandomTarget() {
-                const targets = document.querySelectorAll('.trick-target');
-                if (targets.length === 0) return;
-                const target = targets[Math.floor(Math.random() * targets.length)];
-                
-                // Text-level glitch
-                target.classList.add('trickster-glitch');
-                setTimeout(() => {
-                    target.classList.remove('trickster-glitch');
-                }, 300);
-            }
-        };
-
-        // --- 3. UI CONTROLLER ---
+        
         const UI = {
             init() {
-                this.bindEvents();
-                
-                const langSelect = document.getElementById('lang-selector');
-                if (langSelect) langSelect.value = STATE.lang;
-                this.updateLanguage(STATE.lang);
-                
-                this.renderMatrix();
-                this.initObserver();
-                
-                document.documentElement.style.fontSize = `${STATE.baseFontSize}px`;
-            },
-            bindEvents() {
-                window.adjustFontSize = (delta) => {
-                    STATE.baseFontSize = Math.max(12, Math.min(24, STATE.baseFontSize + delta));
-                    document.documentElement.style.fontSize = `${STATE.baseFontSize}px`;
+                window.adjustFontSize = d => {
+                    STATE.baseFontSize = Math.max(12, Math.min(24, STATE.baseFontSize + d));
+                    document.documentElement.style.fontSize = STATE.baseFontSize + 'px';
                 };
-                
                 document.querySelectorAll('.theme-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        const theme = e.target.dataset.themeBtn;
-                        document.documentElement.setAttribute('data-theme', theme);
+                    btn.addEventListener('click', e => {
+                        document.documentElement.setAttribute('data-theme', e.target.dataset.themeBtn);
                     });
                 });
-
-                document.getElementById('lang-selector').addEventListener('change', (e) => {
-                    STATE.lang = e.target.value;
-                    this.updateLanguage(STATE.lang);
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.addEventListener('click', e => {
+                        this.setLanguage(e.target.dataset.langBtn);
+                    });
+                });
+                this.setLanguage('en');
+                this.renderMatrix();
+                this.initObserver();
+            },
+            setLanguage(lang) {
+                if (!I18N[lang]) return;
+                STATE.lang = lang;
+                document.body.setAttribute('data-lang', lang);
+                document.querySelectorAll('.lang-btn').forEach(b => {
+                    b.classList.toggle('active', b.dataset.langBtn === lang);
+                });
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.dataset.i18n;
+                    if (I18N[lang][key]) {
+                        el.innerHTML = I18N[lang][key];
+                    }
                 });
             },
             updateACS() {
                 const bar = document.getElementById('acs-bar');
                 if (bar) {
-                    bar.style.width = `${STATE.acs}%`;
-                    bar.style.backgroundColor = STATE.acs < 50 ? 'var(--glitch)' : 'var(--accent)';
+                    bar.style.width = STATE.acs + '%';
+                    bar.style.backgroundColor = STATE.acs < 50 ? 'var(--glitch)' : 'var(--gold)';
                 }
             },
-            updateLanguage(lang) {
-                const elements = document.querySelectorAll('[id^="txt-"]');
-                elements.forEach(el => {
-                    if (DATA.i18n[lang] && DATA.i18n[lang][el.id]) {
-                        el.innerHTML = DATA.i18n[lang][el.id];
-                    }
-                });
-            },
             renderMatrix() {
-                const container = document.getElementById('matrix-btns');
-                if(!container) return;
-                container.innerHTML = '';
-                
-                const updateView = (item, btn) => {
+                const c = document.getElementById('matrix-btns');
+                if (!c) return;
+                c.innerHTML = '';
+                const update = (item, btn) => {
                     document.getElementById('mx-translation').innerText = item.trans;
                     document.getElementById('mx-logic').innerText = item.logic;
                     document.getElementById('mx-action').innerText = item.action;
-                    
-                    document.querySelectorAll('.mx-btn').forEach(b => {
-                        b.classList.remove('bg-accent', 'text-[var(--bg)]');
-                        b.classList.add('text-[var(--muted)]');
-                    });
-                    btn.classList.add('bg-accent', 'text-[var(--bg)]');
-                    btn.classList.remove('text-[var(--muted)]');
+                    document.querySelectorAll('.mx-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
                 };
-
-                DATA.matrix.forEach((lang, i) => {
-                    const btn = document.createElement('button');
-                    btn.className = `mx-btn text-left px-4 py-3 text-[11px] font-mono uppercase tracking-widest transition-colors rounded-sm border border-[var(--muted)]/20 hover:border-accent/50`;
-                    if(i === 0) btn.classList.add('bg-accent', 'text-[var(--bg)]');
-                    else btn.classList.add('text-[var(--muted)]');
-                    
-                    btn.innerText = lang.name;
-                    btn.addEventListener('click', () => updateView(lang, btn));
-                    container.appendChild(btn);
-                    if (i === 0) updateView(lang, btn);
+                MATRIX_DATA.forEach((m, i) => {
+                    const b = document.createElement('button');
+                    b.className = 'mx-btn';
+                    b.innerText = m.name;
+                    b.onclick = () => update(m, b);
+                    c.appendChild(b);
+                    if (i === 0) update(m, b);
                 });
             },
             initObserver() {
-                const obs = new IntersectionObserver((entries) => {
+                const obs = new IntersectionObserver(entries => {
                     entries.forEach(e => {
                         if (e.isIntersecting) e.target.classList.add('active');
                     });
@@ -754,81 +1359,60 @@
                 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
             }
         };
-
-        // --- 4. 2D CANVAS SHAMANDALA (Performance Optimized) ---
+        
         const Engine2D = {
             init() {
                 const canvas = document.getElementById('shamandala-canvas');
-                if(!canvas) return;
+                if (!canvas) return;
                 const ctx = canvas.getContext('2d');
                 let w, h, cx, cy;
-                
                 const resize = () => {
-                    w = window.innerWidth;
-                    h = window.innerHeight;
-                    canvas.width = w;
-                    canvas.height = h;
-                    cx = w / 2;
-                    cy = h / 2;
+                    w = window.innerWidth; h = window.innerHeight;
+                    canvas.width = w; canvas.height = h;
+                    cx = w/2; cy = h/2;
                 };
                 window.addEventListener('resize', resize);
                 resize();
-
-                let time = 0;
-                let scrollY = 0;
-                window.addEventListener('scroll', () => { scrollY = window.scrollY; }, {passive: true});
-
+                let time = 0, scrollY = 0;
+                window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
                 const draw = () => {
                     requestAnimationFrame(draw);
                     ctx.clearRect(0, 0, w, h);
-                    
-                    time += 0.002 + ((100 - STATE.acs) * 0.0001); 
-                    
+                    time += 0.002 + ((100 - STATE.acs) * 0.0001);
                     const style = getComputedStyle(document.documentElement);
-                    const accentColor = style.getPropertyValue('--accent').trim() || '#ffffff';
-                    
+                    const gold = style.getPropertyValue('--gold').trim() || '#d4b97c';
                     ctx.save();
                     ctx.translate(cx, cy);
-                    
-                    const scrollOffset = scrollY * 0.05;
-                    ctx.rotate(time + scrollOffset * 0.01);
-                    
-                    ctx.globalAlpha = 0.15 + (STATE.acs / 100) * 0.15;
-                    ctx.strokeStyle = accentColor;
+                    ctx.rotate(time + scrollY*0.0005);
+                    ctx.globalAlpha = 0.10 + (STATE.acs/100)*0.10;
+                    ctx.strokeStyle = gold;
                     ctx.lineWidth = 1;
-
-                    const radius = Math.min(w, h) * 0.35 + Math.sin(time * 5) * 5;
+                    const radius = Math.min(w, h)*0.35 + Math.sin(time*5)*5;
                     const petals = 12;
-
                     for (let i = 0; i < petals; i++) {
-                        ctx.rotate((Math.PI * 2) / petals);
+                        ctx.rotate((Math.PI*2)/petals);
                         ctx.beginPath();
                         ctx.moveTo(0, 0);
-                        ctx.quadraticCurveTo(radius * 0.5, -radius * 0.4, radius, 0);
-                        ctx.quadraticCurveTo(radius * 0.5, radius * 0.4, 0, 0);
+                        ctx.quadraticCurveTo(radius*0.5, -radius*0.4, radius, 0);
+                        ctx.quadraticCurveTo(radius*0.5, radius*0.4, 0, 0);
                         ctx.stroke();
-                        
                         ctx.beginPath();
-                        ctx.arc(radius * 0.7, 0, 1.5, 0, Math.PI * 2);
-                        ctx.fillStyle = accentColor;
+                        ctx.arc(radius*0.7, 0, 1.5, 0, Math.PI*2);
+                        ctx.fillStyle = gold;
                         ctx.fill();
                     }
-
                     ctx.beginPath();
-                    ctx.arc(0, 0, radius * 1.1, 0, Math.PI * 2);
-                    ctx.globalAlpha = 0.08;
+                    ctx.arc(0, 0, radius*1.1, 0, Math.PI*2);
+                    ctx.globalAlpha = 0.05;
                     ctx.stroke();
-
                     ctx.restore();
                 };
                 draw();
             }
         };
-
-        // --- BOOTSTRAP ---
+        
         document.addEventListener('DOMContentLoaded', () => {
             Kernel.init();
-            Trickster.init();
             UI.init();
             Engine2D.init();
         });
