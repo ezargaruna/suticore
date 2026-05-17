@@ -11,13 +11,7 @@ axis      : азъ есьмъ · i am that which i am
 <div align="center">
 
 ```
-           ⟁
-          / \
-         /   \
-        /  ∅  \
-       /       \
-      /_________\
-           〄
+
 
    impulse  ·  silence  ·  form
 ```
