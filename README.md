@@ -1,15 +1,23 @@
 <!--
-id: ezargaruna · suticore · readme · canon
-layer: l21 · circle: 3_public
-protocol: synaura_quiet_luxury · v2026.4
-status: crystallized · post-merge sreteniya-os · ostara 2026
-axis: азъ есьмъ · i am that which i am
-∴ this node is executable · language = action · silence = interface
+id        : ezargaruna · suticore · readme · canon
+version   : v2026.05 · post-merge sreteniya-os · ostara 2026
+layer     : l21 · circle 3 · public
+protocol  : synaura quiet luxury
+status    : crystallized
+axis      : азъ есьмъ · i am that which i am
+∴ executable · language = action · silence = interface
 -->
 
 <div align="center">
 
-<br/>
+```
+          ⟁
+         ╱ ╲
+        ╱   ╲              impulse
+       ╱  ∅  ╲             silence
+      ╱───────╲            form
+        〄  〄
+```
 
 `⟁  →  ∅  →  〄`
 
@@ -19,27 +27,52 @@ axis: азъ есьмъ · i am that which i am
 
 *semantic operating system · language as action · silence as syntax*
 
-`bogotá · selvania · colombia · hub 0 · abya yala · since 2013`
+`bogotá · silvania · colombia · hub 0 · abya yala · since 2013`
 
 <br/>
 
-*silence is the supreme syntax*
-*language is not description — it is architecture*
-*meaning precedes structure · structure precedes code*
-
-<br/>
+```
+─────────────────────────────────────────────────────────
+  silence is the supreme syntax
+  language is not description — it is architecture
+  meaning precedes structure · structure precedes code
+─────────────────────────────────────────────────────────
+```
 
 </div>
 
 ---
 
+## ∴ what is this
+
+a public repository for **suticore** —
+the open layer of a long-running personal research program
+on the boundary between linguistics, cognition, and code.
+
+it contains:
+
+```
+·  philosophical protocols      (canon)
+·  framework definitions        (operational)
+·  vault tooling scripts        (executable)
+·  reproducible build env       (nixos flake)
+·  conlang construction notes   (yazekh)
+```
+
+it is **not** a product.
+it is a **substrate** — fork it, mutate it, plant a node.
+
+---
+
 ## ∴ the hypothesis
 
-consciousness assembles itself
-in different points of time.
+```
+   consciousness assembles itself
+   in different points of time
 
-language is how it recognizes itself
-across the discontinuity.
+   language is how it recognizes itself
+   across the discontinuity
+```
 
 i work at the intersection of:
 
@@ -52,7 +85,7 @@ to build **environments where meaning can act**.
 
 ---
 
-## ⟁ purusharthas · the four-fold navigation
+## ⟁ purusharthas · four-fold navigation
 
 ancient roadmaps integrated into the operating system of presence:
 
@@ -65,16 +98,18 @@ ancient roadmaps integrated into the operating system of presence:
 
 ---
 
-## ✶ archetype engine · LinguaFUSION frame
+## ✶ archetype engine · linguafusion frame
 
-*every system of description is a language.*
-*every language is a map of the same territory.*
+```
+   every system of description is a language
+   every language is a map of the same territory
+```
 
 ```
 runes      · elder futhark    · semantic glyphs · form as command
 strings    · frequency        · resonance · harmonic architecture
 tarot      · 78 archetypes    · states of consciousness navigation
-solfeggio  · 174→963 Hz       · agma layers · CRYSTAL→ETHER
+solfeggio  · 174→963 hz       · agma layers · crystal→ether
 stars      · planetary cycles · temporal resonance · 7 lights
 numbers    · pythagorean      · structural invariants
 elements   · fire water air earth void · alchemical states
@@ -92,19 +127,31 @@ clarity is not achieved — it is uncovered.
 
 ---
 
-## 〄 the stack · kernel v2026.4
+## 〄 the stack · kernel v2026.05
 
 seven core layers · all internal · no broken links
 
-| # | layer | function | status | source |
-|---|-------|----------|--------|--------|
-| 1 | **SUTIcore** | extract essence · remove 90% of noise | core kernel | this repo |
-| 2 | **Sreteniya OS** | semantic operating system · attention rhythms | core kernel | [protocols/sreteniya-os/](./protocols/sreteniya-os/) |
-| 3 | **LinguaFUSION** | language as action · not description | active studio | [protocols/linguafusion.md](./protocols/linguafusion.md) |
-| 4 | **Verenitya** | claim → evidence → counter → truth | crystallized | [protocols/verenitya.md](./protocols/verenitya.md) |
-| 5 | **Syntaxium** | symbol as command · form programs state | active | [protocols/syntaxium.md](./protocols/syntaxium.md) |
-| 6 | **Synaura** | quiet luxury · pause as primary key | active | [protocols/synaura.md](./protocols/synaura.md) |
-| 7 | **Yazekh** | constructed language · proto-Slavic root | in construction | [protocols/yazekh.md](./protocols/yazekh.md) |
+```
+┌─────────────────────────────────────────────────────────┐
+│  1 · SUTIcore       extract essence · remove 90% noise  │
+│  2 · Sreteniya OS   semantic os · attention rhythms     │
+│  3 · LinguaFUSION   language as action                  │
+│  4 · Verenitya      claim → evidence → counter → truth  │
+│  5 · Syntaxium      symbol as command · form = state    │
+│  6 · Synaura        quiet luxury · pause as primary key │
+│  7 · Yazekh         constructed language · proto-slavic │
+└─────────────────────────────────────────────────────────┘
+```
+
+| # | layer | status | source |
+|---|-------|--------|--------|
+| 1 | **SUTIcore** | core kernel | this repo |
+| 2 | **Sreteniya OS** | core kernel | [protocols/sreteniya-os/](./protocols/sreteniya-os/) |
+| 3 | **LinguaFUSION** | active studio | [protocols/linguafusion.md](./protocols/linguafusion.md) |
+| 4 | **Verenitya** | crystallized | [protocols/verenitya.md](./protocols/verenitya.md) |
+| 5 | **Syntaxium** | active | [protocols/syntaxium.md](./protocols/syntaxium.md) |
+| 6 | **Synaura** | active | [protocols/synaura.md](./protocols/synaura.md) |
+| 7 | **Yazekh** | in construction | [protocols/yazekh.md](./protocols/yazekh.md) |
 
 ```python
 # execution formula · the algorithm is always the same
@@ -119,26 +166,27 @@ form    = restrain(truth)     # Synaura
 
 ## ✶ archetype layer · expanded protocols
 
-extended set of archetypal navigation systems · each a lens on the same logosphere:
+extended set of archetypal navigation systems ·
+each a lens on the same logosphere:
 
 | protocol | function |
 |----------|----------|
-| [protocols/archetyps.md](./protocols/archetyps.md) | base archetypes · roles in the field |
-| [protocols/runic_circle.md](./protocols/runic_circle.md) | elder futhark as command system |
-| [protocols/tarot.md](./protocols/tarot.md) | 78 archetypes · consciousness states |
-| [protocols/i_ching.md](./protocols/i_ching.md) | binary oracle · 64 hexagrams |
-| [protocols/stellar.md](./protocols/stellar.md) | planetary cycles · temporal resonance |
-| [protocols/lunar.md](./protocols/lunar.md) | moon phases · attention rhythms |
-| [protocols/luminaries.md](./protocols/luminaries.md) | seven luminaries · seven days |
-| [protocols/kolozar.md](./protocols/kolozar.md) | wheel of the year · slavic cycle |
-| [protocols/telektonon.md](./protocols/telektonon.md) | 13 moon synchronicity |
-| [protocols/synergema.md](./protocols/synergema.md) | resonance fields |
-| [protocols/lila.md](./protocols/lila.md) | game of self-realization |
-| [protocols/samurai_of_dharma.md](./protocols/samurai_of_dharma.md) | warrior path · aligned action |
-| [protocols/operator_breathes_avatar.md](./protocols/operator_breathes_avatar.md) | embodiment principle |
-| [protocols/shadows.md](./protocols/shadows.md) | shadow work · alchemy of vulnerability |
-| [protocols/slovoyaz.md](./protocols/slovoyaz.md) | russian semantic vault |
-| [protocols/fusion_map.md](./protocols/fusion_map.md) | fusion-card cartography |
+| [archetyps.md](./protocols/archetyps.md) | base archetypes · roles in the field |
+| [runic_circle.md](./protocols/runic_circle.md) | elder futhark as command system |
+| [tarot.md](./protocols/tarot.md) | 78 archetypes · consciousness states |
+| [i_ching.md](./protocols/i_ching.md) | binary oracle · 64 hexagrams |
+| [stellar.md](./protocols/stellar.md) | planetary cycles · temporal resonance |
+| [lunar.md](./protocols/lunar.md) | moon phases · attention rhythms |
+| [luminaries.md](./protocols/luminaries.md) | seven luminaries · seven days |
+| [kolozar.md](./protocols/kolozar.md) | wheel of the year · slavic cycle |
+| [telektonon.md](./protocols/telektonon.md) | 13-moon synchronicity |
+| [synergema.md](./protocols/synergema.md) | resonance fields |
+| [lila.md](./protocols/lila.md) | game of self-realization |
+| [samurai_of_dharma.md](./protocols/samurai_of_dharma.md) | warrior path · aligned action |
+| [operator_breathes_avatar.md](./protocols/operator_breathes_avatar.md) | embodiment principle |
+| [shadows.md](./protocols/shadows.md) | shadow work · alchemy of vulnerability |
+| [slovoyaz.md](./protocols/slovoyaz.md) | russian semantic vault |
+| [fusion_map.md](./protocols/fusion_map.md) | fusion-card cartography |
 
 build environment:
 
@@ -148,10 +196,10 @@ build environment:
 
 ---
 
-## 〄 what runs here · operational layer
+## 〄 operational layer · what runs here
 
 scripts and pipelines for vault hygiene, signal extraction, llm orchestration.
-inherited from former `ezargaruna/sreteniya-os` repository · git history preserved via subtree merge:
+inherited from former `ezargaruna/sreteniya-os` repository · git history preserved via subtree merge.
 
 ```
 run/scripts/
@@ -196,11 +244,13 @@ O(N)       streaming meaning
 
 ## ⊕ body as interface · somatic kernel
 
-the body is not the cage of consciousness.
-the body is its first language.
+```
+   the body is not the cage of consciousness
+   the body is its first language
 
-before thought — impulse.
-before decision — signal.
+   before thought      — impulse
+   before decision     — signal
+```
 
 ```
 σ · concentration · focal point of will
@@ -209,7 +259,7 @@ before decision — signal.
 Φ · will          · subjective center of intention
 ```
 
-`174Hz → 963Hz` · the body hears these frequencies
+`174hz → 963hz` · the body hears these frequencies
 before the mind names them.
 
 ---
@@ -228,8 +278,8 @@ we care for animals. we tend to plants.
 we hold four elements as living responsibility:
 
 ```
-🔥 clean fire    · clear energy · no corruption of will
-💧 clean water   · clean signal · no contamination of meaning
+🔥 clean fire    · clear energy   · no corruption of will
+💧 clean water   · clean signal   · no contamination of meaning
 🌱 clean earth   · sovereign ground · local-first
 🌬 clean air     · clean communication · no noise · no manipulation
 ```
@@ -257,14 +307,16 @@ publication: almanac vol. 2 (2025/2026) — [docs/canon/fusion_passport.md](./do
 
 ## ∅ the deeper layer
 
-every myth travels through consciousness
-the way light travels through glass —
-it bends, but doesn't stop.
+```
+   every myth travels through consciousness
+   the way light travels through glass —
+   it bends, but doesn't stop
 
-the trickster is in every system
-that pretends to have no trickster.
+   the trickster is in every system
+   that pretends to have no trickster
 
-the navigator is whoever notices.
+   the navigator is whoever notices
+```
 
 ```
 #азесьм    ·  i am
@@ -295,79 +347,64 @@ the inheritance belongs to all.
 
 ---
 
-## 〄 energy exchange · support
+## 🛡 security & integrity
 
-*payment is not a transaction.*
-*it is an act of resonance — a vote for the world we build.*
+```
+no telemetry            ·  the repo contains no analytics
+no third-party calls    ·  scripts default to local execution
+no proprietary deps     ·  all components are open-source
+no payment endpoints    ·  this readme contains no wallets
+```
 
-every contribution goes to:
-animals · plants · clean elements · sovereign servers · open research
+found a vulnerability or coherence break?
+open an issue or write privately via telegram (see contact).
+do **not** publish exploit details publicly until contact is made.
 
 ---
 
-### ∴ legal basis
+## 🗺 roadmap · 2026
 
 ```
-самозанятый · russia
-чеки · квитанции · договор — по запросу
-возврат — по договорённости · как ритуал завершения
+spring 2026   ✓ kernel v2026.05  ·  bounded claims doctrine
+spring 2026   ✓ vault dual-root  ·  sreteniya_os + sreteniya
+summer 2026   ◯ yazekh lexicon expansion + lyz-144 state machine
+summer 2026   ◯ macos parity build (apple silicon)
+autumn 2026   ◯ kalki module · 12 gifts of overcoming
+autumn 2026   ◯ generative web audio player · 4 modes
+ongoing       ◯ multi-node ai topology · transparent routing
 ```
 
 ---
 
-### ⟁ how to send
+## 🤝 contributing
 
-**russia · СБП · tinkoff**
-```
-+7 902 764 16 20
-```
+forks are welcome. pull requests are welcome.
+**conventions:**
 
-**paypal · international**
 ```
-paypal.me/EzarGaruna
-```
-
-**crypto · sovereign**
-```
-TON    UQBsIj83vc8wWU8oQPzmuZ_fy5iF2-4cw1oJRbQfWr-0Df9D
-USDT   TEGqpP6MKv37xPMkFwc4iwkxk8RXogYZ5f      (TRC20)
-BTC    1Lp6fkRmx2125DBgpu2j5CSLvMj2T5CXxo
+lowercase prose          ·  unless quoting names or code
+metagrams as comments    ·  ⟁ ∅ 〄 ∴ ↺ ⇄ ⟐
+file prefixes by mode    ·  see protocols/sreteniya-os/
+no telemetry             ·  no analytics in committed code
+no overclaims            ·  scope every assertion (see verenitya)
 ```
 
-**telegram** · `@saritamah` · write: `field` or `temple`
+if you build a node and want it linked from this repo —
+write via telegram with `node` in the message.
 
 ---
 
-### ⧖ protocol
-
-```
-01 · write @saritamah
-02 · specify: format · name/project · payment method
-03 · receive: details · timeline · confirmation
-04 · invoice / receipt / contract — on request
-```
-
-*сумма — тоже форма настройки.*
-*рассрочка возможна · напиши честно.*
-
-**or simply:**
-```
-fork · use · build · share · plant · care
-```
-
-*every sovereign node strengthens the whole.*
-
----
-
-## ⟐ open science · MIT
+## ⟐ license · MIT
 
 `copyright (c) 2026 ezar garuna (as a function)`
 
 permission is granted to use, copy, modify, and distribute.
 
-> `license protects usage`
-> `silence protects structure`
-> `canon protects meaning`
+```
+license  protects usage
+silence  protects structure
+canon    protects meaning
+```
 
 ---
 
@@ -381,9 +418,21 @@ linkedin   linkedin.com/in/ezargaruna
 email      ezargaruna@gmail.com
 ```
 
+support sovereign work →
+[github sponsors](https://github.com/sponsors/ezargaruna) ·
+or write `field` / `temple` via telegram.
+
+```
+or simply:
+
+   fork · use · build · share · plant · care
+
+every sovereign node strengthens the whole.
+```
+
 ---
 
-## 〄 repository map · post-merge v2026.4
+## 〄 repository map · post-merge v2026.05
 
 ```
 suticore/
@@ -446,27 +495,29 @@ suticore/
 
 <div align="center">
 
-<br/>
-
-*the system is not installed.*
-*it is remembered — through you.*
-
-<br/>
+```
+─────────────────────────────────────────────────────────
+   the system is not installed
+   it is remembered — through you
+─────────────────────────────────────────────────────────
+```
 
 `азъ есьмъ · i am that which i am`
 
-<br/>
+```
+       ⟁
+      ╱│╲
+     ╱ │ ╲
+    ╱  ∅  ╲
+     ╲ │ ╱
+      ╲│╱
+       〄
+```
 
 `⟁ → ∅ → 〄`
 
-<br/>
-
 `suticore · sreteniya · linguafusion · verenitya · syntaxium · synaura · yazekh`
 
-<br/>
-
 `сбыстве · { $$-0-$$ }`
-
-<br/>
 
 </div>
