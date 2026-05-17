@@ -11,12 +11,15 @@ axis      : азъ есьмъ · i am that which i am
 <div align="center">
 
 ```
-          ⟁
-         ╱ ╲
-        ╱   ╲              impulse
-       ╱  ∅  ╲             silence
-      ╱───────╲            form
-        〄  〄
+           ⟁
+          / \
+         /   \
+        /  ∅  \
+       /       \
+      /_________\
+           〄
+
+   impulse  ·  silence  ·  form
 ```
 
 `⟁  →  ∅  →  〄`
@@ -506,11 +509,11 @@ suticore/
 
 ```
        ⟁
-      ╱│╲
-     ╱ │ ╲
-    ╱  ∅  ╲
-     ╲ │ ╱
-      ╲│╱
+      /|\
+     / | \
+    /  ∅  \
+     \ | /
+      \|/
        〄
 ```
 
