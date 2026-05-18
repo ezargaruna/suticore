@@ -1,3 +1,4 @@
+```markdown
 ---
 id: suticore-llms-entry
 layer: meta-architecture · kernel
