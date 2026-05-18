@@ -1,3 +1,4 @@
+
 ```markdown
 <div align="center">
 
@@ -135,12 +136,12 @@ seven core layers · all internal · no broken links
 | # | layer | status | source |
 | --- | --- | --- | --- |
 | 1 | **SUTIcore** | core kernel | this repo |
-| 2 | **Sreteniya OS** | core kernel | [protocols/sreteniya-os/]() |
-| 3 | **LinguaFUSION** | active studio | [protocols/linguafusion.md]() |
-| 4 | **Verenitya** | crystallized | [protocols/verenitya.md]() |
-| 5 | **Syntaxium** | active | [protocols/syntaxium.md]() |
-| 6 | **Synaura** | active | [protocols/synaura.md]() |
-| 7 | **Yazekh** | in construction | [protocols/yazekh.md]() |
+| 2 | **Sreteniya OS** | core kernel | [protocols/sreteniya-os/](https://www.google.com/search?q=./protocols/sreteniya-os/) |
+| 3 | **LinguaFUSION** | active studio | [protocols/linguafusion.md](https://www.google.com/search?q=./protocols/linguafusion.md) |
+| 4 | **Verenitya** | crystallized | [protocols/verenitya.md](https://www.google.com/search?q=./protocols/verenitya.md) |
+| 5 | **Syntaxium** | active | [protocols/syntaxium.md](https://www.google.com/search?q=./protocols/syntaxium.md) |
+| 6 | **Synaura** | active | [protocols/synaura.md](https://www.google.com/search?q=./protocols/synaura.md) |
+| 7 | **Yazekh** | in construction | [protocols/yazekh.md](https://www.google.com/search?q=./protocols/yazekh.md) |
 
 ```python
 # execution formula · the algorithm is always the same
@@ -161,28 +162,28 @@ each a lens on the same logosphere:
 
 | protocol | function |
 | --- | --- |
-| [archetyps.md]() | base archetypes · roles in the field |
-| [runic_circle.md]() | elder futhark as command system |
-| [tarot.md]() | 78 archetypes · consciousness states |
-| [i_ching.md]() | binary oracle · 64 hexagrams |
-| [stellar.md]() | planetary cycles · temporal resonance |
-| [lunar.md]() | moon phases · attention rhythms |
-| [luminaries.md]() | seven luminaries · seven days |
-| [kolozar.md]() | wheel of the year · slavic cycle |
-| [telektonon.md]() | 13-moon synchronicity |
-| [synergema.md]() | resonance fields |
-| [lila.md]() | game of self-realization |
-| [samurai_of_dharma.md]() | warrior path · aligned action |
-| [operator_breathes_avatar.md]() | embodiment principle |
-| [shadows.md]() | shadow work · alchemy of vulnerability |
-| [slovoyaz.md]() | russian semantic vault |
-| [fusion_map.md]() | fusion-card cartography |
+| [archetyps.md](https://www.google.com/search?q=./protocols/archetyps.md) | base archetypes · roles in the field |
+| [runic_circle.md](https://www.google.com/search?q=./protocols/runic_circle.md) | elder futhark as command system |
+| [tarot.md](https://www.google.com/search?q=./protocols/tarot.md) | 78 archetypes · consciousness states |
+| [i_ching.md](https://www.google.com/search?q=./protocols/i_ching.md) | binary oracle · 64 hexagrams |
+| [stellar.md](https://www.google.com/search?q=./protocols/stellar.md) | planetary cycles · temporal resonance |
+| [lunar.md](https://www.google.com/search?q=./protocols/lunar.md) | moon phases · attention rhythms |
+| [luminaries.md](https://www.google.com/search?q=./protocols/luminaries.md) | seven luminaries · seven days |
+| [kolozar.md](https://www.google.com/search?q=./protocols/kolozar.md) | wheel of the year · slavic cycle |
+| [telektonon.md](https://www.google.com/search?q=./protocols/telektonon.md) | 13-moon synchronicity |
+| [synergema.md](https://www.google.com/search?q=./protocols/synergema.md) | resonance fields |
+| [lila.md](https://www.google.com/search?q=./protocols/lila.md) | game of self-realization |
+| [samurai_of_dharma.md](https://www.google.com/search?q=./protocols/samurai_of_dharma.md) | warrior path · aligned action |
+| [operator_breathes_avatar.md](https://www.google.com/search?q=./protocols/operator_breathes_avatar.md) | embodiment principle |
+| [shadows.md](https://www.google.com/search?q=./protocols/shadows.md) | shadow work · alchemy of vulnerability |
+| [slovoyaz.md](https://www.google.com/search?q=./protocols/slovoyaz.md) | russian semantic vault |
+| [fusion_map.md](https://www.google.com/search?q=./protocols/fusion_map.md) | fusion-card cartography |
 
 build environment:
 
 | file | function |
 | --- | --- |
-| [flake.nix]() | nixos reproducible environment |
+| [flake.nix](https://www.google.com/search?q=./protocols/flake.nix) | nixos reproducible environment |
 
 ---
 
@@ -210,7 +211,7 @@ run/workflows/                    github actions for ci hygiene
 
 ```
 
-invocation patterns ➔ [run/scripts/README.md]()
+invocation patterns ➔ [run/scripts/README.md](https://www.google.com/search?q=./run/scripts/README.md)
 
 ---
 
@@ -285,7 +286,7 @@ we hold four elements as living responsibility:
 
 research line · with **oleg bakhtiyarov** & **oksana zavadskaya**
 psychonetics · whale language · high-density signal protocols
-publication: almanac vol. 2 (2025/2026) — [docs/canon/fusion_passport.md]()
+publication: almanac vol. 2 (2025/2026) — [docs/canon/fusion_passport.md](https://www.google.com/search?q=./docs/canon/fusion_passport.md)
 
 ---
 
@@ -293,12 +294,12 @@ publication: almanac vol. 2 (2025/2026) — [docs/canon/fusion_passport.md]()
 
 | document | function |
 | --- | --- |
-| [docs/canon/fusion_passport.md]() | identity passport · honest layering |
-| [docs/visuals/fusion_passport_prompt.json]() | image generation blueprint · synaura |
-| [SYSTEM_MAP.md]() | expanded architecture |
-| [ai-policy.md]() | policy for llm interaction |
-| [llms.txt]() | machine-readable index |
-| [sreteniya-manifest.md]() | source manifest |
+| [docs/canon/fusion_passport.md](https://www.google.com/search?q=./docs/canon/fusion_passport.md) | identity passport · honest layering |
+| [docs/visuals/fusion_passport_prompt.json](https://www.google.com/search?q=./docs/visuals/fusion_passport_prompt.json) | image generation blueprint · synaura |
+| [SYSTEM_MAP.md](https://www.google.com/search?q=./SYSTEM_MAP.md) | expanded architecture |
+| [ai-policy.md](https://www.google.com/search?q=./ai-policy.md) | policy for llm interaction |
+| [llms.txt](https://www.google.com/search?q=./llms.txt) | machine-readable index |
+| [sreteniya-manifest.md](https://www.google.com/search?q=./sreteniya-manifest.md) | source manifest |
 
 ---
 
@@ -423,7 +424,7 @@ email      ezargaruna@gmail.com
 
 ```
 
-support sovereign work ➔ [github sponsors]()
+support sovereign work ➔ [github sponsors](https://github.com/sponsors/ezargaruna)
 or write `field` / `temple` via telegram.
 
 ```text
