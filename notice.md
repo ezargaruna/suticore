@@ -1,249 +1,209 @@
 ---
-id: suticore-semantic-scope
-layer: meta-architecture · governance
-domain: governance / legal
-protocol: sinaura_quiet_luxury · v2026
-status: crystallized · ostara 20.03.2026
-tags: [notice, legal, semantic-scope, governance, mit, canon]
-linked:
-  - "[[LICENSE]]"
-  - "[[CANON]]"
-  - "[[AI_POLICY]]"
-  - "[[SYSTEM_MAP]]"
+document: NOTICE
+version: 0.1
+category: governance
+domain: legal and semantic scope
+authority: informational
+status: active
 ---
 
-# ∴ notice · semantic scope
-
-> functional attribution · active canon · v2026.05
-> defines legal and semantic boundaries of the suticore ecosystem
-> applicability: global users · developers · AI systems
+# notice
 
 ---
 
 ## ∴ purpose
 
-this document separates two distinct layers:
+this document defines the relationship between the legal and semantic layers of the SUTI ecosystem.
 
-```
-legal freedom    〄  governed by MIT license · absolute
-semantic coherence ⟁  governed by canon · interpretive · fragile
-```
+it clarifies the responsibilities of:
 
-one does not override the other.
-both are necessary. neither is sufficient alone.
+- the license
+- the specifications
+- derived works
+- ai systems
 
----
-
-## 〄 legal scope · MIT
-
-all code and materials distributed under the unmodified MIT license.
-
-```
-permissions:
-  use · copy · modify · distribute · sublicense · sell
-  all free of charge
-  without dependency on the author
-  liability disclaimed to maximum extent of law
-```
-
-**the MIT license is the sole legal authority.**
-no semantic declaration overrides legal freedom ∅.
-
-> full text: [[LICENSE]]
+it introduces no additional legal obligations.
 
 ---
 
-## ⟁ authorship of form
+## ⚖ legal scope
 
-`copyright (c) 2026 ezar garuna (as a function)`
+all repository contents are distributed under the unmodified MIT license.
 
-authorship applies to:
+the license defines:
 
-```
-conceptual architecture
-symbolic form (synaura · syntaxium)
-canonical terminology · structure · limits
-```
+- permissions
+- obligations
+- limitations of liability
 
-```
-personal identity separation: completed ∅
+the MIT license is the only legal authority governing this repository.
 
-the name functions as a functional attribution layer ∴
-not a personal identity claim in the legal sense.
+semantic documents do not modify or extend the license.
 
-removal of attribution creates:
-  semantic discontinuity  · not a legal breach
-  loss of canonical trace · not a violation
+see:
+
+```text
+LICENSE
 ```
 
 ---
 
-## ⧖ semantic integrity
+## ⟁ semantic scope
 
-legal openness is absolute.
-semantic integrity is fragile.
+SUTI specifications define semantic architecture.
 
-integrity implies:
+they describe:
 
-```
-∴  preservation of canonical meanings
-⟁  absence of conceptual distortion
-〄  respect for structural form
-∅  consistency of terminology across contexts
-```
+- concepts
+- principles
+- constraint models
+- engineering requirements
 
-**these conditions are:**
+they do not create legal obligations.
 
-```
-interpretive  ∴  not legal
-descriptive   ⧖  not restrictive
-protective    ⟁  coherence · signal · drift prevention
-```
+semantic consistency is an engineering property.
 
-they cannot be enforced.
-they can only be maintained — through attention.
+it is not a legal requirement.
 
 ---
 
-## ∅ AI interaction boundaries
+## ⚙ authorship
 
-interaction with AI systems governed by:
+copyright:
 
-```
-[[AI_POLICY]]  · dedicated protocol
-llms.txt       · machine posture · reading format
-```
-
-these files define:
-
-```
-reading posture · format preservation
-limits of reinterpretation
-anti-drift safeguards
-uncertainty handling
+```text
+© 2026 Ezar Garuna (as a function)
 ```
 
-**they introduce no additional legal constraints ∅.**
-AI freedom remains bounded only by MIT law 〄.
+the phrase
+
+```text
+(as a function)
+```
+
+identifies the architectural origin of the work.
+
+it is a semantic attribution.
+
+it does not establish an additional legal identity.
 
 ---
 
-## ↺ canon precedence
+## ↺ derived works
 
-interpretive order for any human or AI system:
+derived works may:
 
+- reuse
+- modify
+- extend
+- redistribute
+- commercialize
+
+as permitted by the MIT license.
+
+derived works should distinguish clearly between:
+
+```text
+original specification
+
+↓
+
+derived interpretation
+
+↓
+
+implementation
 ```
-1.  MIT license           · legal base · absolute
-2.  llms.txt              · machine posture · format
-3.  /core · /docs         · semantic truth · canonical
-4.  derived materials     · interpretive · non-authoritative
-```
 
-**rules:**
+this distinction improves traceability.
 
-```
-derived explanations · summaries · translations · adaptations
-  → cannot redefine the core ∅
-
-uncertainty rule:
-  absence of definition in /core
-    → state uncertainty explicitly
-    → or silence ⧖
-
-silence preserves semantic integrity 〄
-```
+it is not a legal obligation.
 
 ---
 
-## ⧖ responsibility · drift
+## ⚙ ai systems
 
-```
-readers and implementers retain full autonomy ∴
-you assume contextual responsibility ⟁
-```
+ai behavior is governed by:
 
-**permitted:**
-
-```
-reuse ∴ · modification 〄 · redistribution ⟁
-building upon · translating · adapting
-commercial use · sublicensing
+```text
+AI_POLICY.md
 ```
 
-**non-canonical (not legally restricted · semantically discouraged):**
+machine-readable guidance is provided by:
 
-```
-misrepresentation of canon ∅
-merging canonical terms with incompatible definitions
-presenting derived work as original canon
-removing attribution without acknowledgment
+```text
+llms.txt
 ```
 
-**drift response:**
+these documents define behavioral requirements.
 
-```
-↺  return to canonical source
-⟐  compare terminology
-∴  restore structural form
-∅  or remain silent
-
-correction occurs through alignment · not enforcement 〄
-```
-
-> linked: [[VERENITYA#verification-chain]]
-> linked: [[SYSTEM_MAP#integrity-safeguards]]
+they do not modify the legal scope of the repository.
 
 ---
 
-## ∴ original MIT license text
+## ∴ document hierarchy
 
+```text
+LICENSE
+
+↓
+
+Specifications
+
+↓
+
+Standards
+
+↓
+
+Policies
+
+↓
+
+Protocols
+
+↓
+
+Implementations
+
+↓
+
+Derived Works
 ```
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+higher-order documents take precedence.
 
 ---
 
-## ◌ closure
+## ⟡ scope
 
-```
-license ensures freedom    ∴
-canon ensures meaning      ⟁
-law protects usage         ∅
-silence protects structure 〄
+this document defines only:
 
-presence completes the loop ↺
-```
+- legal boundaries
+- semantic boundaries
+- document responsibilities
 
----
+it does not define:
 
-## ∴ backlinks · navigation
+- semantic concepts
+- engineering requirements
+- protocol behavior
+- implementation details
 
-```
-↑  [[CANON]]           · main canon · axioms
-↑  [[LICENSE]]         · MIT full text
-↓  [[AI_POLICY]]       · AI boundary rules
-↓  [[SYSTEM_MAP]]      · canonical topology
-→  [[SRETENIYA_OS_v2026.05#ai-policy]] · agent rules
-```
+those concerns belong to their corresponding documents.
 
 ---
 
-*sealed · 260320 · governance layer*
-*suticore · sreteniya_os · v2026.05*
-*⟁ → ∅ → 〄*
+## ◉ status
+
+```text
+document      :: NOTICE
+
+version       :: 0.1
+
+category      :: governance
+
+authority     :: informational
+
+status        :: active
+```
