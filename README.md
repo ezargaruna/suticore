@@ -1,433 +1,215 @@
-<div align="center">
-
 # s u t i c o r e
 
-### semantic operating system
-### recursive architecture for distinction
-
-⟁ → ∅ → ㄄
-
-*observe · distinguish · integrate*
+### canonical specification
+### version :: 0.1
 
 ---
 
-**SUTI.world**
+# ∴ purpose
 
-semantic civilization research platform
+SUTIcore specifies the canonical constraint model for semantic architectures.
 
-</div>
+This specification defines the minimal normative concepts, principles and invariants required to construct, transform and evaluate semantic architectures independently of implementation.
 
----
-
-# ∴ overview
-
-SUTIcore is the conceptual and semantic kernel of the SUTI ecosystem.
-
-It develops architectures for recursive distinction, semantic systems, conceptual engineering, language design and epistemic governance.
-
-Rather than presenting a completed theory, SUTIcore provides an open research framework for constructing, refining and evaluating semantic architectures through recursive differentiation, structural coherence and governed evolution.
-
-The repository contains standards, protocols, reference architectures, research documents and experimental implementations that collectively support the evolution of the system.
+All derived standards, protocols, reference models and implementations are governed by this specification.
 
 ---
 
-# ∴ s u t i . w o r l d
+# ⟁ normative principles
 
-SUTI.world is the living ecosystem built upon SUTIcore.
+Semantic architectures are governed by explicit constraints.
 
-It connects research, education, language, design, software, artificial intelligence and collaborative development into a shared semantic environment.
+Constraints define the admissible transformation space.
 
-Where
+Protocols govern admissible operations.
 
-**SUTIcore** develops the architecture,
-
-**SUTI.world** develops the ecosystem.
-
-The architecture evolves through research.
-
-The ecosystem evolves through collaboration, validation and implementation.
+Architectural validity is preserved only through admissible transformations.
 
 ---
 
-# ⟁ ecosystem
+# ⟐ canonical vocabulary
+
+The following terms define the canonical abstraction layer.
+
+---
+
+## constraint
+
+The fundamental semantic primitive.
+
+A constraint defines the admissible transformation space.
+
+Constraints govern architectural validity.
+
+---
+
+## protocol
+
+A constraint-governed transformation domain.
+
+Protocols define the admissible operations within a semantic architecture.
+
+---
+
+## node
+
+A stabilized semantic configuration established under one or more constraint spaces.
+
+Nodes provide stable reference points for semantic relations.
+
+---
+
+## operation
+
+A transformation evaluated under explicit constraints.
+
+Only admissible operations preserve architectural validity.
+
+---
+
+## projection
+
+A representation of a semantic structure in another medium.
+
+Examples include:
 
 ```text
-SUTI.world
-    semantic civilization platform
+architecture   → documentation
+model          → implementation
+graph          → database
+specification  → runtime
+```
 
-        │
+---
 
-        ▼
+# ↺ semantic model
 
-SUTIcore
-    semantic operating system
+```text
+constraint
 
-        │
+↓
 
-        ▼
+protocol
 
-standards
+↓
+
+operation
+
+↓
+
+stabilization
+
+↓
+
+semantic identity
+
+↓
+
+projection
+```
+
+---
+
+# ⚙ normative invariants
+
+The following properties are implementation independent.
+
+---
+
+## explicit constraints
+
+Operations shall be evaluated only under explicitly declared constraints.
+
+---
+
+## architectural validity
+
+Every admissible transformation shall preserve the governing constraints.
+
+---
+
+## non-redundancy
+
+A new abstraction shall be introduced only when an existing concept cannot express the required distinction without structural loss.
+
+---
+
+## recursive composition
+
+Every stabilized semantic configuration may participate as a node within a higher-order semantic architecture.
+
+---
+
+# ⟁ operational architecture
+
+```text
+constraint model
+
+↓
+
 protocols
-architectures
-research
-implementations
+
+↓
+
+runtime
+
+↓
+
+interfaces
 ```
 
 ---
 
-# ⟐ interactive system map
+# ⟡ specification scope
 
-The complete structure of the ecosystem is documented through the interactive semantic atlas.
+This specification defines only the canonical constraint model governing semantic architectures.
 
-→ **Open `index.html`**
+It does not prescribe:
 
-The atlas contains the current architecture of the entire SUTI ecosystem, including its modules, research directions, frameworks, standards and ongoing development.
+- implementation technologies
+- programming languages
+- storage models
+- execution environments
+- interface designs
+- visualization systems
+- domain ontologies
+
+These concerns are specified by derived standards.
 
 ---
 
-# ⚙ ecosystem structure
+# ∴ repository role
+
+This specification is the normative source for the repository.
+
+All standards,
+
+protocols,
+
+reference architectures,
+
+documentation,
+
+implementations,
+
+and interfaces
+
+shall remain consistent with this specification.
+
+---
+
+# ◉ status
 
 ```text
-SUTI.world
-│
-├── Core
-│
-│     ├── SUTIcore
-│     │      semantic operating system
-│     │
-│     ├── Sreteniya OS
-│     │      recursive architecture of distinction
-│     │
-│     ├── Syntaxium
-│     │      semantic architecture
-│     │
-│     ├── Runtime
-│     │      execution framework
-│     │
-│     └── Governance
-│            architectural principles
-│
-├── Research
-│
-│     ├── Standards
-│     ├── Specifications
-│     ├── White Papers
-│     ├── RAD
-│     ├── Laboratory
-│     ├── Experiments
-│     ├── Validation
-│     └── Archive
-│
-├── Language
-│
-│     ├── LinguaFUSION
-│     ├── Yazekh
-│     ├── Translation
-│     ├── Grammar
-│     ├── Semantics
-│     └── Linguistics
-│
-├── Cognition
-│
-│     ├── Recursive Cognition
-│     ├── Attention
-│     ├── Distinction
-│     ├── Epistemics
-│     ├── Memory
-│     └── Intelligence
-│
-├── Design
-│
-│     ├── Synaura
-│     ├── Visual Language
-│     ├── Motion
-│     ├── UX
-│     ├── Interface
-│     └── Design System
-│
-├── AI
-│
-│     ├── Agents
-│     ├── Prompts
-│     ├── Protocols
-│     ├── Reasoning
-│     ├── Knowledge Graphs
-│     └── Automation
-│
-├── Academy
-│
-│     ├── Documentation
-│     ├── Publications
-│     ├── Courses
-│     ├── Tutorials
-│     ├── Community
-│     └── Certification
-│
-├── Applications
-│
-│     ├── Semantic Tools
-│     ├── Educational Systems
-│     ├── Cognitive Interfaces
-│     ├── Creative Platforms
-│     └── Experimental Products
-│
-└── Roadmap
-      │
-      ├── Current
-      ├── Development
-      ├── Planned
-      └── Archive
+document      :: SUTIcore Specification
+
+version       :: 0.1
+
+status        :: draft
+
+category      :: normative specification
+
+domain        :: semantic architectures
+
+authority     :: canonical source
 ```
-
----
-
-# ∴ research orientation
-
-SUTIcore is organized as an engineering research program.
-
-The objective is to investigate methods for designing semantic architectures through explicit distinction, recursive refinement and transparent epistemic governance.
-
-Current architectural proposals should be interpreted as research artifacts with explicit epistemic status rather than completed engineering standards.
-
----
-
-# ⚙ recursive protocol
-
-```text
-observe
-
-↓
-
-record
-
-↓
-
-distinguish
-
-↓
-
-structure
-
-↓
-
-verify
-
-↓
-
-integrate
-
-↓
-
-evolve
-```
-
-Each refinement is expected to increase conceptual resolution while preserving structural coherence.
-
-New concepts are introduced only when existing distinctions become insufficient.
-
----
-
-# ↺ architectural principles
-
-```text
-clarity
-    >
-quantity
-
-structure
-    >
-rhetoric
-
-distinction
-    >
-persuasion
-
-observation
-    >
-interpretation
-
-verification
-    >
-assumption
-
-simplicity
-    >
-complexity
-
-adaptation
-    >
-completion
-
-evolution
-    >
-finality
-```
-
----
-
-# ∴ epistemic architecture
-
-The repository distinguishes multiple classes of knowledge.
-
-```text
-observation
-
-↓
-
-hypothesis
-
-↓
-
-methodological proposal
-
-↓
-
-architectural specification
-
-↓
-
-validated knowledge
-```
-
-Every document is expected to maintain an explicit epistemic status.
-
----
-
-# ⟐ conceptual workflow
-
-```text
-conceptual exploration
-
-↓
-
-conceptual differentiation
-
-↓
-
-architectural synthesis
-
-↓
-
-epistemic consolidation
-
-↓
-
-method boundary detection
-
-↓
-
-comparative validation
-
-↓
-
-historical validation
-
-↓
-
-empirical validation
-```
-
-Conceptual refinement concludes when further differentiation no longer strengthens the epistemic justification of existing claims.
-
-Subsequent progress depends upon new classes of evidence rather than additional conceptual expansion.
-
----
-
-# 📁 repository
-
-```text
-core/
-    semantic kernel
-
-protocols/
-    operational protocols
-
-standards/
-    canonical standards
-
-runtime/
-    execution architecture
-
-research/
-    investigations
-    hypotheses
-    working papers
-
-reference/
-    specifications
-
-implementations/
-    experimental systems
-
-examples/
-    reference implementations
-
-website/
-    SUTI.world
-
-assets/
-    visual identity
-
-archive/
-    historical evolution
-```
-
----
-
-# ↺ current status
-
-```text
-status             :: active research
-
-discipline         :: engineering research program
-
-domain             :: semantic architecture
-
-method             :: recursive distinction
-
-development         :: governed evolution
-
-protocol           :: synaura_v2026
-
-architecture       :: always becoming
-
-license            :: open
-```
-
----
-
-<div align="center">
-
-### explore the complete semantic ecosystem
-
-**→ open `index.html`**
-
-The interactive system map presents the complete architecture of SUTI.world, including all modules, standards, frameworks, operating systems, research programs, semantic networks, development branches and future roadmap.
-
----
-
-```text
-clarity
-
-↓
-
-distinction
-
-↓
-
-structure
-
-↓
-
-coherence
-
-↓
-
-higher resolution
-```
-
-**always becoming**
-
-⟁ → ∅ → ㄄
-
-</div>
