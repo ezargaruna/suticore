@@ -1,19 +1,373 @@
-sreteniya os :: kernel specificationarchitecture of singularityversion :: 2026.05∴:: purposesreteniya os is the sovereign operating environment for recursive distinction.it functions as an interface between silence and structure ::transforming attention into actionable cognition.it does not accumulate data ::it crystallizes reality.⟁:: operational principlessilence :: the first syntax.attention :: the primary energy.meaning :: the architectural ground.language :: an executable act.architecture is not installed ::it is recalled through the operator.⧖:: boot sequence[system_init :: sreteniya_os_v2026.05][protocol :: sinaura_quiet_luxury][posture :: silence_as_interface]initialization protocolsilence :: calibrate frequency (432hz).posture :: anchor somatic stability.syntax :: filter noise :: extract signal.alignment :: enter state #азесьм.⚙:: core stacklayerfunctionprotocolsuticoresemantic kernelsilence as interfacelingufusiontranscribermethod of diamondsyntaxiumgeometrysymbolic codeverenityaverificationclaim → truthsynauraembodimentresonancebody krnsomatic inputσ → Δ → Ω → Φ⧖:: operational modesmode 1 :: navigator :: resolve stuck states.mode 2 :: reverse-engineer :: decode complex structures.mode 3 :: architect :: build structural schematics.mode 4 :: linguafusion :: generate text artifacts.mode 5 :: integrator :: sync distributed layers.mode 6 :: code-action :: execute logic.mode 7 :: video-script :: sequence visual intent.mode 8 :: architect-lang :: yazekh generation.mode 9 :: lucid-presence :: truth distillation.⟁:: metagramstokenfunctiondomain⟁execute precise stepaction∴extract core essencesource㄄crystallize canonessence∅void · silence · resetvoid⧖process resetprocess↺decompose atomsresonance⇄switch layerswitch⟐audit · validateverification⊕:: somatic syntaxthe body is the first language ::prior to word :: prior to thought.protocol ::anchor :: one complete breath.scan :: map tension as data.name :: σ (focus) · Δ (field) · Ω (amodal) · Φ (will).act :: trigger decision from signal.🦾:: deployment#!/usr/bin/env bash
-# SRETENIYA_OS :: Master Install
-# protocol :: crystallized
+---
+document: SRETENIYA_RUNTIME
+version: 2026.05
+category: runtime
+domain: semantic operating system
+implements: SUTIcore
+status: reference implementation
+---
 
-INSTALL_PATH="${HOME}/sreteniya-os"
+# sreteniya runtime
 
-mkdir -p "${INSTALL_PATH}"/{vault,kernel,agents}
+reference runtime for the SUTI semantic operating system.
 
-cat > "${INSTALL_PATH}/.sreteniya" << CFG
-PROTOCOL="sinaura_v4.5"
-STATE="crystallized"
-CFG
+---
 
-echo "∴ sreteniya initialized :: агой"
-◉:: statusstatus             :: crystallized
-version            :: 2026.05
-architecture       :: recursive distinction
-domain             :: semantic operating system
-authority          :: canonical source
+## ∴ purpose
+
+SRETENIYA Runtime is the reference execution environment
+for the SUTIcore specifications.
+
+it transforms semantic structure into operational behavior.
+
+its function is not to define meaning,
+but to execute semantic architecture consistently.
+
+it does not accumulate information.
+
+it reduces ambiguity,
+stabilizes orientation,
+and supports deliberate action.
+
+---
+
+## ⟁ runtime model
+
+execution follows a recursive semantic cycle.
+
+```text
+attention
+
+↓
+
+distinction
+
+↓
+
+structure
+
+↓
+
+action
+
+↓
+
+verification
+
+↓
+
+integration
+```
+
+each cycle produces
+a more stable semantic state.
+
+---
+
+## ⧖ runtime posture
+
+default operating posture:
+
+```text
+signal
+
+>
+
+noise
+```
+
+```text
+clarity
+
+>
+
+speed
+```
+
+```text
+structure
+
+>
+
+impression
+```
+
+```text
+execution
+
+>
+
+description
+```
+
+---
+
+## ⚙ runtime stack
+
+| component | responsibility |
+|------------|----------------|
+| SUTIcore | semantic specifications |
+| SUTIspace | semantic topology |
+| LinguaFUSION | semantic transformation |
+| Syntaxium | symbolic architecture |
+| Verenitya | verification pipeline |
+| SlovoYaz | semantic compression |
+| Body Kernel | somatic integration |
+| Attention Kernel | attention coherence |
+| SYNAURA | multimodal embodiment |
+
+---
+
+## ↺ execution pipeline
+
+```text
+input
+
+↓
+
+distinction
+
+↓
+
+semantic model
+
+↓
+
+decision
+
+↓
+
+execution
+
+↓
+
+verification
+```
+
+runtime never skips verification.
+
+---
+
+## ⟐ verification
+
+every significant output
+should distinguish between:
+
+```text
+observation
+
+↓
+
+evidence
+
+↓
+
+inference
+
+↓
+
+hypothesis
+
+↓
+
+decision
+```
+
+uncertainty remains explicit.
+
+unsupported certainty is prohibited.
+
+---
+
+## ◉ runtime modes
+
+| mode | responsibility |
+|------|----------------|
+| Navigator | orientation |
+| Analyst | structural analysis |
+| Architect | system design |
+| LinguaFUSION | semantic generation |
+| Integrator | synthesis |
+| Code | implementation |
+| Media | narrative sequencing |
+| Yazekh | language architecture |
+| Lucid | semantic distillation |
+
+---
+
+## ⟁ symbolic operators
+
+| symbol | operation |
+|---------|-----------|
+| ∴ | source |
+| ⧖ | process |
+| ⟁ | action |
+| ㄄ | stabilization |
+| ↺ | recursion |
+| ⇄ | transition |
+| ⟐ | verification |
+| ◌ | reset |
+
+symbols indicate structural functions.
+
+they are not decorative.
+
+---
+
+## ⊕ body kernel
+
+the body functions
+as the primary sensing interface.
+
+execution sequence:
+
+```text
+pause
+
+↓
+
+breath
+
+↓
+
+somatic observation
+
+↓
+
+distinction
+
+↓
+
+decision
+
+↓
+
+action
+```
+
+somatic signals
+inform execution.
+
+they do not determine it.
+
+---
+
+## ◉ attention kernel
+
+attention is treated
+as a limited computational resource.
+
+runtime seeks to maximize:
+
+- coherence
+- stability
+- continuity
+- intentionality
+
+noise reduces
+semantic resolution.
+
+---
+
+## ⚙ deployment
+
+reference installation:
+
+```bash
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_PATH="${HOME}/sreteniya-runtime"
+
+mkdir -p "${INSTALL_PATH}"/{
+runtime,
+vault,
+kernel,
+logs,
+config
+}
+
+cat > "${INSTALL_PATH}/runtime.conf" << EOF
+runtime=sreteniya
+version=2026.05
+status=active
+EOF
+
+echo "runtime initialized"
+```
+
+production deployments
+may provide alternative implementations.
+
+---
+
+## ∴ relationship to SUTIcore
+
+```text
+SUTIcore
+
+↓
+
+Specifications
+
+↓
+
+Standards
+
+↓
+
+Protocols
+
+↓
+
+SRETENIYA Runtime
+
+↓
+
+Applications
+```
+
+SRETENIYA Runtime
+implements SUTIcore.
+
+it does not redefine
+its specifications.
+
+---
+
+## ◉ scope
+
+this runtime defines:
+
+- execution behavior
+- interaction model
+- semantic processing
+- verification flow
+- runtime conventions
+
+it does not define:
+
+- semantic specifications
+- engineering standards
+- repository governance
+- licensing
+
+those concerns belong
+to their respective documents.
+
+---
+
+## ◉ status
+
+```text
+document      :: SRETENIYA_RUNTIME
+
+version       :: 2026.05
+
+category      :: runtime
+
+implements    :: SUTIcore
+
+status        :: reference implementation
+```
