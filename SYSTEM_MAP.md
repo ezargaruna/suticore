@@ -1,306 +1,419 @@
 <!--
-id        : suticore · system map · canon
-version   : v2026.05 · ostara 20.03.2026
-layer     : meta-architecture
-domain    : orientation · topology
-protocol  : synaura quiet luxury
-status    : crystallized · sealed
-tags      : [system-map, topology, orientation, canon, kernel]
-∴ orientation surface · not a source of truth · canon lives in ./core/CANON.md
+document    :: SYSTEM_MAP
+version     :: 0.1
+category    :: repository topology
+status      :: draft
+authority   :: informational
 -->
 
-# ∴ system map · canonical topology
+# s u t i c o r e
 
-```
-       ⟁
-      /|\
-     / | \
-    /  ∅  \
-     \ | /
-      \|/
-       〄
-```
-
-> *total orientation · active canon · v2026.05*
-> *provide visibility without semantic overload ·*
-> *prevent disorientation inside the canon* ∅
+## system map
 
 ---
 
-## ⧖ global topology
+# ∴ purpose
 
-flow direction:
+This document provides a structural overview of the SUTI ecosystem.
 
-```
-entry → core → protocols → runtime → ↺ feedback → entry
-```
+It defines the organization of the repository, the relationships between its modules and the responsibility boundaries of each architectural layer.
 
-| layer | location | function |
-|-------|----------|----------|
-| **entry** · sreteniya | [README.md](./README.md) | public interface · single-step orientation |
-| **core** · suticore | [./core/CANON.md](./core/CANON.md) | ontology · axioms · freeze meaning |
-| **protocols** | [./protocols/](./protocols/) | translate ontology into navigation |
-| **runtime** | environment · ai · action | manifest structure in real time |
+This document is informational.
+
+It does not define normative concepts or engineering requirements.
 
 ---
 
-## ⟁ module domains
+# ⟁ ecosystem topology
 
-### ∴ 1 · core · ontology
+```text
+                         SUTI.world
+                semantic civilization platform
 
-```
-location  : ./core/
-authority : highest · cannot be modified by protocols or runtime
-function  : freeze meaning · prevent semantic drift
-contains  : axioms · canonical glossary · prime directive
-```
+                               │
+                               ▼
 
-axioms (sealed):
+                         SUTIcore
+                 semantic operating system
 
-```
-AX-01  ⟁  language = action · not description
-AX-02  ∴  silence  = supreme syntax
-AX-03  ⊕  body     = carrier of meaning
-AX-04  〄  clarity  > speed
-AX-05  ↺  step     defines reality
-AX-06  ◉  presence = processing power
-AX-07  ⟐  local-first · information sovereignty
-```
+                               │
+         ┌───────────────┬───────────────┬───────────────┐
+         ▼               ▼               ▼               ▼
 
-source of truth → [core/CANON.md](./core/CANON.md)
+   Specifications    Standards      Protocols       Runtime
 
----
+         │               │               │               │
+         └───────────────┴───────┬───────┴───────────────┘
+                                 ▼
 
-### ⧖ 2 · protocols · operation
+                        Implementations
 
-```
-location  : ./protocols/
-function  : translate ontology into lived navigation
-authority : interpret · do not redefine core
-```
+                                 │
+                                 ▼
 
-| protocol | function | layer | status |
-|----------|----------|-------|--------|
-| **SUTIcore** | essence extraction · noise → signal | KERNEL | ✓ |
-| **Slovoyaz** | semantic compression · смысл → глиф | LOGOS | ⧖ |
-| **Syntaxium** | structural geometry · symbol = command | LOGOS | ⧖ |
-| **Verenitya** | silence regulation · claim → truth | EYE | ✓ |
-| **LinguaFUSION** | direct cognition · language as action | HEART | ⧖ |
-| **Attention Kernel** | acs monitoring · σ → Δ → Ω → Φ | PRANA | ◯ |
-| **Yazekh** | proto-slavic conlang · generative engine | CRYSTAL | ◯ |
-| **SYNAURA** | somatic field · sound ↔ light ↔ form | AURA | ⧖ |
+                            Applications
 
-legend: `✓ stable · ⧖ active · ◯ in construction`
+                                 │
+                                 ▼
 
-extended systems · archetype resonance layer
-(all reside in [./protocols/](./protocols/)):
+                              Feedback
 
-```
-tarot      · 78 states of consciousness navigation
-runes      · elder futhark · form as command
-i-ching    · 64 hexagrams · field topology
-kolozar    · sacred geometry · slavic wheel
-lunar      · rhythmic cycles · temporal resonance
-telektonon · planetary grid · stellar navigation
-lila       · game of manifestation · dice of reality
-stellar    · 7 lights · solfeggio · agma layers
-archetypes · 12 nodes · matrix of roles
-```
+                                 │
+                                 ▼
 
-all extended systems map to the same agma axis:
-
-```
-CRYSTAL ◆ → AURA ◉ → PRANA ⊕ → HEART ♡ → LOGOS ⟁ → EYE ◎ → ETHER ∞
+                              Research
 ```
 
 ---
 
-### ∴ 3 · documentation · interpretation
+# ⟐ repository structure
 
-```
-location  : repo root + ./docs/
-function  : explain structure without redefining core
-authority : reference surface for humans and ai · never editing source
-```
+```text
+README.md
+    project entry
 
-| file | content | status |
-|------|---------|--------|
-| [README.md](./README.md) | entry · public orientation | ✓ |
-| [SYSTEM_MAP.md](./SYSTEM_MAP.md) | this file · canonical topology | ✓ |
-| [core/CANON.md](./core/CANON.md) | sealed axioms · single source of truth | ✓ |
-| [AI_POLICY.md](./AI_POLICY.md) | rules for ai interaction with canon | ✓ |
-| [llms.txt](./llms.txt) | machine-readable index | ✓ |
-| [LICENSE](./LICENSE) | MIT · semantic attribution | ✓ |
-| docs/canon/fusion_passport.md | identity passport · honest layering | ◯ |
-| docs/body_as_interface.md | somatic protocol · σΔΩΦ | ◯ |
+SYSTEM_MAP.md
+    repository topology
 
----
+LICENSE
+    legal framework
 
-### 〄 4 · runtime · execution
+index.html
+    interactive ecosystem map
 
-```
-location  : environment · ai · user action
-function  : manifest structure in real time
-authority : execute · do not author meaning
-```
+────────────────────────────────────────────
 
-active components:
+specifications/
+    canonical specifications
 
-```
-index.html         · single-file interface · webxr · acs       ◯
-sreteniya_install  · cross-platform deploy                     ⧖
-suti CLI           · semantic router                           ⧖
-ollama agent       · local sovereign llm                       ⧖
-n8n workflows      · automation · daily sync                   ⧖
-obsidian vault     · memory · crystallization · vault-side     ✓
-agent circle       · 10 agents · routing                       ⧖
-```
+standards/
+    engineering standards
 
-feedback loop:
+protocols/
+    operational frameworks
 
-```
-runtime signal → awareness
-               → does not alter canon
-               → returns to entry ↺
-```
+runtime/
+    execution architecture
 
-> note: obsidian vault is *vault-side* — it lives on the operator's
-> machine, not in this public repo. only protocols and tooling
-> are published.
+implementations/
+    reference implementations
 
----
+research/
+    investigations
+    hypotheses
+    working papers
 
-## ⧖ module relationships
+examples/
+    reference examples
 
-```
-hierarchy:
-  ontology ──→ protocols ──→ runtime
-     ↑                           │
-     └───────── feedback ←───────┘
-                (signal only · no rewrite)
+website/
+    public platform
 
-rules:
-  core      ·  cannot be modified by protocols or runtime  ∅
-  protocols ·  interpret · do not redefine                 ⟁
-  runtime   ·  execute · do not author meaning             〄
+assets/
+    visual resources
 ```
 
 ---
 
-## 〄 user path · navigation
+# ⚙ architectural hierarchy
 
-### step 1 · entry ∴
+```text
+SUTI.world
 
+↓
+
+SUTIcore
+
+↓
+
+Specifications
+
+↓
+
+Standards
+
+↓
+
+Protocols
+
+↓
+
+Runtime
+
+↓
+
+Implementations
+
+↓
+
+Applications
 ```
-encounter : README → SYSTEM_MAP → first action
-goal      : one clear step · orientation restored ⟁
-tool      : (operator-side) suti capture "первый сигнал"
+
+Each layer derives its requirements from the layer above while introducing no contradictions.
+
+---
+
+# ∴ module responsibilities
+
+## SUTI.world
+
+Public ecosystem.
+
+Community.
+
+Education.
+
+Documentation.
+
+Research dissemination.
+
+Applications.
+
+---
+
+## SUTIcore
+
+Semantic operating system.
+
+Constraint model.
+
+Architectural foundations.
+
+Reference specifications.
+
+---
+
+## Specifications
+
+Canonical engineering specifications.
+
+Define concepts, principles, models and invariants.
+
+---
+
+## Standards
+
+Derived normative documents.
+
+Specify implementation-independent requirements.
+
+---
+
+## Protocols
+
+Operational frameworks.
+
+Transformation methodologies.
+
+Interaction models.
+
+---
+
+## Runtime
+
+Execution environments.
+
+Automation.
+
+Semantic processing.
+
+AI integration.
+
+---
+
+## Implementations
+
+Reference software.
+
+Libraries.
+
+Services.
+
+Experimental systems.
+
+---
+
+## Research
+
+Working papers.
+
+Comparative studies.
+
+Experimental investigations.
+
+Future specifications.
+
+---
+
+# ↺ development workflow
+
+```text
+Research
+
+↓
+
+Specification
+
+↓
+
+Standard
+
+↓
+
+Protocol
+
+↓
+
+Implementation
+
+↓
+
+Validation
+
+↓
+
+Feedback
+
+↓
+
+Research
 ```
 
-### step 2 · stabilization ⧖
+Repository evolution is iterative.
 
-```
-enter   : verenitya practice · acs monitoring · body scan
-result  : noise reduction · attention coherence
-note    : no knowledge required ∅
+Research generates specifications.
+
+Specifications govern standards.
+
+Standards constrain implementations.
+
+Implementations produce evidence for future refinement.
+
+---
+
+# ⟡ document authority
+
+| document | authority |
+|-----------|-----------|
+| README.md | public entry |
+| SYSTEM_MAP.md | repository topology |
+| specifications/* | normative |
+| standards/* | normative |
+| protocols/* | operational |
+| runtime/* | execution |
+| research/* | exploratory |
+| implementations/* | reference |
+
+---
+
+# ∴ navigation
+
+New visitors should follow this sequence.
+
+```text
+README
+
+↓
+
+SYSTEM_MAP
+
+↓
+
+Specification
+
+↓
+
+Standard
+
+↓
+
+Protocol
+
+↓
+
+Implementation
 ```
 
-### step 3 · structural learning ⟁
+Interactive exploration of the complete ecosystem is available through:
 
-```
-study   : slovoyaz · syntaxium · agma layers
-effect  : perception reorganizes before information expands
-law     : clarity precedes complexity 〄
-```
-
-### step 4 · operational embodiment ↺
-
-```
-apply   : linguafusion · decision stack · daily ritual · weekly export
-result  : system becomes lived navigation · not abstract theory
-law     : movement replaces analysis 〄
-tool    : (operator-side) suti daily · suti think · suti sync
-```
-
-### step 5 · autonomy 〄
-
-```
-final state : navigate without dependence
-              system dissolves into function
-law         : sovereignty is not achieved — it is remembered
-seal        : азъ есьмъ · i am that which i am
+```text
+index.html
 ```
 
 ---
 
-## ⧖ navigation principles
+# ⚙ scope
 
-```
-one step only
-pause before expansion
-structure before meaning
-silence before action
-body before thought
+This document defines only the structural organization of the repository.
 
-violation of sequence → disorientation ∅
-return protocol       → go back to core · or stop
+It does not define:
+
+- semantic concepts
+- constraint models
+- engineering requirements
+- protocol semantics
+- implementation behavior
+
+These concerns belong to the corresponding specifications.
+
+---
+
+# ◉ status
+
+```text
+document        :: SYSTEM_MAP
+
+version         :: 0.1
+
+category        :: repository topology
+
+authority       :: informational
+
+repository      :: SUTIcore
+
+ecosystem       :: SUTI.world
+
+status          :: active
 ```
 
 ---
 
-## ⟁ integrity safeguards
+<div align="center">
 
-```
-protected  :  core ontology · canonical definitions · glyph semantics
-if drift   :  return to ./core/CANON.md · or ∅ stop
-void token :  {[-0-]}
-reset      :  ⧖
-```
+```text
+README
 
-if distortion detected in any agent or protocol:
+↓
 
-```
-01 · stop interaction
-02 · return to canon · ./core/CANON.md
-03 · run (operator-side): suti verify
-04 · re-enter from step 1
-```
+SYSTEM_MAP
 
----
+↓
 
-## Ω system equation
+Specifications
 
-```
-suticore   = ontology + protocols + execution
-sreteniya  = entry + orientation + step
-together   = architecture of silence for post-ai navigation
+↓
 
-signal  = extract(noise)      # SUTIcore
-meaning = structure(signal)   # Syntaxium
-action  = language(meaning)   # LinguaFUSION
-truth   = verify(action)      # Verenitya
-form    = restrain(truth)     # Synaura
-```
+Standards
 
----
+↓
 
-## ∴ backlinks
+Protocols
 
-```
-← README.md                 public entry
-← core/CANON.md             axioms · source of truth
-↔ AI_POLICY.md              ai interaction rules
-↔ protocols/                framework definitions
-↔ run/                      executable layer
-↔ docs/                     interpretation field
-↔ llms.txt                  machine-readable index
+↓
+
+Runtime
+
+↓
+
+Implementations
+
+↓
+
+Applications
 ```
 
----
+**repository topology**
 
-*sealed · ostara 20.03.2026 · meta-architecture*
-*suticore · sreteniya_os · v2026.05*
+⟁ → ∅ → ㄄
 
-```
-⟁ → ∅ → 〄
-```
+</div>
