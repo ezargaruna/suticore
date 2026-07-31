@@ -1,37 +1,31 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/ezargaruna/suticore/internal/commands"
 )
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("SUTI CLI")
-		fmt.Println()
-		fmt.Println("commands:")
-		fmt.Println("  init")
-		fmt.Println("  new")
-		fmt.Println("  doctor")
-		fmt.Println("  verify")
+		commands.Doctor()
 		return
 	}
 
 	switch os.Args[1] {
-
 	case "init":
-		fmt.Println("Initializing SUTI project...")
-
-	case "doctor":
-		fmt.Println("Repository OK")
-
-	case "verify":
-		fmt.Println("Verification not implemented")
+		commands.Init()
 
 	case "new":
-		fmt.Println("Generator not implemented")
+		commands.New(os.Args[2:])
+
+	case "doctor":
+		commands.Doctor()
+
+	case "verify":
+		commands.Verify()
 
 	default:
-		fmt.Println("Unknown command:", os.Args[1])
+		commands.Doctor()
 	}
 }
