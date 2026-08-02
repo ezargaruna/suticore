@@ -30,6 +30,9 @@ func main() {
 	case "graph":
 		commands.Graph()
 
+	case "build":
+		commands.Build()
+
 	default:
 		commands.Doctor()
 	}

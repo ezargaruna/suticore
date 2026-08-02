@@ -1,36 +1,30 @@
-import Sidebar from "./components/Sidebar"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import AppLayout from "./layouts/AppLayout";
+
+import Home from "./pages/Home";
+import Document from "./pages/Document";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
-
   return (
+    <BrowserRouter>
+      <Routes>
 
-    <div
-      style={{
-        display: "flex",
-        fontFamily: "Inter, sans-serif"
-      }}
-    >
+        <Route element={<AppLayout />}>
 
-      <Sidebar />
+          <Route path="/" element={<Home />} />
 
-      <main
-        style={{
-          flex: 1,
-          padding: 40
-        }}
-      >
-        <h1>SUTI.world</h1>
+          <Route
+            path="/docs/:slug"
+            element={<Document />}
+          />
 
-        <p>Semantic Civilization Platform</p>
+        </Route>
 
-        <p>
-          Documentation browser MVP
-        </p>
+        <Route path="*" element={<NotFound />} />
 
-      </main>
-
-    </div>
-
-  )
-
+      </Routes>
+    </BrowserRouter>
+  );
 }
