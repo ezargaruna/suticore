@@ -1,34 +1,40 @@
-const docs = [
-  "README.md",
-  "SYSTEM_MAP.md",
-  "specificationes",
-  "normae",
-  "protocolla"
-]
+import {useEffect,useState} from "react";
+import {Link} from "react-router-dom";
 
-export default function Sidebar() {
-  return (
-    <aside
-      style={{
-        width: 260,
-        padding: 24,
-        borderRight: "1px solid #ddd",
-        minHeight: "100vh"
-      }}
-    >
-      <h3>SUTI.world</h3>
+import {navigation} from "../services/navigation";
 
-      {docs.map(item => (
-        <div
-          key={item}
-          style={{
-            margin: "12px 0",
-            cursor: "pointer"
-          }}
-        >
-          {item}
-        </div>
-      ))}
-    </aside>
-  )
+export default function Sidebar(){
+
+    const [docs,setDocs]=useState([]);
+
+    useEffect(()=>{
+
+        navigation().then(setDocs);
+
+    },[]);
+
+    return(
+
+        <aside>
+
+            <h2>SUTI.world</h2>
+
+            {docs.map((doc:any)=>(
+
+                <div key={doc.slug}>
+
+                    <Link to={"/docs/"+doc.slug}>
+
+                        {doc.slug}
+
+                    </Link>
+
+                </div>
+
+            ))}
+
+        </aside>
+
+    );
+
 }

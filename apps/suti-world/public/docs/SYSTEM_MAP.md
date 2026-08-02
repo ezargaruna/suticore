@@ -1,0 +1,35 @@
+# SYSTEM MAP
+
+- .
+- assets
+- assets/css
+- assets/fonts
+- assets/img
+- assets/js
+- atlas
+- cmd
+- core
+- docs
+- docs/ai_support
+- docs/canon
+- docs/community
+- docs/evolution
+- docs/framework
+- docs/limits
+- docs/projects
+- docs/system
+- docs/visuals
+- implementationes
+- internal
+- internal/commands
+- internal/generator
+- investigationes
+- normae
+- projecta
+- protocolla
+- protocols
+- run
+- run/scripts
+- runtime
+- specificationes
+- templates

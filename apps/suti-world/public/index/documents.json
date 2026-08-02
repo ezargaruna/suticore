@@ -1,0 +1,198 @@
+[
+  {
+    "path": "../../README.md",
+    "slug": "README"
+  },
+  {
+    "path": "../../SYSTEM_MAP.md",
+    "slug": "SYSTEM_MAP"
+  },
+  {
+    "path": "../../llms.md",
+    "slug": "llms"
+  },
+  {
+    "path": "../../notice.md",
+    "slug": "notice"
+  },
+  {
+    "path": "../../ai-policy.md",
+    "slug": "ai-policy"
+  },
+  {
+    "path": "../../sreteniya-manifest.md",
+    "slug": "sreteniya-manifest"
+  },
+  {
+    "path": "../../specificationes/attention.md",
+    "slug": "specificationes/attention"
+  },
+  {
+    "path": "../../specificationes/ontology.md",
+    "slug": "specificationes/ontology"
+  },
+  {
+    "path": "../../specificationes/runtime.md",
+    "slug": "specificationes/runtime"
+  },
+  {
+    "path": "../../specificationes/sdk.md",
+    "slug": "specificationes/sdk"
+  },
+  {
+    "path": "../../normae/architecture.md",
+    "slug": "normae/architecture"
+  },
+  {
+    "path": "../../protocolla/syntaxium.md",
+    "slug": "protocolla/syntaxium"
+  },
+  {
+    "path": "../../protocolla/verification.md",
+    "slug": "protocolla/verification"
+  },
+  {
+    "path": "../../docs/glossary.md",
+    "slug": "docs/glossary"
+  },
+  {
+    "path": "../../docs/canon/format_canon.md",
+    "slug": "docs/canon/format_canon"
+  },
+  {
+    "path": "../../docs/canon/fusion_passport.md",
+    "slug": "docs/canon/fusion_passport"
+  },
+  {
+    "path": "../../docs/canon/symbols_reference.md",
+    "slug": "docs/canon/symbols_reference"
+  },
+  {
+    "path": "../../docs/community/community_rituals.md",
+    "slug": "docs/community/community_rituals"
+  },
+  {
+    "path": "../../docs/community/contributing.md",
+    "slug": "docs/community/contributing"
+  },
+  {
+    "path": "../../docs/ai_support/ai-usage-policy.md",
+    "slug": "docs/ai_support/ai-usage-policy"
+  },
+  {
+    "path": "../../docs/ai_support/ai_assistant_rules.md",
+    "slug": "docs/ai_support/ai_assistant_rules"
+  },
+  {
+    "path": "../../docs/ai_support/chunking_policy.md",
+    "slug": "docs/ai_support/chunking_policy"
+  },
+  {
+    "path": "../../docs/ai_support/citation_rules.md",
+    "slug": "docs/ai_support/citation_rules"
+  },
+  {
+    "path": "../../docs/ai_support/metric_translation.md",
+    "slug": "docs/ai_support/metric_translation"
+  },
+  {
+    "path": "../../docs/ai_support/rag_schema.md",
+    "slug": "docs/ai_support/rag_schema"
+  },
+  {
+    "path": "../../docs/ai_support/tag_taxonomy.md",
+    "slug": "docs/ai_support/tag_taxonomy"
+  },
+  {
+    "path": "../../docs/ai_support/weekly_export.md",
+    "slug": "docs/ai_support/weekly_export"
+  },
+  {
+    "path": "../../docs/evolution/archive_rules.md",
+    "slug": "docs/evolution/archive_rules"
+  },
+  {
+    "path": "../../docs/framework/decision_memo_template.md",
+    "slug": "docs/framework/decision_memo_template"
+  },
+  {
+    "path": "../../docs/framework/decision_stack.md",
+    "slug": "docs/framework/decision_stack"
+  },
+  {
+    "path": "../../docs/framework/validation_gates.md",
+    "slug": "docs/framework/validation_gates"
+  },
+  {
+    "path": "../../docs/projects/other.md",
+    "slug": "docs/projects/other"
+  },
+  {
+    "path": "../../docs/projects/suticore.md",
+    "slug": "docs/projects/suticore"
+  },
+  {
+    "path": "../../docs/limits/what_is_not_shared.md",
+    "slug": "docs/limits/what_is_not_shared"
+  },
+  {
+    "path": "../../docs/system/prime_directive.md",
+    "slug": "docs/system/prime_directive"
+  },
+  {
+    "path": "../../docs/system/role_binding.md",
+    "slug": "docs/system/role_binding"
+  },
+  {
+    "path": "../../docs/system/system_overview.md",
+    "slug": "docs/system/system_overview"
+  },
+  {
+    "path": "../../core/axioms.md",
+    "slug": "core/axioms"
+  },
+  {
+    "path": "../../core/changelog_canon.md",
+    "slug": "core/changelog_canon"
+  },
+  {
+    "path": "../../core/data_flow.md",
+    "slug": "core/data_flow"
+  },
+  {
+    "path": "../../core/decision_log.md",
+    "slug": "core/decision_log"
+  },
+  {
+    "path": "../../core/drift_monitor.md",
+    "slug": "core/drift_monitor"
+  },
+  {
+    "path": "../../core/integrity_protocol.md",
+    "slug": "core/integrity_protocol"
+  },
+  {
+    "path": "../../core/layer_model.md",
+    "slug": "core/layer_model"
+  },
+  {
+    "path": "../../core/runtime_architecture.md",
+    "slug": "core/runtime_architecture"
+  },
+  {
+    "path": "../../core/self_test.md",
+    "slug": "core/self_test"
+  },
+  {
+    "path": "../../core/signal_pipeline.md",
+    "slug": "core/signal_pipeline"
+  },
+  {
+    "path": "../../core/term.md",
+    "slug": "core/term"
+  },
+  {
+    "path": "../../core/version_policy.md",
+    "slug": "core/version_policy"
+  }
+]
