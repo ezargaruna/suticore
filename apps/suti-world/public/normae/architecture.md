@@ -1,0 +1,7 @@
+# architecture
+
+status: draft
+
+---
+
+description
