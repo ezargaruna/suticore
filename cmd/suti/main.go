@@ -7,23 +7,28 @@ import (
 )
 
 func main() {
+
 	if len(os.Args) < 2 {
 		commands.Doctor()
 		return
 	}
 
 	switch os.Args[1] {
+
 	case "init":
 		commands.Init()
 
 	case "new":
 		commands.New(os.Args[2:])
 
+	case "verify":
+		commands.Verify()
+
 	case "doctor":
 		commands.Doctor()
 
-	case "verify":
-		commands.Verify()
+	case "graph":
+		commands.Graph()
 
 	default:
 		commands.Doctor()

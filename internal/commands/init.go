@@ -6,6 +6,7 @@ import (
 )
 
 func Init() {
+
 	dirs := []string{
 		"specificationes",
 		"normae",
@@ -15,6 +16,7 @@ func Init() {
 		"investigationes",
 		"projecta",
 		"atlas",
+		"templates",
 		"assets/css",
 		"assets/js",
 		"assets/img",
@@ -23,6 +25,23 @@ func Init() {
 
 	for _, dir := range dirs {
 		if err := os.MkdirAll(dir, 0755); err != nil {
+			fmt.Println(err)
+			return
+		}
+	}
+
+	if _, err := os.Stat("suti.yaml"); os.IsNotExist(err) {
+
+		cfg := `project: SUTIcore
+version: 0.1.0
+
+language: en
+license: MIT
+
+runtime: sreteniya
+`
+
+		if err := os.WriteFile("suti.yaml", []byte(cfg), 0644); err != nil {
 			fmt.Println(err)
 			return
 		}
