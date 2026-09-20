@@ -152,7 +152,7 @@ preserve trace only ⟁
 
 public maintenance tool  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 trace preservation stabilized ∴  

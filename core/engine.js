@@ -17,7 +17,7 @@ const AXIOMS = {
 
 // 2. конфигурация ⧖ (vessel configuration)
 const CONFIG = {
-  TIMEZONE: "America/Bogota", // bogota node
+  TIMEZONE: "UTC", // public node
   SUNRISE: "05:30",
   SUNSET: "17:30",
   LOOKAHEAD_DAYS: 7,
