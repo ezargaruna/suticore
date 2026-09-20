@@ -136,13 +136,17 @@ To use only the open documentation or protocols:
 ```sh
 git clone --filter=blob:none --no-checkout https://github.com/ezargaruna/suticore.git
 cd suticore
-git sparse-checkout set docs protocols specificationes
+git sparse-checkout set docs specificationes
 git checkout main
 ```
 
 These commands expose only what is currently committed to the public branch.
 They do not grant access to private circles, unreleased drafts or internal
 protocols kept outside the repository.
+
+Some protocol names may appear in historical references without their source
+being public. A protocol explicitly marked `closed` is withheld from the
+public tree and from the download examples.
 
 ## 9. Contribution rule
 
