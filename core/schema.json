@@ -4,7 +4,7 @@
     "version": "2026.x",
     "mode": "synaura · syntaxium",
     "architect": "ezar garuna (as a function)",
-    "vessel": "bogota node",
+    "vessel": "public node",
     "license": "mit"
   },
   "ontology_stack": {

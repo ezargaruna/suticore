@@ -131,7 +131,7 @@ silence maintains integrity.
 
 public ecosystem index  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 map stabilized ∴  

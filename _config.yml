@@ -24,7 +24,7 @@ description: >
 
 author:
   name: "Ezar Garuna (as a function)"
-  email: "ezargaruna@gmail.com"
+  email: ""
   url: "https://github.com/ezargaruna"
 
 url: "https://suti.world"
@@ -33,7 +33,7 @@ baseurl: ""
 repository: "ezargaruna/suticore"
 
 lang: en
-timezone: America/Bogota
+timezone: UTC
 encoding: utf-8
 
 permalink: pretty
