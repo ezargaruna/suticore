@@ -1,0 +1,12 @@
+version: 1
+checked: 2026-09-23
+canonical_mvp: [ru, en]
+languages:
+  - {code: ru, name: Русский, status: current, source: reviewed MVP brief, editor: Ezar Garuna / Codex review, checked: 2026-09-23, completeness: full MVP}
+  - {code: en, name: English, status: current, source: reviewed English adaptation, editor: Ezar Garuna / Codex review, checked: 2026-09-23, completeness: full MVP}
+  - {code: es, name: Español, status: draft, source: historical root strings only, editor: human review required, checked: 2026-09-23, completeness: partial}
+  - {code: pt-BR, name: Português do Brasil, status: draft, source: historical root strings only, editor: human review required, checked: 2026-09-23, completeness: partial}
+  - {code: la, name: Latina, status: draft, source: no confirmed public landing source, editor: human review required, checked: 2026-09-23, completeness: unavailable}
+  - {code: eo, name: Esperanto, status: draft, source: historical root strings only, editor: human review required, checked: 2026-09-23, completeness: partial}
+  - {code: sa, name: Sanskrit, status: draft, source: no confirmed public landing source, editor: human review required, checked: 2026-09-23, completeness: unavailable}
+  - {code: yazekh, name: Yazekh, status: draft, source: protocols/yazekh.md corpus only, editor: human review required, checked: 2026-09-23, completeness: source-only}
