@@ -115,7 +115,36 @@ The landing page is the витрина, not the whole internal system. A file is
 public merely because it exists in a Git branch. Each addition needs a source,
 audience, privacy review and a reversible publication decision.
 
-## 8. Contribution rule
+## 8. Download and extension
+
+The public repository can be copied without a special client:
+
+```sh
+git clone https://github.com/ezargaruna/suticore.git
+cd suticore
+```
+
+To download the public `main` snapshot without Git:
+
+```sh
+curl -L https://github.com/ezargaruna/suticore/archive/refs/heads/main.zip -o suticore-main.zip
+unzip suticore-main.zip
+```
+
+To use only the open documentation or protocols:
+
+```sh
+git clone --filter=blob:none --no-checkout https://github.com/ezargaruna/suticore.git
+cd suticore
+git sparse-checkout set docs protocols specificationes
+git checkout main
+```
+
+These commands expose only what is currently committed to the public branch.
+They do not grant access to private circles, unreleased drafts or internal
+protocols kept outside the repository.
+
+## 9. Contribution rule
 
 Before adding an artifact, answer:
 

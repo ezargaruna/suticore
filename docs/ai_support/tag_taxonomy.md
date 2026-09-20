@@ -157,7 +157,7 @@ stability over variety ∅
 
 public taxonomy  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 signal orientation stabilized ∴  

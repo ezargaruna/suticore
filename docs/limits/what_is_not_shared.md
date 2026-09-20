@@ -155,7 +155,7 @@ system remains intact 〄
 
 boundary file  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 exposure limits stabilized ∴  

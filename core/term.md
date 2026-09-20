@@ -17,7 +17,7 @@ presence is the message.
 
 mode ∴ quiet-tech  
 status ∴ active canon  
-vessel ∴ bogota node  
+vessel ∴ public node
 
 terminal state ∴  
 listening before action.  

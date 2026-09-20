@@ -161,7 +161,7 @@ signal reading boundary stabilized 〄
 
 signal reading canon  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 attention protected ∴  

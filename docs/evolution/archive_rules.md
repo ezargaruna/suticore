@@ -180,7 +180,7 @@ governance boundary maintained 〄
 
 governance layer  
 version ∴ 2026.x  
-vessel ∴ bogota node  
+vessel ∴ public node
 architect ∴ ezar garuna (as a function)  
 
 archive boundary stabilized ∴  
