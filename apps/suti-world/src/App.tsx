@@ -4,6 +4,7 @@ import AppLayout from "./layouts/AppLayout";
 
 import Home from "./pages/Home";
 import Document from "./pages/Document";
+import Library from "./pages/Library";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -14,9 +15,10 @@ export default function App() {
         <Route element={<AppLayout />}>
 
           <Route path="/" element={<Home />} />
+          <Route path="/library" element={<Library />} />
 
           <Route
-            path="/docs/:slug"
+            path="/docs/*"
             element={<Document />}
           />
 

@@ -6,7 +6,7 @@ import { loadDocument } from "../lib/documents";
 
 export default function Document() {
 
-  const { slug } = useParams();
+  const { "*": slug } = useParams();
 
   const [text, setText] = useState("");
 
@@ -21,6 +21,6 @@ export default function Document() {
   }, [slug]);
 
   return (
-    <Markdown source={text}/>
+    <article className="document-page"><Markdown source={text}/></article>
   );
 }
