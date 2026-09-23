@@ -31,3 +31,35 @@ links:
     language: "ru"
     license: "MIT"
     status: public
+  - id: synaura
+    title: "Synaura"
+    description: "публичный протокол оформления"
+    href: "https://github.com/ezargaruna/suticore/blob/main/protocols/synaura.md"
+    source_path: "protocols/synaura.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: syntaxium
+    title: "Syntaxium"
+    description: "публичный протокол смысловой формы"
+    href: "https://github.com/ezargaruna/suticore/blob/main/protocols/syntaxium.md"
+    source_path: "protocols/syntaxium.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: verenitya
+    title: "VereNITYA"
+    description: "публичный протокол проверки"
+    href: "https://github.com/ezargaruna/suticore/blob/main/protocols/verenitya.md"
+    source_path: "protocols/verenitya.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: linguafusion
+    title: "LinguaFUSION"
+    description: "публичный протокол языковой практики"
+    href: "https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md"
+    source_path: "protocols/linguafusion.md"
+    language: "ru"
+    license: "MIT"
+    status: public
