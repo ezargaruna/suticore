@@ -38,7 +38,7 @@ links:
     source_path: "protocols/synaura.md"
     language: "ru"
     license: "MIT"
-    status: public
+    status: review
   - id: syntaxium
     title: "Syntaxium"
     description: "публичный протокол смысловой формы"
@@ -46,7 +46,7 @@ links:
     source_path: "protocols/syntaxium.md"
     language: "ru"
     license: "MIT"
-    status: public
+    status: review
   - id: verenitya
     title: "VereNITYA"
     description: "публичный протокол проверки"
@@ -54,7 +54,7 @@ links:
     source_path: "protocols/verenitya.md"
     language: "ru"
     license: "MIT"
-    status: public
+    status: review
   - id: linguafusion
     title: "LinguaFUSION"
     description: "публичный протокол языковой практики"
