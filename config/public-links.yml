@@ -1,0 +1,33 @@
+links:
+  - id: suti-core
+    title: "SUTIcore"
+    description: "каноническая спецификация ограничений"
+    href: "https://github.com/ezargaruna/suticore/blob/main/README.md"
+    source_path: "README.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: verification
+    title: "проверка"
+    description: "короткий протокол проверки"
+    href: "https://github.com/ezargaruna/suticore/blob/main/protocolla/verification.md"
+    source_path: "protocolla/verification.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: limits
+    title: "границы общего контура"
+    description: "что не следует публиковать"
+    href: "https://github.com/ezargaruna/suticore/blob/main/docs/limits/what_is_not_shared.md"
+    source_path: "docs/limits/what_is_not_shared.md"
+    language: "ru"
+    license: "MIT"
+    status: public
+  - id: contributing
+    title: "как участвовать"
+    description: "правила открытого вклада"
+    href: "https://github.com/ezargaruna/suticore/blob/main/docs/community/contributing.md"
+    source_path: "docs/community/contributing.md"
+    language: "ru"
+    license: "MIT"
+    status: public
