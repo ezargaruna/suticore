@@ -78,14 +78,15 @@ export default function Home() {
 
     <section className="closing" aria-labelledby="about-title">
       <p className="eyebrow">кто рядом</p>
-      <h2 id="about-title">Ezar Garuna <span>/ @saritamah</span></h2>
+      <h2 id="about-title">Ezar Garuna <span>/ @saritmah · @ezargaruna</span></h2>
       <p>лингвист и семантический архитектор
         работаю с языком, текстами и AI
         помогаю людям и проектам
         назвать задачу и выбрать ход</p>
       <p>начать можно с открытых материалов
         для личного или проектного запроса
-        <a href="https://t.me/iggalk">напишите о задаче ↗</a></p>
+        <a href="https://t.me/saritmah">напишите @saritmah ↗</a>
+        <a href="https://t.me/ezargaruna">канал @ezargaruna ↗</a></p>
     </section>
   </>;
 }

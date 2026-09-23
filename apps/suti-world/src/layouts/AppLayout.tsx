@@ -8,7 +8,7 @@ export default function AppLayout() {
       <nav aria-label="основная навигация">
         <a href="/#paths">направления</a>
         <Link to="/library">библиотека</Link>
-        <a href="https://t.me/iggalk">контакт ↗</a>
+        <a href="https://t.me/saritmah">контакт ↗</a>
       </nav>
     </header>
     <main id="content"><Outlet /></main>
