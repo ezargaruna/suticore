@@ -44,9 +44,9 @@ cname: null
 
 config/public-links.yml
 
-в текущем запуске:
+в текущем whitelist:
 
-- 4 ссылки со статусом public
+- 8 ссылок со статусом public
 - 0 ссылок со статусом review
 - 0 ссылок со статусом private
 
@@ -78,3 +78,30 @@ GitHub-репозиторий уже публичен
   в ezargaruna/suticore
 - GitHub Pages build требует
   отдельной проверки после push
+
+## после публикации
+
+commit bea0641 опубликован
+в main
+
+GitHub Pages:
+
+build_type: workflow
+
+status: built
+
+live GitHub Pages
+отдаёт новый index.html
+
+suti.world пока отдаёт
+старую Cloudflare-копию
+
+это не кэш GitHub Pages:
+
+Cloudflare отвечает DYNAMIC
+
+Pages API не содержит
+подтверждённого cname
+
+нужна настройка Cloudflare origin
+или custom domain для Pages
