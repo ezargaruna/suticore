@@ -73,7 +73,7 @@ Pulse is a brief signal for a meaningful change, such as a selected state or com
 | Fusion Maps | a traceable map of a current situation | layered cards, provenance beside each claim, open space for unknowns | not a diagnosis or a complete model of a person |
 | LinguaFUSION | language practice for real situations | sound, text, context, and speech kept visually distinct | progress is observed in use; no proficiency claim by implication |
 | VereNITYA | a verification vocabulary and review loop | calm evidence panels with source and status visible | authorial verification method, not an oracle |
-| SRETENIYA_OS | an authorial practice sequence | clear step order and a visible trace | not an operating system of consciousness or a separate technology |
+| SUTI.OS (formerly SRETENIYA_OS) | an authorial practice sequence | clear step order and a visible trace | not an operating system of consciousness or a separate technology |
 | Psychonetica · Eidographica | research labels for noticing and relating | neutral diagrams with provenance and uncertainty | research; not a psychological instrument |
 | SONOGENESIS · SUTI 8D | research directions | exploratory layouts labelled as proposals | research; claims require their own evidence |
 | YAZEKH | an authorial experimental language | phonetic and visual examples with an experimental label | not a historical reconstruction |
@@ -115,4 +115,5 @@ Do not publish personal maps, client or student material, private correspondence
 - [LinguaFUSION](../../protocols/linguafusion.md)
 - [Fusion Maps](../../protocols/fusion_map.md)
 - [VereNITYA](../../protocols/verenitya.md)
+- [SUTI.OS](../../protocols/suti_os.md)
 - [Verification](../../protocolla/verification.md)
