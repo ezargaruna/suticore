@@ -70,6 +70,7 @@ Pulse is a brief signal for a meaningful change, such as a selected state or com
 | SUTIcore | constraints and semantic integrity | stable grid, clear hierarchy, restrained earth tones | specification, not a promise of outcome |
 | synaura | attention, pacing, and considerate interaction | open space, gentle transitions, optional pulse | visual style can vary; user choice remains visible |
 | Syntaxium | units, relations, boundaries, states, and decisions | diagrams with named edges and explicit state labels | symbols compress structure; they do not prove it |
+| Pro.Yazyk | proposed speech-mode label | no stable visual profile assigned | status and scope require verification |
 | Fusion Maps | a traceable map of a current situation | layered cards, provenance beside each claim, open space for unknowns | not a diagnosis or a complete model of a person |
 | LinguaFUSION | language practice for real situations | sound, text, context, and speech kept visually distinct | progress is observed in use; no proficiency claim by implication |
 | VereNITYA | a verification vocabulary and review loop | calm evidence panels with source and status visible | authorial verification method, not an oracle |

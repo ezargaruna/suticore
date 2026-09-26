@@ -31,6 +31,40 @@ OBSERVE → DISTINGUISH → RELATE → VERIFY
 Run only the modules needed for the goal, ambiguity, and risk. Show the current
 phase. An expected result is not an observed result.
 
+## portal depth
+
+Begin with one Punctum: “Where does something not add up?” Then reveal only
+the depth needed:
+
+1. **Punctum** — one distinction and a question.
+2. **Fusion snapshot** — situation, nodes, unknowns, next move.
+3. **Fusion Map** — sources, subjects, relations, resources, trajectories.
+4. **SUTI architecture** — change to language, rules, decisions, contracts,
+   interfaces, or governance.
+
+The portal should help answer what is happening, who is involved, who asserts
+or decides what, what is verified, what remains unknown, and what changed.
+
+## ecosystem roles
+
+These names describe distinct proposed or authorial functions, not a hierarchy
+or proof of separate technologies:
+
+| contour | function |
+|---|---|
+| SUTIcore | define what is in scope and material |
+| synaura | guide attention and careful distinction |
+| Psychonetica | name what is noticed · research |
+| Eidographica | represent relations · research |
+| Syntaxium | express units, boundaries, and relations |
+| Pro.Yazyk | proposed speech-mode label · status needs verification |
+| LinguaFUSION | compare meaning across language and context |
+| VereNITYA | review claims and verification state |
+| SUTI.OS | turn a distinction into action and trace |
+
+Connected roles do not imply a shared implementation or an autonomous
+“computational field.”
+
 ## working unit · synergema
 
 A synergema is a minimal working configuration of a subject, object, context,
@@ -43,7 +77,8 @@ remain representable.
 
 ## subjects and messages
 
-Describe only the roles needed for the task:
+Describe only the roles needed for the task. Where relevant, record identifier,
+role, boundary, intention, authority, responsibility, and knowledge state:
 
 ```text
 who → perceives what → in which context
@@ -62,8 +97,13 @@ unauthorized participants remain outside the action boundary until clarified.
 
 ## relations, contracts, and vectors
 
-A relation records its type, direction, scope, authority, dependencies, and
-conditions for ending. Do not infer a relation from visual proximity.
+A relation may record type, direction, symmetry, influence, trust, dependency,
+authority, obligations, duration, and conditions for ending. Do not infer a
+relation from visual proximity or similarity.
+
+Operationalize influence through attention, available resources, constraints,
+tension, intention, and capacity to act. Do not present these dimensions as
+physical energy.
 
 A working contract states parties, purpose, scope, permissions, obligations,
 constraints, success condition, verification, and termination. Without an exit
@@ -78,6 +118,20 @@ origin → target | driver | constraint | criterion | cost | reversibility
 
 Without a target there is no defined direction. Without a criterion the result
 cannot be established.
+
+## semantic objects and claim review
+
+A reusable semantic object may record name, definition, type, boundaries,
+synonyms, oppositions, parent and child concepts, relations, source, status,
+and version. For a key term, distinguish contemporary, technical, and
+authorial meanings, register, and unwanted associations. Cite sources for
+etymology or cultural claims.
+
+Review important claims for author, basis, claim type, scope, counterevidence,
+time, currency, and source conflict. Review language for semantics, syntax,
+pragmatics, register, metaphor, agency, and presuppositions. Ask who acts in a
+sentence such as “the system decided”; name the human, rule, or automation
+that actually made the decision.
 
 ## protograms and metagrams
 
@@ -111,6 +165,23 @@ metaphors or defined operationally. “Quantum” may describe branching possibl
 states only as an authorial model; it makes no claim about consciousness or
 quantum physics. Silence is a pause, never evidence of consent or agreement.
 
+An object model may track its current state, possible states, transition rules,
+forbidden states, history, and confidence. “Quantum” is only an optional
+metaphor for branching possibilities: observation updates information, choice
+fixes a transition, and trace preserves history. It is not a claim about
+quantum consciousness.
+
+## people, AI, and memory
+
+People supply context and intention, make final choices, and retain human
+responsibility. AI may structure, compare, check, generate options, and state
+uncertainty. Label its role as a computational source, tool, executor,
+crystallizer, observer, or mediator; do not imply consciousness.
+
+Memory distinguishes trace, context, canon, hypothesis, and archive. Preserve
+source, timestamp, version, confidence, scope, and expiry when relevant.
+Stored information does not become true merely by being retained.
+
 ## adapters and deployment
 
 Storage, language models, routing, search, and operating environments are
@@ -126,12 +197,27 @@ insufficient. Keep each block focused on one distinction and one next action.
 Provide pause, refusal, exit, and a clear stopping point. Do not maximize time
 spent or use motion, silence, or visual polish to imply authority.
 
+Keep a human-readable view beside any formal representation; never require a
+person to read machine-level syntax. Use the smallest vocabulary that preserves
+the needed distinction. Add a module only when it has a distinct purpose,
+owner, check, risk boundary, and removal path.
+
 ## readiness
 
 A module is ready for its stated use when its scope and owner are visible,
 relations have a basis, unknowns remain explicit, actions have a check and an
 exit, and traces are observable. This is a review criterion, not a claim of
 universal validity or operational deployment.
+
+For a synergema, check that participants and goals are distinct, boundaries and
+authority are visible, contributions can be understood, conflicts can be
+expressed, results can be checked, and exit remains possible. These are review
+criteria, not a universal judgement of a relationship.
+
+For each module ask: what does it distinguish, who needs it, what can change,
+how will the result be checked, what could fail, and can the module be removed?
+Adapt only after new evidence, error, environmental or goal change, or a new
+distinction. Novelty by itself does not justify rewriting a protocol.
 
 See [framework settings](../docs/style/framework-settings.md) for the shared
 visual profile and [verification](../protocolla/verification.md) for evidence
