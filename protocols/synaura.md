@@ -1,79 +1,58 @@
-# Synaura
-
-`quiet luxury · pause as primary key · aesthetic of restraint`
-
+---
+title: synaura · attention and interaction protocol
+version: 2026.9-r3
+status: authorial protocol
 ---
 
-## ∴ axiom
+# synaura
 
-silence is the medium.
-ornament is the noise.
-restraint is the signature.
+Synaura is an authorial protocol for attention, pacing, and considerate interaction.
 
-what is removed
-defines what remains.
+Its visual style may change. Its interaction rules stay legible:
 
----
-
-## ⟁ method
-
-```
-strip     ornament until structure shows
-breathe   whitespace as functional element
-hold      one accent · never two
-fade      brightness · never saturate
-listen    pause · before adding
+```text
+notice → distinguish → choose
+→ act → trace → adapt
 ```
 
----
+## defaults
 
-## ◯ visual grammar
+- one main idea in a block
+- a clear pause before a consequential step
+- a visible next action
+- a clear way to refuse, stop, or leave
+- reversible action where possible
+- detail only when it supports the current decision
 
-| zone | rule |
-|---|---|
-| **palette** | void-black 60% · midnight-steel 25% · soft-gold 10% · diamond-white 5% |
-| **typography** | one serif · one mono · loose tracking · lowercase default |
-| **rhythm** | block · pause · block · pause · pause · block |
-| **density** | 70% empty · 30% inhabited |
-| **accent** | gold reserved · ice-cyan exceptional · all other colors disabled |
+Silence is an available pause. It does not mean agreement or completion.
 
----
+## visual setting
 
-## ⧖ tone
+SUTI.world uses a warm earth, linen, moss, and petrol palette as its current visual profile. A different project may use another palette. Keep text hierarchy, accessibility, and user choice intact across themes.
 
-```
-cool        not cold
-precise     not surgical
-intimate    not familiar
-spacious    not empty
-restrained  not withholding
-```
+The full tokens and motion rules are in [framework settings](../docs/style/framework-settings.md).
 
-a voice that earns attention
-by refusing to demand it.
+## pulse and motion
 
----
+Use a pulse only to mark a meaningful state change. Keep it brief and optional. Do not animate continuously or use motion to pressure a response, suggest authority, or imply evidence.
 
-## ⊕ application
+Respect `prefers-reduced-motion`. Every animated state has a text or shape equivalent. Removing animation must not remove meaning.
 
-```
-posters         dark canvas · single luminous core · captions whispered
-documents       generous margins · serif body · gold rules
-ui              one action per view · pauses where buttons would be
-speech          slow cadence · long sentences · short paragraphs
-posts           one image · one line · one breath
-```
+## density
 
----
+- quiet: one claim or choice
+- normal: claim with context
+- dense: claim, evidence, and limits
 
-## ⟐ linkage
+Choose density for the task. Do not equate complexity with depth.
 
-```
-parent    sreteniya_os (presence kernel)
-sibling   linguafusion (verbal layer of same restraint)
-output    aesthetic field that holds attention by releasing it
-```
+## safeguards
 
----
+- no forced urgency
+- no diagnosis or imposed identity
+- no status conveyed by color alone
+- no decorative symbol strings
+- no inferred consent from silence
+- no claim that appearance proves a state
 
-`silence is the most expensive material · spend it well`
+Synaura supports a clearer choice. It does not make the choice for the person.
