@@ -1,84 +1,42 @@
-# Verenitya
-
-`truth verification · silence as interface · field of contemplation`
-
+---
+title: VereNITYA · verification vocabulary
+version: 2026.9-r3
+status: authorial verification protocol
 ---
 
-## ∴ axiom
+# VereNITYA
 
-truth is not assertion.
-truth is field-tuning.
+VereNITYA is the authorial name for a verification vocabulary and review loop. It helps keep evidence, interpretation, and uncertainty distinct. It is not an oracle or an independent verification technology.
 
-what does not resonate
-extinguishes itself.
+## statement types
 
----
+Use the type that fits the available basis:
 
-## ⟁ method · four-fold gate
+- FACT — supported by a cited or inspectable source
+- OBSERVATION — directly seen or recorded
+- INTERPRETATION — reasoned from observations
+- HYPOTHESIS — plausible and not yet established
+- EVALUATION — judged against stated criteria
+- AUTHORIAL — a definition or method established by its author
+- SYMBOLIC — interpretive or cultural meaning
+- UNKNOWN — evidence is insufficient
 
-```
-01 · claim       what is being said
-02 · evidence    on what ground
-03 · counter     what would refute it
-04 · truth       what survives both
-```
+## review states
 
-every statement passes through the gate
-before it earns the right to act.
+- PASS — the stated check succeeded within its scope
+- PARTIAL — some checks passed; limits remain
+- FAIL — the stated check did not pass
+- UNKNOWN — the result is not established
+- HOLD — action waits for missing authority or evidence
 
----
+A state must name its scope. `PASS` on one check does not prove a broader claim.
 
-## ◯ ontology of silence
+## review loop
 
-silence is not absence of speech.
-silence is the syntactic medium
-in which speech becomes possible at all.
-
-```
-noise         → speech without ground
-chatter       → speech without intention
-description   → speech about
-truth-act     → speech that performs
-silence       → the field that makes all of these distinguishable
+```text
+claim → source → check
+→ counterexample → scope
+→ status → trace
 ```
 
----
-
-## ⧖ verification protocol
-
-| layer | check |
-|---|---|
-| **internal** | does the structure hold under self-reference? |
-| **referential** | does it match observable invariants? |
-| **resonant** | does it ring true in the body before the mind names why? |
-| **ethical** | does the field around it expand or contract? |
-
-a claim that fails any one layer is bounded —
-not deleted · just placed in its proper containment.
-
----
-
-## ⊕ practice
-
-```
-pause        before responding
-disambiguate before agreeing
-verify       before transmitting
-```
-
-three pauses. each shorter than a breath.
-each enough to dissolve a lie.
-
----
-
-## ⟐ linkage
-
-```
-parent    suticore (essence extraction)
-sibling   linguafusion (executable speech)
-field     fusion_nexus dao
-```
-
----
-
-`truth is a frequency · lies are a detuning · the field corrects both in time`
+Ask what source supports the claim, what could disconfirm it, and what the check actually establishes. Preserve disagreements and unknowns. A felt sense, symbol, visual pattern, or model can guide a question; it cannot substitute for evidence.

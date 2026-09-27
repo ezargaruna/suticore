@@ -1,32 +1,22 @@
-# React + TypeScript + Vite
+# SUTI.world · app prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This Vite app is a separate prototype for browsing repository documents.
+It is not the public homepage and is not deployed by the Pages workflow.
 
-Currently, two official plugins are available:
+The public, installable SUTI.world portal starts at the repository-root
+`index.html`. Its styles, preference builder, icons, manifest, and offline
+shell live in `site/` and the repository root. The Pages workflow copies only
+those named public files.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## local app prototype
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+npm ci
+npm run dev
+npm run build
+npm run lint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The app does not receive local user notes or connect to external services by
+default. Review the source and deployment configuration before connecting it
+to another data source.

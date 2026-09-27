@@ -29,6 +29,8 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp manifest.webmanifest service-worker.js _site/
+          cp -R site _site/site
       - name: upload static site
         uses: actions/upload-pages-artifact@v3
         with:

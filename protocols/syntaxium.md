@@ -1,91 +1,50 @@
+---
+title: Syntaxium · structural grammar
+version: 2026.9-r3
+status: authorial protocol
+---
+
 # Syntaxium
 
-`meta-syntax grid · symbol as command · form programs state`
+Syntaxium is an authorial grammar for describing structure. It names units, relations, boundaries, directions, states, and decisions.
 
----
+It is a notation for making structure discussable, not an independent technology or proof system.
 
-## ∴ axiom
+## basic record
 
-a glyph is not a label.
-a glyph is a switch.
+Describe a useful unit with:
 
-the form on the page
-configures the field around the reader.
-
----
-
-## ⟁ metagrams · core 8
-
-| symbol | function | invocation |
-|---|---|---|
-| `⟁` | execute next concrete step | impulse · action |
-| `∴` | expose logic · core · essence | reveal |
-| `〄` | crystallize · save as canon | preserve |
-| `∅` | stop · wait · silence | pause |
-| `⧖` | full context reset | clean slate |
-| `↺` | decompose into atoms | analyse |
-| `⇄` | switch mode · layer · perspective | rotate |
-| `⟐` | run test · verify · validate | confirm |
-
----
-
-## ㄄ markers · syntactic indexing
-
-```
-:: [СУТЬ] ::      base axiom · root concept
-/// ВЕКТОР:       directional logic · action vector
-> АРХИТЕКТУРА:    system unfolding · code or schema
-[ ! ] ФОКУС:      critical limit · vulnerability point
+```text
+unit · relation · boundary · direction · state · decision
 ```
 
-embed in prose · they parse the field for the reader.
+A record may leave fields unknown. Do not invent a relation to make a diagram look complete.
 
----
+## construction
 
-## ⊕ linguistic meta-tags
+1. identify the units in scope
+2. state each relation and its direction
+3. mark boundaries and exclusions
+4. distinguish current, planned, and historical states
+5. show decisions separately from proposals
+6. connect claims to sources when verification matters
 
-for deep parse-mode discourse:
+Use the smallest structure that preserves the needed distinctions.
 
-```
-[_subj]    source of impulse           subject
-[_pred]    vector of force             predicate
-[_obj]     receiver / target           object
-[_mod]     density attribute           modifier
-[_circ]    space-time condition        circumstance
-```
+## symbols
 
-```
-<n>     static node                   noun
-<v>     dynamic node                  verb
-<a>     frequency                     adjective / adverb
-<link>  connector                     preposition / conjunction
-```
+Symbols may shorten a repeated, defined structure. Give each symbol one stable meaning within a document and include a text label where needed.
 
-example:
-`[_subj] архитектор [_pred] компилирует [_obj] смысл [_circ] бесшумно.`
-
----
-
-## ◯ formatting principles
-
-```
-lowercase           default body flow
-brand caps only     LinguaFUSION · SRETENIYA · Synaura · SUTIcore
-slashes             // ___ // signal machine-merged-with-living
-underscores         _____ bind compound concepts
-whitespace          governs attention more than punctuation
+```text
+SYMBOL ≠ PROOF
+MODEL ≠ PERSON
+UNKNOWN ≠ FAILURE
 ```
 
----
+Do not treat visual balance, similarity, or adjacency as evidence that two things are related.
 
-## ⟐ linkage
+## review
 
-```
-parent    suticore (extraction logic)
-sibling   linguafusion (execution layer)
-output    structured fields readable by both human and machine
-```
+A structure is ready for its stated use when its scope is visible, relations are explicit, states are not conflated, and unknowns remain visible. This is a review criterion, not a claim of universal validity.
 
----
-
-`form is not decoration · form is a function the reader runs without noticing`
+See [framework settings](../docs/style/framework-settings.md) for public visual conventions.

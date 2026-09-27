@@ -1,3 +1,5 @@
+> visual status: the current SUTI.world profile is [framework settings](framework-settings.md), version 2026.9-r3. The tokens below remain a prior transfer snapshot; do not treat them as the current shared defaults.
+
 # SUTI.design system transfer
 
 id: suti-design-system

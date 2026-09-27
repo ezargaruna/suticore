@@ -1,78 +1,61 @@
+---
+title: LinguaFUSION · language in use
+version: 2026.9-r3
+status: authorial learning protocol
+---
+
 # LinguaFUSION
 
-`language as action · ontological transfer engine`
+LinguaFUSION is an authorial approach to language practice. It starts from a situation a learner wants to handle and works toward more available language in that situation.
 
----
+The learning unit is a useful transition:
 
-## ∴ axiom
-
-language is not description.
-language is interface.
-text is executable code.
-
-speech does not represent the world —
-speech compiles it.
-
----
-
-## ⟁ method
-
-```
-extract     → essence beneath the surface form
-transcreate → carry meaning through structure
-crystallize → render as direct executable speech
+```text
+not noticed → distinguished → understood
+→ retrieved → said → used → adapted
 ```
 
-three operations. one continuous gesture.
+This is a working model, not a clinical or scientific claim.
 
----
+## map the situation
 
-## ㄄ dimensions
+Start with what the learner wants to do. Record what is already available, what has been observed, and what remains unknown. Do not infer a cause from one mistake or assign a fixed identity from a proficiency label.
 
-| layer | function | example |
-|---|---|---|
-| **phonology** | sound as state | `[a]` radiates · `[m]` absorbs |
-| **morphology** | morpheme as crystal | `tener ↔ mantener` |
-| **syntax** | breath as architecture | inhale · center · exhale |
-| **semantics** | meaning as frequency | invariant > variant |
-| **pragmatics** | will as resonance | speech that performs |
+A map may include:
 
----
+- sound and rhythm
+- forms and reusable patterns
+- meaning in context
+- register and pragmatic function
+- interaction and repair
+- writing or creative production
+- learner goals, interests, and practice rhythm
 
-## ↺ language matrix
+Keep external proficiency frameworks, such as CEFR, as one reference layer. Describe specific abilities separately when evidence supports them.
 
-| code | role | function |
-|---|---|---|
-| RU | native | meaning kernel · depth · neologism work |
-| ES | C1 | embodiment · rhythm · latin field |
-| PT | C1 | flow · soulfulness · lusophone river |
-| EN | B1–B2 | global interface · code · IT |
-| Latin | A2 | etymological reserve |
-| Sanskrit | A1 | mantric · philosophical layer |
-| reserve | + | esperanto · quechua · aymara · shipibo · arawako |
+## practice loop
 
----
-
-## ⊕ application surfaces
-
-```
-teaching        sense before grammar · resonance before rule
-translation     transcreation · invariant preserved · variant adapted
-voice work      sound as somatic event · meditation dub
-research        interspecies signal · bakhtiyarov / zavadskaya line
-ai prompting    every prompt is a spell of intention
+```text
+input → notice → distinguish
+→ retrieve → produce → feedback
+→ real use → trace → adapt
 ```
 
----
+Select one useful distinction. Practice it in short, varied retrievals, then invite the learner to try it in a real or simulated situation. Feedback should preserve communication and make the next adjustment clear.
 
-## ⟐ linkage
+## word and pattern record
 
+A useful entry can include:
+
+```text
+form · sound · meaning · context
+register · example · intended action
 ```
-parent    suticore (signal extraction)
-sibling   syntaxium (form discipline)
-output    speech that does
-```
 
----
+Record differences between languages when they matter. A translation is one clue, not the whole entry. Verify uncommon, regional, historical, and sociolinguistic claims with suitable sources.
 
-`every prompt is not a query — it is an incantation of intention`
+## trace and adaptation
+
+Record the observable attempt and the support used. Distinguish independent use from use with prompts. Adapt the next practice to the learner’s goal and response.
+
+Do not claim durable learning from one successful repetition. Do not publish identifiable learner speech, questionnaires, or personal learning maps without specific permission.
