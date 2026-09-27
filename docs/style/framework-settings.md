@@ -74,7 +74,7 @@ Pulse is a brief signal for a meaningful change, such as a selected state or com
 | Fusion Maps | a traceable map of a current situation | layered cards, provenance beside each claim, open space for unknowns | not a diagnosis or a complete model of a person |
 | LinguaFUSION | language practice for real situations | sound, text, context, and speech kept visually distinct | progress is observed in use; no proficiency claim by implication |
 | VereNITYA | a verification vocabulary and review loop | calm evidence panels with source and status visible | authorial verification method, not an oracle |
-| SUTI.OS (formerly SRETENIYA_OS) | an authorial practice sequence | clear step order and a visible trace | not an operating system of consciousness or a separate technology |
+| SRETENIYA_OS | an internal authorial practice sequence | clear step order and a visible trace | keep on the method page; not an operating system or separate technology |
 | Psychonetica · Eidographica | research labels for noticing and relating | neutral diagrams with provenance and uncertainty | research; not a psychological instrument |
 | SONOGENESIS · SUTI 8D | research directions | exploratory layouts labelled as proposals | research; claims require their own evidence |
 | YAZEKH | an authorial experimental language | phonetic and visual examples with an experimental label | not a historical reconstruction |
@@ -102,6 +102,10 @@ Do not place more than one decorative symbol beside a heading. Never use a symbo
 - provide at least 44 px touch targets
 - avoid autoplay, flashing states, and endless parallax
 - include a reduced-motion mode
+
+For an installable SUTI.world web app, say what installation adds and what it
+cannot access. Personal style is derived from explicit preferences only;
+store it locally, allow reset and export, and do not imply OS-wide control.
 
 ## open claims and status
 

@@ -1,5 +1,11 @@
 # дизайн-система SUTI.world
 
+> Это ранний transfer snapshot. Текущие общие токены и правила находятся в
+> [framework settings](framework-settings.md), версия 2026.9-r3.
+
+> Это ранний transfer snapshot. Текущие общие токены и правила находятся в
+> [framework settings](framework-settings.md), версия 2026.9-r3.
+
 статус: рабочая версия
 
 источник: бриф пользователя

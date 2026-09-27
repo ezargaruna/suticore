@@ -1,0 +1,28 @@
+{
+  "id": "./",
+  "name": "SUTI.world · поле различения",
+  "short_name": "SUTI.world",
+  "description": "Язык, смысл и следующий ход. Начни с одной точки, где что-то не сходится.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F4F0E8",
+  "theme_color": "#F4F0E8",
+  "categories": ["productivity", "education"],
+  "icons": [
+    {
+      "src": "./site/assets/icons/suti-mark-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./site/assets/icons/suti-mark-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,43 +1,341 @@
 <!doctype html>
-<html lang="ru" data-mode="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#F4F7EF">
-  <meta name="description" content="SUTI.world — слова помогают жить яснее">
-  <title>SUTI.world · язык, ясность, следующий шаг</title>
-  <style>
-    :root{--suti-paper:#F4F7EF;--suti-ink:#20372D;--suti-muted:#627167;--suti-moss:#4A785A;--suti-forest:#214D3C;--suti-peach:#F4D6BD;--suti-sky:#C9E1DD;--suti-sun:#F6E8A7;--suti-azure:#A9D8DC;--suti-plum:#6B465D;--suti-line:rgba(41,82,63,.18);--suti-focus:#1B5943;--max:1120px}
-    [data-mode=night]{--suti-paper:#172B25;--suti-ink:#F1F4E9;--suti-muted:#C6D1C6;--suti-moss:#9DC795;--suti-forest:#0D1812;--suti-peach:#5C4437;--suti-sky:#294744;--suti-sun:#625D35;--suti-azure:#31565A;--suti-line:rgba(240,243,233,.25);--suti-focus:#EDF5DF}
-    [data-mode=contrast]{--suti-paper:#FFF;--suti-ink:#111;--suti-muted:#333;--suti-moss:#085C2B;--suti-forest:#000;--suti-peach:#FFF;--suti-sky:#FFF;--suti-sun:#FFF;--suti-azure:#FFF;--suti-plum:#111;--suti-line:#111;--suti-focus:#000}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:var(--suti-paper);color:var(--suti-ink);font-family:Arial,Helvetica,sans-serif;font-size:var(--base-size,1rem);line-height:1.55}a{color:inherit}a:hover{text-decoration-thickness:2px}:focus-visible{outline:3px solid var(--suti-focus);outline-offset:4px}.skip{position:absolute;left:1rem;top:-4rem;background:var(--suti-paper);padding:.7rem 1rem;z-index:2}.skip:focus{top:1rem}
-    .shell{max-width:var(--max);margin:auto;padding-left:clamp(1.25rem,4vw,2.5rem);padding-right:clamp(1.25rem,4vw,2.5rem)}header{border-bottom:1px solid var(--suti-line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}.brand{font-size:1.5rem;font-weight:700;letter-spacing:-.06em;text-decoration:none}.brand i{font-style:normal;color:var(--suti-moss)}.controls{display:flex;gap:.35rem;flex-wrap:wrap;justify-content:flex-end}.controls button{font:inherit;border:1px solid var(--suti-line);background:transparent;color:inherit;padding:.35rem .55rem;cursor:pointer}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:3rem;padding-top:clamp(4rem,10vw,8rem);padding-bottom:clamp(4rem,10vw,8rem)}.eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:var(--suti-moss);font-weight:700}.hero h1,h2,h3{font-family:Georgia,serif;font-weight:400;letter-spacing:-.05em;line-height:1.03}.hero h1{font-size:clamp(3.15rem,8vw,6.5rem);margin:.6rem 0 1.5rem}.lede{font-family:Georgia,serif;font-size:clamp(1.35rem,2.4vw,1.9rem);max-width:42rem}.button{display:inline-block;margin-top:1rem;padding:.75rem 1rem;border:1px solid currentColor;text-decoration:none;font-weight:700}.button.primary{background:var(--suti-forest);color:var(--suti-paper);border-color:var(--suti-forest)}
-    .seed{aspect-ratio:1;max-width:430px;width:100%;margin:auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff9e7 0 18%,var(--suti-sun) 19% 40%,var(--suti-peach) 41% 64%,var(--suti-sky) 65% 78%,transparent 79%);position:relative;animation:tide 14s ease-in-out infinite}.seed:before,.seed:after{content:"";position:absolute;border:1px solid var(--suti-ink);border-radius:50%;inset:12%;transform:rotate(-25deg) scaleX(.65)}.seed:after{inset:22%;transform:rotate(45deg) scaleX(.6)}.seed span{position:absolute;inset:40%;border-radius:50%;background:var(--suti-forest)}@keyframes tide{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-10px) rotate(1deg)}}
-    section{border-top:1px solid var(--suti-line);padding-top:clamp(3rem,7vw,6rem);padding-bottom:clamp(3rem,7vw,6rem)}h2{font-size:clamp(2.25rem,5vw,4.2rem);margin:.5rem 0 2rem}h3{font-size:1.8rem;margin:.5rem 0}p{max-width:68ch}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{min-height:330px;padding:clamp(1.4rem,3vw,2.5rem);border-radius:1.1rem;display:flex;flex-direction:column}.card.peach{background:var(--suti-peach)}.card.sky{background:var(--suti-sky)}.card.sun{background:var(--suti-sun)}.card small{margin-top:auto;border-top:1px solid var(--suti-line);padding-top:1rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,8vw,8rem)}.soft{background:rgba(201,225,221,.28)}.gifts{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.gift{border-top:1px solid var(--suti-line);padding:1.2rem 0}.gift a{text-underline-offset:.2rem;font-weight:700}.meta,.muted{font-size:.9rem;color:var(--suti-muted)}.steps{font-family:Georgia,serif;font-size:1.35rem}.steps span{display:block;font-family:Arial,sans-serif;font-size:.75rem;letter-spacing:.1em;color:var(--suti-moss);margin-top:1rem}.quiet-links{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;list-style:none;padding:0}.quiet-links a{text-underline-offset:.2rem}.quiet-links li{min-width:10rem}details{border-top:1px solid var(--suti-line);border-bottom:1px solid var(--suti-line);padding:1rem 0;margin-top:2rem}summary{cursor:pointer;font-weight:700}.contact{background:var(--suti-forest);color:var(--suti-paper)}.contact .eyebrow{color:var(--suti-sun)}footer{border-top:1px solid var(--suti-line);padding:1.5rem 0;font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-    @media(max-width:800px){.hero,.split{grid-template-columns:1fr}.seed{max-width:300px}.grid,.gifts{grid-template-columns:1fr}.card{min-height:260px}.nav{align-items:flex-start;flex-direction:column;padding-top:1rem;padding-bottom:1rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.seed{animation:none}}
-  </style>
-</head>
-<body>
-<a class="skip" href="#main">к содержимому</a>
-<header><div class="shell nav"><a class="brand" href="/" aria-label="SUTI.world — главная">SUTI<span>.</span>world</a><div class="controls" aria-label="режим чтения"><button type="button" data-mode="light">свет</button><button type="button" data-mode="night">ночь</button><button type="button" data-mode="contrast">контраст</button><button type="button" data-size="down">A−</button><button type="button" data-size="up">A+</button></div></div></header>
-<main id="main">
-<section class="hero shell"><div><p class="eyebrow">SUTI.world · язык для жизни</p><h1>слова помогают<br>жить яснее</h1><p class="lede">здесь люди и проекты<br>находят точные слова,<br>видят задачу<br>и выбирают следующий шаг</p><p>одна задача<br>один маршрут<br>видимый след</p><a class="button primary" href="#paths">выбрать направление ↘</a> <a class="button" href="#contact">написать Ezar</a></div><div class="seed" role="img" aria-label="мягкая форма семени, роста и связи"><span></span></div></section>
-<section id="paths"><div class="shell"><p class="eyebrow">три входа</p><h2>с чего начать</h2><div class="grid"><article class="card peach"><span>01</span><h3>хочу говорить</h3><strong>LinguaFUSION</strong><p>языковая практика, культура и разговор</p><small>маленькая практика<br>которую можно повторить сегодня</small><a href="https://t.me/LinguaFUSION" rel="noopener">открыть клуб ↗</a></article><article class="card sky"><span>02</span><h3>хочу понять</h3><strong>карта сути</strong><p>контекст, факты, вопросы, варианты и шаг</p><small>для человека, текста,<br>ситуации или идеи</small><a href="https://t.me/saritamah" rel="noopener">обсудить карту ↗</a></article><article class="card sun"><span>03</span><h3>хочу собрать</h3><strong>SUTIspace</strong><p>словарь, смысловая карта, текст или brief</p><small>для автора, бренда,<br>проекта или команды</small><a href="https://t.me/saritamah" rel="noopener">описать задачу ↗</a></article></div></div></section>
-<section id="gifts" class="soft"><div class="shell"><p class="eyebrow">проверенные подарки</p><h2>взять сейчас</h2><div class="gifts"><article class="gift"><p class="meta">спецификация · чтение</p><h3>SUTIcore</h3><p>каноническая основа открытого ядра</p><a href="https://github.com/ezargaruna/suticore/blob/main/README.md" rel="noopener">открыть документ ↗</a></article><article class="gift"><p class="meta">протокол · короткий вход</p><h3>проверка</h3><p>проверить следующий шаг и основание</p><a href="https://github.com/ezargaruna/suticore/blob/main/protocolla/verification.md" rel="noopener">открыть документ ↗</a></article><article class="gift"><p class="meta">границы · памятка</p><h3>что не публиковать</h3><p>отделить открытое от личного</p><a href="https://github.com/ezargaruna/suticore/blob/main/docs/limits/what_is_not_shared.md" rel="noopener">открыть документ ↗</a></article><article class="gift"><p class="meta">вклад · правила</p><h3>как участвовать</h3><p>понять форму открытого вклада</p><a href="https://github.com/ezargaruna/suticore/blob/main/docs/community/contributing.md" rel="noopener">открыть документ ↗</a></article></div></div></section>
-<section id="method"><div class="shell split"><div><p class="eyebrow">рабочий цикл</p><h2>от вопроса<br>к действию</h2></div><div class="steps"><p><span>01</span>заметить</p><p><span>02</span>назвать</p><p><span>03</span>проверить</p><p><span>04</span>выбрать → сделать → оставить след</p></div></div></section>
-<section><div class="shell split"><div><p class="eyebrow">кто ведёт</p><h2>Ezar Garuna</h2><p class="muted">лингвист · семантический архитектор</p></div><div><p><strong>язык · тексты · AI</strong><br>ясность → следующий шаг</p><p>языки, перевод, преподавание,<br>голос, UX/UI и открытые протоколы</p><a class="button" href="https://t.me/saritamah" rel="noopener">написать @saritamah ↗</a></div></div></section>
-<section><div class="shell split"><div><p class="eyebrow">форматы</p><h2>открытый<br>и личный контур</h2></div><div><p><strong>открытый</strong><br>задания · протоколы · шаблоны · заметки</p><p><strong>личный</strong><br>языковый маршрут · карта сути · язык проекта</p><details><summary>условия работы</summary><p>перед началом фиксируем формат, срок и стоимость<br>без скрытых доплат</p></details></div></div></section>
-<section class="soft"><div class="shell split"><div><p class="eyebrow">живой ритм</p><h2>учиться вместе</h2></div><div><p>по средам — <a href="https://t.me/LinguaFUSION" rel="noopener">@LinguaFUSION</a><br>языки · культуры · клуб</p><p>по четвергам — <a href="https://t.me/yazehs" rel="noopener">@yazehs</a><br>русский · мышление · письмо</p><p>практика — чаще асинхронно<br>встречи — иногда</p><p>анкета :: карта сути<br><a href="https://forms.gle/dnNs2b1yzeBGV2b47" rel="noopener">открыть языковую карту ↗</a></p></div></div></section>
-<section class="contact" id="contact"><div class="shell split"><div><p class="eyebrow">связь</p><h2>Ezar Garuna<br><span>@saritamah</span></h2></div><div><p>лингвист · семантический архитектор<br>язык · тексты · AI<br>ясность → следующий шаг</p><a class="button" href="https://t.me/saritamah" rel="noopener">написать @saritamah ↗</a> <a class="button" href="https://t.me/ezargaruna" rel="noopener">канал @ezargaruna ↗</a><details><summary>поддержать открытый контур</summary><p>донат доброволен<br>точные реквизиты добавляются<br>после отдельной проверки</p></details></div></div></section>
-</main>
-<footer class="shell"><span>SUTI.world</span><span>язык · ясность · следующий шаг</span><a href="https://github.com/ezargaruna/suticore" rel="noopener">открытое ядро ↗</a></footer>
-<script>
-  const root=document.documentElement;
-  document.querySelectorAll("[data-mode]").forEach(button=>button.addEventListener("click",()=>{root.dataset.mode=button.dataset.mode;localStorage.setItem("suti-mode",button.dataset.mode)}));
-  document.querySelector("[data-size=down]").addEventListener("click",()=>{root.style.setProperty("--base-size","0.9375rem")});
-  document.querySelector("[data-size=up]").addEventListener("click",()=>{root.style.setProperty("--base-size","1.125rem")});
-  const saved=localStorage.getItem("suti-mode");if(saved)root.dataset.mode=saved;
-</script>
-</body>
+<html lang="ru" data-palette="linen" data-density="balanced" data-rhythm="pause">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F4F0E8">
+    <meta name="description" content="SUTI.world — язык, человек и проекты в ясном поле различения. Начни с одной точки, где что-то не сходится.">
+    <link rel="icon" href="./site/assets/icons/suti-mark.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./site/assets/icons/suti-mark-192.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./site/assets/css/suti-world.css">
+    <title>SUTI.world · начать с punctum</title>
+    <script src="./site/assets/js/suti-world.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">перейти к содержанию</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="#top" aria-label="SUTI.world — начало">
+          <span class="brand-mark" aria-hidden="true">∴</span>
+          <span>SUTI.world</span>
+        </a>
+        <nav class="main-nav" aria-label="разделы">
+          <a href="#doors">направления</a>
+          <a href="#path">глубина</a>
+          <a href="#shelf">взять и применить</a>
+        </nav>
+        <button class="contrast-button" type="button" data-action="contrast" aria-pressed="false">
+          контраст
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">∴</span> SUTI.world</p>
+          <h1 id="hero-title">язык помогает<br>различить главное.</h1>
+          <p class="hero-lead">если что-то не сходится —<br>начнём с одной точки.</p>
+          <p class="hero-note">увидеть · назвать · проверить · сделать следующий шаг</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#punctum">начать с punctum <span aria-hidden="true">⟁</span></a>
+            <a class="text-link" href="#doors">посмотреть направления <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <figure class="orbit-art" aria-labelledby="orbit-caption">
+          <svg class="orbit-svg" viewBox="0 0 560 480" role="img" aria-labelledby="orbit-title orbit-desc">
+            <title id="orbit-title">синергема SUTI.world</title>
+            <desc id="orbit-desc">пять различимых знаков соединены в открытый путь вокруг центрального узла</desc>
+            <ellipse class="orbit orbit-one" cx="280" cy="240" rx="208" ry="118" transform="rotate(-24 280 240)" />
+            <ellipse class="orbit orbit-two" cx="280" cy="240" rx="156" ry="190" transform="rotate(35 280 240)" />
+            <path class="orbit-path" d="M101 305C145 174 216 129 290 167s124 126 173 6" />
+            <circle class="node node-core" cx="280" cy="240" r="39" />
+            <circle class="node node-a" cx="104" cy="303" r="13" />
+            <circle class="node node-b" cx="199" cy="153" r="11" />
+            <circle class="node node-c" cx="370" cy="331" r="11" />
+            <circle class="node node-d" cx="465" cy="173" r="13" />
+            <text class="orbit-glyph glyph-one" x="85" y="260">⧖</text>
+            <text class="orbit-glyph glyph-two" x="172" y="110">∴</text>
+            <text class="orbit-glyph glyph-three" x="351" y="390">⟁</text>
+            <text class="orbit-glyph glyph-four" x="437" y="124">〄</text>
+            <text class="core-glyph" x="280" y="251">↺</text>
+          </svg>
+          <figcaption id="orbit-caption">смысл · отношение · выбор · след</figcaption>
+        </figure>
+      </section>
+
+      <section class="doors-section" id="doors" aria-labelledby="doors-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><span aria-hidden="true">⧖</span> сначала — область внимания</p>
+            <h2 id="doors-title">что сейчас требует ясности?</h2>
+          </div>
+          <div class="door-list">
+            <article class="door-card">
+              <span class="depth-symbol" aria-hidden="true">↗</span>
+              <p class="depth-label">говорить</p>
+              <h3>язык · культура · коммуникация</h3>
+              <p>для жизни, работы, переезда, отношений и новой культурной среды.</p>
+              <a class="text-link" href="#lingua">LinguaFUSION <span aria-hidden="true">↓</span></a>
+            </article>
+            <article class="door-card">
+              <span class="depth-symbol" aria-hidden="true">⧖</span>
+              <p class="depth-label">понять</p>
+              <h3>себя · ситуацию · выбор</h3>
+              <p>когда всего много и пока не видно, что главное и куда двигаться.</p>
+              <a class="text-link" href="#fusion">Fusion <span aria-hidden="true">↓</span></a>
+            </article>
+            <article class="door-card">
+              <span class="depth-symbol" aria-hidden="true">〄</span>
+              <p class="depth-label">выразить</p>
+              <h3>проект · бренд · команда</h3>
+              <p>когда смысл уже есть, но слова и структура ещё не держат форму.</p>
+              <a class="text-link" href="#semantic">semantic architecture <span aria-hidden="true">↓</span></a>
+            </article>
+          </div>
+          <p class="door-note">Дверь задаёт область внимания, не продукт. Любое направление начинается с Punctum; глубина определяется позже.</p>
+        </div>
+      </section>
+
+      <section class="punctum-section" id="punctum" aria-labelledby="punctum-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><span aria-hidden="true">⧖</span> открытая точка входа · punctum</p>
+            <h2 id="punctum-title">где именно<br>не сходится?</h2>
+            <p class="section-lede">принеси один узел. сначала различим его — маршрут появится потом.</p>
+          </div>
+
+          <div class="punctum-form" id="punctum-form" role="group" aria-labelledby="punctum-input-label">
+            <label id="punctum-input-label" for="punctum-input">опиши одним фрагментом: что наблюдается?</label>
+            <textarea id="punctum-input" name="punctum" rows="3" maxlength="600" placeholder="мы много обсуждаем проект, но каждый понимает его по-своему…"></textarea>
+            <div class="form-actions">
+              <button class="button button-primary" type="button" data-action="punctum">различить узел <span aria-hidden="true">→</span></button>
+              <p class="form-status" id="punctum-status" role="status">черновик остаётся в этой вкладке · ничего не отправляется</p>
+            </div>
+          </div>
+
+          <section class="punctum-result" id="punctum-result" aria-labelledby="punctum-result-title" hidden>
+            <p class="eyebrow"><span aria-hidden="true">∴</span> первый рабочий снимок</p>
+            <h3 id="punctum-result-title" tabindex="-1">отдели наблюдение от объяснения</h3>
+            <p class="result-note">исходная фраза — твоя запись. остальные строки — вопросы для проверки, не вывод системы.</p>
+            <dl class="punctum-grid">
+              <div><dt>исходная фраза · твои слова</dt><dd id="punctum-observation"></dd></div>
+              <div><dt>предполагается</dt><dd>что ты пока думаешь об этом?</dd></div>
+              <div><dt>несходимость</dt><dd>что именно не совпадает — и между чем?</dd></div>
+              <div><dt>UNKNOWN</dt><dd>чего сейчас нельзя утверждать?</dd></div>
+              <div><dt>вопрос проверки</dt><dd>какое различие важнее всего проверить?</dd></div>
+              <div><dt>первый ход</dt><dd>какое небольшое и обратимое действие возможно?</dd></div>
+            </dl>
+            <fieldset class="route-choice" id="route-choice">
+              <legend>какой слой требует внимания?</legend>
+              <div class="route-options">
+                <label><input type="radio" name="route" value="language"><span>язык и выражение</span></label>
+                <label><input type="radio" name="route" value="person"><span>я и мой переход</span></label>
+                <label><input type="radio" name="route" value="project"><span>проект, текст или бренд</span></label>
+                <label><input type="radio" name="route" value="system"><span>команда, ИИ или система</span></label>
+              </div>
+            </fieldset>
+            <div class="route-result" id="route-result" role="status" hidden></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="loop-section" id="method" aria-labelledby="method-title">
+        <div class="wrap loop-layout">
+          <div class="loop-intro">
+            <p class="eyebrow"><span aria-hidden="true">↺</span> как работает различение</p>
+            <h2 id="method-title">яснее —<br>и дальше самому.</h2>
+            <p>публичный путь короткий.<br>полный цикл оставляет след.</p>
+          </div>
+          <ol class="loop-list loop-list-short">
+            <li><span>01</span> заметить <b aria-hidden="true">⧖</b></li>
+            <li><span>02</span> различить <b aria-hidden="true">∴</b></li>
+            <li><span>03</span> проверить <b aria-hidden="true">?</b></li>
+            <li><span>04</span> выбрать <b aria-hidden="true">!</b></li>
+            <li><span>05</span> сделать <b aria-hidden="true">⟁</b></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="entry-section" id="path" aria-labelledby="path-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><span aria-hidden="true">⟁</span> общая глубина · любое направление</p>
+            <h2 id="path-title">сколько работы<br>нужно сейчас?</h2>
+            <p class="section-lede">дверь показывает область. глубина — масштаб участия.</p>
+          </div>
+          <ol class="depth-list">
+            <li class="depth-item"><span class="depth-symbol" aria-hidden="true">⧖</span><div><p class="depth-label">одно различие</p><h3>punctum</h3><p>короткий открытый вход, чтобы стало понятно, куда смотреть дальше.</p></div></li>
+            <li class="depth-item"><span class="depth-symbol" aria-hidden="true">∴</span><div><p class="depth-label">один локальный узел</p><h3>fusion snapshot</h3><p>одно решение, переход, текст или ситуация; компактная карта и следующий ход.</p></div></li>
+            <li class="depth-item"><span class="depth-symbol" aria-hidden="true">〄</span><div><p class="depth-label">целостная конфигурация</p><h3>fusion map / audit</h3><p>контекст, приоритеты, отношения, ограничения, варианты и вектор.</p></div></li>
+            <li class="depth-item"><span class="depth-symbol" aria-hidden="true">⟁</span><div><p class="depth-label">перестройка системы</p><h3>suti architecture</h3><p>когда узел системный: язык, команда, ИИ, процессы, роли и контракты.</p></div></li>
+          </ol>
+          <p class="service-note">Конкретный формат определяется после Punctum; сам выбор глубины остаётся за человеком.</p>
+        </div>
+      </section>
+
+      <section class="directions-section" aria-labelledby="directions-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><span aria-hidden="true">↔</span> три направления · одна логика</p>
+            <h2 id="directions-title">двери ведут<br>в разные поля работы.</h2>
+          </div>
+          <div class="direction-list">
+            <article id="lingua"><p class="depth-label">говорить</p><h3>LinguaFUSION</h3><p>язык для жизни: ситуация, значение, культура, речь и практика.</p><p>индивидуально · мини-группа · языковая карта · открытая практика</p></article>
+            <article id="fusion"><p class="depth-label">понять</p><h3>Fusion</h3><p>работа с несходимостью: решения, переходы, отношения и следующий этап.</p><p>Punctum · Snapshot · Fusion Map · письменный разбор</p></article>
+            <article id="semantic"><p class="depth-label">выразить</p><h3>semantic architecture</h3><p>язык сложных систем: авторы, бренды, методы, команды и AI-продукты.</p><p>semantic audit · language architecture · team alignment · AI architecture</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="style-section" id="shelf" aria-labelledby="shelf-title">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow"><span aria-hidden="true">〄</span> открытая полка</p>
+            <h2 id="shelf-title">взять и применить.</h2>
+            <p class="section-lede">одна задача · один протокол · один выход</p>
+          </div>
+          <div class="resource-list">
+            <article><p class="depth-label">наблюдение</p><h3>отделить факт от интерпретации</h3><p>выход: яснее граница того, что известно.</p><a href="https://github.com/ezargaruna/suticore/blob/main/protocolla/verification.md" rel="noopener noreferrer">протокол проверки ↗</a></article>
+            <article><p class="depth-label">языковая практика</p><h3>взять одну реальную ситуацию</h3><p>выход: фраза, которую можно попробовать в жизни.</p><a href="https://github.com/ezargaruna/suticore/blob/main/protocols/linguafusion.md" rel="noopener noreferrer">практика LinguaFUSION ↗</a></article>
+            <article><p class="depth-label">системная ясность</p><h3>проверить границы метода</h3><p>выход: точнее понять, что SUTI утверждает и чего не утверждает.</p><a href="https://github.com/ezargaruna/suticore/blob/main/README.md" rel="noopener noreferrer">основа SUTIcore ↗</a></article>
+          </div>
+
+          <details class="style-details">
+            <summary>собрать визуальный стиль своей среды</summary>
+            <p class="result-note">Сигнатура строится только из явных выборов. Профиль можно сохранить здесь, сбросить или экспортировать как JSON и CSS-токены.</p>
+            <div class="style-layout">
+              <div class="style-intro">
+                <p class="eyebrow"><span aria-hidden="true">∴</span> стиль подключения</p>
+                <h3 id="style-title">твоя среда.<br>твой ритм.</h3>
+                <p>для человека, команды<br>или системы</p>
+                <p class="quiet-note">это настройка интерфейса,<br>не вывод о личности</p>
+              </div>
+              <form class="style-form" id="style-form">
+            <fieldset>
+              <legend><span>01</span> для кого строится форма?</legend>
+              <label class="select-wrap" for="scope">
+                <span class="sr-only">масштаб работы</span>
+                <select id="scope" name="scope">
+                  <option value="person">для человека</option>
+                  <option value="team">для команды</option>
+                  <option value="system">для системы</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend><span>02</span> что ты собираешь?</legend>
+              <label class="select-wrap" for="intent">
+                <span class="sr-only">главный режим</span>
+                <select id="intent" name="intent">
+                  <option value="language">голос и язык</option>
+                  <option value="clarity">ясность ситуации</option>
+                  <option value="system">среду для проекта</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend><span>03</span> сколько пространства?</legend>
+              <label class="select-wrap" for="density">
+                <span class="sr-only">плотность информации</span>
+                <select id="density" name="density">
+                  <option value="quiet">просторно</option>
+                  <option value="balanced" selected>сбалансированно</option>
+                  <option value="compact">плотно и кратко</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend><span>04</span> какой цветовой акцент?</legend>
+              <div class="palette-options">
+                <label><input type="radio" name="palette" value="linen" checked><span class="swatch swatch-linen"></span><span>лён</span></label>
+                <label><input type="radio" name="palette" value="moss"><span class="swatch swatch-moss"></span><span>мох</span></label>
+                <label><input type="radio" name="palette" value="petrol"><span class="swatch swatch-petrol"></span><span>петроль</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>05</span> какой ритм тебе подходит?</legend>
+              <div class="rhythm-options">
+                <label><input type="radio" name="rhythm" value="pause" checked><span>пауза</span></label>
+                <label><input type="radio" name="rhythm" value="pulse"><span>пульс</span></label>
+                <label><input type="radio" name="rhythm" value="still"><span>без движения</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>06</span> какой знак ведёт?</legend>
+              <div class="glyph-options" role="group" aria-label="выбери смысловой знак">
+                <label><input type="radio" name="glyph" value="∴" checked><span aria-hidden="true">∴</span><span class="sr-only">ядро</span></label>
+                <label><input type="radio" name="glyph" value="⧖"><span aria-hidden="true">⧖</span><span class="sr-only">пауза</span></label>
+                <label><input type="radio" name="glyph" value="⟁"><span aria-hidden="true">⟁</span><span class="sr-only">действие</span></label>
+                <label><input type="radio" name="glyph" value="〄"><span aria-hidden="true">〄</span><span class="sr-only">интеграция</span></label>
+                <label><input type="radio" name="glyph" value="↺"><span aria-hidden="true">↺</span><span class="sr-only">возврат</span></label>
+              </div>
+            </fieldset>
+
+            <div class="style-preview" id="style-preview" aria-live="polite">
+              <span class="preview-glyph" id="preview-glyph" aria-hidden="true">∴</span>
+              <div>
+                <p class="preview-label">твоя конфигурация</p>
+                <h3 id="preview-title">голос и язык · сбалансированно</h3>
+                <p id="preview-copy">лён · ясный ритм · один следующий ход</p>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="button button-primary" type="button" data-action="save-profile">сохранить здесь</button>
+              <button class="button button-quiet" type="button" data-action="export-profile">скачать стиль</button>
+              <button class="button button-quiet" type="button" data-action="copy-tokens">копировать CSS-токены</button>
+              <button class="button button-quiet" type="button" data-action="reset-profile">сбросить</button>
+            </div>
+            <p class="form-status" id="profile-status" role="status">предпросмотр меняется от твоих выборов</p>
+              </form>
+            </div>
+            <div class="install-inline">
+              <button class="button button-primary" type="button" data-action="install" hidden>добавить SUTI.world на устройство</button>
+              <p class="install-status" id="install-status" role="status">SUTI.world можно установить как отдельное веб-приложение; после первого открытия основные функции доступны офлайн.</p>
+              <details class="install-help" id="install-help"><summary>как установить из меню браузера</summary><p>выбери «установить приложение» или «на экран домой». приложение не управляет темами других программ и не читает их файлы.</p></details>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="traces-section" aria-labelledby="traces-title">
+        <div class="wrap">
+          <div class="section-head"><p class="eyebrow"><span aria-hidden="true">〄</span> traces · примеры формы</p><h2 id="traces-title">след показывает<br>что изменилось.</h2><p class="result-note">схематические примеры метода · не отзывы и не клиентские кейсы</p></div>
+          <article class="trace-card"><div><p class="depth-label">было</p><p>не удаётся выбрать направление</p></div><div><p class="depth-label">различили</p><p>смешивались три разные задачи</p></div><div><p class="depth-label">сделали</p><p>развели приоритеты и критерии</p></div><div><p class="depth-label">след</p><p>одно направление перешло в действие</p></div></article>
+        </div>
+      </section>
+
+      <section class="about-section" aria-labelledby="about-title">
+        <div class="wrap about-layout">
+          <div><p class="eyebrow"><span aria-hidden="true">∴</span> кто ведёт</p><h2 id="about-title">Ezar Garuna</h2><p class="about-role">языковой архитектор<br>архитектор различения</p></div>
+          <div><p>работаю там, где смысл уже есть, но форма ещё не найдена.</p><p>язык · человек · AI · проекты · переходы</p><p>создатель SUTI.world, Fusion Design и LinguaFUSION.</p></div>
+        </div>
+      </section>
+
+      <section class="conditions-section" aria-labelledby="conditions-title">
+        <div class="wrap conditions-layout"><div><p class="eyebrow"><span aria-hidden="true">⧖</span> границы</p><h2 id="conditions-title">ясность без<br>подмены выбора.</h2></div><ul><li>карта — рабочая модель, не диагноз и не вся реальность</li><li>неизвестное остаётся UNKNOWN</li><li>в примерах нет клиентских данных</li><li>введённый Punctum-текст обрабатывается локально, не сохраняется и не отправляется</li><li>стиль собирается из явных настроек, а не из догадок о человеке</li><li>установка добавляет веб-приложение, не системный оверлей</li></ul></div>
+      </section>
+
+      <section class="closing-section">
+        <div class="wrap closing-content">
+          <p class="closing-mark" aria-hidden="true">∴</p>
+          <h2>не нужно понимать<br>всю систему.</h2>
+          <p>начни с одного места,<br>где что-то не сходится.</p>
+          <a class="button button-primary" href="#punctum">открыть punctum <span aria-hidden="true">⟁</span></a>
+          <p class="return-to-life">〄 взяли нужное — возвращайтесь к жизни.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">∴</span><span>SUTI.world</span></a>
+        <p>пространство языка, смысла и действия</p>
+        <a href="https://github.com/ezargaruna/suticore" rel="noopener noreferrer">github ↗</a>
+      </div>
+    </footer>
+  </body>
 </html>
