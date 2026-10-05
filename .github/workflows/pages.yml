@@ -30,6 +30,9 @@ jobs:
           mkdir -p _site/ru _site/es _site/pt
           cp index.html _site/index.html
           cp -R ru es pt _site/
+          cp -R essence _site/essence
+          cp -R assets _site/assets
+          cp suti-world-package.zip _site/suti-world-package.zip
       - name: upload static site
         uses: actions/upload-pages-artifact@v3
         with:
