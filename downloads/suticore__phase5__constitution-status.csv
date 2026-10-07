@@ -1,0 +1,7 @@
+﻿Часть,Содержание,Статус
+**I. Constitution**,"10 аксиом, 10 законов, 10 инвариантов",Заморожено
+**II. Type System**,"SO, SID, SKO, SRO, SCO, STO, SIO, SEO — формальные типы (Haskell-like)",Заморожено
+**III. Protocols**,"SKO, STP, SRL, OAP — переходы, формулы, механизмы",Заморожено
+**IV. Computing Model**,"SSR (8 стадий), SAP (8 операций), SQEL, ECC, Thermodynamics, S-Gas",Заморожено
+**V. Audit**,8 противоречий + 8 разрывов с приоритетами,Активно
+**VI. Roadmap**,"5 вех Phase 5 (15 месяцев), критерии перехода, риски",Активно

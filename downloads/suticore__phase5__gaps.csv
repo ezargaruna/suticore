@@ -1,0 +1,9 @@
+﻿#,Пробел,Что отсутствует,Блокирует
+**G1**,**Formal Consistency Model**,"Семантическая CAP-теорема, proof детерминизма",Phase 5
+**G2**,**Storage Architecture**,"SSP — как SO сериализуются, ActiveIndex vs LogicalGraph",Phase 5
+**G3**,**Network Protocol**,"SNP — gossip, синхронизация STO",Phase 5
+**G4**,**Cryptographic Primitives**,"SCS — hash, signature, CID canonicalization",Phase 5
+**G5**,**Bootstrap Ontology**,"SBO — корневой SCO, терминатор рекурсии",Phase 5
+**G6**,**Governance Model**,"SGP — как менять параметры (ALPHA, BETA, K)",Phase 5
+**G7**,**LLM Contract**,SCAC — формальные полномочия LLM,Phase 6
+**G8**,**Human Interface**,SIP — как люди взаимодействуют с SSR,Phase 6
