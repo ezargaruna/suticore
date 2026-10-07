@@ -1,0 +1,27 @@
+# ∴ suti-obsidian-theme-v2027.css
+# quiet luxury x living earth
+
+:root {
+  --suti-bg: #061d22;
+  --suti-fg: #e0e0e0;
+  --suti-accent: #d4af37;
+  --suti-muted: #4a6b6d;
+  --suti-font-mono: 'IBM Plex Mono', monospace;
+  --suti-font-serif: 'Literata', serif;
+}
+
+body {
+  font-family: var(--suti-font-serif);
+  background-color: var(--suti-bg);
+  color: var(--suti-fg);
+}
+
+.markdown-rendered {
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+}
+
+/* remove dots and noise */
+.markdown-rendered p {
+  margin-bottom: 1em;
+}
