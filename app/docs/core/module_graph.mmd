@@ -1,0 +1,54 @@
+%% module_graph.mmd ∴ suticore architecture map
+%% version: 2026.x
+
+graph TD
+
+    A["suticore ∴ core engine"]
+    B["sreteniya ∴ public interface"]
+
+    A --> C["core/axioms"]
+    A --> D["core/schema"]
+    A --> E["core/glossary"]
+
+    A --> F["protocols/slovoyaz"]
+    A --> G["protocols/syntaxium"]
+    A --> H["protocols/verenitya"]
+    A --> I["protocols/linguafusion"]
+
+    F --> J["semantic compression"]
+    G --> K["geometry of meaning"]
+    H --> L["silence regulation"]
+    I --> M["direct cognitive binding"]
+
+    B --> N["docs/system_overview"]
+    B --> O["docs/prime_directive"]
+    B --> P["docs/role_binding"]
+
+    B --> Q["framework/decision_stack"]
+    B --> R["framework/validation_gates"]
+    B --> S["framework/decision_memo"]
+
+    B --> T["community/community_rituals"]
+    B --> U["limits/what_is_not_shared"]
+    B --> V["projects/other"]
+
+    W["ai layer ∴ shadow posture"]
+    X["rag layer ∴ canonical retrieval"]
+    Y["runtime ∴ execution shell"]
+
+    W --> F
+    W --> G
+    W --> H
+
+    X --> C
+    X --> F
+    X --> E
+
+    Y --> Q
+    Y --> R
+    Y --> S
+
+    Z["world feedback ↺ observable trace"]
+
+    Y --> Z
+    Z --> A

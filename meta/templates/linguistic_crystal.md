@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: template-lingua-crystal
 type: template
@@ -12,14 +7,21 @@ aliases:
   - шаблон языковой кристалл
   - template lingua crystal
   - кристалл языка
-parent: "[[06 шаблоны/обзор|шаблоны]]"
+parent: "[[README|шаблоны]]"
 related:
-  - "[[02 язык/обзор]]"
-  - "[[00 вход/модули/linguafusion]]"
+  - "[[../linguafusion/LinguaFUSION|linguafusion]]"
+  - "[[../00_KERNEL/SYNTAXIUM|syntaxium]]"
 tags:
   - SUTI
   - template/language
   - template/linguafusion
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ⌖ языковой кристалл :: {{word_or_concept}}
@@ -54,4 +56,4 @@ tags:
 – обратная связь от носителя или практики :: 
 
 ---
-связи :: [[00 вход/модули/linguafusion]] · [[06 шаблоны/обзор]]
+связи :: [[../linguafusion/LinguaFUSION|linguafusion]] · [[../00_KERNEL/SYNTAXIUM|syntaxium]] · [[../frameworks/GUIDE|руководство]]

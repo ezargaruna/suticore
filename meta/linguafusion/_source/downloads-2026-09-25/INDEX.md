@@ -13,7 +13,7 @@ publication: forbidden
 
 - файлов проверено sha-256: 5
 - объём: 18222063 байт
-- полный манифест: `/users/saritamah/_audit/downloads-sort-20260925/migration-manifest.json`
+- полный манифест: `_audit/downloads-sort-20260925/migration-manifest.json`
 
 ## содержимое
 

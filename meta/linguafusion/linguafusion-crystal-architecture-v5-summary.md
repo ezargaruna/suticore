@@ -1,7 +1,7 @@
 ---
 type: semantic-summary
 status: review
-source: "/users/saritamah/documents/archive/🔮 LinguaFUSION crystal architecture v5.0.md"
+source: "archive/🔮 LinguaFUSION crystal architecture v5.0.md"
 source_type: apple-notes-archive
 import_wave: 1
 authority: reference
@@ -12,7 +12,7 @@ created: 2026-08-07
 
 ## provenance
 
-source: `/users/saritamah/documents/archive/🔮 LinguaFUSION crystal architecture v5.0.md`
+source: `archive/🔮 LinguaFUSION crystal architecture v5.0.md`
 
 historical/current status: apple notes archive source. treat as LinguaFUSION project-source evidence under review. the activation-prompt shell is historical and is not current agent authority
 

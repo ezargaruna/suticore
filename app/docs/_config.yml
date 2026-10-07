@@ -1,0 +1,237 @@
+# ============================================================
+# SUTIcore
+# Jekyll Configuration
+# ============================================================
+
+# document     :: repository configuration
+# repository   :: SUTIcore
+# ecosystem    :: SUTI.world
+# version      :: 0.1
+# status       :: active
+
+# ============================================================
+# Site
+# ============================================================
+
+title: "SUTIcore"
+
+tagline: "Semantic Operating System"
+
+description: >
+  Canonical specifications for semantic architectures.
+  SUTIcore provides the normative foundation of the
+  SUTI.world ecosystem.
+
+author:
+  name: "Ezar Garuna (as a function)"
+  email: "[contact removed]"
+  url: "https://github.com/ezargaruna"
+
+url: "https://suti.world"
+baseurl: ""
+
+repository: "ezargaruna/suticore"
+
+lang: en
+timezone: America/Bogota
+encoding: utf-8
+
+permalink: pretty
+
+# ============================================================
+# Markdown
+# ============================================================
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+  hard_wrap: false
+  toc_levels: 1..3
+
+# ============================================================
+# Collections
+# ============================================================
+
+collections:
+
+  specifications:
+    output: true
+    permalink: /specifications/:path/
+
+  standards:
+    output: true
+    permalink: /standards/:path/
+
+  protocols:
+    output: true
+    permalink: /protocols/:path/
+
+  runtime:
+    output: true
+    permalink: /runtime/:path/
+
+  implementations:
+    output: true
+    permalink: /implementations/:path/
+
+  research:
+    output: true
+    permalink: /research/:path/
+
+  examples:
+    output: true
+    permalink: /examples/:path/
+
+# ============================================================
+# Plugins
+# ============================================================
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-github-metadata
+
+relative_links:
+  enabled: true
+  collections: true
+
+# ============================================================
+# Public Files
+# ============================================================
+
+include:
+  - README.md
+  - SYSTEM_MAP.md
+  - LICENSE
+  - index.html
+
+  - specifications/
+  - standards/
+  - protocols/
+  - runtime/
+  - implementations/
+  - research/
+  - examples/
+
+# ============================================================
+# Exclude
+# ============================================================
+
+exclude:
+  - vendor/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+
+  - .github/
+
+  - private/
+  - drafts/
+
+  - scripts/
+
+  - logs/
+  - cache/
+
+# ============================================================
+# Indexing
+# ============================================================
+
+show_excerpts: false
+
+future: false
+unpublished: false
+lsi: false
+
+# ============================================================
+# Defaults
+# ============================================================
+
+defaults:
+
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      toc: false
+      nav: true
+
+  -
+    scope:
+      type: specifications
+    values:
+      toc: true
+
+  -
+    scope:
+      type: standards
+    values:
+      toc: true
+
+  -
+    scope:
+      type: protocols
+    values:
+      toc: true
+
+  -
+    scope:
+      type: runtime
+    values:
+      toc: true
+
+  -
+    scope:
+      type: implementations
+    values:
+      toc: true
+
+  -
+    scope:
+      type: research
+    values:
+      toc: true
+
+# ============================================================
+# Validation
+# ============================================================
+
+strict_front_matter: true
+
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
+
+# ============================================================
+# Performance
+# ============================================================
+
+sass:
+  style: compressed
+
+theme: null
+remote_theme: null
+
+# ============================================================
+# SEO
+# ============================================================
+
+social:
+  name: "SUTIcore"
+
+twitter:
+  username: saritamah
+
+google_analytics: ~
+
+# ============================================================
+# End
+# ============================================================

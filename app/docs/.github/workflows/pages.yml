@@ -1,0 +1,42 @@
+name: publish suti.world
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: configure pages
+        uses: actions/configure-pages@v5
+      - name: prepare public surface
+        run: |
+          mkdir -p _site/ru _site/es _site/pt
+          cp index.html _site/index.html
+          cp -R ru es pt _site/
+          cp -R essence _site/essence
+          cp -R assets _site/assets
+          cp suti-world-package.zip _site/suti-world-package.zip
+      - name: upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

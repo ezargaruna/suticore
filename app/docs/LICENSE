@@ -1,0 +1,86 @@
+# MIT License
+
+Copyright (c) 2026 Ezar Garuna (as a function)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+────────────────────────────────────────────────────────
+
+∴ SUTI semantic note
+
+This repository applies the unmodified MIT License.
+
+The license governs legal permissions only.
+
+SUTI specifications define semantic architecture,
+not legal obligations.
+
+No semantic interpretation, architectural recommendation
+or implementation guideline modifies, extends or restricts
+the permissions granted by the MIT License.
+
+────────────────────────────────────────────────────────
+
+⟁ functional authorship
+
+"Ezar Garuna (as a function)"
+
+denotes a functional authorship layer used throughout
+the SUTI ecosystem.
+
+It identifies the architectural origin of the work.
+
+It does not constitute an additional legal identity,
+license condition or ownership claim.
+
+────────────────────────────────────────────────────────
+
+⟐ specification integrity
+
+SUTI specifications describe canonical semantic models.
+
+Implementations may diverge,
+provided they remain internally consistent
+with the requirements of the specifications they claim
+to implement.
+
+Consistency is an engineering property,
+not a legal requirement.
+
+────────────────────────────────────────────────────────
+
+⚙ repository status
+
+license            :: MIT
+
+legal authority    :: Open Source Initiative
+
+semantic layer     :: descriptive
+
+repository         :: SUTIcore
+
+status             :: active
+
+────────────────────────────────────────────────────────
+
+license governs freedom
+
+specification governs architecture
+
+implementation governs behavior

@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: distinction
 type: core-object
@@ -15,10 +10,9 @@ aliases:
   - distinction
 
 related:
-  - "[[01 ядро/перспектива]]"
-  - "[[01 ядро/кристалл]]"
-  - "[[01 ядро/жемчужина]]"
-  - "[[01 ядро/границы]]"
+  - "[[clarity_discipline|дисциплина ясности]]"
+  - "[[sovereignty_manifesto|суверенитет]]"
+  - "[[consciousness_algorithms|алгоритмы сознания]]"
   - "[[01 ядро/эпистемические оси]]"
   - "[[02 язык/рабочее значение]]"
   - "[[_system/runtime]]"
@@ -27,6 +21,13 @@ related:
 tags:
   - SUTI
   - object/distinction
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ∴ различение

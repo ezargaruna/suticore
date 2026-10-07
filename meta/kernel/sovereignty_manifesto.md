@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: sovereignty-manifesto
 type: manifesto
@@ -12,15 +7,22 @@ aliases:
   - манифест суверенитета
   - пять суверенитетов
   - sovereignty manifesto
-parent: "[[readme|SUTI.os]]"
+parent: "[[../../README|ядро]]"
 related:
-  - "[[00 вход/кристалл ясности]]"
-  - "[[01 ядро/границы]]"
-  - "[[01 ядро/контуры жизни]]"
+  - "[[distinction|различение]]"
+  - "[[clarity_discipline|дисциплина ясности]]"
+  - "[[../protocols/permissions|разрешения и границы]]"
 tags:
   - SUTI
   - sovereignty
   - freedom
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ∴ манифест суверенитета :: пять опор целостности

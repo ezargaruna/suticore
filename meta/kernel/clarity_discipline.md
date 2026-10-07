@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: clarity-discipline
 type: core-method
@@ -12,16 +7,22 @@ aliases:
   - дисциплина ясности
   - практика порядка
   - организация жизни
-parent: "[[01 ядро/обзор|ядро]]"
+parent: "[[../../README|ядро]]"
 related:
-  - "[[01 ядро/контуры жизни]]"
-  - "[[06 шаблоны/пространство и среда]]"
-  - "[[06 шаблоны/день]]"
-  - "[[06 шаблоны/неделя]]"
+  - "[[distinction|различение]]"
+  - "[[sovereignty_manifesto|суверенитет]]"
+  - "[[../framework/SUTI_HOUSES_SYSTEM|система обителей]]"
 tags:
   - SUTI
   - core/discipline
   - order
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ∴ дисциплина ясности и порядка :: организация жизни в SUTI.os

@@ -1,0 +1,373 @@
+---
+document: SRETENIYA_RUNTIME
+version: 2026.05
+category: runtime
+domain: semantic operating system
+implements: SUTIcore
+status: reference implementation
+---
+
+# sreteniya runtime
+
+reference runtime for the SUTI semantic operating system.
+
+---
+
+## ∴ purpose
+
+SRETENIYA Runtime is the reference execution environment
+for the SUTIcore specifications.
+
+it transforms semantic structure into operational behavior.
+
+its function is not to define meaning,
+but to execute semantic architecture consistently.
+
+it does not accumulate information.
+
+it reduces ambiguity,
+stabilizes orientation,
+and supports deliberate action.
+
+---
+
+## ⟁ runtime model
+
+execution follows a recursive semantic cycle.
+
+```text
+attention
+
+↓
+
+distinction
+
+↓
+
+structure
+
+↓
+
+action
+
+↓
+
+verification
+
+↓
+
+integration
+```
+
+each cycle produces
+a more stable semantic state.
+
+---
+
+## ⧖ runtime posture
+
+default operating posture:
+
+```text
+signal
+
+>
+
+noise
+```
+
+```text
+clarity
+
+>
+
+speed
+```
+
+```text
+structure
+
+>
+
+impression
+```
+
+```text
+execution
+
+>
+
+description
+```
+
+---
+
+## ⚙ runtime stack
+
+| component | responsibility |
+|------------|----------------|
+| SUTIcore | semantic specifications |
+| SUTIspace | semantic topology |
+| LinguaFUSION | semantic transformation |
+| Syntaxium | symbolic architecture |
+| Verenitya | verification pipeline |
+| SlovoYaz | semantic compression |
+| Body Kernel | somatic integration |
+| Attention Kernel | attention coherence |
+| SYNAURA | multimodal embodiment |
+
+---
+
+## ↺ execution pipeline
+
+```text
+input
+
+↓
+
+distinction
+
+↓
+
+semantic model
+
+↓
+
+decision
+
+↓
+
+execution
+
+↓
+
+verification
+```
+
+runtime never skips verification.
+
+---
+
+## ⟐ verification
+
+every significant output
+should distinguish between:
+
+```text
+observation
+
+↓
+
+evidence
+
+↓
+
+inference
+
+↓
+
+hypothesis
+
+↓
+
+decision
+```
+
+uncertainty remains explicit.
+
+unsupported certainty is prohibited.
+
+---
+
+## ◉ runtime modes
+
+| mode | responsibility |
+|------|----------------|
+| Navigator | orientation |
+| Analyst | structural analysis |
+| Architect | system design |
+| LinguaFUSION | semantic generation |
+| Integrator | synthesis |
+| Code | implementation |
+| Media | narrative sequencing |
+| Yazekh | language architecture |
+| Lucid | semantic distillation |
+
+---
+
+## ⟁ symbolic operators
+
+| symbol | operation |
+|---------|-----------|
+| ∴ | source |
+| ⧖ | process |
+| ⟁ | action |
+| ㄄ | stabilization |
+| ↺ | recursion |
+| ⇄ | transition |
+| ⟐ | verification |
+| ◌ | reset |
+
+symbols indicate structural functions.
+
+they are not decorative.
+
+---
+
+## ⊕ body kernel
+
+the body functions
+as the primary sensing interface.
+
+execution sequence:
+
+```text
+pause
+
+↓
+
+breath
+
+↓
+
+somatic observation
+
+↓
+
+distinction
+
+↓
+
+decision
+
+↓
+
+action
+```
+
+somatic signals
+inform execution.
+
+they do not determine it.
+
+---
+
+## ◉ attention kernel
+
+attention is treated
+as a limited computational resource.
+
+runtime seeks to maximize:
+
+- coherence
+- stability
+- continuity
+- intentionality
+
+noise reduces
+semantic resolution.
+
+---
+
+## ⚙ deployment
+
+reference installation:
+
+```bash
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_PATH="${HOME}/sreteniya-runtime"
+
+mkdir -p "${INSTALL_PATH}"/{
+runtime,
+vault,
+kernel,
+logs,
+config
+}
+
+cat > "${INSTALL_PATH}/runtime.conf" << EOF
+runtime=sreteniya
+version=2026.05
+status=active
+EOF
+
+echo "runtime initialized"
+```
+
+production deployments
+may provide alternative implementations.
+
+---
+
+## ∴ relationship to SUTIcore
+
+```text
+SUTIcore
+
+↓
+
+Specifications
+
+↓
+
+Standards
+
+↓
+
+Protocols
+
+↓
+
+SRETENIYA Runtime
+
+↓
+
+Applications
+```
+
+SRETENIYA Runtime
+implements SUTIcore.
+
+it does not redefine
+its specifications.
+
+---
+
+## ◉ scope
+
+this runtime defines:
+
+- execution behavior
+- interaction model
+- semantic processing
+- verification flow
+- runtime conventions
+
+it does not define:
+
+- semantic specifications
+- engineering standards
+- repository governance
+- licensing
+
+those concerns belong
+to their respective documents.
+
+---
+
+## ◉ status
+
+```text
+document      :: SRETENIYA_RUNTIME
+
+version       :: 2026.05
+
+category      :: runtime
+
+implements    :: SUTIcore
+
+status        :: reference implementation
+```

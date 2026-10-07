@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: consciousness-algorithms
 type: core-method
@@ -13,16 +8,22 @@ aliases:
   - простые алгоритмы ясности
   - правила понимания
   - как мыслить ясно
-parent: "[[01 ядро/обзор|ядро]]"
+parent: "[[../../README|ядро]]"
 related:
-  - "[[00 вход/кристалл ясности]]"
-  - "[[01 ядро/различение]]"
-  - "[[01 ядро/выбор и действие]]"
-  - "[[01 ядро/след]]"
+  - "[[distinction|различение]]"
+  - "[[clarity_discipline|дисциплина ясности]]"
+  - "[[../protocols/provenance|след]]"
 tags:
   - SUTI
   - core/algorithms
   - clarity
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ∴ простые алгоритмы сознания

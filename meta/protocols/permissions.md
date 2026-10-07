@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: SUTI-permissions
 type: policy
@@ -15,21 +10,23 @@ aliases:
   - permission boundary
 parent: _system
 related:
-  - "[[00 вход/модули/SUTIcore]]"
-  - "[[_system/agents]]"
-  - "[[_system/runtime]]"
-  - "[[_system/engines]]"
-  - "[[_system/provenance]]"
-  - "[[_system/exchange/readme]]"
-  - "[[01 ядро/границы]]"
-  - "[[01 ядро/эпистемические оси]]"
-  - "[[01 ядро/выбор и действие]]"
+  - "[[../../index|SUTIcore]]"
+  - "[[provenance|провенанс]]"
+  - "[[../kernel/distinction|различение]]"
+  - "[[../kernel/sovereignty_manifesto|суверенитет]]"
 tags:
   - SUTI
   - permissions
   - privacy
   - agents
   - boundaries
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 # ∴ permissions
 

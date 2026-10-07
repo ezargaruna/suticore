@@ -15,9 +15,9 @@ cssclasses:
   - SUTI-project
   - Synaura
 related:
-  - "[[../../00_kernel/axioms]]"
-  - "[[../verenitya/index]]"
-  - "[[../linguafusion/linguafusion]]"
+  - "[[meta/kernel/distinction|аксиомы и различение]]"
+  - "[[meta/verenitya|verenitya]]"
+  - "[[meta/linguafusion/LinguaFUSION|linguafusion]]"
 ---
 
 # SUTIcore
@@ -126,12 +126,11 @@ act iv  network     · autonomous node in mycelium
 
 ## related files
 
-- [[protocol_act1|act i protocol (full)]]
-- [[session_template|session template]]
-- [[../../05_tools/templates/SUTIcore_session|Obsidian template]]
-- [[../verenitya/index|verenitya (act ii)]]
-- [[semantic-validation-layer-l7-summary|semantic validation layer l7 summary]]
+- [[meta/verenitya|verenitya (act ii)]]
+- [[meta/templates/agent_contract|контракт нейроагента]]
+- [[meta/templates/semantic_audit|семантический аудит]]
+- [[semantic-validation-layer-l7-summary|семантический слой валидации l7]]
 
 ---
 
-〄 `02_projects/SUTIcore/index.md` · SUTIcore · ⟁
+〄 `SUTIcore/index.md` · SUTIcore · ⟁

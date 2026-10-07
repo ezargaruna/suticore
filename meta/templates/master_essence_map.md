@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: template-master-essence-map
 type: template
@@ -13,14 +8,21 @@ aliases:
   - template master essence map
   - карта сути
   - витрина даров
-parent: "[[06 шаблоны/обзор|шаблоны]]"
+parent: "[[README|шаблоны]]"
 related:
-  - "[[04 содружество/соцветие и созвездие]]"
-  - "[[04 содружество/храм жемчужин]]"
+  - "[[../kernel/distinction|различение]]"
+  - "[[../framework/SUTI_HOUSES_SYSTEM|система обителей]]"
 tags:
   - SUTI
   - template/stozhar
   - template/master
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ⌖ карта сути мастера · созвездие стожар :: {{master_name}}
@@ -56,4 +58,4 @@ tags:
 – этические границы взаимодействия :: 
 
 ---
-связи :: [[04 содружество/соцветие и созвездие]] · [[04 содружество/храм жемчужин]] · [[06 шаблоны/обзор]]
+связи :: [[../kernel/distinction|различение]] · [[../framework/SUTI_HOUSES_SYSTEM|система обителей]] · [[../frameworks/GUIDE|руководство]]

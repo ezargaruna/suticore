@@ -1,0 +1,7 @@
+# {{name}}
+
+status: draft
+
+---
+
+description

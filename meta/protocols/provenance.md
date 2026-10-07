@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: SUTI-provenance
 type: provenance-policy
@@ -15,21 +10,23 @@ aliases:
   - lineage
 parent: _system
 related:
-  - "[[00 вход/модули/SUTIcore]]"
-  - "[[_system/agents]]"
-  - "[[_system/runtime]]"
-  - "[[_system/permissions]]"
-  - "[[_system/exchange/readme]]"
-  - "[[01 ядро/эпистемические оси]]"
-  - "[[01 ядро/след]]"
-  - "[[05 исследование/историческая гигиена]]"
-  - "[[05 исследование/исследовательский цикл]]"
+  - "[[../../index|SUTIcore]]"
+  - "[[permissions|разрешения]]"
+  - "[[../kernel/distinction|различение]]"
+  - "[[../kernel/clarity_discipline|дисциплина ясности]]"
 tags:
   - SUTI
   - provenance
   - sources
   - trace
   - versioning
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 # ∴ provenance
 

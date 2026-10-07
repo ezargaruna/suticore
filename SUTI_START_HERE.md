@@ -1,16 +1,17 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](SUTI_START_HERE.md)
-houses :: [meta/framework/SUTI_HOUSES_SYSTEM.md](meta/framework/SUTI_HOUSES_SYSTEM.md)
-canon :: [meta/00_KERNEL/CANON.md](meta/00_KERNEL/CANON.md)
-root :: [README.md](README.md)
----
-
 ---
 id: SUTI-start-here
 title: SUTI.os : start here
 status: public
 version: 2027.1
 provenance: authorial
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](SUTI_START_HERE.md)
+houses :: [meta/framework/SUTI_HOUSES_SYSTEM.md](meta/framework/SUTI_HOUSES_SYSTEM.md)
+canon :: [meta/00_KERNEL/CANON.md](meta/00_KERNEL/CANON.md)
+root :: [README.md](README.md)
+
 ---
 
 # SUTI.os : операционная среда для упорядочивания жизни
@@ -26,7 +27,7 @@ SUTI.os - это система различения, связывания и д
 1. **развертывание**: склонируйте этот репозиторий в свой Obsidian vault
 2. **настройка ядра**: ознакомьтесь с `meta/00_kernel/canon.md` и `meta/system/prime_directive.md`. это ваши правила игры
 3. **организация пространства**: используйте систему 12 обителей (`meta/framework/SUTI_houses_system.md`) для распределения всех сфер вашей жизни
-4. **запуск протокола**: начните практиковать `sreteniya_os` (observe $\rightarrow$ distinguish $\rightarrow$ relate $\rightarrow$ verify $\rightarrow$ decide $\rightarrow$ act $\rightarrow$ trace $\rightarrow$ adapt)
+4. **запуск протокола**: начните практиковать `sreteniya_os` (observe → distinguish → relate → verify → decide → act → trace → adapt)
 
 ## структура системы
 

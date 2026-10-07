@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: template-semantic-audit
 type: template
@@ -12,13 +7,20 @@ aliases:
   - шаблон семантический аудит
   - template semantic audit
   - аудит понятий
-parent: "[[06 шаблоны/обзор|шаблоны]]"
+parent: "[[README|шаблоны]]"
 related:
-  - "[[01 ядро/различение]]"
-  - "[[00 вход/модули/lingvaetica]]"
+  - "[[../kernel/distinction|различение]]"
+  - "[[../linguafusion/LinguaFUSION|lingvaetica]]"
 tags:
   - SUTI
   - template/audit
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ⌖ семантический аудит :: {{term_or_system}}
@@ -51,4 +53,4 @@ tags:
 – канонический маркер Syntaxium :: `{{term}} :: [очищенный смысл]`
 
 ---
-связи :: [[01 ядро/различение]] · [[06 шаблоны/обзор]]
+связи :: [[../kernel/distinction|различение]] · [[../00_KERNEL/SYNTAXIUM|syntaxium]] · [[../frameworks/GUIDE|руководство]]

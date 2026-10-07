@@ -1,8 +1,3 @@
-∴ navigation
-start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
-houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
-root :: [README.md](../../README.md)
----
 ---
 id: template-agent-contract
 type: template
@@ -12,14 +7,21 @@ aliases:
   - шаблон контракт агента
   - template agent contract
   - тз агенту
-parent: "[[06 шаблоны/обзор|шаблоны]]"
+parent: "[[README|шаблоны]]"
 related:
-  - "[[01 ядро/выбор и действие]]"
-  - "[[01 ядро/след]]"
+  - "[[../kernel/distinction|выбор и действие]]"
+  - "[[../protocols/provenance|провенанс и след]]"
 tags:
   - SUTI
   - template/agent
   - template/Syntaxium
+---
+
+∴ navigation
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../framework/SUTI_HOUSES_SYSTEM.md)
+root :: [README.md](../../README.md)
+
 ---
 
 # ⌖ контракт нейроагента :: {{task_name}}
@@ -50,4 +52,4 @@ tags:
 `[ ] 3. проверка работоспособности кода или текста`  
 
 ---
-связи :: [[01 ядро/след]] · [[06 шаблоны/обзор]]
+связи :: [[../protocols/provenance|след]] · [[../kernel/distinction|различение]] · [[../frameworks/GUIDE|руководство]]

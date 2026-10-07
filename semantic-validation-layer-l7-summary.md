@@ -1,7 +1,7 @@
 ---
 type: semantic-summary
 status: review
-source: "/users/saritamah/documents/archive/engine SUTIcore mode semantic_validation layer l7 status active.md"
+source: "archive/engine SUTIcore mode semantic_validation layer l7 status active.md"
 source_type: apple-notes-archive
 import_wave: 1
 authority: reference
@@ -12,7 +12,7 @@ created: 2026-08-07
 
 ## provenance
 
-source: `/users/saritamah/documents/archive/engine SUTIcore mode semantic_validation layer l7 status active.md`
+source: `archive/engine SUTIcore mode semantic_validation layer l7 status active.md`
 
 historical/current status: apple notes archive source. the filename and text say `status: active`, but this import does not make the note current runtime authority. treat as project evidence under review
 
