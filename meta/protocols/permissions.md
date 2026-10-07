@@ -10,10 +10,10 @@ aliases:
   - permission boundary
 parent: _system
 related:
-  - "[[../../index|SUTIcore]]"
-  - "[[provenance|провенанс]]"
-  - "[[../kernel/distinction|различение]]"
-  - "[[../kernel/sovereignty_manifesto|суверенитет]]"
+  - "[suticore](../../index.md)"
+  - "[провенанс](provenance.md)"
+  - "[различение](../kernel/distinction.md)"
+  - "[суверенитет](../kernel/sovereignty_manifesto.md)"
 tags:
   - SUTI
   - permissions
@@ -147,10 +147,10 @@ permissions
 :: authority boundary
 ```
 
-→ [[00 вход/модули/SUTIcore|SUTIcore]]  
-→ [[00 вход/модули/Synaura|Synaura]]  
-→ [[_system/runtime|runtime]]  
-→ [[_system/engines|engines]]
+→ [suticore](../../index.md)  
+→ [synaura](../synaura.md)  
+→ [runtime](../system/system_overview.md)  
+→ [core engine](../../core/engine.js)
 
 ---
 

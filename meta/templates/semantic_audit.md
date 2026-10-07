@@ -7,10 +7,10 @@ aliases:
   - шаблон семантический аудит
   - template semantic audit
   - аудит понятий
-parent: "[[README|шаблоны]]"
+parent: "[шаблоны](semantic_audit.md)"
 related:
-  - "[[../kernel/distinction|различение]]"
-  - "[[../linguafusion/LinguaFUSION|lingvaetica]]"
+  - "[различение](../kernel/distinction.md)"
+  - "[lingvaetica](../linguafusion/LinguaFUSION.md)"
 tags:
   - SUTI
   - template/audit
@@ -53,4 +53,4 @@ root :: [README.md](../../README.md)
 – канонический маркер Syntaxium :: `{{term}} :: [очищенный смысл]`
 
 ---
-связи :: [[../kernel/distinction|различение]] · [[../00_KERNEL/SYNTAXIUM|syntaxium]] · [[../frameworks/GUIDE|руководство]]
+связи :: [различение](../kernel/distinction.md) · [syntaxium](../00_KERNEL/SYNTAXIUM.md) · [руководство](../frameworks/GUIDE.md)

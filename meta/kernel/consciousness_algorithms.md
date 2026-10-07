@@ -8,11 +8,11 @@ aliases:
   - простые алгоритмы ясности
   - правила понимания
   - как мыслить ясно
-parent: "[[../../README|ядро]]"
+parent: "[ядро](../../README.md)"
 related:
-  - "[[distinction|различение]]"
-  - "[[clarity_discipline|дисциплина ясности]]"
-  - "[[../protocols/provenance|след]]"
+  - "[различение](distinction.md)"
+  - "[дисциплина ясности](clarity_discipline.md)"
+  - "[след](../protocols/provenance.md)"
 tags:
   - SUTI
   - core/algorithms
@@ -85,5 +85,5 @@ root :: [README.md](../../README.md)
 
 ## связи
 
-вход :: [[00 вход/кристалл ясности]]  
-шаблоны :: [[06 шаблоны/различение]] · [[06 шаблоны/день]] · [[06 шаблоны/след]]
+вход :: [кристалл ясности](clarity_discipline.md)  
+шаблоны :: [различение](distinction.md) · [дисциплина](clarity_discipline.md) · [провенанс](../protocols/provenance.md)

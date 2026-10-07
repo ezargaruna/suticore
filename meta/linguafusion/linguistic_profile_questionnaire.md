@@ -318,6 +318,6 @@ language = action. every word is a step, not a description
 
 ---
 
-see also: [[../syntaxium|syntaxium]] · [[../../index|SUTIcore]] · [[LinguaFUSION|LinguaFUSION]]
+see also: [syntaxium](../syntaxium.md) · [suticore](../../index.md) · [linguafusion](LinguaFUSION.md)
 
 〄 `02_projects/LinguaFUSION/linguistic_profile_questionnaire.md`

@@ -8,10 +8,10 @@ aliases:
   - template master essence map
   - карта сути
   - витрина даров
-parent: "[[README|шаблоны]]"
+parent: "[шаблоны](master_essence_map.md)"
 related:
-  - "[[../kernel/distinction|различение]]"
-  - "[[../framework/SUTI_HOUSES_SYSTEM|система обителей]]"
+  - "[различение](../kernel/distinction.md)"
+  - "[система обителей](../framework/SUTI_HOUSES_SYSTEM.md)"
 tags:
   - SUTI
   - template/stozhar
@@ -58,4 +58,4 @@ root :: [README.md](../../README.md)
 – этические границы взаимодействия :: 
 
 ---
-связи :: [[../kernel/distinction|различение]] · [[../framework/SUTI_HOUSES_SYSTEM|система обителей]] · [[../frameworks/GUIDE|руководство]]
+связи :: [различение](../kernel/distinction.md) · [система обителей](../framework/SUTI_HOUSES_SYSTEM.md) · [руководство](../frameworks/GUIDE.md)

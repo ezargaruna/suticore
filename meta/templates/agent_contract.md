@@ -7,10 +7,10 @@ aliases:
   - шаблон контракт агента
   - template agent contract
   - тз агенту
-parent: "[[README|шаблоны]]"
+parent: "[шаблоны](agent_contract.md)"
 related:
-  - "[[../kernel/distinction|выбор и действие]]"
-  - "[[../protocols/provenance|провенанс и след]]"
+  - "[выбор и действие](../kernel/distinction.md)"
+  - "[провенанс и след](../protocols/provenance.md)"
 tags:
   - SUTI
   - template/agent
@@ -52,4 +52,4 @@ root :: [README.md](../../README.md)
 `[ ] 3. проверка работоспособности кода или текста`  
 
 ---
-связи :: [[../protocols/provenance|след]] · [[../kernel/distinction|различение]] · [[../frameworks/GUIDE|руководство]]
+связи :: [след](../protocols/provenance.md) · [различение](../kernel/distinction.md) · [руководство](../frameworks/GUIDE.md)

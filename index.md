@@ -15,9 +15,9 @@ cssclasses:
   - SUTI-project
   - Synaura
 related:
-  - "[[meta/kernel/distinction|аксиомы и различение]]"
-  - "[[meta/verenitya|verenitya]]"
-  - "[[meta/linguafusion/LinguaFUSION|linguafusion]]"
+  - "[аксиомы и различение](meta/kernel/distinction.md)"
+  - "[verenitya](meta/verenitya.md)"
+  - "[linguafusion](meta/linguafusion/LinguaFUSION.md)"
 ---
 
 # SUTIcore
@@ -126,10 +126,10 @@ act iv  network     · autonomous node in mycelium
 
 ## related files
 
-- [[meta/verenitya|verenitya (act ii)]]
-- [[meta/templates/agent_contract|контракт нейроагента]]
-- [[meta/templates/semantic_audit|семантический аудит]]
-- [[semantic-validation-layer-l7-summary|семантический слой валидации l7]]
+- [verenitya (act ii)](meta/verenitya.md)
+- [контракт нейроагента](meta/templates/agent_contract.md)
+- [семантический аудит](meta/templates/semantic_audit.md)
+- [семантический слой валидации l7](semantic-validation-layer-l7-summary.md)
 
 ---
 

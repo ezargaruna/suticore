@@ -17,9 +17,9 @@ cssclasses:
   - SUTI-project
   - Synaura
 related:
-  - "[[../kernel/distinction|аксиомы]]"
-  - "[[../../index|SUTIcore]]"
-  - "[[../syntaxium|syntaxium]]"
+  - "[аксиомы](../kernel/distinction.md)"
+  - "[suticore](../../index.md)"
+  - "[syntaxium](../syntaxium.md)"
 ---
 
 # LinguaFUSION · словояз
@@ -59,9 +59,9 @@ extract the invariant. discard the rest
 
 ## key tools
 
-- [[linguistic_profile_questionnaire|опросник языкового профиля →]]
-- [[../syntaxium|протокол syntaxium →]]
-- [[EN/архитектоника тени эстетика резонанса|архитектоника тени →]]
+- [опросник языкового профиля →](linguistic_profile_questionnaire.md)
+- [протокол syntaxium →](../syntaxium.md)
+- [архитектоника тени →](EN/архитектоника%20тени%20эстетика%20резонанса.md)
 
 ---
 

@@ -7,10 +7,10 @@ aliases:
   - шаблон языковой кристалл
   - template lingua crystal
   - кристалл языка
-parent: "[[README|шаблоны]]"
+parent: "[шаблоны](linguistic_crystal.md)"
 related:
-  - "[[../linguafusion/LinguaFUSION|linguafusion]]"
-  - "[[../00_KERNEL/SYNTAXIUM|syntaxium]]"
+  - "[linguafusion](../linguafusion/LinguaFUSION.md)"
+  - "[syntaxium](../00_KERNEL/SYNTAXIUM.md)"
 tags:
   - SUTI
   - template/language
@@ -56,4 +56,4 @@ root :: [README.md](../../README.md)
 – обратная связь от носителя или практики :: 
 
 ---
-связи :: [[../linguafusion/LinguaFUSION|linguafusion]] · [[../00_KERNEL/SYNTAXIUM|syntaxium]] · [[../frameworks/GUIDE|руководство]]
+связи :: [linguafusion](../linguafusion/LinguaFUSION.md) · [syntaxium](../00_KERNEL/SYNTAXIUM.md) · [руководство](../frameworks/GUIDE.md)

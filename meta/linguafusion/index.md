@@ -1,22 +1,33 @@
 ---
-title: LinguaFUSION :: index
+title: linguafusion :: index
 type: project
 status: active
 tags:
   - sreteniya
-  - SUTI-project
-  - LinguaFUSION
+  - suti-project
+  - linguafusion
 aliases:
-  - LinguaFUSION index
+  - linguafusion index
 cssclasses:
-  - SUTI-system
-  - SUTI-project
-  - Synaura
+  - suti-system
+  - suti-project
+  - synaura
 ---
 
-# 〄 LinguaFUSION :: входная точка
+∴ навигация
+начало :: [SUTI_START_HERE](../../SUTI_START_HERE.md) · корень :: [README](../../README.md) · мета :: [meta](../README.md)
 
-канонический документ проекта :: [[LinguaFUSION|LinguaFUSION · язык как действие]]
+---
 
-- лаборатория живой речи :: [[EN/архитектоника тени эстетика резонанса|архитектоника тени]]
-- опросник языкового профиля :: [[linguistic_profile_questionnaire|языковой профиль]]
+# 〄 linguafusion :: входная точка
+
+канонический документ проекта :: [linguafusion · язык как действие](LinguaFUSION.md)
+
+- лаборатория живой речи :: [архитектоника тени](EN/архитектоника%20тени%20эстетика%20резонанса.md)
+- опросник языкового профиля :: [языковой профиль](linguistic_profile_questionnaire.md)
+- семантическая карта :: [семантическая карта](semantic-map.md)
+- перечень тем :: [темы latam focus](ПЕРЕЧЕНЬ%20ТЕМ%20—%20LATAM.md)
+
+---
+
+связи :: [syntaxium](../syntaxium.md) · [ядро](../kernel/distinction.md) · [руководство](../frameworks/GUIDE.md)

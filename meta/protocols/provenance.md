@@ -10,10 +10,10 @@ aliases:
   - lineage
 parent: _system
 related:
-  - "[[../../index|SUTIcore]]"
-  - "[[permissions|разрешения]]"
-  - "[[../kernel/distinction|различение]]"
-  - "[[../kernel/clarity_discipline|дисциплина ясности]]"
+  - "[suticore](../../index.md)"
+  - "[разрешения](permissions.md)"
+  - "[различение](../kernel/distinction.md)"
+  - "[дисциплина ясности](../kernel/clarity_discipline.md)"
 tags:
   - SUTI
   - provenance
@@ -66,7 +66,7 @@ provenance делает происхождение видимым
 > [!note]
 > provenance отвечает прежде всего на вопрос `откуда и через какие преобразования?`  
 > эпистемический слой — `на каком основании это утверждается?`  
-> [[00 вход/модули/verenitya|verenitya]] — `выдерживает ли утверждение конкретную проверку?`
+> [verenitya](../verenitya.md) — `выдерживает ли утверждение конкретную проверку?`
 
 ---
 

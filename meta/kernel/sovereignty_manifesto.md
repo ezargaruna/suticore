@@ -7,11 +7,11 @@ aliases:
   - манифест суверенитета
   - пять суверенитетов
   - sovereignty manifesto
-parent: "[[../../README|ядро]]"
+parent: "[ядро](../../README.md)"
 related:
-  - "[[distinction|различение]]"
-  - "[[clarity_discipline|дисциплина ясности]]"
-  - "[[../protocols/permissions|разрешения и границы]]"
+  - "[различение](distinction.md)"
+  - "[дисциплина ясности](clarity_discipline.md)"
+  - "[разрешения и границы](../protocols/permissions.md)"
 tags:
   - SUTI
   - sovereignty
@@ -82,5 +82,5 @@ digital sovereignty (data & autonomy)
 
 ## связи
 
-вход :: [[00 вход/кристалл ясности]] · [[00 вход/настройка жизни и среды]]  
-канон :: [[01 ядро/контуры жизни]] · [[01 ядро/дисциплина ясности]]
+вход :: [кристалл ясности](clarity_discipline.md) · [система обителей](../framework/SUTI_HOUSES_SYSTEM.md)  
+канон :: [различение](distinction.md) · [дисциплина ясности](clarity_discipline.md)

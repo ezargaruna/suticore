@@ -71,4 +71,4 @@ provenance: authorial
 
 
 ---
-связь : [[SUTI_HOUSES_SYSTEM]] :: каркас обителей
+связь : [SUTI_HOUSES_SYSTEM](SUTI_HOUSES_SYSTEM.md) :: каркас обителей

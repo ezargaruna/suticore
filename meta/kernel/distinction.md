@@ -10,13 +10,9 @@ aliases:
   - distinction
 
 related:
-  - "[[clarity_discipline|дисциплина ясности]]"
-  - "[[sovereignty_manifesto|суверенитет]]"
-  - "[[consciousness_algorithms|алгоритмы сознания]]"
-  - "[[01 ядро/эпистемические оси]]"
-  - "[[02 язык/рабочее значение]]"
-  - "[[_system/runtime]]"
-  - "[[_system/provenance]]"
+  - "[дисциплина ясности](clarity_discipline.md)"
+  - "[суверенитет](sovereignty_manifesto.md)"
+  - "[алгоритмы сознания](consciousness_algorithms.md)"
 
 tags:
   - SUTI
@@ -189,7 +185,7 @@ distinguish
 
 `name` также остаётся внутри `relate`
 
-→ [[_system/runtime]]
+→ [runtime](../system/system_overview.md)
 
 ---
 
@@ -244,7 +240,7 @@ useful here
 universal
 ```
 
-→ [[01 ядро/границы]]
+→ [границы](../protocols/permissions.md)
 
 ---
 
@@ -341,7 +337,7 @@ source ≠ support
 
 не доказывает корректность утверждения
 
-→ [[_system/provenance]]
+→ [провенанс](../protocols/provenance.md)
 
 если эпистемический статус существенен,
 
@@ -366,7 +362,7 @@ fact automatically
 
 полная эпистемическая конфигурация —
 
-в [[01 ядро/эпистемические оси]]
+в [эпистемические оси](../system/prime_directive.md)
 
 ---
 
@@ -421,7 +417,7 @@ has word
 has mastered distinction
 ```
 
-→ [[02 язык/рабочее значение]]
+→ [syntaxium](../syntaxium.md)
 
 ---
 
@@ -484,7 +480,7 @@ perspective
 
 но ни одно не определяет другое полностью
 
-→ [[01 ядро/перспектива]]
+→ [дисциплина ясности](clarity_discipline.md)
 
 ---
 
