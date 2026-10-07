@@ -1,32 +1,32 @@
-# React + TypeScript + Vite
+# react + typescript + vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+this template provides a minimal setup to get react working in vite with hmr and some oxlint rules
 
-Currently, two official plugins are available:
+currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [@vitejs/plugin-react](https://GitHub.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://GitHub.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [swc](https://swc.rs/)
 
-## React Compiler
+## react compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+the react compiler is not enabled on this template because of its impact on dev & build performances. to add it, see [this documentation](https://react.dev/learn/react-compiler/installation)
 
-## Expanding the Oxlint configuration
+## expanding the oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+if you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
 ```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["react", "typescript", "oxc"],
   "options": {
-    "typeAware": true
+    "typeaware": true
   },
   "rules": {
     "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+    "react/only-export-components": ["warn", { "allowconstantexport": true }]
   }
 }
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+see the [oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories

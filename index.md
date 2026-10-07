@@ -1,41 +1,41 @@
 ---
-title: suticore · essence extraction
+title: SUTIcore · essence extraction
 type: project
 status: active
 tags:
   - sreteniya
-  - suti-project
-  - suticore
+  - SUTI-project
+  - SUTIcore
   - essence-extraction
 aliases:
   - SUTIcore
-  - suticore
+  - SUTIcore
 cssclasses:
-  - suti-system
-  - suti-project
-  - synaura
+  - SUTI-system
+  - SUTI-project
+  - Synaura
 related:
   - "[[../../00_kernel/axioms]]"
   - "[[../verenitya/index]]"
-  - "[[../linguafusion/LinguaFUSION]]"
+  - "[[../linguafusion/linguafusion]]"
 ---
 
 # SUTIcore
 
-> 1:1 essence extraction. горн для того что внутри.
+> 1:1 essence extraction. горн для того что внутри
 
-the first fire. burns everything except the core.
-a session is not a conversation. it is a precise cut.
+the first fire. burns everything except the core
+a session is not a conversation. it is a precise cut
 
 ---
 
 ## what it does
 
-SUTIcore extracts the invariant signal from a person or a system.
-not by teaching. not by coaching. by asking the right question once.
+SUTIcore extracts the invariant signal from a person or a system
+not by teaching. not by coaching. by asking the right question once
 
 alchemical layer: **кальцинация** (♈ mars)
-guardian: **ИГНИС**
+guardian: **игнис**
 rishi: **r2 eidographics**
 
 ---
@@ -60,7 +60,7 @@ en: i help · i develop · i support · i improve · i consult
 
 **examples:**
 ```
-"строю отдел продаж для IT"     → 1 ✔
+"строю отдел продаж для it"     → 1 ✔
 "настраиваю рекламу для ecom"   → 1 ✔
 "помогаю бизнесу расти"         → 0 ∅
 "развиваю личный бренд"         → 0 ∅
@@ -84,7 +84,7 @@ q3: что уже знаешь делать?
 ```
 
 **pause (∅) between each question.**
-silence is not empty. it is where the work happens.
+silence is not empty. it is where the work happens
 
 ---
 
@@ -92,11 +92,11 @@ silence is not empty. it is where the work happens.
 
 | level | price | format |
 |-------|-------|--------|
-| срез / cut | 120 USD / USDT | text · 3 questions · 1 formula |
-| контур / contour | 350 USD / USDT | audio 15min + step support |
-| перепрошивка / rewrite | 1200 USD / USDT | deep work · ACT I + bridge to ACT II |
+| срез / cut | 120 usd / usdt | text · 3 questions · 1 formula |
+| контур / contour | 350 usd / usdt | audio 15min + step support |
+| перепрошивка / rewrite | 1200 usd / usdt | deep work · act i + bridge to act ii |
 
-no discounts. no negotiation. price = first filter.
+no discounts. no negotiation. price = first filter
 
 ---
 
@@ -107,8 +107,8 @@ formula: "я = [точное действие]"
 bridge:  1 physical action in the world · ≤12 hours
 ```
 
-**KPI:**
-- step done ≤12h → ✔ (proceed to Verenitya / ACT II)
+**kpi:**
+- step done ≤12h → ✔ (proceed to verenitya / act ii)
 - step not done → ∅ (context frozen)
 
 ---
@@ -116,22 +116,22 @@ bridge:  1 physical action in the world · ≤12 hours
 ## act sequence
 
 ```
-ACT I   SUTIcore    · binary filter → 3 scalpels → formula → bridge
-ACT II  Verenitya   · 72h verification by fact (not words)
-ACT III ЦВЕРЕСТ     · 7 days public manifestation
-ACT IV  Network     · autonomous node in mycelium
+act i   SUTIcore    · binary filter → 3 scalpels → formula → bridge
+act ii  verenitya   · 72h verification by fact (not words)
+act iii цверест     · 7 days public manifestation
+act iv  network     · autonomous node in mycelium
 ```
 
 ---
 
 ## related files
 
-- [[protocol_act1|act I protocol (full)]]
+- [[protocol_act1|act i protocol (full)]]
 - [[session_template|session template]]
-- [[../../05_tools/templates/suticore_session|obsidian template]]
-- [[../verenitya/index|Verenitya (act II)]]
-- [[semantic-validation-layer-l7-summary|semantic validation layer L7 summary]]
+- [[../../05_tools/templates/SUTIcore_session|Obsidian template]]
+- [[../verenitya/index|verenitya (act ii)]]
+- [[semantic-validation-layer-l7-summary|semantic validation layer l7 summary]]
 
 ---
 
-〄 `02_projects/suticore/index.md` · SUTIcore · ⟁
+〄 `02_projects/SUTIcore/index.md` · SUTIcore · ⟁
