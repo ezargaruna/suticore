@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061d22">
+<meta name="description" content="suti.world :: clarity · essence · language">
+<title>suti.world :: clarity · essence · language</title>
+<style>
+:root {
+  --bg: #061d22;
+  --surface: #0b282e;
+  --ink: #e4e8e1;
+  --muted: #a1b4b6;
+  --link: #92c4bb;
+  --support: #a1b4b6;
+  --line: #35545b;
+  --warm: #d0ad67;
+  --serif: "Onest", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+  --body: 18px;
+}
+
+* { box-sizing: border-box; }
+body { 
+  margin: 0; 
+  background: var(--bg); 
+  color: var(--ink); 
+  font-family: var(--serif); 
+  font-size: var(--body); 
+  line-height: 1.6; 
+}
+
+.topbar { 
+  max-width: 1180px; 
+  margin: auto; 
+  padding: 24px var(--gutter); 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.wordmark { 
+  text-decoration: none; 
+  color: var(--ink); 
+  font-weight: 700; 
+  font-size: 24px; 
+}
+.wordmark span { color: var(--warm); margin-right: 8px; }
+
+.hero { 
+  max-width: 1180px; 
+  margin: auto; 
+  padding: 80px var(--gutter); 
+  text-align: center; 
+}
+
+h1 { 
+  font-size: clamp(40px, 8vw, 80px); 
+  font-weight: 400; 
+  letter-spacing: -0.03em; 
+  margin: 0 0 20px; 
+  color: var(--warm); 
+}
+
+.lead { 
+  font-size: clamp(20px, 3vw, 28px); 
+  color: var(--muted); 
+  max-width: 60ch; 
+  margin: auto; 
+}
+
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 24px; 
+  max-width: 1180px; 
+  margin: 40px auto; 
+  padding: 0 var(--gutter); 
+}
+
+.card { 
+  background: var(--surface); 
+  border: 1px solid var(--line); 
+  border-radius: 18px; 
+  padding: 32px; 
+  text-decoration: none; 
+  color: inherit; 
+  transition: border-color 0.2s ease; 
+}
+
+.card:hover { border-color: var(--link); }
+.card h2 { margin: 0 0 12px; font-size: 24px; color: var(--warm); }
+.card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+.footer { 
+  text-align: center; 
+  padding: 60px var(--gutter); 
+  font-family: var(--mono); 
+  font-size: 13px; 
+  color: var(--muted); 
+}
+
+--gutter: clamp(20px, 5vw, 40px);
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="/" class="wordmark"><span>∴</span> suti.world</a>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>clarity for what comes next</h1>
+    <p class="lead">notice what matters :: find the words :: choose a grounded next step</p>
+  </section>
+
+  <div class="grid">
+    <a href="SUTI_START_HERE.md" class="card">
+      <h2>start here</h2>
+      <p>entry point to suti.os : how to deploy and use the system</p>
+    </a>
+    <a href="meta/framework/SUTI_HOUSES_SYSTEM.md" class="card">
+      <h2>the 12 houses</h2>
+      <p>universal framework for organizing every sphere of life</p>
+    </a>
+    <a href="meta/modules/" class="card">
+      <h2>modules of mystery</h2>
+      <p>kolozar, divas, samurai, gifts : tools for transformation</p>
+    </a>
+    <a href="meta/00_KERNEL/CANON.md" class="card">
+      <h2>the canon</h2>
+      <p>core axioms, design system and syntaxium 2027</p>
+    </a>
+  </div>
+</main>
+
+<footer class="footer">
+  suti.world :: ezar garuna :: 2027
+</footer>
+
+</body>
+</html>
