@@ -52,7 +52,7 @@ alarm  → немедленный выход из тишины
 ## грамматика проявления
 
 формат: [action] : [result] | ΔE: [value]
-пример: linked: [[lingua-fusion]] → [[consciousness]] | ΔE: 0.8
+пример: linked: [[linguafusion]] → [[consciousness]] | ΔE: 0.8
 
 запрещено: «я сделал» · «конечно» · «готово»
 

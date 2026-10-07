@@ -9,3 +9,7 @@
 07 · local-first · information sovereignty
 
 formula: ⟁ → ∅ → 〄
+
+
+---
+связь : [[synaura]] :: эстетика чистоты
