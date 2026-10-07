@@ -7,44 +7,39 @@ SUTIcore - это открытый цифровой фундамент для о
 
 ---
 
-## ⟁ карта системы (suti-map)
+## ⟁ путь погружения (suti-map)
 
-`вход` $\text{—}$ `фундамент` $\text{—}$ `инструменты` $\text{—}$ `будущее`
+`ощущение` $\text{—}$ `инструмент` $\text{—}$ `система` $\text{—}$ `фундамент` $\text{—}$ `горизонт`
 
-### 01. точка входа (entry)
-- [SUTI_START_HERE.md](SUTI_START_HERE.md) :: быстрый старт и развертывание
-- [LICENSE](LICENSE) :: открытый дар (MIT)
-- [index.html](index.html) :: визуальная витрина артефактов
+### 01. первый шаг (essence)
+`для тех, кто хочет почувствовать ритм и эстетику`
+- [index.html](index.html) :: визуальная витрина и первый вдох
+- [presets/](presets/) :: готовые настройки для терминала и Obsidian (настрой свой уют)
+- [SUTI_START_HERE.md](SUTI_START_HERE.md) :: простой гид по развертыванию
 
-### 02. ядро смыслов (kernel)
-`базис всех определений и аксиом`
-- [meta/kernel/](meta/kernel/) :: различение, суверенитет, дисциплина ясности
-- [meta/canon/](meta/canon/) :: стандарт SUTI-world и символы
+### 02. прикладные инструменты (utility)
+`для тех, кто хочет начать применять suti в жизни`
+- [meta/frameworks/GUIDE.md](meta/frameworks/GUIDE.md) :: как использовать методы в реальности
+- [meta/templates/](meta/templates/) :: готовые шаблоны аудита и контрактов
+- [meta/linguafusion/](meta/linguafusion/) :: настройка своего языка и семантического профиля
 
-### 03. инструментарий (frameworks)
-`методы применения в жизни и работе`
-- [meta/frameworks/GUIDE.md](meta/frameworks/GUIDE.md) :: общее руководство
-- [meta/linguafusion/](meta/linguafusion/) :: настройка языка и семантические профили
-- [meta/templates/](meta/templates/) :: шаблоны аудита и контракты агентов
-- [meta/protocols/](meta/protocols/) :: правила происхождения и доступа
+### 03. операционная среда (system)
+`для тех, кто хочет понять, как устроена машина`
+- [core/](core/) :: семантическое ядро и логика (SUTI.jsonld)
+- [app/](app/) :: интерфейс suti-world
+- [internal/](internal/) :: системные инструменты и верификация
+- [bin/](bin/) :: консольные утилиты управления
 
-### 04. технический слой (implementation)
-`код и конфигурации`
-- [core/](core/) :: семантическое ядро (SUTI.jsonld, engine.js)
-- [app/](app/) :: интерфейс SUTI-world
-- [internal/](internal/) :: системные инструменты (Go)
-- [bin/](bin/) :: консольные утилиты
+### 04. глубокий фундамент (kernel)
+`для тех, кто ищет первопричины и аксиомы`
+- [meta/kernel/](meta/kernel/) :: различение, суверенитет и дисциплина ясности
+- [meta/canon/](meta/canon/) :: канон suti-world и символы
+- [LICENSE](LICENSE) :: философия открытого дара (MIT)
 
-### 05. адаптация и ритмы (presets)
-`готовые настройки для вашего окружения`
-- [presets/bash/](presets/bash/) :: установка системы и ритмов
-- [presets/obsidian/](presets/obsidian/) :: эстетика Quiet Luxury
-- [presets/kitty/](presets/kitty/) :: цветовые профили
-
-### 06. горизонт будущего (future-tech)
-`расширение сознания и новые среды`
-- [meta/future_tech/MANIFESTO.md](meta/future_tech/MANIFESTO.md) :: VR, XR, сенсориальные органеллы
-- [meta/artifacts/vault/](meta/artifacts/vault/) :: хранилище цифровых тотемов
+### 05. расширение сознания (future)
+`самое интересное: интерфейсы будущего и новые миры`
+- [meta/future_tech/MANIFESTO.md](meta/future_tech/MANIFESTO.md) :: VR, XR и сенсориальные органеллы
+- [meta/artifacts/vault/](meta/artifacts/vault/) :: хранилище цифровых тотемов и артефактов
 
 ---
 
