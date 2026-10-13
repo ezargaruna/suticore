@@ -27,12 +27,25 @@ jobs:
         uses: actions/configure-pages@v5
       - name: prepare public surface
         run: |
-          mkdir -p _site/ru _site/es _site/pt
+          mkdir -p _site/assets/fonts/onest
           cp index.html _site/index.html
-          cp -R ru es pt _site/
-          cp -R essence _site/essence
-          cp -R assets _site/assets
-          cp suti-world-package.zip _site/suti-world-package.zip
+          cp assets/fonts/onest/regular.woff2 _site/assets/fonts/onest/regular.woff2
+          cp assets/fonts/onest/OFL.txt _site/assets/fonts/onest/OFL.txt
+          for route in ru es pt essence ru/essence es/essence pt/essence; do
+            mkdir -p "_site/$route"
+            relative="../"
+            if [[ "$route" == */* ]]; then relative="../../"; fi
+            case "$route" in
+              es*) lang="es"; message="SUTI.world se ha actualizado. Ir a la práctica gratuita." ;;
+              pt*) lang="pt"; message="SUTI.world foi atualizado. Ir para a prática gratuita." ;;
+              ru*) lang="ru"; message="SUTI.world обновлён. Перейти к бесплатной практике." ;;
+              *) lang="en"; message="SUTI.world has changed. Go to the free practice." ;;
+            esac
+            cat > "_site/$route/index.html" <<EOF
+          <!doctype html>
+          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}#practice"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}#practice">SUTI.world · ${message}</a></p></body></html>
+          EOF
+          done
       - name: upload static site
         uses: actions/upload-pages-artifact@v3
         with:
