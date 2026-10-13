@@ -27,10 +27,16 @@ jobs:
         uses: actions/configure-pages@v5
       - name: prepare public surface
         run: |
-          mkdir -p _site/assets/fonts/onest
+          mkdir -p _site/assets/fonts _site/assets/brand _site/downloads
           cp index.html _site/index.html
-          cp assets/fonts/onest/regular.woff2 _site/assets/fonts/onest/regular.woff2
-          cp assets/fonts/onest/OFL.txt _site/assets/fonts/onest/OFL.txt
+          cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
+          cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
+          cp assets/fonts/OFL-Nunito-Sans.txt _site/assets/fonts/OFL-Nunito-Sans.txt
+          cp assets/fonts/OFL-Manrope.txt _site/assets/fonts/OFL-Manrope.txt
+          cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
+          cp samurai-dharma.html _site/samurai-dharma.html
+          cp downloads/SUTI.os-open.zip _site/downloads/SUTI.os-open.zip
+          cp downloads/SUTI.os-open.zip.sha256 _site/downloads/SUTI.os-open.zip.sha256
           for route in ru es pt essence ru/essence es/essence pt/essence; do
             mkdir -p "_site/$route"
             relative="../"
@@ -43,7 +49,7 @@ jobs:
             esac
             cat > "_site/$route/index.html" <<EOF
           <!doctype html>
-          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}#practice"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}#practice">SUTI.world · ${message}</a></p></body></html>
+          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#clarity"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}?lang=$lang#clarity">SUTI.world · ${message}</a></p></body></html>
           EOF
           done
       - name: upload static site

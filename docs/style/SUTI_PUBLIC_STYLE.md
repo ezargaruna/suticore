@@ -29,8 +29,8 @@ visual authority: SUTI Design System 2027
 
 ## интерфейс
 
-- брендовый шрифт: Onest
-- единственный брендовый акцент: `#D6AD58`
+- заголовки: Nunito Sans Variable · текст и интерфейс: Manrope
+- Turquoise `#57B8B0` — живое взаимодействие; Sunlight `#D6AD58` — редкая точка света
 - темы: DAY / NIGHT / CONTRAST
 - цветовые роли проходят через tokens
 - движение связано с действием
