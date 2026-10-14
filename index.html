@@ -7,8 +7,7 @@
   <meta name="description" content="SUTI.world помогает настроить язык для жизни: выбрать важную ситуацию, найти точные слова и попробовать их в действии.">
   <title>SUTI.world — язык твоей сути</title>
   <style>
-    @font-face { font-family: "Nunito Sans"; src: url("https://ezargaruna.github.io/suticore/assets/fonts/NunitoSans-variable.ttf") format("truetype"); font-style: normal; font-weight: 200 1000; font-display: swap; }
-    @font-face { font-family: "Manrope"; src: url("https://ezargaruna.github.io/suticore/assets/fonts/Manrope-variable.ttf") format("truetype"); font-style: normal; font-weight: 200 800; font-display: swap; }
+    @font-face { font-family: "Onest"; src: url("/assets/fonts/Onest-Variable.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; }
     :root {
       color-scheme: light;
       --suti-ivory: #F4F0E8;
@@ -20,26 +19,35 @@
       --suti-moss: #687064;
       --suti-aqua: #DDF2EF;
       --suti-bg: var(--suti-ivory);
+      --suti-bg-soft: #F7F4ED;
+      --suti-bg-cool: var(--suti-aqua);
       --suti-surface: #FCF8F2;
-      --suti-surface-soft: #E8E2D6;
-      --suti-surface-warm: #F4F0E8;
+      --suti-surface-raised: #FFFDF8;
+      --suti-surface-soft: var(--suti-aqua);
+      --suti-surface-warm: var(--suti-bg-soft);
       --suti-text: var(--suti-ink);
-      --suti-muted: #59635B;
+      --suti-muted: #52615A;
       --suti-line: #D8D0C1;
-      --suti-action: var(--suti-petrol);
+      --suti-border-strong: var(--suti-petrol);
+      --suti-structure: var(--suti-petrol);
+      --suti-action: var(--suti-peach);
+      --suti-action-hover: #D78B62;
       --suti-link: var(--suti-petrol);
-      --suti-on-action: #FFFFFF;
-      --suti-accent: var(--suti-turquoise);
+      --suti-on-action: var(--suti-ink);
+      --suti-accent: var(--suti-sunlight);
+      --suti-light: var(--suti-sunlight);
+      --suti-water: var(--suti-turquoise);
       --suti-interactive: var(--suti-turquoise);
-      --suti-font-display: "Nunito Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --suti-font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --suti-explore: var(--suti-petrol);
+      --suti-font-display: "Onest", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --suti-font-body: "Onest", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --suti-focus: var(--suti-petrol);
-      --suti-shadow: #25342F10;
+      --suti-shadow: rgb(37 52 47 / 7%);
       --suti-font: var(--suti-font-body);
       --suti-max: 1160px;
       --suti-gutter: clamp(20px, 5vw, 72px);
-      --suti-radius: 22px;
-      --suti-ease: cubic-bezier(.2, .7, .2, 1);
+      --suti-radius: 18px;
+      --suti-ease: cubic-bezier(.22, .61, .36, 1);
       --suti-type-scale: 1;
       font-family: var(--suti-font-body);
       font-size: 16px;
@@ -51,32 +59,45 @@
     }
     [data-theme="night"] {
       color-scheme: dark;
-      --suti-bg: #071310;
-      --suti-surface: #0D201C;
-      --suti-surface-soft: #142B26;
-      --suti-surface-warm: #17251F;
-      --suti-text: #F1EBDD;
-      --suti-muted: #B8B9AA;
-      --suti-line: #294139;
-      --suti-link: #A7D7CE;
-      --suti-action: var(--suti-turquoise);
-      --suti-on-action: #071310;
-      --suti-focus: var(--suti-turquoise);
+      --suti-bg: #101A18;
+      --suti-bg-soft: #16221F;
+      --suti-bg-cool: #19302C;
+      --suti-surface: #17231F;
+      --suti-surface-raised: #1C2B26;
+      --suti-surface-soft: #20332E;
+      --suti-surface-warm: #1A2924;
+      --suti-text: #F4F0E8;
+      --suti-muted: #C4C8BE;
+      --suti-line: #405149;
+      --suti-border-strong: #A8BBB1;
+      --suti-structure: #A8BBB1;
+      --suti-link: #A9DCD5;
+      --suti-action: var(--suti-peach);
+      --suti-action-hover: #E8A885;
+      --suti-on-action: #25342F;
+      --suti-explore: #A9DCD5;
       --suti-shadow: #00000030;
     }
     [data-theme="contrast"] {
       color-scheme: light;
       --suti-bg: #FFFFFF;
       --suti-surface: #FFFFFF;
+      --suti-bg-soft: #FFFFFF;
+      --suti-bg-cool: #FFFFFF;
+      --suti-surface-raised: #FFFFFF;
       --suti-surface-soft: #F0F0F0;
       --suti-surface-warm: #FFFFFF;
       --suti-text: #111111;
       --suti-muted: #333333;
       --suti-line: #555555;
+      --suti-border-strong: #111111;
+      --suti-structure: #111111;
       --suti-action: #111111;
+      --suti-action-hover: #333333;
       --suti-link: #111111;
       --suti-on-action: #FFFFFF;
       --suti-focus: #111111;
+      --suti-explore: #111111;
       --suti-shadow: transparent;
     }
     * { box-sizing: border-box; }
@@ -342,6 +363,78 @@
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto; animation: none !important; transition-duration: .01ms; }
+    }
+
+    /* SUTI Design System 2027 · surface styling */
+    :root { --suti-gutter: clamp(20px, 5.2vw, 80px); --suti-max: 1240px; }
+    body { font-family: var(--suti-font-body); line-height: 1.65; transition-duration: 180ms; }
+    .topbar { min-height: 84px; border-color: var(--suti-line); }
+    .site-nav { gap: clamp(18px, 2.4vw, 32px); border-color: var(--suti-line); }
+    .site-nav a { color: var(--suti-text); font-size: .92rem; }
+    .site-nav a:hover, .site-nav a:focus-visible { color: var(--suti-link); text-decoration-color: var(--suti-light); }
+    .wordmark-name { font-family: var(--suti-font-body); font-size: 1.32rem; font-weight: 600; letter-spacing: -.045em; }
+    .wordmark-name > .brand-sigil { color: var(--suti-light); }
+    .wordmark-name > span:not(.brand-sigil) { color: var(--suti-structure); }
+    .wordmark-tagline { font-size: .72rem; letter-spacing: 0; }
+    .hero { min-height: 540px; padding-block: clamp(72px, 9vw, 120px); background: radial-gradient(ellipse at 88% 50%, color-mix(in srgb, var(--suti-bg-cool) 54%, transparent), transparent 43%); }
+    h1, h2, h3 { font-family: var(--suti-font-display); letter-spacing: -.035em; }
+    h1 { max-width: 15ch; font-size: clamp(2.8rem, calc(6vw * var(--suti-type-scale)), 5.1rem); line-height: 1.04; font-weight: 600; }
+    h2 { font-size: clamp(1.9rem, calc(3.5vw * var(--suti-type-scale)), 3rem); line-height: 1.16; font-weight: 550; }
+    h3 { font-size: 1.25rem; line-height: 1.35; font-weight: 550; }
+    .eyebrow { color: var(--suti-structure); font-size: .82rem; font-weight: 550; letter-spacing: .025em; }
+    [data-theme="night"] .eyebrow { color: var(--suti-water); }
+    [data-theme="contrast"] .eyebrow { color: var(--suti-text); }
+    .hero-highlight { text-decoration-color: var(--suti-light); text-decoration-thickness: .06em; text-underline-offset: .16em; }
+    .lead { color: var(--suti-text); font-size: clamp(1.1rem, calc(1.5vw * var(--suti-type-scale)), 1.3rem); line-height: 1.55; }
+    .primary { min-height: 52px; padding-inline: 22px; border-color: var(--suti-action); border-radius: 14px; background: var(--suti-action); color: var(--suti-on-action); box-shadow: none; transition: background-color 160ms var(--suti-ease), border-color 160ms var(--suti-ease), transform 160ms var(--suti-ease); }
+    .primary:hover { transform: translateY(-1px); border-color: var(--suti-action-hover); background: var(--suti-action-hover); box-shadow: none; }
+    .primary > span { color: inherit; }
+    .quiet-action, .locale-switch select, .theme-tools button, .type-size-tools button { border-radius: 10px; }
+    .theme-tools button[aria-pressed="true"] { border-color: var(--suti-border-strong); background: var(--suti-surface-soft); }
+    .section { padding-block: clamp(68px, 8vw, 104px); border-color: var(--suti-line); }
+    .setup { background: var(--suti-bg-cool); }
+    .services { background: var(--suti-bg-soft); }
+    .practice-card, .open-card, .service, .module-card, .sample-map, .crystal-card, .game-card, .clarity-disclosure { border: 1px solid var(--suti-line); border-radius: var(--suti-radius); background: var(--suti-surface); box-shadow: none; }
+    .practice-card, .open-card, .service { transition: border-color 160ms var(--suti-ease), background-color 160ms var(--suti-ease); }
+    .open-card:hover, .service:hover, .practice-card:focus-within { transform: none; border-color: var(--suti-border-strong); box-shadow: none; }
+    .sample-map { border-left: 3px solid var(--suti-structure); }
+    .practice-card { border-top: 3px solid var(--suti-action); }
+    .method-step { border: 1px solid var(--suti-line); border-radius: var(--suti-radius); background: var(--suti-surface); transition: border-color 160ms var(--suti-ease); }
+    .method-step:hover { transform: none; border-color: var(--suti-border-strong); box-shadow: none; }
+    .method-step::before { color: var(--suti-structure); font-weight: 600; }
+    .open-card:nth-child(2), .open-card:nth-child(3) { border-top: 1px solid var(--suti-line); }
+    .service-tag, .service-detail summary, .price-item strong { color: var(--suti-structure); }
+    .service-detail summary::after, .price-panel summary::after, .price-panel summary .symbol { color: var(--suti-light); }
+    .service-example, .tool-result, .practice-result { border-left-color: var(--suti-structure); background: var(--suti-surface-soft); }
+    .price-panel { border-left-color: var(--suti-action); box-shadow: none; }
+    .price-item { background: var(--suti-surface-soft); }
+    .principle-line { border-left-color: var(--suti-light); }
+    .choice span { transition: border-color 160ms var(--suti-ease), background-color 160ms var(--suti-ease); }
+    .clarity-question { animation: none; }
+    .practice-result { animation-duration: 180ms; }
+    .choice input:checked + span { border-color: var(--suti-structure); background: var(--suti-surface-soft); }
+    .choice input:checked + span::before { border-color: var(--suti-structure); background: var(--suti-water); }
+    .choice input[type="checkbox"]:checked + span::before { color: var(--suti-text); }
+    .clarity-progress::before { background: linear-gradient(90deg, var(--suti-structure) var(--progress, 0%), var(--suti-line) var(--progress, 0%)); }
+    .pearl-output { border-left-color: var(--suti-structure); }
+    .pearl-output blockquote { border-left-color: var(--suti-action); }
+    .living-mark, .living-mark:hover, .living-mark .leaves, .living-mark .sun, .living-mark .wave { transform: none; animation: none; }
+    .living-mark { transition: none; }
+    .living-mark .orbit { stroke: var(--suti-light); opacity: .6; }
+    [data-theme="night"] .wordmark .logo-master { mix-blend-mode: normal; filter: grayscale(1) brightness(0) invert(1); }
+    [data-theme="contrast"] .wordmark .logo-master { filter: grayscale(1) contrast(1.4); mix-blend-mode: multiply; }
+    [data-theme="night"] .open-card a, [data-theme="night"] .game-card a, [data-theme="night"] .service a, [data-theme="night"] .footer-row a, [data-theme="night"] .author-note a { color: var(--suti-link); }
+    [data-theme="night"] .service-tag, [data-theme="night"] .service-detail summary { color: var(--suti-link); }
+    [data-theme="contrast"] .setup, [data-theme="contrast"] .services { background: var(--suti-bg); }
+    [data-theme="contrast"] .primary { border-color: var(--suti-action); background: var(--suti-action); color: var(--suti-on-action); }
+    [data-theme="contrast"] .sample-map, [data-theme="contrast"] .practice-card, [data-theme="contrast"] .open-card, [data-theme="contrast"] .service, [data-theme="contrast"] .method-step, [data-theme="contrast"] .module-card, [data-theme="contrast"] .crystal-card { border-color: var(--suti-border-strong); }
+    :focus-visible { outline-color: var(--suti-focus); }
+    @media (max-width: 780px) {
+      .hero { background: radial-gradient(ellipse at 50% 82%, color-mix(in srgb, var(--suti-bg-cool) 50%, transparent), transparent 42%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
     }
   </style>
 </head>

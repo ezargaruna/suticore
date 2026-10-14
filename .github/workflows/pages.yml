@@ -31,8 +31,10 @@ jobs:
           cp index.html _site/index.html
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
+          cp assets/fonts/Onest-Variable.woff2 _site/assets/fonts/Onest-Variable.woff2
           cp assets/fonts/OFL-Nunito-Sans.txt _site/assets/fonts/OFL-Nunito-Sans.txt
           cp assets/fonts/OFL-Manrope.txt _site/assets/fonts/OFL-Manrope.txt
+          cp assets/fonts/OFL-Onest.txt _site/assets/fonts/OFL-Onest.txt
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
           cp samurai-dharma.html _site/samurai-dharma.html
           cp downloads/SUTI.os-open.zip _site/downloads/SUTI.os-open.zip
