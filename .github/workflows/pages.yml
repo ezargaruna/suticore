@@ -39,8 +39,8 @@ jobs:
           cp assets/fonts/AtkinsonHyperlegibleNext-OFL.txt _site/assets/fonts/AtkinsonHyperlegibleNext-OFL.txt
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
           cp samurai-dharma.html _site/samurai-dharma.html
-          cp downloads/SUTI.os-open.zip _site/downloads/SUTI.os-open.zip
-          cp downloads/SUTI.os-open.zip.sha256 _site/downloads/SUTI.os-open.zip.sha256
+          cp downloads/SUTI.os.zip _site/downloads/SUTI.os.zip
+          cp downloads/SUTI.os.zip.sha256 _site/downloads/SUTI.os.zip.sha256
           for route in ru es pt essence ru/essence es/essence pt/essence; do
             mkdir -p "_site/$route"
             relative="../"
