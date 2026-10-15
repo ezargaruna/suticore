@@ -35,6 +35,8 @@ jobs:
           cp assets/fonts/OFL-Nunito-Sans.txt _site/assets/fonts/OFL-Nunito-Sans.txt
           cp assets/fonts/OFL-Manrope.txt _site/assets/fonts/OFL-Manrope.txt
           cp assets/fonts/OFL-Onest.txt _site/assets/fonts/OFL-Onest.txt
+          cp assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf _site/assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf
+          cp assets/fonts/AtkinsonHyperlegibleNext-OFL.txt _site/assets/fonts/AtkinsonHyperlegibleNext-OFL.txt
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
           cp samurai-dharma.html _site/samurai-dharma.html
           cp downloads/SUTI.os-open.zip _site/downloads/SUTI.os-open.zip

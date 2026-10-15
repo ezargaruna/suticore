@@ -7,6 +7,7 @@
   <meta name="description" content="SUTI.world помогает настроить язык для жизни: выбрать важную ситуацию, найти точные слова и попробовать их в действии.">
   <title>SUTI.world — язык твоей сути</title>
   <style>
+    @font-face { font-family: "Atkinson Hyperlegible Next"; src: url("assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf") format("truetype"); font-style: italic; font-weight: 100 900; font-display: swap; }
     @font-face { font-family: "Onest"; src: url("https://ezargaruna.github.io/suticore/assets/fonts/Onest-Variable.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; }
     :root {
       color-scheme: light;
@@ -40,7 +41,7 @@
       --suti-interactive: var(--suti-turquoise);
       --suti-explore: var(--suti-petrol);
       --suti-font-display: "Onest", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --suti-font-body: "Onest", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --suti-font-body: "Atkinson Hyperlegible Next", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --suti-focus: var(--suti-petrol);
       --suti-shadow: rgb(37 52 47 / 7%);
       --suti-font: var(--suti-font-body);
@@ -101,7 +102,7 @@
       --suti-shadow: transparent;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; min-width: 320px; background: var(--suti-bg); color: var(--suti-text); font-family: var(--suti-font-body); transition: background-color 260ms var(--suti-ease), color 260ms var(--suti-ease); }
+    body { margin: 0; min-width: 320px; background: var(--suti-bg); color: var(--suti-text); font-family: var(--suti-font-body); font-style: italic; transition: background-color 260ms var(--suti-ease), color 260ms var(--suti-ease); }
     a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: .07em; }
     button, select { color: inherit; font: inherit; }
     button, a, select { -webkit-tap-highlight-color: transparent; }
@@ -150,7 +151,7 @@
     [data-theme="night"] .eyebrow { color: var(--suti-turquoise); }
     [data-theme="contrast"] .eyebrow { color: var(--suti-text); }
     h1, h2, h3, p { margin-top: 0; }
-    h1, h2, h3 { font-family: var(--suti-font-display); text-wrap: balance; }
+    h1, h2, h3 { font-family: var(--suti-font-display); font-style: normal; text-wrap: balance; }
     .hero-highlight { text-decoration: underline; text-decoration-color: var(--suti-turquoise); text-decoration-thickness: .085em; text-underline-offset: .12em; }
     h1 { max-width: 12ch; margin-bottom: 22px; font-size: clamp(3.2rem, calc(7.6vw * var(--suti-type-scale)), 6rem); line-height: .99; letter-spacing: -.065em; font-weight: 650; }
     h2 { margin-bottom: 14px; font-size: clamp(2rem, calc(4.4vw * var(--suti-type-scale)), 3.5rem); line-height: 1.08; letter-spacing: -.05em; font-weight: 600; }
@@ -161,12 +162,16 @@
     .primary > span { color: var(--suti-water); font-size: 1.15em; }
     .hero-aside { max-width: 370px; justify-self: end; }
     .living-mark { width: min(100%, 350px); aspect-ratio: 1; margin-inline: auto; position: relative; display: grid; place-items: center; }
+    .living-mark__pulse { position: absolute; inset: -4%; z-index: 0; width: 108%; height: 108%; pointer-events: none; }
     .living-mark svg { width: 91%; position: relative; z-index: 1; overflow: visible; }
     .living-mark .leaves { transform-box: fill-box; transform-origin: 50% 100%; animation: leaf-breathe 9s ease-in-out infinite; }
     .living-mark .orbit { fill: none; stroke: var(--suti-sunlight); stroke-width: 1.7; stroke-linecap: round; opacity: .72;  }
     .living-mark .sun { transform-box: fill-box; transform-origin: center; animation: sunlight-pulse 6.5s ease-in-out infinite; }
     .living-mark .wave { transform-box: fill-box; transform-origin: 50% 50%; animation: wave-breathe 8s ease-in-out infinite; }
     .mark-caption { max-width: 28ch; margin: 0 auto; color: var(--suti-muted); text-align: center; font-size: .86rem; }
+    .motion-control-row { display: flex; justify-content: center; margin: -8px 0 12px; }
+    .motion-toggle { min-height: 44px; padding: 8px 14px; border: 1px solid var(--suti-line); border-radius: 999px; background: var(--suti-surface); color: var(--suti-structure); cursor: pointer; font: 500 .82rem/1.2 var(--suti-font-display); font-style: normal; }
+    .motion-toggle:disabled { cursor: default; opacity: .7; }
     .section { padding-block: clamp(66px, 9vw, 112px); border-top: 1px solid var(--suti-line); }
     .section-head { max-width: 700px; margin-bottom: 32px; }
     .section-head p:last-child { margin-bottom: 0; color: var(--suti-muted); }
@@ -300,6 +305,7 @@
     .wordmark { display:grid; grid-template-columns:48px auto; grid-template-rows:34px 16px; column-gap:10px; align-items:center; width:auto; min-width:210px; line-height:1; }
     .wordmark .logo-master { display:block; grid-row:1 / 3; width:48px; height:48px; object-fit:cover; object-position:52% 50%; border-radius:50%; mix-blend-mode:multiply; }
     .wordmark-name { align-self:end; color:var(--suti-ink); font-size:1.42rem; font-weight:700; letter-spacing:-.065em; }
+    .wordmark-name { font-style:normal; }
     .wordmark-name > .brand-sigil { color:var(--suti-turquoise); margin-right:.18em; font-size:.78em; letter-spacing:0; }
     .wordmark-name > span:not(.brand-sigil) { color:var(--suti-sunlight); }
     .wordmark-tagline { position:static; display:block; grid-column:2; grid-row:2; height:auto; overflow:visible; background:none; color:var(--suti-muted); font-size:.68rem; letter-spacing:.02em; text-align:left; }
@@ -466,6 +472,7 @@
       </div>
       <div class="hero-aside">
         <div class="living-mark" aria-hidden="true">
+          <canvas class="living-mark__pulse" id="pulse-canvas"></canvas>
           <svg viewBox="0 0 360 320" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="orbit" d="M89 207C40 149 69 69 132 48C196 27 282 68 294 139"/>
             <circle class="orbit-dot" cx="294" cy="139" r="5" fill="var(--suti-sunlight)"/>
@@ -478,6 +485,7 @@
             <path class="wave" d="M48 244C96 221 126 258 169 251C211 244 244 218 278 226C292 229 303 234 313 241" stroke="var(--suti-petrol)" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </div>
+        <div class="motion-control-row"><button class="motion-toggle" type="button" id="pulse-toggle" aria-pressed="true" data-i18n="motion-pause">пауза движения</button></div>
         <p class="mark-caption" data-i18n-html="mark-caption">живой язык начинается<br>с того, что важно тебе</p>
       </div>
     </section>
@@ -571,6 +579,10 @@
       "es":{"theme-day":"día","theme-night":"noche","theme-contrast":"contraste","theme-contrast-label":"tema de alto contraste","locale-label":"elegir idioma","size-down":"reducir el texto","size-up":"aumentar el texto","theme-label":"tema visual","mark-caption":"el lenguaje empieza por lo que te importa","nav-label":"navegación principal","nav-start":"empezar","nav-library":"biblioteca","nav-language":"idioma","nav-work":"trabajar juntos","work-label":"trabajar juntos","hero-eyebrow":"◎ SUTI.world · el lenguaje de tu esencia","hero-title":"comprende lo importante<br>encuentra <span class=\"hero-highlight\">tus palabras</span>","hero-lead":"aclára una pregunta, reúne un mapa claro y elige el siguiente paso","hero-cta":"aclarar una pregunta <span aria-hidden=\"true\">↓</span>","clarity-title":"una pregunta → un mapa → tu paso","clarity-intro":"responder es opcional. puedes omitir, volver y editar. el mapa se crea en este dispositivo","q1":"⌖ ¿qué está pasando ahora?","q2":"◇ ¿qué sabemos aquí?","q3":"≈ ¿cómo lo entiendes?","q4":"◎ ¿qué sientes y qué es importante?","q5":"⟁ ¿qué paso quieres probar?","q6":"↺ ¿qué quieres conservar?","hint":"escribe una frase o deja el campo vacío","back":"← atrás","skip":"omitir","next":"siguiente","build-map":"crear mapa de claridad","clear":"borrar respuestas","local-note":"no se envía ni se guarda nada automáticamente","copy":"copiar mapa","download":"descargar mapa .md","delete-map":"borrar mapa","library-title":"herramientas abiertas y prácticas de juego","library-intro":"ejercicios breves para aclarar, conversar, atender y aprender idiomas. elige uno y vuelve cuando te sirva","tool-one-title":"hecho · interpretación · emoción","tool-one-desc":"separa lo ocurrido, cómo lo entiendes y lo que sientes","try-tool":"probar herramienta","fact-label":"¿qué ocurrió?","version-label":"¿cómo lo entiendes?","feeling-label":"¿qué sientes?","compose":"crear nota","tool-two-title":"preparar una conversación","tool-two-desc":"escribe qué quieres hablar, decir y preguntar","topic-label":"tema de conversación","important-label":"¿qué es importante comunicar?","question-label":"¿qué quieres preguntar?","samurai-title":"pausa antes de actuar","samurai-desc":"práctica breve: notar un impulso, elegir una acción y observar su efecto","open-practice":"abrir práctica","samurai-prompt":"¿qué has notado? ¿qué puedes comprobar? ¿qué pequeño paso está disponible?","samurai-note":"práctica de atención de autoría propia, no es predicción ni terapia. puedes parar cuando quieras","sample-title":"mapa de claridad · preparar una conversación","sample-copy":"situación: pedir a un colega cambiar una fecha límite. sabemos: ya hay una fecha acordada. importa: avisar y proponer un plan. paso: escribir un mensaje breve con motivo y fecha concreta","gift-link":"descargar el vault abierto SUTI.os ↓","language-title":"aprende para lo que viene","language-intro":"elige un idioma y situaciones reales para crear una ruta breve","crystal-title":"cristal lingüístico","crystal-desc":"palabra → significado → contexto → tu ejemplo. completa solo lo que sabes","word-label":"palabra o frase","context-label":"¿dónde la viste o dónde la usarías?","example-label":"tu ejemplo","build-crystal":"crear nota","choose-language":"¿qué idioma necesitas ahora?","express-label":"¿qué quieres expresar?","situations-label":"¿en qué situaciones quieres más confianza? puedes elegir varias","speak":"hablar con personas","listen":"comprender al escuchar","read":"leer y comprender","write":"escribir tus ideas","study":"estudio y trabajo","travel":"viajes","pace-label":"¿qué ritmo te va bien?","pace-slow":"despacio y con calma","pace-example":"con un ejemplo","pace-try":"probar enseguida","pace-dialog":"diálogo breve","build-route":"crear ruta →","work-title":"trabajo personal y para proyectos","work-intro":"primero aclaramos la pregunta y el resultado. acordamos alcance y precio antes de empezar","b2c-title":"para personas","b2c-desc":"preguntas personales y aprendizaje","b2b-title":"para equipos y proyectos","b2b-desc":"trabajo colaborativo","service-self":"el lenguaje de tu esencia","service-self-desc":"encontrar palabras para una decisión, conversación o cambio","details":"cómo trabajamos","service-self-example":"ejemplo: entender por qué un trabajo ya no encaja y qué te gustaría cambiar","service-self-result":"resultado: un mapa breve, formulaciones claras y posibles pasos","discuss":"conversar sobre tu pregunta ↗","service-language":"mapa de idiomas","service-language-desc":"aprender mediante situaciones que pronto necesitarás","service-language-example":"ejemplo: prepararte para un viaje y conversaciones laborales","service-language-result":"resultado: una secuencia de estudio, frases útiles y una forma de continuar por tu cuenta","discuss-route":"hablar de la ruta ↗","service-project":"lenguaje del proyecto","service-project-desc":"hacer que la descripción y las palabras de trabajo sean claras para el equipo","service-project-example":"ejemplo: el equipo explica de forma distinta a quién ayuda el producto y qué debe hacer quien visita la web","service-project-result":"resultado: descripción clara, palabras compartidas y ejemplos listos","describe-task":"describir tarea ↗","pricing":"formatos y precios","one-to-one":"trabajo individual","price-self":"el alcance depende de la pregunta y el resultado","language-map":"mapa lingüístico","price-language":"consideramos el idioma, las situaciones y los materiales","project-language":"lenguaje del proyecto","price-project":"el alcance depende del equipo y los formatos","agree-price":"precio acordado de antemano","price-note":"acordamos alcance, plazo y precio fijo antes de empezar. las herramientas abiertas son gratuitas","about-label":"sobre el autor","about-role":"lingüista · traductor · profesor de idiomas","about-copy":"ayudo a personas y proyectos a ver lo importante, encontrar palabras precisas y elegir el siguiente paso","privacy-copy":"lo personal no se publica automáticamente. puedes usar la práctica y salir cuando quieras","contact":"consultar trabajo ↗","vault-download":"descargar el vault abierto SUTI.os","footer-tagline":"el lenguaje de tu esencia","footer-return":"volver al mapa de claridad ↑","map-title":"mapa de claridad","empty":"sin respuesta","copied":"copiado","deleted":"mapa y respuestas eliminados","progress":"pregunta {n} de 6","finish":"crear mapa","hint-fact":"anota lo que se puede comprobar","hint-interpretation":"es una interpretación que puedes revisar","hint-feeling":"tú decides qué sientes y qué es importante","hint-step":"basta con una acción pequeña y posible","hint-return":"por ejemplo, una diferencia útil o una pregunta para retomar","copy-prompt":"copiar prompt","download-prompt":"descargar prompt .md","prompt-title":"una guía cuidadosa para revisar el mapa","prompt-instruction":"Ayuda a separar hechos, interpretaciones personales, emociones y preguntas abiertas. No diagnostiques ni decidas por la persona. Primero pregunta qué tipo de ayuda desea","prompt-boundary":"Estas respuestas pertenecen a la persona. No las envíes ni guardes automáticamente. Ofrece distintas formulaciones y deja la elección en sus manos","samurai-more":"explorar el recorrido del juego ↗","game-pause-title":"◌ una pausa antes de responder","game-pause-desc":"nota el impulso antes de elegir qué hacer","game-pause-prompt":"recuerda un momento reciente. ¿qué ocurrió antes del impulso? ¿qué cambiaría si esperas una respiración tranquila?","game-choice-title":"◇ dos interpretaciones","game-choice-desc":"busca otra explicación posible de la situación","game-choice-prompt":"escribe tu primera interpretación. después imagina otra, sin tratar ninguna como un hecho","game-return-title":"↺ huella y regreso","game-return-desc":"compara lo que esperabas con lo que realmente ocurrió","game-return-prompt":"¿qué probaste? ¿qué cambió en la práctica? ¿qué conservarías, cambiarías o dejarías ir?","other-language-label":"¿no encuentras tu idioma? escríbelo aquí","lang-sound-title":"escucha y sonido","lang-sound-desc":"escucha, repite y observa un sonido o ritmo","lang-sound-prompt":"elige una frase corta. escúchala, repítela despacio y después con naturalidad. anota qué puedes oír ahora","lang-chunks-title":"frases útiles","lang-chunks-desc":"aprende grupos de palabras en contexto, no listas aisladas","lang-chunks-prompt":"piensa en una situación. prepara tres frases breves para empezar, aclarar y cerrar una conversación","lang-shadow-title":"repetir con un modelo","lang-shadow-desc":"conecta lo que escuchas con tu propia voz, sin prisa","lang-shadow-prompt":"elige un audio corto. escucha una frase, repítela a la vez y luego dilo por tu cuenta. compara un solo detalle","lang-return-title":"volver a palabras conocidas","lang-return-desc":"recuerda sin juzgar y añade un ejemplo propio","lang-return-prompt":"cierra tus notas. recuerda tres frases conocidas, compruébalas y añade un ejemplo tuyo","route-prompt-title":"guía para practicar un idioma","route-prompt-instruction":"Crea una práctica breve y amable en el idioma elegido. Usa frases sencillas, explica las palabras nuevas, no evalúes a la persona y deja que elija el ritmo","other-language":"otro idioma…","other":"otro idioma","copy-route-prompt":"copiar prompt","download-route-prompt":"descargar prompt .md"},
       "pt":{"theme-day":"dia","theme-night":"noite","theme-contrast":"contraste","theme-contrast-label":"tema de alto contraste","locale-label":"escolher idioma","size-down":"diminuir o texto","size-up":"aumentar o texto","theme-label":"tema visual","mark-caption":"a linguagem começa pelo que importa para você","nav-label":"navegação principal","nav-start":"começar","nav-library":"biblioteca","nav-language":"idioma","nav-work":"trabalhar juntos","work-label":"trabalhar juntos","hero-eyebrow":"◎ SUTI.world · a linguagem da sua essência","hero-title":"entenda o que importa<br>encontre <span class=\"hero-highlight\">suas palavras</span>","hero-lead":"esclareça uma questão, reúna um mapa claro e escolha o próximo passo","hero-cta":"esclarecer uma questão <span aria-hidden=\"true\">↓</span>","clarity-title":"uma pergunta → um mapa → seu passo","clarity-intro":"responder é opcional. você pode pular, voltar e editar. o mapa é criado neste dispositivo","q1":"⌖ o que está acontecendo agora?","q2":"◇ o que sabemos aqui?","q3":"≈ como você entende isso?","q4":"◎ o que sente e o que é importante?","q5":"⟁ que passo gostaria de experimentar?","q6":"↺ o que gostaria de guardar?","hint":"escreva uma frase ou deixe em branco","back":"← voltar","skip":"pular","next":"avançar","build-map":"criar mapa de clareza","clear":"limpar respostas","local-note":"nada é enviado ou salvo automaticamente","copy":"copiar mapa","download":"baixar mapa .md","delete-map":"excluir mapa","library-title":"ferramentas abertas e práticas de jogo","library-intro":"exercícios breves para clareza, conversa, atenção e idiomas. escolha um e volte quando fizer sentido","tool-one-title":"fato · interpretação · sentimento","tool-one-desc":"separe o que aconteceu, como você entende e o que sente","try-tool":"experimentar ferramenta","fact-label":"o que aconteceu?","version-label":"como você entende?","feeling-label":"o que sente?","compose":"criar nota","tool-two-title":"preparar uma conversa","tool-two-desc":"anote o que quer conversar, dizer e perguntar","topic-label":"tema da conversa","important-label":"o que é importante comunicar?","question-label":"o que gostaria de perguntar?","samurai-title":"pausa antes de agir","samurai-desc":"prática breve: notar um impulso, escolher uma ação e observar seu efeito","open-practice":"abrir prática","samurai-prompt":"o que você percebeu? o que pode verificar? qual pequeno passo está disponível?","samurai-note":"prática autoral de atenção, não é previsão nem terapia. pare quando quiser","sample-title":"mapa de clareza · preparar uma conversa","sample-copy":"situação: pedir a um colega para mudar um prazo. sabemos: uma data já foi combinada. importa: avisar e sugerir um plano. passo: escrever uma mensagem breve com motivo e data definida","gift-link":"baixar o vault aberto SUTI.os ↓","language-title":"aprenda para o que vem pela frente","language-intro":"escolha um idioma e situações reais para criar uma rota breve","crystal-title":"cristal de linguagem","crystal-desc":"palavra → significado → contexto → seu exemplo. preencha apenas o que souber","word-label":"palavra ou frase","context-label":"onde encontrou ou onde usaria?","example-label":"seu exemplo","build-crystal":"criar nota","choose-language":"qual idioma você precisa agora?","express-label":"o que gostaria de expressar?","situations-label":"em quais situações quer mais confiança? escolha várias","speak":"conversar com pessoas","listen":"compreender ao ouvir","read":"ler e compreender","write":"escrever suas ideias","study":"estudo e trabalho","travel":"viagens","pace-label":"qual ritmo funciona para você?","pace-slow":"devagar e com calma","pace-example":"com um exemplo","pace-try":"experimentar já","pace-dialog":"diálogo breve","build-route":"criar rota →","work-title":"trabalho pessoal e para projetos","work-intro":"primeiro esclarecemos a questão e o resultado. escopo e preço são combinados antes do início","b2c-title":"para pessoas","b2c-desc":"questões pessoais e aprendizagem","b2b-title":"para equipes e projetos","b2b-desc":"trabalho colaborativo","service-self":"a linguagem da sua essência","service-self-desc":"encontrar palavras para uma escolha, conversa ou mudança","details":"como funciona","service-self-example":"exemplo: entender por que um trabalho já não combina e o que você gostaria de mudar","service-self-result":"resultado: um mapa breve, formulações claras e possíveis próximos passos","discuss":"conversar sobre sua questão ↗","service-language":"mapa de idioma","service-language-desc":"aprender por situações que serão úteis em breve","service-language-example":"exemplo: preparar-se para uma viagem e conversas de trabalho","service-language-result":"resultado: sequência de estudos, frases úteis e um jeito de continuar por conta própria","discuss-route":"conversar sobre a rota ↗","service-project":"linguagem do projeto","service-project-desc":"deixar a descrição e as palavras de trabalho claras para a equipe","service-project-example":"exemplo: a equipe explica de formas diferentes para quem serve o produto e o que a pessoa deve fazer no site","service-project-result":"resultado: descrição clara, palavras compartilhadas e exemplos prontos","describe-task":"descrever tarefa ↗","pricing":"formatos e valores","one-to-one":"trabalho individual","price-self":"o escopo depende da questão e do resultado desejado","language-map":"mapa de idioma","price-language":"consideramos idioma, situações e materiais de prática","project-language":"linguagem do projeto","price-project":"o escopo depende da equipe e dos formatos","agree-price":"valor combinado antes","price-note":"combinamos escopo, prazo e valor fixo antes do início. as ferramentas abertas são gratuitas","about-label":"sobre o autor","about-role":"linguista · tradutor · professor de idiomas","about-copy":"ajudo pessoas e projetos a perceber o que importa, encontrar palavras precisas e escolher o próximo passo","privacy-copy":"conteúdo pessoal nunca é publicado automaticamente. use a prática aberta e saia quando quiser","contact":"consultar trabalho ↗","vault-download":"baixar o vault aberto SUTI.os","footer-tagline":"a linguagem da sua essência","footer-return":"voltar ao mapa de clareza ↑","map-title":"mapa de clareza","empty":"sem resposta","copied":"copiado","deleted":"mapa e respostas excluídos","progress":"pergunta {n} de 6","finish":"criar mapa","hint-fact":"anote o que pode ser verificado","hint-interpretation":"essa é uma interpretação que pode ser revista","hint-feeling":"você define o que sente e o que importa","hint-step":"uma ação pequena e possível já basta","hint-return":"por exemplo, uma diferença útil ou uma pergunta para retomar","copy-prompt":"copiar prompt","download-prompt":"baixar prompt .md","prompt-title":"um guia cuidadoso para refletir sobre o mapa","prompt-instruction":"Ajude a separar fatos, interpretações pessoais, sentimentos e perguntas em aberto. Não faça diagnósticos nem decida pela pessoa. Primeiro pergunte que tipo de ajuda ela deseja","prompt-boundary":"Estas respostas pertencem à pessoa. Não as envie nem guarde automaticamente. Ofereça opções de formulação e deixe a escolha com ela","samurai-more":"conhecer o caminho do jogo ↗","game-pause-title":"◌ uma pausa antes de responder","game-pause-desc":"perceba o impulso antes de escolher o que fazer","game-pause-prompt":"lembre de um momento recente. o que veio antes do impulso? o que pode mudar se esperar uma respiração tranquila?","game-choice-title":"◇ duas interpretações","game-choice-desc":"procure outra explicação possível para a situação","game-choice-prompt":"escreva sua primeira interpretação. depois imagine outra, sem tratar nenhuma como fato","game-return-title":"↺ rastro e retorno","game-return-desc":"compare o que esperava com o que realmente aconteceu","game-return-prompt":"o que você experimentou? o que mudou na prática? o que manteria, mudaria ou deixaria ir?","other-language-label":"não encontrou seu idioma? escreva aqui","lang-sound-title":"escuta e som","lang-sound-desc":"escute, repita e perceba um som ou ritmo","lang-sound-prompt":"escolha uma frase curta. escute uma vez, repita devagar e depois naturalmente. anote o que ficou mais audível","lang-chunks-title":"frases úteis","lang-chunks-desc":"aprenda combinações de palavras em contexto, não listas isoladas","lang-chunks-prompt":"pense em uma situação. crie três frases curtas para começar, esclarecer e encerrar uma conversa","lang-shadow-title":"repetição com apoio","lang-shadow-desc":"una o que escuta à sua própria voz, sem pressa","lang-shadow-prompt":"escolha um áudio curto. escute uma frase, repita junto e depois diga sozinho. compare apenas um detalhe","lang-return-title":"voltar às palavras conhecidas","lang-return-desc":"lembre sem se avaliar e acrescente um exemplo próprio","lang-return-prompt":"feche suas notas. lembre três frases conhecidas, confira e acrescente um exemplo seu","route-prompt-title":"guia para praticar um idioma","route-prompt-instruction":"Crie uma prática breve e acolhedora no idioma escolhido. Use frases simples, explique palavras novas, não avalie a pessoa e deixe que ela escolha o ritmo","other-language":"outro idioma…","other":"outro idioma","copy-route-prompt":"copiar prompt","download-route-prompt":"baixar prompt .md"}
     };
+    Object.assign(translations.ru, {"motion-pause":"пауза движения","motion-play":"включить движение","motion-off":"движение выключено в настройках"});
+    Object.assign(translations.en, {"motion-pause":"pause motion","motion-play":"enable motion","motion-off":"motion off in settings"});
+    Object.assign(translations.es, {"motion-pause":"pausar movimiento","motion-play":"activar movimiento","motion-off":"movimiento desactivado en los ajustes"});
+    Object.assign(translations.pt, {"motion-pause":"pausar movimento","motion-play":"ativar movimento","motion-off":"movimento desativado nas configurações"});
     Object.assign(translations.ru,{"common-languages":"распространённые языки","research-languages":"исследовательские языковые линзы","clarity-open":"развернуть карту ясности","depth-label":"выбери глубину","depth-simple":"коротко · 2 вопроса","depth-steady":"средне · 4 вопроса","depth-deep":"глубоко · 6 вопросов","depth-note":"можно менять глубину и оставить любой ответ пустым","choose-language":"какой язык хочется изучать?","other-language-label":"не нашёл нужный язык? укажи его здесь","language-fallback":"свой вариант","other":"другой язык","copy-prompt":"скопировать промпт","download-prompt":"скачать промпт .md"});
     Object.assign(translations.en,{"common-languages":"widely used languages","research-languages":"research language lenses","clarity-open":"open the clarity map","depth-label":"choose a depth","depth-simple":"brief · 2 prompts","depth-steady":"steady · 4 prompts","depth-deep":"deep · 6 prompts","depth-note":"change depth at any time and leave any answer blank","choose-language":"which language would you like to learn?","other-language-label":"can’t find your language? enter it here","language-fallback":"custom language","other":"another language","copy-prompt":"copy prompt","download-prompt":"download prompt .md"});
     Object.assign(translations.es,{"common-languages":"idiomas de uso extendido","research-languages":"lenguas para investigación","clarity-open":"abrir el mapa de claridad","depth-label":"elige la profundidad","depth-simple":"breve · 2 preguntas","depth-steady":"pausado · 4 preguntas","depth-deep":"profundo · 6 preguntas","depth-note":"puedes cambiar la profundidad y dejar cualquier respuesta en blanco","choose-language":"¿qué idioma te gustaría aprender?","other-language-label":"¿no encuentras tu idioma? escríbelo aquí","language-fallback":"otro idioma","other":"otro idioma","copy-prompt":"copiar prompt","download-prompt":"descargar prompt .md"});
@@ -652,6 +664,106 @@
       const copyButton=document.getElementById("copy-route-prompt");copyButton.dataset.labelKey="copy-route-prompt";copyButton.addEventListener("click",()=>copyText(prompt,copyButton));
       document.getElementById("download-route-prompt").addEventListener("click",()=>downloadMarkdown(prompt,"suti-language-prompt.md"));
     });
+
+    const pulseCanvas = document.getElementById("pulse-canvas");
+    const pulseToggle = document.getElementById("pulse-toggle");
+    const pulseContext = pulseCanvas?.getContext("2d");
+    if (pulseCanvas && pulseToggle && pulseContext) {
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let paused = reducedMotion.matches;
+      let inView = true;
+      let frameId = 0;
+      let lastFrame = 0;
+      const marks = ["·", "◦", "⌁", "◇", "∴", "↗", "╱", "╲", "s", "u", "t", "i"];
+      const setPulseState = () => {
+        const key = reducedMotion.matches ? "motion-off" : paused ? "motion-play" : "motion-pause";
+        pulseToggle.dataset.i18n = key;
+        pulseToggle.textContent = translations[locale][key] || translations.en[key];
+        pulseToggle.disabled = reducedMotion.matches;
+        pulseToggle.setAttribute("aria-pressed", String(!paused && !reducedMotion.matches));
+        if (paused || reducedMotion.matches || !inView || document.visibilityState !== "visible") {
+          cancelAnimationFrame(frameId);
+          frameId = 0;
+          pulseContext.clearRect(0, 0, pulseCanvas.width, pulseCanvas.height);
+        } else if (!frameId) {
+          frameId = requestAnimationFrame(drawPulse);
+        }
+      };
+      const drawPulse = time => {
+        frameId = 0;
+        if (paused || reducedMotion.matches || !inView) return;
+        if (time - lastFrame < 40) { frameId = requestAnimationFrame(drawPulse); return; }
+        lastFrame = time;
+        const rect = pulseCanvas.getBoundingClientRect();
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        const width = Math.max(1, Math.round(rect.width * ratio));
+        const height = Math.max(1, Math.round(rect.height * ratio));
+        if (pulseCanvas.width !== width || pulseCanvas.height !== height) {
+          pulseCanvas.width = width;
+          pulseCanvas.height = height;
+        }
+        pulseContext.setTransform(ratio, 0, 0, ratio, 0, 0);
+        pulseContext.clearRect(0, 0, rect.width, rect.height);
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+        const scale = Math.min(rect.width, rect.height) * .42;
+        const theme = getComputedStyle(document.documentElement);
+        const structure = theme.getPropertyValue("--suti-structure").trim() || "#365958";
+        const water = theme.getPropertyValue("--suti-water").trim() || "#57B8B0";
+        const warmth = theme.getPropertyValue("--suti-peach").trim() || "#DE9A73";
+        const sunlight = theme.getPropertyValue("--suti-sunlight").trim() || "#D6AD58";
+        pulseContext.lineWidth = 1;
+        pulseContext.globalAlpha = .24;
+        pulseContext.strokeStyle = sunlight;
+        pulseContext.beginPath();
+        pulseContext.ellipse(cx, cy, scale * .78, scale * .94, 0, 0, Math.PI * 2);
+        pulseContext.stroke();
+        pulseContext.globalAlpha = .13;
+        pulseContext.strokeStyle = structure;
+        pulseContext.beginPath();
+        pulseContext.moveTo(cx, cy - scale);
+        pulseContext.lineTo(cx - scale * .5, cy - scale * .62);
+        pulseContext.lineTo(cx - scale * .5, cy + scale * .62);
+        pulseContext.lineTo(cx, cy + scale);
+        pulseContext.lineTo(cx + scale * .5, cy + scale * .62);
+        pulseContext.lineTo(cx + scale * .5, cy - scale * .62);
+        pulseContext.closePath();
+        pulseContext.stroke();
+        pulseContext.globalAlpha = .3;
+        pulseContext.beginPath();
+        pulseContext.moveTo(cx, cy + scale * .92);
+        pulseContext.lineTo(cx, cy - scale * .96);
+        pulseContext.stroke();
+        const beat = 3 + (Math.sin(time / 760) + 1) * 1.8;
+        pulseContext.globalAlpha = .72;
+        pulseContext.fillStyle = warmth;
+        pulseContext.beginPath();
+        pulseContext.arc(cx, cy, beat, 0, Math.PI * 2);
+        pulseContext.fill();
+        pulseContext.globalAlpha = .25;
+        pulseContext.strokeStyle = water;
+        pulseContext.beginPath();
+        pulseContext.arc(cx, cy, beat * 3.4, 0, Math.PI * 2);
+        pulseContext.stroke();
+        marks.forEach((mark, index) => {
+          const angle = index * Math.PI * 2 / marks.length - Math.PI / 2 + time / 18000;
+          const phase = (time / 4800 + index / marks.length) % 1;
+          pulseContext.globalAlpha = Math.max(0, Math.sin(phase * Math.PI)) * .5;
+          pulseContext.fillStyle = index % 4 === 0 ? warmth : structure;
+          pulseContext.font = `italic ${9 + index % 3}px "Atkinson Hyperlegible Next", sans-serif`;
+          pulseContext.fillText(mark, cx + Math.cos(angle) * scale * .86, cy + Math.sin(angle) * scale * .92);
+        });
+        pulseContext.globalAlpha = 1;
+        frameId = requestAnimationFrame(drawPulse);
+      };
+      pulseToggle.addEventListener("click", () => { paused = !paused; setPulseState(); });
+      reducedMotion.addEventListener("change", () => { paused = reducedMotion.matches; setPulseState(); });
+      document.addEventListener("visibilitychange", setPulseState);
+      if ("IntersectionObserver" in window) {
+        new IntersectionObserver(entries => { inView = entries[0]?.isIntersecting ?? true; setPulseState(); }, { threshold: .05 }).observe(pulseCanvas);
+      }
+      setPulseState();
+    }
 
   </script>
 </body>
