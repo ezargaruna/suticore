@@ -22,6 +22,7 @@ SUTIcore - это открытый цифровой фундамент для о
 - [meta/frameworks/GUIDE.md](meta/frameworks/GUIDE.md) :: как использовать методы в реальности
 - [meta/templates/](meta/templates/) :: готовые шаблоны аудита и контрактов
 - [meta/linguafusion/](meta/linguafusion/) :: настройка своего языка и семантического профиля
+- [docs/language-layers.md](docs/language-layers.md) :: языковые слои сайта и статус переводов
 
 ### 03. операционная среда (system)
 `для тех, кто хочет понять, как устроена машина`
