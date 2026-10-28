@@ -137,6 +137,8 @@
     .topbar-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 14px; }
     .locale-switch { display: flex; align-items: center; }
     .locale-switch select { min-height: 42px; padding: 7px 32px 7px 12px; border: 1px solid var(--suti-line); border-radius: 12px; background: var(--suti-surface); color: var(--suti-text); cursor: pointer; }
+    .locale-status { flex-basis: 100%; max-width: 48rem; margin: -6px 0 0 auto; color: var(--suti-muted); font-size: .78rem; line-height: 1.4; text-align: right; }
+    .locale-status[hidden] { display: none; }
     .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     .type-size-tools { display: flex; align-items: center; gap: 3px; color: var(--suti-muted); }
     .type-size-tools button { min-width: 40px; min-height: 44px; padding: 6px; border: 1px solid transparent; border-radius: 10px; background: transparent; color: inherit; cursor: pointer; font-size: .82rem; font-weight: 650; }
@@ -381,6 +383,7 @@
       .locale-switch { grid-column: 2; justify-content: flex-end; }
       .theme-tools { grid-column: 1 / -1; justify-content: center; }
       .locale-switch select { max-width: 180px; }
+      .locale-status { grid-column: 1 / -1; margin: 4px 0 2px; text-align: center; }
       .theme-tools { gap: 1px; }
       .theme-tools button { min-width: 36px; padding-inline: 7px; font-size: .72rem; }
       .hero h1 { max-width: 18ch; font-size: clamp(2.35rem, calc(11vw * var(--suti-type-scale)), 3.2rem); line-height: 1.06; }
@@ -476,7 +479,7 @@
         <output id="text-size-value" aria-live="polite">100%</output>
         <button type="button" data-text-size="up" aria-label="увеличить размер текста" data-i18n-aria="size-up">A+</button>
       </div>
-      <label class="locale-switch"><span class="sr-only" data-i18n="locale-label">язык страницы</span><select id="locale-select" aria-label="выбрать язык" data-i18n-aria="locale-label"><option value="ru">Русский</option><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option></select></label>
+      <label class="locale-switch"><span class="sr-only" data-i18n="locale-label">язык страницы</span><select id="locale-select" aria-label="выбрать язык" aria-describedby="locale-status" data-i18n-aria="locale-label"><option value="ru">Русский</option><option value="en">English</option><option value="es">Español</option><option value="pt-BR">Português brasileiro</option><option value="zh-Hans">简体中文</option><option value="hi">हिन्दी</option><option value="fr">Français</option><option value="ar">العربية</option><option value="bn">বাংলা</option><option value="eo">Esperanto</option><option value="sa">संस्कृतम्</option><option value="la">Latina</option><option value="yzh">Язэхъ</option></select></label><p class="locale-status" id="locale-status" role="status" aria-live="polite" hidden></p>
       <div class="theme-tools" role="group" aria-label="тема оформления" data-i18n-aria="theme-label">
         <button type="button" data-theme-choice="day" aria-pressed="true" data-i18n="theme-day">день</button>
         <button type="button" data-theme-choice="night" aria-pressed="false" data-i18n="theme-night">ночь</button>
@@ -649,28 +652,52 @@
     Object.assign(translations.en,{"nav-nitya":"NITYA play","nav-narodoznanie":"people’s knowledge","nitya-eyebrow":"⟡ NITYA · a playful entry","nitya-title":"Where shall we wander today?","nitya-intro":"Choose one thread. There is no right route: change your mind, skip a step, or simply look around.","nitya-gate-clarity":"Notice what matters","nitya-gate-clarity-desc":"Shape a question into a small map and choose a manageable next step.","nitya-gate-language":"Play with words","nitya-gate-language-desc":"Find a word, hear its rhythm, and try it in your own phrase.","nitya-gate-people":"Explore shared memory","nitya-gate-people-desc":"See how knowledge lives in language, place, and transmission.","nitya-play":"enter the game ↗","nitya-note":"NITYA is an authored practice for attention and meaning. It does not diagnose or promise special states. You can leave at any time.","narodoznanie-eyebrow":"⟁ research module · proposed specification","narodoznanie-title":"People’s knowledge","narodoznanie-intro":"Explore how knowledge, words, and practices live in communities and change as they are passed on. Keep sources, context, and interpretation distinct.","narodoznanie-source":"01 · Source","narodoznanie-source-desc":"Who created this record, and when and where did it appear?","narodoznanie-context":"02 · Context","narodoznanie-context-desc":"How do language, place, and situation shape meaning?","narodoznanie-variants":"03 · Transmission","narodoznanie-variants-desc":"Which versions emerged, and what changed or remained?","narodoznanie-reading":"04 · Distinction","narodoznanie-reading-desc":"What is supported, what is inferred, and what remains unknown?","narodoznanie-care":"Respect consent, provenance, and circulation limits. Sensitive or disputed material needs separate permission.","narodoznanie-spec":"Open the method specification ↗","nitya-process-label":"NITYA practice steps","nitya-process-notice":"notice","nitya-process-practice":"try","nitya-process-reflect":"reflect","nitya-process-pearl":"shape a result","nitya-note":"NITYA is an authored practice for attention and meaning. The path and growth come first; a map or “pearl” may emerge as an outcome, not a promised object. You can leave at any time.","nitya-gate-clarity-desc":"Begin with observation, distinguish interpretations, and choose a manageable step.","nitya-play":"begin the path ↗","nitya-spec":"How the NITYA practice works ↗"});
     Object.assign(translations.es,{"nav-nitya":"juego NITYA","nav-narodoznanie":"saberes de los pueblos","nitya-eyebrow":"⟡ NITYA · entrada lúdica","nitya-title":"¿Por dónde paseamos hoy?","nitya-intro":"Elige un hilo. No hay una ruta correcta: puedes cambiar de idea, saltarte un paso o simplemente mirar.","nitya-gate-clarity":"Notar lo importante","nitya-gate-clarity-desc":"Convertir una pregunta en un mapa pequeño y elegir un paso posible.","nitya-gate-language":"Jugar con las palabras","nitya-gate-language-desc":"Encontrar una palabra, escuchar su ritmo y probarla en una frase propia.","nitya-gate-people":"Explorar la memoria compartida","nitya-gate-people-desc":"Ver cómo viven los saberes en la lengua, el lugar y su transmisión.","nitya-play":"entrar al juego ↗","nitya-note":"NITYA es una práctica lúdica de autor para la atención y los sentidos. No diagnostica ni promete estados especiales. Puedes salir cuando quieras.","narodoznanie-eyebrow":"⟁ módulo de investigación · especificación propuesta","narodoznanie-title":"Saberes de los pueblos","narodoznanie-intro":"Exploramos cómo los saberes, las palabras y las prácticas viven en las comunidades y cambian al transmitirse. Distinguimos fuente, contexto e interpretación.","narodoznanie-source":"01 · Fuente","narodoznanie-source-desc":"¿Quién creó el registro, y cuándo y dónde apareció?","narodoznanie-context":"02 · Contexto","narodoznanie-context-desc":"¿Cómo influyen la lengua, el lugar y la situación en el sentido?","narodoznanie-variants":"03 · Transmisión","narodoznanie-variants-desc":"¿Qué versiones surgieron y qué cambió o permaneció?","narodoznanie-reading":"04 · Distinción","narodoznanie-reading-desc":"¿Qué tiene respaldo, qué inferimos y qué sigue siendo desconocido?","narodoznanie-care":"Respeta el consentimiento, la procedencia y los límites de circulación. El material sensible o controvertido requiere autorización aparte.","narodoznanie-spec":"Abrir la especificación metodológica ↗","nitya-process-label":"etapas de la práctica NITYA","nitya-process-notice":"observar","nitya-process-practice":"probar","nitya-process-reflect":"reflexionar","nitya-process-pearl":"dar forma al resultado","nitya-note":"NITYA es una práctica de autor para la atención y los sentidos. Primero vienen el camino y el crecimiento; un mapa o una «perla» puede surgir como resultado, no como objeto prometido. Puedes salir cuando quieras.","nitya-gate-clarity-desc":"Empezar observando, distinguir interpretaciones y elegir un paso posible.","nitya-play":"iniciar el camino ↗","nitya-spec":"Cómo funciona la práctica NITYA ↗"});
     Object.assign(translations.pt,{"nav-nitya":"jogo NITYA","nav-narodoznanie":"saberes dos povos","nitya-eyebrow":"⟡ NITYA · entrada lúdica","nitya-title":"Por onde vamos passear hoje?","nitya-intro":"Escolha um fio. Não existe caminho certo: você pode mudar de ideia, pular uma etapa ou só observar.","nitya-gate-clarity":"Perceber o que importa","nitya-gate-clarity-desc":"Transformar uma pergunta em um pequeno mapa e escolher um próximo passo possível.","nitya-gate-language":"Brincar com palavras","nitya-gate-language-desc":"Encontrar uma palavra, ouvir seu ritmo e experimentá-la em uma frase sua.","nitya-gate-people":"Explorar a memória compartilhada","nitya-gate-people-desc":"Ver como os saberes vivem na língua, no lugar e na transmissão.","nitya-play":"entrar no jogo ↗","nitya-note":"NITYA é uma prática lúdica autoral de atenção e sentidos. Não diagnostica nem promete estados especiais. Você pode sair quando quiser.","narodoznanie-eyebrow":"⟁ módulo de pesquisa · especificação proposta","narodoznanie-title":"Saberes dos povos","narodoznanie-intro":"Exploramos como saberes, palavras e práticas vivem nas comunidades e mudam ao serem transmitidos. Mantemos fonte, contexto e interpretação distintos.","narodoznanie-source":"01 · Fonte","narodoznanie-source-desc":"Quem criou o registro, e quando e onde ele apareceu?","narodoznanie-context":"02 · Contexto","narodoznanie-context-desc":"Como língua, lugar e situação moldam o sentido?","narodoznanie-variants":"03 · Transmissão","narodoznanie-variants-desc":"Quais versões surgiram e o que mudou ou permaneceu?","narodoznanie-reading":"04 · Distinção","narodoznanie-reading-desc":"O que tem respaldo, o que inferimos e o que permanece desconhecido?","narodoznanie-care":"Respeite consentimento, procedência e limites de circulação. Material sensível ou controverso exige autorização separada.","narodoznanie-spec":"Abrir a especificação metodológica ↗","nitya-process-label":"etapas da prática NITYA","nitya-process-notice":"observar","nitya-process-practice":"experimentar","nitya-process-reflect":"refletir","nitya-process-pearl":"dar forma ao resultado","nitya-note":"NITYA é uma prática autoral de atenção e sentidos. O caminho e o crescimento vêm primeiro; um mapa ou uma “pérola” pode surgir como resultado, não como objeto prometido. Você pode sair quando quiser.","nitya-gate-clarity-desc":"Começar observando, distinguir interpretações e escolher um próximo passo possível.","nitya-play":"começar o caminho ↗","nitya-spec":"Como funciona a prática NITYA ↗"});
+    const languageLayers = ["ru", "en", "es", "pt-BR", "zh-Hans", "hi", "fr", "ar", "bn", "eo", "sa", "la", "yzh"];
+    const runtimeLocaleByLayer = {ru:"ru", en:"en", es:"es", "pt-BR":"pt"};
+    const fallbackNotice = {
+      ru:"Для этого языка пока нет сверенного перевода; сейчас показан русский исходник.",
+      en:"A reviewed translation is not available for this language yet; the Russian source is shown.",
+      es:"Todavía no hay una traducción revisada para este idioma; se muestra el texto original en ruso.",
+      "pt-BR":"Ainda não há tradução revisada para este idioma; o texto original em russo está sendo exibido.",
+      "zh-Hans":"此语言版本尚未审核；当前显示俄语原文。",
+      hi:"इस भाषा का अनुवाद अभी समीक्षित नहीं है; अभी रूसी मूल पाठ दिखाया जा रहा है।",
+      fr:"La traduction dans cette langue n’a pas encore été vérifiée ; le texte source russe s’affiche.",
+      ar:"لم تُراجع الترجمة إلى هذه اللغة بعد؛ يُعرض النص الروسي الأصلي حاليًا.",
+      bn:"এই ভাষার অনুবাদ এখনও পর্যালোচিত নয়; বর্তমানে রুশ মূল পাঠ দেখানো হচ্ছে।",
+      eo:"La traduko en ĉi tiu lingvo ankoraŭ ne estas kontrolita; nun montriĝas la rusa originalo.",
+      sa:"अस्यां भाषायां अनुवादः अद्यापि परीक्षितः नास्ति; अधुना रूसी मूलपाठः दृश्यते।",
+      la:"Versio huius linguae nondum verificata est; textus Russicus nunc ostenditur.",
+      yzh:"язэхъ · авторская транскреация не сверена; показан русский исходник."
+    };
+    const normalizeLanguage = code => code === "pt" ? "pt-BR" : languageLayers.includes(code) ? code : "ru";
     let locale = "ru";
+    let selectedLanguage = "ru";
     const applyLocale = code => {
-      locale = translations[code] ? code : "ru";
+      selectedLanguage = normalizeLanguage(code);
+      locale = runtimeLocaleByLayer[selectedLanguage] || "ru";
       document.documentElement.lang = locale === "pt" ? "pt-BR" : locale;
+      const status = document.getElementById("locale-status");
+      const translatedLayer = Object.prototype.hasOwnProperty.call(runtimeLocaleByLayer, selectedLanguage);
+      status.hidden = translatedLayer;
+      status.textContent = translatedLayer ? "" : fallbackNotice[selectedLanguage];
       document.title = ({ru:"∴ SUTI.world — язык твоей сути",en:"∴ SUTI.world — the language of your essence",es:"∴ SUTI.world — el lenguaje de tu esencia",pt:"∴ SUTI.world — a linguagem da sua essência"})[locale];
       for (const el of document.querySelectorAll("[data-i18n]")) { const value=translations[locale][el.dataset.i18n]; if(value)el.textContent=value; }
       for (const el of document.querySelectorAll("[data-i18n-html]")) { const value=translations[locale][el.dataset.i18nHtml]; if(value)el.innerHTML=value; }
       for (const el of document.querySelectorAll("[data-i18n-aria]")) { const value=translations[locale][el.dataset.i18nAria]; if(value)el.setAttribute("aria-label",value); }
       for (const el of document.querySelectorAll("[data-i18n-placeholder]")) { const value=translations[locale][el.dataset.i18nPlaceholder]; if(value)el.placeholder=value; }
       for (const el of document.querySelectorAll("[data-i18n-label]")) { const value=translations[locale][el.dataset.i18nLabel]; if(value)el.label=value; }
-      document.getElementById("locale-select").value=locale;
-      try { localStorage.setItem("suti-locale",locale); } catch {}
+      document.getElementById("locale-select").value=selectedLanguage;
+      try { localStorage.setItem("suti-locale",selectedLanguage); } catch {}
     };
     document.getElementById("locale-select").addEventListener("change",e=>applyLocale(e.currentTarget.value));
-    try { const saved=localStorage.getItem("suti-locale"); if(saved)locale=saved; } catch {}
-    const requestedLocale=new URLSearchParams(location.search).get("lang"); if(requestedLocale&&translations[requestedLocale])locale=requestedLocale;
+    try { const saved=localStorage.getItem("suti-locale"); if(saved)selectedLanguage=normalizeLanguage(saved); } catch {}
+    const requestedLocale=new URLSearchParams(location.search).get("lang"); if(requestedLocale)selectedLanguage=normalizeLanguage(requestedLocale);
     const qs=[...document.querySelectorAll(".clarity-question")], form=document.getElementById("clarity-form"); let mapText="", promptText="";
     const depthOrder={simple:1,steady:2,deep:3};
     function updateDepth(){const selected=form.querySelector('[name="depth"]:checked')?.value||"simple";qs.forEach(q=>{q.hidden=depthOrder[q.dataset.depthMin]>depthOrder[selected]});}
     form.querySelectorAll('[name="depth"]').forEach(input=>input.addEventListener("change",updateDepth));
     updateDepth();
-    applyLocale(locale);
+    applyLocale(selectedLanguage);
     const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     function collectMap(){const t=translations[locale],shown=qs.filter(q=>!q.hidden);return [`# ∴ ${t["map-title"]}`,...shown.map(q=>{const area=q.querySelector("textarea"),answer=area.value.trim();return `## ${t[`q${area.name.slice(1)}`]}\n\n${answer||t.empty}`})].join("\n\n");}
     function makeMapPrompt(){const t=translations[locale];return `# ${t["prompt-title"]}\n\n${t["prompt-instruction"]}\n\n${collectMap()}\n\n${t["prompt-boundary"]}`;}
