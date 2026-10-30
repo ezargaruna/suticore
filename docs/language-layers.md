@@ -26,6 +26,31 @@ content, the page keeps the selected layer visible and displays a notice that
 the Russian source text is being shown. The page's `lang` attribute continues
 to describe the language actually rendered.
 
+## Research collaboration brief
+
+`docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.
+The short invitation on the public home page is transcreated for the four
+runtime interfaces. Those summaries are not translations of the full brief.
+
+| Layer | Full brief | Home-page invitation |
+|---|---|---|
+| English (`en`) | Source edition | Available |
+| Russian (`ru`) | `HOLD` — full edition not started | Available |
+| Spanish (`es`) | `HOLD` — full edition not started | Available |
+| Brazilian Portuguese (`pt-BR`) | `HOLD` — full edition not started | Available |
+| Simplified Chinese (`zh-Hans`) | `HOLD` — not started | Russian fallback |
+| Hindi (`hi`) | `HOLD` — not started | Russian fallback |
+| French (`fr`) | `HOLD` — not started | Russian fallback |
+| Arabic (`ar`) | `HOLD` — not started | Russian fallback |
+| Bengali (`bn`) | `HOLD` — not started | Russian fallback |
+| Esperanto (`eo`) | `HOLD` — not started | Russian fallback |
+| Sanskrit (`sa`) | `HOLD` — not started | Russian fallback |
+| Latin (`la`) | `HOLD` — not started | Russian fallback |
+| Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
+
+`HOLD` here means that no full-language edition is being represented as
+available. It is not a negative judgment about the language or a translation.
+
 ## Adding a reviewed translation
 
 1. Translate all user-facing strings, accessible names, page metadata, and

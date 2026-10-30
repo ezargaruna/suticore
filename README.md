@@ -2,6 +2,32 @@
 
 ## clarity · essence · language
 
+SUTI is an author-created framework for making questions, evidence, language,
+and next steps easier to distinguish. Public materials include a live website,
+open specifications, and selected local-first practices. Each item states its
+own implementation and review status; a description is not a claim of
+scientific or clinical validation.
+
+### research collaboration
+
+AI, language, and human-computer interaction teams can review a bounded,
+no-fee research evaluation of selected public materials. The proposed scope,
+rights, data boundary, attribution, and publication terms are agreed before
+any transfer. This invitation does not imply an existing partnership or grant
+rights to private archives.
+
+Public byline: **Ezar Garuna · Saritama**. Creative work may also use the
+authorial poetic names **Velest**, **Dragoniaz**, **Prince Ingvar**, and
+**Kalki Velesta**. These names identify a creative voice; they are not
+credentials, official offices, or claims of authority.
+
+- [SUTI research collaboration brief](docs/research/SUTI_RESEARCH_COLLABORATION.md)
+- [Language-layer status](docs/language-layers.md)
+- [Public website](https://suti.world/)
+- [Source and releases](https://github.com/ezargaruna/suticore)
+
+The Russian navigation below is retained as an additional entry point.
+
 SUTIcore - это открытый цифровой фундамент для операционной системы жизни
 система проектирования смыслов, управления вниманием и архитектуры действий
 
@@ -55,7 +81,8 @@ quiet luxury x living earth x natural craft
 
 ## ∴ контакты и авторство
 
-ezar garuna :: semantic architect
+Ezar Garuna · Saritama :: language and semantic architecture
+creative signature :: Velest · Dragoniaz · Prince Ingvar · Kalki Velesta
 SUTI.world :: open source for living
 
 clear words :: considered choices :: a grounded next step
