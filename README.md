@@ -1,88 +1,69 @@
-# ∴ SUTIcore
+# ∴ SUTI
 
-## clarity · essence · language
+**A language and semantic architecture for clearer questions, traceable meaning, and considered next steps.**
 
-SUTI is an author-created framework for making questions, evidence, language,
-and next steps easier to distinguish. Public materials include a live website,
-open specifications, and selected local-first practices. Each item states its
-own implementation and review status; a description is not a claim of
-scientific or clinical validation.
+SUTI is an author-created framework and a set of public specifications, working interfaces, and portable materials. The repository contains several maturity levels. A concept, page, or prototype does not by itself establish a deployed service, independent validation, or an existing partnership.
 
-### research collaboration
+## Start here
 
-AI, language, and human-computer interaction teams can review a bounded,
-no-fee research evaluation of selected public materials. The proposed scope,
-rights, data boundary, attribution, and publication terms are agreed before
-any transfer. This invitation does not imply an existing partnership or grant
-rights to private archives.
+- [Open SUTI.world](https://suti.world/) — public entry point
+- [Try the current site build](https://ezargaruna.github.io/suticore/)
+- [Start with the portable SUTI.os vault](https://github.com/ezargaruna/SUTI.os) — read the [installation and use guide](SUTI_START_HERE.md)
+- [Explore the system map](docs/ecosystem-map.md) — modules, maturity, and possible next steps
+- [Review the research proposal](docs/research/SUTI_RESEARCH_COLLABORATION.md)
+- [Check language-layer status](docs/language-layers.md)
+- [GitHub README language editions](docs/readme-locales.md)
 
-Public byline: **Ezar Garuna · Saritama**. Creative work may also use the
-authorial poetic names **Velest**, **Dragoniaz**, **Prince Ingvar**, and
-**Kalki Velesta**. These names identify a creative voice; they are not
-credentials, official offices, or claims of authority.
+## One system, distinct layers
 
-- [SUTI research collaboration brief](docs/research/SUTI_RESEARCH_COLLABORATION.md)
-- [Language-layer status](docs/language-layers.md)
-- [Public website](https://suti.world/)
-- [Source and releases](https://github.com/ezargaruna/suticore)
+| Layer | What it is | Current boundary |
+|---|---|---|
+| **SUTIcore** | Shared concepts and semantic constraints | Author-created framework; not a claim of scientific or clinical validation |
+| **SUTI.world** | Public website and human-facing entry | Website and individual routes have separate implementation status |
+| **SUTI.os** | Portable Markdown workspace | Distributed from its own public repository and release artifacts |
+| **LinguaFUSION** | Language practice, transcreation, and contextual transfer | The site has reviewed runtime text in four locales; full coverage of all 13 layers is not claimed |
+| **NITYA** | Proposed optional, game-shaped route into practices and world-building | A product direction; feature-specific runtime and release checks are required, and no assessment of a person is intended |
+| **SOTKAN / research commons** | Source-linked research, ideas, and community exchange | Proposed structure; no deployed research network is claimed here |
+| **SUTI.dao / VECHE** | Possible governance and multi-perspective review | Design concepts only; no live DAO, token, treasury, vote, or delegated authority is claimed |
 
-The Russian navigation below is retained as an additional entry point.
+See the [system map](docs/ecosystem-map.md) for implementation status, research questions, and a staged development path. The names identify related work; they do not imply that every module is a separate application or already integrated at runtime.
 
-SUTIcore - это открытый цифровой фундамент для операционной системы жизни
-система проектирования смыслов, управления вниманием и архитектуры действий
+## How the work is organized
 
----
+```text
+question and intended use
+→ selected sources and rights
+→ distinctions, claims, and uncertainty
+→ language and structured relationships
+→ a human-readable interface or portable artifact
+→ user correction and observed result
+```
 
-## ⟁ путь погружения (suti-map)
+The person using SUTI remains the decision-maker. Sources, observations, interpretations, hypotheses, and unknowns should remain distinguishable. Outputs should be editable, correctable, and proportionate to the task.
 
-`ощущение` — `инструмент` — `система` — `фундамент` — `горизонт`
+## Research and collaboration
 
-### 01. первый шаг (essence)
-`для тех, кто хочет почувствовать ритм и эстетику`
-- [index.html](index.html) :: визуальная витрина и первый вдох
-- [presets/](presets/) :: готовые настройки для терминала и Obsidian (настрой свой уют)
-- [SUTI_START_HERE.md](SUTI_START_HERE.md) :: простой гид по развертыванию
+The [research brief](docs/research/SUTI_RESEARCH_COLLABORATION.md) proposes small, bounded evaluations using public or synthetic materials. It defines questions and possible measures without assuming a positive result. Any transfer, reuse, data handling, attribution, derivative work, or publication needs a separate written scope and the applicable rights review.
 
-### 02. прикладные инструменты (utility)
-`для тех, кто хочет начать применять suti в жизни`
-- [meta/frameworks/GUIDE.md](meta/frameworks/GUIDE.md) :: как использовать методы в реальности
-- [meta/templates/](meta/templates/) :: готовые шаблоны аудита и контрактов
-- [meta/linguafusion/](meta/linguafusion/) :: настройка своего языка и семантического профиля
-- [docs/language-layers.md](docs/language-layers.md) :: языковые слои сайта и статус переводов
+## Languages
 
-### 03. операционная среда (system)
-`для тех, кто хочет понять, как устроена машина`
-- [core/](core/) :: семантическое ядро и логика (SUTI.jsonld)
-- [app/](app/) :: интерфейс suti-world
-- [internal/](internal/) :: системные инструменты и верификация
-- [bin/](bin/) :: консольные утилиты управления
+The website exposes 13 language and authorial-language layers. Current runtime coverage and fallback behavior are described in [language-layer status](docs/language-layers.md). An available selector is not proof that every page or document has been translated or reviewed. Yazekh is an authorial language experiment, not a historical reconstruction.
 
-### 04. глубокий фундамент (kernel)
-`для тех, кто ищет первопричины и аксиомы`
-- [meta/kernel/](meta/kernel/) :: различение, суверенитет и дисциплина ясности
-- [meta/canon/](meta/canon/) :: канон suti-world и символы
-- [LICENSE](LICENSE) :: философия открытого дара (MIT)
+## Maturity and limits
 
-### 05. расширение сознания (future)
-`самое интересное: интерфейсы будущего и новые миры`
-- [meta/future_tech/MANIFESTO.md](meta/future_tech/MANIFESTO.md) :: VR, XR и сенсориальные органеллы
-- [meta/artifacts/vault/](meta/artifacts/vault/) :: хранилище цифровых тотемов и артефактов
+- **Available** means a specific public artifact or route can be inspected.
+- **Prototype** means an implementation exists but is not thereby production-ready.
+- **Proposed** means a design or research direction, not a running service.
+- **Unknown / on hold** means evidence or review is not yet sufficient.
 
----
+SUTI does not claim medical, psychological, legal, or scientific authority. Do not use its symbolic or reflective material as diagnosis, coercion, ranking, or evidence about another person's identity or consent. Report defects or disagreements with a reproducible example and the artifact version where possible.
 
-## ⧖ основные принципы
+## Contributing
 
-quiet luxury x living earth x natural craft
-минимизация шума :: максимальная ясность
-суверенность человека :: автономия разума
-семантическая точность :: чистота определений
+Start with a bounded change and identify its source, audience, intended use, rights, language, and maturity. Keep private or sensitive records out of public issues and pull requests. See [repository contribution guidance](meta/community/contributing.md) and [AI-use policy](meta/ai_support/ai-usage-policy.md).
 
----
+## Authorship
 
-## ∴ контакты и авторство
+Public byline: **Ezar Garuna · Saritama**. Other poetic names used in creative work are authorial signatures, not credentials, public offices, or claims of authority.
 
-Ezar Garuna · Saritama :: language and semantic architecture
-creative signature :: Velest · Dragoniaz · Prince Ingvar · Kalki Velesta
-SUTI.world :: open source for living
-
-clear words :: considered choices :: a grounded next step
+The Russian entry remains available at [ru/](ru/). Repository and file-level licenses govern reuse; the SUTI name and marks are not granted automatically by a code or content license.

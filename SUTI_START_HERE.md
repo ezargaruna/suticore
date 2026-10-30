@@ -1,46 +1,37 @@
----
-id: SUTI-start-here
-title: SUTI.os : start here
-status: public
-version: 2027.1
-provenance: authorial
----
+# Start with SUTI
 
-∴ navigation
-start :: [SUTI_START_HERE.md](SUTI_START_HERE.md)
-houses :: [meta/framework/SUTI_HOUSES_SYSTEM.md](meta/framework/SUTI_HOUSES_SYSTEM.md)
-canon :: [meta/00_KERNEL/CANON.md](meta/00_KERNEL/CANON.md)
-root :: [README.md](README.md)
+**Source language:** English  
+**Purpose:** help a first-time visitor choose the right public entry.
 
----
+## Choose a starting point
 
-# SUTI.os : операционная среда для упорядочивания жизни
+### I want to understand the project
 
-добро пожаловать в SUTIcore. это не просто набор файлов, а функциональная надстройка над вашим рабочим пространством (рекомендуется Obsidian), предназначенная для превращения хаоса в структуру, а времени - в след
+Read the [repository overview](README.md), then the [SUTI ecosystem map](docs/ecosystem-map.md). The map separates public artifacts, prototypes, and proposals.
 
-## что такое SUTI.os?
+### I want to use the portable workspace
 
-SUTI.os - это система различения, связывания и действия. она помогает пользователю организовать свою жизнь как единую экосистему, где каждый элемент (задача, мысль, событие) занимает своё место согласно семантической логике
+Open the separate [SUTI.os repository](https://github.com/ezargaruna/SUTI.os). Read its README, download the latest release, and open the extracted `vault/` as a separate Markdown or Obsidian vault. Do not extract over an existing vault. SUTI.os can be read without an account or AI service.
 
-## как начать работу (quick start)
+### I want to explore the public website
 
-1. **развертывание**: склонируйте этот репозиторий в свой Obsidian vault
-2. **настройка ядра**: ознакомьтесь с `meta/00_kernel/canon.md` и `meta/system/prime_directive.md`. это ваши правила игры
-3. **организация пространства**: используйте систему 12 обителей (`meta/framework/SUTI_houses_system.md`) для распределения всех сфер вашей жизни
-4. **запуск протокола**: начните практиковать `sreteniya_os` (observe → distinguish → relate → verify → decide → act → trace → adapt)
+Visit [SUTI.world](https://suti.world/). Start with the route and task that make sense to you; reflective or game-shaped routes are optional and can be skipped.
 
-## структура системы
+### I want to discuss research
 
-- `meta/` : сердце системы. здесь хранятся все фреймворки, законы и модули мистерий
-- `bin/` : инструменты автоматизации (если установлены)
-- `agents/` : инструкции для ваших ии-помощников, чтобы они работали в стиле SUTI
-- `templates/` : формы для быстрого создания заметок
+Read the [research collaboration brief](docs/research/SUTI_RESEARCH_COLLABORATION.md). It proposes bounded evaluation using public or synthetic material. It does not claim an existing partnership or independent validation.
 
-## философия чистоты
+### I want to contribute
 
-SUTI.os работает на принципе «quiet luxury x living earth». это значит:
-- минимум визуального шума
-- максимальная точность слов
-- приоритет человеческой автономии над автоматизацией
+Use the [contribution guidance](meta/community/contributing.md). Keep private, personal, and sensitive information out of public issues and pull requests. State the source, intended reader, rights basis, and maturity of a proposed change.
 
-*SUTIcore - это витрина артефактов. возьмите из неё то, что резонирует с вашим текущим состоянием, и сделайте это своим инструментом.*
+## What to expect
+
+- A project page may describe a specification or proposal rather than a deployed feature.
+- The site exposes 13 language layers, but full reviewed translations are not available for every layer or artifact. See [language status](docs/language-layers.md).
+- No personal notes are imported into the public site or repository by this guide.
+- SUTI is not a substitute for clinical, legal, financial, or emergency services.
+
+## Language status for this guide
+
+English is the source edition. The other 12 editions are `HOLD` until separately transcreated and reviewed; see [`start-here-locales.md`](docs/start-here-locales.md).
