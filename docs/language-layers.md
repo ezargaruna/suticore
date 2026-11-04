@@ -26,6 +26,13 @@ content, the page keeps the selected layer visible and displays a notice that
 the Russian source text is being shown. The page's `lang` attribute continues
 to describe the language actually rendered.
 
+“Available” means that a runtime dictionary is active and covers the page's
+translation markers. It is not independent certification of native-speaker or
+cultural quality. The 2026-11-04 reverse UI audit found and corrected seven
+visible labels that had bypassed those markers; all 285 marked strings now have
+values in each active runtime dictionary. See
+[`docs/audits/2026-11-04-suti-world-language-audit.md`](audits/2026-11-04-suti-world-language-audit.md).
+
 ## Research collaboration brief
 
 `docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.
