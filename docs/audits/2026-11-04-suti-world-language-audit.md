@@ -4,7 +4,7 @@ Date: 2026-11-04
 
 Scope: public static entry page, `index.html`
 
-Review type: reverse UI-string inventory and structural locale audit
+Review type: reverse UI-string inventory, care-entry review, and structural/runtime locale audit
 
 ## Findings and correction
 
@@ -17,6 +17,10 @@ transcreations have not been reviewed and are not represented as complete.
 The reverse inventory found seven visible Russian labels that were outside the
 translation markers. They are now wired to the existing four runtime
 dictionaries. EN, ES, and PT-BR use localized copy; Russian remains the source.
+The care questionnaire is now the first section in `main`: brief (two choices),
+steady (adds pace and a boundary), and deeper (adds one self-chosen next step).
+The local note reflects only visible selections; clearing returns to the brief
+path. The nine-layer fallback notice and unstaffed-service boundary remain visible.
 
 ## Structural verification
 
@@ -30,6 +34,10 @@ dictionaries. EN, ES, and PT-BR use localized copy; Russian remains the source.
 - The fallback notice carries the selected layer's language; Arabic notice text
   uses RTL direction while the Russian fallback content remains LTR.
 - Static structure check: no duplicate IDs and no broken local fragment links.
+- Emulated Chrome viewport at 390 px: document width stays 390 px; all three
+  depths reveal the intended questions; the note reflects selections; Clear
+  restores the brief path and hides the note. Desktop and mobile first-screen
+  layout inspected.
 
 These checks establish key coverage and structural consistency. They do not
 establish native-speaker review, cultural suitability, or complete reviewed
@@ -39,8 +47,8 @@ behavior for Arabic.
 
 ## Status
 
-Four runtime locales: structural key coverage `PASS`; linguistic and cultural
-quality: not independently certified.
+Four runtime locales: structural key coverage and care-entry interaction
+`PASS`; linguistic and cultural quality: not independently certified.
 
 Nine fallback layers: truthful fallback behavior `PASS`; full transcreation
 `HOLD`.

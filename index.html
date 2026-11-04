@@ -339,7 +339,7 @@
     [data-theme="night"] .wordmark-name { color:var(--suti-text); }
     [data-theme="night"] .wordmark .logo-master { mix-blend-mode:screen; filter:invert(1) hue-rotate(150deg) saturate(.75); }
     [data-theme="contrast"] .wordmark .logo-master { filter:grayscale(1) contrast(1.4); mix-blend-mode:multiply; }
-    .hero h1 { max-width:20ch; font-size:clamp(3rem,4.7vw,4rem); letter-spacing:-.04em; }
+    .hero h1, .hero h2 { max-width:20ch; font-size:clamp(3rem,4.7vw,4rem); letter-spacing:-.04em; }
     .hero { min-height:570px; padding-block:clamp(88px,12vw,150px); }
     .section { padding-block:clamp(82px,11vw,136px); }
     .setup { background:color-mix(in srgb,var(--suti-surface) 88%,var(--suti-aqua)); }
@@ -388,7 +388,7 @@
       .locale-status { grid-column: 1 / -1; margin: 4px 0 2px; text-align: center; }
       .theme-tools { gap: 1px; }
       .theme-tools button { min-width: 36px; padding-inline: 7px; font-size: .72rem; }
-      .hero h1 { max-width: 18ch; font-size: clamp(2.35rem, calc(11vw * var(--suti-type-scale)), 3.2rem); line-height: 1.06; }
+      .hero h1, .hero h2 { max-width: 18ch; font-size: clamp(2.35rem, calc(11vw * var(--suti-type-scale)), 3.2rem); line-height: 1.06; }
       .lead { max-width: 100%; overflow-wrap: break-word; }
       .choice-grid, .method-grid, .who-grid { grid-template-columns: 1fr; }
       .method-step { min-height: 160px; }
@@ -563,6 +563,20 @@
     [data-theme="contrast"] .nitya-portal { background: var(--suti-bg); }
     [data-theme="contrast"] .nitya-portal::before, [data-theme="contrast"] .nitya-portal::after { display: none; }
     [data-theme="contrast"] .nitya-gate { background: var(--suti-surface); backdrop-filter: none; box-shadow: none; }
+    .care-entry { padding-block:clamp(34px,6vw,76px); }
+    .care-heading { max-width:760px; }
+    .care-heading h1 { max-width:18ch; margin:.35rem 0 .7rem; font-size:clamp(2.2rem,5vw,4.2rem); }
+    .care-depth { margin:0 0 20px; padding:0; border:0; }
+    .care-depth legend { margin-bottom:10px; color:var(--suti-muted); font-size:.9rem; font-weight:650; }
+    .care-depth-options { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+    .care-depth-options label { display:flex; align-items:center; gap:9px; min-height:52px; padding:10px 13px; border:1px solid var(--suti-line); border-radius:12px; background:var(--suti-surface); cursor:pointer; }
+    .care-depth-options input { width:18px; height:18px; flex:0 0 auto; accent-color:var(--suti-turquoise); }
+    .care-depth-options label:has(input:checked) { border-color:var(--suti-turquoise); box-shadow:inset 0 0 0 1px var(--suti-turquoise); }
+    .care-depth-fields { grid-column:1/-1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .care-depth-fields[hidden] { display:none; }
+    .care-result h2 { margin-bottom:8px; font-size:1.1rem; }
+    [data-theme="contrast"] .care-depth-options label { border-width:2px; }
+    @media(max-width:780px) { .care-depth-options { grid-template-columns:1fr; } .care-depth-fields { grid-template-columns:1fr; } }
     .care-entry { background:linear-gradient(120deg,color-mix(in srgb,var(--suti-peach) 17%,var(--suti-bg)),var(--suti-surface) 52%,color-mix(in srgb,var(--suti-aqua) 74%,var(--suti-bg))); }
     .care-heading { max-width:620px; }
     .care-form { max-width:980px; padding:clamp(18px,3vw,30px); border:1px solid var(--suti-line); border-radius:var(--suti-radius); background:color-mix(in srgb,var(--suti-surface) 88%,transparent); box-shadow:0 12px 34px var(--suti-shadow); }
@@ -581,6 +595,14 @@
     [data-theme="night"] .care-entry { background:linear-gradient(120deg,#302826,#172D29 54%,#173A36); }
     [data-theme="contrast"] .care-entry { background:var(--suti-bg); }
     @media(max-width:780px) { .care-fields,.care-boundary { grid-template-columns:1fr; } }
+    @media(max-width:520px) {
+      .care-entry { padding-block:20px; }
+      .care-form { padding:16px; }
+      .care-depth-options { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+      .care-depth-options label { min-height:86px; align-items:flex-start; gap:6px; padding:10px 7px; font-size:.76rem; }
+      .care-depth-options input { width:16px; height:16px; margin-top:2px; }
+      .care-depth-options label span { min-width:0; }
+    }
     @keyframes nitya-thread-glow { 0%, 100% { opacity: .28; filter: hue-rotate(-8deg); } 50% { opacity: .78; filter: hue-rotate(8deg); } }
     @media (max-width: 780px) { .nitya-portal::after { right: -14%; bottom: 18%; width: 92vw; } }
     @media (prefers-reduced-motion: reduce) { .nitya-portal::after { animation: none; } }
@@ -589,7 +611,7 @@
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
   <header class="wrap topbar">
-    <a class="wordmark" href="#top" aria-label="∴ SUTI.world — home" data-i18n-aria="wordmark-label"><img class="logo-master" src="https://ezargaruna.github.io/suticore/assets/brand/suti-mark-main.png" alt=""><span class="wordmark-name"><span class="brand-sigil" aria-hidden="true">∴</span>SUTI<span>.</span>world</span><span class="wordmark-tagline" data-i18n="footer-tagline">язык твоей сути</span></a>
+    <a class="wordmark" href="#care" aria-label="∴ SUTI.world — home" data-i18n-aria="wordmark-label"><img class="logo-master" src="https://ezargaruna.github.io/suticore/assets/brand/suti-mark-main.png" alt=""><span class="wordmark-name"><span class="brand-sigil" aria-hidden="true">∴</span>SUTI<span>.</span>world</span><span class="wordmark-tagline" data-i18n="footer-tagline">язык твоей сути</span></a>
     <div class="topbar-tools">
       <div class="type-size-tools" role="group" aria-label="размер текста">
         <button type="button" data-text-size="down" aria-label="уменьшить размер текста" data-i18n-aria="size-down">A−</button>
@@ -606,12 +628,56 @@
   </header>
   <nav class="wrap site-nav" aria-label="Primary navigation" data-i18n-aria="nav-label"><a href="#care" data-i18n="nav-start">Start</a><a href="#nitya" data-i18n="nav-nitya">Play</a><a href="#library" data-i18n="nav-library">Library</a><a href="#language" data-i18n="nav-language">Languages</a><a href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="gift-link">Download SUTI.os</a></nav>
   <main id="main">
+    <section class="section care-entry" id="care" aria-labelledby="care-title">
+      <div class="wrap">
+        <div class="section-head care-heading">
+          <p class="eyebrow" data-i18n="care-eyebrow">✳ SUTI.care · voluntary · local</p>
+          <h1 id="care-title" data-i18n="care-title">What kind of care helps?</h1>
+          <p data-i18n="care-intro">Start small. Go deeper only if you choose.</p>
+        </div>
+        <div class="care-form" id="care-form" role="group" aria-labelledby="care-title">
+          <fieldset class="care-depth">
+            <legend data-i18n="care-depth-label">Choose a depth</legend>
+            <div class="care-depth-options">
+              <label><input type="radio" name="care-depth" value="simple" checked><span data-i18n="care-depth-simple">Brief · 2 choices</span></label>
+              <label><input type="radio" name="care-depth" value="steady"><span data-i18n="care-depth-steady">Steady · +2 questions</span></label>
+              <label><input type="radio" name="care-depth" value="deep"><span data-i18n="care-depth-deep">Deeper · +1 step</span></label>
+            </div>
+          </fieldset>
+          <div class="care-fields">
+            <label for="care-intent"><span data-i18n="care-intent-label">How are you arriving?</span>
+              <select id="care-intent" name="intent"><option value="receive" data-i18n="care-intent-receive">I’m looking for support</option><option value="offer" data-i18n="care-intent-offer">I’d like to offer support</option><option value="explore" selected data-i18n="care-intent-explore">I’m exploring</option></select>
+            </label>
+            <label for="care-need"><span data-i18n="care-need-label">What might help?</span>
+              <select id="care-need" name="need"><option value="listen" data-i18n="care-need-listen">Space to be heard</option><option value="language" data-i18n="care-need-language">Find the words</option><option value="practical" data-i18n="care-need-practical">One small task</option><option value="access" data-i18n="care-need-access">An accessible format</option><option value="pause" selected data-i18n="care-need-pause">A pause</option></select>
+            </label>
+            <div class="care-depth-fields" data-care-depth-min="steady" hidden>
+              <label for="care-pace"><span data-i18n="care-pace-label">What pace feels right?</span>
+                <select id="care-pace" name="pace"><option value="now" data-i18n="care-pace-now">Now</option><option value="later" data-i18n="care-pace-later">Later</option><option value="none" selected data-i18n="care-pace-none">No deadline</option></select>
+              </label>
+              <label for="care-protect"><span data-i18n="care-protect-label">What should this respect?</span>
+                <select id="care-protect" name="protect"><option value="privacy" data-i18n="care-protect-privacy">Privacy</option><option value="energy" data-i18n="care-protect-energy">My energy</option><option value="time" data-i18n="care-protect-time">My time</option><option value="choice" data-i18n="care-protect-choice">My choice</option></select>
+              </label>
+            </div>
+            <div class="care-depth-fields" data-care-depth-min="deep" hidden>
+              <label for="care-step"><span data-i18n="care-step-label">What is one gentle next step?</span>
+                <select id="care-step" name="step"><option value="pause" data-i18n="care-step-pause">Pause for a moment</option><option value="write" data-i18n="care-step-write">Write one sentence</option><option value="trusted" data-i18n="care-step-trusted">Reach out to someone I trust</option><option value="task" data-i18n="care-step-task">Try one small task</option><option value="stop" data-i18n="care-step-stop">Stop here for now</option></select>
+              </label>
+            </div>
+          </div>
+          <div class="care-actions"><button class="primary" type="button" id="care-build" data-i18n="care-build">Make my note</button><button class="quiet-action" type="button" id="care-clear" data-i18n="care-clear">Clear</button></div>
+          <p class="local-note" data-i18n="care-local">Your choices stay in this tab. Nothing is sent or saved.</p>
+          <article class="care-result" id="care-result" aria-live="polite" hidden><h2 data-i18n="care-result-title">Your note · stays here</h2><p id="care-result-text"></p></article>
+        </div>
+        <aside class="care-boundary"><p><strong data-i18n="care-image-title">Flamingo · angels of care</strong><br><span data-i18n="care-image-note">An author-created image for a proposed voluntary circle, not a staffed service.</span></p><p data-i18n="care-boundary">This self-guided prototype does not connect people. It is not medical, legal, or crisis support.</p><p data-i18n="care-urgent">In immediate danger, contact local emergency services or someone you trust.</p></aside>
+      </div>
+    </section>
     <section class="wrap hero" id="top" aria-labelledby="hero-title">
       <div>
         <p class="eyebrow" data-i18n="hero-eyebrow"><span class="symbol" aria-hidden="true">◎</span> SUTI.world · language for your world</p>
-        <h1 id="hero-title" data-i18n-html="hero-title">Find your words.<br>Choose your <span class="hero-highlight">next step.</span></h1>
+        <h2 id="hero-title" data-i18n-html="hero-title">Find your words.<br>Choose your <span class="hero-highlight">next step.</span></h2>
         <p class="lead" data-i18n="hero-lead">A small language game for what matters now. Play, learn, or take your SUTI.os vault offline.</p>
-        <a class="primary" href="#care" data-i18n="hero-cta">Choose a path ↓</a>
+        <a class="primary" href="#nitya" data-i18n="hero-cta">Choose a path ↓</a>
         <a class="hero-download quiet-action" href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="hero-download">Download the local vault</a>
       </div>
       <div class="hero-aside">
@@ -630,32 +696,7 @@
       </div>
     </section>
 
-    <section class="section care-entry" id="care" aria-labelledby="care-title">
-      <div class="wrap">
-        <div class="section-head care-heading">
-          <p class="eyebrow" data-i18n="care-eyebrow">✳ SUTI.care · voluntary · local</p>
-          <h2 id="care-title" data-i18n="care-title">What kind of care helps?</h2>
-          <p data-i18n="care-intro">Pick, skip, or leave. No story required.</p>
-        </div>
-        <div class="care-form" id="care-form" role="group" aria-labelledby="care-title">
-          <div class="care-fields">
-            <label for="care-intent"><span data-i18n="care-intent-label">Today I want…</span>
-              <select id="care-intent" name="intent"><option value="receive" data-i18n="care-intent-receive">ask for support</option><option value="offer" data-i18n="care-intent-offer">offer a little help</option><option value="explore" selected data-i18n="care-intent-explore">just look around</option></select>
-            </label>
-            <label for="care-need"><span data-i18n="care-need-label">What would help?</span>
-              <select id="care-need" name="need"><option value="listen" data-i18n="care-need-listen">be heard</option><option value="language" data-i18n="care-need-language">find the words</option><option value="practical" data-i18n="care-need-practical">plan one small task</option><option value="access" data-i18n="care-need-access">choose an accessible format</option><option value="pause" selected data-i18n="care-need-pause">take a pause</option></select>
-            </label>
-            <label for="care-pace"><span data-i18n="care-pace-label">At what pace?</span>
-              <select id="care-pace" name="pace"><option value="now" data-i18n="care-pace-now">now</option><option value="later" data-i18n="care-pace-later">later</option><option value="none" selected data-i18n="care-pace-none">no timing</option></select>
-            </label>
-          </div>
-          <div class="care-actions"><button class="primary" type="button" id="care-build" data-i18n="care-build">Make my note</button><button class="quiet-action" type="button" id="care-clear" data-i18n="care-clear">Clear</button></div>
-          <p class="local-note" data-i18n="care-local">Your choice stays in this tab. Nothing is sent or saved.</p>
-          <article class="care-result" id="care-result" aria-live="polite" hidden><h3 data-i18n="care-result-title">Your note · stays here</h3><p id="care-result-text"></p></article>
-        </div>
-        <aside class="care-boundary"><p><strong data-i18n="care-image-title">Flamingo · angels of care</strong><br><span data-i18n="care-image-note">An author-created image for a proposed voluntary circle, not a staffed service.</span></p><p data-i18n="care-boundary">This self-guided prototype does not connect people. It is not medical, legal, or crisis support.</p><p data-i18n="care-urgent">In immediate danger, contact local emergency services or someone you trust.</p></aside>
-      </div>
-    </section>
+
     <section class="section nitya-portal" id="nitya" aria-labelledby="nitya-title">
       <div class="wrap">
         <div class="section-head nitya-heading"><p class="eyebrow" data-i18n="nitya-eyebrow">⟡ NITYA · игровой вход</p><h2 id="nitya-title" data-i18n="nitya-title">Куда отправимся сегодня?</h2><p data-i18n="nitya-intro">Выбери одну нить. Здесь нет правильного маршрута: можно передумать, пропустить шаг или просто посмотреть.</p></div>
@@ -917,6 +958,12 @@
     Object.assign(translations.en,{"free-entry":"◇ free · no sign-up","library-eyebrow":"◇ open library","example-eyebrow":"∴ example","vault-eyebrow":"∴ SUTI.os · open entry","language-eyebrow":"≋ language · practice","learning-tag":"learning","team-tag":"team"});
     Object.assign(translations.es,{"free-entry":"◇ gratis · sin registro","library-eyebrow":"◇ biblioteca abierta","example-eyebrow":"∴ ejemplo","vault-eyebrow":"∴ SUTI.os · acceso abierto","language-eyebrow":"≋ idiomas · práctica","learning-tag":"aprendizaje","team-tag":"equipo"});
     Object.assign(translations.pt,{"free-entry":"◇ grátis · sem cadastro","library-eyebrow":"◇ biblioteca aberta","example-eyebrow":"∴ exemplo","vault-eyebrow":"∴ SUTI.os · acesso aberto","language-eyebrow":"≋ idiomas · prática","learning-tag":"aprendizagem","team-tag":"equipe"});
+
+    Object.assign(translations.en,{"care-eyebrow":"✳ SUTI.care · care angels · voluntary · local","care-intro":"Start small. Go deeper only if you choose.","care-depth-label":"Choose a depth","care-depth-simple":"Brief · 2 choices","care-depth-steady":"Steady · +2 questions","care-depth-deep":"Deeper · +1 step","care-intent-label":"How are you arriving?","care-intent-receive":"I’m looking for support","care-intent-offer":"I’d like to offer support","care-intent-explore":"I’m exploring","care-need-label":"What might help?","care-protect-label":"What should this respect?","care-protect-privacy":"Privacy","care-protect-energy":"My energy","care-protect-time":"My time","care-protect-choice":"My choice","care-step-label":"What is one gentle next step?","care-step-pause":"Pause for a moment","care-step-write":"Write one sentence","care-step-trusted":"Reach out to someone I trust","care-step-task":"Try one small task","care-step-stop":"Stop here for now","care-result-protect":"Protect","care-result-step":"Next step","hero-cta":"Play NITYA ↓"});
+    Object.assign(translations.ru,{"care-eyebrow":"✳ SUTI.care · ангелы заботы · добровольно · локально","care-title":"Какая забота нужна сейчас?","care-intro":"Начни с малого. Углубляйся, только если хочется.","care-depth-label":"Выбери глубину","care-depth-simple":"Коротко · 2 выбора","care-depth-steady":"Спокойно · +2 вопроса","care-depth-deep":"Глубже · +1 шаг","care-intent-label":"С чем ты пришёл?","care-intent-receive":"Ищу поддержку","care-intent-offer":"Хочу поддержать другого","care-intent-explore":"Пока осматриваюсь","care-need-label":"Что может помочь?","care-protect-label":"Что важно беречь?","care-protect-privacy":"Приватность","care-protect-energy":"Мои силы","care-protect-time":"Моё время","care-protect-choice":"Мой выбор","care-step-label":"Какой один бережный шаг возможен?","care-step-pause":"Ненадолго остановиться","care-step-write":"Записать одну фразу","care-step-trusted":"Обратиться к тому, кому доверяю","care-step-task":"Попробовать одно небольшое дело","care-step-stop":"На сегодня закончить","care-result-protect":"Беречь","care-result-step":"Следующий шаг","hero-cta":"Играть в NITYA ↓"});
+    Object.assign(translations.es,{"care-eyebrow":"✳ SUTI.care · ángeles del cuidado · voluntario · local","care-title":"¿Qué cuidado te ayudaría ahora?","care-intro":"Empieza con poco. Profundiza solo si quieres.","care-depth-label":"Elige la profundidad","care-depth-simple":"Breve · 2 elecciones","care-depth-steady":"Con calma · +2 preguntas","care-depth-deep":"Más a fondo · +1 paso","care-intent-label":"¿Qué buscas hoy?","care-intent-receive":"Busco apoyo","care-intent-offer":"Quiero ofrecer apoyo","care-intent-explore":"Estoy explorando","care-need-label":"¿Qué podría ayudar?","care-protect-label":"¿Qué quieres cuidar?","care-protect-privacy":"Mi privacidad","care-protect-energy":"Mi energía","care-protect-time":"Mi tiempo","care-protect-choice":"Mi capacidad de elegir","care-step-label":"¿Cuál sería un siguiente paso amable?","care-step-pause":"Hacer una pausa","care-step-write":"Escribir una frase","care-step-trusted":"Hablar con alguien de confianza","care-step-task":"Probar una tarea pequeña","care-step-stop":"Dejarlo aquí por ahora","care-result-protect":"Cuidar","care-result-step":"Siguiente paso","hero-cta":"Jugar a NITYA ↓"});
+    Object.assign(translations.pt,{"care-eyebrow":"✳ SUTI.care · anjos do cuidado · voluntário · local","care-title":"Que cuidado pode ajudar agora?","care-intro":"Comece pelo simples. Vá mais fundo só se quiser.","care-depth-label":"Escolha a profundidade","care-depth-simple":"Breve · 2 escolhas","care-depth-steady":"Com calma · +2 perguntas","care-depth-deep":"Mais fundo · +1 passo","care-intent-label":"O que você busca hoje?","care-intent-receive":"Estou buscando apoio","care-intent-offer":"Quero oferecer apoio","care-intent-explore":"Estou conhecendo","care-need-label":"O que pode ajudar?","care-protect-label":"O que é importante preservar?","care-protect-privacy":"Minha privacidade","care-protect-energy":"Minha energia","care-protect-time":"Meu tempo","care-protect-choice":"Meu poder de escolha","care-step-label":"Qual seria um próximo passo cuidadoso?","care-step-pause":"Fazer uma pausa","care-step-write":"Escrever uma frase","care-step-trusted":"Conversar com alguém de confiança","care-step-task":"Tentar uma tarefa pequena","care-step-stop":"Parar por aqui, por enquanto","care-result-protect":"Preservar","care-result-step":"Próximo passo","hero-cta":"Jogar NITYA ↓"});
+
     document.getElementById("locale-select").addEventListener("change",e=>applyLocale(e.currentTarget.value));
     try { const saved=localStorage.getItem("suti-locale"); if(saved)selectedLanguage=normalizeLanguage(saved); } catch {}
     const requestedLocale=new URLSearchParams(location.search).get("lang"); if(requestedLocale)selectedLanguage=normalizeLanguage(requestedLocale);
@@ -927,9 +974,21 @@
     updateDepth();
     applyLocale(selectedLanguage);
     const careForm=document.getElementById("care-form"), careResult=document.getElementById("care-result");
-    document.getElementById("care-build").addEventListener("click",()=>{const pick=name=>careForm.querySelector(`[name="${name}"]`).selectedOptions[0].textContent,dict=translations[locale];document.getElementById("care-result-text").textContent=`${dict["care-result-intent"]}: ${pick("intent")} · ${dict["care-result-need"]}: ${pick("need")} · ${dict["care-result-pace"]}: ${pick("pace")}
-${dict["care-result-agency"]}`;careResult.hidden=false;});
-    document.getElementById("care-clear").addEventListener("click",()=>{careForm.querySelector('[name="intent"]').value="explore";careForm.querySelector('[name="need"]').value="pause";careForm.querySelector('[name="pace"]').value="none";careResult.hidden=true;});
+    const careDepthOrder={simple:1,steady:2,deep:3};
+    function updateCareDepth(){const selected=careForm.querySelector('[name="care-depth"]:checked')?.value||"simple";careForm.querySelectorAll("[data-care-depth-min]").forEach(group=>{group.hidden=careDepthOrder[group.dataset.careDepthMin]>careDepthOrder[selected];});}
+    careForm.querySelectorAll('[name="care-depth"]').forEach(input=>input.addEventListener("change",updateCareDepth));
+    updateCareDepth();
+    function buildCareNote(){
+      const dict=translations[locale],depth=careForm.querySelector('[name="care-depth"]:checked')?.value||"simple";
+      const pick=name=>careForm.querySelector(`[name="${name}"]`).selectedOptions[0].textContent;
+      const rows=[["intent","care-result-intent"],["need","care-result-need"]];
+      if(depth!=="simple")rows.push(["pace","care-result-pace"],["protect","care-result-protect"]);
+      if(depth==="deep")rows.push(["step","care-result-step"]);
+      document.getElementById("care-result-text").textContent=[...rows.map(([name,key])=>`${dict[key]}: ${pick(name)}`),dict["care-result-agency"]].join("\n");
+      careResult.hidden=false;
+    }
+    document.getElementById("care-build").addEventListener("click",buildCareNote);
+    document.getElementById("care-clear").addEventListener("click",()=>{careForm.querySelector('[name="care-depth"][value="simple"]').checked=true;careForm.querySelector('[name="intent"]').value="explore";careForm.querySelector('[name="need"]').value="pause";careForm.querySelector('[name="pace"]').value="none";careForm.querySelector('[name="protect"]').value="privacy";careForm.querySelector('[name="step"]').value="pause";updateCareDepth();careResult.hidden=true;});
     const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     function collectMap(){const t=translations[locale],shown=qs.filter(q=>!q.hidden);return [`# ∴ ${t["map-title"]}`,...shown.map(q=>{const area=q.querySelector("textarea"),answer=area.value.trim();return `## ${t[`q${area.name.slice(1)}`]}\n\n${answer||t.empty}`})].join("\n\n");}
     function makeMapPrompt(){const t=translations[locale];return `# ${t["prompt-title"]}\n\n${t["prompt-instruction"]}\n\n${collectMap()}\n\n${t["prompt-boundary"]}`;}
