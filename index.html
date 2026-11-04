@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#F4F0E8">
+  <meta name="theme-color" content="#F5ECE4">
   <meta name="description" content="A small language game for what matters now. Play, learn, or download the local SUTI.os vault.">
+  <link rel="icon" href="assets/brand/suti-mark-main.png" type="image/png">
   <title>SUTI.world — language for your world</title>
   <style>
     @font-face { font-family: "Atkinson Hyperlegible Next"; src: url("assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf") format("truetype"); font-style: italic; font-weight: 100 900; font-display: swap; }
@@ -722,7 +723,7 @@
       button.addEventListener("click", () => {
         const theme = button.dataset.themeChoice;
         root.dataset.theme = theme;
-        document.querySelector('meta[name="theme-color"]').content = theme === "night" ? "#071310" : theme === "contrast" ? "#FFFFFF" : "#F4F0E8";
+        document.querySelector('meta[name="theme-color"]').content = theme === "night" ? "#102321" : theme === "contrast" ? "#FFFFFF" : "#F5ECE4";
         for (const item of themeButtons) item.setAttribute("aria-pressed", String(item === button));
         try { localStorage.setItem("suti-theme", theme); } catch { /* private browsing can disable storage */ }
       });
