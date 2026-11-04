@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ru" data-theme="day">
+<html lang="en" data-theme="day">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F4F0E8">
-  <meta name="description" content="SUTI.world помогает настроить язык для жизни: выбрать важную ситуацию, найти точные слова и попробовать их в действии.">
-  <title>SUTI.world — язык твоей сути</title>
+  <meta name="description" content="A small language game for what matters now. Play, learn, or download the local SUTI.os vault.">
+  <title>SUTI.world — language for your world</title>
   <style>
     @font-face { font-family: "Atkinson Hyperlegible Next"; src: url("assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf") format("truetype"); font-style: italic; font-weight: 100 900; font-display: swap; }
     @font-face { font-family: "Onest"; src: url("https://ezargaruna.github.io/suticore/assets/fonts/Onest-Variable.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; }
@@ -159,6 +159,7 @@
     h2 { margin-bottom: 14px; font-size: clamp(2rem, calc(4.4vw * var(--suti-type-scale)), 3.5rem); line-height: 1.08; letter-spacing: -.05em; font-weight: 600; }
     h3 { margin-bottom: 10px; font-size: 1.32rem; line-height: 1.25; letter-spacing: -.03em; font-weight: 600; }
     .lead { max-width: 39ch; margin-bottom: 30px; color: var(--suti-muted); font-size: clamp(1.2rem, calc(2vw * var(--suti-type-scale)), 1.52rem); line-height: 1.45; }
+    .hero-download { display:inline-flex; min-height:52px; align-items:center; margin:8px 0 0 8px; color:var(--suti-link); text-decoration:none; }
     .primary { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 12px; padding: 12px 22px; border: 1px solid var(--suti-action); border-radius: 999px; background: var(--suti-action); color: var(--suti-on-action); font-weight: 600; text-decoration: none; transition: transform 180ms var(--suti-ease), box-shadow 180ms var(--suti-ease), background 180ms var(--suti-ease); }
     .primary:hover { transform: translateY(-2px); box-shadow: 0 8px 22px var(--suti-shadow); }
     .primary > span { color: var(--suti-water); font-size: 1.15em; }
@@ -467,12 +468,109 @@
       html { scroll-behavior: auto; }
       *, *::before, *::after { animation: none !important; transition: none !important; }
     }
+    /* SUTI · warm skin, aquamarine, gold. NITYA keeps its own living thread. */
+    :root {
+      --suti-ivory: #F5ECE4;
+      --suti-ink: #292827;
+      --suti-petrol: #185B57;
+      --suti-turquoise: #36AFA3;
+      --suti-peach: #D89B7B;
+      --suti-sunlight: #B88A3E;
+      --suti-moss: #62665E;
+      --suti-aqua: #D9F0EC;
+      --suti-bg-soft: #FAF2EB;
+      --suti-surface: #FFF9F4;
+      --suti-surface-raised: #FFFCF8;
+      --suti-muted: #5D615B;
+      --suti-line: #DCCFC3;
+      --suti-action: #D28D6C;
+      --suti-action-hover: #C47B5B;
+      --suti-on-action: #29221E;
+      --suti-accent: #B88A3E;
+      --suti-light: #B88A3E;
+      --suti-water: #36AFA3;
+      --suti-interactive: #238A83;
+      --suti-explore: #185B57;
+      --suti-focus: #145E59;
+      --suti-shadow: rgb(53 42 34 / 11%);
+    }
+    [data-theme="night"] {
+      --suti-bg: #102321;
+      --suti-bg-soft: #182C29;
+      --suti-bg-cool: #173A36;
+      --suti-surface: #182A27;
+      --suti-surface-raised: #203632;
+      --suti-surface-soft: #203B37;
+      --suti-surface-warm: #2B302C;
+      --suti-text: #F6EDE5;
+      --suti-muted: #C7D3CC;
+      --suti-line: #49615A;
+      --suti-border-strong: #9BD8CE;
+      --suti-structure: #9BD8CE;
+      --suti-link: #9FE4D9;
+      --suti-action: #D99473;
+      --suti-action-hover: #E5A384;
+      --suti-on-action: #261F1C;
+      --suti-explore: #9FE4D9;
+      --suti-shadow: #00000045;
+    }
+    .hero { background: radial-gradient(ellipse at 88% 50%, color-mix(in srgb, var(--suti-aqua) 74%, transparent), transparent 47%), linear-gradient(112deg, transparent 52%, color-mix(in srgb, var(--suti-peach) 13%, transparent)); }
+    .hero-highlight { text-decoration-color: var(--suti-sunlight); }
+    .primary { box-shadow: 0 8px 24px color-mix(in srgb, var(--suti-peach) 23%, transparent); }
+    .primary:hover { box-shadow: 0 10px 28px color-mix(in srgb, var(--suti-peach) 31%, transparent); }
+    .nitya-portal {
+      background:
+        radial-gradient(ellipse at 85% 34%, color-mix(in srgb, var(--suti-turquoise) 22%, transparent), transparent 40%),
+        linear-gradient(118deg, color-mix(in srgb, var(--suti-peach) 28%, var(--suti-bg)), var(--suti-aqua) 58%, color-mix(in srgb, var(--suti-sunlight) 16%, var(--suti-bg)));
+    }
+    .nitya-portal::before {
+      border-color: color-mix(in srgb, var(--suti-turquoise) 68%, transparent);
+      box-shadow: 0 0 0 26px color-mix(in srgb, var(--suti-peach) 12%, transparent), 0 0 0 54px color-mix(in srgb, var(--suti-sunlight) 13%, transparent), 0 0 60px color-mix(in srgb, var(--suti-turquoise) 22%, transparent);
+    }
+    .nitya-portal::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      right: 4%;
+      bottom: 25%;
+      width: min(56vw, 700px);
+      height: 2px;
+      opacity: .56;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent, var(--suti-turquoise) 22%, #6FFFF0 50%, var(--suti-sunlight) 76%, transparent);
+      box-shadow: 0 0 10px color-mix(in srgb, #6FFFF0 74%, transparent), 0 0 24px color-mix(in srgb, var(--suti-turquoise) 55%, transparent);
+      transform: rotate(-13deg);
+      transform-origin: right center;
+      animation: nitya-thread-glow 7s ease-in-out infinite;
+    }
+    .nitya-portal .wrap { z-index: 1; }
+    .nitya-gate {
+      border-color: color-mix(in srgb, var(--suti-turquoise) 28%, var(--suti-line));
+      background: color-mix(in srgb, var(--suti-surface) 90%, transparent);
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 64%);
+      backdrop-filter: blur(8px);
+    }
+    .nitya-gate:hover, .nitya-gate:focus-visible {
+      border-color: var(--suti-turquoise);
+      box-shadow: 0 10px 32px color-mix(in srgb, var(--suti-turquoise) 20%, transparent), 0 0 0 1px color-mix(in srgb, #6FFFF0 44%, transparent);
+    }
+    .nitya-gate-symbol { color: var(--suti-interactive); text-shadow: 0 0 16px color-mix(in srgb, var(--suti-turquoise) 58%, transparent); }
+    .nitya-process li { border-color: color-mix(in srgb, var(--suti-sunlight) 36%, var(--suti-line)); background: color-mix(in srgb, var(--suti-surface) 62%, transparent); }
+    .nitya-process li::before { color: var(--suti-sunlight); }
+    [data-theme="night"] .nitya-portal { background: radial-gradient(ellipse at 82% 30%, #1E514B 0, transparent 48%), linear-gradient(120deg, #392B29, #142F2B 58%, #302B22); }
+    [data-theme="night"] .nitya-gate { background: color-mix(in srgb, var(--suti-surface) 82%, transparent); }
+    [data-theme="contrast"] .nitya-portal { background: var(--suti-bg); }
+    [data-theme="contrast"] .nitya-portal::before, [data-theme="contrast"] .nitya-portal::after { display: none; }
+    [data-theme="contrast"] .nitya-gate { background: var(--suti-surface); backdrop-filter: none; box-shadow: none; }
+    @keyframes nitya-thread-glow { 0%, 100% { opacity: .28; filter: hue-rotate(-8deg); } 50% { opacity: .78; filter: hue-rotate(8deg); } }
+    @media (max-width: 780px) { .nitya-portal::after { right: -14%; bottom: 18%; width: 92vw; } }
+    @media (prefers-reduced-motion: reduce) { .nitya-portal::after { animation: none; } }
   </style>
 </head>
 <body>
-  <a class="skip" href="#main">перейти к содержанию</a>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
   <header class="wrap topbar">
-    <a class="wordmark" href="#top" aria-label="∴ SUTI.world — на главную"><img class="logo-master" src="https://ezargaruna.github.io/suticore/assets/brand/suti-mark-main.png" alt=""><span class="wordmark-name"><span class="brand-sigil" aria-hidden="true">∴</span>SUTI<span>.</span>world</span><span class="wordmark-tagline" data-i18n="footer-tagline">язык твоей сути</span></a>
+    <a class="wordmark" href="#top" aria-label="∴ SUTI.world — home" data-i18n-aria="wordmark-label"><img class="logo-master" src="https://ezargaruna.github.io/suticore/assets/brand/suti-mark-main.png" alt=""><span class="wordmark-name"><span class="brand-sigil" aria-hidden="true">∴</span>SUTI<span>.</span>world</span><span class="wordmark-tagline" data-i18n="footer-tagline">язык твоей сути</span></a>
     <div class="topbar-tools">
       <div class="type-size-tools" role="group" aria-label="размер текста">
         <button type="button" data-text-size="down" aria-label="уменьшить размер текста" data-i18n-aria="size-down">A−</button>
@@ -487,14 +585,15 @@
       </div>
     </div>
   </header>
-  <nav class="wrap site-nav" aria-label="основная навигация" data-i18n-aria="nav-label"><a href="#nitya" data-i18n="nav-nitya">игра NITYA</a><a href="#clarity" data-i18n="nav-start">начать</a><a href="#library" data-i18n="nav-library">библиотека</a><a href="#narodoznanie" data-i18n="nav-narodoznanie">народознание</a><a href="#commons" data-i18n="nav-commons">исследовательский атлас</a><a href="#language" data-i18n="nav-language">язык</a><a href="#together" data-i18n="nav-work">работать вместе</a><a href="#about" data-i18n="nav-about">автор</a></nav>
+  <nav class="wrap site-nav" aria-label="Primary navigation" data-i18n-aria="nav-label"><a href="#nitya" data-i18n="nav-nitya">Play</a><a href="#library" data-i18n="nav-library">Library</a><a href="#language" data-i18n="nav-language">Languages</a><a href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="gift-link">Download SUTI.os</a></nav>
   <main id="main">
     <section class="wrap hero" id="top" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow" data-i18n="hero-eyebrow"><span class="symbol" aria-hidden="true">◎</span> SUTI.world · язык твоей сути</p>
-        <h1 id="hero-title" data-i18n-html="hero-title">понять важное<br>найти <span class="hero-highlight">свои слова</span></h1>
-        <p class="lead" data-i18n="hero-lead">помоги себе разобраться в вопросе, собери ясную карту и выбери следующий шаг</p>
-        <a class="primary" href="#clarity" data-i18n-html="hero-cta">разобраться в вопросе <span aria-hidden="true">↓</span></a>
+        <p class="eyebrow" data-i18n="hero-eyebrow"><span class="symbol" aria-hidden="true">◎</span> SUTI.world · language for your world</p>
+        <h1 id="hero-title" data-i18n-html="hero-title">Find your words.<br>Choose your <span class="hero-highlight">next step.</span></h1>
+        <p class="lead" data-i18n="hero-lead">A small language game for what matters now. Play, learn, or take your SUTI.os vault offline.</p>
+        <a class="primary" href="#nitya" data-i18n="hero-cta">Start the game ↓</a>
+        <a class="hero-download quiet-action" href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="hero-download">Download the local vault</a>
       </div>
       <div class="hero-aside">
         <div class="living-mark" aria-hidden="true">
@@ -503,16 +602,12 @@
             <path class="orbit" d="M89 207C40 149 69 69 132 48C196 27 282 68 294 139"/>
             <circle class="orbit-dot" cx="294" cy="139" r="5" fill="var(--suti-sunlight)"/>
             <circle class="sun" cx="180" cy="75" r="22" fill="var(--suti-sunlight)"/>
-            <g class="leaves">
-              <path d="M170 225C118 195 97 139 119 89C126 72 139 58 154 48C157 91 177 126 198 157C215 183 202 211 170 225Z" fill="var(--suti-petrol)"/>
-              <path d="M181 225C192 177 222 137 270 119C266 161 246 193 214 211C203 218 192 223 181 225Z" fill="var(--suti-turquoise)"/>
-              <path d="M173 226C184 189 183 151 170 111M181 224C199 192 225 164 258 141" stroke="var(--suti-bg)" stroke-width="2" stroke-linecap="round" opacity=".82"/>
-            </g>
+            <g class="leaves"><path d="M170 225C118 195 97 139 119 89C126 72 139 58 154 48C157 91 177 126 198 157C215 183 202 211 170 225Z" fill="var(--suti-petrol)"/><path d="M181 225C192 177 222 137 270 119C266 161 246 193 214 211C203 218 192 223 181 225Z" fill="var(--suti-turquoise)"/><path d="M173 226C184 189 183 151 170 111M181 224C199 192 225 164 258 141" stroke="var(--suti-bg)" stroke-width="2" stroke-linecap="round" opacity=".82"/></g>
             <path class="wave" d="M48 244C96 221 126 258 169 251C211 244 244 218 278 226C292 229 303 234 313 241" stroke="var(--suti-petrol)" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="motion-control-row"><button class="motion-toggle" type="button" id="pulse-toggle" aria-pressed="true" data-i18n="motion-pause">пауза движения</button></div>
-        <p class="mark-caption" data-i18n-html="mark-caption">живой язык начинается<br>с того, что важно тебе</p>
+        <div class="motion-control-row"><button class="motion-toggle" type="button" id="pulse-toggle" aria-pressed="true" data-i18n="motion-pause">Pause motion</button></div>
+        <p class="mark-caption" data-i18n="mark-caption">One question. Your words. Your move.</p>
       </div>
     </section>
 
@@ -743,8 +838,8 @@
       yzh:"язэхъ · авторская транскреация не сверена; показан русский исходник."
     };
     const normalizeLanguage = code => code === "pt" ? "pt-BR" : languageLayers.includes(code) ? code : "ru";
-    let locale = "ru";
-    let selectedLanguage = "ru";
+    let locale = "en";
+    let selectedLanguage = "en";
     const applyLocale = code => {
       selectedLanguage = normalizeLanguage(code);
       locale = runtimeLocaleByLayer[selectedLanguage] || "ru";
@@ -753,7 +848,7 @@
       const translatedLayer = Object.prototype.hasOwnProperty.call(runtimeLocaleByLayer, selectedLanguage);
       status.hidden = translatedLayer;
       status.textContent = translatedLayer ? "" : fallbackNotice[selectedLanguage];
-      document.title = ({ru:"∴ SUTI.world — язык твоей сути",en:"∴ SUTI.world — the language of your essence",es:"∴ SUTI.world — el lenguaje de tu esencia",pt:"∴ SUTI.world — a linguagem da sua essência"})[locale];
+      document.title = ({ru:"∴ SUTI.world — язык твоего мира",en:"∴ SUTI.world — language for your world",es:"∴ SUTI.world — el lenguaje de tu mundo",pt:"∴ SUTI.world — a linguagem do seu mundo"})[locale];
       for (const el of document.querySelectorAll("[data-i18n]")) { const value=translations[locale][el.dataset.i18n]; if(value)el.textContent=value; }
       for (const el of document.querySelectorAll("[data-i18n-html]")) { const value=translations[locale][el.dataset.i18nHtml]; if(value)el.innerHTML=value; }
       for (const el of document.querySelectorAll("[data-i18n-aria]")) { const value=translations[locale][el.dataset.i18nAria]; if(value)el.setAttribute("aria-label",value); }
@@ -762,6 +857,10 @@
       document.getElementById("locale-select").value=selectedLanguage;
       try { localStorage.setItem("suti-locale",selectedLanguage); } catch {}
     };
+    Object.assign(translations.en,{"skip":"Skip to content","wordmark-label":"∴ SUTI.world — home","footer-tagline":"the language of your world","nav-label":"Primary navigation","nav-nitya":"Play","nav-library":"Library","nav-language":"Languages","gift-link":"Download SUTI.os","hero-eyebrow":"◎ SUTI.world · language for your world","hero-title":"Find your words.<br>Choose your <span class=\"hero-highlight\">next step.</span>","hero-lead":"A small language game for what matters now. Play, learn, or take your SUTI.os vault offline.","hero-cta":"Start the game ↓","hero-download":"Download the local vault","mark-caption":"One question. Your words. Your move."});
+    Object.assign(translations.ru,{"skip":"Перейти к содержанию","wordmark-label":"∴ SUTI.world — на главную","footer-tagline":"язык твоего мира","nav-label":"Основная навигация","nav-nitya":"Играть","nav-library":"Библиотека","nav-language":"Языки","gift-link":"Скачать SUTI.os","hero-eyebrow":"◎ SUTI.world · язык твоего мира","hero-title":"Найди свои слова.<br>Выбери <span class=\"hero-highlight\">следующий шаг.</span>","hero-lead":"Короткая языковая игра о том, что важно сейчас. Играй, учись или скачай хранилище SUTI.os.","hero-cta":"Начать игру ↓","hero-download":"Скачать локальное хранилище","mark-caption":"Один вопрос. Твои слова. Твой ход."});
+    Object.assign(translations.es,{"skip":"Saltar al contenido","wordmark-label":"∴ SUTI.world — inicio","footer-tagline":"el lenguaje de tu mundo","nav-label":"Navegación principal","nav-nitya":"Jugar","nav-library":"Biblioteca","nav-language":"Idiomas","gift-link":"Descargar SUTI.os","hero-eyebrow":"◎ SUTI.world · el lenguaje de tu mundo","hero-title":"Encuentra tus palabras.<br>Elige tu <span class=\"hero-highlight\">siguiente paso.</span>","hero-lead":"Un juego breve de idiomas para lo que importa ahora. Juega, aprende o descarga tu archivo local SUTI.os.","hero-cta":"Empezar a jugar ↓","hero-download":"Descargar el vault local","mark-caption":"Una pregunta. Tus palabras. Tu turno."});
+    Object.assign(translations.pt,{"skip":"Pular para o conteúdo","wordmark-label":"∴ SUTI.world — início","footer-tagline":"a linguagem do seu mundo","nav-label":"Navegação principal","nav-nitya":"Jogar","nav-library":"Biblioteca","nav-language":"Idiomas","gift-link":"Baixar SUTI.os","hero-eyebrow":"◎ SUTI.world · a linguagem do seu mundo","hero-title":"Encontre suas palavras.<br>Escolha seu <span class=\"hero-highlight\">próximo passo.</span>","hero-lead":"Um jogo curto de idiomas para o que importa agora. Jogue, aprenda ou baixe seu arquivo local SUTI.os.","hero-cta":"Começar a jogar ↓","hero-download":"Baixar o vault local","mark-caption":"Uma pergunta. Suas palavras. Sua vez."});
     document.getElementById("locale-select").addEventListener("change",e=>applyLocale(e.currentTarget.value));
     try { const saved=localStorage.getItem("suti-locale"); if(saved)selectedLanguage=normalizeLanguage(saved); } catch {}
     const requestedLocale=new URLSearchParams(location.search).get("lang"); if(requestedLocale)selectedLanguage=normalizeLanguage(requestedLocale);
