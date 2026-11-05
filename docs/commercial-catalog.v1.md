@@ -1,6 +1,6 @@
 # SUTI.world · commercial catalogue v1
 
-**Status:** owner-requested public rate-card proposal, prepared 2026-11-04  
+**Status:** owner-requested public rate-card · revision 1.1 · updated 2026-11-04
 **Owner:** Ezar Garuna / SUTI  
 **Scope:** public-safe service catalogue and product maturity map  
 **Decision:** local site implementation; online booking and payment are not implemented
@@ -23,9 +23,9 @@ Regional amounts are fixed reference prices, not conversions at a live exchange 
 
 | Offer | BRL | USD | EUR | Fixed scope |
 |---|---:|---:|---:|---|
-| Meaning map | R$ 690 | US$ 145 | € 135 | 75-minute online session, one question/decision, short context review, one-page map, one clarification round within seven days. |
-| Language in use | R$ 560 | US$ 115 | € 105 | 60-minute online practice for one user-selected situation; phrases, sound/register practice, personal learning card, next step. |
-| Language route | R$ 1 950 | US$ 390 | € 360 | Four 60-minute sessions within six weeks, user-chosen goal and situations, between-session practice, closing map. |
+| Meaning map | R$ 777 | US$ 177 | € 147 | 75-minute online session, one question/decision, short context review, one-page map, one clarification round within seven days. |
+| Language in use | R$ 555 | US$ 127 | € 117 | 60-minute online practice for one user-selected situation; phrases, sound/register practice, personal learning card, next step. |
+| Language route | R$ 2 222 | US$ 444 | € 404 | Four 60-minute sessions within six weeks, user-chosen goal and situations, between-session practice, closing map. |
 
 No offer includes formal level certification, medical/therapeutic treatment, legal opinion, or guaranteed learning outcomes.
 
@@ -33,16 +33,16 @@ No offer includes formal level certification, medical/therapeutic treatment, leg
 
 | Offer | BRL | USD | EUR | Fixed scope |
 |---|---:|---:|---:|---|
-| Interface clarity / semantic audit | R$ 4 900 | US$ 990 | € 920 | Up to five pages or key flows; five business days; terminology/promise/gap/contradiction register, prioritized findings, examples, 90-minute handoff. |
-| Meaning architecture / product language | R$ 7 900 | US$ 1 590 | € 1 490 | One product/service; two weeks; core-message and journey review, terminology map, voice/interface principles, prioritized change plan, team handoff. |
-| AI system contour | R$ 14 900 | US$ 2 950 | € 2 750 | One use case/workflow; two weeks; source/role/risk/unknown map, workflow specification, test scenarios, prototype and evaluation recommendations. No code, API integration, hosting, or security audit. |
-| Shared-language workshop | R$ 6 900 | US$ 1 390 | € 1 290 | Up to six participants, three hours online, one team question, facilitation, decision/open-question map, short record and next steps. |
+| Interface clarity / semantic audit | R$ 4 444 | US$ 888 | € 777 | Up to five pages or key flows; five business days; terminology/promise/gap/contradiction register, prioritized findings, examples, 90-minute handoff. |
+| Meaning architecture / product language | R$ 7 777 | US$ 1 555 | € 1 444 | One product/service; two weeks; core-message and journey review, terminology map, voice/interface principles, prioritized change plan, team handoff. |
+| AI system contour | R$ 14 444 | US$ 2 888 | € 2 666 | One use case/workflow; two weeks; source/role/risk/unknown map, workflow specification, test scenarios, prototype and evaluation recommendations. No code, API integration, hosting, or security audit. |
+| Shared-language workshop | R$ 6 666 | US$ 1 333 | € 1 222 | Up to six participants, three hours online, one team question, facilitation, decision/open-question map, short record and next steps. |
 
 Work is limited to the listed artifact count, people, duration, and handoff. Additional pages, languages, participants, implementation, testing, or rounds require a separate change in scope.
 
 ## Closed-contour discovery
 
-Paid discovery is R$ 2 400 / US$ 490 / € 450. It is credited to a follow-on project that starts within 30 days. Discovery defines the deliverable, source set, access method, exclusions, rights, confidentiality, data handling, timeline, acceptance, and quote. A discovery request is not a project booking.
+Paid discovery is R$ 2 222 / US$ 444 / € 404. It is credited to a follow-on project that starts within 30 days. Discovery defines the deliverable, source set, access method, exclusions, rights, confidentiality, data handling, timeline, acceptance, and quote. A discovery request is not a project booking.
 
 The current site does not provide an account, customer portal, private cloud, managed storage, automatic backups, subscription, or online payment. Do not send credentials or sensitive personal data through the public contact link. Confidential files are not copied to the public repository. Any approved transfer/access must be separately scoped and documented.
 
@@ -79,3 +79,7 @@ Review the rate card after the first three completed engagements in each service
 - Upwork benchmarks are contextual market references, not independent validation of the author's competence, outcomes, or prices.
 - Native review of EN/ES/PT-BR transcreations and legal/tax review for each sales jurisdiction remain separate review tasks.
 - An inquiry does not create a booking; no payment collection or account feature is connected in this release.
+
+## Visual number system
+
+The public rate card uses repeated and mirrored figures (for example, 555, 777, 2 222, 4 444, 888, and 6 666) as a visual memory pattern. This is an aesthetic choice, not a claim that numerology predicts value or outcomes. Scope, deliverables, and the written offer determine the fee.
