@@ -1,46 +1,28 @@
----
-id: SUTI-start-here
-title: SUTI.os : start here
-status: public
-version: 2027.1
-provenance: authorial
----
+# Start with SUTI
 
-∴ navigation
-start :: [SUTI_START_HERE.md](SUTI_START_HERE.md)
-houses :: [meta/framework/SUTI_HOUSES_SYSTEM.md](meta/framework/SUTI_HOUSES_SYSTEM.md)
-canon :: [meta/00_KERNEL/CANON.md](meta/00_KERNEL/CANON.md)
-root :: [README.md](README.md)
+SUTI gives language and structure to a question, so a person can choose a useful next step.
 
----
+## Pick your route
 
-# SUTI.os : операционная среда для упорядочивания жизни
+1. [Use SUTI.world](https://suti.world/) for a language practice, a self-guided care note, or the public module map.
+2. [Download SUTI.os](https://github.com/ezargaruna/SUTI.os/releases/latest) when you want a portable local Markdown vault.
+3. [Read the public specifications](meta/) when you want to inspect the methods and contracts behind the tools.
 
-добро пожаловать в SUTIcore. это не просто набор файлов, а функциональная надстройка над вашим рабочим пространством (рекомендуется Obsidian), предназначенная для превращения хаоса в структуру, а времени - в след
+## Know which repository you are in
 
-## что такое SUTI.os?
+| Repository | Owns | Does not imply |
+|---|---|---|
+| `suticore` | semantic architecture, public specifications, SUTI.world source and deployment | a personal vault or a connected care service |
+| `SUTI.os` | portable vault, local installer, release manifest, language entry packs | the canonical SUTI.world source or a cloud account |
 
-SUTI.os - это система различения, связывания и действия. она помогает пользователю организовать свою жизнь как единую экосистему, где каждый элемент (задача, мысль, событие) занимает своё место согласно семантической логике
+Start with [repository contours](docs/repository-contours.v1.md) and the [13-layer language status](docs/language-layers.md).
 
-## как начать работу (quick start)
+## Use and change
 
-1. **развертывание**: склонируйте этот репозиторий в свой Obsidian vault
-2. **настройка ядра**: ознакомьтесь с `meta/00_kernel/canon.md` и `meta/system/prime_directive.md`. это ваши правила игры
-3. **организация пространства**: используйте систему 12 обителей (`meta/framework/SUTI_houses_system.md`) для распределения всех сфер вашей жизни
-4. **запуск протокола**: начните практиковать `sreteniya_os` (observe → distinguish → relate → verify → decide → act → trace → adapt)
+- Start with a blank template or a copy of your own material.
+- Keep personal notes on storage you control.
+- Share only the parts you choose.
+- Check each artifact's source, license, and maturity.
+- Leave unknown implementation or translation status marked `UNKNOWN` or `HOLD`.
 
-## структура системы
-
-- `meta/` : сердце системы. здесь хранятся все фреймворки, законы и модули мистерий
-- `bin/` : инструменты автоматизации (если установлены)
-- `agents/` : инструкции для ваших ии-помощников, чтобы они работали в стиле SUTI
-- `templates/` : формы для быстрого создания заметок
-
-## философия чистоты
-
-SUTI.os работает на принципе «quiet luxury x living earth». это значит:
-- минимум визуального шума
-- максимальная точность слов
-- приоритет человеческой автономии над автоматизацией
-
-*SUTIcore - это витрина артефактов. возьмите из неё то, что резонирует с вашим текущим состоянием, и сделайте это своим инструментом.*
+The public site currently has four active interface locales. Nine more language choices lead to an explicit Russian fallback. SUTI.os has three partial language entry packs alongside the full Russian vault; the remaining language archives are not available yet.

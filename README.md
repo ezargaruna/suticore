@@ -1,88 +1,46 @@
-# ∴ SUTIcore
+# SUTIcore
 
-## clarity · essence · language
+**Language and semantic architecture for clearer questions and traceable meaning.**
 
-SUTI is an author-created framework for making questions, evidence, language,
-and next steps easier to distinguish. Public materials include a live website,
-open specifications, and selected local-first practices. Each item states its
-own implementation and review status; a description is not a claim of
-scientific or clinical validation.
+This repository contains public specifications, the canonical source and deployment workflow for [SUTI.world](https://suti.world/), and selected local-first tools. It defines methods and interfaces; it is not the portable personal vault. GitHub Pages still has a custom-domain ownership discrepancy between the two repositories; see [repository contours](docs/repository-contours.v1.md).
 
-### research collaboration
+## Choose a starting point
 
-AI, language, and human-computer interaction teams can review a bounded,
-no-fee research evaluation of selected public materials. The proposed scope,
-rights, data boundary, attribution, and publication terms are agreed before
-any transfer. This invitation does not imply an existing partnership or grant
-rights to private archives.
+- [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
+- [Download SUTI.os](https://github.com/ezargaruna/SUTI.os/releases/latest) — a separate, portable Markdown vault with a full Russian edition and partial English, Spanish, and Brazilian Portuguese entry packs.
+- [Language layer status](docs/language-layers.md) — what is translated, what falls back to Russian, and what still needs review across the 13 navigation layers.
+- [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.
+- [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
 
-Public byline: **Ezar Garuna · Saritama**. Creative work may also use the
-authorial poetic names **Velest**, **Dragoniaz**, **Prince Ingvar**, and
-**Kalki Velesta**. These names identify a creative voice; they are not
-credentials, official offices, or claims of authority.
+## SUTIcore scope
 
-- [SUTI research collaboration brief](docs/research/SUTI_RESEARCH_COLLABORATION.md)
-- [Language-layer status](docs/language-layers.md)
-- [Public website](https://suti.world/)
-- [Source and releases](https://github.com/ezargaruna/suticore)
+SUTIcore holds the reusable language and semantic architecture: definitions, source-aware methods, review contracts, implementation notes, and the public website. Individual artifacts retain their own provenance, license, maturity, and runtime status.
 
-The Russian navigation below is retained as an additional entry point.
+The work distinguishes observation, interpretation, hypothesis, symbol, and unknown. A specification does not prove an implementation; a local tool does not imply a hosted service; publication does not certify scientific or clinical claims.
 
-SUTIcore - это открытый цифровой фундамент для операционной системы жизни
-система проектирования смыслов, управления вниманием и архитектуры действий
+### Research collaboration
 
----
+The [research collaboration brief](docs/research/SUTI_RESEARCH_COLLABORATION.md) proposes a bounded review of selected public materials. Scope, rights, data boundaries, attribution, and publication terms are agreed before any transfer; the brief does not imply an existing partnership or grant access to private archives.
 
-## ⟁ путь погружения (suti-map)
+Public byline: **Ezar Garuna · Saritama**. Creative names describe an authorial voice and are not credentials or official roles.
 
-`ощущение` — `инструмент` — `система` — `фундамент` — `горизонт`
+## Contours
 
-### 01. первый шаг (essence)
-`для тех, кто хочет почувствовать ритм и эстетику`
-- [index.html](index.html) :: визуальная витрина и первый вдох
-- [presets/](presets/) :: готовые настройки для терминала и Obsidian (настрой свой уют)
-- [SUTI_START_HERE.md](SUTI_START_HERE.md) :: простой гид по развертыванию
+```text
+SUTIcore  → methods, specifications, SUTI.world source
+SUTI.os   → portable Markdown vault, local installer, language entry packs
+```
 
-### 02. прикладные инструменты (utility)
-`для тех, кто хочет начать применять suti в жизни`
-- [meta/frameworks/GUIDE.md](meta/frameworks/GUIDE.md) :: как использовать методы в реальности
-- [meta/templates/](meta/templates/) :: готовые шаблоны аудита и контрактов
-- [meta/linguafusion/](meta/linguafusion/) :: настройка своего языка и семантического профиля
-- [docs/language-layers.md](docs/language-layers.md) :: языковые слои сайта и статус переводов
+The repositories link to each other but have separate payloads and release histories. Do not copy personal vault data into SUTIcore or treat a website snapshot inside SUTI.os as the canonical site source.
 
-### 03. операционная среда (system)
-`для тех, кто хочет понять, как устроена машина`
-- [core/](core/) :: семантическое ядро и логика (SUTI.jsonld)
-- [app/](app/) :: интерфейс suti-world
-- [internal/](internal/) :: системные инструменты и верификация
-- [bin/](bin/) :: консольные утилиты управления
+## Language navigation
 
-### 04. глубокий фундамент (kernel)
-`для тех, кто ищет первопричины и аксиомы`
-- [meta/kernel/](meta/kernel/) :: различение, суверенитет и дисциплина ясности
-- [meta/canon/](meta/canon/) :: канон suti-world и символы
-- [LICENSE](LICENSE) :: философия открытого дара (MIT)
+The site exposes 13 language or authorial-language choices. The current website interface has active Russian, English, Spanish, and Brazilian Portuguese dictionaries. The other nine choices show a labeled Russian fallback. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
 
-### 05. расширение сознания (future)
-`самое интересное: интерфейсы будущего и новые миры`
-- [meta/future_tech/MANIFESTO.md](meta/future_tech/MANIFESTO.md) :: VR, XR и сенсориальные органеллы
-- [meta/artifacts/vault/](meta/artifacts/vault/) :: хранилище цифровых тотемов и артефактов
+## Rights and status
 
----
+Check the license and provenance attached to each artifact. The repository license does not automatically relicense third-party sources, marks, user material, or separately licensed assets.
 
-## ⧖ основные принципы
+`CANON ≠ RUNTIME ≠ PUBLIC`
 
-quiet luxury x living earth x natural craft
-минимизация шума :: максимальная ясность
-суверенность человека :: автономия разума
-семантическая точность :: чистота определений
-
----
-
-## ∴ контакты и авторство
-
-Ezar Garuna · Saritama :: language and semantic architecture
-creative signature :: Velest · Dragoniaz · Prince Ingvar · Kalki Velesta
-SUTI.world :: open source for living
-
-clear words :: considered choices :: a grounded next step
+`PASS ≠ COMMIT ≠ PUBLICATION`

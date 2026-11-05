@@ -98,8 +98,10 @@ The care interface is currently translated in RU, EN, ES, and PT-BR. The other n
 4. **choose format:** the preference is included in the note, but does not trigger media or contact.
 5. **choose a boundary:** privacy, energy, time, choice, or a custom boundary.
 6. **make a local note:** produce text on this device only.
-7. **review:** edit, copy, or clear; the person controls any later sharing.
+7. **review:** edit, copy, or clear; clear removes the displayed note and resets the form in the current page.
 8. **exit:** leaving the page requires no explanation.
+
+The page cannot clear browser history, operating-system snapshots, or other browser-level records. Do not describe the clear action as secure erasure.
 
 No field is required to reveal a sensitive fact. Do not add a risk score, need score, personality inference, volunteer eligibility score, or hidden case profile.
 
@@ -137,7 +139,7 @@ The proposed DSO circle and symbolic roles are specified separately in [`dso-fla
 | data class | default | future use gate |
 |---|---|---|
 | anonymous interaction with the page | no account and no case record | analytics or tracking would require separate privacy review and disclosure |
-| local note | stays in the current page unless the user copies it | transmission requires a separate user action and named recipient |
+| local note | stays in the current page unless the user copies it; clear removes the visible note and resets form choices | transmission requires a separate user action and named recipient; clearing is not secure erasure from browser or operating-system records |
 | contact details | not requested by the current form | if ever collected: purpose, recipient, retention, deletion, access and recovery plan first |
 | third-party or family details | avoid | require necessity, minimization, and lawful basis/consent review |
 | volunteer roster | no roster published | individual opt-in, visibility choice, scope, expiry, and removal route |

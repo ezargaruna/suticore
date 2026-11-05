@@ -4,27 +4,29 @@
 
 The public entry page offers 13 language and authorial-language layers:
 
-| Layer | Runtime text | State |
-|---|---|---|
-| Russian (`ru`) | Russian | Reviewed source locale |
-| English (`en`) | English | Available |
-| Spanish (`es`) | Spanish | Available |
-| Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported |
-| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed |
-| Hindi (`hi`) | Russian fallback | Translation not reviewed |
-| French (`fr`) | Russian fallback | Translation not reviewed |
-| Arabic (`ar`) | Russian fallback | Translation not reviewed |
-| Bengali (`bn`) | Russian fallback | Translation not reviewed |
-| Esperanto (`eo`) | Russian fallback | Translation not reviewed |
-| Sanskrit (`sa`) | Russian fallback | Translation not reviewed |
-| Latin (`la`) | Russian fallback | Translation not reviewed |
-| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed |
+| Layer | Runtime text | State | Open |
+|---|---|---|---|
+| Russian (`ru`) | Russian | Reviewed source locale | [ru](https://suti.world/?lang=ru) |
+| English (`en`) | English | Available | [en](https://suti.world/?lang=en) |
+| Spanish (`es`) | Spanish | Available | [es](https://suti.world/?lang=es) |
+| Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported | [pt-BR](https://suti.world/?lang=pt-BR) |
+| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/?lang=zh-Hans) |
+| Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/?lang=hi) |
+| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/?lang=fr) |
+| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/?lang=ar) |
+| Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/?lang=bn) |
+| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/?lang=eo) |
+| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/?lang=sa) |
+| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/?lang=la) |
+| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/?lang=yzh) |
 
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without reviewed runtime
 content, the page keeps the selected layer visible and displays a notice that
 the Russian source text is being shown. The page's `lang` attribute continues
 to describe the language actually rendered.
+
+The matching SUTI.os language catalog is [`language-packs/manifest.json`](https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/manifest.json). It records all 13 layer identifiers, but only the Russian full vault and partial English, Spanish, and Brazilian Portuguese entry packs have downloadable files. The remaining nine layers have no SUTI.os archive. These boundaries are also summarized in [repository contours](repository-contours.v1.md).
 
 “Available” means that a runtime dictionary is active and covers the page's
 translation markers. It is not independent certification of native-speaker or
