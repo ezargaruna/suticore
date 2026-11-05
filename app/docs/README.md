@@ -1,8 +1,8 @@
 # s u t i c o r e
-
-### canonical specification
-### version :: 0.1
-
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../../meta/framework/SUTI_HOUSES_SYSTEM.md)
+canon :: [CANON.md](../../meta/00_KERNEL/CANON.md)
+root :: [README.md](../../README.md)
 ---
 
 # ∴ purpose

@@ -1,7 +1,7 @@
 ∴ navigation
-start :: [SUTI_START_HERE.md](SUTI_START_HERE.md)
-houses :: [meta/framework/SUTI_HOUSES_SYSTEM.md](meta/framework/SUTI_HOUSES_SYSTEM.md)
-canon :: [meta/00_KERNEL/CANON.md](meta/00_KERNEL/CANON.md)
+start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
+houses :: [SUTI_HOUSES_SYSTEM.md](../../meta/framework/SUTI_HOUSES_SYSTEM.md)
+canon :: [CANON.md](../../meta/00_KERNEL/CANON.md)
 root :: [README.md](README.md)
 ---
 
