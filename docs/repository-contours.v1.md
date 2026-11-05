@@ -26,12 +26,13 @@ Keep the public method and website source separate from the portable personal wo
 5. Keep identity, function, license, provenance, maturity, and implementation status separate for each artifact.
 6. Preserve `UNKNOWN` and `HOLD` when translation review, rights, implementation, or runtime evidence is absent.
 
-## Current hosting discrepancy
+## Hosting state
 
-The intended owner for the canonical website source is `suticore`. Current GitHub Pages settings report `suti.world` as the custom domain for `SUTI.os`, while `suticore` Pages reports the repository project URL. `SUTI.os` also has a separate workflow that publishes its `website/` tree. This is an unresolved deployment overlap, not a completed domain transfer.
+The GitHub Pages assignments are now separate: `SUTI.os` has no custom domain and publishes its snapshot at its repository Pages URL; `suticore` publishes the canonical source at its repository Pages URL. The live `suti.world` HTML was observed to match the `suticore` Pages output after deployment. DNS answers and response headers show Cloudflare in front; the Cloudflare zone and origin settings were not inspected or changed.
 
-**status:** `HOLD · hosting ownership reconciliation`  
-**safe state:** no Pages domain settings were changed in this revision. Confirm the active DNS/CDN route, destination build, and rollback path before transferring the custom domain. Keep the SUTI.os website tree as a versioned snapshot until that review is complete.
+**status:** `GITHUB PAGES SPLIT · CLOUDFLARE ROUTE UNKNOWN`
+
+**safe state:** keep the SUTI.os website tree as a versioned snapshot. Verify Cloudflare routing and rollback separately before changing DNS, cache, or origin configuration.
 
 ## Language navigation
 

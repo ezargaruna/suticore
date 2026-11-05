@@ -2,7 +2,7 @@
 
 **Language and semantic architecture for clearer questions and traceable meaning.**
 
-This repository contains public specifications, the canonical source and deployment workflow for [SUTI.world](https://suti.world/), and selected local-first tools. It defines methods and interfaces; it is not the portable personal vault. GitHub Pages still has a custom-domain ownership discrepancy between the two repositories; see [repository contours](docs/repository-contours.v1.md).
+This repository contains public specifications, the canonical source and deployment workflow for [SUTI.world](https://suti.world/), and selected local-first tools. It defines methods and interfaces; it is not the portable personal vault. GitHub Pages assignments are separated; Cloudflare origin settings remain uninspected. See [repository contours](docs/repository-contours.v1.md).
 
 ## Choose a starting point
 
