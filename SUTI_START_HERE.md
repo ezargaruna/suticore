@@ -17,6 +17,8 @@ SUTI gives language and structure to a question, so a person can choose a useful
 
 Start with [repository contours](docs/repository-contours.v1.md) and the [13-layer language status](docs/language-layers.md).
 
+For group decisions, use [`.veche` research](docs/research/veche-consensus-research.v1.md) as an editorial workflow: explicit decision rules, visible dissent, and no inference of consent from silence.
+
 ## Use and change
 
 - Start with a blank template or a copy of your own material.

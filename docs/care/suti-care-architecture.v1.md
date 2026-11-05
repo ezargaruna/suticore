@@ -158,7 +158,7 @@ No personal care data moves into an open repository, research atlas, AI model, a
 - **VereNITYA:** distinguish observation, report, proposal, evidence, and unknown.
 - **SRETENIYA_OS:** keep a minimal, revisable trace only when useful and consented.
 - **SUTI DAO:** plain-language decision rules; no token, rank, or automatic authority.
-- **Neuroveche:** editorial question set; not real consensus, clinical triage, or authorization.
+- **`.veche` / Neuroveche:** editorial research and question set; not real consensus, clinical triage, identity proof, or authorization. See the [research module](../research/veche-consensus-research.v1.md).
 
 Before any pilot, review the design through these lenses: access, language, consent, safety, power, privacy, workload, cultural context, evidence, technical boundary, funding, and exit. Record disagreement and unresolved items as `UNKNOWN/HOLD` instead of forcing consensus.
 

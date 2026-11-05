@@ -138,8 +138,7 @@ immediately ∅
 
 no rewrite attempt.  
 
-silence becomes  
-only valid output ∴  
+For this response, stop or mark `HOLD`. Silence is not consent.
 
 ---
 
@@ -168,6 +167,16 @@ metadata ∴
 
 same control logic  
 across all layers ↺  
+
+---
+
+## 9. gate · .veche authority
+
+Before a decision affecting others, verify scope, owner, access, evidence, options, unknowns, a preselected decision rule, explicit responses, dissent, correction, review, and exit.
+
+No response is not consent. AI summary is not consensus. `PASS` is not authorization.
+
+If authority or criteria are unclear, mark `HOLD` or `NO DECISION`. Changes to code, money, access, or data require separate authorization and technical review.
 
 ---
 

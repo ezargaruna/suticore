@@ -141,8 +141,9 @@ until minimal.
 absence of action ∴  
 valid stack result.  
 
-silence may equal  
-correct execution ⟁  
+for a personal task, pause or no action may be the chosen result ⟁
+
+silence never means another person's consent or group approval ∅
 
 ---
 
@@ -159,6 +160,24 @@ how protocols evolve.
 
 same stack applies  
 across all layers ∴  
+
+---
+
+## 7. group decision route · .veche
+
+Use when a choice affects other people.
+
+1. Name the question, decision owner, affected parties, and participation rule.
+2. Separate evidence, interpretation, hypothesis, and unknown.
+3. Show options, including defer, stop, and no change.
+4. Set the decision rule before collecting responses.
+5. Record support, objection, abstention, and no response separately.
+6. If criteria fail, record `NO DECISION`; silence is not support.
+7. Label AI summaries as drafts; participants review and correct them.
+8. Record the human decision, dissent, rationale, review, and exit route.
+9. Require separate authorization for code, money, access, or data changes.
+
+`.veche` is research only; it creates no vote or runtime authority.
 
 ---
 

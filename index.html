@@ -843,6 +843,7 @@
             <article class="module-card"><h3>LinguaFUSION</h3><p data-i18n="module-lf">Язык в жизненных ситуациях, звучание, активная речь и транскреация. На сайте доступны локальные упражнения; полные 13-язычные версии vault не заявляются.</p></article>
             <article class="module-card"><h3>Synaura × Syntaxium</h3><p data-i18n="module-syn">Протокол взаимодействия и структура смысловых связей: намерение, контекст, форма, действие и след. Описания методов не равны отдельному приложению.</p></article>
             <article class="module-card"><h3>VereNITYA</h3><p data-i18n="module-ver">Разделение фактов, наблюдений, интерпретаций, гипотез и неизвестного; критерии и след проверки остаются видимыми.</p></article>
+            <article class="module-card"><h3>.veche</h3><p data-i18n="module-veche">Исследовательский модуль коллективных решений. Не определяет консенсус, не считает молчание согласием и не исполняет действия автоматически.</p><p><a href="https://github.com/ezargaruna/suticore/blob/main/docs/research/veche-consensus-research.v1.md" data-i18n="module-veche-link">открыть исследование ↗</a></p></article>
             <article class="module-card"><h3>NITYA × Samurai Dharma</h3><p data-i18n="module-nitya">Добровольные игровые маршруты и рефлексия. Можно пропускать; игра не ставит диагнозов, не ранжирует людей и не предсказывает результат.</p></article>
             <article class="module-card"><h3>SOTKAN · research commons</h3><p data-i18n="module-sotkan">Предлагаемый исследовательский атлас: журнал как один интерфейс, связанный с источниками, вопросами, методами, версиями и полевыми результатами. Платформа сообщества пока не развёрнута.</p></article>
             <article class="module-card"><h3>Productio</h3><p data-i18n="module-productio">Переход от метода к прототипу, ограниченному пилоту и обратной связи реального применения. Коммерческие условия фиксируются до начала работ.</p></article>
@@ -1021,6 +1022,10 @@
       la:"Versio huius linguae nondum verificata est; textus Russicus nunc ostenditur.",
       yzh:"язэхъ · авторская транскреация не сверена; показан русский исходник."
     };
+    Object.assign(translations.ru, {"module-veche":"Исследовательский модуль коллективных решений. Не определяет консенсус, не считает молчание согласием и не исполняет действия автоматически.","module-veche-link":"открыть исследование ↗"});
+    Object.assign(translations.en, {"module-veche":"Research on group decisions. It does not infer consensus, treat silence as consent, or execute actions automatically.","module-veche-link":"open the research ↗"});
+    Object.assign(translations.es, {"module-veche":"Investigación sobre decisiones colectivas. No infiere consenso, no toma el silencio por consentimiento ni ejecuta acciones automáticamente.","module-veche-link":"abrir la investigación ↗"});
+    Object.assign(translations.pt, {"module-veche":"Pesquisa sobre decisões coletivas. Não presume consenso, não interpreta silêncio como consentimento e não executa ações automaticamente.","module-veche-link":"abrir a pesquisa ↗"});
     const normalizeLanguage = code => code === "pt" ? "pt-BR" : languageLayers.includes(code) ? code : "ru";
     let locale = "en";
     let selectedLanguage = "en";

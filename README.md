@@ -11,6 +11,7 @@ This repository contains public specifications, the canonical source and deploym
 - [Language layer status](docs/language-layers.md) — what is translated, what falls back to Russian, and what still needs review across the 13 navigation layers.
 - [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.
 - [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
+- [`.veche` research](docs/research/veche-consensus-research.v1.md) — claim audit, protocol reverse-engineering, threat model, and implementation gates.
 
 ## SUTIcore scope
 

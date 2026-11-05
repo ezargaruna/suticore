@@ -63,3 +63,11 @@ links:
     language: "ru"
     license: "MIT"
     status: public
+  - id: veche
+    title: ".veche"
+    description: "исследование коллективных решений; редакционный протокол, без автономного голосования или исполнения"
+    href: "https://github.com/ezargaruna/suticore/blob/main/app/docs/protocols/veche.md"
+    source_path: "app/docs/protocols/veche.md"
+    language: "ru"
+    license: "MIT"
+    status: review

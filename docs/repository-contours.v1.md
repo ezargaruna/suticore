@@ -44,7 +44,7 @@ For `yzh`, record an authorial transcreation with its own grammar and review. Do
 
 ## Review lenses
 
-This is an editorial split, not an autonomous DAO vote or a release authorization. Use the following Veche questions before a cross-repository change:
+This is an editorial split, not an autonomous DAO vote or a release authorization. Use the following Veche questions before a cross-repository change. The expanded research contract and its limits are in [`.veche · research`](research/veche-consensus-research.v1.md):
 
 - **subject and use:** which person needs this entry, and what can they do next?
 - **source and rights:** which repository owns the file and its license?

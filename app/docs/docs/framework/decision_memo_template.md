@@ -146,8 +146,30 @@ if any fail ∴
 ↺ rebuild structure  
 or ∅ silence.  
 
-silence equals  
-valid outcome ⟁  
+silence may be a personal pause. It is never group consent.
+
+---
+
+## 9. group decision · .veche
+
+Use when a choice affects others.
+
+- question / scope:
+- decision owner:
+- affected parties / participation and access rule:
+- evidence and sources:
+- interpretations / unknowns:
+- options, including defer / stop:
+- decision rule selected in advance:
+- responses: support / objection / abstention / no response
+- decision state: `DRAFT / NO DECISION / DECIDED / HOLD`
+- decision and rationale:
+- dissent or minority report:
+- authorized action owner / review date:
+- rollback or exit:
+- execution state: `NOT AUTHORIZED / AUTHORIZED / IMPLEMENTED / ROLLED BACK`
+
+No response is not consent. AI synthesis is a draft, not authorization. `PASS` is a scoped check and does not set decision state.
 
 ---
 
