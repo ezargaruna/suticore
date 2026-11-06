@@ -635,6 +635,30 @@
     .care-format-note { margin:0 0 18px; padding:14px 16px; border-left:2px solid var(--suti-peach); background:var(--suti-surface); color:var(--suti-muted); }
     .care-atlas-links { display:flex; flex-wrap:wrap; gap:14px; padding:0 0 18px; }
     .care-atlas-links a { min-height:44px; display:inline-flex; align-items:center; color:var(--suti-link); font-weight:600; text-decoration-color:var(--suti-turquoise); }
+    .gratitude-card { position:relative; isolation:isolate; overflow:hidden; max-width:980px; margin-top:24px; padding:clamp(20px,4vw,36px); border:1px solid color-mix(in srgb,var(--suti-turquoise) 42%,var(--suti-peach)); border-radius:var(--suti-radius); background:radial-gradient(ellipse at 100% 0,color-mix(in srgb,var(--suti-sunlight) 34%,transparent),transparent 34%),linear-gradient(128deg,color-mix(in srgb,var(--suti-peach) 24%,var(--suti-surface)),color-mix(in srgb,var(--suti-aqua) 30%,var(--suti-surface)) 68%,var(--suti-surface)); box-shadow:0 18px 54px var(--suti-shadow); }
+    .gratitude-card h2 { max-width:18ch; margin:0; color:var(--suti-text); font:clamp(1.8rem,5vw,3.15rem)/1.05 Georgia,serif; letter-spacing:-.035em; }
+    .gratitude-card > p { max-width:68ch; color:var(--suti-muted); }
+    .gratitude-mark { display:inline-grid; place-items:center; width:2.8rem; aspect-ratio:1; margin-bottom:14px; border:1px solid color-mix(in srgb,var(--suti-sunlight) 72%,var(--suti-line)); border-radius:50%; color:var(--suti-structure); background:color-mix(in srgb,var(--suti-sunlight) 30%,var(--suti-surface)); font-size:1.35rem; }
+    .gratitude-input { display:block; width:100%; min-height:5.5rem; padding:13px 15px; border:1px solid var(--suti-line); border-radius:12px; background:var(--suti-surface-raised); color:var(--suti-text); font:inherit; resize:vertical; }
+    .gratitude-input:focus-visible { outline:3px solid var(--suti-turquoise); outline-offset:2px; }
+    .gratitude-result { margin-top:16px; padding:16px 18px; border-left:3px solid var(--suti-sunlight); border-radius:0 12px 12px 0; background:color-mix(in srgb,var(--suti-surface) 86%,transparent); white-space:pre-wrap; overflow-wrap:anywhere; }
+    .gratitude-result[hidden] { display:none; }
+    .music-card { position:relative; isolation:isolate; overflow:hidden; max-width:980px; margin-top:24px; padding:clamp(22px,4vw,40px); border:1px solid color-mix(in srgb,var(--suti-turquoise) 38%,var(--suti-line)); border-radius:var(--suti-radius); background:radial-gradient(ellipse at 92% 4%,color-mix(in srgb,var(--suti-sunlight) 28%,transparent),transparent 30%),linear-gradient(145deg,color-mix(in srgb,var(--suti-aqua) 42%,var(--suti-surface)),var(--suti-surface) 58%,color-mix(in srgb,var(--suti-peach) 30%,var(--suti-surface))); box-shadow:0 18px 54px var(--suti-shadow); }
+    .music-card h2 { max-width:20ch; margin:0; color:var(--suti-text); font:clamp(1.8rem,5vw,3rem)/1.05 Georgia,serif; letter-spacing:-.035em; }
+    .music-card > p { max-width:68ch; color:var(--suti-muted); }
+    .music-mark { display:inline-grid; place-items:center; width:2.8rem; aspect-ratio:1; margin-bottom:14px; border:1px solid color-mix(in srgb,var(--suti-turquoise) 50%,var(--suti-line)); border-radius:50%; color:var(--suti-structure); background:color-mix(in srgb,var(--suti-aqua) 34%,var(--suti-surface)); font-size:1.35rem; }
+    .water-tracks { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:20px 0; padding:0; list-style:none; }
+    .water-tracks a { display:flex; min-height:70px; align-items:center; gap:12px; padding:14px 16px; border:1px solid var(--suti-line); border-radius:14px; background:color-mix(in srgb,var(--suti-surface-raised) 84%,transparent); color:var(--suti-text); font-weight:650; text-decoration:none; }
+    .water-tracks a:hover { border-color:var(--suti-turquoise); transform:translateY(-1px); }
+    .water-tracks a:focus-visible,.music-card summary:focus-visible { outline:3px solid var(--suti-turquoise); outline-offset:3px; }
+    .water-tracks span { color:var(--suti-structure); font:1.1rem Georgia,serif; }
+    .music-actions { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin:18px 0; }
+    .music-actions a { min-height:44px; }
+    .music-archive { margin-top:24px; padding-top:18px; border-top:1px solid var(--suti-line); }
+    .music-archive summary { width:fit-content; min-height:44px; display:flex; align-items:center; color:var(--suti-link); font-weight:650; cursor:pointer; }
+    .music-privacy { max-width:72ch; color:var(--suti-muted); font-size:.84rem; }
+    .soundcloud-player { margin-top:14px; }
+    .soundcloud-player iframe { display:block; width:100%; border:0; border-radius:14px; background:#e7f4f1; }
     [data-theme="night"] .care-atlas-links a { color:var(--suti-turquoise); }
     [data-theme="contrast"] .care-atlas, [data-theme="contrast"] .care-pathway { border-width:2px; }
     [data-theme="night"] .care-entry { background:linear-gradient(120deg,#302826,#172D29 54%,#173A36); }
@@ -643,6 +667,9 @@
     @media(max-width:520px) {
       .care-entry { padding-block:20px; }
       .care-form { padding:16px; }
+      .gratitude-card { padding:18px; }
+      .music-card { padding:18px; }
+      .water-tracks { grid-template-columns:1fr; }
       .care-depth-options { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
       .care-depth-options label { min-height:86px; align-items:flex-start; gap:6px; padding:10px 7px; font-size:.76rem; }
       .care-depth-options input { width:16px; height:16px; margin-top:2px; }
@@ -726,6 +753,36 @@
           <article class="care-result" id="care-result" aria-live="polite" hidden><h2 data-i18n="care-result-title">Your note · stays here</h2><p id="care-result-text"></p></article>
         </div>
         </details>
+        <section class="gratitude-card" lang="en" aria-labelledby="gratitude-title">
+          <span class="gratitude-mark" aria-hidden="true">✳</span>
+          <h2 id="gratitude-title" data-i18n="gratitude-title">A small note of thanks</h2>
+          <p data-i18n="gratitude-intro">Notice one kind thing, effort, or moment you want to remember. You can keep the note private; gratitude never creates a debt.</p>
+          <label for="gratitude-input" data-i18n="gratitude-label">What would you like to acknowledge?</label>
+          <textarea class="gratitude-input" id="gratitude-input" maxlength="240" data-i18n-placeholder="gratitude-placeholder" placeholder="One small thing is enough."></textarea>
+          <div class="care-actions"><button class="primary" type="button" id="gratitude-shape" data-i18n="gratitude-shape">Shape my thank-you</button><button class="quiet-action" type="button" id="gratitude-clear" data-i18n="gratitude-clear">Clear note</button></div>
+          <p class="local-note" data-i18n="gratitude-local">This note is created in this tab only. It is not sent, saved, or published. Avoid names or someone else’s private details.</p>
+          <article class="gratitude-result" id="gratitude-result" aria-live="polite" hidden></article>
+        </section>
+        <section class="music-card" lang="en" aria-labelledby="music-title">
+          <span class="music-mark" aria-hidden="true">≈</span>
+          <p class="eyebrow">a music offering · Ezar Garuna</p>
+          <h2 id="music-title">Water, held with care</h2>
+          <p>Three songs of gratitude, home, and clear water. A small listening path from the published Suno album <em>Вайлеле ∴ слава чистой воде</em>.</p>
+          <ol class="water-tracks" aria-label="Three songs from the album">
+            <li><a href="https://suno.com/song/924cc661-cc6d-4b7e-985b-50d5a9378ce6" target="_blank" rel="noopener noreferrer"><span>01</span> стакан для Вайлеле</a></li>
+            <li><a href="https://suno.com/song/d224ed4f-b72b-44b1-8da8-345259b5454a" target="_blank" rel="noopener noreferrer"><span>02</span> место у двери</a></li>
+            <li><a href="https://suno.com/song/38911c62-799d-4b30-97ca-940c75685460" target="_blank" rel="noopener noreferrer"><span>03</span> слава чистой воде</a></li>
+          </ol>
+          <div class="music-actions"><a class="primary" href="https://suno.com/album/a3faa86d-8211-47f7-b709-793c4f97b456" target="_blank" rel="noopener noreferrer">Open the three-song album on Suno ↗</a><a href="https://suno.com/@saritamah" target="_blank" rel="noopener noreferrer">Ezar Garuna on Suno</a></div>
+          <details class="music-archive">
+            <summary>Open the SoundCloud listening room · Vibrágmae</summary>
+            <p>A seven-track selection from the Cyber Temple archive. The player is loaded only when you open this section and choose to connect it.</p>
+            <p class="music-privacy">SoundCloud may process usage data when its player loads. Read the <a href="https://soundcloud.com/pages/cookies" target="_blank" rel="noopener noreferrer">SoundCloud Cookie Policy</a>. Playback and eligible play counts are controlled by SoundCloud; this page does not promise a specific count.</p>
+            <button class="quiet-action" type="button" id="soundcloud-load" aria-controls="soundcloud-player">Load SoundCloud player</button>
+            <div class="soundcloud-player" id="soundcloud-player" aria-live="polite"></div>
+            <p><a href="https://soundcloud.com/cybertemple/sets/vibragmae" target="_blank" rel="noopener noreferrer">Open the playlist on SoundCloud ↗</a></p>
+          </details>
+        </section>
         <aside class="care-boundary"><p><strong data-i18n="care-image-title">Flamingo · angels of care</strong><br><span data-i18n="care-image-note">An author-created image for a proposed voluntary circle, not a staffed service.</span></p><p data-i18n="care-boundary">This self-guided prototype does not connect people. It is not medical, legal, or crisis support.</p><p data-i18n="care-urgent">In immediate danger, contact local emergency services or someone you trust.</p></aside>
         <details class="care-atlas">
           <summary data-i18n="care-atlas-title">Explore care paths for different situations</summary>
@@ -1054,6 +1111,7 @@
       status.lang = selectedLanguage;
       status.dir = selectedLanguage === "ar" ? "rtl" : "auto";
       document.title = ({ru:"∴ SUTI.world — язык твоего мира",en:"∴ SUTI.world — language for your world",es:"∴ SUTI.world — el lenguaje de tu mundo",pt:"∴ SUTI.world — a linguagem do seu mundo"})[locale];
+      const gratitudeCard=document.querySelector(".gratitude-card"); if(gratitudeCard)gratitudeCard.lang=locale==="pt"?"pt-BR":locale;
       for (const el of document.querySelectorAll("[data-i18n]")) { const value=translations[locale][el.dataset.i18n]; if(value)el.textContent=value; }
       for (const el of document.querySelectorAll("[data-i18n-html]")) { const value=translations[locale][el.dataset.i18nHtml]; if(value)el.innerHTML=value; }
       for (const el of document.querySelectorAll("[data-i18n-aria]")) { const value=translations[locale][el.dataset.i18nAria]; if(value)el.setAttribute("aria-label",value); }
@@ -1121,6 +1179,10 @@
     Object.assign(translations.ru,{"care-clear":"Очистить выбор и заметку","care-local":"Выбор остаётся в этой вкладке. Он не отправляется и не сохраняется. Очистка удаляет выбор и заметку с этой страницы, но не обязательно очищает историю браузера."});
     Object.assign(translations.es,{"care-clear":"Borrar elección y nota","care-local":"Tu elección queda en esta pestaña. No se envía ni se guarda. Borrar elimina la elección y la nota de esta página; puede que no borre el historial del navegador."});
     Object.assign(translations.pt,{"care-clear":"Limpar escolhas e nota","care-local":"Sua escolha fica nesta aba. Nada é enviado nem salvo. Limpar remove suas escolhas e a nota desta página; talvez não apague o histórico do navegador."});
+    Object.assign(translations.en,{"gratitude-title":"A small note of thanks","gratitude-intro":"Notice one kind thing, effort, or moment you want to remember. You can keep the note private; gratitude never creates a debt.","gratitude-label":"What would you like to acknowledge?","gratitude-placeholder":"One small thing is enough.","gratitude-shape":"Shape my thank-you","gratitude-clear":"Clear note","gratitude-local":"This note is created in this tab only. It is not sent, saved, or published. Avoid names or someone else’s private details.","gratitude-prefix":"I want to remember this with gratitude:"});
+    Object.assign(translations.ru,{"gratitude-title":"небольшая записка благодарности","gratitude-intro":"Заметь один добрый жест, усилие или момент, который хочется сохранить в памяти. Записку можно оставить при себе; благодарность не создаёт долга.","gratitude-label":"Что хочется отметить?","gratitude-placeholder":"Достаточно одной небольшой детали.","gratitude-shape":"Собрать слова благодарности","gratitude-clear":"Очистить записку","gratitude-local":"Записка создаётся только в этой вкладке. Она не отправляется, не сохраняется и не публикуется. Не указывай имена и чужие личные подробности.","gratitude-prefix":"Хочу сохранить это в памяти с благодарностью:"});
+    Object.assign(translations.es,{"gratitude-title":"una pequeña nota de gratitud","gratitude-intro":"Recuerda un gesto amable, un esfuerzo o un momento que quieras conservar. La nota puede quedarse en privado; agradecer no crea una deuda.","gratitude-label":"¿Qué te gustaría reconocer?","gratitude-placeholder":"Un detalle pequeño es suficiente.","gratitude-shape":"Dar forma a mi agradecimiento","gratitude-clear":"Borrar la nota","gratitude-local":"La nota se crea solo en esta pestaña. No se envía, guarda ni publica. Evita nombres y detalles privados de otras personas.","gratitude-prefix":"Quiero recordar esto con gratitud:"});
+    Object.assign(translations.pt,{"gratitude-title":"uma pequena nota de gratidão","gratitude-intro":"Perceba um gesto gentil, esforço ou momento que queira guardar na memória. A nota pode ficar em privado; agradecer não cria uma dívida.","gratitude-label":"O que você gostaria de reconhecer?","gratitude-placeholder":"Um pequeno detalhe já basta.","gratitude-shape":"Dar forma ao meu agradecimento","gratitude-clear":"Apagar a nota","gratitude-local":"A nota é criada somente nesta aba. Não é enviada, salva nem publicada. Evite nomes ou detalhes privados de outras pessoas.","gratitude-prefix":"Quero guardar isto na memória com gratidão:"});
     Object.assign(translations.en,{"entry-tag": "clarity through language", "entry-title": "the care questionnaire", "entry-intro": "one tap, one sentence, or a fuller story. you choose how much to share.", "entry-open": "open the care questionnaire", "entry-note": "Google Forms · RU / EN · contacts optional. answers go to the organiser only when you submit.", "entry-private": "prefer a private note on this device?", "entry-more": "explore the rest of SUTI.world"});
     Object.assign(translations.ru,{"entry-tag": "ясность через язык", "entry-title": "анкета заботы", "entry-intro": "одно касание, одна фраза или целая история. ты выбираешь, чем поделиться.", "entry-open": "открыть анкету заботы", "entry-note": "Google Формы · RU / EN · без обязательных контактов. организатор получит ответы после отправки.", "entry-private": "хочешь составить записку только для себя?", "entry-more": "другие маршруты SUTI.world"});
     Object.assign(translations.es,{"entry-tag": "claridad a través del lenguaje", "entry-title": "un espacio para escucharte", "entry-intro": "un toque, una frase o tu historia. tú decides cuánto compartir.", "entry-open": "abrir el formulario de cuidado", "entry-note": "Google Forms · RU / EN · contacto opcional. el organizador recibe las respuestas al enviarlas.", "entry-private": "¿prefieres escribir una nota privada aquí?", "entry-more": "otros caminos de SUTI.world"});
@@ -1155,6 +1217,10 @@
     }
     document.getElementById("care-build").addEventListener("click",buildCareNote);
     document.getElementById("care-clear").addEventListener("click",()=>{careForm.querySelector('[name="care-depth"][value="simple"]').checked=true;careForm.querySelector('[name="intent"]').value="explore";careForm.querySelector('[name="need"]').value="pause";careForm.querySelector('[name="pace"]').value="none";careForm.querySelector('[name="protect"]').value="privacy";careForm.querySelector('[name="step"]').value="pause";careForm.querySelector('[name="format"]').value="text";document.getElementById("care-result-text").textContent="";updateCareDepth();careResult.hidden=true;});
+    const gratitudeInput=document.getElementById("gratitude-input"), gratitudeResult=document.getElementById("gratitude-result");
+    document.getElementById("gratitude-shape").addEventListener("click",()=>{const value=gratitudeInput.value.trim();if(!value){gratitudeInput.focus();return;}gratitudeResult.textContent=`${translations[locale]["gratitude-prefix"]}\n${value}`;gratitudeResult.hidden=false;});
+    document.getElementById("gratitude-clear").addEventListener("click",()=>{gratitudeInput.value="";gratitudeResult.textContent="";gratitudeResult.hidden=true;gratitudeInput.focus();});
+    document.getElementById("soundcloud-load").addEventListener("click",e=>{const frame=document.createElement("iframe");frame.title="SoundCloud player: Vibrágmae by Cyber Temple";frame.width="100%";frame.height="300";frame.loading="lazy";frame.referrerPolicy="strict-origin-when-cross-origin";frame.allow="autoplay";frame.src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fcybertemple%2Fsets%2Fvibragmae&color=%230e8588&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true";document.getElementById("soundcloud-player").replaceChildren(frame);e.currentTarget.disabled=true;e.currentTarget.textContent="SoundCloud player loaded";});
     const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
     function collectMap(){const t=translations[locale],shown=qs.filter(q=>!q.hidden);return [`# ∴ ${t["map-title"]}`,...shown.map(q=>{const area=q.querySelector("textarea"),answer=area.value.trim();return `## ${t[`q${area.name.slice(1)}`]}\n\n${answer||t.empty}`})].join("\n\n");}
     function makeMapPrompt(){const t=translations[locale];return `# ${t["prompt-title"]}\n\n${t["prompt-instruction"]}\n\n${collectMap()}\n\n${t["prompt-boundary"]}`;}
