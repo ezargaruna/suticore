@@ -28,7 +28,7 @@ jobs:
       - name: prepare public surface
         run: |
           mkdir -p _site/assets/fonts _site/assets/brand _site/downloads
-          cp index.html _site/index.html
+          cp index.html care-map.html _site/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
           cp assets/fonts/Onest-Variable.woff2 _site/assets/fonts/Onest-Variable.woff2
