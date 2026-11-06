@@ -33,13 +33,16 @@ jobs:
           from pathlib import Path
           with ZipFile('downloads/Virenium.zip') as z:
               assert z.testzip() is None
-              for name in ['virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
+              assert Path('downloads/Verenium.zip').read_bytes() == Path('downloads/Virenium.zip').read_bytes()
+              for name in ['verenium.html','modules/verenium/README.md','modules/verenium/manifest.json','virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
                   source = Path('downloads', name) if name.startswith('SUTI.os.') else Path(name)
                   assert z.read(name) == source.read_bytes(), name
           PY
-          cp index.html care-map.html care-atlas.html virenium.html _site/
+          cp index.html care-map.html care-atlas.html virenium.html verenium.html _site/
           cp -R assets/care _site/assets/
-          cp downloads/Virenium.zip _site/downloads/
+          cp downloads/Virenium.zip downloads/Verenium.zip _site/downloads/
+          mkdir -p _site/modules
+          cp -R modules/verenium _site/modules/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
           cp assets/fonts/Onest-Variable.woff2 _site/assets/fonts/Onest-Variable.woff2
