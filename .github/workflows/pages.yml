@@ -40,7 +40,7 @@ jobs:
           PY
           cp index.html openai-crystal.html audits.html audit-crystal.zip clear-water.html nitya.html care-map.html care-atlas.html virenium.html verenium.html _site/
           cp -R assets/care _site/assets/
-          cp downloads/Virenium.zip downloads/Verenium.zip _site/downloads/
+          cp downloads/SUTI.verenium.md downloads/Virenium.zip downloads/Verenium.zip _site/downloads/
           mkdir -p _site/modules
           cp -R modules/verenium _site/modules/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
