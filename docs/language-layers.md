@@ -2,7 +2,7 @@
 
 ## Three public entrances and the first reflection
 
-All 13 layers now have independently selectable entry labels, action phrases, QR disclosure and reflection prompts. The council and companion links carry the chosen layer. The public form is a separate Russian Google Form. The remaining interface and vault retain the coverage below. The new texts are editorial drafts; Sanskrit, Latin and the authored Yazekh register have not received independent linguistic or author review.
+All 13 layers now have independently selectable entry labels, action phrases, QR disclosure and reflection prompts. The council and companion links carry the chosen layer. Each of the 26 companion/council QR images carries the same locale and route as its text link. A notice in each layer identifies the Russian Google Form and the limited scope of the workshop translation. At 360 px, all 13 entrance sets and 26 opening reflections were checked in Chrome. Run tests/check-entry-layers.py with Playwright and Chromium from the repository root (CHROME_BIN optionally specifies a browser). The public form is a separate Russian Google Form. The remaining interface and vault retain the coverage below. The new texts are editorial drafts; Sanskrit, Latin and the authored Yazekh register have not received independent linguistic or author review.
 
 ## Current state
 
