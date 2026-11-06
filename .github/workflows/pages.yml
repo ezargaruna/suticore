@@ -34,7 +34,7 @@ jobs:
           with ZipFile('downloads/Virenium.zip') as z:
               assert z.testzip() is None
               assert Path('downloads/Verenium.zip').read_bytes() == Path('downloads/Virenium.zip').read_bytes()
-              for name in ['verenium.html','modules/verenium/README.md','modules/verenium/manifest.json','virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
+              for name in ['verenium.html','modules/verenium/protocol.md','modules/verenium/README.md','modules/verenium/manifest.json','virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
                   source = Path('downloads', name) if name.startswith('SUTI.os.') else Path(name)
                   assert z.read(name) == source.read_bytes(), name
           PY
