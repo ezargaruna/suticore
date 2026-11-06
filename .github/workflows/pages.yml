@@ -53,7 +53,7 @@ jobs:
             esac
             cat > "_site/$route/index.html" <<EOF
           <!doctype html>
-          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#clarity"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}?lang=$lang#clarity">SUTI.world · ${message}</a></p></body></html>
+          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#care"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}?lang=$lang#care">SUTI.world · ${message}</a></p></body></html>
           EOF
           done
       - name: upload static site

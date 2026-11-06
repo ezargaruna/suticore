@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F5ECE4">
-  <meta name="description" content="A small language game for what matters now. Play, learn, or download the local SUTI.os vault.">
+  <meta name="description" content="Start with the care questionnaire. One tap, one sentence, or a fuller story.">
   <link rel="icon" href="assets/brand/suti-mark-main.png" type="image/png">
   <title>SUTI.world — language for your world</title>
   <style>
@@ -647,7 +647,8 @@
     @keyframes nitya-thread-glow { 0%, 100% { opacity: .28; filter: hue-rotate(-8deg); } 50% { opacity: .78; filter: hue-rotate(8deg); } }
     @media (max-width: 780px) { .nitya-portal::after { right: -14%; bottom: 18%; width: 92vw; } }
     @media (prefers-reduced-motion: reduce) { .nitya-portal::after { animation: none; } }
-  </style>
+  .care-nav summary{padding-block:.65rem;cursor:pointer;color:var(--suti-muted)}
+</style>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
@@ -667,15 +668,18 @@
       </div>
     </div>
   </header>
-  <nav class="wrap site-nav" aria-label="Primary navigation" data-i18n-aria="nav-label"><a href="#care" data-i18n="nav-start">Start</a><a href="#nitya" data-i18n="nav-nitya">Play</a><a href="#library" data-i18n="nav-library">Library</a><a href="#language" data-i18n="nav-language">Languages</a><a href="https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/README.md" data-i18n="nav-language-packs">Vault languages</a><a href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="gift-link">Download SUTI.os</a></nav>
+  <details class="wrap care-nav"><summary data-i18n="entry-more">explore the rest of SUTI.world</summary><nav class="site-nav" aria-label="Primary navigation" data-i18n-aria="nav-label"><a href="#care" data-i18n="nav-start">Start</a><a href="#nitya" data-i18n="nav-nitya">Play</a><a href="#library" data-i18n="nav-library">Library</a><a href="#language" data-i18n="nav-language">Languages</a><a href="https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/README.md" data-i18n="nav-language-packs">Vault languages</a><a href="https://github.com/ezargaruna/SUTI.os/releases/latest/download/SUTI.os.zip" data-i18n="gift-link">Download SUTI.os</a></nav></details>
   <main id="main">
     <section class="section care-entry" id="care" aria-labelledby="care-title">
       <div class="wrap">
         <div class="section-head care-heading">
-          <p class="eyebrow" data-i18n="care-eyebrow">✳ SUTI.care · voluntary · local</p>
-          <h1 id="care-title" data-i18n="care-title">What kind of care helps?</h1>
-          <p data-i18n="care-intro">Start small. Go deeper only if you choose.</p>
+          <p class="eyebrow" data-i18n="entry-tag">clarity through language</p>
+          <h1 id="care-title" data-i18n="entry-title">the care questionnaire</h1>
+          <p data-i18n="entry-intro">one tap, one sentence, or a fuller story. you choose how much to share.</p>
+          <a class="primary" href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform" data-i18n="entry-open">open the care questionnaire</a>
+          <p class="local-note" data-i18n="entry-note">Google Forms · RU / EN · contacts optional. answers go to the organiser only when you submit.</p>
         </div>
+        <details class="care-atlas"><summary data-i18n="entry-private">prefer a private note on this device?</summary>
         <div class="care-form" id="care-form" role="group" aria-labelledby="care-title">
           <fieldset class="care-depth">
             <legend data-i18n="care-depth-label">Choose a depth</legend>
@@ -714,6 +718,7 @@
           <p class="local-note" data-i18n="care-local">Your choices stay in this tab. Nothing is sent or saved.</p>
           <article class="care-result" id="care-result" aria-live="polite" hidden><h2 data-i18n="care-result-title">Your note · stays here</h2><p id="care-result-text"></p></article>
         </div>
+        </details>
         <aside class="care-boundary"><p><strong data-i18n="care-image-title">Flamingo · angels of care</strong><br><span data-i18n="care-image-note">An author-created image for a proposed voluntary circle, not a staffed service.</span></p><p data-i18n="care-boundary">This self-guided prototype does not connect people. It is not medical, legal, or crisis support.</p><p data-i18n="care-urgent">In immediate danger, contact local emergency services or someone you trust.</p></aside>
         <details class="care-atlas">
           <summary data-i18n="care-atlas-title">Explore care paths for different situations</summary>
@@ -1106,6 +1111,10 @@
     Object.assign(translations.ru,{"care-clear":"Очистить выбор и заметку","care-local":"Выбор остаётся в этой вкладке. Он не отправляется и не сохраняется. Очистка удаляет выбор и заметку с этой страницы, но не обязательно очищает историю браузера."});
     Object.assign(translations.es,{"care-clear":"Borrar elección y nota","care-local":"Tu elección queda en esta pestaña. No se envía ni se guarda. Borrar elimina la elección y la nota de esta página; puede que no borre el historial del navegador."});
     Object.assign(translations.pt,{"care-clear":"Limpar escolhas e nota","care-local":"Sua escolha fica nesta aba. Nada é enviado nem salvo. Limpar remove suas escolhas e a nota desta página; talvez não apague o histórico do navegador."});
+    Object.assign(translations.en,{"entry-tag": "clarity through language", "entry-title": "the care questionnaire", "entry-intro": "one tap, one sentence, or a fuller story. you choose how much to share.", "entry-open": "open the care questionnaire", "entry-note": "Google Forms · RU / EN · contacts optional. answers go to the organiser only when you submit.", "entry-private": "prefer a private note on this device?", "entry-more": "explore the rest of SUTI.world"});
+    Object.assign(translations.ru,{"entry-tag": "ясность через язык", "entry-title": "анкета заботы", "entry-intro": "одно касание, одна фраза или целая история. ты выбираешь, чем поделиться.", "entry-open": "открыть анкету заботы", "entry-note": "Google Формы · RU / EN · без обязательных контактов. организатор получит ответы после отправки.", "entry-private": "хочешь составить записку только для себя?", "entry-more": "другие маршруты SUTI.world"});
+    Object.assign(translations.es,{"entry-tag": "claridad a través del lenguaje", "entry-title": "un espacio para escucharte", "entry-intro": "un toque, una frase o tu historia. tú decides cuánto compartir.", "entry-open": "abrir el formulario de cuidado", "entry-note": "Google Forms · RU / EN · contacto opcional. el organizador recibe las respuestas al enviarlas.", "entry-private": "¿prefieres escribir una nota privada aquí?", "entry-more": "otros caminos de SUTI.world"});
+    Object.assign(translations.pt,{"entry-tag": "clareza pela linguagem", "entry-title": "um espaço de escuta", "entry-intro": "um toque, uma frase ou uma história. você escolhe o que compartilhar.", "entry-open": "abrir o formulário de cuidado", "entry-note": "Google Forms · RU / EN · contato opcional. as respostas chegam à organização quando você envia.", "entry-private": "prefere escrever uma nota só para você?", "entry-more": "outros caminhos em SUTI.world"});
     Object.assign(translations.en,{"nav-language-packs":"Vault languages"});
     Object.assign(translations.ru,{"nav-language-packs":"Языки хранилища"});
     Object.assign(translations.es,{"nav-language-packs":"Idiomas del vault"});
