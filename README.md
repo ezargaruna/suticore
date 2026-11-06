@@ -7,6 +7,7 @@ This repository contains public specifications, the canonical source and deploym
 ## Choose a starting point
 
 - [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
+- [Care atlas](https://ezargaruna.github.io/suticore/care-atlas.html) · [private care map](https://ezargaruna.github.io/suticore/care-map.html) · [Virenium workshop](https://ezargaruna.github.io/suticore/virenium.html) · [complete offline bundle](https://ezargaruna.github.io/suticore/downloads/Virenium.zip). The workshop stores notes only when the visitor exports them.
 - [Download SUTI.os](https://github.com/ezargaruna/SUTI.os/releases/latest) — a separate, portable Markdown vault with a full Russian edition and partial English, Spanish, and Brazilian Portuguese entry packs.
 - [Language layer status](docs/language-layers.md) — what is translated, what falls back to Russian, and what still needs review across the 13 navigation layers.
 - [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.

@@ -2,6 +2,12 @@
 <html lang="en" data-theme="day">
 <head>
   <meta charset="utf-8">
+  <script>
+  // The custom domain sometimes serves this home document for asset routes.
+  if (location.hostname === 'suti.world' && ['/care-map.html','/care-atlas.html','/virenium.html','/samurai-dharma.html','/downloads/Virenium.zip','/downloads/SUTI.os.zip','/downloads/SUTI.os.zip.sha256'].includes(location.pathname)) {
+    location.replace('https://ezargaruna.github.io/suticore'+location.pathname+location.search+location.hash);
+  }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F5ECE4">
   <meta name="description" content="Start with the care questionnaire. One tap, one sentence, or a fuller story.">
