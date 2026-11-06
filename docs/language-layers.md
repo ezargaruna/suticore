@@ -1,5 +1,9 @@
 # SUTI.world language layers
 
+## Three public entrances and the first reflection
+
+All 13 layers now have independently selectable entry labels, action phrases, QR disclosure and reflection prompts. The council and companion links carry the chosen layer. The public form is a separate Russian Google Form. The remaining interface and vault retain the coverage below. The new texts are editorial drafts; Sanskrit, Latin and the authored Yazekh register have not received independent linguistic or author review.
+
 ## Current state
 
 The public entry page offers 13 language and authorial-language layers:
