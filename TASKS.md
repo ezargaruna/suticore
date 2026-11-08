@@ -9,10 +9,10 @@ This file tracks public SUTI project work only. `P0` means a release blocker, no
 | id | task | state | acceptance |
 |---|---|---|---|
 | SW-01 | verify exact production URL, Pages source branch, release commit and current rendered site | partial · `HOLD` | compare built artifact with live site; identify owner and rollback path |
-| SW-02 | inspect the separate external care form and its real data flow | open · `HOLD` | record operator, fields, purpose, access, storage/transfer locations, retention/deletion, consent and legal review; do not open or export respondent answers |
+| SW-02 | inspect the separate external care form and its real data flow | partial · public page reviewed; operator/data route `HOLD` | record operator, fields, purpose, access, storage/transfer locations, retention/deletion, consent and legal review; do not open or export respondent answers |
 | SW-03 | approve the first public invitation and its destination | draft · not published | plain-language promise, accurate service status, working URL, privacy note, exit route and owner approval; no claim of people helped without evidence and their permission |
 | SW-04 | review public portfolio claims and selected CV evidence | local draft · `PARTIAL` | education/history marked as author-provided until verified; each case, tool and module has scope, maturity, rights and evidence; no private biography/health data |
-| SW-05 | run a small, opt-in, adult usability check | proposed · not active | named coordinator, capacity, consent, data minimization, accessibility, incident contact and exit route; no paid recruitment or collection of sensitive stories |
+| SW-05 | run a small, opt-in, adult usability check | proposed · not active | named coordinator, capacity, consent, data minimization, accessibility, incident contact and exit route; reconcile the current all-ages form copy before any invitation; no paid recruitment or collection of sensitive stories |
 
 ## P1 · release quality and useful entry
 
@@ -51,7 +51,8 @@ This file tracks public SUTI project work only. `P0` means a release blocker, no
 
 - GitHub Pages metadata reports `https://ezargaruna.github.io/suticore/`, workflow deployment from `main` at repository root.
 - Latest successful Pages run: `fdc7216fc0e27b2b583baa912d7f5d9ecd3ea8fa` (`Integrate NITYA .todeus passport and locale ledger`). The home page returned HTTP 200; `portfolio.html` and `TASKS.md` returned HTTP 404.
-- This candidate is on `codex/care-gifts-intake-2026-11-08` at `d4e5fe2` and is seven commits ahead of `origin/main`. No change from this branch is live. Rollback procedure has not been exercised.
+- This candidate is on `codex/care-gifts-intake-2026-11-08` at `1f5663a` and is eight commits ahead of `origin/main`. No change from this branch is live. Rollback procedure has not been exercised.
 - Local static verification on the candidate: HTML parsing, local `href`/`src` resolution, inline JavaScript syntax, and `git diff --check` passed. Visual, accessibility, low-bandwidth, native-language and form-data-flow reviews remain open.
+- Read-only inspection of the linked public Google Form found 12 visible question blocks, optional name/contact fields and free-response prompts; its public description says it is for people of any age. No clear named operator, processing purpose, retention period, deletion route or submission-specific privacy notice was visible. No respondent answers were accessed and no submission was made. Keep outreach on hold; establish the data route and child-safeguarding boundary first.
 
 `PASS` on a static check is not `COMMIT`, `RELEASE`, `DEPLOY` or `PUBLICATION`. Do not push to `main` or describe a service as live until the relevant acceptance gates pass.
