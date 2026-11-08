@@ -2,7 +2,7 @@
 
 **as of:** 2026-11-08 · **scope:** this public project checkout only
 
-The personal board remains in `SUTI.saritamah/TASKS.md`. This file tracks public SUTI work and points to that board without copying personal or third-party records. `P0` means a release blocker, not a claim of emergency. A task can be locally complete while publication, runtime or owner review remains on hold.
+This file tracks public SUTI project work only. `P0` means a release blocker, not a claim of emergency. A task can be locally complete while publication, runtime or owner review remains on hold.
 
 ## P0 · before any public campaign
 
@@ -37,16 +37,6 @@ The personal board remains in `SUTI.saritamah/TASKS.md`. This file tracks public
 | SW-17 | assess a static regional mirror and offline copies | proposal · `HOLD` | verify actual need and network reachability with consenting testers, exact source hash, host/operator, legal review, maintenance and rollback; mirror contains public static files only, never intake data |
 | SW-18 | scope research and cultural audits | backlog | one discipline or claim at a time, primary sources, qualified reviewers, rights and limits; no claim to exhaustive knowledge of all civilizations |
 | SW-19 | develop shared Veche and circle formats | proposal | agendas and records distinguish support, objection, abstention and no response; AI prepares options only; no authority, quorum or consensus is inferred |
-
-## cross-contour tasks already in the personal register
-
-The personal board already records three related 2026-11-08 work items ::
-
-- `VCH-SUTI-ANGELS-ATLAS-20261108` · local SUTI.Angels atlas, offer and journey proposal
-- `VCH-SUTI-FEDERATION-CONCEPT-20261108` · voluntary federated commons design
-- `VCH-SUTI-CARE-LAYERS-20261108` · local questionnaire and visual prototype
-
-This board adds the public-site and release tasks above; it does not close those personal records or infer that their proposals are operational. The personal task record should point back to this file after each cross-contour reconciliation.
 
 ## completed locally in this branch · release still separate
 
