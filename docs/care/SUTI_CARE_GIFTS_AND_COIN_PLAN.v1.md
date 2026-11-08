@@ -165,6 +165,8 @@ Do not publish “angels are active”, “people are receiving support”, “w
 
 ## task list and gates
 
+The conversation-wide prioritized register is [`TASKS.md`](../../TASKS.md). This table remains the care-module gate list; status in either place does not imply public deployment.
+
 | task | status | pass condition |
 |---|---|---|
 | replace broad vulnerability framing with “what matters / what to protect” | proposed | copy review in all active locales |

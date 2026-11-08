@@ -39,6 +39,30 @@
         radial-gradient(ellipse at 19% 76%, #dce8bf 0 4%, transparent 4.4%),
         radial-gradient(ellipse at 84% 76%, #f2dfa8 0 3.5%, transparent 4%);
     }
+    .island-map.has-light .map-constellation::after {
+      content: "∴";
+      position: absolute;
+      z-index: 0;
+      left: var(--light-x, 50%);
+      top: var(--light-y, 50%);
+      width: 3rem;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      transform: translate(-50%, -50%);
+      border: 1px solid #fff9;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff9, #f2dfa866 60%, transparent 72%);
+      color: #fff;
+      font: 1rem ui-monospace, SFMono-Regular, Menlo, monospace;
+      text-shadow: 0 1px 9px #174e52;
+      opacity: .78;
+      pointer-events: none;
+      transition: left .3s ease-out, top .3s ease-out, opacity .3s ease-out;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .island-map.has-light .map-constellation::after { transition: none; }
+    }
     .map-constellation { z-index: 1; }
     .map-zone {
       border-color: color-mix(in srgb, var(--gold) 46%, var(--line));
@@ -254,6 +278,12 @@
   document.getElementById("copy").addEventListener("click",async()=>{const lines=[];for(const [id,r] of responses)lines.push(`${r.area} · ${r.question} · ${r.value}`);document.querySelectorAll("[data-pearl]").forEach((x,i)=>{if(x.value.trim())lines.push(`${d.areas[i][0]} · ${d.pearl}: ${x.value.trim()}`);});const horizonNote=document.getElementById("horizon-note").value.trim();if(horizonNote)lines.push(`horizon · ${horizonNote}`);document.querySelectorAll("input[name=horizon]:checked").forEach(x=>lines.push(`horizon · ${x.value}`));if(document.getElementById("volunteer-interest").checked)lines.push("interest · future volunteer circle (not enrolled)");try{await navigator.clipboard.writeText(lines.join("\n"));document.getElementById("copy-status").textContent=d.copied;}catch{document.getElementById("copy-status").textContent=lang==="ru"?"буфер обмена недоступен. заметки остались на странице.":"Clipboard unavailable. Your notes remain on this page.";}});
   const glow=document.getElementById("glow"), glowValue=document.getElementById("glow-value"), glowWords=lang==="ru"?["0 · тишина","1 · жемчуг","2 · прибой","3 · заря"]:["0 · quiet","1 · pearl","2 · tide","3 · aurora"];
   const setGlow=()=>{document.documentElement.style.setProperty("--glow",glow.value);glowValue.textContent=glowWords[Number(glow.value)];};glow.addEventListener("input",setGlow);setGlow();
+  const islandMap=document.querySelector(".island-map"), constellation=islandMap?.querySelector(".map-constellation");
+  if(islandMap&&constellation&&matchMedia("(hover: hover) and (pointer: fine)").matches&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+    let frame=0,lastEvent;
+    islandMap.addEventListener("pointermove",event=>{lastEvent=event;if(frame)return;frame=requestAnimationFrame(()=>{const rect=constellation.getBoundingClientRect();const x=Math.max(0,Math.min(100,(lastEvent.clientX-rect.left)/rect.width*100));const y=Math.max(0,Math.min(100,(lastEvent.clientY-rect.top)/rect.height*100));constellation.style.setProperty("--light-x",`${x}%`);constellation.style.setProperty("--light-y",`${y}%`);islandMap.classList.add("has-light");frame=0;});},{passive:true});
+    islandMap.addEventListener("pointerleave",()=>islandMap.classList.remove("has-light"),{passive:true});
+  }
   document.getElementById("theme").addEventListener("click",e=>{document.body.classList.toggle("night");e.currentTarget.setAttribute("aria-pressed",String(document.body.classList.contains("night")));});
   document.title=lang==="ru"?"NITYA · дерево мира SUTI":"NITYA · SUTI world tree";
 })();

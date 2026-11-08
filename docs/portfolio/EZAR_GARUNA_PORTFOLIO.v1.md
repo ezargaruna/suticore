@@ -92,6 +92,8 @@ This is the current documented map, not a claim that every named module is a fin
 | SUTI Coin | possible contribution recognition concept | inactive; no issuance, transfer, price, wallet or redemption |
 | sigils, metagrams, protograms, scriptociriana | authorial visual and language experiments | creative intellectual work; each item needs its own source, version and rights record |
 
+Additional authorial seed names in the working vocabulary :: `.clan`, `.matrix`, `.uni`, `.lab`, `.logos`, `.entheogenesis`, `.songenesis`, `.vibratia`, `.veda`, `.zhiva`, `.ladova`, `.radova`, `.mara`. They are listed as names to inventory, not as verified modules or deployed systems. Each needs a plain-language purpose, source, owner, rights, version, boundaries and maturity passport before an active offer is made. Person-named or third-party contours remain outside this public list until provenance and itemized permission are clear.
+
 Open work is offered under the license stated on that artifact. A project name, symbol, repository link or mention of a technology does not establish deployment, endorsement, ownership of third-party material or a universal standard.
 
 ## a note of thanks

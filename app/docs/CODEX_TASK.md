@@ -3,6 +3,11 @@ start :: [SUTI_START_HERE.md](../../SUTI_START_HERE.md)
 houses :: [SUTI_HOUSES_SYSTEM.md](../../meta/framework/SUTI_HOUSES_SYSTEM.md)
 canon :: [CANON.md](../../meta/00_KERNEL/CANON.md)
 root :: [README.md](README.md)
+active task board :: [../../TASKS.md](../../TASKS.md)
+
+the task brief below is a legacy source request from 2026-09-22. for current
+SUTI.world work, use the dated project task board above and verify the live
+release path separately; this legacy branch name is not the current checkout.
 ---
 
 ## обязательный стиль · Synaura
