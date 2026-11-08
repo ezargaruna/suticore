@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e7">
+  <meta name="description" content="NITYA · a gentle, optional map for gifts, questions and one next step.">
+  <title>NITYA · SUTI world tree</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f0e7;--ink:#243936;--muted:#5d716e;--sea:#57b8b0;--petrol:#174e52;--gold:#c19a4d;--cherry:#a84755;--line:#c7d1c9;--card:#fffdf8;--shadow:#142a2713;--glow:0;--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 90% 2%,#edc89b88,transparent 30rem),linear-gradient(150deg,#f6f0e7,#e5f0eb 52%,#f5e7e3);color:var(--ink);font:1rem/1.65 Manrope,"Avenir Next",sans-serif}
+    body.night{color-scheme:dark;--paper:#122a2c;--ink:#e5f1e9;--muted:#bed0c9;--petrol:#a7e0d5;--line:#436363;--card:#1a3938;--shadow:#0008;background:radial-gradient(ellipse at 85% 4%,#27605d,transparent 36rem),linear-gradient(145deg,#112b31,#203a39 62%,#35272e)}
+    a{color:var(--petrol);text-underline-offset:.22em}body.night a{color:#a7e0d5}button,select,textarea,input{font:inherit}button,summary,select{cursor:pointer}:focus-visible{outline:3px solid var(--cherry);outline-offset:3px}.skip{position:absolute;left:-10000px}.skip:focus{left:1rem;top:1rem;z-index:9;background:var(--card);padding:.6rem}
+    header{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:1rem;justify-content:space-between;padding:.7rem max(1rem,calc((100vw - 1100px)/2));background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .brand{font-weight:800;letter-spacing:.03em;color:var(--petrol);text-decoration:none}.tools{display:flex;align-items:center;gap:.6rem}.tools select,.icon-button{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:.5rem .7rem}.world-menu{position:relative}.world-menu summary{list-style:none;display:flex;align-items:center;gap:.5rem;border:1px solid var(--line);border-radius:12px;padding:.48rem .7rem;background:var(--card);color:var(--petrol)}.world-menu summary::-webkit-details-marker{display:none}.world-menu nav{position:absolute;left:0;top:calc(100% + .55rem);width:min(88vw,300px);padding:.75rem;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 15px 40px var(--shadow)}.world-menu nav a{display:block;padding:.5rem .65rem;border-radius:9px;text-decoration:none}.world-menu nav a:hover{background:color-mix(in srgb,var(--sea) 18%,transparent)}
+    main{width:min(100% - 2rem,1000px);margin:auto}.hero{min-height:72vh;display:grid;align-content:center;padding:clamp(3rem,9vw,7rem) 0 3rem;position:relative}.eyebrow,.micro{font:600 .75rem/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;text-transform:lowercase;color:var(--petrol)}h1,h2,h3{font-family:"Nunito Sans","Avenir Next",sans-serif;line-height:1.12;letter-spacing:-.03em}h1{font-size:clamp(3rem,9vw,6.5rem);color:var(--petrol);max-width:12ch;margin:.5rem 0 1rem}h2{font-size:clamp(1.75rem,4vw,3rem);color:var(--petrol)}h3{font-size:1.25rem;color:var(--petrol)}.hero-verse{max-width:42ch;font:italic 1.25rem/1.55 Georgia,serif;color:var(--muted)}.main-cta{display:inline-flex;justify-content:center;align-items:center;gap:.6rem;width:fit-content;min-height:58px;margin-top:1rem;padding:.8rem 1.25rem;border:1px solid var(--petrol);border-radius:999px;background:var(--petrol);color:#fff;text-decoration:none;box-shadow:0 0 calc(var(--glow)*9px) color-mix(in srgb,#6ffff0 calc(var(--glow)*12%),transparent);transition:transform .2s,box-shadow .25s}.main-cta:hover{transform:translateY(-2px)}body.night .main-cta{color:#102725;background:#9fe2d5}
+    .world-tree{position:relative;overflow:hidden;padding:clamp(1.2rem,4vw,2.4rem);border:1px solid var(--line);border-radius:30px;background:color-mix(in srgb,var(--card) 82%,transparent);box-shadow:0 18px 48px var(--shadow)}.world-tree::after{content:"";position:absolute;inset:-30% -10% auto;height:60%;pointer-events:none;background:radial-gradient(ellipse,#57b8b02b,transparent 65%);filter:blur(calc(var(--glow)*4px))}.tree-art{position:relative;display:grid;grid-template-columns:1fr minmax(100px,.3fr) 1fr;align-items:center;gap:1rem;min-height:300px}.tree-line{position:absolute;left:50%;top:9%;bottom:8%;width:1px;background:linear-gradient(transparent,var(--gold),var(--sea),#293a3a,transparent);box-shadow:0 0 calc(var(--glow)*8px) var(--sea)}.tree-cluster{z-index:1;display:grid;gap:.7rem}.tree-cluster h3{margin:.2rem}.tree-node{padding:.7rem .8rem;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 0 calc(var(--glow)*7px) color-mix(in srgb,var(--sea) calc(var(--glow)*10%),transparent)}.tree-node a{font-weight:700;text-decoration:none}.tree-heart{z-index:2;display:grid;place-items:center;width:100px;aspect-ratio:1;margin:auto;border:1px solid var(--gold);border-radius:50%;background:radial-gradient(circle,#f9e9c8,var(--card) 72%);color:#735927;text-align:center;box-shadow:0 0 calc(var(--glow)*12px) #e9c671}.tree-roots{filter:saturate(.72)}.tree-roots .tree-node{background:linear-gradient(145deg,#263238,#3e4c4c);color:#edf1e9;border-color:#566261}.tree-roots a{color:#f2cf91}.tree-disclosure{position:relative;margin-top:1rem;border-top:1px solid var(--line);padding-top:.7rem}.tree-disclosure summary{color:var(--petrol);font-weight:700}.density{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem;margin:1.5rem 0 0}.density input{accent-color:var(--sea);width:min(240px,45vw)}.status{min-height:1.5em;color:var(--muted);font-size:.88rem}
+    section{padding:clamp(3rem,8vw,6rem) 0}.section-lead{max-width:68ch;color:var(--muted)}.card{padding:1rem 1.2rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);box-shadow:0 10px 26px var(--shadow);margin:1rem 0}.progress-wrap{position:sticky;top:64px;z-index:3;padding:.65rem 0;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(12px)}progress{width:100%;height:.6rem;accent-color:var(--sea)}.progress-label{display:flex;justify-content:space-between;gap:1rem;font-size:.87rem;color:var(--muted)}.layers{display:grid;gap:.8rem}.layer-card{border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}.layer-card summary{display:flex;justify-content:space-between;gap:.8rem;align-items:center;padding:1rem 1.15rem;color:var(--petrol);font-weight:750}.layer-body{padding:0 1rem 1rem}.lens{border-top:1px solid var(--line);padding:.65rem 0}.lens summary{padding:.5rem .2rem;font-weight:650}.q-list{display:grid;gap:.6rem}.question{padding:.75rem;border-radius:12px;background:color-mix(in srgb,var(--sea) 9%,var(--card));border:1px solid color-mix(in srgb,var(--sea) 38%,var(--line))}.question p{margin:.1rem 0 .6rem}.answers{display:flex;flex-wrap:wrap;gap:.4rem}.answers button,.choice-chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:.4rem .7rem}.answers button[aria-pressed="true"],.choice-chip:has(input:checked){background:var(--petrol);border-color:var(--petrol);color:#fff}.pearl-label{display:block;margin-top:1rem;color:var(--petrol);font-weight:750}.pearl-label textarea{display:block;width:100%;min-height:80px;margin-top:.4rem;padding:.75rem;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);resize:vertical}.optional{border:1px dashed var(--gold);border-radius:18px;padding:1rem}.optional summary{font-weight:700;color:var(--petrol)}.chips{display:flex;flex-wrap:wrap;gap:.5rem}.actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}.secondary{border:1px solid var(--petrol);border-radius:999px;background:transparent;color:var(--petrol);padding:.65rem 1rem}.callout{border-inline-start:4px solid var(--gold);padding:.8rem 1rem;background:color-mix(in srgb,var(--gold) 10%,var(--card));border-radius:0 12px 12px 0}.glossary{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.7rem}.glossary article{padding:1rem;border:1px solid var(--line);border-radius:16px;background:var(--card)}footer{padding:3rem 0 5rem;color:var(--muted);border-top:1px solid var(--line)}.hidden{display:none!important}
+    .island-map{position:relative;overflow:hidden;min-height:440px;padding:clamp(1rem,4vw,2.5rem);border:1px solid #b9d4c988;border-radius:34px;background:radial-gradient(ellipse at 50% 48%,#f8edcf 0 18%,#d5e9d7 18.3% 31%,#b7ddd4 31.5% 42%,#83c6c3 42.5% 57%,#539da3 57.5% 100%);box-shadow:inset 0 0 0 8px #ffffff2e,0 25px 60px var(--shadow)}.island-map::before{content:"";position:absolute;inset:0;opacity:.22;pointer-events:none;background-image:linear-gradient(90deg,#fff 1px,transparent 1px),linear-gradient(#fff 1px,transparent 1px);background-size:22px 22px;mask-image:radial-gradient(ellipse,#000 12%,transparent 82%)}.map-constellation{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.5rem,2vw,1.2rem);align-items:center;min-height:390px}.map-zone{position:relative;z-index:1;display:grid;gap:.25rem;min-height:108px;padding:.8rem;border:1px solid #d7c797;border-radius:18px;background:color-mix(in srgb,var(--card) 86%,transparent);color:var(--ink);text-decoration:none;box-shadow:0 9px 20px #153d3718;transition:transform .2s,box-shadow .2s}.map-zone::before{content:"";position:absolute;top:-7px;left:12px;width:13px;height:13px;background:var(--gold);border:2px solid var(--card);transform:rotate(45deg);image-rendering:pixelated}.map-zone:hover,.map-zone:focus-visible{transform:translateY(-3px);box-shadow:0 12px 28px #153d3735}.map-zone strong{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;color:var(--petrol)}.map-zone span{font-size:.82rem;line-height:1.4;color:var(--muted)}.map-zone:nth-child(1){grid-column:2;grid-row:1}.map-zone:nth-child(2){grid-column:1;grid-row:2}.map-zone:nth-child(3){grid-column:3;grid-row:2}.map-zone:nth-child(4){grid-column:2;grid-row:2;align-self:center;min-height:120px;border-color:var(--gold);background:#fff8e9}.map-zone:nth-child(5){grid-column:1;grid-row:3}.map-zone:nth-child(6){grid-column:3;grid-row:3}.map-zone:nth-child(7){grid-column:2;grid-row:3}.map-status{position:relative;margin:.6rem auto 0;max-width:58ch;text-align:center;color:#f8fff5;font-size:.82rem;text-shadow:0 1px 4px #123a3c}
+    @media(max-width:650px){header{padding:.6rem .75rem}.tools{gap:.3rem}.tools select{max-width:42vw}.tree-art{grid-template-columns:1fr 60px 1fr;gap:.4rem}.tree-heart{width:60px;font-size:.78rem}.tree-node{padding:.6rem;font-size:.86rem}.tree-line{left:50%}.layer-card summary{font-size:.95rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.main-cta{transition:none}.main-cta:hover{transform:none}}
+    /* NITYA · soft island atlas with restrained pixel landmarks */
+    .island-map {
+      border-color: color-mix(in srgb, var(--sea) 35%, var(--line));
+      border-radius: 30px;
+      background:
+        radial-gradient(ellipse at 49% 49%, #f8edcf 0 17%, #d9e8cf 17.4% 28%, #b9ddd1 28.5% 40%, #83c6c3 40.5% 57%, #559da1 57.5% 100%);
+      box-shadow: inset 0 0 0 7px #ffffff30, 0 22px 48px var(--shadow);
+    }
+    .island-map::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .34;
+      background:
+        radial-gradient(ellipse at 17% 23%, #f2dfa8 0 4%, transparent 4.4%),
+        radial-gradient(ellipse at 82% 27%, #dce8bf 0 5%, transparent 5.4%),
+        radial-gradient(ellipse at 19% 76%, #dce8bf 0 4%, transparent 4.4%),
+        radial-gradient(ellipse at 84% 76%, #f2dfa8 0 3.5%, transparent 4%);
+    }
+    .map-constellation { z-index: 1; }
+    .map-zone {
+      border-color: color-mix(in srgb, var(--gold) 46%, var(--line));
+      border-radius: 14px;
+      box-shadow: 3px 3px 0 color-mix(in srgb, var(--petrol) 14%, transparent), 0 9px 18px #153d3718;
+    }
+    .map-zone::before {
+      width: 10px;
+      height: 10px;
+      border: 0;
+      border-radius: 2px;
+      transform: none;
+      box-shadow: 4px 0 0 #e9c96f, 0 4px 0 #8bcfc2, 4px 4px 0 #f4dfaa;
+    }
+    .map-zone:nth-child(4) {
+      background: color-mix(in srgb, #fff8e9 90%, var(--card));
+      box-shadow: 4px 4px 0 color-mix(in srgb, var(--gold) 22%, transparent), 0 12px 24px #153d3720;
+    }
+    .map-zone:hover, .map-zone:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 4px 5px 0 color-mix(in srgb, var(--petrol) 18%, transparent), 0 14px 26px #153d3730;
+    }
+    .map-status {
+      width: fit-content;
+      padding: .38rem .75rem;
+      border: 1px solid #ffffff75;
+      border-radius: 999px;
+      background: #174e52c9;
+      text-shadow: none;
+    }
+    body.night .map-zone, body.night .map-zone:nth-child(4) {
+      background: color-mix(in srgb, var(--card) 93%, var(--sea));
+      border-color: color-mix(in srgb, var(--sea) 45%, var(--line));
+    }
+    body.night .map-status { color: #f6fbf5; background: #102725e8; }
+    @media (max-width: 650px) {
+      .map-constellation { grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: 0; }
+      .map-zone:nth-child(n) { grid-column: auto; grid-row: auto; }
+      .map-zone:nth-child(4) { grid-column: 1 / -1; }
+      .map-zone { min-height: 104px; }
+    }
+    @media (prefers-contrast: more) {
+      .island-map { background: var(--paper); box-shadow: none; }
+      .island-map::before, .island-map::after { display: none; }
+      .map-zone, .map-zone:nth-child(4) { border: 2px solid var(--ink); box-shadow: none; background: var(--card); }
+      .map-status { border: 2px solid var(--ink); background: var(--card); color: var(--ink); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .map-zone, .map-zone:hover, .map-zone:focus-visible { transition: none; transform: none; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">skip to content</a>
+<header>
+  <a class="brand" href="index.html">∴ SUTI.world</a>
+  <details class="world-menu"><summary aria-label="open the world tree"><span aria-hidden="true">☰</span><span>world tree</span></summary><nav aria-label="world tree navigation"><a href="#tree">the map</a><a href="#practice">gifts · seven threads</a><a href="#transpersonal">eighth horizon</a><a href="#glossary">word guide</a><a href="governance.html">care commons</a><a href="docs/security/SUTI_SECURE_ARCANUM_ARCHITECTURE.v1.md">secure × arcanum</a><a href="docs/commerce/SUTI_GIFT_EXCHANGE_AND_MONETIZATION.v1.md">gift economy</a><a href="nitya-todeus.html">NITYA · system atlas</a><a href="index.html#care">SUTI.world home</a></nav></details>
+  <div class="tools"><label class="micro" for="locale">language</label><select id="locale" aria-label="choose language"><option value="en">English</option><option value="ru">Русский</option><option value="es">Español · fallback</option><option value="pt-BR">Português · fallback</option><option value="zh-Hans">简体中文 · fallback</option><option value="hi">हिन्दी · fallback</option><option value="fr">Français · fallback</option><option value="ar">العربية · fallback</option><option value="bn">বাংলা · fallback</option><option value="eo">Esperanto · fallback</option><option value="sa">संस्कृतम् · fallback</option><option value="la">Latina · fallback</option><option value="yzh">Язэхъ · draft</option></select><button class="icon-button" id="theme" type="button" aria-pressed="false">◐</button></div>
+</header>
+<main id="main">
+  <div id="language-note" class="callout status" role="status" aria-live="polite"></div>
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="eyebrow">NITYA · SUTI world tree · an optional map</p>
+    <h1 id="hero-title">what matters now?</h1>
+    <p class="hero-verse">A soft light to notice a gift, name a boundary, and choose one step at your own pace.</p>
+    <a class="main-cta" href="#practice">begin with one question <span aria-hidden="true">↘</span></a>
+    <p class="status">You may skip, pause or leave. This reflection stays in this page and is not sent or saved.</p>
+  </section>
+  <section id="tree" class="world-tree" aria-labelledby="tree-title">
+    <p class="eyebrow">map · open the branches when you want</p><h2 id="tree-title">one tree · many ways to explore</h2>
+    <p class="section-lead">The world tree is an authorial navigation metaphor. It does not assign a type, rank, spiritual stage or diagnosis.</p>
+    <div class="tree-art" role="img" aria-label="Tree map: roots hold questions and boundaries, the trunk holds gifts and chosen practice, the canopy opens to language, learning and community">
+      <div class="tree-line" aria-hidden="true"></div>
+      <div class="tree-cluster tree-canopy"><h3>canopy · outward</h3><div class="tree-node"><a href="nitya.html">NITYA · play and practice</a></div><div class="tree-node"><a href="verenium.html">Verenium · prompt companion</a></div><div class="tree-node"><a href="docs/security/SUTI_CHANNEL_ADAPTERS.v1.md">channels · languages</a></div></div>
+      <div class="tree-heart">gifts<br>and choice</div>
+      <div class="tree-cluster tree-roots"><h3>roots · held with care</h3><div class="tree-node"><a href="#practice">what matters · now</a></div><div class="tree-node"><a href="docs/governance/SUTI_FEDERATED_CARE_COMMONS.v1.md">boundaries · commons</a></div><div class="tree-node"><a href="docs/security/SUTI_SECURE_ARCANUM_ARCHITECTURE.v1.md">unknowns · privacy</a></div></div>
+    </div>
+    <details class="tree-disclosure"><summary>lore · Verenitya and the quiet guardian</summary><p>Verenitya is a fictional guide voice for reflection: warm, curious and easy to mute. It does not watch, know everything, remove energy, remember automatically or speak with divine authority. Any assistant feature must be explicitly opened and show what material it can see.</p><p>The roots may hold a question someone is not ready to explore. Shadow work here means an optional writing prompt about a boundary or uncertainty; it is not therapy. The trunk is a chosen gift or skill. The canopy is a next step a person can revise.</p></details>
+    <div class="density"><label for="glow">light play · quiet ↔ aurora</label><input id="glow" type="range" min="0" max="3" value="1" step="1"><output id="glow-value" for="glow">1 · pearl</output></div>
+    <p class="status">The light changes only the visual glow. It does not analyse you. Reduced-motion preference is respected.</p>
+  </section>
+  <section id="islands" aria-labelledby="islands-title">
+    <p class="eyebrow" id="map-eyebrow">world map · gentle routes</p><h2 id="islands-title">a little world, with room to choose</h2>
+    <p class="section-lead" id="map-intro">A pixel-soft atlas of the NITYA experience. Each place opens a page or practice; nothing here represents a staffed service or real-world location.</p>
+    <div class="island-map" role="group" aria-label="NITYA world map">
+      <div class="map-constellation">
+        <a class="map-zone" href="#practice"><strong data-map="landing-title">01 · tide gate</strong><span data-map="landing-copy">arrive, pause or leave</span></a>
+        <a class="map-zone" href="#practice"><strong data-map="garden-title">02 · seven threads</strong><span data-map="garden-copy">small questions for a chosen next step</span></a>
+        <a class="map-zone" href="nitya.html"><strong data-map="studio-title">03 · makers' studio</strong><span data-map="studio-copy">language, craft and practice</span></a>
+        <a class="map-zone" href="docs/commerce/SUTI_GIFT_EXCHANGE_AND_MONETIZATION.v1.md"><strong data-map="harbor-title">04 · gift harbor</strong><span data-map="harbor-copy">offers, fair exchange and scoped work</span></a>
+        <a class="map-zone" href="nitya-todeus.html"><strong data-map="archive-title">05 · deep archive</strong><span data-map="archive-copy">system lore and open specifications</span></a>
+        <a class="map-zone" href="docs/security/SUTI_SECURE_ARCANUM_ARCHITECTURE.v1.md"><strong data-map="lighthouse-title">06 · quiet lighthouse</strong><span data-map="lighthouse-copy">privacy, limits and what is not connected</span></a>
+        <a class="map-zone" href="#transpersonal"><strong data-map="horizon-title">07 · far horizon</strong><span data-map="horizon-copy">optional stories and wider perspective</span></a>
+      </div>
+      <p class="map-status" id="map-status">the map is a navigation metaphor · routes can change as the project grows</p>
+    </div>
+  </section>
+  <section id="practice" aria-labelledby="practice-title">
+    <p class="eyebrow">local reflection · no score</p><h2 id="practice-title">seven threads · twelve quick choices each</h2>
+    <p class="section-lead">Each thread has twelve small prompts, grouped through earth, fire, water and air as creative lenses. Choose “fits today”, “maybe” or “skip”. These are not an assessment, chakra test, element score or medical tool. The 13th prompt is an optional pearl in your own words.</p>
+    <div class="progress-wrap"><div class="progress-label"><span id="progress-text">0 of 91 steps marked · local only</span><span>SUTI Coin · inactive</span></div><progress id="progress" max="91" value="0" aria-label="Reflection progress"></progress></div>
+    <div id="layers" class="layers"></div>
+    <div id="transpersonal" class="card optional"><details><summary>eighth horizon · a story beyond the immediate</summary><p>Optional and symbolic. No spiritual identity is assigned.</p><div id="horizon-choices" class="chips"></div><label class="pearl-label" for="horizon-note">what story, value or imagined guide might help you see another possibility?<textarea id="horizon-note" maxlength="240"></textarea></label></details></div>
+    <div class="card"><label class="choice-chip"><input id="volunteer-interest" type="checkbox"> I may want to hear about a future volunteer circle</label><p class="status">This selection stays local and does not enroll you or send contact details. No circle is currently open.</p><div class="actions"><button class="secondary" id="clear" type="button">clear this page</button><button class="secondary" id="copy" type="button">copy my selected notes</button></div><p id="copy-status" class="status" role="status" aria-live="polite"></p><p class="callout">No SUTI Coin is issued. Progress is a private interface aid, not a reward, balance or money equivalent.</p></div>
+  </section>
+  <section id="glossary" aria-labelledby="glossary-title"><p class="eyebrow">SUTI lexicon · plain meaning first</p><h2 id="glossary-title">words for this world</h2><div class="glossary"><article><strong>practice of care</strong><p>a self-guided question or a clearly staffed service, named separately.</p></article><article><strong>circle of mutual support</strong><p>a voluntary group with people, boundaries, capacity and a real coordinator.</p></article><article><strong>angel of care</strong><p>a poetic role in the game, not an active volunteer status.</p></article><article><strong>pearl</strong><p>a chosen, editable note or piece of work; not a score of personal worth.</p></article><article><strong>earth · fire · water · air</strong><p>four optional writing lenses: practical support, beginning, feeling/flow and words/perspective.</p></article><article><strong>shadow roots</strong><p>questions and boundaries a person may keep private or leave untouched.</p></article><article><strong>Secure</strong><p>named operational safeguards. A label alone provides no security.</p></article><article><strong>Arcanum</strong><p>proposed end-to-end encrypted conversation, only when a verified client and recipient are actually connected.</p></article><article><strong>SUTI Coin</strong><p>a future concept. It is not issued, redeemable, transferable or priced in real currency.</p></article></div><p class="callout">The page is authored in Russian and English. Its eleven other language choices are labeled fallbacks or authorial drafts; those are not completed translations for this page.</p></section>
+  <footer><p>Reflection stays in this page until you choose to copy it. Nothing is transmitted, stored, analysed by an AI, or automatically shared.</p><p><a href="index.html">return to SUTI.world</a> · <a href="governance.html">care commons proposal</a> · <a href="docs/security/SUTI_SECURE_ARCANUM_ARCHITECTURE.v1.md">server and privacy architecture</a> · <a href="docs/commerce/SUTI_GIFT_EXCHANGE_AND_MONETIZATION.v1.md">gifts and real-money services</a> · <a href="docs/style/SUTI_CARE_LEXICON.v1.md">care language</a></p></footer>
+</main>
+<script>
+(() => {
+  const localeText = {
+    en: {
+      note:"This page has reviewed English and Russian editions. For this selection, the English source is shown; translation review is still needed.",
+      hero:"what matters now?", cta:"begin with one question", title:"seven threads · twelve quick choices each",
+      intro:"Each thread has twelve small prompts, grouped through earth, fire, water and air as creative lenses. Choose fits today, maybe or skip. This is not a test or diagnosis. The 13th prompt is an optional pearl in your own words.",
+      fits:"fits today", maybe:"maybe", skip:"skip", pearl:"13th · my pearl for today", lenses:["earth · practical ground","fire · start and protect","water · feeling and flow","air · words and perspective"],
+      areas:[
+        ["body · ground","what practical comfort, boundary or everyday step would support your body today?"],
+        ["rhythm · resources","what pace, resource or small routine would make today easier?"],
+        ["senses · access","what setting, format or sensory choice would help you feel more at ease?"],
+        ["feelings · company","what kind of quiet, listening or company would feel welcome?"],
+        ["skill · contribution","what ability or useful task would you enjoy sharing, if any?"],
+        ["voice · creation","what would you like to say, make or bring into form?"],
+        ["meaning · orientation","what value, place or relationship helps you find your direction?"]
+      ],
+      prompts:[
+        [["is there a comfortable place to pause today?","would a small practical change support your comfort?","is one everyday step within reach?"],["would you like to begin with a gentle body-care routine?","what can you set aside to make room for rest?","is there a small action you would like to try?"],["what sensations would you like to notice without judging?","would a pause or change of position feel welcome?","which sensory choice could make this moment easier?"],["what words could help you name a comfort boundary?","would it help to ask for a small adjustment?","what would you like someone to know before they offer help?"]],
+        [["which part of today's routine feels steady?","what small resource is already available to you?","what boundary could protect your time?"],["what would you like to start first?","which task can wait until later?","what could make the next step feel lighter?"],["what pace feels manageable today?","what tells you it may be time to pause?","would a quieter or more flexible rhythm help?"],["how could you describe your available time?","what reminder or note would support your routine?","what would you like to reschedule or simplify?"]],
+        [["which setting feels most comfortable to use?","is there a tool or format that helps you focus?","what small change to your surroundings would help?"],["would changing the light, sound or screen feel useful?","which format would you like to try first?","what can you adjust without asking anyone else?"],["what sensory input would you prefer less of?","what could help you take a pause when needed?","which option feels easier to stay with?"],["how would you like to describe an access preference?","what format could you request in a few words?","what question would help you choose between options?"]],
+        [["what kind of everyday company feels comfortable?","is there a familiar routine that helps you feel connected?","what boundary would make a conversation easier?"],["would you like to invite someone to a short conversation?","what kind of contact would you choose to begin?","is there a message you would like to send?"],["would quiet, company or listening feel welcome today?","what kind of conversation feels gentle to you?","what pace would you prefer in a conversation?"],["what words could help you ask for company or space?","what would you like to say before sharing more?","how could you make a request easy to decline?"]],
+        [["what skill do you use in everyday life?","which task do you enjoy doing well?","what small practical help could you offer by choice?"],["is there a small contribution you would like to begin?","what skill would you like to practise next?","what kind of task would you choose to try once?"],["what kind of collaboration feels comfortable?","what would make sharing a skill feel fair?","what limit would keep a contribution sustainable?"],["how would you describe your skill simply?","what would you need to agree before helping?","what would you like to ask about the task first?"]],
+        [["what tools or materials help you create?","where do you like to make or practise?","what small setup would make creating easier?"],["what would you like to begin making?","which part feels inviting to try first?","what could you create in a short session?"],["what mood, texture or idea would you like to explore?","what kind of creative play feels enjoyable?","would you rather make privately or with others?"],["what words or image could express your idea?","what would you want permission for before sharing?","who, if anyone, would you choose to show it to?"]],
+        [["which value guides a choice in your daily life?","what place or routine helps you feel grounded?","what relationship would you like to give time to?"],["what direction would you like to explore next?","what small choice could bring you closer to it?","what would you like to protect as you move forward?"],["what connection feels nourishing to remember?","what part of the living world would you like to notice?","what helps you make room for change?"],["what story or perspective helps you see another option?","what question would you like to carry for a while?","what would you want to remember from this moment?"]]
+      ],
+      pearlQ:"what is the one thing you want to remember or carry forward?", horizon:["a future self","a craft or lineage","the living world","a story or myth","a value larger than one task","skip this horizon"],
+      count:"{n} of 91 steps marked · local only", copy:"copy my selected notes", copied:"Copied to clipboard. Nothing was sent.", clear:"clear this page"
+    },
+    ru: {
+      note:"Для этой страницы проверены русская и английская редакции. Остальные языки пока показывают английский исходник с этой пометкой.",
+      hero:"что сейчас важно?", cta:"начать с одного вопроса", title:"семь нитей · двенадцать быстрых выборов",
+      intro:"В каждой нити двенадцать коротких вопросов. Земля, огонь, вода и воздух здесь — игровые линзы: практическая опора, начало, чувства и слова. Выбери «подходит сегодня», «возможно» или «пропустить». Это не тест и не диагноз. Тринадцатый вопрос — необязательная жемчужина своими словами.",
+      fits:"подходит сегодня", maybe:"возможно", skip:"пропустить", pearl:"13-й · моя жемчужина на сегодня", lenses:["земля · практическая опора","огонь · начало и защита","вода · чувства и течение","воздух · слова и перспектива"],
+      areas:[
+        ["тело · опора","какой простой комфорт, граница или бытовой шаг поддержит тело сегодня?"],
+        ["ритм · ресурсы","какой темп, ресурс или небольшая привычка облегчит сегодняшний день?"],
+        ["ощущения · доступность","какая обстановка, форма или сенсорный выбор поможет чувствовать себя спокойнее?"],
+        ["чувства · рядом","какие тишина, внимание или компания будут сейчас кстати?"],
+        ["умение · вклад","каким умением или полезным делом тебе хотелось бы поделиться, если захочется?"],
+        ["голос · создание","что хотелось бы сказать, создать или придать форму?"],
+        ["смысл · ориентир","какая ценность, место или связь помогает найти направление?"]
+      ],
+      prompts:[
+        [["есть ли сегодня удобное место, чтобы сделать паузу?","какое небольшое изменение поддержит комфорт?","какой бытовой шаг сейчас по силам?"],["хочется ли начать с мягкой привычки заботы о теле?","что можно отложить, чтобы освободить время для отдыха?","какое небольшое действие хочется попробовать?"],["какие ощущения можно просто заметить, не оценивая?","будет ли кстати пауза или смена положения?","какой сенсорный выбор облегчит этот момент?"],["какими словами обозначить границу комфорта?","поможет ли попросить о небольшом изменении?","что важно знать человеку до того, как он предложит помощь?"]],
+        [["какая часть сегодняшнего распорядка даёт опору?","какой небольшой ресурс уже доступен?","какая граница поможет беречь время?"],["что хочется начать первым?","какую задачу можно перенести?","что облегчит следующий шаг?"],["какой темп сегодня посилен?","как ты замечаешь, что пора сделать паузу?","поможет ли более спокойный или гибкий ритм?"],["как описать, сколько у тебя сейчас времени?","какая заметка или напоминание поддержит распорядок?","что хочется перенести или упростить?"]],
+        [["в какой обстановке тебе комфортнее?","какой инструмент или формат помогает сосредоточиться?","что небольшое можно изменить вокруг себя?"],["будет ли полезно изменить свет, звук или экран?","какой формат хочется попробовать сначала?","что можно настроить самостоятельно?"],["какого сенсорного воздействия хотелось бы меньше?","что поможет вовремя сделать паузу?","с каким вариантом легче оставаться?"],["как коротко обозначить пожелание по доступности?","какой формат можно попросить несколькими словами?","какой вопрос поможет выбрать между вариантами?"]],
+        [["какое общение в повседневности тебе комфортно?","есть ли привычный способ почувствовать связь с другими?","какая граница сделает разговор легче?"],["хочется ли пригласить кого-то на короткий разговор?","с какого вида контакта ты бы начал?","есть ли сообщение, которое хочется отправить?"],["чего сегодня больше хочется: тишины, компании или внимания?","какой разговор ощущается бережным?","какой темп общения тебе подходит?"],["как попросить о компании или личном пространстве?","что хотелось бы сказать до того, как делиться большим?","как сформулировать просьбу так, чтобы от неё можно было отказаться?"]],
+        [["какое умение ты используешь в обычной жизни?","какое дело тебе нравится делать хорошо?","какую небольшую помощь хочется предложить по своему выбору?"],["хочется ли начать с небольшого вклада?","какое умение хотелось бы развивать дальше?","какое дело ты бы выбрал попробовать один раз?"],["какой формат сотрудничества тебе комфортен?","что сделает обмен умениями справедливым?","какая граница сохранит вклад посильным?"],["как просто рассказать о своём умении?","о чём важно договориться перед помощью?","что хочется узнать о задаче заранее?"]],
+        [["какие инструменты или материалы помогают создавать?","где нравится творить или практиковаться?","какая небольшая подготовка упростит начало?"],["что хочется начать создавать?","с какой части интересно начать?","что можно сделать за короткую сессию?"],["какое настроение, фактуру или идею хочется исследовать?","какая творческая игра приносит удовольствие?","хочется создавать одному или с кем-то?"],["какое слово или образ выразит твою идею?","на что хотелось бы получить согласие до публикации?","кому, если захочется, ты покажешь работу?"]],
+        [["какая ценность помогает выбирать в обычной жизни?","какое место или привычка возвращает опору?","каким отношениям хотелось бы уделить время?"],["какое направление хочется исследовать дальше?","какой небольшой выбор приблизит к нему?","что важно беречь, двигаясь дальше?"],["какую связь приятно вспомнить?","какую часть живого мира хочется заметить?","что помогает оставить место переменам?"],["какая история или точка зрения открывает другой вариант?","какой вопрос хочется пока взять с собой?","что хотелось бы запомнить об этом моменте?"]]
+      ],
+      pearlQ:"что одно ты хочешь запомнить или взять с собой?", horizon:["будущий я","мастерство или род занятий","живой мир","сюжет или миф","ценность шире одной задачи","пропустить этот горизонт"],
+      count:"отмечено шагов: {n} из 91 · только здесь", copy:"скопировать выбранные заметки", copied:"скопировано в буфер обмена. ничего не отправлено.", clear:"очистить эту страницу"
+    }
+  };
+  const mapText={en:{eyebrow:"world map · gentle routes",title:"a little world, with room to choose",intro:"A pixel-soft atlas of the NITYA experience. Each place opens a page or practice; nothing here represents a staffed service or real-world location.",zones:["01 · tide gate","arrive, pause or leave","02 · seven threads","small questions for a chosen next step","03 · makers' studio","language, craft and practice","04 · gift harbor","offers, fair exchange and scoped work","05 · deep archive","system lore and open specifications","06 · quiet lighthouse","privacy, limits and what is not connected","07 · far horizon","optional stories and wider perspective"],status:"the map is a navigation metaphor · routes can change as the project grows"},ru:{eyebrow:"карта мира · спокойные маршруты",title:"маленький мир, где можно выбирать",intro:"Мягкий пиксельный атлас NITYA. Каждая зона ведёт к разделу или практике; здесь не обозначены действующие службы и реальные места.",zones:["01 · приливный порог","войти, сделать паузу или уйти","02 · сад семи нитей","короткие вопросы для своего следующего шага","03 · мастерская","язык, ремесло и практика","04 · гавань даров","предложения, честный обмен и работа по договору","05 · глубокий архив","лор мира и открытые спецификации","06 · тихий маяк","приватность, границы и неподключённые функции","07 · дальний горизонт","необязательные истории и широкий взгляд"],status:"карта служит навигацией · маршруты могут меняться вместе с проектом"}};
+  const selected = new URLSearchParams(location.search).get("lang") || "ru";
+  const lang = selected === "ru" ? "ru" : "en";
+  const d = localeText[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("locale").value = ["en","ru"].includes(selected) ? selected : selected;
+  document.getElementById("language-note").textContent = d.note;
+  const select = document.getElementById("locale"); select.value = selected;
+  select.addEventListener("change", () => { const u = new URL(location.href); u.searchParams.set("lang",select.value); location.href = u.toString(); });
+  document.getElementById("hero-title").textContent = d.hero;
+  document.querySelector(".main-cta").innerHTML = `${d.cta} <span aria-hidden="true">↘</span>`;
+  document.getElementById("practice-title").textContent = d.title;
+  document.querySelector("#practice .section-lead").textContent = d.intro;
+  const mt=mapText[lang];document.getElementById("map-eyebrow").textContent=mt.eyebrow;document.getElementById("islands-title").textContent=mt.title;document.getElementById("map-intro").textContent=mt.intro;document.getElementById("map-status").textContent=mt.status;document.querySelectorAll("[data-map]").forEach((el,i)=>el.textContent=mt.zones[i]);
+  const layers = document.getElementById("layers"), responses = new Map();
+  const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  d.areas.forEach(([area,prompt], areaIndex) => {
+    const details=document.createElement("details"); details.className="layer-card";
+    const summary=document.createElement("summary"); summary.innerHTML=`<span>${String(areaIndex+1).padStart(2,"0")} · ${esc(area)}</span><span aria-hidden="true">＋</span>`; details.append(summary);
+    const body=document.createElement("div"); body.className="layer-body";
+    const lead=document.createElement("p"); lead.textContent=prompt; body.append(lead);
+    d.prompts[areaIndex].forEach((set,lensIndex)=>{
+      const lens=document.createElement("details"); lens.className="lens";
+      const lensSummary=document.createElement("summary"); lensSummary.textContent=d.lenses[lensIndex]; lens.append(lensSummary);
+      const qList=document.createElement("div"); qList.className="q-list";
+      set.forEach((stem,questionIndex)=>{
+        const id=`a${areaIndex}-q${lensIndex*3+questionIndex}`;
+        const q=document.createElement("article"); q.className="question";
+        const qText=document.createElement("p"); qText.textContent=stem; q.append(qText);
+        const answerGroup=document.createElement("div"); answerGroup.className="answers"; answerGroup.setAttribute("role","group"); answerGroup.setAttribute("aria-label",stem);
+        [["fits",d.fits],["maybe",d.maybe],["skip",d.skip]].forEach(([value,label])=>{const b=document.createElement("button");b.type="button";b.textContent=label;b.setAttribute("aria-pressed","false");b.addEventListener("click",()=>{responses.set(id,{area,value,question:stem});answerGroup.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");updateProgress();});answerGroup.append(b);});
+        q.append(answerGroup);qList.append(q);
+      });
+      lens.append(qList);body.append(lens);
+    });
+    const label=document.createElement("label");label.className="pearl-label";label.htmlFor=`pearl-${areaIndex}`;label.textContent=`${d.pearl} · ${prompt}`;
+    const textarea=document.createElement("textarea");textarea.id=`pearl-${areaIndex}`;textarea.maxLength=240;textarea.dataset.pearl=String(areaIndex);textarea.setAttribute("aria-label",`${d.pearl}: ${area}`);textarea.addEventListener("input",updateProgress);label.append(textarea);body.append(label);
+    details.append(body);layers.append(details);
+  });
+  const horizon=document.getElementById("horizon-choices");d.horizon.forEach((word,i)=>{const label=document.createElement("label");label.className="choice-chip";const input=document.createElement("input");input.type="checkbox";input.name="horizon";input.value=word;input.addEventListener("change",updateProgress);label.append(input,document.createTextNode(` ${word}`));horizon.append(label);});
+  function updateProgress(){const n=responses.size+[...document.querySelectorAll("[data-pearl]")].filter(x=>x.value.trim()).length;const progress=document.getElementById("progress");progress.value=n;document.getElementById("progress-text").textContent=d.count.replace("{n}",n);}
+  updateProgress();
+  document.getElementById("clear").textContent=d.clear;document.getElementById("copy").textContent=d.copy;
+  document.getElementById("clear").addEventListener("click",()=>{responses.clear();document.querySelectorAll(".answers button").forEach(b=>b.setAttribute("aria-pressed","false"));document.querySelectorAll("[data-pearl],#horizon-note,#volunteer-interest,input[name=horizon]").forEach(x=>{if(x.type==="checkbox")x.checked=false;else x.value="";});updateProgress();document.getElementById("copy-status").textContent="";});
+  document.getElementById("copy").addEventListener("click",async()=>{const lines=[];for(const [id,r] of responses)lines.push(`${r.area} · ${r.question} · ${r.value}`);document.querySelectorAll("[data-pearl]").forEach((x,i)=>{if(x.value.trim())lines.push(`${d.areas[i][0]} · ${d.pearl}: ${x.value.trim()}`);});const horizonNote=document.getElementById("horizon-note").value.trim();if(horizonNote)lines.push(`horizon · ${horizonNote}`);document.querySelectorAll("input[name=horizon]:checked").forEach(x=>lines.push(`horizon · ${x.value}`));if(document.getElementById("volunteer-interest").checked)lines.push("interest · future volunteer circle (not enrolled)");try{await navigator.clipboard.writeText(lines.join("\n"));document.getElementById("copy-status").textContent=d.copied;}catch{document.getElementById("copy-status").textContent=lang==="ru"?"буфер обмена недоступен. заметки остались на странице.":"Clipboard unavailable. Your notes remain on this page.";}});
+  const glow=document.getElementById("glow"), glowValue=document.getElementById("glow-value"), glowWords=lang==="ru"?["0 · тишина","1 · жемчуг","2 · прибой","3 · заря"]:["0 · quiet","1 · pearl","2 · tide","3 · aurora"];
+  const setGlow=()=>{document.documentElement.style.setProperty("--glow",glow.value);glowValue.textContent=glowWords[Number(glow.value)];};glow.addEventListener("input",setGlow);setGlow();
+  document.getElementById("theme").addEventListener("click",e=>{document.body.classList.toggle("night");e.currentTarget.setAttribute("aria-pressed",String(document.body.classList.contains("night")));});
+  document.title=lang==="ru"?"NITYA · дерево мира SUTI":"NITYA · SUTI world tree";
+})();
+</script>
+</body>
+</html>

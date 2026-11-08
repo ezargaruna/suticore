@@ -14,6 +14,9 @@ This repository contains public specifications, the canonical source and deploym
 - [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
 - [Care gifts and contribution economy](docs/care/SUTI_CARE_GIFTS_AND_COIN_PLAN.v1.md) — questionnaire boundaries, proposed offers, volunteer capacity and SUTI Coin gates.
 - [Federated care commons](governance.html) · [full architecture](docs/governance/SUTI_FEDERATED_CARE_COMMONS.v1.md) — a voluntary, locally accountable network proposal; not a government or live support service.
+- [Secure × Arcanum architecture](docs/security/SUTI_SECURE_ARCANUM_ARCHITECTURE.v1.md) · [social channel adapters](docs/security/SUTI_CHANNEL_ADAPTERS.v1.md) — repository audit, threat model and phased hosting decision; no private intake server is currently connected.
+- [Gifts and monetization](docs/commerce/SUTI_GIFT_EXCHANGE_AND_MONETIZATION.v1.md) — paid work, subscriptions, crowdfunding and a non-cash SUTI Coin proposal; tokenization remains on hold.
+- [Care language contract](docs/style/SUTI_CARE_LEXICON.v1.md) — preferred public terms, participation boundaries and language coverage status.
 - [`.veche` research](docs/research/veche-consensus-research.v1.md) — claim audit, protocol reverse-engineering, threat model, and implementation gates.
 - [NITYA × .todeus passport](nitya-todeus.html) — the NITYA branch map, the optional narrative lens contract, and a 13-layer transcreation ledger with review states.
 
