@@ -8,7 +8,7 @@ This file tracks public SUTI project work only. `P0` means a release blocker, no
 
 | id | task | state | acceptance |
 |---|---|---|---|
-| SW-01 | verify exact production URL, Pages source branch, release commit and current rendered site | open · `HOLD` | compare built artifact with live site; identify owner and rollback path |
+| SW-01 | verify exact production URL, Pages source branch, release commit and current rendered site | partial · `HOLD` | compare built artifact with live site; identify owner and rollback path |
 | SW-02 | inspect the separate external care form and its real data flow | open · `HOLD` | record operator, fields, purpose, access, storage/transfer locations, retention/deletion, consent and legal review; do not open or export respondent answers |
 | SW-03 | approve the first public invitation and its destination | draft · not published | plain-language promise, accurate service status, working URL, privacy note, exit route and owner approval; no claim of people helped without evidence and their permission |
 | SW-04 | review public portfolio claims and selected CV evidence | local draft · `PARTIAL` | education/history marked as author-provided until verified; each case, tool and module has scope, maturity, rights and evidence; no private biography/health data |
@@ -18,7 +18,7 @@ This file tracks public SUTI project work only. `P0` means a release blocker, no
 
 | id | task | state | acceptance |
 |---|---|---|---|
-| SW-06 | expose the portfolio and open library on the site | in progress · local | `portfolio.html` and `library.html` linked, staged by Pages, keyboard/mobile/link checked |
+| SW-06 | expose the portfolio and open library on the site | in progress · feature branch; live route absent | `portfolio.html` and `library.html` linked, staged by Pages, keyboard/mobile/link checked |
 | SW-07 | verify NITYA questionnaire wording and completion flow | partial · local prototype | seven sections, optional horizon, progress/copy/clear, no submission, storage or automatic sharing; next steps visible and coin status honest |
 | SW-08 | complete locale routing and transcreation | open · `HOLD` | RU/EN NITYA checked against source; ES/PT-BR and the other language layers translated or visibly labeled fallback; native/cultural review where applicable; links and RTL tested |
 | SW-09 | test accessibility and low bandwidth | open · `HOLD` | screen reader, keyboard, zoom, contrast, reduced motion, local assets, slow-network and offline artifact tested on the release build |
@@ -46,5 +46,12 @@ This file tracks public SUTI project work only. `P0` means a release blocker, no
 - gift exchange and monetization boundaries
 - SUTI system portfolio text, author CV framework and gratitude note
 - open library index and launch/pilot proposal
+
+## live release evidence · 2026-11-08
+
+- GitHub Pages metadata reports `https://ezargaruna.github.io/suticore/`, workflow deployment from `main` at repository root.
+- Latest successful Pages run: `fdc7216fc0e27b2b583baa912d7f5d9ecd3ea8fa` (`Integrate NITYA .todeus passport and locale ledger`). The home page returned HTTP 200; `portfolio.html` and `TASKS.md` returned HTTP 404.
+- This candidate is on `codex/care-gifts-intake-2026-11-08` at `d4e5fe2` and is seven commits ahead of `origin/main`. No change from this branch is live. Rollback procedure has not been exercised.
+- Local static verification on the candidate: HTML parsing, local `href`/`src` resolution, inline JavaScript syntax, and `git diff --check` passed. Visual, accessibility, low-bandwidth, native-language and form-data-flow reviews remain open.
 
 `PASS` on a static check is not `COMMIT`, `RELEASE`, `DEPLOY` or `PUBLICATION`. Do not push to `main` or describe a service as live until the relevant acceptance gates pass.
