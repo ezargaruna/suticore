@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Спасибо за участие в проекте заботы SUTI</title>
+  <desc id="desc">Тёплая морская сторис благодарит за добровольный отклик и уточняет, что круг ангелов заботы пока проектируется</desc>
+  <image href="care-thanks-story-bg.v1.png" x="0" y="0" width="1080" height="1920" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="48" y="48" width="984" height="1824" rx="36" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="2"/>
+  <text x="104" y="170" fill="#365958" font-family="Manrope,Arial,sans-serif" font-size="30" letter-spacing="5">SUTI.CARE  ·  ПРАКТИКА ЗАБОТЫ</text>
+  <path d="M104 220h132" stroke="#b48c43" stroke-width="4"/>
+  <text x="104" y="390" fill="#365958" font-family="Georgia,serif" font-size="86" font-weight="600">
+    <tspan x="104" dy="0">спасибо,</tspan>
+    <tspan x="104" dy="104">что делитесь</tspan>
+    <tspan x="104" dy="104">тем, что важно</tspan>
+  </text>
+  <text x="108" y="760" fill="#365958" font-family="Manrope,Arial,sans-serif" font-size="38">
+    <tspan x="108" dy="0">Ваш отклик помогает нам продумывать</tspan>
+    <tspan x="108" dy="54">более ясный и бережный язык заботы.</tspan>
+  </text>
+  <text x="108" y="930" fill="#365958" font-family="Manrope,Arial,sans-serif" font-size="34">
+    <tspan x="108" dy="0">Делитесь только тем, чем хотите.</tspan>
+    <tspan x="108" dy="50">Можно пропустить вопрос или остановиться.</tspan>
+  </text>
+  <rect x="88" y="1430" width="904" height="255" rx="28" fill="#fffaf1" fill-opacity=".94" stroke="#d8c8a6" stroke-width="2"/>
+  <text x="128" y="1500" fill="#365958" font-family="Manrope,Arial,sans-serif" font-size="27" font-weight="700">ВАЖНО</text>
+  <text x="128" y="1553" fill="#25342f" font-family="Manrope,Arial,sans-serif" font-size="26">
+    <tspan x="128" dy="0">Круг ангелов заботы пока проектируется.</tspan>
+    <tspan x="128" dy="40">Анкета не подключает к волонтёрам и не</tspan>
+    <tspan x="128" dy="40">обеспечивает срочную помощь.</tspan>
+  </text>
+  <text x="108" y="1760" fill="#365958" font-family="Manrope,Arial,sans-serif" font-size="28" letter-spacing="2">SUTI.WORLD  ·  АНКЕТА ЗАБОТЫ</text>
+</svg>

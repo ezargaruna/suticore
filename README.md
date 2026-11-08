@@ -12,6 +12,8 @@ This repository contains public specifications, the canonical source and deploym
 - [Language layer status](docs/language-layers.md) — what is translated, what falls back to Russian, and what still needs review across the 13 navigation layers.
 - [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.
 - [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
+- [Care gifts and contribution economy](docs/care/SUTI_CARE_GIFTS_AND_COIN_PLAN.v1.md) — questionnaire boundaries, proposed offers, volunteer capacity and SUTI Coin gates.
+- [Federated care commons](governance.html) · [full architecture](docs/governance/SUTI_FEDERATED_CARE_COMMONS.v1.md) — a voluntary, locally accountable network proposal; not a government or live support service.
 - [`.veche` research](docs/research/veche-consensus-research.v1.md) — claim audit, protocol reverse-engineering, threat model, and implementation gates.
 - [NITYA × .todeus passport](nitya-todeus.html) — the NITYA branch map, the optional narrative lens contract, and a 13-layer transcreation ledger with review states.
 
