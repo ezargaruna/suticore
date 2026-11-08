@@ -8,11 +8,13 @@
 
 **reviewed for:** Colombia context · 2026-11-08 · not a legal or tax opinion
 
+**governance companion:** [`SUTI_DAO_AND_COIN_ECONOMY.v1.md`](../governance/SUTI_DAO_AND_COIN_ECONOMY.v1.md)
+
 ## decision
 
 Separate three things that must not be conflated ::
 
-1. **SUTI Coin / pearl mark** :: an optional, non-transferable, non-cash participation record for reviewed work; no exchange rate, token sale, promise of future value, or entitlement to care.
+1. **SUTI Coin / pearl mark** :: concept only. No points balance or issuance runtime exists. A future non-transferable contribution record would need a separate adoption decision; it has no exchange rate, token sale, promise of future value, or entitlement to care.
 2. **real payment** :: ordinary currency paid for a named service under a written scope, price, schedule and cancellation/refund terms.
 3. **gift exchange** :: a voluntary offer of time, skill, access or an object, with clear boundaries and no implied debt.
 
