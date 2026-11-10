@@ -38,7 +38,7 @@ The repositories link to each other but have separate payloads and release histo
 
 ## Language navigation
 
-The site exposes 13 language or authorial-language choices. The current website interface has active Russian, English, Spanish, and Brazilian Portuguese dictionaries. The other nine choices show a labeled Russian fallback. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
+The site opens in Russian unless a visitor has saved another language or supplied an explicit locale. It exposes 13 language or authorial-language choices. The home-page runtime has active Russian, English, Spanish, and Brazilian Portuguese dictionaries; the other nine choices show a labeled Russian fallback and link to a static visitor-entry preview. The 13 previews are not full interface translations and remain review drafts. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
 
 ## Rights and status
 

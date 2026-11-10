@@ -146,6 +146,8 @@
     .locale-switch select { min-height: 42px; padding: 7px 32px 7px 12px; border: 1px solid var(--suti-line); border-radius: 12px; background: var(--suti-surface); color: var(--suti-text); cursor: pointer; }
     .locale-status { flex-basis: 100%; max-width: 48rem; margin: -6px 0 0 auto; color: var(--suti-muted); font-size: .78rem; line-height: 1.4; text-align: right; }
     .locale-status[hidden] { display: none; }
+    .locale-status a { color: var(--suti-link); font-weight: 700; text-underline-offset: 3px; }
+    .locale-status a:focus-visible { outline: 2px solid var(--suti-sunlight); outline-offset: 3px; border-radius: 3px; }
     .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     .type-size-tools { display: flex; align-items: center; gap: 3px; color: var(--suti-muted); }
     .type-size-tools button { min-width: 40px; min-height: 44px; padding: 6px; border: 1px solid transparent; border-radius: 10px; background: transparent; color: inherit; cursor: pointer; font-size: .82rem; font-weight: 650; }
@@ -693,7 +695,7 @@
         <output id="text-size-value" aria-live="polite">100%</output>
         <button type="button" data-text-size="up" aria-label="увеличить размер текста" data-i18n-aria="size-up">A+</button>
       </div>
-      <label class="locale-switch"><span class="sr-only" data-i18n="locale-label">язык страницы</span><select id="locale-select" aria-label="выбрать язык" aria-describedby="locale-status" data-i18n-aria="locale-label"><option value="ru">Русский</option><option value="en">English</option><option value="es">Español</option><option value="pt-BR">Português brasileiro</option><option value="zh-Hans">简体中文</option><option value="hi">हिन्दी</option><option value="fr">Français</option><option value="ar">العربية</option><option value="bn">বাংলা</option><option value="eo">Esperanto</option><option value="sa">संस्कृतम्</option><option value="la">Latina</option><option value="yzh">Язэхъ</option></select></label><p class="locale-status" id="locale-status" role="status" aria-live="polite" hidden></p>
+      <label class="locale-switch"><span class="sr-only" data-i18n="locale-label">язык страницы</span><select id="locale-select" aria-label="выбрать язык" aria-describedby="locale-status" data-i18n-aria="locale-label"><option value="ru">Русский</option><option value="en">English</option><option value="es">Español</option><option value="pt-BR">Português brasileiro</option><option value="zh-Hans">简体中文</option><option value="hi">हिन्दी</option><option value="fr">Français</option><option value="ar">العربية</option><option value="bn">বাংলা</option><option value="eo">Esperanto</option><option value="sa">संस्कृतम्</option><option value="la">Latina</option><option value="yzh">Язэхъ</option></select></label><div class="locale-status" id="locale-status" role="status" aria-live="polite" hidden></div>
       <div class="theme-tools" role="group" aria-label="тема оформления" data-i18n-aria="theme-label">
         <button type="button" data-theme-choice="day" aria-pressed="true" data-i18n="theme-day">день</button>
         <button type="button" data-theme-choice="night" aria-pressed="false" data-i18n="theme-night">ночь</button>
@@ -1091,14 +1093,35 @@
       la:"Versio huius linguae nondum verificata est; textus Russicus nunc ostenditur.",
       yzh:"язэхъ · авторская транскреация не сверена; показан русский исходник."
     };
+    const entryLinkLabel = {
+      ru:"открыть входную страницу на этом языке", en:"open the visitor page in this language",
+      es:"abrir la página de entrada en este idioma", "pt-BR":"abrir a página de entrada neste idioma",
+      "zh-Hans":"查看此语言的访客页面", hi:"इस भाषा में आगंतुक पृष्ठ खोलें", fr:"ouvrir la page d’accueil dans cette langue",
+      ar:"افتح صفحة الزائر بهذه اللغة", bn:"এই ভাষায় পরিচিতি পৃষ্ঠা খুলুন", eo:"malfermi la vizitant-paĝon en ĉi tiu lingvo",
+      sa:"अस्मिन् भाषास्तरे अतिथिपृष्ठं उद्घाटय", la:"paginam hospitis hac lingua aperire", yzh:"открыть гостевую нить на этом языке"
+    };
     Object.assign(translations.ru, {"module-veche":"Исследовательский модуль коллективных решений. Не определяет консенсус, не считает молчание согласием и не исполняет действия автоматически.","module-veche-link":"открыть исследование ↗"});
     Object.assign(translations.en, {"module-veche":"Research on group decisions. It does not infer consensus, treat silence as consent, or execute actions automatically.","module-veche-link":"open the research ↗"});
     Object.assign(translations.es, {"module-veche":"Investigación sobre decisiones colectivas. No infiere consenso, no toma el silencio por consentimiento ni ejecuta acciones automáticamente.","module-veche-link":"abrir la investigación ↗"});
     Object.assign(translations.pt, {"module-veche":"Pesquisa sobre decisões coletivas. Não presume consenso, não interpreta silêncio como consentimento e não executa ações automaticamente.","module-veche-link":"abrir a pesquisa ↗"});
     const normalizeLanguage = code => code === "pt" ? "pt-BR" : languageLayers.includes(code) ? code : "ru";
-    let locale = "en";
-    let selectedLanguage = "en";
-    const layerNotes={"ru": "анкета на русском; в мастерской переводится первый вопрос.", "en": "the form is in Russian; the workshop offers its opening question in your language.", "es": "el formulario está en ruso; la primera pregunta del taller está en tu idioma.", "pt-BR": "o formulário está em russo; a primeira pergunta da oficina está no seu idioma.", "zh-Hans": "问卷为俄语；工作室的第一个问题有中文版本。", "hi": "फ़ॉर्म रूसी में है। कार्यशाला का पहला प्रश्न हिन्दी में भी है।", "fr": "le questionnaire est en russe ; la première question de l’atelier est disponible en français.", "ar": "الاستمارة بالروسية؛ والسؤال الأول في الورشة متاح بالعربية.", "bn": "ফর্মটি রুশ ভাষায়। কর্মশালার প্রথম প্রশ্নটি বাংলাতেও আছে।", "eo": "la demandaro estas en la rusa; la unua demando de la laborejo estas ankaŭ en Esperanto.", "sa": "प्रश्नावली रूसीयभाषायाम् अस्ति। कार्यशालायाः प्रथमः प्रश्नः संस्कृतेऽपि अस्ति।", "la": "quaestiones Russice scriptae sunt; prima officinae quaestio etiam Latine legitur.", "yzh": "берег · анкета по-русски. первая нить мастерской звучит на язэхъ."};
+    let locale = "ru";
+    let selectedLanguage = "ru";
+    const layerNotes={
+      "ru":"полный интерфейс доступен на русском, английском, испанском и бразильском португальском; остальные слои показывают русский исходник. краткий вход на выбранном языке открыт отдельно.",
+      "en":"the full interface is available in Russian, English, Spanish, and Brazilian Portuguese; other layers show Russian source text. a short visitor entry is available separately in this language.",
+      "es":"la interfaz completa está disponible en ruso, inglés, español y portugués de Brasil; las demás capas muestran el original en ruso. hay una página breve de entrada en este idioma.",
+      "pt-BR":"a interface completa está disponível em russo, inglês, espanhol e português brasileiro; as outras camadas mostram o original russo. há uma página breve de entrada neste idioma.",
+      "zh-Hans":"完整界面提供俄语、英语、西班牙语和巴西葡萄牙语版本；其他语言层显示俄语原文。另有本语言的简短访客介绍页。",
+      "hi":"पूरा इंटरफ़ेस रूसी, अंग्रेज़ी, स्पेनिश और ब्राज़ीलियाई पुर्तगाली में उपलब्ध है; अन्य भाषा-स्तरों पर रूसी मूल पाठ दिखता है। इस भाषा में संक्षिप्त परिचय-पृष्ठ अलग से उपलब्ध है।",
+      "fr":"l’interface complète est disponible en russe, anglais, espagnol et portugais brésilien ; les autres couches affichent le texte russe. Une courte page d’accueil existe séparément dans cette langue.",
+      "ar":"الواجهة الكاملة متاحة بالروسية والإنجليزية والإسبانية والبرتغالية البرازيلية؛ وتعرض الطبقات الأخرى النص الروسي الأصلي. تتوفر صفحة تعريف موجزة منفصلة بهذه اللغة.",
+      "bn":"সম্পূর্ণ ইন্টারফেস রুশ, ইংরেজি, স্প্যানিশ ও ব্রাজিলীয় পর্তুগিজে পাওয়া যায়; অন্য ভাষা-স্তরে রুশ মূল লেখা দেখানো হয়। এই ভাষায় সংক্ষিপ্ত পরিচিতি-পৃষ্ঠা আলাদাভাবে আছে।",
+      "eo":"la plena interfaco disponeblas en la rusa, angla, hispana kaj brazila portugala; la aliaj tavoloj montras la rusan originalon. Mallonga vizitant-paĝo ekzistas aparte en ĉi tiu lingvo.",
+      "sa":"पूर्णं सञ्चारपटलं रूसी-आङ्ग्ल-हिस्पानिक-ब्राजील-पुर्तगीजभाषासु लभ्यते; अन्येषु स्तरषु रूसी मूलपाठः दृश्यते। अस्यां भाषायां संक्षिप्तं अतिथिपृष्ठं पृथक् उपलब्धम् अस्ति।",
+      "la":"interfacies plena Russice, Anglice, Hispanice et Lusitane Brasiliensi praesto est; ceteri ordines textum Russicum ostendunt. brevis pagina hospitis hac lingua separatim praesto est.",
+      "yzh":"полный гостьевой вход: русский, английский, испанский, бразильский португальский; прочие слои пока держат русский исток. краткая нить на твоём языке открыта отдельно."
+    };
     const entryLayers={"ru": ["забота", "попросить поддержки", "разобраться самому", "нейровече", "подумать вместе", "передать вход · QR", "что тебе нужно сегодня?", "какой один шаг тебе по силам?", "что мы знаем и о чём согласны?", "можно остановиться здесь."], "en": ["care", "ask for support", "find my next step", "council", "think together", "share an entrance · QR", "what would help today?", "what is one step you can take?", "what do we know, and where do we agree?", "you can stop here."], "es": ["cuidado", "pedir apoyo", "encontrar mi próximo paso", "consejo", "pensar en compañía", "compartir una entrada · QR", "¿qué te ayudaría hoy?", "¿qué paso está a tu alcance?", "¿qué sabemos y en qué estamos de acuerdo?", "puedes dejarlo aquí."], "pt-BR": ["cuidado", "pedir apoio", "encontrar meu próximo passo", "roda de conversa", "pensar juntos", "compartilhar uma entrada · QR", "o que ajudaria hoje?", "que passo está ao seu alcance?", "o que sabemos e em que concordamos?", "pode parar por aqui."], "zh-Hans": ["关怀", "寻求支持", "理清下一步", "共议", "一起想一想", "分享入口 · QR", "今天什么能帮到你？", "哪一步是你现在做得到的？", "我们知道什么？在哪些地方有共识？", "到这里就可以了。"], "hi": ["देखभाल", "सहारा माँगें", "अपना अगला कदम सोचें", "संवाद सभा", "मिलकर विचार करें", "प्रवेश साझा करें · QR", "आज आपको किस चीज़ से मदद मिलेगी?", "अभी आप कौन सा एक कदम उठा सकते हैं?", "हमें क्या मालूम है और हम किन बातों पर सहमत हैं?", "आप चाहें तो यहीं रुक सकते हैं।"], "fr": ["prendre soin", "demander du soutien", "trouver mon prochain pas", "conseil", "réfléchir ensemble", "partager une entrée · QR", "qu’est-ce qui vous aiderait aujourd’hui ?", "quel petit pas est à votre portée ?", "que savons-nous et sur quoi sommes-nous d’accord ?", "vous pouvez vous arrêter ici."], "ar": ["الرعاية", "طلب الدعم", "تحديد خطوتي التالية", "مجلس الحوار", "نفكّر معًا", "مشاركة المدخل · QR", "ما الذي قد يساعدك اليوم؟", "ما الخطوة التي تستطيع اتخاذها الآن؟", "ماذا نعرف، وعلى ماذا نتفق؟", "يمكنك التوقّف هنا."], "bn": ["যত্ন", "সহায়তা চাই", "নিজের পরের পদক্ষেপ খুঁজি", "আলোচনার আসর", "একসঙ্গে ভাবি", "প্রবেশের পথ ভাগ করুন · QR", "আজ কী পেলে আপনার সুবিধা হবে?", "এখন কোন ছোট পদক্ষেপটি আপনার সাধ্যের মধ্যে?", "আমরা কী জানি আর কোন বিষয়ে একমত?", "চাইলে এখানেই থামতে পারেন।"], "eo": ["zorgo", "peti subtenon", "trovi mian sekvan paŝon", "konsilio", "pensi kune", "konigi enirejon · QR", "kio helpus vin hodiaŭ?", "kiun paŝon vi kapablas fari nun?", "kion ni scias kaj pri kio ni konsentas?", "vi rajtas halti ĉi tie."], "sa": ["परिचर्या", "साहाय्यं याचे", "अग्रे किं करवाणि", "सभा", "सह चिन्तयामः", "प्रवेशमार्गं दर्शय · QR", "अद्य किं तव सहायकं स्यात्?", "इदानीं किं कर्तुं शक्नोषि?", "किं जानीमः? कुत्र वयं सम्मताः?", "अत्र विरन्तुं शक्नोषि।"], "la": ["cura", "auxilium petere", "proximum gradum invenire", "consilium", "una deliberare", "aditum communicare · QR", "quid tibi hodie prosit?", "quem gradum nunc facere potes?", "quid scimus et de quibus consentimus?", "hic consistere licet."], "yzh": ["бережь", "водоволь · попросить", "ткохь · различить", "вече", "соцветие · мыслить вместе", "передать нить · QR", "водоволь · налить тебе воды?", "ткохь · какой шаг по силам?", "Стожары · что знаем? в чём согласны?", "берег · можно помолчать."]};
     const applyLocale = code => {
       selectedLanguage = normalizeLanguage(code);
@@ -1107,7 +1130,14 @@
       const status = document.getElementById("locale-status");
       const translatedLayer = Object.prototype.hasOwnProperty.call(runtimeLocaleByLayer, selectedLanguage);
       status.hidden = translatedLayer;
-      status.textContent = translatedLayer ? "" : fallbackNotice[selectedLanguage];
+      status.replaceChildren();
+      if (!translatedLayer) {
+        status.append(document.createTextNode(fallbackNotice[selectedLanguage] + " "));
+        const entryLink = document.createElement("a");
+        entryLink.href = "entry/" + encodeURIComponent(selectedLanguage.toLowerCase()) + "/";
+        entryLink.textContent = entryLinkLabel[selectedLanguage];
+        status.append(entryLink);
+      }
       status.lang = selectedLanguage;
       status.dir = selectedLanguage === "ar" ? "rtl" : "auto";
       document.title = ({ru:"∴ SUTI.world — язык твоего мира",en:"∴ SUTI.world — language for your world",es:"∴ SUTI.world — el lenguaje de tu mundo",pt:"∴ SUTI.world — a linguagem do seu mundo"})[locale];

@@ -28,6 +28,9 @@ jobs:
       - name: prepare public surface
         run: |
           mkdir -p _site/assets/fonts _site/assets/brand _site/downloads
+          python3 scripts/build_locale_entries.py
+          mkdir -p _site/entry
+          cp -R locales/built/. _site/entry/
           python3 - <<'PY'
           from zipfile import ZipFile
           from pathlib import Path

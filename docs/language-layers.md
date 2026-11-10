@@ -1,10 +1,12 @@
 # SUTI.world language layers
 
-## Three public entrances and the first reflection
+## 13 visitor-language entry previews
 
-All 13 layers now have independently selectable entry labels, action phrases, QR disclosure and reflection prompts. The council and companion links carry the chosen layer. Each of the 26 companion/council QR images carries the same locale and route as its text link. A notice in each layer identifies the Russian Google Form and the limited scope of the workshop translation. At 360 px, all 13 entrance sets and 26 opening reflections were checked in Chrome. Run tests/check-entry-layers.py with Playwright and Chromium from the repository root (CHROME_BIN optionally specifies a browser). The public form is a separate Russian Google Form. The remaining interface and vault retain the coverage below. The new texts are editorial drafts; Sanskrit, Latin and the authored Yazekh register have not received independent linguistic or author review.
+The website has static visitor-entry previews under `/entry/{locale}/` for all 13 language layers. The Pages workflow generates these routes from [`locales/entries/`](../locales/entries/); provenance and route hashes are recorded in [`locales/built/manifest.json`](../locales/built/manifest.json).
 
-## Current state
+The pages explain the public entry points, user choice, status boundaries, and next route. They are transcreation drafts and are marked `noindex` until language, culture, accessibility, rights, product, and owner review are complete. The Yazekh page is an authorial experiment, not a historical reconstruction. Sanskrit and Latin require specialist review.
+
+## Current runtime state
 
 The public entry page offers 13 language and authorial-language layers:
 
@@ -25,10 +27,12 @@ The public entry page offers 13 language and authorial-language layers:
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/?lang=yzh) |
 
 The selector exposes the intended language layer. It does not claim that all
-13 layers have complete translations. For a layer without reviewed runtime
-content, the page keeps the selected layer visible and displays a notice that
-the Russian source text is being shown. The page's `lang` attribute continues
-to describe the language actually rendered.
+13 layers have complete translations. For a layer without full runtime content,
+the page keeps the selection visible, labels the Russian fallback, and links to
+a static visitor-entry preview. The preview has `noindex` until its editorial
+review and publication decision are complete. The app `lang` attribute continues
+to describe the language actually rendered. Russian is the default only when a
+visitor has not saved another locale or supplied an explicit language query.
 
 The matching SUTI.os language catalog is [`language-packs/manifest.json`](https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/manifest.json). It records all 13 layer identifiers, but only the Russian full vault and partial English, Spanish, and Brazilian Portuguese entry packs have downloadable files. The remaining nine layers have no SUTI.os archive. These boundaries are also summarized in [repository contours](repository-contours.v1.md).
 
