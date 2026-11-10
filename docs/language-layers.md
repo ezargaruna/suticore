@@ -16,15 +16,15 @@ The public entry page offers 13 language and authorial-language layers:
 | English (`en`) | English | Available | [en](https://suti.world/?lang=en) |
 | Spanish (`es`) | Spanish | Available | [es](https://suti.world/?lang=es) |
 | Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported | [pt-BR](https://suti.world/?lang=pt-BR) |
-| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/?lang=zh-Hans) |
-| Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/?lang=hi) |
-| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/?lang=fr) |
-| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/?lang=ar) |
-| Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/?lang=bn) |
-| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/?lang=eo) |
-| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/?lang=sa) |
-| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/?lang=la) |
-| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/?lang=yzh) |
+| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/entry/zh-hans/) |
+| Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/entry/hi/) |
+| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/entry/fr/) |
+| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/entry/ar/) |
+| Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/entry/bn/) |
+| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/entry/eo/) |
+| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
+| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
+| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without full runtime content,
