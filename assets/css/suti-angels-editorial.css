@@ -25,8 +25,6 @@
   --suti-angel-copper: #b98c49;
   --suti-angel-line: #cbd8d5;
   --suti-angel-focus: #135b60;
-  --suti-angel-weave: rgba(19, 91, 96, 0.055);
-  --suti-angel-glint: rgba(185, 140, 73, 0.07);
 }
 
 html {
@@ -37,9 +35,6 @@ html {
 body {
   color: var(--suti-angel-ink);
   background-color: var(--suti-angel-paper);
-  background-image:
-    radial-gradient(ellipse at 8% 4%, var(--suti-angel-weave), transparent 34rem),
-    radial-gradient(ellipse at 94% 18%, var(--suti-angel-glint), transparent 28rem);
   font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
   font-size: clamp(1rem, 0.98rem + 0.15vw, 1.08rem);
   line-height: 1.68;
@@ -87,8 +82,6 @@ body:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]
   --suti-angel-copper: #e0bd79;
   --suti-angel-line: #58716e;
   --suti-angel-focus: #f0d78a;
-  --suti-angel-weave: rgba(161, 215, 206, 0.07);
-  --suti-angel-glint: rgba(224, 189, 121, 0.06);
   color-scheme: dark;
 }
 
@@ -103,10 +96,17 @@ body:is([data-theme="contrast"], [data-vlight="контраст"]) {
   --suti-angel-copper: #ff0;
   --suti-angel-line: #fff;
   --suti-angel-focus: #ff0;
-  --suti-angel-weave: transparent;
-  --suti-angel-glint: transparent;
-  background-image: none;
   color-scheme: dark;
+}
+
+:where(.gratitude-card, .music-card) {
+  background: var(--suti-angel-card) !important;
+  border-color: var(--suti-angel-line) !important;
+  box-shadow: none !important;
+}
+
+.nitya-portal::before {
+  content: none !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
