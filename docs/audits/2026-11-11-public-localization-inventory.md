@@ -53,7 +53,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `audits.html` | English | EN | Single-language index page. |
 | `clear-water.html` | English | EN | Single-language practice page. |
 
-The workflow publishes the English research master and linked Russian, Spanish, and Brazilian Portuguese editions under `docs/research/`. The Russian draft awaits author comparison; the Spanish, Portuguese, and French drafts await independent speaker review.
+The workflow publishes the English research master and linked Russian, Spanish, and Brazilian Portuguese editions under `docs/research/`. The Russian draft awaits author comparison; the Spanish, Portuguese, French, and Chinese drafts await independent speaker review.
 
 The workflow also publishes these nested HTML screens from `modules/`:
 
@@ -71,7 +71,7 @@ The workflow also publishes these nested HTML screens from `modules/`:
 |---|---|---|---|
 | `docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md` | RU master; EN / ES / PT-BR and eight additional written-language drafts | Twelve written-language short announcements; Yazekh `HOLD` | Draft-only; native/editor review pending; no posts sent. Each social platform and image still needs its own review. |
 | `docs/launch/SYNAURA_STYLE_ANNOUNCEMENT.v1.md` | RU master; EN / ES / PT-BR sense drafts | Four language versions | Translation review pending; five-to-thirteen layer expansion not started. |
-| `docs/research/SUTI_RESEARCH_COLLABORATION.md` + `SUTI_INVESTIGACION_COLABORACION.es.md` + `SUTI_PESQUISA_COLABORACAO.pt-BR.md` + `SUTI_RESEARCH_COLLABORATION.ru.md` + `SUTI_RECHERCHE_COLLABORATION.fr.md` | EN master + RU, ES, PT-BR, and FR editions | EN / RU / ES / PT-BR / FR | Russian author comparison pending; native-speaker review pending for ES, PT-BR, and FR; all files are copied by Pages, subject to file-level rights and study-scope limits. |
+| `docs/research/SUTI_RESEARCH_COLLABORATION.md` + `SUTI_INVESTIGACION_COLABORACION.es.md` + `SUTI_PESQUISA_COLABORACAO.pt-BR.md` + `SUTI_RESEARCH_COLLABORATION.ru.md` + `SUTI_RECHERCHE_COLLABORATION.fr.md` + `SUTI_RESEARCH_COLLABORATION.zh-Hans.md` | EN master + RU, ES, PT-BR, FR, and zh-Hans editions | EN / RU / ES / PT-BR / FR / zh-Hans | Russian author comparison pending; native-speaker review pending for ES, PT-BR, FR, and zh-Hans; all files are copied by Pages, subject to file-level rights and study-scope limits. |
 | `modules/suti/suticore-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
 | `modules/suti/synaura-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
 | `modules/suti/syntaxium-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
@@ -94,7 +94,7 @@ External Google Forms content is not part of this repository's runtime dictionar
 ## Next sequence
 
 1. Finish EN master review for each public route and repair route/label mismatches.
-2. Compare the Russian brief with the English master; review the Spanish, Brazilian Portuguese, and French versions with qualified speakers before treating them as approved.
+2. Compare the Russian brief with the English master; review the Spanish, Brazilian Portuguese, French, and Simplified Chinese versions with qualified speakers before treating them as approved.
 3. Complete RU, ES, and PT-BR editions for the highest-use public routes, with page-level coverage rather than isolated labels.
 4. Expand the remaining language layers from one consent-first care entry and one NITYA introduction; show the Russian fallback explicitly wherever content is still missing.
 5. Keep Sanskrit, Latin, and Yazekh in separate editorial lanes. Sanskrit and Latin need qualified language review; Yazekh needs author-approved grammar and vocabulary before transcreation.

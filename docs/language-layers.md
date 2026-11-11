@@ -61,7 +61,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Russian (`ru`) | Editorial edition at `docs/research/SUTI_RESEARCH_COLLABORATION.ru.md`; author comparison pending | Available |
 | Spanish (`es`) | Editorial Spanish translation at `docs/research/SUTI_INVESTIGACION_COLABORACION.es.md`; independent review pending | Available |
 | Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
-| Simplified Chinese (`zh-Hans`) | `HOLD` — not started | Russian fallback |
+| Simplified Chinese (`zh-Hans`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md`; independent review pending | Russian fallback on homepage |
 | Hindi (`hi`) | `HOLD` — not started | Russian fallback |
 | French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Russian fallback on homepage |
 | Arabic (`ar`) | `HOLD` — not started | Russian fallback |
@@ -71,7 +71,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Latin (`la`) | `HOLD` — not started | Russian fallback |
 | Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
 
-`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. The Russian edition is an editorial draft awaiting comparison with the English master. The French brief is a draft translation awaiting qualified review. This is not a negative judgment about the language or a translation.
+`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. The Russian edition is an editorial draft awaiting comparison with the English master. The French and Simplified Chinese briefs are draft translations awaiting qualified review. This is not a negative judgment about the language or a translation.
 
 ## Adding a reviewed translation
 
