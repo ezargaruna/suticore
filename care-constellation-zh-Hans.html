@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hans" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="SUTI 提供的可选关怀指南，帮助你清晰沟通，并选择由自己决定的小步骤。">
+  <link rel="canonical" href="https://suti.world/care-constellation-zh-Hans.html">
+  <title>关怀星图 · SUTI.world</title>
+  <style>
+    @font-face{font-family:Nunito;src:url("assets/fonts/NunitoSans-variable.ttf") format("truetype");font-weight:100 1000;font-display:swap}
+    @font-face{font-family:Manrope;src:url("assets/fonts/Manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap}
+    :root{color-scheme:light;--bg:#F4F0E8;--surface:#FCF8F2;--surface-2:#DDF2EF;--ink:#25342F;--muted:#52615A;--petrol:#365958;--teal:#57B8B0;--peach:#DE9A73;--gold:#D6AD58;--line:#D8D0C1;--focus:#365958;--shadow:#25342F12;--body:Manrope,system-ui,sans-serif;--display:Nunito,system-ui,sans-serif;font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.65}
+    html[data-theme="night"]{color-scheme:dark;--bg:#101A18;--surface:#17231F;--surface-2:#20332E;--ink:#F4F0E8;--muted:#C4C8BE;--petrol:#A8BBB1;--line:#405149;--focus:#A9DCD5;--shadow:#00000035}
+    html[data-theme="contrast"]{color-scheme:light;--bg:#fff;--surface:#fff;--surface-2:#f1f1f1;--ink:#111;--muted:#333;--petrol:#111;--teal:#006b65;--peach:#784019;--gold:#634700;--line:#555;--focus:#000;--shadow:transparent}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}a{color:var(--petrol);text-underline-offset:.18em}a:hover{text-decoration-thickness:2px}button{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.55rem .9rem;cursor:pointer}button[aria-pressed="true"]{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.wrap{width:min(1120px,calc(100% - 36px));margin-inline:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:10;background:var(--surface);padding:.6rem;border-radius:.4rem}.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:700 1rem var(--display);letter-spacing:.02em}.brand img{width:34px;height:34px;object-fit:contain}.tools{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,6vw,5rem);align-items:center;padding:clamp(3rem,8vw,6.5rem) 0 3rem}.hero>*{min-width:0}.eyebrow{font:700 .78rem var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}h1,h2,h3{font-family:var(--display);line-height:1.14;margin-top:0}h1{font-size:clamp(2.5rem,6vw,4.6rem);letter-spacing:-.035em;font-weight:760;color:var(--petrol);margin:.4rem 0 1rem}h2{font-size:clamp(1.65rem,3vw,2.2rem);font-weight:720}h3{font-size:1.25rem}.lead{font-size:clamp(1.08rem,1.8vw,1.3rem);max-width:56ch;color:var(--muted)}.primary{display:inline-flex;min-height:48px;align-items:center;padding:.7rem 1.15rem;border-radius:999px;background:var(--petrol);color:var(--bg);text-decoration:none;font-weight:700;margin-top:.7rem}.landscape{width:100%;max-width:100%;height:auto;display:block}.section{padding:3rem 0}.intro{max-width:68ch;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.4rem}.card{padding:1.3rem;border:1px solid var(--line);border-radius:22px;background:var(--surface);box-shadow:0 14px 32px var(--shadow)}.card p:last-child{margin-bottom:0}.symbol{font:700 1.8rem var(--display);color:var(--teal)}.cross{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto auto;gap:.8rem;max-width:760px;margin:2rem auto}.cross .card{text-align:center;box-shadow:none}.earth{grid-area:1/2}.water{grid-area:2/1}.life{grid-area:2/2;background:var(--surface-2)}.fire{grid-area:2/3}.air{grid-area:3/2}.age-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.age-grid article{padding:1.15rem;border-left:3px solid var(--teal);background:var(--surface);border-radius:0 16px 16px 0}.note{padding:1rem 1.2rem;border-left:3px solid var(--peach);background:var(--surface);color:var(--muted);max-width:80ch}.fine{font-size:.9rem;color:var(--muted)}.status{display:inline-block;padding:.2rem .55rem;border:1px solid var(--line);border-radius:99px;font:700 .72rem var(--display);letter-spacing:.05em}.footer{border-top:1px solid var(--line);padding:2rem 0 3rem;margin-top:2rem;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}.footer p{margin:.25rem 0;color:var(--muted)}@media(max-width:760px){.hero{grid-template-columns:1fr}.hero>*{min-width:0}.landscape{max-width:580px;margin:auto}.cards{grid-template-columns:1fr}.age-grid{grid-template-columns:1fr}.cross{gap:.45rem}.card{padding:1rem}.top{align-items:flex-start;flex-direction:column}.tools{justify-content:flex-start}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}@media print{@page{size:A4;margin:15mm}body{background:#fff;color:#172b28}.top .tools{display:none}.wrap{width:100%}.hero{padding:1rem 0;grid-template-columns:1fr 180px}.primary{background:#fff;color:#111;border:1px solid #111}.card{box-shadow:none;break-inside:avoid}.section{padding:1.4rem 0}.footer{padding:1rem 0}}
+  </style>
+<link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1"></head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <header class="wrap top">
+    <a class="brand" href="index.html?lang=zh-Hans"><img src="assets/brand/suti-mark-main.png" alt=""><span>SUTI.world</span></a>
+    <div class="tools" role="group" aria-label="显示主题">
+      <button type="button" data-theme="day" aria-pressed="true">日间</button>
+      <button type="button" data-theme="night" aria-pressed="false">夜间</button>
+      <button type="button" data-theme="contrast" aria-pressed="false">高对比度</button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="fine"><a href="care-constellation.html" lang="en">English · 原始版本</a> · <a href="care-constellation-fr.html" lang="fr">法语 · 编辑译稿 · 独立审校待进行</a> · <a href="care-constellation-es.html" lang="es-419">拉丁美洲西班牙语 · 编辑译稿 · 独立审校待进行</a> · <a href="care-constellation-pt.html" lang="pt-BR">巴西葡萄牙语 · 编辑译稿 · 独立审校待进行</a> · <a href="care-constellation-ru.html" lang="ru">俄语 · 作者编辑稿 · 作者校对待进行</a> · <a href="care-constellation-zh-Hans.html" lang="zh-Hans">简体中文 · 当前编辑译稿 · 独立审校待进行</a></p>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">SUTI · 关怀星图 · 简体中文编辑译稿</p>
+        <h1 id="page-title">多一点选择的空间</h1>
+        <p class="lead">一份温和的指南，陪你探索关怀、清晰沟通，以及由你选择的一小步。你可以阅读、尝试、调整、暂停，或随时离开。</p>
+        <a class="primary" href="index.html?lang=zh-Hans#care">返回关怀入口</a>
+      </div>
+      <svg class="landscape" viewBox="0 0 620 440" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="art-title">一座有开放小径的花园</title><desc id="art-desc">宁静的想象风景：层叠的山丘、一条青绿色小径、一处小小的鸟巢和开阔的天空。</desc>
+        <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#DDF2EF"/><stop offset="1" stop-color="#FCF8F2"/></linearGradient><linearGradient id="hill"><stop stop-color="#B5D1A1"/><stop offset="1" stop-color="#6FAE9A"/></linearGradient></defs>
+        <rect x="8" y="8" width="604" height="424" rx="42" fill="url(#sky)"/><circle cx="492" cy="100" r="42" fill="#D6AD58" opacity=".72"/><path d="M10 270Q145 172 286 269t326-6v169H10Z" fill="#C9DFB2"/><path d="M10 322q145-106 283-11t319-13v134H10Z" fill="url(#hill)"/><path d="M295 438q-6-68 50-96t63-77" fill="none" stroke="#DDF2EF" stroke-width="25" stroke-linecap="round"/><path d="M295 438q-6-68 50-96t63-77" fill="none" stroke="#57B8B0" stroke-width="9" stroke-linecap="round"/><g fill="#FCF8F2" stroke="#365958" stroke-width="4"><path d="M125 298q35-46 70 0-35 24-70 0Z"/><circle cx="146" cy="281" r="6"/><circle cx="168" cy="278" r="7"/></g><g fill="#365958" opacity=".75"><path d="M100 102q-18-24-38 0 19-8 38 9 21-19 38-7-19-27-38-2Z"/><path d="M222 141q-13-17-27 0 13-6 27 7 14-13 27-5-13-19-27-2Z"/></g></svg>
+    </section>
+
+    <section class="section" aria-labelledby="contours-title">
+      <p class="eyebrow">三种不同的功能</p><h2 id="contours-title">提供支持、检查表达，以及按你的选择转交信息</h2>
+      <p class="intro">这些名称描述的是设计中的提议功能，不代表已有团队值守的服务、正在运行的机器人或已连接的网络。</p>
+      <div class="cards">
+        <article class="card"><div class="symbol" aria-hidden="true">✧</div><h3>.angels · 提供关怀</h3><p>先询问对方的意愿。提供一种具体帮助，说明它的边界，并让对方可以轻松地说“不”。</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">◇</div><h3>.demons · 留意施压表达</h3><p>留意信息中可能带有胁迫或施压的表达。提示只意味着可以重新检查内容，不是给某个人贴标签，也不能证明其意图。</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">⌁</div><h3>.hermes · 准备信息转交</h3><p>在决定是否分享之前，先展示接收者、用途、完整消息、包含的数据、发送渠道以及数据保留时长。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="elements-title">
+      <p class="eyebrow">可选的创意地图</p><h2 id="elements-title">五个邀请 · 顺序由你决定</h2>
+      <p class="intro">这些意象是创意邀请，不是普遍适用的模型、诊断，也不构成关于能量的科学断言。</p>
+      <div class="cross">
+        <article class="card earth"><div class="symbol" aria-hidden="true">◌</div><h3>大地</h3><p>什么是具体的？</p></article>
+        <article class="card water"><div class="symbol" aria-hidden="true">≈</div><h3>流水</h3><p>哪里可以调整？</p></article>
+        <article class="card life"><div class="symbol" aria-hidden="true">✿</div><h3>生命</h3><p>什么对你重要？</p></article>
+        <article class="card fire"><div class="symbol" aria-hidden="true">✧</div><h3>火焰</h3><p>你想选择哪一个小步骤？</p></article>
+        <article class="card air"><div class="symbol" aria-hidden="true">⌁</div><h3>空气 / 呼吸</h3><p>什么节奏让你感到自在？是否关注呼吸由你决定。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ages-title">
+      <p class="eyebrow">选择一种方式，不给人贴标签</p><h2 id="ages-title">不同年龄与无障碍需求的参与方式</h2>
+      <div class="age-grid">
+        <article><h3>家庭与照护者</h3><p>使用实用地图支持日常生活。无需分享怀孕或健康信息。</p></article>
+        <article><h3>0–5 岁</h3><p>与信任的成年人一起看图或听故事。不设儿童账号，不进行私人联系，也不与 AI 直接聊天。</p></article>
+        <article><h3>6–11 岁</h3><p>尝试由成年人审核过的简短合作活动。不设公开评分，也不要求透露个人信息。</p></article>
+        <article><h3>12–17 岁 · <span class="status">暂缓</span></h3><p>面向青少年的服务在投入使用前，需要单独完成安全保护、同意机制、内容管理、法律和数据审查。</p></article>
+        <article><h3>成年人</h3><p>选择有关语言、学习、工作、关系或共享空间的主题。参与完全自愿。</p></article>
+        <article><h3>年长者及有此偏好的人</h3><p>可以选择大字版、朗读、纸质材料、较慢的节奏，或由信任的人陪伴。我们不预设任何人的能力。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="boundaries-title">
+      <p class="eyebrow">清晰的边界</p><h2 id="boundaries-title">这是一个引导，不是关怀服务</h2>
+      <div class="note"><p>本概念不提供诊断或处方，不监控消息，也不会替你联系他人求助。涉及健康、性健康、怀孕、暴力或危机的问题，可以帮助你整理措辞，再向你自行选择的当地合格专业人士咨询。它不能替代专业支持或当地紧急服务。</p><p class="fine">本页面不要求提供或保存个人信息。`.hermes` 功能尚未接入，不会发送任何消息。</p></div>
+      <p class="fine" style="margin-top:1.2rem"><span class="status">语言状态</span> 简体中文编辑译稿；独立语言与文化审校待进行。其他语言版本也尚未全部完成审校。</p>
+    </section>
+  </main>
+  <footer class="wrap footer"><div><p><strong>SUTI.world</strong> · 为重要之事找到表达</p><p class="fine">本地概念 · 运行状态 `UNKNOWN` · 不代表已有服务上线。</p></div><div><a href="index.html?lang=zh-Hans#care">关怀入口</a> · <a href="index.html?lang=zh-Hans">SUTI.world 首页</a></div></footer>
+  <script>
+    document.querySelectorAll('[data-theme]').forEach(button=>button.addEventListener('click',()=>{
+      document.documentElement.dataset.theme=button.dataset.theme;
+      document.querySelectorAll('[data-theme]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    }));
+  </script>
+</body>
+</html>
