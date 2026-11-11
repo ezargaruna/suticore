@@ -1,0 +1,27 @@
+{
+  "id": "synaura.preferred-style",
+  "version": "1.0.0",
+  "title": "Synaura · preferred style of expression",
+  "status": "public-candidate",
+  "realm": "PUBLIC",
+  "license": "MIT",
+  "purpose": "An optional editorial style for clear, spacious, symbol-aware writing",
+  "modules": [
+    "field-myth",
+    "core-operation",
+    "bridge-dialogue"
+  ],
+  "profiles": [
+    "lingua-surgeon",
+    "manifesto-light",
+    "article-flow",
+    "echo-conversation",
+    "void-analysis"
+  ],
+  "authority": {
+    "visual_system": "SUTI Design System",
+    "scope": "editorial expression only",
+    "runtime": "not implied",
+    "deployment": "not implied"
+  }
+}
