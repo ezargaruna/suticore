@@ -117,3 +117,9 @@ status :: inventory stage complete for the listed publish workflow
 full 13-language localization :: INCOMPLETE
 native-speaker / cultural review :: NOT RECORDED for the new drafts
 rights clearance :: per artifact; UNKNOWN where no file-level record exists
+
+## Recheck after French care route integration :: 2026-11-11
+
+The branch preview `https://codex-nitya-engine-interface.suti.pages.dev/care-constellation-fr.html` returned HTTP 200 and a 1,045,625-byte unified HTML shell. Its embedded `care-constellation-fr.html` entry decodes to a French document with `lang="fr"` and the title `Constellation du soin · SUTI.world`. The route is therefore present in the preview payload; this HTTP check does not replace visual, keyboard, or screen-reader review.
+
+At 21:35 UTC, `https://suti.world/care-constellation-fr.html` still returned the older 377,331-byte shell without the French route key. Production had not yet received this revision. The preview branch has since been merged locally with `origin/main` at `73dd97d` to preserve the contrast and Synaura readability updates; the resulting revision is `d778d39`. The Cloudflare Workers build for that revision was in progress at the time of this note. Deployment status and the production route must be rechecked after that build and any approved merge/deploy step.
