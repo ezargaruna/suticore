@@ -121,3 +121,12 @@ Rights and publication remain separate gates: the kit is a local copy draft,
 not a post log or a blanket license. Native review, cultural context, link
 behavior, accessibility, and permission for any visual asset require their own
 records before the copy is treated as ready to publish.
+
+## Clear-water practice
+
+[`clear-water.html`](../clear-water.html) is the English source practice. A complete
+Spanish editorial edition is available at [`clear-water-es.html`](../clear-water-es.html).
+The Spanish page translates all thirteen prompts, controls, and the open-materials
+notes; it marks independent review as pending and identifies Russian-only linked
+materials. This does not make those destinations Spanish, and the practice is not
+a full Spanish translation of the wider SUTI.world site.
