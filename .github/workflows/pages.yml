@@ -47,6 +47,8 @@ jobs:
           mkdir -p _site/modules
           cp -R modules/verenium _site/modules/
           cp -R modules/synaura _site/modules/
+          cp modules/index.html _site/modules/index.html
+          cp -R modules/suti _site/modules/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
           cp assets/fonts/Onest-Variable.woff2 _site/assets/fonts/Onest-Variable.woff2

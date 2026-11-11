@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Авторская карта модулей SUTI.world и предлагаемая спецификация synaura × Syntaxium.">
+  <title>Модули · SUTI.world</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f0e8;--surface:#fcf8f2;--ink:#25342f;--muted:#52615a;--line:#d8d0c1;--petrol:#365958;--moss:#687064;--accent:#de9a73;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+    *{box-sizing:border-box}body{margin:0}a{color:var(--petrol);text-underline-offset:.2em}a:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}.wrap{width:min(100% - 2.5rem,70rem);margin-inline:auto}.top{padding:1rem 0;border-bottom:1px solid var(--line)}.top a{font-weight:700;text-decoration:none}.hero{padding:clamp(2.5rem,8vw,6rem) 0 2rem}.eyebrow{color:var(--moss);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}h1,h2,h3{line-height:1.2}h1{max-width:16ch;font-size:clamp(2.4rem,7vw,5rem);font-weight:600;letter-spacing:-.045em;margin:.3em 0}h2{font-size:clamp(1.5rem,4vw,2.2rem);margin:0 0 1rem}h3{font-size:1.05rem;margin:0 0 .5rem}.lead{max-width:58rem;color:var(--muted);font-size:1.15rem}.status{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem;color:var(--muted);font-size:.85rem}.section{padding:2.5rem 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:1rem}.card{padding:1.2rem;border:1px solid var(--line);border-radius:1rem;background:var(--surface)}.card p{margin:.3rem 0;color:var(--muted)}.card .type{color:var(--petrol);font-size:.8rem;font-weight:650}.notice{padding:1rem 1.2rem;border-left:4px solid var(--accent);background:var(--surface)}.links{display:flex;flex-wrap:wrap;gap:.8rem 1.4rem;margin-top:1.5rem}.links a{font-weight:600}footer{padding:2rem 0 4rem;color:var(--muted);font-size:.9rem}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap"><a href="../">SUTI.world</a> · <span>карта модулей</span></div></header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">SUTIcore · synaura × Syntaxium</p>
+      <h1>модули как карта работы</h1>
+      <p class="lead">Авторская архитектура для языка, различения, структуры и действия. Модули включаются по задаче; название не подтверждает наличие отдельного приложения.</p>
+      <p><span class="status">статус описания :: proposed</span></p>
+      <div class="notice"><strong>Граница чтения</strong><br>Здесь опубликованы описания и спецификация. Parser, метрики, телеметрия, подключённые боты и сервисы не заявляются без отдельного подтверждения.</div>
+      <div class="links"><a href="synaura-2026.9.md">читать спецификацию synaura 2026.9</a><a href="synaura/README.md">открыть .synaura · редакционный стиль</a><a href="catalog.v1.json">открыть JSON-каталог</a><a href="https://github.com/ezargaruna/suticore/tree/main/modules">исходники модулей на GitHub ↗</a><a href="https://github.com/ezargaruna/suticore/blob/main/modules/suti/README.md">README карты на GitHub ↗</a></div>
+    </section>
+    <section class="section" aria-labelledby="architecture-title">
+      <h2 id="architecture-title">архитектурные модули</h2>
+      <div class="grid">
+        <article class="card"><p class="type">ядро · ценность</p><h3>SUTIcore</h3><p>Принципы, контракты, ограничения и совместимость.</p></article>
+        <article class="card"><p class="type">ценностная архитектура</p><h3>SUTI 8D</h3><p>Восемь авторских измерений для рассмотрения проектируемой ценности; не восемь обещанных результатов.</p></article>
+        <article class="card"><p class="type">двигатель · заметить</p><h3>Psychonetica</h3><p>Работа с доступными сигналами; наблюдение отделяется от объяснения.</p></article>
+        <article class="card"><p class="type">двигатель · связать</p><h3>Eidographica</h3><p>Карты сущностей, образов, отношений и границ.</p></article>
+        <article class="card"><p class="type">двигатель · назвать</p><h3>Lingvaetica</h3><p>Исследовательская сборка внимания, образов, действия и языка.</p></article>
+        <article class="card"><p class="type">двигатель · сделать</p><h3>Actica</h3><p>Выполнимый шаг, ожидаемое наблюдение и возможность пересмотра.</p></article>
+        <article class="card"><p class="type">координация</p><h3>synaura</h3><p>Внимание, различение, переход, ритм и нагрузка.</p></article>
+        <article class="card"><p class="type">рабочий цикл</p><h3>SRETENIYA_OS</h3><p>Сборка модулей в сценарий взаимодействия; фоновые агенты не подразумеваются.</p></article>
+        <article class="card"><p class="type">грамматика</p><h3>Syntaxium</h3><p>Предлагаемая структура записи, отношений, области действия и статуса.</p></article>
+        <article class="card"><p class="type">взаимодействие</p><h3>Rhetorica</h3><p>Намерение, адресат, речевое действие и допустимое пространство ответа.</p></article>
+        <article class="card"><p class="type">доменные адаптеры</p><h3>Pro.Yazyk · LinguaFUSION · SONOGENESIS</h3><p>Речевые регистры; языковая и культурная практика; звук в мультимодальном опыте.</p></article>
+        <article class="card"><p class="type">компиляция формы</p><h3>Style Law Compiler</h3><p>Предлагаемый переход от смысла, отношений и ограничений к форме.</p></article>
+        <article class="card"><p class="type">проверки</p><h3>VereNITYA · Accessibility · Semantic Security · Sufficiency Gate</h3><p>Основания, доступность, границы данных и достаточность структуры. Соответствие доступности требует отдельной проверки.</p></article>
+        <article class="card"><p class="type">управление утверждениями</p><h3>Market Evidence · Claim Ceiling · Copy Protocol</h3><p>Свидетельства, пределы обещаний и соразмерная формулировка.</p></article>
+        <article class="card"><p class="type">субъектность</p><h3>Human Choice</h3><p>Согласие, отказ, пауза, уточнение, изменение и выход.</p></article>
+        <article class="card"><p class="type">пересмотр и наблюдаемость</p><h3>Trickster Red Team · SUTI Observatory · RAD</h3><p>Альтернативные прочтения, наблюдаемый след и пересмотр.</p></article>
+        <article class="card"><p class="type">среды</p><h3>SUTIspace · SUTI.world</h3><p>Пространственные и интерфейсные воплощения; общий публичный контекст проекта.</p></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="applied-title">
+      <h2 id="applied-title">прикладные поверхности</h2>
+      <div class="grid">
+        <article class="card"><p class="type">отдельная публичная поверхность</p><h3>VereNium</h3><p>Офлайн-мастерская-навигация в браузере. Наличие страницы не означает hosted-agent или работающий Telegram-бот.</p><p><a href="../verenium.html">открыть VereNium ↗</a></p></article>
+        <article class="card"><p class="type">игровые и учебные проекты</p><h3>NITYA · Samurai Dharma</h3><p>Добровольные маршруты игры и рефлексии. Это не диагностика, прогноз или классификация человека.</p><p><a href="../samurai-dharma.html">открыть Samurai Dharma ↗</a></p></article>
+        <article class="card"><p class="type">рабочий лист</p><h3>Neuro-Veche · .veche</h3><p>Организация вопроса, оснований, возражений и пересмотра. Не голосование, не консенсус и не подключённая система совещаний.</p></article>
+        <article class="card"><p class="type">материалы заботы</p><h3>SUTI.angels · Angels of Care</h3><p>Авторская навигационная роль и редакционные материалы. Многоязычный hand-off пакет и анкета в эту публикацию не включены: их отдельная проверка не завершена.</p></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="docs-title">
+      <h2 id="docs-title">документные модули synaura · 00–12</h2>
+      <div class="grid">
+        <article class="card"><h3>00–04 · основа</h3><p>Activation manifest · core principles · style canon · Syntaxium grammar · operator registry.</p></article>
+        <article class="card"><h3>05–08 · представление</h3><p>Eidographics & visual DNA · parser & canonical AST · token economy · runtime.</p></article>
+        <article class="card"><h3>09–12 · проверка и выдача</h3><p>Research protocol · validation & metrics · reference architecture · ASCII design system.</p></article>
+      </div>
+      <p class="notice">Цифровые пороги и формулы из ранних черновиков не публикуются как измеренные результаты. Подробная спецификация сохраняет их статус предложений и отмечает неразрешённые поля.</p>
+    </section>
+    <section class="section" aria-labelledby="style-title">
+      <h2 id="style-title">.synaura · стиль выражения</h2>
+      <p>Отдельный публичный кандидат :: добровольный редакционный ориентир для текстов SUTI.world. Это не то же самое, что предлагаемая формальная спецификация языка и runtime synaura.</p>
+      <p><a href="synaura/README.md">читать руководство .synaura ↗</a> · <a href="synaura/manifest.json">открыть manifest ↗</a></p>
+    </section>
+    <section class="section">
+      <h2>версии и границы</h2>
+      <p>Публичный каталог — описание авторской архитектуры, версия 2026.11-r5. Канонизация требует отдельного решения человека. Изменения статуса или реализации проверяются по соответствующему источнику и версии.</p>
+      <p><a href="../">вернуться на SUTI.world</a> · <a href="https://github.com/ezargaruna/suticore">репозиторий GitHub ↗</a></p>
+    </section>
+  </main>
+  <footer class="wrap">Ezar Garuna · SUTI.world · living specification · 2026.11-r5</footer>
+</body>
+</html>
