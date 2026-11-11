@@ -1624,6 +1624,7 @@ body {
   const title = document.getElementById('interface-dialog-title');
   const close = document.getElementById('interface-dialog-close');
   let returnFocus = null;
+  let openedFromDirectRoute = false;
   const route = href => {
     const url = new URL(href, location.href);
     const name = decodeURIComponent(url.pathname.split('/').filter(Boolean).pop() || '');
@@ -1631,21 +1632,35 @@ body {
     if (url.pathname.endsWith('/modules/')) return 'modules.html';
     return null;
   };
-  document.addEventListener('click', event => {
-    const link = event.target.closest('a[href]');
-    if (!link || link.target === '_blank' || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const page = route(link.href);
-    if (!page) return;
-    event.preventDefault();
-    returnFocus = link;
+  const openPage = (page, trigger = null) => {
+    returnFocus = trigger;
     title.textContent = data[page].title;
     frame.title = data[page].title;
     const bytes = Uint8Array.from(atob(data[page].html), ch => ch.charCodeAt(0));
     frame.srcdoc = new TextDecoder().decode(bytes);
     dialog.showModal();
     close.focus();
+  };
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href]');
+    if (!link || link.target === '_blank' || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const page = route(link.href);
+    if (!page) return;
+    event.preventDefault();
+    openPage(page, link);
   });
-  const dismiss = () => { frame.srcdoc = ''; if (returnFocus?.isConnected) returnFocus.focus(); };
+  const directPage = route(location.href);
+  if (directPage) {
+    openedFromDirectRoute = true;
+    openPage(directPage);
+  }
+  const dismiss = () => {
+    frame.srcdoc = '';
+    if (returnFocus?.isConnected) returnFocus.focus();
+    else if (openedFromDirectRoute) history.replaceState(null, '', '/');
+    openedFromDirectRoute = false;
+    returnFocus = null;
+  };
   close.addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', dismiss);
 })();
