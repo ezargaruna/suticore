@@ -1,7 +1,7 @@
 # SUTI.world · public localization inventory
 
 date :: 2026-11-11
-source :: audit checkout against `origin/main` at `e792943` (2026-11-11)
+source :: audit checkout against `origin/main` at `5893602` (2026-11-11)
 scope :: public HTML files selected by `.github/workflows/pages.yml`, linked open materials, language routes, and declared rights boundaries
 review type :: static source inventory; no native-speaker review claimed
 
@@ -257,9 +257,35 @@ requests. Each page displays its locale and pending-review status. Their shared
 illustrations are unchanged; this translation work does not establish new
 asset rights. The pages are in the single-file route map and the Pages copy
 list; a repository check verifies locale metadata, disclosures, local links,
-assets, byte-identical embeddings, and workflow inclusion. Live deployment
-verification will be recorded after merge.
+assets, byte-identical embeddings, and workflow inclusion. See the live recheck
+below.
 
 Coverage after this wave :: twelve written-language editions available for this
 artifact (RU, EN, ES-419, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA, LA); YZH
 `HOLD` pending author-approved grammar and vocabulary.
+
+
+## Live recheck after Care Atlas localization wave :: 2026-11-11
+
+PRs [#60](https://github.com/ezargaruna/suticore/pull/60) and
+[#61](https://github.com/ezargaruna/suticore/pull/61) merged. The main Pages
+workflow [run 43116221058](https://github.com/ezargaruna/suticore/actions/runs/43116221058)
+completed successfully after the allowlisted Care Atlas source was refreshed in
+both Verenium archive aliases. A fresh request to `https://suti.world/` returned
+HTTP 200 and a 1,423,044-byte shell (SHA-256
+`b0ab22e8a54d887d9968858fce9b67c56d112334aa09ba73563fdef0dccaf8df`). Its
+route map contains 49 entries. All twelve Care Atlas entries decode byte-for-byte
+to their checked-in standalone files.
+
+The twelve GitHub Pages standalone URLs
+(`/suticore/care-atlas.html` and the eleven translated paths) returned HTTP 200;
+each response matched its corresponding repository file by SHA-256. On
+`suti.world`, those same paths return the shared shell, whose embedded router
+contains the matching pages. The six bundled font and OFL URLs for Bengali,
+Arabic, and Devanagari returned HTTP 200 with expected font/text content types
+and permissive CORS.
+
+This verifies deployment, route data, and source parity. It does not certify
+visual rendering, keyboard or screen-reader behavior, independent linguistic
+or cultural review, or asset reuse rights. The separate Workers build is not
+certified by the Pages deployment. Yazekh remains `HOLD`.
