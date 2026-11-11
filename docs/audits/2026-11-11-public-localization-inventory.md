@@ -1,7 +1,7 @@
 # SUTI.world · public localization inventory
 
 date :: 2026-11-11
-source :: audit checkout against `origin/main` at `8b8a4b9` (2026-11-11)
+source :: audit checkout against `origin/main` at `e792943` (2026-11-11)
 scope :: public HTML files selected by `.github/workflows/pages.yml`, linked open materials, language routes, and declared rights boundaries
 review type :: static source inventory; no native-speaker review claimed
 
@@ -62,7 +62,18 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
 | `modules.html` | Mixed RU/EN | RU-first catalog with selected English labels | Two translation markers do not establish a translated catalog. |
 | `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
-| `care-atlas.html` | Russian | RU | Single-language page. |
+| `care-atlas.html` | Russian | RU | Source guide; discloses that it is not medical/emergency support and requests are not auto-routed; links to all written editions and marks YZH `HOLD`. |
+| `care-atlas-en.html` | English (`en`) | EN | Full editorial draft; age/consent boundaries and service limits retained; independent review pending. |
+| `care-atlas-es.html` | Latin American Spanish (`es-419`) | ES-419 | Full editorial draft; age/consent boundaries and service limits retained; independent linguistic/cultural review pending. |
+| `care-atlas-pt.html` | Brazilian Portuguese (`pt-BR`) | PT-BR | Full editorial draft; age/consent boundaries and service limits retained; independent linguistic/cultural review pending. |
+| `care-atlas-zh-Hans.html` | Simplified Chinese (`zh-Hans`) | ZH-HANS | Full editorial draft; independent linguistic/cultural review pending. |
+| `care-atlas-hi.html` | Hindi (`hi`) | HI | Full editorial draft; bundled Noto Sans Devanagari and OFL; independent linguistic/cultural review pending. |
+| `care-atlas-fr.html` | French (`fr`) | FR | Full editorial draft; independent linguistic/cultural review pending. |
+| `care-atlas-ar.html` | Arabic (`ar`, RTL) | AR | Full editorial draft with RTL; bundled Noto Sans Arabic and OFL; independent linguistic/cultural review pending. |
+| `care-atlas-bn.html` | Bengali (`bn`) | BN | Full editorial draft; bundled Noto Sans Bengali and OFL; independent linguistic/cultural review pending. |
+| `care-atlas-eo.html` | Esperanto (`eo`) | EO | Full editorial draft; independent linguistic review pending. |
+| `care-atlas-sa.html` | Sanskrit (`sa`) | SA | Full editorial draft; bundled Devanagari font and OFL; qualified linguistic/cultural review pending. |
+| `care-atlas-la.html` | Latin (`la`) | LA | Full editorial draft; explicitly not certified as Classical Latin; qualified linguistic/cultural review pending. |
 | `care-constellation.html` | English | EN | Source edition; links to RU, FR, ES-419, PT-BR, zh-Hans, HI, AR, BN, EO, SA, and LA editions. |
 | `care-constellation-fr.html` | French (`fr`) | FR | Complete French editorial edition of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-constellation-es.html` | Latin American Spanish (`es-419`) | ES-419 | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
@@ -232,3 +243,23 @@ page is embedded byte-for-byte with `lang="la"`. Its visible status identifies
 it as an editorial draft and says that qualified linguistic and cultural
 review is still needed. This does not certify specialist review, accessibility,
 or Latin homepage runtime coverage.
+
+
+## Care atlas localization wave 1 :: 2026-11-11
+
+The Russian source guide now links to eleven translated written-language
+editions: English, Latin American Spanish, Brazilian Portuguese, Simplified
+Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin. The
+translated pages preserve the source's practical flow, role descriptions, child-with-adult requirement,
+consent and privacy boundaries, and add explicit notice that the guide is not
+a staffed, medical, or emergency service and does not automatically route
+requests. Each page displays its locale and pending-review status. Their shared
+illustrations are unchanged; this translation work does not establish new
+asset rights. The pages are in the single-file route map and the Pages copy
+list; a repository check verifies locale metadata, disclosures, local links,
+assets, byte-identical embeddings, and workflow inclusion. Live deployment
+verification will be recorded after merge.
+
+Coverage after this wave :: twelve written-language editions available for this
+artifact (RU, EN, ES-419, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA, LA); YZH
+`HOLD` pending author-approved grammar and vocabulary.
