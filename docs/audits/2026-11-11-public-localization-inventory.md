@@ -1,10 +1,9 @@
 # SUTI.world · public localization inventory
 
 date :: 2026-11-11
-source :: `origin/main` at `e92e523` plus the current single-HTML candidate
+source :: current checkout of PR #37 against `origin/main` at `e92e523`
 scope :: public HTML files selected by `.github/workflows/pages.yml`, linked open materials, language routes, and declared rights boundaries
 review type :: static source inventory; no native-speaker review claimed
-
 
 ## Deployment spot check :: 2026-11-11
 
@@ -20,7 +19,7 @@ interactive language routes, linked assets, or accessibility states work.
 
 ## State summary
 
-- Thirteen language choices are exposed on the home page. Four full home-page runtime dictionaries are present: Russian, English, Spanish, and Brazilian Portuguese. Other language choices retain a visible Russian fallback for the rest of the interface. The French research brief is an independent linked document and does not change French homepage runtime coverage.
+- Thirteen language choices are exposed on the home page. Four full home-page runtime dictionaries are present: Russian, English, Spanish, and Brazilian Portuguese. Other language choices retain a visible Russian fallback for the rest of the interface. The translated research briefs are individual open materials and do not change full homepage runtime coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.
@@ -53,7 +52,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `audits.html` | English | EN | Single-language index page. |
 | `clear-water.html` | English | EN | Single-language practice page. |
 
-The workflow publishes the English research master and linked Russian, Spanish, and Brazilian Portuguese editions under `docs/research/`. The Russian draft awaits author comparison; the Spanish, Portuguese, French, and Chinese drafts await independent speaker review.
+The workflow publishes the English research master and linked RU, ES, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, and LA editions under `docs/research/`. The homepage exposes them in a compact language disclosure with per-link `lang` values and RTL direction for Arabic. RU awaits author comparison; ES, PT-BR, FR, zh-Hans, HI, AR, BN, and EO await independent language review; SA and LA await qualified review. Yazekh has a public `HOLD` record, not a fabricated translation.
 
 The workflow also publishes these nested HTML screens from `modules/`:
 
@@ -71,7 +70,7 @@ The workflow also publishes these nested HTML screens from `modules/`:
 |---|---|---|---|
 | `docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md` | RU master; EN / ES / PT-BR and eight additional written-language drafts | Twelve written-language short announcements; Yazekh `HOLD` | Draft-only; native/editor review pending; no posts sent. Each social platform and image still needs its own review. |
 | `docs/launch/SYNAURA_STYLE_ANNOUNCEMENT.v1.md` | RU master; EN / ES / PT-BR sense drafts | Four language versions | Translation review pending; five-to-thirteen layer expansion not started. |
-| `docs/research/SUTI_RESEARCH_COLLABORATION.md` + `SUTI_INVESTIGACION_COLABORACION.es.md` + `SUTI_PESQUISA_COLABORACAO.pt-BR.md` + `SUTI_RESEARCH_COLLABORATION.ru.md` + `SUTI_RECHERCHE_COLLABORATION.fr.md` + `SUTI_RESEARCH_COLLABORATION.zh-Hans.md` | EN master + RU, ES, PT-BR, FR, and zh-Hans editions | EN / RU / ES / PT-BR / FR / zh-Hans | Russian author comparison pending; native-speaker review pending for ES, PT-BR, FR, and zh-Hans; all files are copied by Pages, subject to file-level rights and study-scope limits. |
+| `docs/research/SUTI_RESEARCH_COLLABORATION.*` | EN master + RU, ES, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, LA drafts; Yazekh HOLD record | EN / RU / ES / PT-BR / FR / zh-Hans / HI / AR / BN / EO / SA / LA; yzh HOLD | RU author comparison pending; ES/PT-BR/FR/zh-Hans/HI/AR/BN/EO language review pending; SA/LA qualified review pending; Arabic marked RTL. Pages copies these files; each remains subject to source/license and study-scope limits. |
 | `modules/suti/suticore-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
 | `modules/suti/synaura-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
 | `modules/suti/syntaxium-2026.11.en.*` | EN | EN | English specification; no transcreation beyond the source edition. |
@@ -94,7 +93,7 @@ External Google Forms content is not part of this repository's runtime dictionar
 ## Next sequence
 
 1. Finish EN master review for each public route and repair route/label mismatches.
-2. Compare the Russian brief with the English master; review the Spanish, Brazilian Portuguese, French, and Simplified Chinese versions with qualified speakers before treating them as approved.
+2. Compare the Russian brief with the English master; obtain independent language review for ES, PT-BR, FR, zh-Hans, HI, AR, BN, and EO, plus qualified review for SA and LA.
 3. Complete RU, ES, and PT-BR editions for the highest-use public routes, with page-level coverage rather than isolated labels.
 4. Expand the remaining language layers from one consent-first care entry and one NITYA introduction; show the Russian fallback explicitly wherever content is still missing.
 5. Keep Sanskrit, Latin, and Yazekh in separate editorial lanes. Sanskrit and Latin need qualified language review; Yazekh needs author-approved grammar and vocabulary before transcreation.

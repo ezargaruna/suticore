@@ -53,7 +53,9 @@ values in each active runtime dictionary. See
 
 `docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.
 The short invitation on the public home page is transcreated for the four
-runtime interfaces. Those summaries are not translations of the full brief.
+runtime interfaces. Those summaries are not translations of the full brief. A
+compact disclosure links the translated brief editions; the link identifies the
+content language, and the Arabic link sets RTL direction.
 
 | Layer | Full brief | Home-page invitation |
 |---|---|---|
@@ -62,16 +64,16 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Spanish (`es`) | Editorial Spanish translation at `docs/research/SUTI_INVESTIGACION_COLABORACION.es.md`; independent review pending | Available |
 | Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
 | Simplified Chinese (`zh-Hans`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md`; independent review pending | Russian fallback on homepage |
-| Hindi (`hi`) | `HOLD` — not started | Russian fallback |
+| Hindi (`hi`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.hi.md`; independent review pending | Russian fallback on homepage |
 | French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Russian fallback on homepage |
-| Arabic (`ar`) | `HOLD` — not started | Russian fallback |
-| Bengali (`bn`) | `HOLD` — not started | Russian fallback |
-| Esperanto (`eo`) | `HOLD` — not started | Russian fallback |
-| Sanskrit (`sa`) | `HOLD` — not started | Russian fallback |
-| Latin (`la`) | `HOLD` — not started | Russian fallback |
-| Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
+| Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Russian fallback on homepage |
+| Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Russian fallback on homepage |
+| Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Russian fallback on homepage |
+| Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
+| Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Russian fallback on homepage |
+| Yazekh (`yzh`) | `HOLD` — author grammar and vocabulary not confirmed; see `docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md` | Russian fallback on homepage |
 
-`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. The Russian edition is an editorial draft awaiting comparison with the English master. The French and Simplified Chinese briefs are draft translations awaiting qualified review. This is not a negative judgment about the language or a translation.
+A linked editorial draft is not a reviewed edition and does not mean the homepage itself is localized. The Russian edition awaits author comparison; Spanish, Brazilian Portuguese, French, Simplified Chinese, Hindi, Arabic, Bengali, and Esperanto await independent language review; Sanskrit and Latin await qualified language review. Yazekh remains `HOLD` until the author confirms its grammar and vocabulary. These statuses describe review state, not the value of a language.
 
 ## Adding a reviewed translation
 
