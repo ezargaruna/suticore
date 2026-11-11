@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUTI.world 的语言与关怀小练习。你的文字只保留在此标签页中。">
+  <title>一杯清水 · SUTI 语言游戏</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.6 system-ui, sans-serif; }
+    h1 { font: clamp(3rem, 8vw, 5rem)/1.15 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · 送给 ChatGPT 与 Codex 背后创作者的一份礼物</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · 原始版本</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · ожидает авторской сверки</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · 编辑译本</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a></p>
+  <p class="review-note">简体中文 · 编辑译稿。独立语言与文化审阅尚未完成。部分链接材料目前仅提供俄文版本。</p>
+  <h1>一杯清水</h1>
+  <p>想象一位疲惫的人走进你参与打造的工具。屏幕上只能放下一句话。你希望对方读到什么？</p>
+  <p>你可以只在心里玩这个游戏。一个问题就足以完成一次体验。关闭此标签页后，你在这里写下的内容不会发送，也不会保存。</p>
+  <label>如果愿意，为你的向导取个名字 <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>愿意的话，写下你的话 <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">上一步</button>
+      <button id="next" type="button">下一圈涟漪</button>
+      <button id="skip" type="button">跳过</button>
+      <button id="stop" type="button">在这里结束</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>带走一点什么</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">返回问题</button>
+    <button id="clear" type="button">清除我的文字</button>
+  </section>
+
+  <details>
+    <summary>开放工作坊 · 来源与下载</summary>
+    <p>这份邀请提供公开材料的访问入口。每个文件仍保留自己的许可条款与署名信息。</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · 公开源文件、规范与网站</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · 公开知识库、源文件与版本</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · 离线工作坊与资料库</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · 框架图谱（俄文）</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">个人关怀地图（俄文）</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">可选的关怀问卷（俄文；只有点击提交后答案才会发送）</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">语言覆盖与审阅状态</a></li>
+    </ul>
+    <p>设计说明：synaura 会在深入之前先征求许可。Syntaxium 为每个符号安排清楚的功能。LinguaFUSION 会在实际使用语境中检验一句话。VereNITYA 会区分观察到的内容与仍属推测的部分。</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world。谨致谢意，发出一份独立邀请。</footer>
+</main>
+<script>
+const prompts = [
+  '怎样才能让屏幕前这个人的下一分钟轻松一点？',
+  '哪个小细节会让这里显得亲切、好进入？',
+  '来到这里的人应该保留哪一种选择权？',
+  '有人倾听、得到一个建议，还是安静一会儿，哪一种更有帮助？',
+  '遇到这种情况，你真的会对朋友说哪句话？',
+  '哪些是你观察到的，哪些只是你的推测？',
+  '即使其他一切改变，什么仍值得留下？',
+  '两个人可以一起创造什么，让谁都不必独自完成？',
+  '土 · 什么具体支持能让这个想法有立足之处？',
+  '水 · 在哪里换一种节奏会更合适？',
+  '火 · 什么小小的尝试仍能点亮你的好奇？',
+  '风 · 放下什么，才能腾出更多空间？',
+  '以太 · 如果熟悉的限制暂时消失一分钟，你希望为某个人创造怎样的可能？'
+];
+const gifts = [
+  ['岸边的一枚贝壳', '把“把一切都告诉我们”换成“今天什么能帮到你？”。这份礼物是一个更小的第一步。'],
+  ['第二道倒影', '把这句话大声说出来。再想象有人回答“今天不行”。这句话仍然合适吗？'],
+  ['杯中的一颗星', '∴ 三个点：一个人、对方的话、一个可能的下一步。彼此都不必取代对方。']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `涟漪 ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? '收拢这条线' : '下一圈涟漪';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · 谢谢你在觉得合适的地方停下。你的话属于你自己。`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>
