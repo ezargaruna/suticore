@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Короткая языковая практика SUTI.world о ясности и заботе. Твои слова остаются в этой вкладке.">
+  <title>Стакан чистой воды · языковая игра SUTI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.6 system-ui, sans-serif; }
+    h1 { font: clamp(3rem, 8vw, 5rem)/1 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · подарок тем, кто создаёт ChatGPT и Codex</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · исходная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · редакционный перевод</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a></p>
+  <p class="review-note">RU · русская редакция. Сверка с автором и итоговая вычитка ещё не выполнены. Некоторые материалы по ссылкам доступны только на русском.</p>
+  <h1>Стакан чистой воды</h1>
+  <p>Представь, что уставший человек заходит в инструмент, который ты помог создать. На экране помещается одна фраза. Что бы ты хотел, чтобы он прочитал?</p>
+  <p>Можно играть в воображении. Одного вопроса достаточно для целого посещения. Ничего из написанного здесь не отправляется и не сохраняется после закрытия вкладки.</p>
+  <label>Дай своему проводнику имя, если хочется <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>Твои слова — если хочется <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">Назад</button>
+      <button id="next" type="button">Следующая рябь</button>
+      <button id="skip" type="button">Пропустить</button>
+      <button id="stop" type="button">Завершить здесь</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>Что можно взять с собой</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">Вернуться к вопросам</button>
+    <button id="clear" type="button">Удалить мои слова</button>
+  </section>
+
+  <details>
+    <summary>Открытая мастерская · источники и загрузки</summary>
+    <p>Это приглашение к открытым материалам. У каждого файла сохраняются собственные лицензия и указание авторства.</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · открытые исходники, спецификации и сайт</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · открытое хранилище, исходники и версии</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · офлайн-мастерская и архив</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · атлас рамок (на русском)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">Личная карта заботы (на русском)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">необязательная анкета заботы (на русском; ответы отправляются только после нажатия кнопки отправки)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">Языковое покрытие и статус вычитки</a></li>
+    </ul>
+    <p>Заметки о замысле: synaura предлагает спросить разрешение, прежде чем углубляться. Syntaxium назначает каждому знаку явную функцию. LinguaFUSION проверяет фразу в контексте, где её произнесут. VereNITYA различает то, что наблюдали, и то, что пока остаётся предположением.</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world. Независимое приглашение с благодарностью.</footer>
+</main>
+<script>
+const prompts = [
+  'Что сделало бы следующую минуту легче для человека перед экраном?',
+  'Какая маленькая деталь помогает этому месту казаться гостеприимным?',
+  'Какой выбор важно оставить за посетителем?',
+  'Помогло бы больше, если бы человека выслушали, предложили идею или дали немного тишины?',
+  'Какую фразу ты действительно сказал бы другу в такой ситуации?',
+  'Что ты наблюдал, а что предполагаешь?',
+  'Что стоит сохранить, даже если всё остальное изменится?',
+  'Что двое людей могут создать вместе такого, что никому не нужно делать в одиночку?',
+  'Земля · Какая практическая опора поможет этой идее устоять?',
+  'Вода · Где было бы полезно изменить темп?',
+  'Огонь · Какой крошечный эксперимент всё ещё пробуждает любопытство?',
+  'Воздух · От чего можно отказаться, чтобы стало просторнее?',
+  'Эфир · Если привычные ограничения исчезнут на минуту, что ты хотел бы сделать возможным для кого-то?'
+];
+const gifts = [
+  ['Ракушка на берегу', 'Замени «Расскажи нам всё» на «Что поможет тебе сегодня?». Подарок — это первый шаг поменьше.'],
+  ['Второе отражение', 'Произнеси фразу вслух. Теперь представь, что кто-то отвечает: «не сегодня». Фраза всё ещё работает?'],
+  ['Звезда в стакане', '∴ Три точки: человек, его слова и возможный следующий шаг. Ни одна не должна подменять другие.']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `рябь ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'Собрать нить' : 'Следующая рябь';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · Спасибо, что остановился там, где показалось уместным. Твои слова принадлежат тебе.`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>
