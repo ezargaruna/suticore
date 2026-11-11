@@ -141,3 +141,13 @@ draft pending independent linguistic review. The Arabic edition uses RTL directi
 The Sanskrit edition is a draft pending qualified review by a Sanskrit specialist.
 The Latin edition is a draft pending qualified review and is not represented as a
 verified classical text.
+
+## Care constellation
+
+[`care-constellation.html`](../care-constellation.html) is the English source page.
+[`care-constellation-fr.html`](../care-constellation-fr.html) is its French editorial
+edition. It translates the page content, theme controls, age routes, SVG text, and
+care boundaries; it retains the explicit `HOLD` equivalent for teen-facing service
+and does not claim that any care service or hand-off is active. Independent French
+review is pending. The page contains links to Russian-language destinations, which
+remain identified before navigation.

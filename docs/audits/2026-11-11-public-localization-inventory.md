@@ -40,7 +40,8 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `modules.html` | Mixed RU/EN | RU-first catalog with selected English labels | Two translation markers do not establish a translated catalog. |
 | `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
 | `care-atlas.html` | Russian | RU | Single-language page. |
-| `care-constellation.html` | English | EN | Single-language page; no other full locale editions recorded. |
+| `care-constellation.html` | English | EN | Source edition; links to the French editorial edition. |
+| `care-constellation-fr.html` | French (`fr`) | FR | Complete French editorial edition of the care concept, age routes, boundaries, controls, and image description; independent review pending; no live service is claimed. |
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels.html` | Russian | RU | Single-language page. |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
