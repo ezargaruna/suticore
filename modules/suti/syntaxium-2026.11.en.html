@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Proposed SUTI.world module specification. The document does not imply a deployed implementation.">
+  <title>Syntaxium · notation and grammar proposal · SUTI.world</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f0e8;--surface:#fbf8f2;--ink:#40352e;--muted:#685548;--line:#d8cdbe;--petrol:#365958;--accent:#de9a73;font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+    *{box-sizing:border-box}body{margin:0}.wrap{width:min(100% - 2rem,52rem);margin-inline:auto}header,footer{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.92rem}footer{border-top:1px solid var(--line);border-bottom:0;margin-top:4rem;color:var(--muted)}a{color:var(--petrol);text-underline-offset:.2em}a:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}main{padding:clamp(2rem,7vw,5rem) 0}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,6vw,3.8rem);letter-spacing:-.035em}h2{margin-top:2.5rem;font-size:1.7rem}h3{margin-top:2rem;font-size:1.2rem}p,li{max-width:72ch}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{text-align:left;vertical-align:top;padding:.65rem;border-bottom:1px solid var(--line)}th{background:var(--surface)}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:.6rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}.status{padding:1rem 1.1rem;background:var(--surface);border-left:4px solid var(--accent)}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#211e1b;--surface:#2c2823;--ink:#eae2d7;--muted:#c6b9aa;--line:#51483f;--petrol:#a9cdca;--accent:#de9a73}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="../index.html">SUTI.world · module map</a> / Syntaxium
+· notation and grammar proposal</div></header>
+  <main class="wrap">
+    <p class="status">proposed specification · implementation status is separate</p>
+    <h1 id="syntaxium--notation-and-grammar-proposal">Syntaxium ·
+    notation and grammar proposal</h1>
+    <h2 id="purpose">purpose</h2>
+    <p>Syntaxium is a proposed notation for expressing selected
+    structure: sections, relations, actions, boundaries, and review
+    states. It is designed to accompany ordinary language, not replace
+    it.</p>
+    <p>The current document is a human-readable proposal. A complete
+    normative grammar, registered operator set, parser, conformance
+    suite, and stable serialization format do not yet exist.</p>
+    <h2 id="relation-to-synaura-and-suticore">relation to synaura and
+    SUTIcore</h2>
+    <pre class="text"><code>SUTIcore   principles and limits
+synaura    interaction and expression protocol
+Syntaxium  notation and structural grammar proposal</code></pre>
+    <p>The same glyph can have different meanings in historical drafts.
+    Only the versioned legend attached to a document governs its
+    interpretation.</p>
+    <h2 id="core-notation--author-profile">core notation · author
+    profile</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>glyph</th>
+    <th>proposed local meaning</th>
+    <th>plain-language expansion</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><code>∴</code></td>
+    <td>core or principle</td>
+    <td>what is central here?</td>
+    </tr>
+    <tr>
+    <td><code>⧖</code></td>
+    <td>pause or process</td>
+    <td>what is unfolding or held?</td>
+    </tr>
+    <tr>
+    <td><code>⟁</code></td>
+    <td>step or action</td>
+    <td>what may happen next?</td>
+    </tr>
+    <tr>
+    <td><code>〄</code></td>
+    <td>assembly or integration</td>
+    <td>what is being brought together?</td>
+    </tr>
+    <tr>
+    <td><code>↺</code></td>
+    <td>review or return</td>
+    <td>what should be reconsidered?</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>These meanings follow the current authoring profile. They are not
+    yet a universally stable operator registry.</p>
+    <p>An extended proposal may use <code>∅</code> for stop or
+    intentional absence and <code>→</code> for direction. Include those
+    only with an explicit local legend. Other glyphs remain unassigned
+    until reviewed.</p>
+    <h2 id="structural-conventions">structural conventions</h2>
+    <ul>
+    <li>one block carries one main relation or claim</li>
+    <li>indentation may show nesting in an example</li>
+    <li>a heading names the scope of the following blocks</li>
+    <li>punctuation and whitespace remain readable prose unless a parser
+    version defines them</li>
+    <li>every consequential symbol has a nearby word-level
+    explanation</li>
+    <li>unknown or conflicting operators are quoted or replaced with
+    plain text</li>
+    </ul>
+    <h2 id="illustrative-grammar">illustrative grammar</h2>
+    <p>The following EBNF describes only a small document shape. It does
+    not define all operator semantics or whitespace behavior.</p>
+    <pre class="ebnf"><code>document  = { section } ;
+section   = marker, heading, newline, { block } ;
+block     = line, { newline, line } ;
+marker    = &quot;∴&quot; | &quot;⧖&quot; | &quot;⟁&quot; | &quot;〄&quot; | &quot;↺&quot; ;
+heading   = text ;
+line      = text ;</code></pre>
+    <p>This grammar is illustrative, not machine-validated. A parser
+    must not infer an action, permission, or factual status from visual
+    form alone.</p>
+    <h2 id="operator-record--proposed-fields">operator record · proposed
+    fields</h2>
+    <pre class="text"><code>id · glyph · plain-language name · version
+category · scope · input · transformation
+output · invariant · failure cases · examples
+source · status · parser rule · renderer rule</code></pre>
+    <p>Suggested lifecycle ::
+    <code>proposal → experiment → review → stable → deprecated</code></p>
+    <p>Use <code>stable</code> only after a defined parser behavior,
+    compatibility policy, representative corpus, error tests, and
+    independent review are published.</p>
+    <h2 id="normalization-and-compatibility">normalization and
+    compatibility</h2>
+    <p>Unicode normalization may be used for comparison or parsing if
+    the chosen version declares it. Preserve the original source bytes
+    and record any normalized form separately. Do not silently lowercase
+    names, rewrite glyphs, or merge spellings.</p>
+    <p>Until a versioned parser exists, compatibility means that a
+    reader can consult the attached legend and recover the intended
+    plain-language relationships. It is not a guarantee of deterministic
+    machine parsing.</p>
+    <h2 id="validation-plan">validation plan</h2>
+    <p>For each proposed operator, define a small test corpus with:</p>
+    <ul>
+    <li>an unambiguous example</li>
+    <li>a missing or unknown operator</li>
+    <li>a conflicting legend</li>
+    <li>nested structure</li>
+    <li>a plain-text fallback</li>
+    <li>a counterexample showing what the operator must not imply</li>
+    </ul>
+    <p>Measure human interpretation agreement and parser agreement
+    separately. Report the sample, method, failures, and uncertainty. A
+    score without a reproducible procedure is not a result.</p>
+    <h2 id="status">status</h2>
+    <p>Syntaxium is an authorial grammar proposal. No reference parser,
+    language server, Obsidian plugin, validator, or runtime is asserted
+    by this document.</p>
+  </main>
+  <footer><div class="wrap">source :: <a href="syntaxium-2026.11.en.md">syntaxium-2026.11.en.md</a><br>author :: Ezar Garuna · SUTI.world<br>status :: proposed · no runtime or validation claim</div></footer>
+</body>
+</html>

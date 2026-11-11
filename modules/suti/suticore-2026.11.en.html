@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Proposed SUTI.world module specification. The document does not imply a deployed implementation.">
+  <title>SUTIcore · principles and system contract · SUTI.world</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f0e8;--surface:#fbf8f2;--ink:#40352e;--muted:#685548;--line:#d8cdbe;--petrol:#365958;--accent:#de9a73;font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+    *{box-sizing:border-box}body{margin:0}.wrap{width:min(100% - 2rem,52rem);margin-inline:auto}header,footer{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.92rem}footer{border-top:1px solid var(--line);border-bottom:0;margin-top:4rem;color:var(--muted)}a{color:var(--petrol);text-underline-offset:.2em}a:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}main{padding:clamp(2rem,7vw,5rem) 0}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,6vw,3.8rem);letter-spacing:-.035em}h2{margin-top:2.5rem;font-size:1.7rem}h3{margin-top:2rem;font-size:1.2rem}p,li{max-width:72ch}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{text-align:left;vertical-align:top;padding:.65rem;border-bottom:1px solid var(--line)}th{background:var(--surface)}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:.6rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}.status{padding:1rem 1.1rem;background:var(--surface);border-left:4px solid var(--accent)}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#211e1b;--surface:#2c2823;--ink:#eae2d7;--muted:#c6b9aa;--line:#51483f;--petrol:#a9cdca;--accent:#de9a73}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="../index.html">SUTI.world · module map</a> / SUTIcore
+· principles and system contract</div></header>
+  <main class="wrap">
+    <p class="status">proposed specification · implementation status is separate</p>
+    <h1 id="suticore--principles-and-system-contract">SUTIcore ·
+    principles and system contract</h1>
+    <h2 id="purpose">purpose</h2>
+    <p>SUTIcore is the shared principles and contract layer for SUTI
+    methods and products. It describes how a task, its sources, its
+    limits, and a chosen next step remain legible across tools.</p>
+    <p>This document defines an authorial architecture. It does not
+    claim a deployed engine, autonomous agent, scientific validation,
+    clinical efficacy, or universal compatibility.</p>
+    <h2 id="core-invariant">core invariant</h2>
+    <p>Language helps distinguish. Distinction preserves choice. Choice
+    can take the form of an action.</p>
+    <p>The person sets the purpose, interprets personal meaning, and
+    decides whether to act. A system may organize material and offer
+    alternatives; it does not acquire authority from its structure or
+    vocabulary.</p>
+    <h2 id="working-cycle">working cycle</h2>
+    <pre class="text"><code>question → source → observation → distinction
+→ relation → evidence check → options → chosen step
+→ observable trace → review or exit</code></pre>
+    <p>The sequence is optional and revisable. Stop when the question is
+    answered sufficiently. Do not add a module merely because it
+    exists.</p>
+    <h2 id="evidence-and-claim-states">evidence and claim states</h2>
+    <p>Keep these kinds of material distinct:</p>
+    <ul>
+    <li>fact or sourced statement</li>
+    <li>direct observation</li>
+    <li>a person's report</li>
+    <li>interpretation</li>
+    <li>hypothesis</li>
+    <li>evaluation</li>
+    <li>symbolic or creative expression</li>
+    <li>unknown or unavailable evidence</li>
+    </ul>
+    <p>For each consequential claim, record its source, date or version
+    when known, scope, and verification criterion. <code>UNKNOWN</code>
+    means the available evidence does not support a conclusion. It does
+    not mean false.</p>
+    <h2 id="independent-decision-axes">independent decision axes</h2>
+    <p>Do not collapse these labels into one status:</p>
+    <table>
+    <thead>
+    <tr>
+    <th>axis</th>
+    <th>values</th>
+    <th>question</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>evidence</td>
+    <td>supported · partial · contradicted · unknown</td>
+    <td>what supports the claim?</td>
+    </tr>
+    <tr>
+    <td>check</td>
+    <td>pass · partial · fail · unknown</td>
+    <td>did it meet a stated criterion?</td>
+    </tr>
+    <tr>
+    <td>decision</td>
+    <td>hold · commit · rollback</td>
+    <td>what should happen to this change?</td>
+    </tr>
+    <tr>
+    <td>implementation</td>
+    <td>specification · prototype · deployed · unknown</td>
+    <td>what exists in the target environment?</td>
+    </tr>
+    <tr>
+    <td>release</td>
+    <td>private · review candidate · public</td>
+    <td>where may this artifact be used?</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Passing a text check does not prove runtime, rights,
+    accessibility, safety, or publication approval.</p>
+    <h2 id="module-selection">module selection</h2>
+    <ol type="1">
+    <li>State the task and the desired result.</li>
+    <li>Check whether ordinary language is sufficient.</li>
+    <li>Offer the smallest relevant method or module.</li>
+    <li>Use only the inputs needed for that purpose.</li>
+    <li>Show material uncertainty and consequences.</li>
+    <li>Leave correction, pause, refusal, export, and exit
+    available.</li>
+    </ol>
+    <p><code>available ≠ selected ≠ enabled ≠ executed</code></p>
+    <h2 id="data-and-agency">data and agency</h2>
+    <ul>
+    <li>collect only what the current task needs</li>
+    <li>do not infer identity, emotion, age, diagnosis, or consent from
+    style</li>
+    <li>do not treat silence as agreement</li>
+    <li>keep personal data local unless a separate, informed transfer is
+    chosen</li>
+    <li>separate consent for retention, sharing, profiling, and
+    publication</li>
+    <li>allow a person to correct, decline, pause, and leave</li>
+    <li>do not turn a symbolic system into a factual, medical, or
+    predictive claim</li>
+    </ul>
+    <h2 id="system-family">system family</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>layer</th>
+    <th>responsibility</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>SUTIcore</td>
+    <td>principles, contracts, limits, and status distinctions</td>
+    </tr>
+    <tr>
+    <td>synaura</td>
+    <td>interaction and expression protocol</td>
+    </tr>
+    <tr>
+    <td>Syntaxium</td>
+    <td>proposed notation and structural grammar</td>
+    </tr>
+    <tr>
+    <td>VereNITYA</td>
+    <td>source, claim, and review method</td>
+    </tr>
+    <tr>
+    <td>SRETENIYA_OS</td>
+    <td>proposed task-specific orchestration</td>
+    </tr>
+    <tr>
+    <td>domain methods</td>
+    <td>language, maps, research, play, or media under separate
+    scopes</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>These boundaries describe an architecture. A named layer does not
+    prove an application or integration exists.</p>
+    <h2 id="release-and-provenance">release and provenance</h2>
+    <p>Every public artifact should identify its author or source,
+    version, status, scope, and applicable license. Record derivative
+    sources and exclusions. Keep private, third-party, medical,
+    intimate, and client material outside a public package unless
+    separately reviewed and authorized.</p>
+    <h2 id="review-questions">review questions</h2>
+    <ul>
+    <li>What question does this answer?</li>
+    <li>Which parts are observed, inferred, or symbolic?</li>
+    <li>What remains unknown?</li>
+    <li>Can a person correct or stop the process?</li>
+    <li>Does the target environment actually implement this
+    contract?</li>
+    </ul>
+    <h2 id="status">status</h2>
+    <p>This is a proposed public specification. It is not a
+    certification, product guarantee, or runtime report. Implementation
+    and evaluation require separate artifacts and evidence.</p>
+  </main>
+  <footer><div class="wrap">source :: <a href="suticore-2026.11.en.md">suticore-2026.11.en.md</a><br>author :: Ezar Garuna · SUTI.world<br>status :: proposed · no runtime or validation claim</div></footer>
+</body>
+</html>

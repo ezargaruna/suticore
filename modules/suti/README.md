@@ -2,6 +2,16 @@
 
 Версия записи :: 2026.11-r5 · публикация описания
 
+## English master specifications
+
+These three documents form the English master set for this release candidate:
+
+- [SUTIcore · principles and system contract](suticore-2026.11.en.html) · [Markdown source](suticore-2026.11.en.md)
+- [synaura · interaction and expression protocol](synaura-2026.11.en.html) · [Markdown source](synaura-2026.11.en.md)
+- [Syntaxium · notation and grammar proposal](syntaxium-2026.11.en.html) · [Markdown source](syntaxium-2026.11.en.md)
+
+The Russian synaura 00–12 file is an earlier draft. Its alignment with the English master has not been checked; it is not presented as a verified translation or a 13-language release.
+
 ## Статус и границы
 
 Это авторский каталог функций и спецификаций. Он описывает названия, роли и связи, но не заявляет, что каждый модуль реализован, подключён или прошёл независимую проверку.
@@ -51,7 +61,9 @@
 | 11 | Reference architecture | связь спецификации, реализации и сред |
 | 12 | ASCII design system | текстовое представление схем и примеров |
 
-Подробная редакция :: [synaura 2026.9 · proposed](synaura-2026.9.md)
+English master :: [synaura · 00–12 · 2026.11 draft](synaura-2026.11.en.html) · [source](synaura-2026.11.en.md)
+
+Earlier Russian draft :: [synaura · 00–12 · 2026.9](synaura-2026.9.md)
 
 Отдельный редакционный адаптер `.synaura` :: [предпочтительный стиль выражения](../synaura/README.md). Он опубликован как самостоятельный публичный кандидат и не подменяет формальную спецификацию ниже.
 

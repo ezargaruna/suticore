@@ -3,9 +3,15 @@
   "id": "SUTI.world::MODULE_CATALOG",
   "version": "2026.11-r5",
   "document_status": "PROPOSED",
-  "publication_scope": "public module descriptions and proposed synaura document architecture",
+  "publication_scope": "proposed SUTIcore, synaura, and Syntaxium specifications with module descriptions",
   "implementation_status": "per-module; not implied by this catalog",
   "canonicalization": "human decision required",
+  "specification_documents": [
+    {"id":"suticore-contract","path":"suticore-2026.11.en.md","language":"en","status":"proposed"},
+    {"id":"synaura-protocol","path":"synaura-2026.11.en.md","language":"en","status":"proposed"},
+    {"id":"syntaxium-grammar","path":"syntaxium-2026.11.en.md","language":"en","status":"proposed"},
+    {"id":"synaura-modules-00-12-ru","path":"synaura-2026.9.md","language":"ru","status":"earlier proposed draft; translation alignment unknown"}
+  ],
   "modules": [
     {"id":"suticore","name":"SUTIcore","layer":"kernel","role":"principles, contracts, constraints, compatibility","status":"authorial architecture"},
     {"id":"suti-8d","name":"SUTI 8D","layer":"value architecture","role":"eight authorial dimensions for examining proposed value","status":"authorial synthesis; not a results guarantee"},
