@@ -22,7 +22,7 @@ The public entry page offers 13 language and authorial-language layers:
 | Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported | [pt-BR](https://suti.world/?lang=pt-BR) |
 | Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/?lang=zh-Hans) |
 | Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/?lang=hi) |
-| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/?lang=fr) |
+| French (`fr`) | Russian fallback for the homepage; French research brief linked separately | Page translation not reviewed | [fr](https://suti.world/?lang=fr) |
 | Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/?lang=ar) |
 | Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/?lang=bn) |
 | Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/?lang=eo) |
@@ -63,7 +63,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
 | Simplified Chinese (`zh-Hans`) | `HOLD` — not started | Russian fallback |
 | Hindi (`hi`) | `HOLD` — not started | Russian fallback |
-| French (`fr`) | `HOLD` — not started | Russian fallback |
+| French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Russian fallback on homepage |
 | Arabic (`ar`) | `HOLD` — not started | Russian fallback |
 | Bengali (`bn`) | `HOLD` — not started | Russian fallback |
 | Esperanto (`eo`) | `HOLD` — not started | Russian fallback |
@@ -71,7 +71,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Latin (`la`) | `HOLD` — not started | Russian fallback |
 | Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
 
-`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. The Russian edition is an editorial draft awaiting comparison with the English master. This is not a negative judgment about the language or a translation.
+`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. The Russian edition is an editorial draft awaiting comparison with the English master. The French brief is a draft translation awaiting qualified review. This is not a negative judgment about the language or a translation.
 
 ## Adding a reviewed translation
 
