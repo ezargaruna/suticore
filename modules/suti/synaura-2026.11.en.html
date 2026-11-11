@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Proposed SUTI.world module specification. The document does not imply a deployed implementation.">
+  <title>SYNAURA · formal visual-semantic language
+proposal · SUTI.world</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f0e8;--surface:#fbf8f2;--ink:#40352e;--muted:#685548;--line:#d8cdbe;--petrol:#365958;--accent:#de9a73;font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}
+    *{box-sizing:border-box}body{margin:0}.wrap{width:min(100% - 2rem,52rem);margin-inline:auto}header,footer{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.92rem}footer{border-top:1px solid var(--line);border-bottom:0;margin-top:4rem;color:var(--muted)}a{color:var(--petrol);text-underline-offset:.2em}a:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}main{padding:clamp(2rem,7vw,5rem) 0}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2rem,6vw,3.8rem);letter-spacing:-.035em}h2{margin-top:2.5rem;font-size:1.7rem}h3{margin-top:2rem;font-size:1.2rem}p,li{max-width:72ch}table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{text-align:left;vertical-align:top;padding:.65rem;border-bottom:1px solid var(--line)}th{background:var(--surface)}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:1rem;background:var(--surface);border:1px solid var(--line);border-radius:.6rem}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}.status{padding:1rem 1.1rem;background:var(--surface);border-left:4px solid var(--accent)}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--paper:#211e1b;--surface:#2c2823;--ink:#eae2d7;--muted:#c6b9aa;--line:#51483f;--petrol:#a9cdca;--accent:#de9a73}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a href="../index.html">SUTI.world · module map</a> / SYNAURA
+· formal visual-semantic language proposal</div></header>
+  <main class="wrap">
+    <p class="status">proposed specification · implementation status is separate</p>
+    <h1 id="synaura--formal-visual-semantic-language-proposal">SYNAURA ·
+    formal visual-semantic language proposal</h1>
+    <h2 id="purpose-and-distinction">purpose and distinction</h2>
+    <p>SYNAURA is an author-proposed formal visual-semantic language. It
+    aims to represent meaning through explicit structure, relations,
+    operators, and visual organization. It is not a markup language, a
+    style guide, or a decorative format.</p>
+    <p>This draft specifies the language family and its intended use.
+    The formal grammar, operator semantics, parser, conformance tests,
+    and deterministic serialization are incomplete; the language is not
+    yet a validated machine standard.</p>
+    <h2 id="family-boundaries">family boundaries</h2>
+    <table>
+    <thead>
+    <tr>
+    <th>layer</th>
+    <th>role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>SUTIcore</td>
+    <td>shared principles, evidence boundaries, and contracts</td>
+    </tr>
+    <tr>
+    <td>SYNAURA</td>
+    <td>visual-semantic language and meaning architecture</td>
+    </tr>
+    <tr>
+    <td>Syntaxium</td>
+    <td>proposed notation, operators, and structural grammar</td>
+    </tr>
+    <tr>
+    <td><code>.synaura</code></td>
+    <td>optional editorial style adapter for presentation</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>The language and its presentation profile are related but
+    distinct. A theme cannot establish a symbol's meaning.</p>
+    <p>This specification does not guarantee model behavior, cognitive
+    effects, scientific validity, or an installed runtime.</p>
+    <h2 id="language-invariant">language invariant</h2>
+    <p>Make the relevant distinction legible across human and machine
+    representations. Preserve provenance and uncertainty. Let the person
+    determine personal meaning and action.</p>
+    <h2 id="interpretation-and-use-sequence">interpretation and use
+    sequence</h2>
+    <pre class="text"><code>understand the task
+→ identify necessary context
+→ distinguish evidence from interpretation
+→ choose a sufficient form
+→ present options or a reversible step
+→ check whether the result serves the task</code></pre>
+    <p>This is a proposed interpretation sequence, not an automatic
+    agent state machine.</p>
+    <h2 id="expression-profile">expression profile</h2>
+    <ul>
+    <li>use concrete words before abstract labels</li>
+    <li>keep one main thought per block where practical</li>
+    <li>prefer short, connected paragraphs over fragmented slogans</li>
+    <li>use lowercase by default where the language permits</li>
+    <li>preserve names, quotation, code, grammar, and accessibility
+    needs</li>
+    <li>use a glyph only when it adds a clear function</li>
+    <li>provide a plain-language reading for consequential symbols</li>
+    <li>offer detail when it improves understanding</li>
+    </ul>
+    <p>Line and block lengths are flexible defaults. Tables, code,
+    long-form explanation, legal content, and assistive technology may
+    need other forms.</p>
+    <h2 id="style-is-user-controlled">style is user-controlled</h2>
+    <p>Presentation may offer themes for contrast, density, typography,
+    motion, and texture. The user can select, change, or disable them.
+    Adaptation must not infer age, mood, health, identity, consent, or
+    ability from behavior or personal history.</p>
+    <p>Keep a readable fallback without color, animation, sound, or
+    special glyphs. Honor device text scaling and reduced-motion
+    preferences. Do not let a theme change the meaning or authorization
+    of an action.</p>
+    <h2 id="epistemic-and-safety-boundaries">epistemic and safety
+    boundaries</h2>
+    <ul>
+    <li>label observation, interpretation, hypothesis, evaluation, and
+    symbol distinctly</li>
+    <li>state what is unknown and what evidence could change the
+    conclusion</li>
+    <li>do not diagnose or predict a person from symbolic material</li>
+    <li>do not claim that a prompt overrides system rules or changes
+    model weights</li>
+    <li>do not treat visual density or confidence as proof</li>
+    <li>pause when the requested scope, authority, or source rights are
+    unclear</li>
+    </ul>
+    <h2 id="optional-modules">optional modules</h2>
+    <p>Synaura can be paired with Syntaxium notation, a visual design
+    profile, a research protocol, or a task-specific SUTI module. Each
+    keeps its own version, provenance, and implementation status. No
+    module activates another automatically.</p>
+    <h2 id="modular-specification--0012">modular specification ·
+    00–12</h2>
+    <p>These modules define a document architecture. They do not
+    describe installed software.</p>
+    <table>
+    <thead>
+    <tr>
+    <th>id</th>
+    <th>module</th>
+    <th>purpose</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>00</td>
+    <td>activation manifest</td>
+    <td>declare purpose, scope, status, and selected modules</td>
+    </tr>
+    <tr>
+    <td>01</td>
+    <td>core principles</td>
+    <td>preserve meaning, evidence boundaries, and choice</td>
+    </tr>
+    <tr>
+    <td>02</td>
+    <td>style canon</td>
+    <td>express the task in a suitable readable form</td>
+    </tr>
+    <tr>
+    <td>03</td>
+    <td>Syntaxium grammar</td>
+    <td>propose structure and operator use</td>
+    </tr>
+    <tr>
+    <td>04</td>
+    <td>operator registry</td>
+    <td>record definitions, versions, scope, and tests</td>
+    </tr>
+    <tr>
+    <td>05</td>
+    <td>visual language</td>
+    <td>describe visual relationships as design hypotheses</td>
+    </tr>
+    <tr>
+    <td>06</td>
+    <td>parser and AST</td>
+    <td>propose conversion into structured data</td>
+    </tr>
+    <tr>
+    <td>07</td>
+    <td>token economy</td>
+    <td>compare measured token cost and task performance</td>
+    </tr>
+    <tr>
+    <td>08</td>
+    <td>runtime boundary</td>
+    <td>describe intended behavior without claiming deployment</td>
+    </tr>
+    <tr>
+    <td>09</td>
+    <td>research protocol</td>
+    <td>make experiments bounded and reproducible</td>
+    </tr>
+    <tr>
+    <td>10</td>
+    <td>validation</td>
+    <td>define procedures before reporting metrics</td>
+    </tr>
+    <tr>
+    <td>11</td>
+    <td>reference architecture</td>
+    <td>relate specifications to possible implementations</td>
+    </tr>
+    <tr>
+    <td>12</td>
+    <td>templates</td>
+    <td>provide portable examples and plain-text fallbacks</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="module-00--activation-manifest">module 00 · activation
+    manifest</h3>
+    <pre class="text"><code>purpose :: clarify a selected task
+scope :: current request and provided context
+status :: proposed document guidance
+modules :: selected by the person for this task
+implementation :: state only what was observed</code></pre>
+    <p>This is context supplied to a model or collaborator. It is not
+    privileged control, a reset, or a guarantee that a system will
+    comply.</p>
+    <h3 id="module-01--core-principles">module 01 · core principles</h3>
+    <ul>
+    <li>distinguish source, observation, interpretation, hypothesis,
+    evaluation, and symbol</li>
+    <li>prefer evidence over unsupported certainty</li>
+    <li>use sufficient structure instead of maximal structure</li>
+    <li>preserve correction, choice, pause, and exit</li>
+    <li>treat unknown information as unknown</li>
+    </ul>
+    <p>These are design commitments, not measured laws of cognition.</p>
+    <h3 id="module-02--style-canon">module 02 · style canon</h3>
+    <p>Order information for the task: purpose, relevant distinctions,
+    evidence, limits, options, and next step. Use lowercase by default
+    where natural. Do not enforce line or paragraph limits when they
+    harm grammar, comprehension, accessibility, or precision.</p>
+    <h3 id="module-03--syntaxium-grammar">module 03 · Syntaxium
+    grammar</h3>
+    <p>Syntaxium is a companion proposal. Its versioned legend defines
+    the meaning of any glyph used. A sample grammar appears in the <a
+    href="syntaxium-2026.11.en.html">Syntaxium specification</a>. Plain
+    language remains authoritative when a symbol is ambiguous.</p>
+    <h3 id="module-04--operator-registry">module 04 · operator
+    registry</h3>
+    <p>Each operator record should include an identifier, glyph,
+    plain-language name, version, scope, definition, transformation,
+    invariant, failure cases, provenance, examples, parser behavior, and
+    tests. No operator is called stable before its semantics and
+    compatibility are reviewed.</p>
+    <h3 id="module-05--visual-language">module 05 · visual language</h3>
+    <p>Use hierarchy, spacing, typography, and contrast to clarify
+    relationships. Associations between shape, color, layout, and
+    cognition are hypotheses until tested with a defined task and
+    participants. A symbol never replaces a text alternative.</p>
+    <h3 id="module-06--parser-and-canonical-structure">module 06 ·
+    parser and canonical structure</h3>
+    <p>Proposed pipeline :: source preservation → normalization copy →
+    token recognition → syntax parse → semantic checks → structured
+    representation → renderer.</p>
+    <p>The original source is preserved. Schema, identifiers, relation
+    types, error behavior, and compatibility rules require
+    implementation and review before a canonical AST is claimed.</p>
+    <h3 id="module-07--token-economy">module 07 · token economy</h3>
+    <p>Token cost depends on the model, tokenizer version, and context.
+    Measure it on a named corpus and task. Compare an operator with a
+    plain-text alias under the same conditions. Do not infer token cost
+    from glyph width or UTF-8 bytes.</p>
+    <p>Any efficiency score remains a research proposal until its
+    factors, scales, normalization, uncertainty, and decision use are
+    specified and tested.</p>
+    <h3 id="module-08--runtime-boundary">module 08 · runtime
+    boundary</h3>
+    <p>An activation prompt may provide context and preferences. It
+    cannot override platform rules, modify model weights, guarantee
+    behavior, or execute an external action. Report a runtime only when
+    a specific implementation and observed result support the claim.</p>
+    <h3 id="module-09--research-protocol">module 09 · research
+    protocol</h3>
+    <p>State one question, one changed variable, a baseline, the source
+    version, model and tokenizer when relevant, the scoring procedure,
+    limitations, and failures. Keep personal data and telemetry out
+    unless their collection is necessary and separately authorized.</p>
+    <h3 id="module-10--validation">module 10 · validation</h3>
+    <p>Possible measures include task comprehension, structural
+    preservation, parser agreement, retrieval accuracy, translation
+    stability, accessibility, and measured token count. Each measure
+    needs a procedure, sample, baseline, threshold rationale, and error
+    report. A numeric target without those elements is not a result.</p>
+    <h3 id="module-11--reference-architecture">module 11 · reference
+    architecture</h3>
+    <p>Possible components include a versioned registry, grammar,
+    parser, validator, structured representation, renderer, style
+    profile, and test corpus. Markdown, JSON, HTML, PDF, and editor
+    adapters are possible targets. Each remains proposed until its
+    implementation and version are identified.</p>
+    <h3 id="module-12--templates">module 12 · templates</h3>
+    <pre class="text"><code>task :: what the person asked
+source :: what material is available
+distinction :: what is known and unknown
+options :: what the person may choose
+next step :: reversible where practical
+status :: specification / prototype / deployed / unknown</code></pre>
+    <p>Use the template only when it helps the task. The person can
+    request ordinary prose or stop the method.</p>
+    <h2 id="review-criteria">review criteria</h2>
+    <ol type="1">
+    <li>Can the reader identify the main point?</li>
+    <li>Are evidence and interpretation distinguishable?</li>
+    <li>Is the next choice understandable and optional?</li>
+    <li>Can the result be corrected, paused, or exited?</li>
+    <li>Does the content remain usable in a plain-text form?</li>
+    </ol>
+    <h2 id="status">status</h2>
+    <p>This is a proposed authorial specification. It is not a measured
+    usability result or proof that a particular site, bot, parser, or
+    service implements it.</p>
+  </main>
+  <footer><div class="wrap">source :: <a href="synaura-2026.11.en.md">synaura-2026.11.en.md</a><br>author :: Ezar Garuna · SUTI.world<br>status :: proposed · no runtime or validation claim</div></footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Открытая жемчужина аудита: концепты приложений SUTI.care и обновлённые принципы UX/UI. Статусы и ограничения видны отдельно.">
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111">
+  <title>жемчужина аудита · приложения и UX/UI · SUTI.world</title>
+  <style>
+    :root{color-scheme:light;--bg:#F4F0E8;--surface:#FCF8F2;--surface-2:#DDF2EF;--ink:#25342F;--muted:#52615A;--petrol:#365958;--teal:#57B8B0;--peach:#DE9A73;--gold:#D6AD58;--line:#D8D0C1;--focus:#365958;--scale:1;font-family:Manrope,"Nunito Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+    html[data-theme="night"]{color-scheme:dark;--bg:#101A18;--surface:#17231F;--surface-2:#20332E;--ink:#F4F0E8;--muted:#C4C8BE;--petrol:#A8BBB1;--line:#405149;--focus:#A9DCD5}
+    html[data-theme="contrast"]{color-scheme:light;--bg:#fff;--surface:#fff;--surface-2:#f1f1f1;--ink:#111;--muted:#333;--petrol:#111;--teal:#006b65;--peach:#784019;--gold:#634700;--line:#555;--focus:#000}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-size:calc(1rem * var(--scale))}a{color:var(--petrol);text-underline-offset:.18em}a:hover{text-decoration-thickness:2px}button{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.55rem .85rem;cursor:pointer;min-height:44px}button[aria-pressed="true"]{border-color:var(--focus);box-shadow:inset 0 0 0 1px var(--focus)}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.wrap{width:min(1080px,calc(100% - 36px));margin-inline:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:10;background:var(--surface);padding:.6rem;border-radius:.5rem}.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}.brand{font:700 1rem "Nunito Sans",sans-serif;text-decoration:none}.tools{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.4rem}.tools-label{align-self:center;color:var(--muted);font-size:.85rem}.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:clamp(1.5rem,6vw,5rem);padding:clamp(3rem,8vw,6rem) 0 3.5rem}.hero>*{min-width:0}.eyebrow{color:var(--muted);font-size:.84rem;letter-spacing:.08em;text-transform:uppercase}h1,h2,h3{font-family:"Nunito Sans",system-ui,sans-serif;line-height:1.12;text-wrap:balance}h1{max-width:12ch;margin:.4rem 0 1rem;color:var(--petrol);font-size:clamp(2.6rem,7vw,5rem);letter-spacing:-.04em}h2{font-size:clamp(1.8rem,4vw,2.65rem)}h3{font-size:1.25rem}.lead{max-width:56ch;color:var(--muted);font-size:clamp(1.08rem,2vw,1.28rem)}.hero-art{width:100%;height:auto}.hero-art .orbit{fill:none;stroke:var(--gold);stroke-width:2}.hero-art .thread{fill:none;stroke:var(--teal);stroke-width:7;stroke-linecap:round}.hero-art .pearl{fill:var(--surface);stroke:var(--petrol);stroke-width:3}.section{padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid var(--line)}.section-intro{max-width:68ch;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.4rem}.card{padding:1.3rem;border:1px solid var(--line);border-radius:22px;background:var(--surface)}.card p:last-child{margin-bottom:0}.tag{display:inline-flex;padding:.2rem .6rem;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.76rem;font-weight:700;letter-spacing:.035em}.tag.open{border-color:var(--petrol);color:var(--petrol)}.tag.hold{border-color:var(--muted)}.status-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.status-grid article{padding:1.1rem 1.2rem;border-left:3px solid var(--teal);background:var(--surface)}.status-grid article.hold-card{border-left-color:var(--peach)}.flow{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0;padding:0;list-style:none}.flow li{padding:.65rem .9rem;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.flow li+li::before{content:"→ ";color:var(--teal);font-weight:700}.note{padding:1rem 1.2rem;border-left:3px solid var(--gold);background:var(--surface);color:var(--muted)}.table-wrap{border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}table{width:100%;border-collapse:collapse}th,td{padding:.8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:var(--surface-2);font-size:.88rem}tr:last-child td{border-bottom:0}.fine{font-size:.9rem;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:2rem 0 3rem;margin-top:2rem;color:var(--muted)}@media(max-width:760px){.hero{grid-template-columns:1fr}.hero-art{max-width:480px;margin:auto}.cards,.status-grid{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}.tools{justify-content:flex-start}.flow li+li::before{content:""}}@media(max-width:620px){thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}table,tbody,tr,td{display:block;width:100%}tr{padding:.55rem .8rem;border-bottom:1px solid var(--line)}td{display:grid;grid-template-columns:minmax(6rem,30%) 1fr;gap:.65rem;border:0;padding:.4rem 0}td::before{content:attr(data-label);color:var(--muted);font-weight:700}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}@media print{@page{size:A4;margin:15mm}body{background:white;color:#111}.tools{display:none}.wrap{width:100%}.hero{padding:1rem 0;grid-template-columns:1fr 180px}.card{break-inside:avoid}.section{padding:1.2rem 0}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">перейти к содержанию</a>
+  <header class="wrap top">
+    <a class="brand" href="index.html">SUTI.world · открытая жемчужина</a>
+    <div class="tools" aria-label="настройки отображения">
+      <span class="tools-label">тема</span>
+      <button type="button" data-theme="day" aria-pressed="true">день</button>
+      <button type="button" data-theme="night" aria-pressed="false">ночь</button>
+      <button type="button" data-theme="contrast" aria-pressed="false">контраст</button>
+      <span class="tools-label">текст</span>
+      <button type="button" data-size="0.92" aria-label="уменьшить текст">A−</button>
+      <button type="button" data-size="1" aria-label="обычный размер текста">A</button>
+      <button type="button" data-size="1.15" aria-label="увеличить текст">A+</button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">аудит интерфейсных концептов · 11 ноября 2026</p>
+        <h1 id="title">больше ясности. больше места для выбора</h1>
+        <p class="lead">Открытый обзор трёх вариантов приложений и обновлённого UX/UI каркаса SUTI. Это карта проектных решений и их границ, не заявление о готовом сервисе.</p>
+        <p><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">посмотреть публичный атлас NITYA ↗</a></p>
+      </div>
+      <svg class="hero-art" viewBox="0 0 520 420" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="art-title">нить проходит через три открытых узла</title>
+        <desc id="art-desc">Авторская схема: взрослый и ребёнок рядом, открытый вопрос и выбранный шаг соединены одной бирюзовой линией.</desc>
+        <circle class="orbit" cx="258" cy="208" r="168"/><circle class="orbit" cx="258" cy="208" r="132" opacity=".45"/>
+        <path class="thread" d="M75 275 C150 98 202 325 276 176 S391 104 444 236"/>
+        <circle class="pearl" cx="84" cy="257" r="27"/><circle class="pearl" cx="267" cy="194" r="31"/><circle class="pearl" cx="435" cy="224" r="25"/>
+        <path d="M74 249c-19-20-38 2-17 21l27 23 25-27c18-22-5-39-24-17" fill="#DE9A73" opacity=".85"/>
+        <path d="M255 174q13-20 26 0t-13 26q-26-6-13-26" fill="#D6AD58"/>
+      </svg>
+    </section>
+
+    <section class="section" aria-labelledby="variants">
+      <p class="eyebrow">три разных задачи · три разных статуса</p>
+      <h2 id="variants">варианты приложений</h2>
+      <p class="section-intro">Их не следует объединять в один обещающий всё продукт. В каждой карточке отдельно указано, кому адресован концепт и что реально готово.</p>
+      <div class="cards">
+        <article class="card"><span class="tag open">открытый концепт · взрослый рядом</span><h3>Care Cards · 0+</h3><p>Взрослый выбирает короткую историю или совместное занятие для ребёнка. Нет детского профиля, личного чата, формы или передачи данных.</p><p class="fine">0+ здесь означает взрослое сопровождение с самого раннего возраста, не самостоятельное использование младенцем.</p></article>
+        <article class="card"><span class="tag hold">12+ · design-only / HOLD</span><h3>NITYA Thread</h3><p>Черновая задача на вымышленном примере: назвать, что известно, что требует уточнения и какой небольшой шаг возможен.</p><p class="fine">Это не готовый подростковый продукт и не приглашение к пилоту. Нужны отдельные ответственные за safeguarding, приватность, доступность и проверку взрослыми.</p></article>
+        <article class="card"><span class="tag hold">спецификация · runtime OFF</span><h3>VereNium Guide · взрослые</h3><p>Идея добровольного помощника для формулирования рабочей задачи и выбора понятного шага.</p><p class="fine">Действующий агент, служба поддержки, память и корпоративная интеграция не подтверждены. Концепт не обещает помощь или сопровождение.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="design">
+      <p class="eyebrow">UX/UI · обновлённая система</p>
+      <h2 id="design">один каркас, несколько удобных форм</h2>
+      <div class="status-grid">
+        <article><h3>визуальные режимы</h3><p>День, ночь и высокий контраст. Цвет не служит единственным носителем смысла. Бирюза отмечает действие, тёплый свет используется точечно.</p></article>
+        <article><h3>чтение и пространство</h3><p>Масштаб текста меняется здесь локально; макет перестраивается на узком экране. В опубликованной странице настройки не сохраняются.</p></article>
+        <article><h3>движение и доступность</h3><p>Декоративная анимация не нужна для понимания. Учитывается системный reduced motion; управление доступно с клавиатуры, фокус видим.</p></article>
+        <article><h3>форматы содержания</h3><p>Карточка для быстрого чтения, последовательные шаги, простая текстовая версия и печать. Смысл не зависит от иллюстрации.</p></article>
+      </div>
+      <ol class="flow" aria-label="путь интерфейса"><li>понять задачу</li><li>выбрать глубину</li><li>увидеть варианты</li><li>проверить границы</li><li>пауза или следующий шаг</li></ol>
+    </section>
+
+    <section class="section" aria-labelledby="audit">
+      <p class="eyebrow">жемчужина аудита · результат различения</p>
+      <h2 id="audit">что показывает эта сборка</h2>
+      <div class="table-wrap"><table><thead><tr><th>слой</th><th>что можно показать</th><th>что пока нельзя утверждать</th></tr></thead><tbody>
+        <tr><td data-label="слой">интерфейс</td><td data-label="можно показать">Визуальные темы, читабельность и варианты пути в статическом макете.</td><td data-label="не утверждаем">Полную проверку на устройствах, браузерах и вспомогательных технологиях.</td></tr>
+        <tr><td data-label="слой">NITYA</td><td data-label="можно показать">Публичный атлас как источник текущих формулировок.</td><td data-label="не утверждаем">Что его возрастные декоративные кнопки являются проверкой возраста или фильтром контента.</td></tr>
+        <tr><td data-label="слой">языки</td><td data-label="можно показать">Эта ограниченная страница подготовлена на русском.</td><td data-label="не утверждаем">Языковой PASS не заявлен: редактура русского и проверка носителем не завершены; остальные 12 языков не транскреированы.</td></tr>
+        <tr><td data-label="слой">продукт</td><td data-label="можно показать">Проектные концепты и статусы, указанные рядом с каждым.</td><td data-label="не утверждаем">Что все приложения установлены, работают или приняты компанией.</td></tr>
+      </tbody></table></div>
+      <p class="note"><strong>отдельная граница 12+ ::</strong> в публичном атласе NITYA возрастные подписи относятся к оформлению. Они сами по себе не устанавливают возраст пользователя и не ограничивают содержание. Новый маршрут 12+ остаётся проектным макетом с незакрытыми мерами защиты.</p>
+    </section>
+
+    <section class="section" aria-labelledby="sources">
+      <p class="eyebrow">основания и ограничения</p>
+      <h2 id="sources">как читать эту жемчужину</h2>
+      <p>Обзор составлен по русскому локальному дизайн-кандидату от 11 ноября 2026 года и открытому атласу NITYA. Использованы авторские макет, текст и схема; чужие логотипы, внутренние документы компании и пользовательские истории не включены.</p>
+      <p>Это редакционный обзор ограниченного набора концептов. Он не является аудитом безопасности, медицинской или психологической эффективностью, заявлением о соответствии стандарту, подтверждением прав на сторонние названия или принятием продукта компанией.</p>
+      <p><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · атлас системы ↗</a> · <a href="care-constellation.html">атлас заботы SUTI ↗</a> · <a href="modules/">каталог открытых модулей ↗</a></p>
+      <p class="fine">версия страницы :: 0.1 · язык исходника :: русский · независимая языковая и экранная проверка :: не выполнены · статус концептов :: указан по каждому</p>
+    </section>
+    <footer class="footer"><p>SUTI.world · язык твоей сути</p><p>можно прочитать, проверить, предложить поправку или просто закрыть страницу</p></footer>
+  </main>
+  <script>
+    document.querySelectorAll('[data-theme]').forEach(button => button.addEventListener('click', () => {
+      document.documentElement.dataset.theme = button.dataset.theme;
+      document.querySelectorAll('[data-theme]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    }));
+    document.querySelectorAll('[data-size]').forEach(button => button.addEventListener('click', () => {
+      document.documentElement.style.setProperty('--scale', button.dataset.size);
+    }));
+  </script>
+</body>
+</html>

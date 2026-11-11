@@ -9,10 +9,10 @@
       "upstream_source_sha256": null,
       "source_origin": "author-created Russian entry for this site candidate",
       "page_file": "locales/built/ru/index.html",
-      "page_sha256": "80726bf7140b0b5bbeab36eaa669d88c965fc1b55170cf6ee0f649ff2879e93f",
+      "page_sha256": "a647328be3b5ee9219c39d959ce0383299ce452d945fe181a67728e93e4a76b9",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "ACTIVE",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -22,10 +22,10 @@
       "upstream_source_sha256": "69a059a2d9910525ea71798f1525f046a8e6cacf660db21ea42f8f321e390342",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/en/index.html",
-      "page_sha256": "ab5e4a862912db7b80917315bc060bd6d766bfb85da69b376f9e39e76c98f9de",
+      "page_sha256": "824dbcd9d8a4880fce1c2474828e000ed97cd7d8c6606d681a7d6960828d4518",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "ACTIVE",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -35,10 +35,10 @@
       "upstream_source_sha256": "a68ca23ece37f9d47c7d98ff4b038d7a4d5b0925b118bc11fadc6b9668285ee1",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/es/index.html",
-      "page_sha256": "1ceb4d197544bcdfcea8f973be33aa16bbeb2bfecc7dceb2317ff59f28e32eb7",
+      "page_sha256": "ccf539d9b9fbf5c44dbd066dbb74106920eb940a7da10193da4b0d1cead99a33",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "ACTIVE",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -48,10 +48,10 @@
       "upstream_source_sha256": "b855c2fb7654e8dfe6ce3bc8cf899ea1534a05da083c901f9741282a64656b59",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/pt-br/index.html",
-      "page_sha256": "77a91311caf128ea91753f2ab932639d63eb72296502fd20e00c667056d12e51",
+      "page_sha256": "c9d35326c1e24fa31ec5cdb77dabbc3fd544cf2ef754325e255ebc3b7ed6f090",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "ACTIVE",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -61,10 +61,10 @@
       "upstream_source_sha256": "315c45e77063ac99ee31a2a6b83c2835c68a4c2c6aad22e981af256651021f3c",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/zh-hans/index.html",
-      "page_sha256": "c148217954d6a903ed076866301a8e055a13d1046aa53a057a2c37e8d974d320",
+      "page_sha256": "c509158756118faf5ff4c1accac37f967bc5e1f030ebcef7097beb54baa50199",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -74,10 +74,10 @@
       "upstream_source_sha256": "ef4c24848f210d3002f97fcb0d2f1ffa92dc7f22094f6574af0f823eaed76e4d",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/hi/index.html",
-      "page_sha256": "8da5fc14ede5ae9573196ced9c28e3abd6430465c65977607ebb8660a2fe9aa9",
+      "page_sha256": "a37f81ee7cf9bf4d1200b95c3240a433f1f5b25e6bad357791aa08397f255e91",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -87,10 +87,10 @@
       "upstream_source_sha256": "2db7281f277f45628d55a336fecb57487896d8b7aafb268c943b9255dd44d298",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/fr/index.html",
-      "page_sha256": "831dbc02c19bd767be688b352642091a6ab7818fddeb367eaa259e2592179472",
+      "page_sha256": "8d5f45c6acf299c1b432c8b5cf6ceed9e232db7b7a1c8badeb32fc170752c1ee",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -100,10 +100,10 @@
       "upstream_source_sha256": "fb4679487b6fd626ba3323f212368834e33b355a0cd487ae71e6184743a0cd20",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/ar/index.html",
-      "page_sha256": "be6446236935613899d79d4a089e92105ebdf8c058d8b700122faef9565fd503",
+      "page_sha256": "24aa56ccbf84db57e4d7801ca72e9a2e71f72b9b95b41316358382a71ef7c2bb",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -113,10 +113,10 @@
       "upstream_source_sha256": "db74de7a7efc536544c781eb961ecc966130450ee0f0951cbef8d203c69b90bd",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/bn/index.html",
-      "page_sha256": "a186ab02c873820cfb725db4f7efedad9d2c254f2e741528138d5c44eb94b8dd",
+      "page_sha256": "63bd9f5bda6fa97b7de2e26d8337cf317595e0dc55a085af68ec668c132733fe",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -126,10 +126,10 @@
       "upstream_source_sha256": "8fd599d5596197b957b681579bb4c18bcec021005420262add34c909a53c3a78",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/eo/index.html",
-      "page_sha256": "e60c9b8140f3a2d1d125153e8543258ce89382813f9d411c71199efa96a9b174",
+      "page_sha256": "cbf5540893f70a47ef3d945018482bb4ca30f1f2463c7e50ff810ecdd070d8c6",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -139,10 +139,10 @@
       "upstream_source_sha256": "25a34e9929bf1fd1caeab30c7a91aea4f49f9e1875b14f9ea242e78a03c9c757",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/sa/index.html",
-      "page_sha256": "0f8adb7f79f3071a2c689b81e13f6c551fb20b8adaa3576db5fc093ab46a4112",
+      "page_sha256": "126093ffaf3e55a2bc1537be2230b99b28fb2a528e9c3cee55ef72ba2448b51e",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -152,10 +152,10 @@
       "upstream_source_sha256": "1b9775ce60d91fcba3d21a8c485a3eb5e13bb9335b2dd2c10c6bb907b8c1fcdb",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/la/index.html",
-      "page_sha256": "8cd6bf813a73368997d34d0b8d95e7371c8acd9aab18f0289ed0b4f83680e599",
+      "page_sha256": "8e2ce68fbe8aef3da01c43bc010e8cff56c6b9a493a26a42e338c863dd06464c",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": null
     },
     {
@@ -165,10 +165,10 @@
       "upstream_source_sha256": "fcb578800a9c0564a8b3ff63f05a66a66d4686857405cf36310e17811aeda23a",
       "source_origin": "author-provided local language draft; private source path withheld",
       "page_file": "locales/built/yzh/index.html",
-      "page_sha256": "596b6de58f2389e4bba6f828194f2e14162d655f1e9d06e6320488ca96f58df8",
+      "page_sha256": "05faba6a3afe910ed8fb2d4d0ea66f7ba044226972f21825875508aa3b9a8dce",
       "transcreation_status": "DRAFT_REVIEW_REQUIRED",
       "runtime_interface_status": "RUSSIAN_FALLBACK",
-      "publication_status": "DRAFT_PR_ONLY",
+      "publication_status": "PUBLIC_NOINDEX_PREVIEW",
       "note": "Yazekh is an authorial language experiment, not a historical reconstruction"
     }
   ]

@@ -4,9 +4,15 @@
 
 The website has static visitor-entry previews under `/entry/{locale}/` for all 13 language layers. The Pages workflow generates these routes from [`locales/entries/`](../locales/entries/); provenance and route hashes are recorded in [`locales/built/manifest.json`](../locales/built/manifest.json).
 
-The pages explain the public entry points, user choice, status boundaries, and next route. They are transcreation drafts and are marked `noindex` until language, culture, accessibility, rights, product, and owner review are complete. The Yazekh page is an authorial experiment, not a historical reconstruction. Sanskrit and Latin require specialist review.
+The pages explain the public entry points, user choice, status boundaries, and next route. They are publicly accessible, `noindex` transcreation previews; publication does not mean the language, culture, accessibility, rights, product, or owner review is complete. The Yazekh page is an authorial experiment, not a historical reconstruction. Sanskrit and Latin require specialist review.
 
 ## Current runtime state
+
+The file-level snapshot is maintained in
+[`audits/2026-11-11-public-localization-inventory.md`](audits/2026-11-11-public-localization-inventory.md).
+It covers every root HTML page copied by the Pages workflow plus the linked
+open materials. The matrix distinguishes a full runtime edition from entry
+copy, a phrase ledger, examples, or a Russian fallback.
 
 The public entry page offers 13 language and authorial-language layers:
 
@@ -26,19 +32,25 @@ The public entry page offers 13 language and authorial-language layers:
 | Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
+The Bengali care constellation is a separately linked editorial page; it does not change the Bengali Russian-fallback state of the home-page runtime. Its independent linguistic and cultural review remains pending. The Esperanto edition is also a separate editorial page; the Esperanto homepage layer remains Russian fallback pending full runtime translation and review. The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
+
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without full runtime content,
 the page keeps the selection visible, labels the Russian fallback, and links to
-a static visitor-entry preview. The preview has `noindex` until its editorial
-review and publication decision are complete. The app `lang` attribute continues
+a static visitor-entry preview. The preview is publicly accessible but marked
+`noindex` while its editorial review remains pending. The app `lang` attribute continues
 to describe the language actually rendered. Russian is the default only when a
 visitor has not saved another locale or supplied an explicit language query.
 
 The matching SUTI.os language catalog is [`language-packs/manifest.json`](https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/manifest.json). It records all 13 layer identifiers, but only the Russian full vault and partial English, Spanish, and Brazilian Portuguese entry packs have downloadable files. The remaining nine layers have no SUTI.os archive. These boundaries are also summarized in [repository contours](repository-contours.v1.md).
 
+## Care atlas · page-level editions
+
+[`care-atlas.html`](../care-atlas.html) is the Russian source guide to mutual-care practices. Its eleven translated routes are [`English`](../care-atlas-en.html), [`español`](../care-atlas-es.html), [`português brasileiro`](../care-atlas-pt.html), [`简体中文`](../care-atlas-zh-Hans.html), [`हिन्दी`](../care-atlas-hi.html), [`français`](../care-atlas-fr.html), [`العربية`](../care-atlas-ar.html), [`বাংলা`](../care-atlas-bn.html), [`Esperanto`](../care-atlas-eo.html), [`संस्कृतम्`](../care-atlas-sa.html), and [`Latina`](../care-atlas-la.html). All twelve written editions are linked from each page and embedded in the unified HTML router. Every translation carries a visible review status, preserves the age and consent boundaries, and states that this guide is not an emergency or medical service. Independent review is pending for all translations; Sanskrit and Latin additionally require qualified review. Local Noto fonts are used for Arabic, Bengali, Hindi, and Sanskrit with their SIL OFL notices linked. The same three illustrations appear across editions. Their per-asset provenance and reuse rights are not confirmed by this language audit; translation does not grant a new license. Yazekh is `HOLD` until the author confirms grammar and vocabulary.
+
 ## NITYA and .todeus passport
 
-The public NITYA page is currently Russian-first. Its linked [NITYA × .todeus passport](../nitya-todeus.html) adds a short concept-level phrase in the 13 language layers and records the status of each string. Draft strings in that passport do not activate new runtime locales or mean that the NITYA interface has been fully translated. The English source and Russian page remain distinct; Simplified Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin drafts need language review. Yazekh remains an authorial seed pending the author's grammar and transcreation review.
+The original public NITYA page remains Russian-first. A complete English interface edition is available at [`nitya-en.html`](../nitya-en.html), and the home-page language selector routes English users to that edition. The latest checked live root responses at `suti.world` and the GitHub Pages mirror returned the same unified NITYA-first shell. On `suti.world`, `/nitya-en.html` resolves to that shell; on GitHub Pages, `/suticore/nitya-en.html` serves the standalone edition, byte-identical to the checked-in source in the 2026-11-11 audit. This parity check does not establish that all locale routes are current. The English text remains an editorial translation; independent native-language review has not been completed. Its linked [NITYA × .todeus passport](../nitya-todeus.html) adds a short concept-level phrase in the 13 language layers and records the status of each string. Draft strings in that passport do not activate new runtime locales or mean that the NITYA interface has been fully translated. The English source and Russian page remain distinct; Simplified Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin drafts need language review. Yazekh remains an authorial seed pending the author's grammar and transcreation review.
 
 “Available” means that a runtime dictionary is active and covers the page's
 translation markers. It is not independent certification of native-speaker or
@@ -51,26 +63,49 @@ values in each active runtime dictionary. See
 
 `docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.
 The short invitation on the public home page is transcreated for the four
-runtime interfaces. Those summaries are not translations of the full brief.
+runtime interfaces. Those summaries are not translations of the full brief. A
+compact disclosure links the translated brief editions; the link identifies the
+content language, and the Arabic link sets RTL direction.
 
 | Layer | Full brief | Home-page invitation |
 |---|---|---|
 | English (`en`) | Source edition | Available |
-| Russian (`ru`) | `HOLD` — full edition not started | Available |
-| Spanish (`es`) | `HOLD` — full edition not started | Available |
-| Brazilian Portuguese (`pt-BR`) | `HOLD` — full edition not started | Available |
-| Simplified Chinese (`zh-Hans`) | `HOLD` — not started | Russian fallback |
-| Hindi (`hi`) | `HOLD` — not started | Russian fallback |
-| French (`fr`) | `HOLD` — not started | Russian fallback |
-| Arabic (`ar`) | `HOLD` — not started | Russian fallback |
-| Bengali (`bn`) | `HOLD` — not started | Russian fallback |
-| Esperanto (`eo`) | `HOLD` — not started | Russian fallback |
-| Sanskrit (`sa`) | `HOLD` — not started | Russian fallback |
-| Latin (`la`) | `HOLD` — not started | Russian fallback |
-| Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
+| Russian (`ru`) | Editorial edition at `docs/research/SUTI_RESEARCH_COLLABORATION.ru.md`; author comparison pending | Available |
+| Spanish (`es`) | Editorial Spanish translation at `docs/research/SUTI_INVESTIGACION_COLABORACION.es.md`; independent review pending | Available |
+| Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
+| Simplified Chinese (`zh-Hans`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md`; independent review pending | Russian fallback on homepage |
+| Hindi (`hi`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.hi.md`; independent review pending | Russian fallback on homepage |
+| French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Russian fallback on homepage |
+| Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Russian fallback on homepage |
+| Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Russian fallback on homepage |
+| Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Russian fallback on homepage |
+| Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
+| Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Russian fallback on homepage |
+| Yazekh (`yzh`) | `HOLD` — author grammar and vocabulary not confirmed; see `docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md` | Russian fallback on homepage |
 
-`HOLD` here means that no full-language edition is being represented as
-available. It is not a negative judgment about the language or a translation.
+A linked editorial draft is not a reviewed edition and does not mean the homepage itself is localized. The Russian edition awaits author comparison; Spanish, Brazilian Portuguese, French, Simplified Chinese, Hindi, Arabic, Bengali, and Esperanto await independent language review; Sanskrit and Latin await qualified language review. Yazekh remains `HOLD` until the author confirms its grammar and vocabulary. These statuses describe review state, not the value of a language.
+
+## Care constellation · page-level editions
+
+The care constellation is a proposed self-guided concept, not a connected service. Its page editions describe `.angels`, `.demons`, `.hermes`, optional creative prompts, age/access routes, privacy limits, and review status. Each page keeps the teen service marked pending and does not promise diagnosis, staffed support, or message hand-off.
+
+| Locale | Page | State | Review boundary |
+|---|---|---|---|
+| English (`en`) | [`care-constellation.html`](../care-constellation.html) | Source preview | English source; live functionality is not implied. |
+| Russian (`ru`) | [`care-constellation-ru.html`](../care-constellation-ru.html) | Editorial translation | Author comparison and final review pending. |
+| French (`fr`) | [`care-constellation-fr.html`](../care-constellation-fr.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Latin American Spanish (`es-419`) | [`care-constellation-es.html`](../care-constellation-es.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Brazilian Portuguese (`pt-BR`) | [`care-constellation-pt.html`](../care-constellation-pt.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Simplified Chinese (`zh-Hans`) | [`care-constellation-zh-Hans.html`](../care-constellation-zh-Hans.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Hindi (`hi`) | [`care-constellation-hi.html`](../care-constellation-hi.html) | Editorial translation | Independent linguistic and cultural review pending; Devanagari font file and OFL are shipped locally. |
+| Arabic (`ar`, RTL) | [`care-constellation-ar.html`](../care-constellation-ar.html) | Editorial translation | Independent linguistic and cultural review pending; RTL layout, Arabic font file, and OFL are shipped. |
+| Bengali (`bn`) | [`care-constellation-bn.html`](../care-constellation-bn.html) | Editorial translation | Independent linguistic and cultural review pending; Bengali font file and OFL are shipped locally. |
+| Esperanto (`eo`) | [`care-constellation-eo.html`](../care-constellation-eo.html) | Editorial translation | Independent linguistic review pending. |
+| Sanskrit (`sa`) | [`care-constellation-sa.html`](../care-constellation-sa.html) | Editorial draft | Qualified Sanskrit review pending; Devanagari font file and OFL are shipped locally. |
+| Latin (`la`) | [`care-constellation-la.html`](../care-constellation-la.html) | Editorial draft | Qualified Latin review pending; this is not represented as verified classical Latin. |
+| Yazekh (`yzh`) | — | `HOLD` · no care-page edition | Author-confirmed grammar and vocabulary are needed before transcreation; see the [Yazekh review record](../docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md). |
+
+The twelve written-language editions are cross-linked and embedded byte-for-byte in the unified single-file interface. Yazekh has no fabricated page or route. Per-page inclusion does not localize the homepage, Google Form, or other SUTI destinations. Each published edition retains its own canonical route and `lang` metadata.
 
 ## Adding a reviewed translation
 
@@ -83,3 +118,69 @@ available. It is not a negative judgment about the language or a translation.
 
 Yazekh is an authored language experiment. Treat its forms as authorial
 transcreation, not as historical reconstruction or a verified translation.
+
+## NITYA-first homepage update · 2026-11-11
+
+The home page now opens with NITYA as its primary heading and links directly to
+the NITYA portal. The optional care questionnaire remains a separate route
+from that hero. Its external Google Forms link now states that submitted data
+leaves SUTI.world and is handled by Google and the form owner.
+
+The welcome line “Angels of Care ∴ SUTI.world :: …” is available in the twelve
+provided written languages (EN, RU, ES, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA,
+LA). The Yazekh selector currently uses the Russian authorial line. These welcome lines are interface copy only; they do not mean that the complete
+home page, NITYA portal, or Google Form is translated into all thirteen layers.
+Current runtime coverage remains the matrix above. The English NITYA edition
+does not activate additional home-page locales.
+
+The public module atlas is available at [`modules.html`](../modules.html). Its
+76 selected public source records are a navigable index, not a runtime
+activation statement or blanket license.
+
+## NITYA launch copy · 13-layer ledger
+
+`docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md` now contains short launch copy
+in Russian, English, Spanish, Brazilian Portuguese, Simplified Chinese, Hindi,
+French, Arabic, Bengali, Esperanto, Sanskrit, and Latin. The Yazekh row is
+`HOLD`: its authorial grammar and vocabulary are not yet confirmed for this
+copy. Each added version is an editorial draft awaiting language/editor review;
+none of the twelve short posts activates a full interface locale. The links for
+English, Spanish, and Brazilian Portuguese route to their matching interface
+entry. The other routes visibly retain the site's Russian fallback for the
+untranslated portions.
+
+Rights and publication remain separate gates: the kit is a local copy draft,
+not a post log or a blanket license. Native review, cultural context, link
+behavior, accessibility, and permission for any visual asset require their own
+records before the copy is treated as ready to publish.
+
+## Clear-water practice
+
+[`clear-water.html`](../clear-water.html) is the English source practice. A complete
+Spanish editorial edition is available at [`clear-water-es.html`](../clear-water-es.html).
+Russian, French, Spanish, Brazilian Portuguese, Simplified Chinese, Hindi, Bengali, Esperanto, Arabic, Sanskrit, and Latin editions are available at
+[`clear-water-ru.html`](../clear-water-ru.html),
+[`clear-water-fr.html`](../clear-water-fr.html), [`clear-water-es.html`](../clear-water-es.html),
+[`clear-water-pt.html`](../clear-water-pt.html), [`clear-water-zh-Hans.html`](../clear-water-zh-Hans.html), [`clear-water-hi.html`](../clear-water-hi.html), [`clear-water-bn.html`](../clear-water-bn.html), [`clear-water-eo.html`](../clear-water-eo.html), [`clear-water-ar.html`](../clear-water-ar.html), [`clear-water-sa.html`](../clear-water-sa.html), and [`clear-water-la.html`](../clear-water-la.html). Each edition translates all
+thirteen prompts, controls, and open-material notes; each marks independent review
+as pending (Russian author comparison remains pending) and identifies Russian-only
+linked materials. The pages link to each other and are embedded in the homepage
+single-file interface. This does not translate those destinations, and the practice
+is not a full translation of the wider SUTI.world site.
+The Chinese, Hindi, Bengali, and Arabic editions are editorial drafts pending
+independent linguistic and cultural review. The Esperanto edition is an editorial
+draft pending independent linguistic review. The Arabic edition uses RTL direction.
+The Sanskrit edition is a draft pending qualified review by a Sanskrit specialist.
+The Latin edition is a draft pending qualified review and is not represented as a
+verified classical text.
+
+## Care constellation
+
+[`care-constellation.html`](../care-constellation.html) is the English source page.
+[`care-constellation-fr.html`](../care-constellation-fr.html) is its French editorial
+edition. Both pages are available as direct routes and embedded in the unified
+HTML router. The French edition translates page content, theme controls, age routes,
+SVG text, and care boundaries; it retains the explicit `HOLD` equivalent for teen-facing service
+and does not claim that any care service or hand-off is active. Independent French
+review is pending. The page contains links to Russian-language destinations, which
+remain identified before navigation.

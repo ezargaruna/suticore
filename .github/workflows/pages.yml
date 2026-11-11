@@ -27,7 +27,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: prepare public surface
         run: |
-          mkdir -p _site/assets/fonts _site/assets/brand _site/downloads
+          mkdir -p _site/assets/css _site/assets/fonts _site/assets/brand _site/downloads
           python3 scripts/build_locale_entries.py
           mkdir -p _site/entry
           cp -R locales/built/. _site/entry/
@@ -41,11 +41,23 @@ jobs:
                   source = Path('downloads', name) if name.startswith('SUTI.os.') else Path(name)
                   assert z.read(name) == source.read_bytes(), name
           PY
-          cp index.html openai-crystal.html audits.html audit-crystal.zip clear-water.html nitya.html nitya-todeus.html care-map.html care-atlas.html virenium.html verenium.html _site/
+          python3 scripts/build_care_atlas_editions.py
+          python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
+          python3 scripts/verify_care_atlas_locales.py
+          cp index.html synaura.html synaura-modules.html openai-crystal.html audits.html audit-crystal.zip clear-water.html clear-water-es.html clear-water-fr.html clear-water-pt.html clear-water-ru.html clear-water-zh-Hans.html clear-water-hi.html clear-water-bn.html clear-water-eo.html clear-water-ar.html clear-water-sa.html clear-water-la.html modules.html nitya.html nitya-en.html nitya-todeus.html care-map.html care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html care-constellation.html care-constellation-fr.html care-constellation-es.html care-constellation-pt.html care-constellation-ru.html care-constellation-zh-Hans.html care-constellation-hi.html care-constellation-ar.html care-constellation-bn.html care-constellation-eo.html care-constellation-sa.html care-constellation-la.html care-app-audit.html suti-angels.html virenium.html verenium.html _site/
+          mkdir -p _site/docs/launch _site/docs/research
+          cp docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md docs/launch/SYNAURA_STYLE_ANNOUNCEMENT.v1.md _site/docs/launch/
+          cp docs/research/SUTI_RESEARCH_COLLABORATION.md docs/research/SUTI_INVESTIGACION_COLABORACION.es.md docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md docs/research/SUTI_RESEARCH_COLLABORATION.ru.md docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md docs/research/SUTI_RESEARCH_COLLABORATION.hi.md docs/research/SUTI_RESEARCH_COLLABORATION.ar.md docs/research/SUTI_RESEARCH_COLLABORATION.bn.md docs/research/SUTI_RESEARCH_COLLABORATION.eo.md docs/research/SUTI_RESEARCH_COLLABORATION.sa.md docs/research/SUTI_RESEARCH_COLLABORATION.la.md docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md _site/docs/research/
           cp -R assets/care _site/assets/
+          mkdir -p _site/assets/suti-angels
+          cp assets/suti-angels/suti-angels-cycle-2026-11-11.png _site/assets/suti-angels/
+          cp assets/css/suti-angels-editorial.css _site/assets/css/
           cp downloads/SUTI.verenium.md downloads/Virenium.zip downloads/Verenium.zip _site/downloads/
           mkdir -p _site/modules
           cp -R modules/verenium _site/modules/
+          cp -R modules/synaura _site/modules/
+          cp modules/index.html _site/modules/index.html
+          cp -R modules/suti _site/modules/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf
           cp assets/fonts/Onest-Variable.woff2 _site/assets/fonts/Onest-Variable.woff2
@@ -54,6 +66,12 @@ jobs:
           cp assets/fonts/OFL-Onest.txt _site/assets/fonts/OFL-Onest.txt
           cp assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf _site/assets/fonts/AtkinsonHyperlegibleNext-Italic-VF.ttf
           cp assets/fonts/AtkinsonHyperlegibleNext-OFL.txt _site/assets/fonts/AtkinsonHyperlegibleNext-OFL.txt
+          mkdir -p _site/assets/fonts/notosansdevanagari
+          cp assets/fonts/notosansdevanagari/regular.woff2 assets/fonts/notosansdevanagari/OFL.txt _site/assets/fonts/notosansdevanagari/
+          mkdir -p _site/assets/fonts/notosansarabic
+          cp assets/fonts/notosansarabic/regular.woff2 assets/fonts/notosansarabic/OFL.txt _site/assets/fonts/notosansarabic/
+          mkdir -p _site/assets/fonts/notosansbengali
+          cp assets/fonts/notosansbengali/regular.ttf assets/fonts/notosansbengali/OFL.txt _site/assets/fonts/notosansbengali/
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
           cp samurai-dharma.html _site/samurai-dharma.html
           cp downloads/SUTI.os.zip _site/downloads/SUTI.os.zip
@@ -70,7 +88,7 @@ jobs:
             esac
             cat > "_site/$route/index.html" <<EOF
           <!doctype html>
-          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#care"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}?lang=$lang#care">SUTI.world · ${message}</a></p></body></html>
+          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#care"><title>SUTI.world</title></head><body><main><p>$message</p><p><a href="${relative}?lang=$lang#care">SUTI.world · ${message}</a></p></main></body></html>
           EOF
           done
       - name: upload static site
