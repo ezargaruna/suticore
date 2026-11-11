@@ -38,7 +38,7 @@ jobs:
                   source = Path('downloads', name) if name.startswith('SUTI.os.') else Path(name)
                   assert z.read(name) == source.read_bytes(), name
           PY
-          cp index.html synaura.html synaura-modules.html openai-crystal.html audits.html audit-crystal.zip clear-water.html clear-water-es.html clear-water-fr.html clear-water-pt.html clear-water-ru.html clear-water-zh-Hans.html clear-water-hi.html clear-water-bn.html clear-water-eo.html clear-water-ar.html clear-water-sa.html clear-water-la.html modules.html nitya.html nitya-en.html nitya-todeus.html care-map.html care-atlas.html care-constellation.html care-constellation-fr.html care-constellation-es.html care-constellation-pt.html care-constellation-ru.html care-constellation-zh-Hans.html care-constellation-hi.html care-app-audit.html suti-angels.html virenium.html verenium.html _site/
+          cp index.html synaura.html synaura-modules.html openai-crystal.html audits.html audit-crystal.zip clear-water.html clear-water-es.html clear-water-fr.html clear-water-pt.html clear-water-ru.html clear-water-zh-Hans.html clear-water-hi.html clear-water-bn.html clear-water-eo.html clear-water-ar.html clear-water-sa.html clear-water-la.html modules.html nitya.html nitya-en.html nitya-todeus.html care-map.html care-atlas.html care-constellation.html care-constellation-fr.html care-constellation-es.html care-constellation-pt.html care-constellation-ru.html care-constellation-zh-Hans.html care-constellation-hi.html care-constellation-ar.html care-app-audit.html suti-angels.html virenium.html verenium.html _site/
           mkdir -p _site/docs/launch _site/docs/research
           cp docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md docs/launch/SYNAURA_STYLE_ANNOUNCEMENT.v1.md _site/docs/launch/
           cp docs/research/SUTI_RESEARCH_COLLABORATION.md docs/research/SUTI_INVESTIGACION_COLABORACION.es.md docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md docs/research/SUTI_RESEARCH_COLLABORATION.ru.md docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md docs/research/SUTI_RESEARCH_COLLABORATION.hi.md docs/research/SUTI_RESEARCH_COLLABORATION.ar.md docs/research/SUTI_RESEARCH_COLLABORATION.bn.md docs/research/SUTI_RESEARCH_COLLABORATION.eo.md docs/research/SUTI_RESEARCH_COLLABORATION.sa.md docs/research/SUTI_RESEARCH_COLLABORATION.la.md docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md _site/docs/research/
@@ -62,6 +62,8 @@ jobs:
           cp assets/fonts/AtkinsonHyperlegibleNext-OFL.txt _site/assets/fonts/AtkinsonHyperlegibleNext-OFL.txt
           mkdir -p _site/assets/fonts/notosansdevanagari
           cp assets/fonts/notosansdevanagari/regular.woff2 assets/fonts/notosansdevanagari/OFL.txt _site/assets/fonts/notosansdevanagari/
+          mkdir -p _site/assets/fonts/notosansarabic
+          cp assets/fonts/notosansarabic/regular.woff2 assets/fonts/notosansarabic/OFL.txt _site/assets/fonts/notosansarabic/
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
           cp samurai-dharma.html _site/samurai-dharma.html
           cp downloads/SUTI.os.zip _site/downloads/SUTI.os.zip
