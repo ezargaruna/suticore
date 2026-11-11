@@ -27,7 +27,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: prepare public surface
         run: |
-          mkdir -p _site/assets/fonts _site/assets/brand _site/downloads
+          mkdir -p _site/assets/css _site/assets/fonts _site/assets/brand _site/downloads
           python3 - <<'PY'
           from zipfile import ZipFile
           from pathlib import Path
@@ -42,6 +42,7 @@ jobs:
           mkdir -p _site/docs/launch
           cp docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md _site/docs/launch/
           cp -R assets/care _site/assets/
+          cp assets/css/suti-angels-editorial.css _site/assets/css/
           cp downloads/SUTI.verenium.md downloads/Virenium.zip downloads/Verenium.zip _site/downloads/
           mkdir -p _site/modules
           cp -R modules/verenium _site/modules/
@@ -69,7 +70,7 @@ jobs:
             esac
             cat > "_site/$route/index.html" <<EOF
           <!doctype html>
-          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#care"><title>SUTI.world</title></head><body><p>$message</p><p><a href="${relative}?lang=$lang#care">SUTI.world · ${message}</a></p></body></html>
+          <html lang="$lang"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="${relative}assets/css/suti-angels-editorial.css"><meta http-equiv="refresh" content="0;url=${relative}?lang=$lang#care"><title>SUTI.world</title></head><body><main><p>$message</p><p><a href="${relative}?lang=$lang#care">SUTI.world · ${message}</a></p></main></body></html>
           EOF
           done
       - name: upload static site
