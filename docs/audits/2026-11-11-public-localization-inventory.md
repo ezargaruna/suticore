@@ -1,11 +1,11 @@
 # SUTI.world · public localization inventory
 
 date :: 2026-11-11
-source :: current checkout of PR #37 against `origin/main` at `e92e523`
+source :: audit checkout against `origin/main` at `8b8a4b9` (2026-11-11)
 scope :: public HTML files selected by `.github/workflows/pages.yml`, linked open materials, language routes, and declared rights boundaries
 review type :: static source inventory; no native-speaker review claimed
 
-## Deployment spot check :: 2026-11-11
+## Initial deployment observation :: PR #37 baseline
 
 A live HTTP spot check returned `200` for `https://suti.world/` and
 `https://suti.world/nitya-en.html`. Both responses served the same 376,876-byte
@@ -17,12 +17,35 @@ shell alias rather than a distinct English document. The GitHub Pages root retur
 are therefore not in parity. HTTP status and page markers do not establish that all
 interactive language routes, linked assets, or accessibility states work.
 
+## Current deployment recheck :: 2026-11-11
+
+Fresh `curl` requests with a browser user-agent returned HTTP 200 for
+`https://suti.world/`, `https://suti.world/nitya-en.html`,
+`https://suti.world/care-constellation-la.html`,
+`https://ezargaruna.github.io/suticore/`,
+`https://ezargaruna.github.io/suticore/nitya-en.html`, and
+`https://ezargaruna.github.io/suticore/care-constellation-la.html`.
+The two root URLs currently serve the same 1,283,004-byte shell
+(SHA-256 `6b280bc1db848bda0dabdd2ecc7bc80efa7cde930f6dcd93efac050ce31db7e0`).
+On `suti.world`, the NITYA and Latin care paths resolve to that shared shell;
+the route map embeds the pages. On GitHub Pages, those paths serve standalone
+files: NITYA is 67,956 bytes (SHA-256
+`e0d3b75c80c9362db7dc0b1f0f4238203aff79a951d03a94e75c5b02ce14f351`) and the
+Latin care page is 14,811 bytes (SHA-256
+`7d45430acc9d339d41eb942d2e948e2ac85b2ecb28f4e82851123811d8d147a7`). Both
+match the corresponding checkout files byte-for-byte. The local unified shell
+contains 38 mapped routes, including all twelve care editions; each embedded
+care document decodes byte-for-byte to its standalone source. This confirms
+current availability and source parity for these checked artifacts, not full
+interactive, accessibility, localization, or Workers-runtime certification.
+
 ## State summary
 
 - Thirteen language choices are exposed on the home page. Four full home-page runtime dictionaries are present: Russian, English, Spanish, and Brazilian Portuguese. Other language choices retain a visible Russian fallback for the rest of the interface. The translated research briefs are individual open materials and do not change full homepage runtime coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.
+- The care constellation has twelve written-language page editions (EN, RU, FR, ES-419, PT-BR, zh-Hans, HI, AR, BN, EO, SA, LA); Yazekh remains `HOLD` with no generated care page until its authorial grammar and vocabulary are confirmed.
 - Public copy now has short NITYA announcements in twelve written languages. The eight new drafts below remain explicitly unreviewed. Yazekh is held for authorial grammar and transcreation review.
 - The open SUTI.os package declares `locale: ru`; its release manifest reports 124 payload files. The nine remaining language packages are not represented by that release artifact.
 - No blanket reuse license is inferred from a public URL, an open page, or the repository code license. Each page, image, font, brand element, linked form, and third-party work requires its own applicable rights record.
@@ -40,7 +63,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `modules.html` | Mixed RU/EN | RU-first catalog with selected English labels | Two translation markers do not establish a translated catalog. |
 | `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
 | `care-atlas.html` | Russian | RU | Single-language page. |
-| `care-constellation.html` | English | EN | Source edition; links to French, Latin American Spanish, Brazilian Portuguese, and Russian editorial editions. |
+| `care-constellation.html` | English | EN | Source edition; links to RU, FR, ES-419, PT-BR, zh-Hans, HI, AR, BN, EO, SA, and LA editions. |
 | `care-constellation-fr.html` | French (`fr`) | FR | Complete French editorial edition of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-constellation-es.html` | Latin American Spanish (`es-419`) | ES-419 | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-constellation-pt.html` | Brazilian Portuguese (`pt-BR`) | PT-BR | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; included in the unified HTML route data and cross-linked; independent review pending; no live service is claimed. |
