@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="la">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Exercitatio brevis linguae et curae a SUTI.world. Verba tua in hac scheda manent.">
+  <title>Calix aquae purae · ludus linguae SUTI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.7 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.15 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+    .languages { line-height: 2.2; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ <bdi dir="ltr">SUTI.world</bdi> · donum iis qui <bdi dir="ltr">ChatGPT</bdi> et <bdi dir="ltr">Codex</bdi creaverunt</small>
+  <p class="languages"><a class="language-link" href="clear-water.html" lang="en">English · textus princeps</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans">简体中文 · 编辑译本</a> · <a class="language-link" href="clear-water-hi.html" lang="hi">हिन्दी · संपादकीय अनुवाद</a> · <a class="language-link" href="clear-water-bn.html" lang="bn">বাংলা · সম্পাদকীয় অনুবাদ</a> · <a class="language-link" href="clear-water-eo.html" lang="eo">Esperanto · redakcia traduko</a> · <a class="language-link" href="clear-water-ar.html" lang="ar" dir="rtl">العربية · ترجمة تحريرية</a> · <a class="language-link" href="clear-water-sa.html" lang="sa">संस्कृतम् · सम्पादकीय-प्रारूपम्</a></p>
+  <p class="review-note">Latina · versio editorialis. Recognitio a perito linguae Latinae adhuc requiritur; haec versio non est textus classicus comprobatus. Nonnulla materia coniuncta tantum lingua Russica praesto est.</p>
+  <h1>Calix aquae purae</h1>
+  <p>Finge hominem fessum ad instrumentum venire, cui creando tu adfuisti. In velo unius tantum sententiae locus est. Quid eum legere velis?</p>
+  <p>Ludum mente agere potes. Una quaestio integram visitationem efficit. Nihil quod hic scribis mittitur aut servatur postquam hanc schedam clauseris.</p>
+  <label>Si vis, duci tuo nomen indito <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>Verba tua, si vis <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">Prior</button>
+      <button id="next" type="button">Proxima unda</button>
+      <button id="skip" type="button">Omitte</button>
+      <button id="stop" type="button">Hic siste</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>Aliquid tecum ferendum</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">Ad quaestiones redi</button>
+    <button id="clear" type="button">Verba mea dele</button>
+  </section>
+
+  <details>
+    <summary>Officina aperta · fontes et fasciculi</summary>
+    <p>Haec invitatio ad materias publicas aditum praebet. Unumquodque documentum propriam licentiam et attributionem retinet.</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore"><bdi dir="ltr">SUTIcore</bdi> · fontes publici, specificationes, situs</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os"><bdi dir="ltr">SUTI.os</bdi> · repositorium publicum, fontes, versiones</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip"><bdi dir="ltr">Verenium</bdi> · officina et archivum sine interreti</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas"><bdi dir="ltr">NITYA</bdi> · atlas formarum (Russice)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">Mappa curae personalis (Russice)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">quaestionarium curae voluntarium (Russice; responsa tantum post conjunctionis bullam premendam mittuntur)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">Linguae copia et status recognitionis</a></li>
+    </ul>
+    <p>Notae consilii: <bdi dir="ltr">synaura</bdi> antequam altius procedat veniam petit. <bdi dir="ltr">Syntaxium</bdi> cuique signo munus definitum dat. <bdi dir="ltr">LinguaFUSION</bdi> sententiam in contextu usus explorat. <bdi dir="ltr">VereNITYA</bdi> distinguit quae observata sunt ab iis quae adhuc coniectura sunt.</p>
+  </details>
+  <footer><bdi dir="ltr">Ezar Garuna · SUTI.world</bdi> · Invitatio independens, cum gratia.</footer>
+</main>
+<script>
+const prompts = [
+  'Quid proximum minutum homini ante velum facilius reddere possit?',
+  'Quod parvum indicium hunc locum accipientem facit?',
+  'Quae electio apud hospitem manere debet?',
+  'Utrum audiri, consilium accipere, an paulisper quiescere nunc magis prosit?',
+  'Quam sententiam amico in hoc casu re vera diceres?',
+  'Quid observavisti, et quid tantum coniectas?',
+  'Quid servare dignum est, etiam si cetera mutantur?',
+  'Quid duo homines una creare possint, quod neuter solus creare debeat?',
+  'Terra · Quod auxilium concretum huic ideae fundamentum praebere possit?',
+  'Aqua · Ubi mutare cursum utile sit?',
+  'Ignis · Quod parvum experimentum curiositatem tuam adhuc excitet?',
+  'Aer · Quid omittere possis ut spatium latius fiat?',
+  'Aether · Si fines soliti paulisper evanescerent, quid alicui fieri posses?'
+];
+const gifts = [
+  ['Concha in litore', 'Muta “Omnia nobis narra” in “Quid hodie tibi auxilio esse potest?”. Donum est primus gradus minor.'],
+  ['Altera imago', 'Sententiam tuam clara voce dic. Deinde finge aliquem respondere “hodie non”. Num sententia adhuc convenit?'],
+  ['Stella in calice', '∴ Tria puncta: homo, verba eius, proximus gradus possibilis. Neque unum pro altero ponendum est.']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `unda ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'Filum collige' : 'Proxima unda';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · Gratias quod ibi stetisti ubi rectum tibi videbatur. Verba tua tua sunt.`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>

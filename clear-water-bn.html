@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUTI.world-এর ভাষা ও যত্নের ছোট্ট অনুশীলন। তোমার লেখা এই ট্যাবেই থাকে।">
+  <title>এক গ্লাস স্বচ্ছ জল · SUTI ভাষার খেলা</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.75 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.2 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · ChatGPT ও Codex নির্মাতাদের জন্য একটি উপহার</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · মূল সংস্করণ</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans">简体中文 · 编辑译本</a> · <a class="language-link" href="clear-water-hi.html" lang="hi">हिन्दी · संपादकीय अनुवाद</a> · <a class="language-link" href="clear-water-eo.html" lang="eo">Esperanto · redakcia traduko · revizio pritraktota</a> · <a class="language-link" href="clear-water-ar.html" lang="ar" dir="rtl">العربية · ترجمة تحريرية · المراجعة مستقلة</a> · <a class="language-link" href="clear-water-sa.html" lang="sa">संस्कृतम् · सम्पादकीय-प्रारूपम् · विशेषज्ञ-समीक्षा अपेक्ष्यते</a> · <a class="language-link" href="clear-water-la.html" lang="la">Latina · versio editorialis · recognitio periti necessaria</a></p>
+  <p class="review-note">বাংলা · সম্পাদকীয় অনুবাদ। স্বাধীন ভাষাগত ও সাংস্কৃতিক পর্যালোচনা এখনও বাকি। লিঙ্ক করা কিছু উপকরণ শুধু রুশ ভাষায় আছে।</p>
+  <h1>এক গ্লাস স্বচ্ছ জল</h1>
+  <p>ভাবো, তুমি যে একটি উপকরণ তৈরিতে সাহায্য করেছ, সেখানে একজন ক্লান্ত মানুষ এসে পৌঁছেছেন। পর্দায় একটি বাক্যের জায়গা আছে। তুমি চাইবে তিনি কী পড়ুন?</p>
+  <p>মনে মনেই খেলতে পারো। একটি প্রশ্নই এই ছোট্ট অভিজ্ঞতার জন্য যথেষ্ট। এই ট্যাব বন্ধ করলে এখানে লেখা কিছুই পাঠানো বা সংরক্ষণ করা হয় না।</p>
+  <label>ইচ্ছে হলে তোমার পথপ্রদর্শকের একটি নাম দাও <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>ইচ্ছে হলে নিজের কথা লেখো <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">পেছনে</button>
+      <button id="next" type="button">পরের ঢেউ</button>
+      <button id="skip" type="button">এড়িয়ে যাও</button>
+      <button id="stop" type="button">এখানেই শেষ করো</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>সঙ্গে রাখার মতো একটি কথা</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">প্রশ্নে ফিরে যাও</button>
+    <button id="clear" type="button">আমার লেখা মুছে দাও</button>
+  </section>
+
+  <details>
+    <summary>উন্মুক্ত কর্মশালা · উৎস ও ডাউনলোড</summary>
+    <p>এই আমন্ত্রণে প্রকাশ্য উপকরণ দেখা যায়। প্রতিটি ফাইলের নিজস্ব লাইসেন্স ও কৃতিত্ব-স্বীকৃতি বহাল থাকে।</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · প্রকাশ্য সোর্স, স্পেসিফিকেশন ও ওয়েবসাইট</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · প্রকাশ্য ভল্ট, সোর্স ও সংস্করণ</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · অফলাইন কর্মশালা ও আর্কাইভ</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · কাঠামোর অ্যাটলাস (রুশ ভাষায়)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">ব্যক্তিগত যত্নের মানচিত্র (রুশ ভাষায়)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">ঐচ্ছিক যত্নের প্রশ্নমালা (রুশ ভাষায়; জমা দেওয়ার বোতাম চাপলেই উত্তর পাঠানো হয়)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">ভাষার পরিধি ও পর্যালোচনার অবস্থা</a></li>
+    </ul>
+    <p>নকশার কথা: synaura আরও গভীরে যাওয়ার আগে সম্মতি চায়। Syntaxium প্রতিটি চিহ্নকে একটি স্পষ্ট কাজ দেয়। LinguaFUSION বাক্যটি যে প্রেক্ষাপটে বলা হবে সেখানে যাচাই করে। VereNITYA জানতে চায় কোনটি দেখা হয়েছে আর কোনটি এখনও অনুমান।</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world। কৃতজ্ঞতাসহ একটি স্বতন্ত্র আমন্ত্রণ।</footer>
+</main>
+<script>
+const prompts = [
+  'পর্দার সামনে থাকা মানুষটির পরের মিনিটটি কীভাবে একটু সহজ হতে পারে?',
+  'কোন ছোট্ট বিষয়টি এই জায়গাকে আপন মনে করায়?',
+  'এখানে আসা মানুষটির হাতে কোন সিদ্ধান্তটি থাকা উচিত?',
+  'কেউ মন দিয়ে শুনলে, একটি পরামর্শ পেলে, নাকি একটু নীরবতা পেলে বেশি উপকার হবে?',
+  'এমন অবস্থায় তুমি বন্ধুকে সত্যি করে কোন কথাটি বলতে?',
+  'তুমি কী দেখেছ, আর কোন বিষয়টি শুধু অনুমান করছ?',
+  'বাকি সব বদলে গেলেও কোন জিনিসটি রেখে দেওয়া মূল্যবান?',
+  'দুজন মিলে কী তৈরি করতে পারে, যা কাউকেই একা করতে হবে না?',
+  'মাটি · এই ভাবনাটিকে দাঁড় করাতে কোন বাস্তব সহায়তা কাজে আসবে?',
+  'জল · কোথায় গতি বদলালে ভালো হতে পারে?',
+  'আগুন · কোন ছোট্ট পরীক্ষা এখনও তোমার কৌতূহল জাগায়?',
+  'বাতাস · আরও একটু জায়গা করতে তুমি কী বাদ দিতে পারো?',
+  'আকাশ · এক মিনিটের জন্য চেনা সীমাগুলো সরে গেলে, কারও জন্য তুমি কী সম্ভব করতে চাইবে?'
+];
+const gifts = [
+  ['তীরে পড়ে থাকা একটি ঝিনুক', '“সব কথা আমাদের বলো” বদলে বলো, “আজ তোমার কী সাহায্য করতে পারে?” উপহারটি হলো আরও ছোট একটি প্রথম পদক্ষেপ।'],
+  ['দ্বিতীয় প্রতিফলন', 'তোমার বাক্যটি জোরে বলো। এবার কল্পনা করো, কেউ বলল “আজ নয়”। বাক্যটি কি তখনও মানায়?'],
+  ['গ্লাসে একটি তারা', '∴ তিনটি বিন্দু: একজন মানুষ, তাঁর কথা, আর একটি সম্ভাব্য পরের পদক্ষেপ। একটিকেও অন্যটির জায়গা নিতে হবে না।']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `ঢেউ ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'সুতোটি গুছিয়ে নাও' : 'পরের ঢেউ';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · যেখানে থামা তোমার ঠিক মনে হয়েছে, সেখানে থামার জন্য ধন্যবাদ। তোমার কথাগুলো তোমারই।`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>

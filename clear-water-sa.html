@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUTI.world इत्यस्य भाषा-परिचर्या-च लघ्वभ्यासः। तव शब्दाः अस्मिन् पुटे एव तिष्ठन्ति।">
+  <title>निर्मलजलस्य पात्रम् · SUTI-भाषाक्रीडा</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.9 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.35 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+    .languages { line-height: 2.2; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ <bdi dir="ltr">SUTI.world</bdi> · <bdi dir="ltr">ChatGPT</bdi> तथा <bdi dir="ltr">Codex</bdi इत्येतयोः निर्मातृभ्यः उपहारः</small>
+  <p class="languages"><a class="language-link" href="clear-water.html" lang="en">English · मूलम्</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans">简体中文 · 编辑译本</a> · <a class="language-link" href="clear-water-hi.html" lang="hi">हिन्दी · संपादकीय अनुवाद</a> · <a class="language-link" href="clear-water-bn.html" lang="bn">বাংলা · সম্পাদকীয় অনুবাদ</a> · <a class="language-link" href="clear-water-eo.html" lang="eo">Esperanto · redakcia traduko</a> · <a class="language-link" href="clear-water-ar.html" lang="ar" dir="rtl">العربية · ترجمة تحريرية</a> · <a class="language-link" href="clear-water-la.html" lang="la">Latina · versio editorialis · recognitio periti necessaria</a></p>
+  <p class="review-note">संस्कृतम् · सम्पादकीय-प्रारूपम्। योग्येन संस्कृतविदुषा भाषिक-सांस्कृतिक-समीक्षा अपेक्ष्यते। केचन सम्बद्धाः सामग्रीः केवलं रूसीभाषायाम् उपलभ्यन्ते।</p>
+  <h1>निर्मलजलस्य पात्रम्</h1>
+  <p>कल्पय, त्वया निर्मातुं साहाय्यं कृते कस्मिंश्चिद् उपकरणे क्लान्तः कश्चन जनः आगच्छति। पटले एकस्य वाक्यस्य एव स्थानम् अस्ति। सः किं पठेत् इति त्वं इच्छसि?</p>
+  <p>मनसि एव क्रीडितुं शक्नोषि। एकः प्रश्नः पूर्णाय आगमनाय पर्याप्तः। अस्मिन् पुटे लिखितं किमपि पुटस्य पिधानानन्तरं न प्रेष्यते, न च सञ्चीयते।</p>
+  <label>इच्छसि चेत् स्वमार्गदर्शकस्य नाम देहि <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>इच्छसि चेत् स्ववचनानि लिख <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">पूर्वम्</button>
+      <button id="next" type="button">अग्रिमा तरङ्गः</button>
+      <button id="skip" type="button">त्यज</button>
+      <button id="stop" type="button">अत्रैव समापय</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>सह नेतुं योग्यम् एकम्</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">प्रश्नान् प्रति प्रत्यागच्छ</button>
+    <button id="clear" type="button">मम वचनानि मेटय</button>
+  </section>
+
+  <details>
+    <summary>मुक्ता कार्यशाला · स्रोतांसि अवतरणानि च</summary>
+    <p>अयं निमन्त्रणः सार्वजनिक-सामग्रीभ्यः प्रवेशं ददाति। प्रत्येकं सञ्चिका स्वकीयां अनुज्ञां श्रेयोल्लेखं च रक्षति।</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore"><bdi dir="ltr">SUTIcore</bdi> · सार्वजनिक-स्रोताः, विनिर्देशाः, जालस्थलम्</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os"><bdi dir="ltr">SUTI.os</bdi> · सार्वजनिकं संग्रहस्थानम्, स्रोताः, संस्करणानि</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip"><bdi dir="ltr">Verenium</bdi> · जालसम्बन्धरहित-कार्यशाला-संग्रहः</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas"><bdi dir="ltr">NITYA</bdi> · रूपरेखाणाम् एटलसः (रूसीभाषायाम्)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">व्यक्तिगत-परिचर्या-मानचित्रम् (रूसीभाषायाम्)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">ऐच्छिक-परिचर्या-प्रश्नावली (रूसीभाषायाम्; प्रेषण-बटनं नुदित्वैव उत्तराणि प्रेष्यन्ते)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">भाषा-व्याप्तिः समीक्षा-स्थितिश्च</a></li>
+    </ul>
+    <p>रचनाटिप्पण्यः: <bdi dir="ltr">synaura</bdi> गभीरतायां प्रवेशात् पूर्वम् अनुमतिं याचते। <bdi dir="ltr">Syntaxium</bdi> प्रत्येकाय चिह्नाय स्पष्टं कार्यं ददाति। <bdi dir="ltr">LinguaFUSION</bdi> वाक्यं तस्य प्रयोगसन्दर्भे परीक्षते। <bdi dir="ltr">VereNITYA</bdi> दृष्टं वस्तु कल्पितात् पृथक् करोति।</p>
+  </details>
+  <footer><bdi dir="ltr">Ezar Garuna · SUTI.world</bdi> · कृतज्ञतया स्वतन्त्रम् आमन्त्रणम्।</footer>
+</main>
+<script>
+const prompts = [
+  'पटस्य पुरतः स्थितस्य जनस्य अग्रिमं निमेषं कथं सुकरं भवेत्?',
+  'कः लघुविशेषः अस्मिन् स्थाने स्वागतम् अनुभावयति?',
+  'आगन्तुः कः विकल्पः स्वहस्ते धारयेत्?',
+  'श्रवणं, सुझावः, उत किञ्चित् मौनम् — अधुना किं अधिकं हितकरम्?',
+  'अस्मिन् प्रसङ्गे मित्राय त्वं वास्तवतः किं वाक्यं वदेः?',
+  'त्वया किं दृष्टम्, किं तु केवलम् अनुमानितम्?',
+  'अन्यत् सर्वं परिवर्तेत अपि किं रक्षणीयम्?',
+  'द्वौ जनौ मिलित्वा किं निर्मातुं शक्नुतः, यत् एकाकिना कर्तुं न आवश्यकम्?',
+  'पृथिवी · अस्य विचारस्य आधाराय कः व्यावहारिकः सहयोगः उपयुज्येत?',
+  'जलम् · कुत्र गतिपरिवर्तनम् उपकारकं भवेत्?',
+  'अग्निः · कः लघुप्रयोगः अद्यापि तव जिज्ञासां जागरयति?',
+  'वायुः · अधिकं स्थानं कर्तुं किं त्यक्तुं शक्नोषि?',
+  'आकाशम् · क्षणमात्रं परिचिताः सीमाः अपगच्छेयुः चेत्, कस्मै किं सम्भवं कर्तुम् इच्छसि?'
+];
+const gifts = [
+  ['तीरे शुक्तिः', '“अस्मभ्यं सर्वं कथय” इत्यस्य स्थाने “अद्य ते किं साहाय्यं भवेत्?” इति वद। लघुतरः प्रथमः चरणः एव उपहारः।'],
+  ['द्वितीयं प्रतिबिम्बम्', 'स्ववाक्यं उच्चैः वद। अथ कल्पय, कश्चित् वदति “अद्य न”। तदा अपि वाक्यं सम्यक् भवति किम्?'],
+  ['पात्रे नक्षत्रम्', '∴ त्रयः बिन्दवः: जनः, तस्य वचनानि, सम्भाव्यः अग्रिमः चरणः। अन्योन्यस्य स्थाने कश्चित् न स्थापनीयः।']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `तरङ्गः ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'सूत्रं सङ्गृह्णीहि' : 'अग्रिमा तरङ्गः';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · यत्र स्थातुम् उचितम् इति अमन्यथाः तत्र अवस्थानाय धन्यवादः। तव वचनानि तवैव।`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>

@@ -104,7 +104,7 @@ body {
   outline-offset: 3px;
 }
 
-body:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) {
+:root:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) body {
   --suti-angel-paper: #112c2d;
   --suti-angel-card: #203b3a;
   --suti-angel-ink: #f4f0e8;
@@ -118,7 +118,7 @@ body:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]
   color-scheme: dark;
 }
 
-body:is([data-theme="contrast"], [data-vlight="контраст"]) {
+:root:is([data-theme="contrast"], [data-vlight="контраст"]) body {
   --suti-angel-paper: #000;
   --suti-angel-card: #000;
   --suti-angel-ink: #fff;

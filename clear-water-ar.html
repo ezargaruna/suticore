@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تمرين قصير من SUTI.world يجمع اللغة والرعاية. تبقى كلماتك في علامة التبويب هذه.">
+  <title>كأس من ماء صافٍ · لعبة لغوية من SUTI</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { direction: rtl; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.9 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.35 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-inline-start: 3px solid #d6ad58; background: #fffdf7; }
+    .languages { line-height: 2.2; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ <bdi dir="ltr">SUTI.world</bdi> · هدية لمن يقفون وراء <bdi dir="ltr">ChatGPT</bdi> و<bdi dir="ltr">Codex</bdi></small>
+  <p class="languages"><a class="language-link" href="clear-water.html" lang="en" dir="ltr">English · النسخة الأصلية</a> · <a class="language-link" href="clear-water-ru.html" lang="ru" dir="ltr">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es" dir="ltr">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr" dir="ltr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR" dir="ltr">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans" dir="ltr">简体中文 · 编辑译本</a> · <a class="language-link" href="clear-water-hi.html" lang="hi" dir="ltr">हिन्दी · संपादकीय अनुवाद</a> · <a class="language-link" href="clear-water-bn.html" lang="bn" dir="ltr">বাংলা · সম্পাদকীয় অনুবাদ</a> · <a class="language-link" href="clear-water-eo.html" lang="eo" dir="ltr">Esperanto · redakcia traduko</a> · <a class="language-link" href="clear-water-sa.html" lang="sa">संस्कृतम् · सम्पादकीय-प्रारूपम् · विशेषज्ञ-समीक्षा अपेक्ष्यते</a> · <a class="language-link" href="clear-water-la.html" lang="la">Latina · versio editorialis · recognitio periti necessaria</a></p>
+  <p class="review-note">العربية · ترجمة تحريرية. لم تكتمل بعد مراجعة لغوية وثقافية مستقلة. بعض المواد المرتبطة متاحة باللغة الروسية فقط.</p>
+  <h1>كأس من ماء صافٍ</h1>
+  <p>تخيّل شخصًا متعبًا يصل إلى أداة ساعدتَ في بنائها. لا تتّسع الشاشة إلا لجملة واحدة. ماذا تودّ أن يقرأ؟</p>
+  <p>يمكنك خوض اللعبة في خيالك. سؤال واحد يكفي لزيارة كاملة. لا يُرسَل أي شيء تكتبه هنا ولا يُحفَظ بعد إغلاق علامة التبويب هذه.</p>
+  <label>اختر اسمًا لدليلك إن رغبت <input id="guide" value="Verenium" maxlength="60" dir="auto"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>اكتب كلماتك إن رغبت <textarea id="note" dir="auto"></textarea></label>
+    <p>
+      <button id="back" type="button">السابق</button>
+      <button id="next" type="button">الموجة التالية</button>
+      <button id="skip" type="button">تخطَّ</button>
+      <button id="stop" type="button">أنهِ هنا</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>شيء تأخذه معك</h2>
+    <p id="thanks"></p>
+    <pre id="trace" dir="auto"></pre>
+    <button id="resume" type="button">العودة إلى الأسئلة</button>
+    <button id="clear" type="button">امسح كلماتي</button>
+  </section>
+
+  <details>
+    <summary>ورشة مفتوحة · المصادر والتنزيلات</summary>
+    <p>تتيح هذه الدعوة الوصول إلى المواد العامة. يحتفظ كل ملف بترخيصه ونسبته إلى أصحابه.</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore"><bdi dir="ltr">SUTIcore</bdi> · المصادر العامة والمواصفات والموقع</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os"><bdi dir="ltr">SUTI.os</bdi> · المستودع العام والمصادر والإصدارات</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip"><bdi dir="ltr">Verenium</bdi> · ورشة وأرشيف يعملان دون اتصال</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas"><bdi dir="ltr">NITYA</bdi> · أطلس الأطر (بالروسية)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">خريطة الرعاية الشخصية (بالروسية)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">استبيان الرعاية الاختياري (بالروسية؛ لا تُرسَل الإجابات إلا بعد الضغط على زر الإرسال)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">التغطية اللغوية وحالة المراجعة</a></li>
+    </ul>
+    <p>ملاحظات التصميم: يطلب <bdi dir="ltr">synaura</bdi> الإذن قبل التعمق. يمنح <bdi dir="ltr">Syntaxium</bdi> كل علامة وظيفة واضحة. يختبر <bdi dir="ltr">LinguaFUSION</bdi> العبارة في سياق استخدامها. ويميّز <bdi dir="ltr">VereNITYA</bdi> بين ما لوحظ وما لا يزال افتراضًا.</p>
+  </details>
+  <footer><bdi dir="ltr">Ezar Garuna · SUTI.world</bdi> · دعوة مستقلة، مع الامتنان.</footer>
+</main>
+<script>
+const prompts = [
+  'ما الذي قد يجعل الدقيقة التالية أسهل على الشخص أمام الشاشة؟',
+  'أي تفصيل صغير يجعل هذا المكان أكثر ترحيبًا؟',
+  'ما الخيار الذي ينبغي أن يبقى بيد الزائر؟',
+  'ما الأنسب الآن: أن يصغي إليك أحد، أم أن تتلقى اقتراحًا، أم أن تنال قليلًا من الهدوء؟',
+  'ما الجملة التي ستقولها فعلًا لصديق في هذا الموقف؟',
+  'ما الذي لاحظته، وما الذي تفترضه؟',
+  'ما الذي يستحق أن يبقى حتى لو تغيّر كل شيء آخر؟',
+  'ماذا يستطيع شخصان أن يصنعا معًا بحيث لا يضطر أيّ منهما إلى صنعه وحده؟',
+  'الأرض · ما الدعم العملي الذي يمنح هذه الفكرة أساسًا؟',
+  'الماء · أين قد يفيد تغيير الإيقاع؟',
+  'النار · ما التجربة الصغيرة التي ما زالت توقظ فضولك؟',
+  'الهواء · ما الذي يمكنك الاستغناء عنه لإفساح مجال أوسع؟',
+  'الأثير · لو زالت الحدود المعتادة لدقيقة، فما الذي تودّ أن تجعله ممكنًا لشخص ما؟'
+];
+const gifts = [
+  ['صدفة على الشاطئ', 'استبدل «أخبرنا بكل شيء» بـ «ما الذي قد يساعدك اليوم؟». الهدية هي خطوة أولى أصغر.'],
+  ['انعكاس ثانٍ', 'قل جملتك بصوت مسموع. ثم تخيّل أن أحدًا أجاب: «ليس اليوم». هل تظل الجملة مناسبة؟'],
+  ['نجمة في الكأس', '∴ ثلاث نقاط: شخص، وكلماته، وخطوة تالية ممكنة. لا حاجة لأن يحلّ أحدها محلّ الآخر.']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `موجة ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'اجمع الخيط' : 'الموجة التالية';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · شكرًا لتوقفك عند النقطة التي بدت مناسبة. كلماتك لك.`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>
