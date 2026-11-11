@@ -86,6 +86,7 @@ The care constellation is a proposed self-guided concept, not a connected servic
 | French (`fr`) | [`care-constellation-fr.html`](../care-constellation-fr.html) | Editorial translation | Independent linguistic and cultural review pending. |
 | Latin American Spanish (`es-419`) | [`care-constellation-es.html`](../care-constellation-es.html) | Editorial translation | Independent linguistic and cultural review pending. |
 | Brazilian Portuguese (`pt-BR`) | [`care-constellation-pt.html`](../care-constellation-pt.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Simplified Chinese (`zh-Hans`) | [`care-constellation-zh-Hans.html`](../care-constellation-zh-Hans.html) | Editorial translation | Independent linguistic and cultural review pending. |
 
 The pages are cross-linked and embedded in the unified single-file interface. Per-page inclusion does not localize the homepage, Google Form, or the other SUTI destinations. Each translation retains its own canonical route and `lang` metadata.
 
