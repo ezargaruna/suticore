@@ -46,6 +46,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `care-constellation-pt.html` | Brazilian Portuguese (`pt-BR`) | PT-BR | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; included in the unified HTML route data and cross-linked; independent review pending; no live service is claimed. |
 | `care-constellation-ru.html` | Russian (`ru`) | RU | Complete Russian editorial edition of the care concept, age routes, boundaries, controls, and image description; author comparison pending; no live service is claimed. |
 | `care-constellation-zh-Hans.html` | Simplified Chinese (`zh-Hans`) | ZH-HANS | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; independent language and cultural review pending; no live service is claimed. |
+| `care-constellation-hi.html` | Hindi (`hi`) | HI | Complete editorial translation with matching `lang` metadata and a locally bundled Noto Sans Devanagari font; font OFL is included in the Pages artifact; independent linguistic and cultural review pending; no live service is claimed. |
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels.html` | Russian | RU | Single-language page. |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
