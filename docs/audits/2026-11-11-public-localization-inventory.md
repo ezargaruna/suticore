@@ -50,13 +50,14 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `synaura-modules.html` | Russian | RU | Single-language page. |
 | `openai-crystal.html` | English UI; RU/EN examples | EN | Bilingual examples are not a translated interface. |
 | `audits.html` | English | EN | Single-language index page. |
-| `clear-water.html` | English | EN | Original practice page; links to Spanish and French editorial editions. |
+| `clear-water.html` | English | EN | Original practice page; links to Spanish, French, and Brazilian Portuguese editorial editions. |
 | `clear-water-es.html` | Spanish (`es`) | ES | Complete editorial translation of the thirteen prompts and interaction labels; independent review pending; Russian destinations are disclosed. |
 | `clear-water-fr.html` | French (`fr`) | FR | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent review pending; Russian destinations are disclosed. |
+| `clear-water-pt.html` | Brazilian Portuguese (`pt-BR`) | PT-BR | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent review pending; Russian destinations are disclosed. |
 
 The workflow publishes the English research master and linked RU, ES, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, and LA editions under `docs/research/`. The homepage exposes them in a compact language disclosure with per-link `lang` values and RTL direction for Arabic. RU awaits author comparison; ES, PT-BR, FR, zh-Hans, HI, AR, BN, and EO await independent language review; SA and LA await qualified review. Yazekh has a public `HOLD` record, not a fabricated translation.
 
-The English clear-water practice and its Spanish and French editorial editions are linked directly to each other and embedded in the homepage single-file interface data. The Spanish and French pages use matching `lang` metadata, accessible labels, visible focus, and live progress announcements; the external Russian care form is identified before navigation. These are page-level translations only, not translation of every linked destination.
+The English clear-water practice and its Spanish, French, and Brazilian Portuguese editorial editions are linked directly to each other and embedded in the homepage single-file interface data. Each translated edition uses matching `lang` metadata, accessible labels, visible focus, and live progress announcements; the external Russian care form is identified before navigation. These are page-level translations only, not translation of every linked destination.
 
 The workflow also publishes these nested HTML screens from `modules/`:
 
