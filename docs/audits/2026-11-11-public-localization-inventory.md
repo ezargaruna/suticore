@@ -57,10 +57,11 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `clear-water-ru.html` | Russian (`ru`) | RU | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; author comparison and final review pending. |
 | `clear-water-zh-Hans.html` | Simplified Chinese (`zh-Hans`) | zh-Hans | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent linguistic and cultural review pending; Russian destinations are disclosed. |
 | `clear-water-hi.html` | Hindi (`hi`) | HI | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent linguistic and cultural review pending; Russian destinations are disclosed. |
+| `clear-water-bn.html` | Bengali (`bn`) | BN | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent linguistic and cultural review pending; Russian destinations are disclosed. |
 
 The workflow publishes the English research master and linked RU, ES, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, and LA editions under `docs/research/`. The homepage exposes them in a compact language disclosure with per-link `lang` values and RTL direction for Arabic. RU awaits author comparison; ES, PT-BR, FR, zh-Hans, HI, AR, BN, and EO await independent language review; SA and LA await qualified review. Yazekh has a public `HOLD` record, not a fabricated translation.
 
-The English clear-water practice and its Russian, Spanish, French, Brazilian Portuguese, Simplified Chinese, and Hindi editions are linked directly to each other and embedded in the homepage single-file interface data. Each translated edition uses matching `lang` metadata, accessible labels, visible focus, and live progress announcements; the external Russian care form is identified before navigation. These are page-level translations only, not translation of every linked destination.
+The English clear-water practice and its Russian, Spanish, French, Brazilian Portuguese, Simplified Chinese, Hindi, and Bengali editions are linked directly to each other and embedded in the homepage single-file interface data. Each translated edition uses matching `lang` metadata, accessible labels, visible focus, and live progress announcements; the external Russian care form is identified before navigation. These are page-level translations only, not translation of every linked destination.
 
 The workflow also publishes these nested HTML screens from `modules/`:
 
