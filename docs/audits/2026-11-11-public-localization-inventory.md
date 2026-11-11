@@ -51,6 +51,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `care-constellation-bn.html` | Bengali (`bn`) | BN | Complete editorial translation with matching `lang` metadata and a locally bundled Noto Sans Bengali font; font OFL is included in the Pages artifact; independent linguistic and cultural review pending; no live service is claimed. |
 | `care-constellation-eo.html` | Esperanto (`eo`) | EO | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; embedded in the unified HTML route data and cross-linked; independent linguistic and cultural review pending; no live service is claimed. |
 | `care-constellation-sa.html` | Sanskrit (`sa`) | SA | Complete editorial draft with matching `lang` metadata and a locally bundled Noto Sans Devanagari font; font OFL is included in the Pages artifact; qualified linguistic and cultural review pending; no live service is claimed. |
+| `care-constellation-la.html` | Latin (`la`) | LA | Complete editorial draft of the care concept, age routes, boundaries, controls, and image description; embedded and cross-linked; qualified linguistic and cultural review pending; no live service is claimed. |
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels.html` | Russian | RU | Single-language page. |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
