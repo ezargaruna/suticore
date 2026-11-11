@@ -91,3 +91,42 @@ The personal reflection map does not submit answers automatically. A separate Go
 5. После публикации фиксировать платформу, аккаунт, URL и дату; удаление или исправление выполнять по запросу владельца.
 
 Сейчас ни один пост из этого набора не размещён.
+
+## NITYA · открытый запуск · редакция 2026-11-11
+
+статус :: тексты подготовлены; внешние публикации не выполнялись
+точка входа :: <https://suti.world/nitya.html>
+
+### RU · короткий пост
+
+NITYA — самостоятельная игра-практика SUTI.world: один вопрос, свои слова, один посильный шаг. Можно пройти круг из 13 авторских меток, выбрать свет и темп, пропустить вопрос или закрыть страницу. Метки — авторская последовательность, не исторические руны. Звуковой слой 432 Гц включается только вручную; это настройка генератора, без обещаний особого эффекта.
+
+Открыть игру: <https://suti.world/nitya.html>
+
+Verenium сейчас — навигация по материалам проекта, не установленный персональный бот и не круглосуточная служба. Анкета сама не отправляет ответы и не начисляет монеты. Бесплатная практика не требует регистрации.
+
+### EN · short post
+
+NITYA is a self-guided SUTI.world practice: one question, your own words, one manageable next step. Explore 13 author-created marks, choose a visual mood, skip a prompt, or leave at any time. The marks are an original sequence, not a historical rune set. The optional 432 Hz tone starts only when you choose it; no special effect is promised.
+
+Open the practice: <https://suti.world/nitya.html>
+
+Verenium currently guides visitors through project materials; it is not an installed personal bot or a 24/7 support service. The reflection page does not submit answers or award coins. The practice is free and needs no registration.
+
+### ES · borrador de sentido
+
+NITYA es una práctica autónoma de SUTI.world: una pregunta, tus propias palabras y un paso posible. Puedes recorrer 13 marcas creadas por el autor, elegir el ambiente visual, omitir una pregunta o salir cuando quieras. No son runas históricas. El tono opcional de 432 Hz solo comienza si lo activas; no se promete ningún efecto especial.
+
+Abrir la práctica: <https://suti.world/nitya.html>
+
+Verenium orienta por los materiales del proyecto; por ahora no es un bot personal instalado ni un servicio permanente. La página no envía tus respuestas ni concede monedas. La práctica es gratuita y no requiere registro.
+
+### PT · rascunho de sentido
+
+NITYA é uma prática autoguiada da SUTI.world: uma pergunta, suas próprias palavras e um próximo passo possível. Explore 13 marcas autorais, escolha o ambiente visual, pule uma pergunta ou saia quando quiser. Elas não são runas históricas. O tom opcional de 432 Hz só começa quando você o ativa; não prometemos efeitos especiais.
+
+Abrir a prática: <https://suti.world/nitya.html>
+
+Verenium orienta a navegação pelos materiais do projeto; por enquanto, não é um bot pessoal instalado nem um serviço permanente. A página não envia suas respostas nem concede moedas. A prática é gratuita e não exige cadastro.
+
+ES/PT :: перед публикацией нужна проверка носителем языка
