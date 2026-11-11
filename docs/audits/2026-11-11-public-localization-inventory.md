@@ -128,6 +128,21 @@ rights clearance :: per artifact; UNKNOWN where no file-level record exists
 
 The production route `https://suti.world/care-constellation-fr.html` returned HTTP 200 after PRs #37 and #38. The published shell contains 28 embedded pages, including the French care edition with `lang="fr"`. The page dispatcher recognizes a direct path and opens the matching embedded document; closing a directly opened document returns to `/`. A node-level behavior check covered the French route; keyboard and screen-reader review remain outstanding.
 
+## Live recheck after Arabic care-route integration :: 2026-11-11
+
+PR #49 (`d275f3c`) merged, and the main Pages workflow run
+[`43110203057`](https://github.com/ezargaruna/suticore/actions/runs/43110203057)
+completed successfully. `https://suti.world/` and the direct path
+`https://suti.world/care-constellation-ar.html` both returned HTTP 200. The
+production shell contains all eight care constellation editions; the embedded
+Arabic document parses as `lang="ar"` and `dir="rtl"`, includes Arabic copy,
+and points to the locally bundled Noto Sans Arabic font plus its OFL notice.
+The font and license URLs returned HTTP 200 (`font/woff2` and `text/plain`).
+This confirms published route data and asset availability, not visual RTL,
+keyboard, screen-reader, or independent language/cultural review. Those reviews
+remain pending. The Workers Builds status is a separate deployment surface and
+is not certified by this Pages result.
+
 The Spanish Latin American care edition (`care-constellation-es.html`, `lang="es-419"`) is published in the unified router and Pages artifact after PR #39. On 2026-11-11, both the Pages preview and `https://suti.world/` returned HTTP 200; the production shell contains 29 routes and the embedded Spanish HTML decodes byte-for-byte to the standalone source. A Node runtime check of the production dispatcher opened the direct Spanish route in the embedded frame with the expected title and `lang="es-419"`. Visual, keyboard, and screen-reader review remain outstanding. The translation is editorial and independent language/cultural review is still pending. The Workers Builds check failed separately; the Pages deployment succeeded, and no Workers change is claimed.
 
 The Brazilian Portuguese care edition (`care-constellation-pt.html`, `lang="pt-BR"`) was merged in PR #41. The main Pages deployment run `43106798193` completed successfully. On 2026-11-11, `https://suti.world/` returned HTTP 200 with 30 embedded pages; the Portuguese page is present with the expected language and title. A Node runtime check of the production dispatcher opened the direct Portuguese route in the embedded frame. Independent language/cultural review and visual, keyboard, and screen-reader review remain outstanding. Workers Builds failed separately; the Pages workflow succeeded.
