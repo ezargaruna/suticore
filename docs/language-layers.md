@@ -30,7 +30,7 @@ The public entry page offers 13 language and authorial-language layers:
 | Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/?lang=la) |
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/?lang=yzh) |
 
-The Bengali care constellation is a separately linked editorial page; it does not change the Bengali Russian-fallback state of the home-page runtime. Its independent linguistic and cultural review remains pending. The Esperanto edition is also a separate editorial page; the Esperanto homepage layer remains Russian fallback pending full runtime translation and review.
+The Bengali care constellation is a separately linked editorial page; it does not change the Bengali Russian-fallback state of the home-page runtime. Its independent linguistic and cultural review remains pending. The Esperanto edition is also a separate editorial page; the Esperanto homepage layer remains Russian fallback pending full runtime translation and review. The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime.
 
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without reviewed runtime
