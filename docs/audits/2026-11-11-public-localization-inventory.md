@@ -197,3 +197,15 @@ OFL text both returned HTTP 200 from GitHub Pages with `font/woff2` and
 `text/plain` content types. The page remains an editorial draft pending
 qualified linguistic and cultural review. This is not a Sanskrit homepage
 runtime release or an accessibility certification.
+
+## Live recheck after Latin care-route integration :: 2026-11-11
+
+PR #57 merged, and the main Pages workflow run
+[`43112721126`](https://github.com/ezargaruna/suticore/actions/runs/43112721126)
+completed successfully. The production root and direct path
+`https://suti.world/care-constellation-la.html` returned HTTP 200. The
+production route map contains twelve care constellation editions; the Latin
+page is embedded byte-for-byte with `lang="la"`. Its visible status identifies
+it as an editorial draft and says that qualified linguistic and cultural
+review is still needed. This does not certify specialist review, accessibility,
+or Latin homepage runtime coverage.
