@@ -153,3 +153,17 @@ The Russian care edition (`care-constellation-ru.html`, `lang="ru"`) was merged 
 The Simplified Chinese care edition (`care-constellation-zh-Hans.html`, `lang="zh-Hans"`) was merged in PR #45. Pages deployment run `43108184032` succeeded. On 2026-11-11, the production shell returned HTTP 200 with 32 embedded pages; the Chinese HTML is present with the expected locale and title. A Node runtime check of the production dispatcher opened the direct Chinese route in its embedded frame. Independent linguistic/cultural review and visual, keyboard, and screen-reader review remain outstanding. Workers Builds failed separately; the Pages deployment succeeded.
 
 The Hindi care edition (`care-constellation-hi.html`, `lang="hi"`) was merged in PR #47. Pages deployment run `43109419257` succeeded. On 2026-11-11, the production shell returned HTTP 200 with 33 embedded pages; a Node runtime check opened the direct Hindi route in the embedded frame. The deployed Noto Sans Devanagari font and its SIL Open Font License both returned HTTP 200 from the project asset host; the font response had `font/woff2` and `Access-Control-Allow-Origin: *`. Independent Hindi language/cultural review and visual, keyboard, and screen-reader review remain outstanding. Workers Builds failed separately; the Pages deployment succeeded.
+
+## Live recheck after Bengali care-route integration :: 2026-11-11
+
+PR #51 (`84404d7`) merged, and the main Pages workflow run
+[`43111251903`](https://github.com/ezargaruna/suticore/actions/runs/43111251903)
+completed successfully. The production root and direct path
+`https://suti.world/care-constellation-bn.html` returned HTTP 200. The
+production route map contains all nine care constellation editions, and the
+embedded Bengali HTML is byte-identical to the checked-in page (`lang="bn"`).
+The bundled Noto Sans Bengali font and its OFL text both returned HTTP 200 from
+GitHub Pages with `font/ttf` and `text/plain` content types and permissive CORS.
+Independent linguistic and cultural review remains pending; this check does not
+certify visual rendering, keyboard or screen-reader behavior, nor full Bengali
+homepage coverage. Bengali remains a Russian fallback in the homepage runtime.
