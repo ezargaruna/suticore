@@ -8,9 +8,9 @@
   <link rel="canonical" href="https://suti.world/care-constellation-hi.html">
   <title>देखभाल के नक्षत्र · SUTI.world</title>
   <style>
-    @font-face{font-family:"Noto Sans Devanagari";src:url("assets/fonts/notosansdevanagari/regular.woff2") format("woff2");font-weight:400;font-display:swap}
-    @font-face{font-family:Nunito;src:url("assets/fonts/NunitoSans-variable.ttf") format("truetype");font-weight:100 1000;font-display:swap}
-    @font-face{font-family:Manrope;src:url("assets/fonts/Manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap}
+    @font-face{font-family:"Noto Sans Devanagari";src:url("https://ezargaruna.github.io/suticore/assets/fonts/notosansdevanagari/regular.woff2") format("woff2");font-weight:400;font-display:swap}
+    @font-face{font-family:Nunito;src:url("https://ezargaruna.github.io/suticore/assets/fonts/NunitoSans-variable.ttf") format("truetype");font-weight:100 1000;font-display:swap}
+    @font-face{font-family:Manrope;src:url("https://ezargaruna.github.io/suticore/assets/fonts/Manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap}
     :root{color-scheme:light;--bg:#F4F0E8;--surface:#FCF8F2;--surface-2:#DDF2EF;--ink:#25342F;--muted:#52615A;--petrol:#365958;--teal:#57B8B0;--peach:#DE9A73;--gold:#D6AD58;--line:#D8D0C1;--focus:#365958;--shadow:#25342F12;--body:Manrope,system-ui,sans-serif;--display:Nunito,system-ui,sans-serif;font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.65}
     :lang(hi){--body:"Noto Sans Devanagari",system-ui,sans-serif;--display:"Noto Sans Devanagari",system-ui,sans-serif}
     html[data-theme="night"]{color-scheme:dark;--bg:#101A18;--surface:#17231F;--surface-2:#20332E;--ink:#F4F0E8;--muted:#C4C8BE;--petrol:#A8BBB1;--line:#405149;--focus:#A9DCD5;--shadow:#00000035}
@@ -21,7 +21,7 @@
 <body>
   <a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
   <header class="wrap top">
-    <a class="brand" href="index.html?lang=hi"><img src="assets/brand/suti-mark-main.png" alt=""><span>SUTI.world</span></a>
+    <a class="brand" href="index.html?lang=hi"><img src="https://ezargaruna.github.io/suticore/assets/brand/suti-mark-main.png" alt=""><span>SUTI.world</span></a>
     <div class="tools" role="group" aria-label="दृश्य थीम के विकल्प">
       <button type="button" data-theme="day" aria-pressed="true">दिन</button>
       <button type="button" data-theme="night" aria-pressed="false">रात</button>
@@ -83,7 +83,7 @@
       <p class="fine" style="margin-top:1.2rem"><span class="status">भाषा की स्थिति</span> हिंदी संपादकीय अनुवाद; स्वतंत्र भाषा और सांस्कृतिक समीक्षा बाकी है। अन्य भाषाओं के संस्करण यहाँ स्वीकृत अनुवाद के रूप में प्रस्तुत नहीं हैं।</p>
     </section>
   </main>
-  <footer class="wrap footer"><div><p><strong>SUTI.world</strong> · जो मायने रखता है, उसकी भाषा</p><p class="fine">स्थानीय अवधारणा · रनटाइम UNKNOWN · किसी सेवा के सक्रिय होने का दावा नहीं।</p></div><div><a href="index.html?lang=hi#care">देखभाल का प्रवेश</a> · <a href="index.html?lang=hi">SUTI.world का मुखपृष्ठ</a></div></footer>
+  <footer class="wrap footer"><div><p><strong>SUTI.world</strong> · जो मायने रखता है, उसकी भाषा</p><p class="fine">स्थानीय अवधारणा · रनटाइम UNKNOWN · किसी सेवा के सक्रिय होने का दावा नहीं।</p><p class="fine">लिपि फ़ॉन्ट :: <a href="https://github.com/ezargaruna/suticore/blob/main/assets/fonts/notosansdevanagari/OFL.txt">Noto Sans Devanagari · SIL Open Font License</a></p></div><div><a href="index.html?lang=hi#care">देखभाल का प्रवेश</a> · <a href="index.html?lang=hi">SUTI.world का मुखपृष्ठ</a></div></footer>
   <script>
     document.querySelectorAll('[data-theme]').forEach(button=>button.addEventListener('click',()=>{
       document.documentElement.dataset.theme=button.dataset.theme;
