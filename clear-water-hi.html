@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SUTI.world का भाषा और देखभाल से जुड़ा छोटा अभ्यास। तुम्हारे शब्द इसी टैब में रहते हैं।">
+  <title>एक गिलास साफ़ पानी · SUTI भाषा-खेल</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.75 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.2 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · ChatGPT और Codex बनाने वालों के लिए एक उपहार</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · मूल संस्करण</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans">简体中文 · 编辑译本</a></p>
+  <p class="review-note">हिन्दी · संपादकीय अनुवाद। स्वतंत्र भाषाई और सांस्कृतिक समीक्षा अभी बाकी है। कुछ लिंक की गई सामग्री केवल रूसी में उपलब्ध है।</p>
+  <h1>एक गिलास साफ़ पानी</h1>
+  <p>कल्पना करो कि थका हुआ कोई व्यक्ति उस साधन तक पहुँचता है जिसे बनाने में तुमने मदद की। स्क्रीन पर केवल एक वाक्य की जगह है। तुम चाहोगे कि वह क्या पढ़े?</p>
+  <p>तुम मन ही मन खेल सकते हो। एक सवाल ही इस छोटी यात्रा को पूरा करने के लिए काफ़ी है। यह टैब बंद करने के बाद यहाँ लिखी कोई बात भेजी या सहेजी नहीं जाती।</p>
+  <label>अगर चाहो, अपने मार्गदर्शक को एक नाम दो <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>अगर चाहो, अपने शब्द लिखो <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">पीछे</button>
+      <button id="next" type="button">अगली लहर</button>
+      <button id="skip" type="button">छोड़ो</button>
+      <button id="stop" type="button">यहीं समाप्त करो</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>अपने साथ ले जाने के लिए एक बात</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">सवालों पर लौटो</button>
+    <button id="clear" type="button">मेरे शब्द मिटाओ</button>
+  </section>
+
+  <details>
+    <summary>खुली कार्यशाला · स्रोत और डाउनलोड</summary>
+    <p>यह निमंत्रण सार्वजनिक सामग्री तक पहुँच देता है। हर फ़ाइल की अपनी लाइसेंस शर्तें और श्रेय यथावत रहते हैं।</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · सार्वजनिक स्रोत, विनिर्देश और वेबसाइट</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · सार्वजनिक वॉल्ट, स्रोत और संस्करण</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · ऑफ़लाइन कार्यशाला और संग्रह</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · रूपरेखा एटलस (रूसी में)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">निजी देखभाल नक्शा (रूसी में)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">वैकल्पिक देखभाल प्रश्नावली (रूसी में; जमा करने का बटन दबाने पर ही उत्तर भेजे जाते हैं)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">भाषा कवरेज और समीक्षा की स्थिति</a></li>
+    </ul>
+    <p>डिज़ाइन नोट: synaura गहराई में जाने से पहले अनुमति माँगता है। Syntaxium हर चिह्न को एक स्पष्ट काम देता है। LinguaFUSION वाक्य को उस संदर्भ में आज़माता है जहाँ उसे कहा जाएगा। VereNITYA पूछता है कि क्या देखा गया और क्या अब भी अनुमान है।</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world। कृतज्ञता के साथ एक स्वतंत्र निमंत्रण।</footer>
+</main>
+<script>
+const prompts = [
+  'स्क्रीन के सामने बैठे व्यक्ति के लिए अगला एक मिनट थोड़ा आसान कैसे हो सकता है?',
+  'कौन-सी छोटी बात इस जगह को अपनापन देती है?',
+  'यहाँ आने वाले व्यक्ति के हाथ में कौन-सा चुनाव रहना चाहिए?',
+  'क्या सुन लिया जाना, कोई सुझाव मिलना या थोड़ी शांति पाना अधिक मददगार होगा?',
+  'ऐसी स्थिति में तुम अपने किसी दोस्त से सचमुच क्या कहोगे?',
+  'तुमने क्या देखा, और किस बात का केवल अनुमान लगा रहे हो?',
+  'बाकी सब बदल जाए, तब भी क्या सँभालकर रखना चाहिए?',
+  'दो लोग मिलकर ऐसा क्या बना सकते हैं जिसे किसी को अकेले न बनाना पड़े?',
+  'धरती · इस विचार को टिकने के लिए कौन-सा ठोस सहारा चाहिए?',
+  'जल · कहाँ अपनी गति बदलना मददगार होगा?',
+  'अग्नि · कौन-सा छोटा प्रयोग अब भी तुम्हारी जिज्ञासा जगाता है?',
+  'वायु · अधिक जगह बनाने के लिए तुम क्या छोड़ सकते हो?',
+  'आकाश · अगर एक मिनट के लिए पुरानी सीमाएँ हट जाएँ, तो तुम किसी के लिए क्या संभव करना चाहोगे?'
+];
+const gifts = [
+  ['किनारे पर एक सीप', '“हमें सब कुछ बताओ” की जगह कहो, “आज तुम्हें किससे मदद मिल सकती है?” उपहार है एक छोटा पहला कदम।'],
+  ['दूसरा प्रतिबिंब', 'अपना वाक्य ज़ोर से कहो। अब सोचो कि कोई जवाब दे, “आज नहीं।” क्या तुम्हारा वाक्य तब भी ठीक लगता है?'],
+  ['गिलास में एक तारा', '∴ तीन बिंदु: एक व्यक्ति, उसके शब्द और अगला संभव कदम। किसी को भी दूसरे की जगह लेने की ज़रूरत नहीं।']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `लहर ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'धागा समेटो' : 'अगली लहर';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · जहाँ रुकना तुम्हें ठीक लगा, वहाँ ठहरने के लिए धन्यवाद। तुम्हारे शब्द तुम्हारे हैं।`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>

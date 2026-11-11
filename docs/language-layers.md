@@ -126,14 +126,14 @@ records before the copy is treated as ready to publish.
 
 [`clear-water.html`](../clear-water.html) is the English source practice. A complete
 Spanish editorial edition is available at [`clear-water-es.html`](../clear-water-es.html).
-Russian, French, Spanish, Brazilian Portuguese, and Simplified Chinese editions are available at
+Russian, French, Spanish, Brazilian Portuguese, Simplified Chinese, and Hindi editions are available at
 [`clear-water-ru.html`](../clear-water-ru.html),
 [`clear-water-fr.html`](../clear-water-fr.html), [`clear-water-es.html`](../clear-water-es.html),
-[`clear-water-pt.html`](../clear-water-pt.html), and [`clear-water-zh-Hans.html`](../clear-water-zh-Hans.html). Each edition translates all
+[`clear-water-pt.html`](../clear-water-pt.html), [`clear-water-zh-Hans.html`](../clear-water-zh-Hans.html), and [`clear-water-hi.html`](../clear-water-hi.html). Each edition translates all
 thirteen prompts, controls, and open-material notes; each marks independent review
 as pending (Russian author comparison remains pending) and identifies Russian-only
 linked materials. The pages link to each other and are embedded in the homepage
 single-file interface. This does not translate those destinations, and the practice
 is not a full translation of the wider SUTI.world site.
-The Chinese edition is an editorial draft pending independent linguistic and
-cultural review.
+The Chinese and Hindi editions are editorial drafts pending independent linguistic
+and cultural review.
