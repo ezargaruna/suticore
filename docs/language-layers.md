@@ -34,7 +34,7 @@ The matching SUTI.os language catalog is [`language-packs/manifest.json`](https:
 
 ## NITYA and .todeus passport
 
-The public NITYA page is currently Russian-first. Its linked [NITYA × .todeus passport](../nitya-todeus.html) adds a short concept-level phrase in the 13 language layers and records the status of each string. Draft strings in that passport do not activate new runtime locales or mean that the NITYA interface has been fully translated. The English source and Russian page remain distinct; Simplified Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin drafts need language review. Yazekh remains an authorial seed pending the author's grammar and transcreation review.
+The original public NITYA page remains Russian-first. A complete English interface edition is available at [`nitya-en.html`](../nitya-en.html), and the English home-page path now opens that edition directly. It is an editorial translation; independent native-language review has not been completed. Its linked [NITYA × .todeus passport](../nitya-todeus.html) adds a short concept-level phrase in the 13 language layers and records the status of each string. Draft strings in that passport do not activate new runtime locales or mean that the NITYA interface has been fully translated. The English source and Russian page remain distinct; Simplified Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin drafts need language review. Yazekh remains an authorial seed pending the author's grammar and transcreation review.
 
 “Available” means that a runtime dictionary is active and covers the page's
 translation markers. It is not independent certification of native-speaker or
@@ -79,3 +79,21 @@ available. It is not a negative judgment about the language or a translation.
 
 Yazekh is an authored language experiment. Treat its forms as authorial
 transcreation, not as historical reconstruction or a verified translation.
+
+## NITYA-first homepage update · 2026-11-11
+
+The home page now opens with NITYA as its primary heading and links directly to
+the NITYA portal. The optional care questionnaire remains a separate route
+from that hero. Its external Google Forms link now states that submitted data
+leaves SUTI.world and is handled by Google and the form owner.
+
+The welcome line “Angels of Care ∴ SUTI.world :: …” is available in the twelve
+provided written languages (EN, RU, ES, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA,
+LA). The Yazekh selector currently uses the Russian authorial line. These welcome lines are interface copy only; they do not mean that the complete
+home page, NITYA portal, or Google Form is translated into all thirteen layers.
+Current runtime coverage remains the matrix above. The English NITYA edition
+does not activate additional home-page locales.
+
+The public module atlas is available at [`modules.html`](../modules.html). Its
+76 selected public source records are a navigable index, not a runtime
+activation statement or blanket license.
