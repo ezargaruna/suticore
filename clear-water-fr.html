@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un jeu de langage et d’attention de SUTI.world. Tes mots restent dans cet onglet.">
+  <title>Un verre d’eau claire · un jeu de langage SUTI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.6 system-ui, sans-serif; }
+    h1 { font: clamp(3rem, 8vw, 5rem)/1 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · un cadeau pour les personnes qui créent ChatGPT et Codex</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · édition originale</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a></p>
+  <p class="review-note">FR · traduction éditoriale. Une relecture indépendante reste à faire. Certains documents liés sont uniquement en russe.</p>
+  <h1>Un verre d’eau claire</h1>
+  <p>Imagine une personne épuisée qui arrive sur un outil auquel tu as contribué. L’écran peut accueillir une seule phrase. Qu’aimerais-tu qu’elle lise ?</p>
+  <p>Tu peux jouer dans ta tête. Une seule question suffit pour une visite complète. Rien de ce que tu écris ici n’est envoyé ni conservé après la fermeture de cet onglet.</p>
+  <label>Donne un nom à ton guide, si tu en as envie <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>Tes mots, si tu le souhaites <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">Précédente</button>
+      <button id="next" type="button">Onde suivante</button>
+      <button id="skip" type="button">Passer</button>
+      <button id="stop" type="button">Terminer ici</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>Une chose à emporter</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">Revenir aux questions</button>
+    <button id="clear" type="button">Effacer mes mots</button>
+  </section>
+
+  <details>
+    <summary>Atelier ouvert · sources et téléchargements</summary>
+    <p>Cette invitation ouvre l’accès aux ressources publiques. Chaque fichier conserve sa licence et ses crédits propres.</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · sources publiques, spécifications et site</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · archive publique, sources et versions</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · atelier et archive hors ligne</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · atlas des cadres (en russe)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">Carte de soin personnelle (en russe)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">questionnaire facultatif de soin (en russe ; les données sont envoyées uniquement lors de l’envoi du formulaire)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">Couverture linguistique et état des relectures</a></li>
+    </ul>
+    <p>Notes de conception : synaura demande la permission avant d’approfondir. Syntaxium donne une fonction explicite à chaque signe. LinguaFUSION éprouve une phrase dans le contexte où elle sera dite. VereNITYA demande ce qui a été observé et ce qui reste une hypothèse.</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world. Une invitation indépendante, avec gratitude.</footer>
+</main>
+<script>
+const prompts = [
+  'Qu’est-ce qui rendrait la prochaine minute plus facile pour la personne devant l’écran ?',
+  'Quel petit détail donne à cet endroit un air accueillant ?',
+  'Quel choix devrait rester entre les mains de la personne qui arrive ?',
+  'Serait-il plus utile d’être écouté·e, de recevoir une suggestion ou de profiter d’un peu de silence ?',
+  'Quelle phrase dirais-tu vraiment à un ami ou une amie dans cette situation ?',
+  'Qu’as-tu observé, et qu’es-tu en train de supposer ?',
+  'Qu’est-ce qui mérite d’être gardé, même si tout le reste change ?',
+  'Que pourraient créer deux personnes ensemble, sans que l’une ou l’autre ait à le faire seule ?',
+  'Terre · Quel soutien concret donnerait un point d’appui à cette idée ?',
+  'Eau · Où serait-il utile de changer de rythme ?',
+  'Feu · Quelle toute petite expérience éveille encore ta curiosité ?',
+  'Air · Que pourrais-tu laisser de côté pour faire un peu plus de place ?',
+  'Éther · Si les limites habituelles s’effaçaient une minute, qu’aimerais-tu rendre possible pour quelqu’un ?'
+];
+const gifts = [
+  ['Un coquillage sur le rivage', 'Remplace « Raconte-nous tout » par « Qu’est-ce qui pourrait t’aider aujourd’hui ? ». Le cadeau, c’est un premier pas plus petit.'],
+  ['Un second reflet', 'Dis ta phrase à voix haute. Imagine ensuite que quelqu’un répond « pas aujourd’hui ». Est-ce que ta phrase fonctionne encore ?'],
+  ['Une étoile dans le verre', '∴ Trois points : une personne, ses mots, un prochain pas possible. Aucun ne doit se substituer aux autres.']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `onde ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'Rassembler le fil' : 'Onde suivante';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · Merci de t’être arrêté·e là où cela te semblait juste. Tes mots t’appartiennent.`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>

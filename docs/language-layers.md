@@ -126,7 +126,10 @@ records before the copy is treated as ready to publish.
 
 [`clear-water.html`](../clear-water.html) is the English source practice. A complete
 Spanish editorial edition is available at [`clear-water-es.html`](../clear-water-es.html).
-The Spanish page translates all thirteen prompts, controls, and the open-materials
-notes; it marks independent review as pending and identifies Russian-only linked
-materials. This does not make those destinations Spanish, and the practice is not
-a full Spanish translation of the wider SUTI.world site.
+French and Spanish editorial editions are available at [`clear-water-fr.html`](../clear-water-fr.html)
+and [`clear-water-es.html`](../clear-water-es.html). Each edition translates all
+thirteen prompts, controls, and open-material notes; each marks independent review
+as pending and identifies Russian-only linked materials. The pages link to each
+other and are embedded in the homepage single-file interface. This does not make
+those destinations French or Spanish, and the practice is not a full translation
+of the wider SUTI.world site.
