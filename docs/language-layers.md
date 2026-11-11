@@ -1,10 +1,12 @@
 # SUTI.world language layers
 
-## Three public entrances and the first reflection
+## 13 visitor-language entry previews
 
-All 13 layers now have independently selectable entry labels, action phrases, QR disclosure and reflection prompts. The council and companion links carry the chosen layer. Each of the 26 companion/council QR images carries the same locale and route as its text link. A notice in each layer identifies the Russian Google Form and the limited scope of the workshop translation. At 360 px, all 13 entrance sets and 26 opening reflections were checked in Chrome. Run tests/check-entry-layers.py with Playwright and Chromium from the repository root (CHROME_BIN optionally specifies a browser). The public form is a separate Russian Google Form. The remaining interface and vault retain the coverage below. The new texts are editorial drafts; Sanskrit, Latin and the authored Yazekh register have not received independent linguistic or author review.
+The website has static visitor-entry previews under `/entry/{locale}/` for all 13 language layers. The Pages workflow generates these routes from [`locales/entries/`](../locales/entries/); provenance and route hashes are recorded in [`locales/built/manifest.json`](../locales/built/manifest.json).
 
-## Current state
+The pages explain the public entry points, user choice, status boundaries, and next route. They are publicly accessible, `noindex` transcreation previews; publication does not mean the language, culture, accessibility, rights, product, or owner review is complete. The Yazekh page is an authorial experiment, not a historical reconstruction. Sanskrit and Latin require specialist review.
+
+## Current runtime state
 
 The file-level snapshot is maintained in
 [`audits/2026-11-11-public-localization-inventory.md`](audits/2026-11-11-public-localization-inventory.md).
@@ -20,23 +22,25 @@ The public entry page offers 13 language and authorial-language layers:
 | English (`en`) | English | Available | [en](https://suti.world/?lang=en) |
 | Spanish (`es`) | Spanish | Available | [es](https://suti.world/?lang=es) |
 | Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported | [pt-BR](https://suti.world/?lang=pt-BR) |
-| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/?lang=zh-Hans) |
-| Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/?lang=hi) |
-| French (`fr`) | Russian fallback for the homepage; French research brief linked separately | Page translation not reviewed | [fr](https://suti.world/?lang=fr) |
-| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/?lang=ar) |
-| Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/?lang=bn) |
-| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/?lang=eo) |
-| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/?lang=sa) |
-| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/?lang=la) |
-| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/?lang=yzh) |
+| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/entry/zh-hans/) |
+| Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/entry/hi/) |
+| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/entry/fr/) |
+| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/entry/ar/) |
+| Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/entry/bn/) |
+| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/entry/eo/) |
+| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
+| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
+| Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
 The Bengali care constellation is a separately linked editorial page; it does not change the Bengali Russian-fallback state of the home-page runtime. Its independent linguistic and cultural review remains pending. The Esperanto edition is also a separate editorial page; the Esperanto homepage layer remains Russian fallback pending full runtime translation and review. The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
 
 The selector exposes the intended language layer. It does not claim that all
-13 layers have complete translations. For a layer without reviewed runtime
-content, the page keeps the selected layer visible and displays a notice that
-the Russian source text is being shown. The page's `lang` attribute continues
-to describe the language actually rendered.
+13 layers have complete translations. For a layer without full runtime content,
+the page keeps the selection visible, labels the Russian fallback, and links to
+a static visitor-entry preview. The preview is publicly accessible but marked
+`noindex` while its editorial review remains pending. The app `lang` attribute continues
+to describe the language actually rendered. Russian is the default only when a
+visitor has not saved another locale or supplied an explicit language query.
 
 The matching SUTI.os language catalog is [`language-packs/manifest.json`](https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/manifest.json). It records all 13 layer identifiers, but only the Russian full vault and partial English, Spanish, and Brazilian Portuguese entry packs have downloadable files. The remaining nine layers have no SUTI.os archive. These boundaries are also summarized in [repository contours](repository-contours.v1.md).
 
