@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="description" content="Необязательный путеводитель SUTI о заботе, ясном общении и небольших шагах по твоему выбору.">
+  <link rel="canonical" href="https://suti.world/care-constellation-ru.html">
+  <title>Созвездие заботы · SUTI.world</title>
+  <style>
+    @font-face{font-family:Nunito;src:url("assets/fonts/NunitoSans-variable.ttf") format("truetype");font-weight:100 1000;font-display:swap}
+    @font-face{font-family:Manrope;src:url("assets/fonts/Manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap}
+    :root{color-scheme:light;--bg:#F4F0E8;--surface:#FCF8F2;--surface-2:#DDF2EF;--ink:#25342F;--muted:#52615A;--petrol:#365958;--teal:#57B8B0;--peach:#DE9A73;--gold:#D6AD58;--line:#D8D0C1;--focus:#365958;--shadow:#25342F12;--body:Manrope,system-ui,sans-serif;--display:Nunito,system-ui,sans-serif;font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.65}
+    html[data-theme="night"]{color-scheme:dark;--bg:#101A18;--surface:#17231F;--surface-2:#20332E;--ink:#F4F0E8;--muted:#C4C8BE;--petrol:#A8BBB1;--line:#405149;--focus:#A9DCD5;--shadow:#00000035}
+    html[data-theme="contrast"]{color-scheme:light;--bg:#fff;--surface:#fff;--surface-2:#f1f1f1;--ink:#111;--muted:#333;--petrol:#111;--teal:#006b65;--peach:#784019;--gold:#634700;--line:#555;--focus:#000;--shadow:transparent}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}a{color:var(--petrol);text-underline-offset:.18em}a:hover{text-decoration-thickness:2px}button{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.55rem .9rem;cursor:pointer}button[aria-pressed="true"]{border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}:focus-visible{outline:3px solid var(--focus);outline-offset:3px}.wrap{width:min(1120px,calc(100% - 36px));margin-inline:auto}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:10;background:var(--surface);padding:.6rem;border-radius:.4rem}.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font:700 1rem var(--display);letter-spacing:.02em}.brand img{width:34px;height:34px;object-fit:contain}.tools{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,6vw,5rem);align-items:center;padding:clamp(3rem,8vw,6.5rem) 0 3rem}.hero>*{min-width:0}.eyebrow{font:700 .78rem var(--display);letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}h1,h2,h3{font-family:var(--display);line-height:1.14;margin-top:0}h1{font-size:clamp(2.5rem,6vw,4.6rem);letter-spacing:-.035em;font-weight:760;color:var(--petrol);margin:.4rem 0 1rem}h2{font-size:clamp(1.65rem,3vw,2.2rem);font-weight:720}h3{font-size:1.25rem}.lead{font-size:clamp(1.08rem,1.8vw,1.3rem);max-width:56ch;color:var(--muted)}.primary{display:inline-flex;min-height:48px;align-items:center;padding:.7rem 1.15rem;border-radius:999px;background:var(--petrol);color:var(--bg);text-decoration:none;font-weight:700;margin-top:.7rem}.landscape{width:100%;max-width:100%;height:auto;display:block}.section{padding:3rem 0}.intro{max-width:68ch;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.4rem}.card{padding:1.3rem;border:1px solid var(--line);border-radius:22px;background:var(--surface);box-shadow:0 14px 32px var(--shadow)}.card p:last-child{margin-bottom:0}.symbol{font:700 1.8rem var(--display);color:var(--teal)}.cross{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto auto auto;gap:.8rem;max-width:760px;margin:2rem auto}.cross .card{text-align:center;box-shadow:none}.earth{grid-area:1/2}.water{grid-area:2/1}.life{grid-area:2/2;background:var(--surface-2)}.fire{grid-area:2/3}.air{grid-area:3/2}.age-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.age-grid article{padding:1.15rem;border-left:3px solid var(--teal);background:var(--surface);border-radius:0 16px 16px 0}.note{padding:1rem 1.2rem;border-left:3px solid var(--peach);background:var(--surface);color:var(--muted);max-width:80ch}.fine{font-size:.9rem;color:var(--muted)}.status{display:inline-block;padding:.2rem .55rem;border:1px solid var(--line);border-radius:99px;font:700 .72rem var(--display);letter-spacing:.05em}.footer{border-top:1px solid var(--line);padding:2rem 0 3rem;margin-top:2rem;display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}.footer p{margin:.25rem 0;color:var(--muted)}@media(max-width:760px){.hero{grid-template-columns:1fr}.hero>*{min-width:0}.landscape{max-width:580px;margin:auto}.cards{grid-template-columns:1fr}.age-grid{grid-template-columns:1fr}.cross{gap:.45rem}.card{padding:1rem}.top{align-items:flex-start;flex-direction:column}.tools{justify-content:flex-start}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}@media print{@page{size:A4;margin:15mm}body{background:#fff;color:#172b28}.top .tools{display:none}.wrap{width:100%}.hero{padding:1rem 0;grid-template-columns:1fr 180px}.primary{background:#fff;color:#111;border:1px solid #111}.card{box-shadow:none;break-inside:avoid}.section{padding:1.4rem 0}.footer{padding:1rem 0}}
+  </style>
+<link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1"></head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+  <header class="wrap top">
+    <a class="brand" href="index.html?lang=ru"><img src="assets/brand/suti-mark-main.png" alt=""><span>SUTI.world</span></a>
+    <div class="tools" role="group" aria-label="Настройки темы">
+      <button type="button" data-theme="day" aria-pressed="true">День</button>
+      <button type="button" data-theme="night" aria-pressed="false">Ночь</button>
+      <button type="button" data-theme="contrast" aria-pressed="false">Высокий контраст</button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <p class="fine"><a href="care-constellation.html" lang="en">English · исходная редакция</a> · <a href="care-constellation-fr.html" lang="fr">Français · traduction éditoriale · relecture indépendante en attente</a> · <a href="care-constellation-es.html" lang="es-419">Español · traducción editorial · revisión independiente pendiente</a> · <a href="care-constellation-pt.html" lang="pt-BR">Português brasileiro · tradução editorial · revisão independente pendente</a> · <a href="care-constellation-ru.html" lang="ru">Русский · редакция автора</a></p>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">SUTI · созвездие заботы · русская редакция</p>
+        <h1 id="page-title">Больше пространства для выбора</h1>
+        <p class="lead">Бережный путеводитель по заботе и ясному общению — с небольшим шагом, который выбираешь ты. Читай, пробуй, меняй, делай паузу или уходи.</p>
+        <a class="primary" href="index.html?lang=ru#care">К разделу о заботе</a>
+      </div>
+      <svg class="landscape" viewBox="0 0 620 440" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
+        <title id="art-title">Сад с открытыми тропами</title><desc id="art-desc">Спокойный воображаемый пейзаж: холмы слоями, бирюзовая тропа, маленькое гнездо и открытое небо.</desc>
+        <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#DDF2EF"/><stop offset="1" stop-color="#FCF8F2"/></linearGradient><linearGradient id="hill"><stop stop-color="#B5D1A1"/><stop offset="1" stop-color="#6FAE9A"/></linearGradient></defs>
+        <rect x="8" y="8" width="604" height="424" rx="42" fill="url(#sky)"/><circle cx="492" cy="100" r="42" fill="#D6AD58" opacity=".72"/><path d="M10 270Q145 172 286 269t326-6v169H10Z" fill="#C9DFB2"/><path d="M10 322q145-106 283-11t319-13v134H10Z" fill="url(#hill)"/><path d="M295 438q-6-68 50-96t63-77" fill="none" stroke="#DDF2EF" stroke-width="25" stroke-linecap="round"/><path d="M295 438q-6-68 50-96t63-77" fill="none" stroke="#57B8B0" stroke-width="9" stroke-linecap="round"/><g fill="#FCF8F2" stroke="#365958" stroke-width="4"><path d="M125 298q35-46 70 0-35 24-70 0Z"/><circle cx="146" cy="281" r="6"/><circle cx="168" cy="278" r="7"/></g><g fill="#365958" opacity=".75"><path d="M100 102q-18-24-38 0 19-8 38 9 21-19 38-7-19-27-38-2Z"/><path d="M222 141q-13-17-27 0 13-6 27 7 14-13 27-5-13-19-27-2Z"/></g></svg>
+    </section>
+
+    <section class="section" aria-labelledby="contours-title">
+      <p class="eyebrow">Три разные функции</p><h2 id="contours-title">Поддержка, проверка и передача по твоему выбору</h2>
+      <p class="intro">Эти названия описывают предлагаемые элементы концепции. Они не означают, что работает служба поддержки, активен бот или подключена сеть.</p>
+      <div class="cards">
+        <article class="card"><div class="symbol" aria-hidden="true">✧</div><h3>.angels · предложить заботу</h3><p>Сначала спроси. Предложи конкретную помощь, обозначь её границы и оставь человеку возможность легко отказаться.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">◇</div><h3>.demons · заметить давление</h3><p>Замечай формулировки, которые могут давить или принуждать. Сигнал предлагает пересмотреть сообщение, но не ставит человеку ярлык и не доказывает его намерения.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">⌁</div><h3>.hermes · подготовить передачу</h3><p>До решения о передаче покажи выбранного получателя, цель, точный текст, включённые данные, канал и срок их хранения.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="elements-title">
+      <p class="eyebrow">Необязательная творческая карта</p><h2 id="elements-title">Пять вопросов · порядок выбираешь ты</h2>
+      <p class="intro">Это творческие образы, а не универсальная модель, диагноз или утверждение об энергии.</p>
+      <div class="cross">
+        <article class="card earth"><div class="symbol" aria-hidden="true">◌</div><h3>Земля</h3><p>Что можно назвать конкретно?</p></article>
+        <article class="card water"><div class="symbol" aria-hidden="true">≈</div><h3>Вода</h3><p>Что можно изменить?</p></article>
+        <article class="card life"><div class="symbol" aria-hidden="true">✿</div><h3>Жизнь</h3><p>Что для тебя важно?</p></article>
+        <article class="card fire"><div class="symbol" aria-hidden="true">✧</div><h3>Огонь</h3><p>Какой небольшой шаг ты выбираешь?</p></article>
+        <article class="card air"><div class="symbol" aria-hidden="true">⌁</div><h3>Воздух / дыхание</h3><p>Какой темп тебе удобен? Сосредоточиться на дыхании можно по желанию.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ages-title">
+      <p class="eyebrow">Выбери формат, а не ярлык</p><h2 id="ages-title">Варианты для разных возрастов и потребностей доступности</h2>
+      <div class="age-grid">
+        <article><h3>Семьи и близкие, которые помогают</h3><p>Используйте практическую карту для повседневной поддержки. Не нужно сообщать сведения о беременности или здоровье.</p></article>
+        <article><h3>От 0 до 5 лет</h3><p>Рассматривать картинку или читать историю вместе со взрослым, которому ребёнок доверяет. Без детских аккаунтов, личной переписки и прямых диалогов с ИИ.</p></article>
+        <article><h3>От 6 до 11 лет</h3><p>Попробовать короткое совместное занятие, которое предварительно проверил взрослый. Без публичных баллов и раскрытия личных сведений.</p></article>
+        <article><h3>От 12 до 17 лет · <span class="status">ПАУЗА</span></h3><p>Для сервиса, предназначенного подросткам, до запуска нужны отдельные проверки безопасности, согласия, модерации, правовых вопросов и работы с данными.</p></article>
+        <article><h3>Взрослые</h3><p>Выбери тему о языке, учёбе, работе, отношениях или общем пространстве. Участие добровольное.</p></article>
+        <article><h3>Старшие и все, кому это удобно</h3><p>Выбери крупный шрифт, чтение вслух, бумажный формат, более медленный темп или помощь человека, которому доверяешь. Не будем делать предположений о возможностях.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="boundaries-title">
+      <p class="eyebrow">Ясные границы</p><h2 id="boundaries-title">Это приглашение к размышлению, а не служба заботы</h2>
+      <div class="note"><p>Эта концепция не ставит диагнозов, не назначает лечение, не отслеживает сообщения и не связывается с помощниками. Если возникают вопросы о здоровье, сексуальном здоровье, беременности, насилии или кризисе, она может помочь сформулировать вопрос для выбранного человеком квалифицированного местного специалиста. Она не заменяет профессиональную помощь или местные экстренные службы.</p><p class="fine">Эта страница не запрашивает и не сохраняет личные данные. Функция `.hermes` не подключена; сообщения не отправляются.</p></div>
+      <p class="fine" style="margin-top:1.2rem"><span class="status">ЯЗЫКОВОЙ СТАТУС</span> Русская редакция подготовлена к сверке с автором. Переводы на другие языки не представлены как утверждённые.</p>
+    </section>
+  </main>
+  <footer class="wrap footer"><div><p><strong>SUTI.world</strong> · язык того, что важно</p><p class="fine">Локальная концепция · исполнение `UNKNOWN` · работающая служба не заявляется.</p></div><div><a href="index.html?lang=ru#care">Раздел о заботе</a> · <a href="index.html?lang=ru">Главная SUTI.world</a></div></footer>
+  <script>
+    document.querySelectorAll('[data-theme]').forEach(button=>button.addEventListener('click',()=>{
+      document.documentElement.dataset.theme=button.dataset.theme;
+      document.querySelectorAll('[data-theme]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    }));
+  </script>
+</body>
+</html>

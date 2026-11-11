@@ -82,6 +82,7 @@ The care constellation is a proposed self-guided concept, not a connected servic
 | Locale | Page | State | Review boundary |
 |---|---|---|---|
 | English (`en`) | [`care-constellation.html`](../care-constellation.html) | Source preview | English source; live functionality is not implied. |
+| Russian (`ru`) | [`care-constellation-ru.html`](../care-constellation-ru.html) | Editorial translation | Author comparison and final review pending. |
 | French (`fr`) | [`care-constellation-fr.html`](../care-constellation-fr.html) | Editorial translation | Independent linguistic and cultural review pending. |
 | Latin American Spanish (`es-419`) | [`care-constellation-es.html`](../care-constellation-es.html) | Editorial translation | Independent linguistic and cultural review pending. |
 | Brazilian Portuguese (`pt-BR`) | [`care-constellation-pt.html`](../care-constellation-pt.html) | Editorial translation | Independent linguistic and cultural review pending. |

@@ -40,10 +40,11 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `modules.html` | Mixed RU/EN | RU-first catalog with selected English labels | Two translation markers do not establish a translated catalog. |
 | `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
 | `care-atlas.html` | Russian | RU | Single-language page. |
-| `care-constellation.html` | English | EN | Source edition; links to French, Latin American Spanish, and Brazilian Portuguese editorial editions. |
+| `care-constellation.html` | English | EN | Source edition; links to French, Latin American Spanish, Brazilian Portuguese, and Russian editorial editions. |
 | `care-constellation-fr.html` | French (`fr`) | FR | Complete French editorial edition of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-constellation-es.html` | Latin American Spanish (`es-419`) | ES-419 | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-constellation-pt.html` | Brazilian Portuguese (`pt-BR`) | PT-BR | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; included in the unified HTML route data and cross-linked; independent review pending; no live service is claimed. |
+| `care-constellation-ru.html` | Russian (`ru`) | RU | Complete Russian editorial edition of the care concept, age routes, boundaries, controls, and image description; author comparison pending; no live service is claimed. |
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels.html` | Russian | RU | Single-language page. |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
