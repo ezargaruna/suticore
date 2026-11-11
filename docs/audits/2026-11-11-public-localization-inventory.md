@@ -168,3 +168,17 @@ GitHub Pages with `font/ttf` and `text/plain` content types and permissive CORS.
 Independent linguistic and cultural review remains pending; this check does not
 certify visual rendering, keyboard or screen-reader behavior, nor full Bengali
 homepage coverage. Bengali remains a Russian fallback in the homepage runtime.
+
+## Live recheck after Esperanto care-route integration :: 2026-11-11
+
+PR #53 merged, and the main Pages workflow run
+[`43111784776`](https://github.com/ezargaruna/suticore/actions/runs/43111784776)
+completed successfully. The production root and direct path
+`https://suti.world/care-constellation-eo.html` returned HTTP 200. The
+production route map contains all ten care constellation editions; the
+Esperanto document is embedded byte-for-byte with `lang="eo"`. The public
+page visibly identifies itself as an editorial translation and says that
+independent linguistic and cultural review is still pending. This check does
+not certify native-language quality, keyboard/screen-reader behavior, or full
+Esperanto homepage runtime coverage; the homepage remains on its Russian
+fallback for Esperanto.
