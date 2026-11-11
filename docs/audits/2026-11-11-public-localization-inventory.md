@@ -183,3 +183,16 @@ independent linguistic and cultural review is still pending. This check does
 not certify native-language quality, keyboard/screen-reader behavior, or full
 Esperanto homepage runtime coverage; the homepage remains on its Russian
 fallback for Esperanto.
+
+## Live recheck after Sanskrit care-route integration :: 2026-11-11
+
+PR #55 merged, and the main Pages workflow run
+[`43112279633`](https://github.com/ezargaruna/suticore/actions/runs/43112279633)
+completed successfully. The production root and direct path
+`https://suti.world/care-constellation-sa.html` returned HTTP 200. The
+published route map contains eleven care constellation editions; the Sanskrit
+page is embedded byte-for-byte with `lang="sa"`. Noto Sans Devanagari and its
+OFL text both returned HTTP 200 from GitHub Pages with `font/woff2` and
+`text/plain` content types. The page remains an editorial draft pending
+qualified linguistic and cultural review. This is not a Sanskrit homepage
+runtime release or an accessibility certification.
