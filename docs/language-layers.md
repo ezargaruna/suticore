@@ -146,8 +146,9 @@ verified classical text.
 
 [`care-constellation.html`](../care-constellation.html) is the English source page.
 [`care-constellation-fr.html`](../care-constellation-fr.html) is its French editorial
-edition. It translates the page content, theme controls, age routes, SVG text, and
-care boundaries; it retains the explicit `HOLD` equivalent for teen-facing service
+edition. Both pages are available as direct routes and embedded in the unified
+HTML router. The French edition translates page content, theme controls, age routes,
+SVG text, and care boundaries; it retains the explicit `HOLD` equivalent for teen-facing service
 and does not claim that any care service or hand-off is active. Independent French
 review is pending. The page contains links to Russian-language destinations, which
 remain identified before navigation.
