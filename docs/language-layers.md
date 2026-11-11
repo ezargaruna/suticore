@@ -75,6 +75,18 @@ content language, and the Arabic link sets RTL direction.
 
 A linked editorial draft is not a reviewed edition and does not mean the homepage itself is localized. The Russian edition awaits author comparison; Spanish, Brazilian Portuguese, French, Simplified Chinese, Hindi, Arabic, Bengali, and Esperanto await independent language review; Sanskrit and Latin await qualified language review. Yazekh remains `HOLD` until the author confirms its grammar and vocabulary. These statuses describe review state, not the value of a language.
 
+## Care constellation · page-level editions
+
+The care constellation is a proposed self-guided concept, not a connected service. Its page editions describe `.angels`, `.demons`, `.hermes`, optional creative prompts, age/access routes, privacy limits, and review status. Each page keeps the teen service marked pending and does not promise diagnosis, staffed support, or message hand-off.
+
+| Locale | Page | State | Review boundary |
+|---|---|---|---|
+| English (`en`) | [`care-constellation.html`](../care-constellation.html) | Source preview | English source; live functionality is not implied. |
+| French (`fr`) | [`care-constellation-fr.html`](../care-constellation-fr.html) | Editorial translation | Independent linguistic and cultural review pending. |
+| Latin American Spanish (`es-419`) | [`care-constellation-es.html`](../care-constellation-es.html) | Editorial translation | Independent linguistic and cultural review pending. |
+
+The pages are cross-linked and embedded in the unified single-file interface. Per-page inclusion does not localize the homepage, Google Form, or the other SUTI destinations. Each translation retains its own canonical route and `lang` metadata.
+
 ## Adding a reviewed translation
 
 1. Translate all user-facing strings, accessible names, page metadata, and

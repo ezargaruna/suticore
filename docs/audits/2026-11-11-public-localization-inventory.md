@@ -42,6 +42,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `care-atlas.html` | Russian | RU | Single-language page. |
 | `care-constellation.html` | English | EN | Source edition; links to the French editorial edition. |
 | `care-constellation-fr.html` | French (`fr`) | FR | Complete French editorial edition of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
+| `care-constellation-es.html` | Latin American Spanish (`es-419`) | ES-419 | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; cross-linked and embedded in the unified HTML route data; independent review pending; no live service is claimed. |
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels.html` | Russian | RU | Single-language page. |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
@@ -118,8 +119,8 @@ full 13-language localization :: INCOMPLETE
 native-speaker / cultural review :: NOT RECORDED for the new drafts
 rights clearance :: per artifact; UNKNOWN where no file-level record exists
 
-## Recheck after French care route integration :: 2026-11-11
+## Live recheck after care-route integration :: 2026-11-11
 
-The branch preview `https://codex-nitya-engine-interface.suti.pages.dev/care-constellation-fr.html` returned HTTP 200 and a 1,045,625-byte unified HTML shell. Its embedded `care-constellation-fr.html` entry decodes to a French document with `lang="fr"` and the title `Constellation du soin · SUTI.world`. The route is therefore present in the preview payload; this HTTP check does not replace visual, keyboard, or screen-reader review.
+The production route `https://suti.world/care-constellation-fr.html` returned HTTP 200 after PRs #37 and #38. The published shell contains 28 embedded pages, including the French care edition with `lang="fr"`. The page dispatcher recognizes a direct path and opens the matching embedded document; closing a directly opened document returns to `/`. A node-level behavior check covered the French route; keyboard and screen-reader review remain outstanding.
 
-At 21:35 UTC, `https://suti.world/care-constellation-fr.html` still returned the older 377,331-byte shell without the French route key. Production had not yet received this revision. The preview branch has since been merged locally with `origin/main` at `73dd97d` to preserve the contrast and Synaura readability updates; the resulting revision is `d778d39`. The Cloudflare Workers build for that revision was in progress at the time of this note. Deployment status and the production route must be rechecked after that build and any approved merge/deploy step.
+The Spanish Latin American care edition (`care-constellation-es.html`, `lang="es-419"`) is now included in the unified router and Pages copy list. It remains an editorial draft pending independent language and cultural review. The Pages workflow includes this Spanish route. Its production availability must be checked after merge and deployment; source inclusion alone does not prove publication.
