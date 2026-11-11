@@ -14,7 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 ARCHIVE = ROOT / "downloads" / "Verenium.zip"
 ALIAS = ROOT / "downloads" / "Virenium.zip"
 ALLOWLIST = {
+    "nitya.html": "nitya.html",
     "nitya-todeus.html": "nitya-todeus.html",
+    "verenium.html": "verenium.html",
+    "virenium.html": "virenium.html",
+    "care-map.html": "care-map.html",
+    "care-atlas.html": "care-atlas.html",
     "modules/verenium/README.md": "modules/verenium/README.md",
     "modules/verenium/manifest.json": "modules/verenium/manifest.json",
     "modules/verenium/build_core_lite.py": "modules/verenium/build_core_lite.py",
