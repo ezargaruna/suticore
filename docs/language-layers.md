@@ -126,14 +126,15 @@ records before the copy is treated as ready to publish.
 
 [`clear-water.html`](../clear-water.html) is the English source practice. A complete
 Spanish editorial edition is available at [`clear-water-es.html`](../clear-water-es.html).
-Russian, French, Spanish, Brazilian Portuguese, Simplified Chinese, Hindi, and Bengali editions are available at
+Russian, French, Spanish, Brazilian Portuguese, Simplified Chinese, Hindi, Bengali, and Esperanto editions are available at
 [`clear-water-ru.html`](../clear-water-ru.html),
 [`clear-water-fr.html`](../clear-water-fr.html), [`clear-water-es.html`](../clear-water-es.html),
-[`clear-water-pt.html`](../clear-water-pt.html), [`clear-water-zh-Hans.html`](../clear-water-zh-Hans.html), [`clear-water-hi.html`](../clear-water-hi.html), and [`clear-water-bn.html`](../clear-water-bn.html). Each edition translates all
+[`clear-water-pt.html`](../clear-water-pt.html), [`clear-water-zh-Hans.html`](../clear-water-zh-Hans.html), [`clear-water-hi.html`](../clear-water-hi.html), [`clear-water-bn.html`](../clear-water-bn.html), and [`clear-water-eo.html`](../clear-water-eo.html). Each edition translates all
 thirteen prompts, controls, and open-material notes; each marks independent review
 as pending (Russian author comparison remains pending) and identifies Russian-only
 linked materials. The pages link to each other and are embedded in the homepage
 single-file interface. This does not translate those destinations, and the practice
 is not a full translation of the wider SUTI.world site.
 The Chinese, Hindi, and Bengali editions are editorial drafts pending independent
-linguistic and cultural review.
+linguistic and cultural review. The Esperanto edition is an editorial draft pending
+independent linguistic review.

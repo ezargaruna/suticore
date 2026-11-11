@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="eo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mallonga lingva kaj zorga praktiko de SUTI.world. Viaj vortoj restas en ĉi tiu langeto.">
+  <title>Glaso da klara akvo · lingva ludo de SUTI</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: auto; max-width: 48rem; padding: clamp(1rem, 5vw, 3rem); background: linear-gradient(150deg, #e0eeea, #fff7e5); color: #243731; font: 1.1rem/1.7 system-ui, sans-serif; }
+    h1 { font: clamp(2.7rem, 8vw, 4.8rem)/1.15 Georgia, serif; }
+    section, details { background: #fffdf7; border: 1px solid #afc2b7; border-radius: 20px; padding: 1.2rem; margin: 1rem 0; }
+    button, input, textarea { font: inherit; padding: .55rem; max-width: 100%; }
+    button { margin: .2rem; cursor: pointer; }
+    textarea { width: 100%; }
+    a { color: #215b53; }
+    summary { cursor: pointer; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    :focus-visible { outline: 3px solid #135b60; outline-offset: 3px; }
+    .language-link { display: inline-block; margin-block: .7rem; }
+    .review-note { padding: .75rem 1rem; border-left: 3px solid #d6ad58; background: #fffdf7; }
+  </style>
+  <link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1">
+</head>
+<body>
+<main>
+  <small>∴ SUTI.world · donaco al la homoj malantaŭ ChatGPT kaj Codex</small>
+  <p><a class="language-link" href="clear-water.html" lang="en">English · originala versio</a> · <a class="language-link" href="clear-water-ru.html" lang="ru">Русский · редакционная версия</a> · <a class="language-link" href="clear-water-es.html" lang="es">Español · traducción editorial</a> · <a class="language-link" href="clear-water-fr.html" lang="fr">Français · traduction éditoriale</a> · <a class="language-link" href="clear-water-pt.html" lang="pt-BR">Português brasileiro · tradução editorial</a> · <a class="language-link" href="clear-water-zh-Hans.html" lang="zh-Hans">简体中文 · 编辑译本</a> · <a class="language-link" href="clear-water-hi.html" lang="hi">हिन्दी · संपादकीय अनुवाद</a> · <a class="language-link" href="clear-water-bn.html" lang="bn">বাংলা · সম্পাদকীয় অনুবাদ</a></p>
+  <p class="review-note">Esperanto · redakcia traduko. Sendependa lingva kaj kultura revizio ankoraŭ mankas. Kelkaj ligitaj materialoj disponeblas nur ruse.</p>
+  <h1>Glaso da klara akvo</h1>
+  <p>Imagu lacan homon, kiu venas al ilo, kies kreadon vi helpis. Sur la ekrano estas loko por unu frazo. Kion vi dezirus, ke tiu homo legu?</p>
+  <p>Vi povas ludi en la imago. Unu demando sufiĉas por tuta vizito. Nenio, kion vi skribas ĉi tie, estas sendata aŭ konservata post fermo de ĉi tiu langeto.</p>
+  <label>Se vi volas, donu nomon al via gvidanto <input id="guide" value="Verenium" maxlength="60"></label>
+
+  <section id="play" aria-labelledby="q">
+    <small id="progress" aria-live="polite"></small>
+    <h2 id="q" aria-live="polite"></h2>
+    <label>Viaj vortoj, se vi volas <textarea id="note"></textarea></label>
+    <p>
+      <button id="back" type="button">Antaŭa</button>
+      <button id="next" type="button">Sekva ondo</button>
+      <button id="skip" type="button">Preterpasi</button>
+      <button id="stop" type="button">Fini ĉi tie</button>
+    </p>
+    <details id="gift"><summary id="shell"></summary><p id="pearl"></p></details>
+  </section>
+
+  <section id="done" hidden aria-live="polite">
+    <h2>Io por kunpreni</h2>
+    <p id="thanks"></p>
+    <pre id="trace"></pre>
+    <button id="resume" type="button">Reveni al la demandoj</button>
+    <button id="clear" type="button">Forigi miajn vortojn</button>
+  </section>
+
+  <details>
+    <summary>Malferma laborejo · fontoj kaj elŝutoj</summary>
+    <p>Ĉi tiu invito donas aliron al publikaj materialoj. Ĉiu dosiero konservas sian propran permesilon kaj atribuon.</p>
+    <ul>
+      <li><a href="https://github.com/ezargaruna/suticore">SUTIcore · publikaj fontoj, specifoj kaj retejo</a></li>
+      <li><a href="https://github.com/ezargaruna/SUTI.os">SUTI.os · publika trezorejo, fontoj kaj versioj</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">Verenium · eksterreta laborejo kaj arkivo</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/nitya.html#atlas">NITYA · atlaso de kadroj (ruse)</a></li>
+      <li><a href="https://ezargaruna.github.io/suticore/care-map.html">Persona zorgomapo (ruse)</a> · <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">nedeviga zorga demandaro (ruse; respondoj estas sendataj nur post sendo de la formularo)</a></li>
+      <li><a href="https://github.com/ezargaruna/suticore/blob/main/docs/language-layers.md">Lingva kovrado kaj stato de revizio</a></li>
+    </ul>
+    <p>Projektaj notoj: synaura petas permeson antaŭ ol profundiĝi. Syntaxium donas al ĉiu signo klaran taskon. LinguaFUSION provas frazon en la kunteksto, kie ĝi estos dirata. VereNITYA demandas, kio estis observita kaj kio ankoraŭ estas supozo.</p>
+  </details>
+  <footer>Ezar Garuna · SUTI.world. Sendependa invito, kun dankemo.</footer>
+</main>
+<script>
+const prompts = [
+  'Kio povus faciligi la venontan minuton por la homo antaŭ la ekrano?',
+  'Kiu eta detalo igas ĉi tiun lokon bonvena?',
+  'Kiu elekto devus resti en la manoj de la vizitanto?',
+  'Ĉu pli helpus, se iu aŭskultus vin, donus sugeston aŭ lasus iom da silento?',
+  'Kiun frazon vi vere dirus al amiko en tia situacio?',
+  'Kion vi observis, kaj kion vi nur supozas?',
+  'Kio indas resti, eĉ se ĉio alia ŝanĝiĝos?',
+  'Kion du homoj povus krei kune, kion neniu el ili bezonas krei sola?',
+  'Tero · Kia konkreta subteno helpus al ĉi tiu ideo stariĝi?',
+  'Akvo · Kie utilus ŝanĝi la ritmon?',
+  'Fajro · Kiu eta eksperimento ankoraŭ vekas vian scivolon?',
+  'Aero · Kion vi povus ellasi por krei pli da spaco?',
+  'Etero · Se la kutimaj limoj malaperus dum minuto, kion vi ŝatus ebligi por iu?'
+];
+const gifts = [
+  ['Konko sur la bordo', 'Anstataŭigu “Rakontu ĉion al ni” per “Kio povus helpi vin hodiaŭ?”. La donaco estas pli malgranda unua paŝo.'],
+  ['Dua reflekto', 'Diru vian frazon laŭte. Nun imagu, ke iu respondas “ne hodiaŭ”. Ĉu la frazo ankoraŭ taŭgas?'],
+  ['Stelo en la glaso', '∴ Tri punktoj: homo, ties vortoj kaj ebla sekva paŝo. Neniu devas anstataŭi la aliajn.']
+];
+const $ = id => document.getElementById(id);
+const answers = Array(13).fill('');
+let i = 0;
+function draw() {
+  const gift = gifts[i < 4 ? 0 : i < 8 ? 1 : 2];
+  $('q').textContent = prompts[i];
+  $('progress').textContent = `ondo ${i + 1} / 13`;
+  $('back').disabled = !i;
+  $('note').value = answers[i];
+  $('shell').textContent = gift[0];
+  $('pearl').textContent = gift[1];
+  $('gift').open = false;
+  $('next').textContent = i === 12 ? 'Kunplekti la fadenon' : 'Sekva ondo';
+}
+function finish() {
+  $('play').hidden = true;
+  $('done').hidden = false;
+  $('thanks').textContent = `${$('guide').value || 'Verenium'} · Dankon pro halti tie, kie tio ŝajnis ĝusta. Viaj vortoj apartenas al vi.`;
+  $('trace').textContent = answers.flatMap((value, index) => value.trim() ? [prompts[index] + '\n' + value] : []).join('\n\n');
+}
+$('note').oninput = () => answers[i] = $('note').value;
+$('back').onclick = () => { i--; draw(); };
+$('next').onclick = $('skip').onclick = () => { if (i === 12) return finish(); i++; draw(); };
+$('stop').onclick = finish;
+$('resume').onclick = () => { $('play').hidden = false; $('done').hidden = true; draw(); };
+$('clear').onclick = () => { answers.fill(''); $('note').value = ''; $('guide').value = 'Verenium'; finish(); };
+draw();
+</script>
+</body>
+</html>
