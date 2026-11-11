@@ -91,8 +91,13 @@ The care constellation is a proposed self-guided concept, not a connected servic
 | Simplified Chinese (`zh-Hans`) | [`care-constellation-zh-Hans.html`](../care-constellation-zh-Hans.html) | Editorial translation | Independent linguistic and cultural review pending. |
 | Hindi (`hi`) | [`care-constellation-hi.html`](../care-constellation-hi.html) | Editorial translation | Independent linguistic and cultural review pending; Devanagari font file and OFL are shipped locally. |
 | Arabic (`ar`, RTL) | [`care-constellation-ar.html`](../care-constellation-ar.html) | Editorial translation | Independent linguistic and cultural review pending; RTL layout, Arabic font file, and OFL are shipped. |
+| Bengali (`bn`) | [`care-constellation-bn.html`](../care-constellation-bn.html) | Editorial translation | Independent linguistic and cultural review pending; Bengali font file and OFL are shipped locally. |
+| Esperanto (`eo`) | [`care-constellation-eo.html`](../care-constellation-eo.html) | Editorial translation | Independent linguistic review pending. |
+| Sanskrit (`sa`) | [`care-constellation-sa.html`](../care-constellation-sa.html) | Editorial draft | Qualified Sanskrit review pending; Devanagari font file and OFL are shipped locally. |
+| Latin (`la`) | [`care-constellation-la.html`](../care-constellation-la.html) | Editorial draft | Qualified Latin review pending; this is not represented as verified classical Latin. |
+| Yazekh (`yzh`) | — | `HOLD` · no care-page edition | Author-confirmed grammar and vocabulary are needed before transcreation; see the [Yazekh review record](../docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md). |
 
-The pages are cross-linked and embedded in the unified single-file interface. Per-page inclusion does not localize the homepage, Google Form, or the other SUTI destinations. Each translation retains its own canonical route and `lang` metadata.
+The twelve written-language editions are cross-linked and embedded byte-for-byte in the unified single-file interface. Yazekh has no fabricated page or route. Per-page inclusion does not localize the homepage, Google Form, or other SUTI destinations. Each published edition retains its own canonical route and `lang` metadata.
 
 ## Adding a reviewed translation
 
