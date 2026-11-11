@@ -60,7 +60,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | English (`en`) | Source edition | Available |
 | Russian (`ru`) | `HOLD` — full edition not started | Available |
 | Spanish (`es`) | Editorial Spanish translation at `docs/research/SUTI_INVESTIGACION_COLABORACION.es.md`; independent review pending | Available |
-| Brazilian Portuguese (`pt-BR`) | `HOLD` — full edition not started | Available |
+| Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
 | Simplified Chinese (`zh-Hans`) | `HOLD` — not started | Russian fallback |
 | Hindi (`hi`) | `HOLD` — not started | Russian fallback |
 | French (`fr`) | `HOLD` — not started | Russian fallback |
@@ -71,7 +71,7 @@ runtime interfaces. Those summaries are not translations of the full brief.
 | Latin (`la`) | `HOLD` — not started | Russian fallback |
 | Yazekh (`yzh`) | `HOLD` — authorial transcreation not started | Russian fallback |
 
-`HOLD` means no full-language edition is being represented as available. The Spanish brief is a draft translation, not a reviewed edition. This is not a negative judgment about the language or a translation.
+`HOLD` means no full-language edition is being represented as available. The Spanish and Brazilian Portuguese briefs are draft translations, not reviewed editions. This is not a negative judgment about the language or a translation.
 
 ## Adding a reviewed translation
 

@@ -41,7 +41,7 @@ jobs:
           cp index.html synaura.html synaura-modules.html openai-crystal.html audits.html audit-crystal.zip clear-water.html modules.html nitya.html nitya-en.html nitya-todeus.html care-map.html care-atlas.html care-constellation.html care-app-audit.html suti-angels.html virenium.html verenium.html _site/
           mkdir -p _site/docs/launch _site/docs/research
           cp docs/launch/VERENIUM_SOCIAL_CHANNEL_KIT.v1.md docs/launch/SYNAURA_STYLE_ANNOUNCEMENT.v1.md _site/docs/launch/
-          cp docs/research/SUTI_RESEARCH_COLLABORATION.md docs/research/SUTI_INVESTIGACION_COLABORACION.es.md _site/docs/research/
+          cp docs/research/SUTI_RESEARCH_COLLABORATION.md docs/research/SUTI_INVESTIGACION_COLABORACION.es.md docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md _site/docs/research/
           cp -R assets/care _site/assets/
           mkdir -p _site/assets/suti-angels
           cp assets/suti-angels/suti-angels-cycle-2026-11-11.png _site/assets/suti-angels/
