@@ -1,0 +1,126 @@
+{
+  "artifact": "SUTI.angels public welcome and practice",
+  "source_revision": "e341955cc6c44fc1c2d341dab823f06c198e84c0",
+  "source_path": "suti-angels.html",
+  "source_sha256": "cf24f91109033d7b077ff8c8ef65fbb01e69f27aa2b5c1e63819056c608b28ba",
+  "editorial_text_path": "locales/suti-angels/copy.json",
+  "editorial_text_sha256": "7875a83abb75f222d3ddfc77760f94c5975e721b73f7fa343c93566e64045d36",
+  "poster": {
+    "path": "assets/suti-angels/suti-angels-cycle-2026-11-11.png",
+    "language": "ru",
+    "first_public_source_commit": "0f44bf9",
+    "sha256": "a08b055c3afd04e12025910397da500a353d9bf457197f6d4cf7e59ed1727a33",
+    "rights": "Existing public display reference. Separate redistribution license unverified."
+  },
+  "rights": {
+    "scope": "Editorial derivatives of the existing public SUTI.angels page only.",
+    "repository_license": "LICENSE (MIT for repository software and associated documentation within its scope).",
+    "excluded": "No new license for the poster, brand, external form or channel. No private sources used."
+  },
+  "routes": {
+    "ru": {
+      "path": "suti-angels.html",
+      "rendered_language": "ru",
+      "direction": "ltr",
+      "status": "source-edition",
+      "independent_language_review": "source-edition",
+      "sha256": "2d0d692e9e2a84db932eb3b5fe02c583682cf0e49975748d61a5c3f811b628e9"
+    },
+    "en": {
+      "path": "suti-angels-en.html",
+      "rendered_language": "en",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "3dc4be81b8bb290a36521c91c1b0e9ff9ad7cde16e2e7c50250284a346307236"
+    },
+    "es": {
+      "path": "suti-angels-es.html",
+      "rendered_language": "es-419",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "79957d48ee961945219ecfa40c0a2a01bb3fb4b22b486577754c4ed584ef2d85"
+    },
+    "pt-BR": {
+      "path": "suti-angels-pt.html",
+      "rendered_language": "pt-BR",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "f49ae9b7c79879fefc44a52cd8268c06d834a8b23548a931bd18bf6828127b67"
+    },
+    "fr": {
+      "path": "suti-angels-fr.html",
+      "rendered_language": "fr",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "385bc280f38fa446e87a94358abb1ce33d72616fc49962a316977e25cdc61eaa"
+    },
+    "zh-Hans": {
+      "path": "suti-angels-zh-Hans.html",
+      "rendered_language": "zh-Hans",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "9831b3d9d62738b7df2017639112d4c7e3000027e15149ca70dcd3f8af42a1d6"
+    },
+    "hi": {
+      "path": "suti-angels-hi.html",
+      "rendered_language": "hi",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "958c3cf124ef79b1eb22d7a38225445809a5d49b0a0d60748d2cc1322dbad2aa"
+    },
+    "ar": {
+      "path": "suti-angels-ar.html",
+      "rendered_language": "ar",
+      "direction": "rtl",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "ac3fa750d245848ad911091b7c371e2b7c34a3c6d399eb76128d1a1584519bda"
+    },
+    "bn": {
+      "path": "suti-angels-bn.html",
+      "rendered_language": "bn",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "d856833566879556e1edb36caa87919ca18d1320d410448642a933a43f7ddad6"
+    },
+    "eo": {
+      "path": "suti-angels-eo.html",
+      "rendered_language": "eo",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "native-review-pending",
+      "sha256": "56464730ab6e468dcc7237bb18b28953a77ad98f5c74f5db4261a3242baee1ae"
+    },
+    "sa": {
+      "path": "suti-angels-sa.html",
+      "rendered_language": "sa",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "qualified-review-pending",
+      "sha256": "f87ea0dae6561a62720413ea4bc3552b240d3113dc88df4cd1e5964c4be67995"
+    },
+    "la": {
+      "path": "suti-angels-la.html",
+      "rendered_language": "la",
+      "direction": "ltr",
+      "status": "editorial-draft",
+      "independent_language_review": "qualified-review-pending",
+      "sha256": "4152aea27f909e262f926cdb3276a93ba004f64b82b9f8979dc1809d3970111e"
+    },
+    "yzh": {
+      "path": "suti-angels-yzh.html",
+      "rendered_language": "ru",
+      "direction": "ltr",
+      "status": "hold-russian-fallback",
+      "independent_language_review": "author-grammar-and-lexicon-pending",
+      "sha256": "3bc2ea3b17775a798c2756a0851d06c82cabb4f1d7049c8e32419bda08341ef3"
+    }
+  }
+}

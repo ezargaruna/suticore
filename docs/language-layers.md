@@ -184,3 +184,21 @@ SVG text, and care boundaries; it retains the explicit `HOLD` equivalent for tee
 and does not claim that any care service or hand-off is active. Independent French
 review is pending. The page contains links to Russian-language destinations, which
 remain identified before navigation.
+
+## SUTI.angels welcome and practice · 2026-11-13
+
+The [Russian source edition](../suti-angels.html) and eleven editorial
+translations cover the welcome, five-step practice, help boundaries, link
+labels, metadata and poster text alternative. The homepage library links to
+the edition selected in its language menu. The pages link back to that menu
+selection and link directly to one another without JavaScript.
+
+The [per-route coverage and rights record](../locales/suti-angels/coverage.json)
+identifies the reviewed source revision, rendered language, direction and
+pending language review. Sanskrit and Latin await specialist review. The
+Yazekh route remains on HOLD and displays labeled Russian copy.
+
+The original poster still contains Russian text. Its provenance is recorded
+and separate reuse rights remain unverified. The external Google Forms
+questionnaire and Telegram channel retain their own language and conditions.
+See `scripts/build_suti_angels_editions.py` for generation and drift checks.
