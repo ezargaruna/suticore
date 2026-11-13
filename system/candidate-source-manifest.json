@@ -8,14 +8,74 @@
       "sha256": "8ced353c5a330e71037d2757f9060f9e4d96d2fe6394111a39f374c2c19e2515"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ar.md",
+      "bytes": 28734,
+      "sha256": "0ce6dc30eb7bfbba6cf4fe069f7352a3c998d12add8dca741bba1c5546bc628c"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.bn.md",
+      "bytes": 44362,
+      "sha256": "aba5b6037704101967971ce9ea378007a03537678fcf2aa9a7d2ef835427067d"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.en.md",
+      "bytes": 22585,
+      "sha256": "27e262e452c038f3fb4945fe59a3b283b1816bb966fd702d5bd508a742a4f191"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.eo.md",
+      "bytes": 21525,
+      "sha256": "5bb5ad7f9d98b09afbe1cc1f4924ccd713b79b25ab783a189ecf66e76e2b99d9"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.es.md",
+      "bytes": 24630,
+      "sha256": "f79c5bbd827c34be9150de10a15b01d6d70d84db0d6bc91e9d71484f1d7ac9ce"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.fr.md",
+      "bytes": 25909,
+      "sha256": "8485a3371e088fd8e7cf0a36883270865e80a88dfa142a175f942510877adef1"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.hi.md",
+      "bytes": 42632,
+      "sha256": "a7e6ad00d7a7092a8849596a481b12c81ffd379dead9fdada26cd852dfacb98e"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.la.md",
+      "bytes": 22456,
+      "sha256": "8c6ee4486511b680bd3fcdd36eff6b7934a6f9fc0569613cb6e77a4da04bee8d"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.pt-br.md",
+      "bytes": 24124,
+      "sha256": "78b373374b8ce191467f3d019db1a6f6521869a81249629eac64c8f366ffd40a"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ru.md",
       "bytes": 35519,
       "sha256": "76509088c1554bb71008e7076afc0683bd2669b57b26bd0535a6b8bab19e2ffe"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.sa.md",
+      "bytes": 47426,
+      "sha256": "d51d389b6a121851947be0c2a2059d08025dac76388da3aa3c1ee7e2479112cb"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.yzh.md",
+      "bytes": 37652,
+      "sha256": "d863608e0c821a1b9f2abe70660f41168658af8279c8925b41b582cf8abf8264"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.zh-hans.md",
+      "bytes": 18777,
+      "sha256": "82822bee87c237f83cfcb96237771e5cec22d63641579daa2abef095df2b07bf"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/bot-spec.locale-status.v1.json",
-      "bytes": 3623,
-      "sha256": "c741abf93a6717772d2638cd0ffd2f7994d821cdb21e2b2c42a5933617323b10"
+      "bytes": 22323,
+      "sha256": "4b3f54d78ee1285873e35fe2638546db000da0774c2eb725d091b31740477323"
     },
     {
       "path": "_techne/human/collective-living-system-v1/fund-plan/budget-template.csv",
@@ -23,14 +83,64 @@
       "sha256": "29d419b318c210f71cb5bdf80b145c4a514e8e6dec5c56a3e35440191d379192"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ar.csv",
+      "bytes": 48384,
+      "sha256": "d19422a1cc110f31ecdddd494e2b8e9fa20eeb2ba8d1c9e9c4bc22a2d688caff"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.bn.csv",
+      "bytes": 72529,
+      "sha256": "1d78bff2820bbd9ca0a50dbdd6cb039842a503b6ba2d4bdc84fe5cfd50439a11"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.en.csv",
       "bytes": 31517,
       "sha256": "85e4e37117905228f12cb08237205bdfd80910a8c611a0ef64d23b64e573818a"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.eo.csv",
+      "bytes": 32086,
+      "sha256": "dfd698250a4553cae171447c94b56f89dd9dec289c7f0938426e549a0230fccb"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.es.csv",
+      "bytes": 36068,
+      "sha256": "4714f2d199ee54dd77afe93b38b8784facd52d50f9f2b81ae030f3898e55f862"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.fr.csv",
+      "bytes": 36640,
+      "sha256": "2d294a72e9a7f2dd4b8937e1b682d02761be2928cfac1f3d95a29dc0cce4888d"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.hi.csv",
+      "bytes": 73152,
+      "sha256": "f8395ad13ff99f409941155c70af462a1bb282f12262f5a44b585cf3428c08b4"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.la.csv",
+      "bytes": 36228,
+      "sha256": "102b9befdbbcdb50e4a9db96b7507f5a272dba71fb0af6e306b29c4d475dd4e1"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.pt-br.csv",
+      "bytes": 36128,
+      "sha256": "a9a58d8550a538a5026d5dfe3cade5abe2bc8ec69d002110b4b48a453ab30ae9"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ru.csv",
       "bytes": 63837,
       "sha256": "32f6e2124994fe5c1bfba74eb25896670b9a5d013ebca0d4e34ab47e5903be5a"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.sa.csv",
+      "bytes": 81760,
+      "sha256": "5d47b68d3ef9f204ac803e0c5245cd2e573e56ff662423dcd7919f33543730c3"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.zh-hans.csv",
+      "bytes": 28542,
+      "sha256": "13b75b607db2eeae36d48072f2b41ffe140d1abf402e5ad8bd3ec5a6e860703c"
     },
     {
       "path": "_techne/human/collective-living-system-v1/fund-plan/gates.v1.json",
@@ -39,8 +149,18 @@
     },
     {
       "path": "_techne/human/collective-living-system-v1/fund-plan/locale-status.v1.json",
-      "bytes": 3389,
-      "sha256": "f78298386e8b6b3a2b8c58ebe6c211bc2128c277736ca9ff9c1de5f64275ab4e"
+      "bytes": 19223,
+      "sha256": "c3614a8b30ea96cd62240ee3315bbec86ae8c0b4687c7af612add2101e306c0a"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.ar.md",
+      "bytes": 24284,
+      "sha256": "5b7fa82c651d7e8149a604435b5be32483adf203fab54850be3f6fa81207a231"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.bn.md",
+      "bytes": 36243,
+      "sha256": "538b0087c5aa553126b2a008442ae9a089b65023d29edd904a33feacc73ea7dd"
     },
     {
       "path": "_techne/human/collective-living-system-v1/fund-plan/plan.en.md",
@@ -48,14 +168,59 @@
       "sha256": "f0694291339461427e97bf7d1ea30756c9ab6eebe48bda697bb2a206b3257b41"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.eo.md",
+      "bytes": 16605,
+      "sha256": "9210e82aa9716c6b4e12e5dd46b71bdd03c08dd2c7b97aa71a6a787963e3f5ee"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.es.md",
+      "bytes": 18161,
+      "sha256": "e6516efe1995749392b0c2fdb967c239b29a43139c1e25c45f581e13e8f12723"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.fr.md",
+      "bytes": 18695,
+      "sha256": "038c712fc1302d17620136bd375331527c2728c5b6e632bb301599044b271599"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.hi.md",
+      "bytes": 37909,
+      "sha256": "7b34b9357689e91f6ec60c9d81b410da7c61b7263f42f471c84e07fc480a992d"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.la.md",
+      "bytes": 17932,
+      "sha256": "39b68dc13221fc1d89e0496b8afb3ff6d10ed4ecca6469253cf103edffb1d29a"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.pt-br.md",
+      "bytes": 17903,
+      "sha256": "b7b990412965a7fc9cbfbad3227487b06caf5cb29dc662f965fa577f9288c9f0"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/plan.ru.md",
       "bytes": 31752,
       "sha256": "d4abf4f2a59feaf4b70752ab3254049cb2e14de3b8264e3ca2df5d18e2d03cb4"
     },
     {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.sa.md",
+      "bytes": 39405,
+      "sha256": "c5135ce3bbee8cf5f5498b3587841854363e71119181d37b00d7da10d2812129"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.yzh.md",
+      "bytes": 33410,
+      "sha256": "0aab839536d4ed4d971b194822c9d416ef7d5c0dacffe7cb5fb224e35dba9a77"
+    },
+    {
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.zh-hans.md",
+      "bytes": 14272,
+      "sha256": "eaa6423fee05849671d2b3201092abb6d218f72e8812d566bcd856dcc75ea6bb"
+    },
+    {
       "path": "_techne/human/collective-living-system-v1/fund-plan/translation-structural-check.v1.json",
-      "bytes": 1085,
-      "sha256": "cab3237ef92f74afa6dc16ecce2b9fdbde51a640923f4590eabafbbc9b87566b"
+      "bytes": 10671,
+      "sha256": "8df54859ac5a50feac13b3d68e347c6b86f7a25e769d359a00c158b4fcf601f7"
     },
     {
       "path": "_techne/human/collective-living-system-v1/ru/SUTI.audit/living-system.md",
@@ -1120,6 +1285,23 @@
   "release": "HOLD",
   "yzh": "Russian gloss only; author language edition pending",
   "fund_runtime": "OFF",
-  "editorial_qa_revision": "2026-11-13-r2",
-  "prior_manifest_sha256": "098c471c2d92568d34a07e79578efe4be4b5afeef10c65a7d8d8e9089f72fc2e"
+  "editorial_qa_revision": "2026-11-13-r3",
+  "prior_manifest_sha256": "39aebbb2e72b697260f7d6c89bf8b4e739af30d141fcb4b9cee5c457aeb5ced7",
+  "expected_source_files": 255,
+  "family_sources": {
+    "common_operating_layer": {
+      "locale": "ru",
+      "sha256": "a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b312"
+    },
+    "fund_plan": {
+      "locale": "en",
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.en.md",
+      "sha256": "f0694291339461427e97bf7d1ea30756c9ab6eebe48bda697bb2a206b3257b41"
+    },
+    "bot_specification": {
+      "locale": "ru",
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ru.md",
+      "sha256": "76509088c1554bb71008e7076afc0683bd2669b57b26bd0535a6b8bab19e2ffe"
+    }
+  }
 }

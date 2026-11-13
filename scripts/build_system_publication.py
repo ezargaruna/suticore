@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build static HTML from the selected 222-file public system source manifest.
+"""Build static HTML from the selected public system source manifest.
 
 Verify source hashes, render escaped Markdown, localize publication UI and preserve
 review/runtime boundaries. This does not build or deploy the React application.
@@ -11,6 +11,7 @@ import hashlib
 import html
 import json
 import re
+import csv
 
 PACKAGE = Path(__file__).resolve().parents[1]
 SYSTEM = PACKAGE / 'system'
@@ -197,20 +198,59 @@ LABELS={
 'la':'adumbratio editorialis publica · fundus, solutiones, robotum et rete participantium nondum activa sunt',
 'yzh':'публичный редакционный черновик · авторская глосса Язэхъ ожидается · фонд и сеть не запущены'
 }
-UI={'ru': ['сведения о публикации', 'подробный план', 'основные страницы и краткий маршрут доступны на русском; подробный план — RU/EN, полное ТЗ бота — RU', 'публикация и права', 'редакция опубликована по решению автора. исходные статусы проверки сохранены. открытый доступ не назначает лицензию CC/MIT; действуют условия каждого материала. независимая языковая проверка ожидается'], 'en': ['publication information', 'detailed plan', 'core pages and the short route are available in English; the detailed plan is RU/EN and the full bot specification is RU', 'publication and rights', 'published by the author’s decision. original review states are retained. public access does not grant a CC/MIT licence; each material keeps its own terms. independent language review is pending'], 'es': ['información de publicación', 'plan detallado', 'las páginas principales y el recorrido breve están en español; el plan detallado está en RU/EN y la especificación completa del bot en RU', 'publicación y derechos', 'publicado por decisión del autor. se conservan los estados originales de revisión. el acceso público no concede una licencia CC/MIT; cada material mantiene sus condiciones. la revisión lingüística independiente está pendiente'], 'pt-br': ['informações de publicação', 'plano detalhado', 'as páginas principais e o percurso breve estão em português; o plano detalhado está em RU/EN e a especificação completa do bot em RU', 'publicação e direitos', 'publicado por decisão do autor. os status originais de revisão são mantidos. o acesso público não concede uma licença CC/MIT; cada material mantém seus próprios termos. a revisão linguística independente está pendente'], 'zh-hans': ['发布信息', '详细计划', '核心页面和简要路径已有简体中文版；详细计划仅有俄语和英语版，完整机器人规范仅有俄语版', '发布与权利', '本版本经作者决定公开。保留原有审阅状态。公开访问不代表授予 CC/MIT 许可；各材料仍适用各自条款。独立语言审阅尚未完成'], 'hi': ['प्रकाशन की जानकारी', 'विस्तृत योजना', 'मुख्य पृष्ठ और संक्षिप्त मार्ग हिन्दी में उपलब्ध हैं; विस्तृत योजना RU/EN में और बॉट का पूरा विनिर्देश RU में है', 'प्रकाशन और अधिकार', 'लेखक के निर्णय से प्रकाशित। मूल समीक्षा-स्थितियाँ सुरक्षित हैं। सार्वजनिक पहुँच CC/MIT लाइसेंस नहीं देती; प्रत्येक सामग्री की अपनी शर्तें लागू हैं। स्वतंत्र भाषाई समीक्षा लंबित है'], 'fr': ['informations de publication', 'plan détaillé', 'les pages principales et le parcours court sont disponibles en français ; le plan détaillé est en RU/EN et la spécification complète du bot en RU', 'publication et droits', 'publication décidée par l’auteur. les statuts de révision d’origine sont conservés. l’accès public n’accorde pas de licence CC/MIT ; chaque document conserve ses conditions. la révision linguistique indépendante reste en attente'], 'ar': ['معلومات النشر', 'الخطة التفصيلية', 'الصفحات الأساسية والمسار المختصر متاحان بالعربية؛ الخطة التفصيلية بالروسية والإنجليزية، والمواصفات الكاملة للبوت بالروسية فقط', 'النشر والحقوق', 'نُشرت هذه النسخة بقرار المؤلف مع الاحتفاظ بحالات المراجعة الأصلية. لا يمنح الوصول العام ترخيص CC/MIT؛ تبقى لكل مادة شروطها. المراجعة اللغوية المستقلة لم تكتمل بعد'], 'bn': ['প্রকাশনার তথ্য', 'বিস্তারিত পরিকল্পনা', 'মূল পৃষ্ঠা ও সংক্ষিপ্ত পথ বাংলায় আছে; বিস্তারিত পরিকল্পনা RU/EN-এ এবং বটের পূর্ণ বিবরণ RU-এ আছে', 'প্রকাশনা ও অধিকার', 'লেখকের সিদ্ধান্তে প্রকাশিত। মূল পর্যালোচনার অবস্থা অক্ষুণ্ণ আছে। প্রকাশ্য প্রবেশাধিকার CC/MIT লাইসেন্স দেয় না; প্রতিটি উপকরণের নিজস্ব শর্ত বহাল। স্বাধীন ভাষাগত পর্যালোচনা বাকি'], 'eo': ['publikigaj informoj', 'detala plano', 'la kernaj paĝoj kaj mallonga vojo disponeblas en Esperanto; la detala plano estas en RU/EN, kaj la plena robotspecifo en RU', 'publikigo kaj rajtoj', 'publikigita laŭ la decido de la aŭtoro. originaj reviziaj statoj restas. publika aliro ne donas CC/MIT-permesilon; ĉiu materialo konservas siajn kondiĉojn. sendependa lingva revizio ankoraŭ necesas'], 'sa': ['प्रकाशनविवरणम्', 'विस्तृतयोजना', 'मुख्यपृष्ठानि संक्षिप्तमार्गश्च संस्कृते उपलब्धाः; विस्तृतयोजना RU/EN-भाषयोः, बॉट्-सम्पूर्णविशिष्टता च RU-भाषायामेव', 'प्रकाशनम् अधिकाराश्च', 'लेखकस्य निर्णयेन प्रकाशितम्। मूलपरीक्षणस्थितयः रक्षिताः। सार्वजनिकप्रवेशेन CC/MIT-अनुज्ञा न दीयते; प्रत्येकसामग्र्याः स्वकीयाः शर्ताः प्रवर्तन्ते। स्वतन्त्रभाषापरीक्षा अपेक्षिता'], 'la': ['notitia publicationis', 'consilium explicatum', 'paginae principales et iter breve Latine praesto sunt; consilium explicatum RU/EN, plena robotis specificatio RU tantum', 'publicatio et iura', 'ex auctoris sententia publicatum. status pristini recognitionis servantur. accessus publicus licentiam CC/MIT non confert; cuiusque materiae condiciones manent. recognitio linguae independens adhuc exspectatur'], 'yzh': ['сведения о публикации · русский глосс', 'подробный план', 'Язэхъ: здесь русский смысловой глосс, не готовый перевод; подробный план — RU/EN, полное ТЗ бота — RU', 'публикация и права · русский глосс', 'опубликовано по решению автора. Язэхъ остаётся экспериментальным маршрутом с русской развёрткой и требует авторского принятия. независимая языковая проверка ожидается; открытый доступ не назначает CC/MIT']}
+UI={'ru': ['сведения о публикации', 'подробный план', 'полный план, календарь и спецификация доступны в 12 языковых черновиках; YZH - русская смысловая глосса с ожиданием авторской редакции', 'публикация и права', 'редакция опубликована по решению автора. исходные статусы проверки сохранены. открытый доступ не назначает лицензию CC/MIT; действуют условия каждого материала. независимая языковая проверка ожидается'], 'en': ['publication information', 'detailed plan', 'the full plan, calendar and specification are available as 12 language drafts; YZH is a Russian semantic gloss awaiting author review', 'publication and rights', 'published by the author’s decision. original review states are retained. public access does not grant a CC/MIT licence; each material keeps its own terms. independent language review is pending'], 'es': ['información de publicación', 'plan detallado', 'el plan, calendario y especificación completos tienen 12 borradores lingüísticos; YZH es una glosa semántica en ruso pendiente de revisión del autor', 'publicación y derechos', 'publicado por decisión del autor. se conservan los estados originales de revisión. el acceso público no concede una licencia CC/MIT; cada material mantiene sus condiciones. la revisión lingüística independiente está pendiente'], 'pt-br': ['informações de publicação', 'plano detalhado', 'o plano, calendário e especificação completos têm 12 rascunhos linguísticos; YZH é uma glosa semântica em russo aguardando revisão do autor', 'publicação e direitos', 'publicado por decisão do autor. os status originais de revisão são mantidos. o acesso público não concede uma licença CC/MIT; cada material mantém seus próprios termos. a revisão linguística independente está pendente'], 'zh-hans': ['发布信息', '详细计划', '完整计划、日历和机器人规范已有12种语言草稿；YZH是俄语语义释义，等待作者审阅', '发布与权利', '本版本经作者决定公开。保留原有审阅状态。公开访问不代表授予 CC/MIT 许可；各材料仍适用各自条款。独立语言审阅尚未完成'], 'hi': ['प्रकाशन की जानकारी', 'विस्तृत योजना', 'पूरी योजना, कैलेंडर और विनिर्देश के 12 भाषा-मसौदे उपलब्ध हैं; YZH रूसी अर्थ-व्याख्या है और लेखक की समीक्षा लंबित है', 'प्रकाशन और अधिकार', 'लेखक के निर्णय से प्रकाशित। मूल समीक्षा-स्थितियाँ सुरक्षित हैं। सार्वजनिक पहुँच CC/MIT लाइसेंस नहीं देती; प्रत्येक सामग्री की अपनी शर्तें लागू हैं। स्वतंत्र भाषाई समीक्षा लंबित है'], 'fr': ['informations de publication', 'plan détaillé', 'le plan, le calendrier et la spécification complets existent en 12 brouillons linguistiques ; YZH est une glose sémantique russe en attente de révision par l’auteur', 'publication et droits', 'publication décidée par l’auteur. les statuts de révision d’origine sont conservés. l’accès public n’accorde pas de licence CC/MIT ; chaque document conserve ses conditions. la révision linguistique indépendante reste en attente'], 'ar': ['معلومات النشر', 'الخطة التفصيلية', 'تتوفر الخطة والتقويم والمواصفات الكاملة في 12 مسودة لغوية؛ أما YZH فهو شرح دلالي بالروسية ينتظر مراجعة المؤلف', 'النشر والحقوق', 'نُشرت هذه النسخة بقرار المؤلف مع الاحتفاظ بحالات المراجعة الأصلية. لا يمنح الوصول العام ترخيص CC/MIT؛ تبقى لكل مادة شروطها. المراجعة اللغوية المستقلة لم تكتمل بعد'], 'bn': ['প্রকাশনার তথ্য', 'বিস্তারিত পরিকল্পনা', 'পূর্ণ পরিকল্পনা, ক্যালেন্ডার ও নির্দিষ্টকরণের ১২টি ভাষার খসড়া আছে; YZH হলো রুশ ভাষায় অর্থব্যাখ্যা, লেখকের পর্যালোচনা বাকি', 'প্রকাশনা ও অধিকার', 'লেখকের সিদ্ধান্তে প্রকাশিত। মূল পর্যালোচনার অবস্থা অক্ষুণ্ণ আছে। প্রকাশ্য প্রবেশাধিকার CC/MIT লাইসেন্স দেয় না; প্রতিটি উপকরণের নিজস্ব শর্ত বহাল। স্বাধীন ভাষাগত পর্যালোচনা বাকি'], 'eo': ['publikigaj informoj', 'detala plano', 'la plenaj plano, kalendaro kaj specifo havas 12 lingvajn malnetojn; YZH estas rusa semantika gloso atendanta aŭtoran revizion', 'publikigo kaj rajtoj', 'publikigita laŭ la decido de la aŭtoro. originaj reviziaj statoj restas. publika aliro ne donas CC/MIT-permesilon; ĉiu materialo konservas siajn kondiĉojn. sendependa lingva revizio ankoraŭ necesas'], 'sa': ['प्रकाशनविवरणम्', 'विस्तृतयोजना', 'पूर्णयोजनायाः दिनदर्शिकायाः विशिष्टतायाश्च १२ भाषाप्रारूपाणि उपलब्धानि; YZH तु रूसीयभाषायाम् अर्थव्याख्या, लेखकपरीक्षाम् अपेक्षते', 'प्रकाशनम् अधिकाराश्च', 'लेखकस्य निर्णयेन प्रकाशितम्। मूलपरीक्षणस्थितयः रक्षिताः। सार्वजनिकप्रवेशेन CC/MIT-अनुज्ञा न दीयते; प्रत्येकसामग्र्याः स्वकीयाः शर्ताः प्रवर्तन्ते। स्वतन्त्रभाषापरीक्षा अपेक्षिता'], 'la': ['notitia publicationis', 'consilium plenum', 'consilium, calendarium et specificatio plena in 12 adumbrationibus linguisticis praesto sunt; YZH est glossa semantica Russica recognitionem auctoris exspectans', 'publicatio et iura', 'ex auctoris sententia publicatum. status pristini recognitionis servantur. accessus publicus licentiam CC/MIT non confert; cuiusque materiae condiciones manent. recognitio linguae independens adhuc exspectatur'], 'yzh': ['сведения о публикации · русский глосс', 'подробный план · русская глосса', 'YZH - русская смысловая глосса; авторская языковая редакция ожидается, полный комплект переведён в 12 языковых черновиках', 'публикация и права · русский глосс', 'опубликовано по решению автора. Язэхъ остаётся экспериментальным маршрутом с русской развёрткой и требует авторского принятия. независимая языковая проверка ожидается; открытый доступ не назначает CC/MIT']}
 LANGS=list(LABELS)
 TAGS={'pt-br':'pt-BR','zh-hans':'zh-Hans','yzh':'ru'}
+PLANNING_UI=json.loads((PACKAGE/'scripts/planning_ui_locales.json').read_text())
+assert set(PLANNING_UI)==set(LANGS)
+for locale in LANGS:
+    UI[locale][1]=PLANNING_UI[locale]['plan']
+    UI[locale][2]=PLANNING_UI[locale]['coverage']
+assert all(all(isinstance(v,str) and v.strip() for v in row.values()) for row in PLANNING_UI.values())
 EXTRA_CSS="""
-main{max-width:74ch;margin:auto;padding:2rem 1.2rem 4rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}
+main{max-width:74ch;margin:auto;padding:2rem 1.2rem 4rem;min-width:0;overflow-wrap:anywhere}code{overflow-wrap:anywhere;word-break:break-word}pre{white-space:pre-wrap;overflow-wrap:anywhere}
 table{border-collapse:collapse;min-width:32rem;width:100%}th,td{padding:.6rem;text-align:start;border:1px solid #b9c5b3}.table-scroll{overflow-x:auto}
 .publication-note{padding:1rem;border-inline-start:4px solid #996200;background:#fffdf8;color:#20392f}
 nav{display:flex;gap:1rem;flex-wrap:wrap}a:focus-visible{outline:3px solid #996200;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 """
 def relpath(target,base):return Path(os.path.relpath(target,base)).as_posix()
+def build_calendars():
+    """Render all90 planning rows; YZH explicitly reads the Russian gloss source."""
+    base=SYSTEM/'_techne/human/collective-living-system-v1/fund-plan'
+    result=[]
+    stable=['day','date','week','role_acceptance','status','evidence_path']
+    with (base/'calendar-90-days.en.csv').open(encoding='utf-8-sig',newline='') as stream:
+        master=list(csv.DictReader(stream))
+    assert len(master)==90
+    fields=[('deliverable','deliverable'),('completion_criterion','criterion'),('dependencies','dependencies'),('proposed_owner_role','owner'),('allowed_mode','mode'),('status','status'),('decision','decision')]
+    for loc in LANGS:
+        u=PLANNING_UI[loc]
+        source=base/('calendar-90-days.'+('ru' if loc=='yzh' else loc)+'.csv')
+        with source.open(encoding='utf-8-sig',newline='') as stream:
+            rows=list(csv.DictReader(stream))
+        assert len(rows)==90 and all(all(row[k]==original[k] for k in stable) for row,original in zip(rows,master)),loc
+        target=base/('calendar-90-days.'+loc+'.html')
+        css=relpath(PACKAGE/'assets/css/suti-angels-editorial.css',base)
+        home=relpath(SYSTEM/'index.html',base)+'?lang='+loc
+        note=relpath(SYSTEM/('publication-note.'+loc+'.html'),base)
+        parts=['<!doctype html><html lang="'+TAGS.get(loc,loc)+'" dir="'+('rtl' if loc=='ar' else 'ltr')+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+ESC(u['calendar'])+'</title><link rel="stylesheet" href="'+ESC(css,quote=True)+'"><style>'+EXTRA_CSS+'.day-index{display:grid;grid-template-columns:repeat(auto-fit,minmax(2.4rem,1fr));gap:.25rem;padding:0;list-style:none}.day-index a{display:block;padding:.4rem}.calendar-day{border-block-start:1px solid #b9c5b3;margin-block:2rem;padding-block:1rem}dd{margin-inline-start:0;margin-block-end:.8rem;overflow-wrap:anywhere}dt{font-weight:700}code{direction:ltr;unicode-bidi:isolate}</style></head><body><main><nav><a href="'+ESC(home,quote=True)+'">SUTI · '+loc+'</a><a href="'+source.name+'">'+ESC(u['csv'])+'</a><a href="'+ESC(note,quote=True)+'">'+ESC(UI[loc][0])+'</a></nav><h1>'+ESC(u['calendar'])+'</h1><p class="publication-note">'+ESC(u['intro'])+'</p><p>'+ESC(u['coverage'])+'</p><ol class="day-index">']
+        parts.extend('<li><a href="#day-'+row['day']+'" aria-label="'+ESC(u['day']+' '+row['day']+' · '+row['date'],quote=True)+'">'+row['day']+'</a></li>' for row in rows)
+        parts.append('</ol>')
+        for row in rows:
+            parts.append('<article class="calendar-day" id="day-'+row['day']+'"><h2>'+ESC(u['day']+' '+row['day']+' · '+row['date'])+'</h2><p>'+ESC(row['theme'])+'</p><p>'+ESC(row['task'])+'</p><dl>')
+            for key,label in fields:
+                value=row[key]+(' · '+row['role_acceptance'] if key=='proposed_owner_role' else '')
+                parts.append('<dt>'+ESC(u[label])+'</dt><dd>'+ESC(value)+'</dd>')
+            parts.append('</dl></article>')
+        parts.append('</main></body></html>')
+        target.write_text(''.join(parts));result.append(target)
+    return result
+
 def main():
     manifest=json.loads(SOURCE_MANIFEST.read_text())
-    assert len(manifest['files'])==222
+    assert len(manifest['files'])==manifest['expected_source_files']
+    assert len({row['path'] for row in manifest['files']})==len(manifest['files'])
     source_rows=manifest['files']
     for row in source_rows:
         path=SYSTEM/row['path'];data=path.read_bytes()
@@ -224,7 +264,9 @@ def main():
         loc=next((x for x in parts if x in LANGS),'ru')
         declared=re.search(r'^locale\s*::\s*([a-z-]+)',text,re.M)
         if declared and declared.group(1) in LANGS:loc=declared.group(1)
-        elif path.name.endswith('.en.md'):loc='en'
+        else:
+            suffix=re.search(r'\.([a-z-]+)\.md$',path.name)
+            if suffix and suffix.group(1) in LANGS:loc=suffix.group(1)
         target=path.with_suffix('.html')
         heading=next((x[2:].strip() for x in prepare_markdown(text).splitlines() if x.startswith('# ')),path.stem)
         css=relpath(PACKAGE/'assets/css/suti-angels-editorial.css',target.parent)
@@ -248,10 +290,10 @@ def main():
     text=text.replace('<main><nav','<main><p class="status" id="publication-overlay"></p><nav',1)
     text=text.replace('function render(locale){const d=data[locale]||data.ru;','const publicationLabels='+json.dumps(LABELS,ensure_ascii=False,separators=(',',':'))+';function render(locale){const d=data[locale]||data.ru;text("publication-overlay",publicationLabels[locale]||publicationLabels.ru);',1)
     text=text.replace('</footer>','<p><a id="publication-note-link"></a></p><p class="quiet" id="language-coverage-note"></p></footer>',1)
-    text=text.replace('<p><a id="fund-link"></a></p>', '<p><a id="fund-link"></a></p><p class="quiet"><span id="detailed-plan-label"></span> · <a href="../../human/collective-living-system-v1/fund-plan/plan.ru.html">RU</a> · <a href="../../human/collective-living-system-v1/fund-plan/plan.en.html">EN</a></p>', 1)
-    localized_ui='const localeUI='+json.dumps(UI,ensure_ascii=False,separators=(',',':'))+';'
+    text=text.replace('<p><a id="fund-link"></a></p>', '<p><a id="fund-link"></a></p><nav class="planning-links"><a id="detailed-plan-link"></a><a id="daily-calendar-link"></a><a id="bot-spec-link"></a></nav>', 1)
+    localized_ui='const localeUI='+json.dumps(UI,ensure_ascii=False,separators=(',',':'))+';const planningUI='+json.dumps(PLANNING_UI,ensure_ascii=False,separators=(',',':'))+';'
     text=text.replace('const publicationLabels=',localized_ui+'const publicationLabels=',1)
-    text=text.replace('text("publication-overlay",publicationLabels[locale]||publicationLabels.ru);','text("publication-overlay",publicationLabels[locale]||publicationLabels.ru);const u=localeUI[locale]||localeUI.ru;const n=document.getElementById("publication-note-link");n.href="../../../publication-note."+locale+".html";n.textContent=u[0];text("language-coverage-note",u[2]);text("detailed-plan-label",u[1]);',1)
+    text=text.replace('text("publication-overlay",publicationLabels[locale]||publicationLabels.ru);','text("publication-overlay",publicationLabels[locale]||publicationLabels.ru);const u=localeUI[locale]||localeUI.ru;const n=document.getElementById("publication-note-link");n.href="../../../publication-note."+locale+".html";n.textContent=u[0];text("language-coverage-note",u[2]);const pui=planningUI[locale];for(const [id,label,file] of [["detailed-plan-link","plan","plan."+locale+".html"],["daily-calendar-link","calendar","calendar-90-days."+locale+".html"],["bot-spec-link","specification","bot-and-collaboration-spec."+locale+".html"]]){const a=document.getElementById(id);a.textContent=pui[label];a.href="../../human/collective-living-system-v1/fund-plan/"+file;}',1)
     text=text.replace("const chosen=new URLSearchParams(location.search).get('lang')||'ru';render(data[chosen]?chosen:'ru');", "const aliases={'es-419':'es','pt':'pt-br','zh-cn':'zh-hans','zh':'zh-hans'};const raw=(new URLSearchParams(location.search).get('lang')||'ru').toLowerCase().replaceAll('_','-');const chosen=aliases[raw]||raw;render(data[chosen]?chosen:'ru');")
     text=text.replace("document.getElementById('language').addEventListener('change',e=>render(e.target.value));", "document.getElementById('language').addEventListener('change',e=>{render(e.target.value);const q=new URL(location.href);q.searchParams.set('lang',e.target.value);history.replaceState(null,'',q)});")
     portal.write_text(text);derived.append(portal)
@@ -262,9 +304,14 @@ def main():
         notice=SYSTEM/('publication-note.'+loc+'.html')
         notice.write_text('<!doctype html><html lang="'+TAGS.get(loc,loc)+'" dir="'+('rtl' if loc=='ar' else 'ltr')+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+ESC(u[3])+'</title><style>'+EXTRA_CSS+'</style></head><body><main><nav><a href="index.html?lang='+loc+'">SUTI · '+loc+'</a></nav><h1>'+ESC(u[3])+'</h1><p>'+ESC(u[4])+'</p><p>'+ESC(LABELS[loc])+'</p><p>'+ESC(u[2])+'</p></main></body></html>')
         derived.append(notice)
+    generic=SYSTEM/'publication-note.html'
+    language_names={'ru':'Русский','en':'English','es':'Español','pt-br':'Português brasileiro','zh-hans':'简体中文','hi':'हिन्दी','fr':'Français','ar':'العربية','bn':'বাংলা','eo':'Esperanto','sa':'संस्कृतम्','la':'Latina','yzh':'Язэхъ · русская глосса'}
+    generic.write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SUTI · publication / публикация</title><style>'+EXTRA_CSS+'</style></head><body><main><h1>SUTI · publication / публикация</h1><p>12 full-language planning drafts and a Russian YZH gloss · independent review pending</p><p>12 полных языковых черновиков и русская глосса YZH · независимая проверка ожидается</p><nav>'+''.join('<a lang="'+TAGS.get(loc,loc)+'" href="publication-note.'+loc+'.html">'+ESC(language_names[loc])+'</a>' for loc in LANGS)+'</nav><p><a href="index.html?lang=ru">SUTI · открыть / open</a></p></main></body></html>')
+    derived.append(generic)
+    derived.extend(build_calendars())
     rows=[]
     for path in derived:
         b=path.read_bytes();rows.append({'path':path.relative_to(SYSTEM).as_posix(),'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()})
-    (SYSTEM/'derivative-manifest.json').write_text(json.dumps({'schema':'suti.public-static-derivative.v1','date':'2026-11-13','source_allowlist_entries':222,'source_files_unchanged':True,'generated_files':rows,'transformation':'escaped HTML counterparts; public portal hrefs rebased; publication overlay added; no source review/runtime/financial/youth gate upgrades','publication':'owner-authorized draft display; no automatic license grant'},ensure_ascii=False,indent=2)+'\n')
-    print('source222 exact; generated HTML',len(derived))
+    (SYSTEM/'derivative-manifest.json').write_text(json.dumps({'schema':'suti.public-static-derivative.v1','date':'2026-11-13','source_allowlist_entries':len(source_rows),'source_files_unchanged':True,'generated_files':rows,'transformation':'escaped HTML counterparts; public portal hrefs rebased; publication overlay added; no source review/runtime/financial/youth gate upgrades','publication':'owner-authorized draft display; no automatic license grant'},ensure_ascii=False,indent=2)+'\n')
+    print('source files exact',len(source_rows),'generated HTML',len(derived))
 if __name__=='__main__':main()

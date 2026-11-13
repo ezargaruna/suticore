@@ -8,7 +8,7 @@
       "collective_core_pages": 15,
       "core_language_status": "SOURCE_RU",
       "fund_summary_phases": 6,
-      "full_fund_plan": "SOURCE_RU",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
       "full_bot_specification": "SOURCE_RU",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
@@ -29,15 +29,24 @@
         "_techne/human/collective-living-system-v1/ru/SUTI.sotkan/living-system.md",
         "_techne/human/collective-living-system-v1/ru/SUTI.clan/living-system.md",
         "_techne/human/collective-living-system-v1/ru/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.ru.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ru.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ru.html"
     },
     {
       "locale": "en",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "ENGLISH_DRAFT",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "SOURCE_EN",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -57,15 +66,24 @@
         "en/SUTI.sotkan/living-system.md",
         "en/SUTI.clan/living-system.md",
         "en/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.en.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.en.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.en.html"
     },
     {
       "locale": "es",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -85,15 +103,24 @@
         "es/SUTI.sotkan/living-system.md",
         "es/SUTI.clan/living-system.md",
         "es/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.es.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.es.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.es.html"
     },
     {
       "locale": "pt-br",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -113,15 +140,24 @@
         "pt-br/SUTI.sotkan/living-system.md",
         "pt-br/SUTI.clan/living-system.md",
         "pt-br/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.pt-br.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.pt-br.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.pt-br.html"
     },
     {
       "locale": "zh-hans",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -141,15 +177,24 @@
         "zh-hans/SUTI.sotkan/living-system.md",
         "zh-hans/SUTI.clan/living-system.md",
         "zh-hans/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.zh-hans.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.zh-hans.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.zh-hans.html"
     },
     {
       "locale": "hi",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -169,15 +214,24 @@
         "hi/SUTI.sotkan/living-system.md",
         "hi/SUTI.clan/living-system.md",
         "hi/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.hi.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.hi.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.hi.html"
     },
     {
       "locale": "fr",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -197,15 +251,24 @@
         "fr/SUTI.sotkan/living-system.md",
         "fr/SUTI.clan/living-system.md",
         "fr/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.fr.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.fr.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.fr.html"
     },
     {
       "locale": "ar",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -225,15 +288,24 @@
         "ar/SUTI.sotkan/living-system.md",
         "ar/SUTI.clan/living-system.md",
         "ar/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.ar.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ar.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ar.html"
     },
     {
       "locale": "bn",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -253,15 +325,24 @@
         "bn/SUTI.sotkan/living-system.md",
         "bn/SUTI.clan/living-system.md",
         "bn/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.bn.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.bn.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.bn.html"
     },
     {
       "locale": "eo",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -281,15 +362,24 @@
         "eo/SUTI.sotkan/living-system.md",
         "eo/SUTI.clan/living-system.md",
         "eo/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.eo.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.eo.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.eo.html"
     },
     {
       "locale": "sa",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -309,15 +399,24 @@
         "sa/SUTI.sotkan/living-system.md",
         "sa/SUTI.clan/living-system.md",
         "sa/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.sa.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.sa.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.sa.html"
     },
     {
       "locale": "la",
       "collective_core_pages": 15,
       "core_language_status": "COMPLETE_EDITORIAL_DRAFT",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "FULL_DIRECT_SOURCE_DRAFT",
+      "full_bot_specification": "FULL_DIRECT_SOURCE_DRAFT",
       "guide_sections": 12,
       "guide_status": "EDITORIAL_DRAFT",
       "independent_native_review": "PENDING",
@@ -337,15 +436,24 @@
         "la/SUTI.sotkan/living-system.md",
         "la/SUTI.clan/living-system.md",
         "la/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "FULL_DIRECT_SOURCE_DRAFT",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.la.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.la.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.la.html"
     },
     {
       "locale": "yzh",
       "collective_core_pages": 15,
       "core_language_status": "RUSSIAN_GLOSS_ONLY / AUTHOR_GLOSS_PENDING",
       "fund_summary_phases": 6,
-      "full_fund_plan": "NOT_TRANSLATED",
-      "full_bot_specification": "NOT_TRANSLATED",
+      "full_fund_plan": "RUSSIAN_GLOSS_NOT_YZH_TRANSLATION",
+      "full_bot_specification": "RUSSIAN_GLOSS_NOT_YZH_TRANSLATION",
       "guide_sections": 12,
       "guide_status": "EXPERIMENTAL_NOTATION_WITH_RUSSIAN_GLOSS",
       "independent_native_review": "PENDING",
@@ -365,9 +473,35 @@
         "yzh/SUTI.sotkan/living-system.md",
         "yzh/SUTI.clan/living-system.md",
         "yzh/SUTI.veche/living-system.md"
-      ]
+      ],
+      "plan_sections": 10,
+      "calendar_days": 90,
+      "calendar_status": "RUSSIAN_GLOSS_NOT_YZH_TRANSLATION",
+      "bot_specification_sections": 12,
+      "bot_acceptance_criteria_defined": 18,
+      "bot_acceptance_execution": "NOT_RUN",
+      "full_plan_href": "_techne/human/collective-living-system-v1/fund-plan/plan.yzh.html",
+      "calendar_href": "_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.yzh.html",
+      "bot_specification_href": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.yzh.html"
     }
   ],
   "truth_rule": "15 pages or12 sections present is content coverage, not proof of native-language approval; YZH routes are not natural-language translations.",
-  "history": "published baseline b57b4b7e1026979401778c5d7c81be6c4f24f11a; QA correction follows"
+  "history": "published baseline b57b4b7e1026979401778c5d7c81be6c4f24f11a; QA correction follows",
+  "revision": "2026-11-13-qa3",
+  "source_families": {
+    "common_operating_layer": {
+      "locale": "ru",
+      "sha256": "a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b312"
+    },
+    "fund_plan": {
+      "locale": "en",
+      "path": "_techne/human/collective-living-system-v1/fund-plan/plan.en.md",
+      "sha256": "f0694291339461427e97bf7d1ea30756c9ab6eebe48bda697bb2a206b3257b41"
+    },
+    "bot_specification": {
+      "locale": "ru",
+      "path": "_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ru.md",
+      "sha256": "76509088c1554bb71008e7076afc0683bd2669b57b26bd0535a6b8bab19e2ffe"
+    }
+  }
 }
