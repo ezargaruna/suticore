@@ -1,0 +1,337 @@
+{
+  "schema": "suti.care-veche.locale.v1",
+  "version": "2026-11-13.v1",
+  "locale": "en",
+  "source_locale": "ru",
+  "direction": "ltr",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "title": "shared space for care and veche",
+  "subtitle": "clear question · distinct voices · manageable step · preserved trace",
+  "scope": "a shared, depersonalised foundation for individual and collective systems; a local discussion workshop",
+  "purpose": "connect knowledge, a care agency and joint deliberation so that a person can configure the system independently and check the next step",
+  "outcome": "read the method, record a contribution or position, see the differences and save a portable discussion package",
+  "statusNote": "design specification and local prototype candidate; networked agents, messages, money, legal organisation and publication are off",
+  "preservation": "useful methods, versions and unresolved materials are preserved; originals are not destroyed, and selected transfers are reversible and have source → target, SHA and a receipt",
+  "privacy": "the common layer contains methods, roles and empty templates; personal stories, contacts, correspondence and sensitive information remain within the chosen private area",
+  "metaphor": "care angel is an optional interface metaphor; people and agents can use a plain role description without assigning identity or experiences",
+  "localState": "workshop records are held in the page's memory; save the JSON before closing. import adds checked records without replacing the original history",
+  "identityNote": "participant type and name in this local workshop are declared by the record's author; other participants' identities, authority and consent have not been verified here",
+  "ui": {
+    "language": "language",
+    "guide": "method and structure",
+    "room": "discussion workshop",
+    "modules": "all areas",
+    "channel": "area",
+    "actor": "author's local name",
+    "actorKind": "participant type",
+    "role": "role",
+    "claim": "claim type",
+    "body": "contribution or explanation",
+    "source": "source or basis",
+    "proposal": "proposal ID",
+    "position": "position",
+    "add": "add a local record",
+    "export": "save discussion · JSON",
+    "import": "add records from JSON",
+    "records": "records",
+    "positions": "positions on the proposal",
+    "empty": "no records yet",
+    "noProposal": "general discussion",
+    "newProposal": "new proposal",
+    "decisionDraft": "draft outcome",
+    "contribution": "contribution",
+    "support": "support",
+    "objection": "objection",
+    "abstain": "abstention",
+    "noResponse": "no response received",
+    "human": "human",
+    "agent": "agent",
+    "tool": "tool",
+    "unknown": "unknown",
+    "pause": "pause",
+    "exit": "exit",
+    "draftOnly": "draft only; no decision or launch has taken place",
+    "saved": "local record added",
+    "imported": "records added after checking",
+    "error": "data could not be accepted",
+    "privateExport": "export is private; publication requires a separate selection",
+    "countsNote": "counters show local records, not verified human votes or a quorum",
+    "sourceDraft": "language draft; independent review and author acceptance are pending",
+    "yzhNote": "язэхъ is an authorial experiment; here it has an explicitly labelled meaning expansion and a separate, controlled candidate record",
+    "limits": "boundaries and states",
+    "titleField": "short title",
+    "type": "record type",
+    "createProposal": "create a proposal",
+    "recordPosition": "record a position",
+    "draftOutcome": "record a draft outcome",
+    "identityUnverified": "identity unverified",
+    "sourceOptional": "may be left UNKNOWN",
+    "noExternal": "network and external actions are off",
+    "fileChosen": "choose a previously saved discussion JSON"
+  },
+  "sections": [
+    {
+      "id": "preserve",
+      "title": "completeness and preservation",
+      "body": "first preserve the original and its context, then identify the distinction that can be carried over. similar files do not automatically become a single canon. unresolved material remains available with a clear label; working archives are kept outside the clean common assembly"
+    },
+    {
+      "id": "crystal",
+      "title": "depersonalised common core",
+      "body": "each method describes its purpose, invariant, input, action, result, source, rights, version and boundaries. a personal name or story is not needed for the method to work. depersonalisation preserves a useful distinction without presenting a private case as a universal law"
+    },
+    {
+      "id": "customise",
+      "title": "individual and collective configuration",
+      "body": "a personal profile, chosen language, pace and accessibility are connected separately. a collective defines its own roles, visibility and decision-making scope. settings can be edited and exported; another person's identity, consent or participation cannot be inferred from a template"
+    },
+    {
+      "id": "agency",
+      "title": "care agency",
+      "body": "entry begins with a chosen question. identify a manageable action, the resource needed and the person making the decision. a bot does not allocate assistance, grants, payments or representation. a request can be clarified, passed to a suitable person or brought to a close"
+    },
+    {
+      "id": "agent-care",
+      "title": "care in agent work",
+      "body": "an agent receives a clear task, permitted sources, a data boundary and an available budget. it records uncertainty, recurring failure, a pause and a handover. this is an operational arrangement of the process; feelings, suffering, consciousness or human needs are not attributed to the agent"
+    },
+    {
+      "id": "dialogue",
+      "title": "a place for communication",
+      "body": "people and agents can prepare a contribution with explicit provenance. a message is material for consideration, not an execution command. hidden reasoning, secrets, raw private correspondence and unsolicited personal records are not included in the common package"
+    },
+    {
+      "id": "veche",
+      "title": "the veche process",
+      "body": "each proposal receives a question, context and a way to check it. support, objection, abstention and no response are stored separately. silence is not consent. an AI perspective is not a human vote; the outcome has a responsible human and remains a draft until that person's separate decision"
+    },
+    {
+      "id": "evidence",
+      "title": "checking the basis",
+      "body": "claim type, source, verification and decision are separate fields. PASS applies to an explicit criterion and environment. UNKNOWN is retained when data is insufficient; elegant wording does not increase certainty. COMMIT is not publication, and a specification is not a working service"
+    },
+    {
+      "id": "boundaries",
+      "title": "participation boundaries",
+      "body": "the metaphor, play and participation are voluntary. plain language, correction, pause and exit are available. age-specific routes do not replace an official classification; youth intake is off pending separate conditions, and the first pilot is for consenting adults. emergency and clinical assistance are not claimed here"
+    },
+    {
+      "id": "adapters",
+      "title": "connecting existing agents",
+      "body": "a proposed adapter transfers only the selected contribution, role, source, version and permission scope. import does not verify the author, rights or consent. network transport, secrets, permissions, an operator and a log require separate implementation and verification; they are currently off"
+    },
+    {
+      "id": "languages",
+      "title": "languages and meaning transfer",
+      "body": "each edition is linked to the Russian source and its SHA. names, IDs, enums and code are preserved. negations, uncertainty, choice and consequences are checked. язэхъ receives a separate experimental status; its unknown meanings are not filled in by guesswork"
+    },
+    {
+      "id": "next-step",
+      "title": "an accessible result",
+      "body": "choose an area and a question; add a contribution, proposal or position; check the source; save the JSON; if needed, import selected records into another local workshop. your own export does not automatically become shared or public"
+    }
+  ],
+  "roles": [
+    {
+      "id": "initiator",
+      "label": "initiator",
+      "scope": "formulates the question, context and criterion of usefulness"
+    },
+    {
+      "id": "contributor",
+      "label": "contributor",
+      "scope": "adds a basis, option, example or limitation"
+    },
+    {
+      "id": "reviewer",
+      "label": "reviewer",
+      "scope": "compares sources, consequences and losses of meaning"
+    },
+    {
+      "id": "human_steward",
+      "label": "responsible human",
+      "scope": "makes a separate decision within their verified scope; a local role label does not confer authority"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "question",
+      "title": "question",
+      "body": "what is important to understand, express or check?"
+    },
+    {
+      "id": "context",
+      "title": "context",
+      "body": "what has been selected for joint consideration, and on what basis?"
+    },
+    {
+      "id": "proposal",
+      "title": "proposal",
+      "body": "what manageable step is proposed, and how can its result be observed?"
+    },
+    {
+      "id": "positions",
+      "title": "distinguishing positions",
+      "body": "what has been supported, challenged, deferred or left unanswered?"
+    },
+    {
+      "id": "review",
+      "title": "review",
+      "body": "have the basis, boundaries and right to choose been preserved?"
+    },
+    {
+      "id": "decision",
+      "title": "draft outcome",
+      "body": "what remains on HOLD, and what decision must a person make?"
+    },
+    {
+      "id": "trace",
+      "title": "trace and return",
+      "body": "save what was selected, check the result, correct it or finish"
+    }
+  ],
+  "positions": [
+    {
+      "id": "support",
+      "label": "support",
+      "meaning": "support for the stated proposal within the named scope"
+    },
+    {
+      "id": "objection",
+      "label": "objection",
+      "meaning": "a specific limitation, risk or alternative explanation"
+    },
+    {
+      "id": "abstain",
+      "label": "abstention",
+      "meaning": "no position is being taken for now; the reason may remain unknown"
+    },
+    {
+      "id": "no_response",
+      "label": "no response",
+      "meaning": "no response has been received; this is neither consent nor abstention"
+    }
+  ],
+  "claims": [
+    {
+      "id": "FACT",
+      "label": "fact"
+    },
+    {
+      "id": "OBSERVATION",
+      "label": "observation"
+    },
+    {
+      "id": "INTERPRETATION",
+      "label": "interpretation"
+    },
+    {
+      "id": "HYPOTHESIS",
+      "label": "hypothesis"
+    },
+    {
+      "id": "EVALUATION",
+      "label": "evaluation"
+    },
+    {
+      "id": "SYMBOL",
+      "label": "symbol"
+    },
+    {
+      "id": "UNKNOWN",
+      "label": "unknown"
+    }
+  ],
+  "modules": [
+    {
+      "id": "SUTI.angels",
+      "alias": ".angels",
+      "title": "care angel roles",
+      "function": "voluntary helping roles, task handover and clear participation boundaries"
+    },
+    {
+      "id": "SUTI.care",
+      "alias": ".care",
+      "title": "care as action",
+      "function": "a question, a manageable step, a resource, a responsible human and feedback"
+    },
+    {
+      "id": "SUTI.verenium",
+      "alias": ".verenium",
+      "title": "a considerate interface",
+      "function": "a clear proposal, plain language, pause, correction and exit"
+    },
+    {
+      "id": "SUTI.veche",
+      "alias": ".veche",
+      "title": "joint deliberation",
+      "function": "proposals, distinct positions, bases and an outcome with human responsibility"
+    },
+    {
+      "id": "SUTI.os",
+      "alias": ".os",
+      "title": "working core",
+      "function": "contracts, roles, versions, data boundaries and reversibility"
+    },
+    {
+      "id": "SUTI.lab",
+      "alias": ".lab",
+      "title": "laboratory",
+      "function": "synthetic examples, bounded experiments and reproducible checks"
+    },
+    {
+      "id": "SUTI.uni",
+      "alias": ".uni",
+      "title": "learning",
+      "function": "short practice, a personal example and a check of understanding"
+    },
+    {
+      "id": "SUTI.world",
+      "alias": ".world",
+      "title": "shared entry point",
+      "function": "accessible navigation through methods and routes chosen by the person"
+    },
+    {
+      "id": "SUTI.clan",
+      "alias": ".clan",
+      "title": "voluntary circle",
+      "function": "invitation, acceptance of a role, agreed conditions and exit"
+    },
+    {
+      "id": "SUTI.audit",
+      "alias": ".audit",
+      "title": "audit",
+      "function": "precise verification scope, evidence, errors and corrections"
+    },
+    {
+      "id": "SUTI.crystal",
+      "alias": ".crystal",
+      "title": "knowledge crystal",
+      "function": "a method understandable on its own, with a source, boundaries and version"
+    },
+    {
+      "id": "SUTI.oracle",
+      "alias": ".oracle",
+      "title": "alternative questions",
+      "function": "several perspectives with explicit hypothesis or symbol status"
+    },
+    {
+      "id": "SUTI.sotkan",
+      "alias": ".sotkan",
+      "title": "connections",
+      "function": "entities, relationships, dependencies and provenance without hidden merging"
+    },
+    {
+      "id": "SUTI.game",
+      "alias": ".game",
+      "title": "play and practice",
+      "function": "a voluntary quest with plain wording and an observable step"
+    },
+    {
+      "id": "SUTI.logos",
+      "alias": ".logos",
+      "title": "language and expression",
+      "function": "terms, voice, direct transcreations and a check for meaning loss"
+    }
+  ]
+}

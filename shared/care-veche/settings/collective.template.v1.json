@@ -1,0 +1,61 @@
+{
+  "schema": "suti.collective-settings.template.v1",
+  "kind": "editable-template",
+  "visibility": "internal",
+  "collective_id": null,
+  "accountable_human": null,
+  "enabled_modules": [
+    "SUTI.angels",
+    "SUTI.care",
+    "SUTI.verenium",
+    "SUTI.veche",
+    "SUTI.os",
+    "SUTI.lab",
+    "SUTI.uni",
+    "SUTI.world",
+    "SUTI.clan",
+    "SUTI.audit",
+    "SUTI.crystal",
+    "SUTI.oracle",
+    "SUTI.sotkan",
+    "SUTI.game",
+    "SUTI.logos"
+  ],
+  "roles": [
+    {
+      "id": "initiator",
+      "assigned_to": null,
+      "acceptance": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "contributor",
+      "assigned_to": null,
+      "acceptance": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "reviewer",
+      "assigned_to": null,
+      "acceptance": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "human_steward",
+      "assigned_to": null,
+      "acceptance": "NOT_ESTABLISHED"
+    }
+  ],
+  "membership": "opt-in",
+  "positions": [
+    "support",
+    "objection",
+    "abstain",
+    "no_response"
+  ],
+  "quorum_rule": null,
+  "human_authority_verified": false,
+  "capability_grants": [],
+  "external_transport": "OFF",
+  "fundraising": "OFF",
+  "payments": "OFF",
+  "youth_intake": "OFF",
+  "publication": "HOLD"
+}

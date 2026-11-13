@@ -1,0 +1,543 @@
+{
+  "schema": "yzh.lexicon.proposed.v1",
+  "register": "YZHC 0.1",
+  "origin": "new technical design, not corpus gloss assignment",
+  "entries": [
+    {
+      "term_id": "a",
+      "form": "a",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "actor",
+      "definition_ru": "участник A",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "b",
+      "form": "b",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "actor",
+      "definition_ru": "участник B",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "card",
+      "form": "card",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "artifact",
+      "definition_ru": "синтетическая карточка",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "map",
+      "form": "map",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "artifact",
+      "definition_ru": "синтетическая карта",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "archive",
+      "form": "archive",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "location",
+      "definition_ru": "синтетическое место хранения",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "tool",
+      "form": "tool",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "instrument",
+      "definition_ru": "синтетический инструмент",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "message",
+      "form": "message",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "artifact",
+      "definition_ru": "синтетическое сообщение",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "next_step",
+      "form": "next_step",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "noun",
+      "semantic_type": "abstract",
+      "definition_ru": "следующий выбранный шаг",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "clear",
+      "form": "clear",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "adjective",
+      "semantic_type": "modifier",
+      "definition_ru": "ясный",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "small",
+      "form": "small",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "adjective",
+      "semantic_type": "modifier",
+      "definition_ru": "малый",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "slowly",
+      "form": "slowly",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "adverb",
+      "semantic_type": "modifier",
+      "definition_ru": "медленно",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "carefully",
+      "form": "carefully",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "adverb",
+      "semantic_type": "modifier",
+      "definition_ru": "внимательно",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "no",
+      "form": "no",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "particle",
+      "semantic_type": "closed-operator",
+      "definition_ru": "нет; служебная метка отрицания",
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "make",
+      "form": "make",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "создавать",
+      "required_roles": [
+        "object"
+      ],
+      "allowed_roles": [
+        "object",
+        "instrument",
+        "location",
+        "recipient",
+        "quality",
+        "manner"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "read",
+      "form": "read",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "читать",
+      "required_roles": [
+        "object"
+      ],
+      "allowed_roles": [
+        "object",
+        "location",
+        "manner"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "revise",
+      "form": "revise",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "пересматривать",
+      "required_roles": [
+        "object"
+      ],
+      "allowed_roles": [
+        "object",
+        "instrument",
+        "manner",
+        "quality"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "share",
+      "form": "share",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "предлагать передать",
+      "required_roles": [
+        "object",
+        "recipient"
+      ],
+      "allowed_roles": [
+        "object",
+        "recipient",
+        "source",
+        "goal",
+        "manner"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "pause",
+      "form": "pause",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "приостанавливать",
+      "required_roles": [],
+      "allowed_roles": [
+        "object",
+        "location"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "leave",
+      "form": "leave",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "выходить",
+      "required_roles": [],
+      "allowed_roles": [
+        "source",
+        "goal"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    },
+    {
+      "term_id": "care",
+      "form": "care",
+      "register": "controlled",
+      "status": "PROPOSED",
+      "pos": "verb",
+      "semantic_type": "predicate",
+      "definition_ru": "предлагать посильную заботу",
+      "required_roles": [],
+      "allowed_roles": [
+        "object",
+        "recipient",
+        "manner"
+      ],
+      "source_refs": [],
+      "etymology": {
+        "status": "UNKNOWN",
+        "claim": null,
+        "sources": []
+      },
+      "author_adoption": "NOT_ESTABLISHED",
+      "ipa": null,
+      "pronunciation_status": "UNKNOWN",
+      "segmentation": null,
+      "phase": "unspecified",
+      "examples": [],
+      "counterexamples": [],
+      "boundary_ru": "Технический ID нового проекта; не восстановленная форма старого YZH и не историческая реконструкция.",
+      "version": "0.1"
+    }
+  ],
+  "publication": "HOLD"
+}

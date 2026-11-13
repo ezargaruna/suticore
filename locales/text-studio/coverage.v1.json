@@ -1,0 +1,148 @@
+{
+  "schema": "suti.text-studio.coverage.v1",
+  "source_sha256": "599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2",
+  "formatter_source_sha256": "5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa",
+  "profiles": [
+    "synaura",
+    "syntaxium",
+    "clear",
+    "message",
+    "compact",
+    "poetry",
+    "faithful"
+  ],
+  "routes": {
+    "ru": {
+      "href": "text-studio.html?lang=ru",
+      "contentLanguage": "ru",
+      "direction": "ltr",
+      "status": "SOURCE_CURRENT",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "en": {
+      "href": "text-studio.html?lang=en",
+      "contentLanguage": "en",
+      "direction": "ltr",
+      "status": "EXISTING_COPY_ADAPTED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "es": {
+      "href": "text-studio.html?lang=es",
+      "contentLanguage": "es",
+      "direction": "ltr",
+      "status": "EXISTING_COPY_ADAPTED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "pt-br": {
+      "href": "text-studio.html?lang=pt-br",
+      "contentLanguage": "pt-BR",
+      "direction": "ltr",
+      "status": "EXISTING_COPY_ADAPTED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "zh-hans": {
+      "href": "text-studio.html?lang=zh-hans",
+      "contentLanguage": "zh-Hans",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "hi": {
+      "href": "text-studio.html?lang=hi",
+      "contentLanguage": "hi",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "fr": {
+      "href": "text-studio.html?lang=fr",
+      "contentLanguage": "fr",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "ar": {
+      "href": "text-studio.html?lang=ar",
+      "contentLanguage": "ar",
+      "direction": "rtl",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "bn": {
+      "href": "text-studio.html?lang=bn",
+      "contentLanguage": "bn",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "eo": {
+      "href": "text-studio.html?lang=eo",
+      "contentLanguage": "eo",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "sa": {
+      "href": "text-studio.html?lang=sa",
+      "contentLanguage": "sa",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "la": {
+      "href": "text-studio.html?lang=la",
+      "contentLanguage": "la",
+      "direction": "ltr",
+      "status": "AI_DRAFT_RECONCILED",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    },
+    "yzh": {
+      "href": "text-studio.html?lang=yzh",
+      "contentLanguage": "ru",
+      "direction": "ltr",
+      "status": "RU_GLOSS_EXPERIMENTAL",
+      "native_review": "HOLD",
+      "string_fields": 37,
+      "human_leaf_strings": 43,
+      "profile_descriptions": 7
+    }
+  },
+  "runtime": "deterministic mechanical formatter; no model/network/text storage",
+  "scope": "13 complete selected UI editions; full-site/native review not implied"
+}

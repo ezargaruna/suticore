@@ -1,0 +1,337 @@
+{
+  "schema": "suti.care-veche.locale.v1",
+  "version": "2026-11-13.v1",
+  "locale": "eo",
+  "source_locale": "ru",
+  "direction": "ltr",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "title": "komuna spaco por zorgo kaj veche",
+  "subtitle": "klara demando · distingeblaj voĉoj · farebla paŝo · konservita spuro",
+  "scope": "komuna senpersonigita bazo por individuaj kaj kolektivaj sistemoj; loka laborejo por diskuto",
+  "purpose": "kunligi scion, agentejon por zorgo kaj komunan konsideradon tiel, ke homo povu memstare agordi la sistemon kaj kontroli la sekvan paŝon",
+  "outcome": "legi la metodon, registri kontribuon aŭ starpunkton, vidi la diferencojn kaj konservi porteblan diskutpakaĵon",
+  "statusNote": "projekta specifo kaj kandidato por loka prototipo; retaj agentoj, mesaĝoj, mono, jura organizo kaj publikigo estas malŝaltitaj",
+  "preservation": "utilaj metodoj, versioj kaj nesolvitaj materialoj estas konservataj; originaloj ne estas detruataj, elektitaj transigoj estas inversigeblaj kaj havas source → target, SHA kaj kvitancon",
+  "privacy": "en la komuna tavolo estas metodoj, roloj kaj malplenaj ŝablonoj; personaj rakontoj, kontaktoj, korespondado kaj sentemaj informoj restas en la elektita privata kadro",
+  "metaphor": "anĝelo de zorgo estas libervola interfaca bildo; homoj kaj agentoj povas uzi ordinaran priskribon de la rolo sen atribuo de identeco aŭ travivaĵoj",
+  "localState": "la registraĵoj de la laborejo troviĝas en la memoro de la paĝo; antaŭ fermo konservu la JSON-dosieron. importo aldonas kontrolitajn registraĵojn sen anstataŭigi la originan historion",
+  "identityNote": "la partoprenanta tipo kaj la nomo en ĉi tiu loka laborejo estas deklaritaj de la aŭtoro de la registraĵo; la identeco, rajtigoj kaj konsento de aliaj partoprenantoj ne estas kontrolitaj ĉi tie",
+  "ui": {
+    "language": "lingvo",
+    "guide": "metodo kaj strukturo",
+    "room": "diskuta laborejo",
+    "modules": "ĉiuj kadroj",
+    "channel": "kadro",
+    "actor": "loka nomo de la aŭtoro",
+    "actorKind": "tipo de partoprenanto",
+    "role": "rolo",
+    "claim": "tipo de aserto",
+    "body": "kontribuo aŭ klarigo",
+    "source": "fonto aŭ bazo",
+    "proposal": "ID de propono",
+    "position": "starpunkto",
+    "add": "aldoni lokan registraĵon",
+    "export": "konservi diskuton · JSON",
+    "import": "aldoni registraĵojn el JSON",
+    "records": "registraĵoj",
+    "positions": "starpunktoj pri la propono",
+    "empty": "ankoraŭ ne estas registraĵoj",
+    "noProposal": "ĝenerala diskuto",
+    "newProposal": "nova propono",
+    "decisionDraft": "malneto de rezulto",
+    "contribution": "kontribuo",
+    "support": "subteno",
+    "objection": "malkonsento",
+    "abstain": "sindeteno",
+    "noResponse": "respondo ne ricevita",
+    "human": "homo",
+    "agent": "agento",
+    "tool": "ilo",
+    "unknown": "nekonate",
+    "pause": "paŭzo",
+    "exit": "eliro",
+    "draftOnly": "nur malneto; decido kaj lanĉo ne okazis",
+    "saved": "loka registraĵo aldonita",
+    "imported": "registraĵoj aldonitaj post kontrolo",
+    "error": "ne eblis akcepti la datumojn",
+    "privateExport": "la eksporto estas privata; publikigo postulas apartan elekton",
+    "countsNote": "la nombriloj montras lokajn registraĵojn, ne kontrolitajn homajn voĉdonojn aŭ kvorumon",
+    "sourceDraft": "lingva malneto; sendependa provlegado kaj akcepto de la aŭtoro estas atendataj",
+    "yzhNote": "язэхъ estas aŭtora eksperimento; ĉi tie troviĝas eksplicite markita disvolvo de la signifo kaj aparta, regata kandidata registraĵo",
+    "limits": "limoj kaj statoj",
+    "titleField": "mallonga titolo",
+    "type": "tipo de registraĵo",
+    "createProposal": "krei proponon",
+    "recordPosition": "registri starpunkton",
+    "draftOutcome": "registri malneton de rezulto",
+    "identityUnverified": "identeco nekontrolita",
+    "sourceOptional": "eblas lasi UNKNOWN",
+    "noExternal": "la reto kaj eksteraj agoj estas malŝaltitaj",
+    "fileChosen": "elektu antaŭe konservitan diskutdosieron JSON"
+  },
+  "sections": [
+    {
+      "id": "preserve",
+      "title": "kompleteco kaj konservado",
+      "body": "unue konservi la originalon kaj ĝian kuntekston, poste elstarigi la transigeblan distingon. similaj dosieroj ne aŭtomate fariĝas unu kanono. nesolvita materialo restas alirebla kun klara marko; laborarkivoj estas konservataj ekster la purigita komuna kunmetaĵo"
+    },
+    {
+      "id": "crystal",
+      "title": "senpersonigita komuna kerno",
+      "body": "ĉiu metodo priskribas celon, invarianton, enigon, agon, rezulton, fonton, rajtojn, version kaj limojn. persona nomo aŭ rakonto ne estas bezonata por la funkciado de la metodo. senpersonigo konservas utilan distingon, sed ne prezentas apartan kazon kiel universalan leĝon"
+    },
+    {
+      "id": "customise",
+      "title": "individua kaj kolektiva agordado",
+      "body": "persona profilo, elektita lingvo, ritmo kaj alireblo estas aldonataj aparte. kolektivo difinas siajn proprajn rolojn, videblon kaj decidkampon. agordoj estas redakteblaj kaj eksporteblaj; la identeco, konsento kaj partopreno de alia persono ne estas deduktataj el ŝablono"
+    },
+    {
+      "id": "agency",
+      "title": "agentejo por zorgo",
+      "body": "la eniro komenciĝas per elektita demando. difini fareblan agon, bezonatan rimedon kaj la homon, kiu decidas. roboto ne asignas helpon, subvenciojn, pagojn aŭ reprezentadon. peto povas esti klarigita, transdonita al taŭga homo aŭ finita"
+    },
+    {
+      "id": "agent-care",
+      "title": "zorgo en la laboro de agentoj",
+      "body": "agento ricevas klaran taskon, permesitajn fontojn, datuman limon kaj disponeblan buĝeton. ĝi registras necertecon, ripetiĝantan misfunkcion, paŭzon kaj transdonon de la laboro. tio estas operacia organizado de la procezo; sentoj, sufero, konscio aŭ homaj bezonoj ne estas atribuataj al la agento"
+    },
+    {
+      "id": "dialogue",
+      "title": "loko por komunikado",
+      "body": "homoj kaj agentoj povas prepari kontribuon kun eksplicita deveno. mesaĝo estas datumoj por konsiderado, ne ordono por plenumo. kaŝitaj rezonadoj, sekretoj, neprilaborita privata korespondado kaj nepetitaj personaj registraĵoj ne estas inkluzivataj en la komuna pakaĵo"
+    },
+    {
+      "id": "veche",
+      "title": "la procedo de veche",
+      "body": "ĉiu propono ricevas demandon, kuntekston kaj manieron de kontrolo. subteno, kontraŭargumento, sindeteno kaj manko de respondo estas konservataj aparte. silento ne estas konsiderata konsento. perspektivo de AI ne estas homa voĉdono; la rezulto havas respondecan homon kaj restas malneto ĝis ties aparta decido"
+    },
+    {
+      "id": "evidence",
+      "title": "kontrolo de la bazoj",
+      "body": "la tipo de aserto, fonto, kontrolo kaj decido estas apartaj kampoj. PASS rilatas al eksplicita kriterio kaj medio. UNKNOWN estas konservata kiam datumoj mankas; bela esprimo ne plialtigas certecon. COMMIT ne egalas publikigon, kaj specifo ne egalas funkciantan servon"
+    },
+    {
+      "id": "boundaries",
+      "title": "limoj de partopreno",
+      "body": "la bildo, ludo kaj partopreno estas libervolaj. disponeblas ordinara lingvo, korekto, paŭzo kaj eliro. aĝaj itineroj ne anstataŭas oficialan klasifikon; la akcepto de junuloj estas malŝaltita ĝis apartaj kondiĉoj estos difinitaj, kaj la unua prova projekto estas por konsentintaj plenkreskuloj. ĉi tie oni ne pretendas liveri krizhelpon aŭ klinikan helpon"
+    },
+    {
+      "id": "adapters",
+      "title": "konektado de ekzistantaj agentoj",
+      "body": "la proponata adaptilo transdonas nur la elektitajn kontribuon, rolon, fonton, version kaj permesokampon. importo ne konfirmas la aŭtoron, rajtojn aŭ konsenton. reta transporto, sekretoj, permesoj, funkciigisto kaj protokolo postulas apartajn efektivigon kaj kontrolon; nun ili estas malŝaltitaj"
+    },
+    {
+      "id": "languages",
+      "title": "lingvoj kaj transigo de signifo",
+      "body": "ĉiu eldono estas ligita al la rusa fonto kaj ĝia SHA. nomoj, ID-oj, enums kaj kodo estas konservataj. estas kontrolataj neoj, necerteco, elekto kaj konsekvencoj. язэхъ ricevas apartan eksperimentan statuson; ĝiaj nekonataj signifoj ne estas plenigataj per konjektoj"
+    },
+    {
+      "id": "next-step",
+      "title": "atingebla rezulto",
+      "body": "elektu kadron kaj demandon; aldonu kontribuon, proponon aŭ starpunkton; kontrolu la fonton; konservu la JSON-dosieron; laŭbezone importu elektitajn registraĵojn en alian lokan laborejon. propra eksporto ne aŭtomate fariĝas komuna aŭ publika"
+    }
+  ],
+  "roles": [
+    {
+      "id": "initiator",
+      "label": "iniciatinto",
+      "scope": "formulas la demandon, kuntekston kaj kriterion de utileco"
+    },
+    {
+      "id": "contributor",
+      "label": "partoprenanto",
+      "scope": "aldonas bazon, eblon, ekzemplon aŭ limigon"
+    },
+    {
+      "id": "reviewer",
+      "label": "kontrolanto",
+      "scope": "komparas fontojn, konsekvencojn kaj signifoperdojn"
+    },
+    {
+      "id": "human_steward",
+      "label": "respondeca homo",
+      "scope": "aparte decidas en sia konfirmita agadkampo; loka roletikedo ne donas rajtigojn"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "question",
+      "title": "demando",
+      "body": "kion gravas kompreni, esprimi aŭ kontroli?"
+    },
+    {
+      "id": "context",
+      "title": "kunteksto",
+      "body": "kio estas elektita por komuna konsiderado kaj sur kiu bazo?"
+    },
+    {
+      "id": "proposal",
+      "title": "propono",
+      "body": "kiu farebla paŝo estas proponata kaj kiel rimarki la rezulton?"
+    },
+    {
+      "id": "positions",
+      "title": "distingado de starpunktoj",
+      "body": "kio estas subtenita, kontestita, prokrastita aŭ restinta sen respondo?"
+    },
+    {
+      "id": "review",
+      "title": "kontrolo",
+      "body": "ĉu la bazoj, limoj kaj rajto elekti estas konservitaj?"
+    },
+    {
+      "id": "decision",
+      "title": "malneto de rezulto",
+      "body": "kio restas en HOLD kaj kiun decidon devas fari homo?"
+    },
+    {
+      "id": "trace",
+      "title": "spuro kaj reveno",
+      "body": "konservi la elektitaĵon, kontroli la rezulton, korekti aŭ fini"
+    }
+  ],
+  "positions": [
+    {
+      "id": "support",
+      "label": "subteno",
+      "meaning": "subteno al la indikita propono en la nomita kampo"
+    },
+    {
+      "id": "objection",
+      "label": "malkonsento",
+      "meaning": "konkreta limigo, risko aŭ alternativa klarigo"
+    },
+    {
+      "id": "abstain",
+      "label": "sindeteno",
+      "meaning": "oni ankoraŭ ne alprenas starpunkton; la kialo povas resti nekonata"
+    },
+    {
+      "id": "no_response",
+      "label": "sen respondo",
+      "meaning": "respondo ne estas ricevita; tio estas nek konsento nek sindeteno"
+    }
+  ],
+  "claims": [
+    {
+      "id": "FACT",
+      "label": "fakto"
+    },
+    {
+      "id": "OBSERVATION",
+      "label": "observo"
+    },
+    {
+      "id": "INTERPRETATION",
+      "label": "interpreto"
+    },
+    {
+      "id": "HYPOTHESIS",
+      "label": "hipotezo"
+    },
+    {
+      "id": "EVALUATION",
+      "label": "takso"
+    },
+    {
+      "id": "SYMBOL",
+      "label": "simbolo"
+    },
+    {
+      "id": "UNKNOWN",
+      "label": "nekonate"
+    }
+  ],
+  "modules": [
+    {
+      "id": "SUTI.angels",
+      "alias": ".angels",
+      "title": "roloj de anĝeloj de zorgo",
+      "function": "libervolaj helporoloj, transdono de tasko kaj klaraj partoprenlimoj"
+    },
+    {
+      "id": "SUTI.care",
+      "alias": ".care",
+      "title": "zorgo kiel ago",
+      "function": "demando, farebla paŝo, rimedo, respondeca homo kaj retrokuplo"
+    },
+    {
+      "id": "SUTI.verenium",
+      "alias": ".verenium",
+      "title": "zorgema interfaco",
+      "function": "klara propono, ordinara lingvo, paŭzo, korekto kaj eliro"
+    },
+    {
+      "id": "SUTI.veche",
+      "alias": ".veche",
+      "title": "komuna konsiderado",
+      "function": "proponoj, distingeblaj starpunktoj, bazoj kaj rezulto kun respondeco"
+    },
+    {
+      "id": "SUTI.os",
+      "alias": ".os",
+      "title": "labora kerno",
+      "function": "kontraktoj, roloj, versioj, datumlimoj kaj inversigeblo"
+    },
+    {
+      "id": "SUTI.lab",
+      "alias": ".lab",
+      "title": "laboratorio",
+      "function": "sintezaj ekzemploj, limigitaj eksperimentoj kaj ripeteblaj kontroloj"
+    },
+    {
+      "id": "SUTI.uni",
+      "alias": ".uni",
+      "title": "lernado",
+      "function": "mallonga praktiko, propra ekzemplo kaj kontrolo de kompreno"
+    },
+    {
+      "id": "SUTI.world",
+      "alias": ".world",
+      "title": "komuna eniro",
+      "function": "alirebla navigado tra metodoj kaj itineroj elektitaj de la homo"
+    },
+    {
+      "id": "SUTI.clan",
+      "alias": ".clan",
+      "title": "libervola rondo",
+      "function": "invito, akcepto de rolo, komunaj kondiĉoj kaj eliro"
+    },
+    {
+      "id": "SUTI.audit",
+      "alias": ".audit",
+      "title": "revizio",
+      "function": "preciza kontrolkampo, pruvoj, eraroj kaj korektoj"
+    },
+    {
+      "id": "SUTI.crystal",
+      "alias": ".crystal",
+      "title": "kristalo de scio",
+      "function": "memstare komprenebla metodo kun fonto, limoj kaj versio"
+    },
+    {
+      "id": "SUTI.oracle",
+      "alias": ".oracle",
+      "title": "alternativaj demandoj",
+      "function": "pluraj perspektivoj kun eksplicita statuso de hipotezo aŭ simbolo"
+    },
+    {
+      "id": "SUTI.sotkan",
+      "alias": ".sotkan",
+      "title": "ligoj",
+      "function": "entoj, rilatoj, dependecoj kaj deveno sen kaŝita kunfando"
+    },
+    {
+      "id": "SUTI.game",
+      "alias": ".game",
+      "title": "ludo kaj praktiko",
+      "function": "libervola serĉludo kun ordinara vortumo kaj observebla paŝo"
+    },
+    {
+      "id": "SUTI.logos",
+      "alias": ".logos",
+      "title": "lingvo kaj esprimo",
+      "function": "terminoj, voĉo, rektaj transkreoj kaj kontrolo de signifoperdoj"
+    }
+  ]
+}

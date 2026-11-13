@@ -1,0 +1,337 @@
+{
+  "schema": "suti.care-veche.locale.v1",
+  "version": "2026-11-13.v1",
+  "locale": "es-419",
+  "source_locale": "ru",
+  "direction": "ltr",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "title": "espacio común de cuidado y veche",
+  "subtitle": "pregunta clara · voces distinguibles · paso posible · huella conservada",
+  "scope": "base común despersonalizada para sistemas individuales y colectivos; taller local de deliberación",
+  "purpose": "conectar conocimientos, una agencia de cuidado y la deliberación conjunta para que cada persona pueda configurar el sistema por su cuenta y verificar el siguiente paso",
+  "outcome": "leer el método, registrar un aporte o una posición, ver las diferencias y guardar un paquete de deliberación transferible",
+  "statusNote": "especificación de diseño y candidato a prototipo local; agentes en red, mensajes, dinero, organización jurídica y publicación están desactivados",
+  "preservation": "se conservan los métodos útiles, las versiones y los materiales pendientes; los originales no se destruyen, las transferencias seleccionadas son reversibles y cuentan con source → target, SHA y un comprobante",
+  "privacy": "la capa común contiene métodos, roles y plantillas vacías; las historias personales, los contactos, la correspondencia y la información sensible permanecen en el ámbito privado elegido",
+  "metaphor": "ángel de cuidado es una imagen opcional de la interfaz; las personas y los agentes pueden usar una descripción corriente del rol, sin asignar identidades ni vivencias",
+  "localState": "los registros del taller se guardan en la memoria de la página; guarda el JSON antes de cerrarla. la importación agrega registros revisados, sin reemplazar el historial original",
+  "identityNote": "el tipo de participante y el nombre en este taller local son declarados por quien redacta el registro; aquí no se verifican la identidad, las facultades ni el consentimiento de otras personas participantes",
+  "ui": {
+    "language": "idioma",
+    "guide": "método y estructura",
+    "room": "taller de deliberación",
+    "modules": "todos los ámbitos",
+    "channel": "ámbito",
+    "actor": "nombre local de quien escribe",
+    "actorKind": "tipo de participante",
+    "role": "rol",
+    "claim": "tipo de afirmación",
+    "body": "aporte o explicación",
+    "source": "fuente o fundamento",
+    "proposal": "ID de propuesta",
+    "position": "posición",
+    "add": "agregar registro local",
+    "export": "guardar deliberación · JSON",
+    "import": "agregar registros desde JSON",
+    "records": "registros",
+    "positions": "posiciones sobre la propuesta",
+    "empty": "aún no hay registros",
+    "noProposal": "deliberación general",
+    "newProposal": "nueva propuesta",
+    "decisionDraft": "borrador de resultado",
+    "contribution": "aporte",
+    "support": "apoyo",
+    "objection": "objeción",
+    "abstain": "abstención",
+    "noResponse": "sin respuesta recibida",
+    "human": "persona",
+    "agent": "agente",
+    "tool": "herramienta",
+    "unknown": "desconocido",
+    "pause": "pausa",
+    "exit": "salir",
+    "draftOnly": "solo un borrador; no se ha tomado una decisión ni se ha puesto en marcha",
+    "saved": "registro local agregado",
+    "imported": "registros agregados tras la revisión",
+    "error": "no se pudieron aceptar los datos",
+    "privateExport": "la exportación es privada; publicar requiere una selección aparte",
+    "countsNote": "los contadores muestran registros locales, no votos humanos verificados ni un cuórum",
+    "sourceDraft": "borrador lingüístico; están pendientes la revisión independiente y la aceptación del autor",
+    "yzhNote": "язэхъ es un experimento de autor; aquí hay un desarrollo de significado señalado explícitamente y un registro candidato separado y controlado",
+    "limits": "límites y estados",
+    "titleField": "título breve",
+    "type": "tipo de registro",
+    "createProposal": "crear propuesta",
+    "recordPosition": "registrar posición",
+    "draftOutcome": "registrar borrador de resultado",
+    "identityUnverified": "identidad sin verificar",
+    "sourceOptional": "se puede dejar UNKNOWN",
+    "noExternal": "la red y las acciones externas están desactivadas",
+    "fileChosen": "elige un JSON de deliberación guardado anteriormente"
+  },
+  "sections": [
+    {
+      "id": "preserve",
+      "title": "integridad y conservación",
+      "body": "primero se conserva el original y su contexto; después se identifica la distinción transferible. los archivos similares no pasan a formar un único canon automáticamente. lo pendiente sigue disponible con una indicación clara; los archivos de trabajo se guardan fuera de la compilación común depurada"
+    },
+    {
+      "id": "crystal",
+      "title": "núcleo común despersonalizado",
+      "body": "cada método describe su objetivo, invariante, entrada, acción, resultado, fuente, derechos, versión y límites. un nombre o una historia personal no son necesarios para que el método funcione. la despersonalización conserva una distinción útil sin presentar un caso particular como una ley universal"
+    },
+    {
+      "id": "customise",
+      "title": "configuración individual y colectiva",
+      "body": "el perfil personal, el idioma elegido, el ritmo y la accesibilidad se incorporan por separado. cada colectivo define sus propios roles, visibilidad y ámbito de decisión. la configuración puede editarse y exportarse; la identidad, el consentimiento y la participación de otras personas no se deducen de una plantilla"
+    },
+    {
+      "id": "agency",
+      "title": "agencia de cuidado",
+      "body": "la entrada comienza con una pregunta elegida. se identifican una acción posible, el recurso necesario y la persona que toma la decisión. un bot no asigna ayudas, subvenciones, pagos ni representación. la solicitud puede aclararse, derivarse a una persona adecuada o cerrarse"
+    },
+    {
+      "id": "agent-care",
+      "title": "cuidado en el trabajo de los agentes",
+      "body": "el agente recibe una tarea clara, las fuentes permitidas, un límite de datos y un presupuesto disponible. registra la incertidumbre, las fallas recurrentes, las pausas y el traspaso del trabajo. esto organiza el proceso de manera operativa; no se atribuyen al agente sentimientos, sufrimiento, conciencia ni necesidades humanas"
+    },
+    {
+      "id": "dialogue",
+      "title": "espacio de comunicación",
+      "body": "las personas y los agentes pueden preparar un aporte de procedencia explícita. un mensaje es información para considerar, no una orden de ejecución. el paquete común no incluye razonamientos ocultos, secretos, correspondencia privada sin procesar ni registros personales no solicitados"
+    },
+    {
+      "id": "veche",
+      "title": "proceso del veche",
+      "body": "cada propuesta recibe una pregunta, un contexto y una forma de verificación. el apoyo, la objeción, la abstención y la ausencia de respuesta se guardan por separado. el silencio no se considera consentimiento. una perspectiva de IA no es un voto humano; el resultado tiene una persona responsable y sigue siendo un borrador hasta que esta tome una decisión por separado"
+    },
+    {
+      "id": "evidence",
+      "title": "verificación de fundamentos",
+      "body": "el tipo de afirmación, la fuente, la verificación y la decisión son campos distintos. PASS se refiere a un criterio y un entorno explícitos. UNKNOWN se mantiene cuando faltan datos; una expresión bella no aumenta la certeza. COMMIT no equivale a publicación, y una especificación no equivale a un servicio en funcionamiento"
+    },
+    {
+      "id": "boundaries",
+      "title": "límites de participación",
+      "body": "la imagen, el juego y la participación son voluntarios. están disponibles el lenguaje corriente, la corrección, la pausa y la salida. las rutas por edad no sustituyen una clasificación oficial; la admisión de jóvenes está desactivada hasta que se establezcan condiciones específicas, y el primer piloto será con personas adultas que hayan dado su consentimiento. aquí no se ofrece asistencia de emergencia ni clínica"
+    },
+    {
+      "id": "adapters",
+      "title": "conexión de agentes existentes",
+      "body": "el adaptador propuesto transfiere únicamente el aporte, el rol, la fuente, la versión y el ámbito de autorización seleccionados. importar no verifica la autoría, los derechos ni el consentimiento. el transporte en red, los secretos, los permisos, el operador y la bitácora requieren implementación y verificación aparte; por ahora están desactivados"
+    },
+    {
+      "id": "languages",
+      "title": "idiomas y transferencia de significado",
+      "body": "cada edición se vincula con la fuente en ruso y su SHA. se conservan los nombres, los ID, los enums y el código. se revisan las negaciones, la incertidumbre, la elección y las consecuencias. язэхъ recibe un estado experimental propio; sus significados desconocidos no se completan con conjeturas"
+    },
+    {
+      "id": "next-step",
+      "title": "resultado accesible",
+      "body": "elige un ámbito y una pregunta; agrega un aporte, una propuesta o una posición; verifica la fuente; guarda el JSON; si hace falta, importa los registros seleccionados en otro taller local. una exportación propia no se vuelve compartida ni pública automáticamente"
+    }
+  ],
+  "roles": [
+    {
+      "id": "initiator",
+      "label": "iniciador",
+      "scope": "formula la pregunta, el contexto y el criterio de utilidad"
+    },
+    {
+      "id": "contributor",
+      "label": "participante",
+      "scope": "agrega un fundamento, una opción, un ejemplo o una limitación"
+    },
+    {
+      "id": "reviewer",
+      "label": "revisor",
+      "scope": "compara las fuentes, las consecuencias y las pérdidas de significado"
+    },
+    {
+      "id": "human_steward",
+      "label": "persona responsable",
+      "scope": "toma una decisión por separado dentro de su ámbito verificado; una etiqueta local de rol no otorga facultades"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "question",
+      "title": "pregunta",
+      "body": "¿qué es importante comprender, expresar o verificar?"
+    },
+    {
+      "id": "context",
+      "title": "contexto",
+      "body": "¿qué se eligió para la consideración conjunta y con qué fundamento?"
+    },
+    {
+      "id": "proposal",
+      "title": "propuesta",
+      "body": "¿qué paso posible se propone y cómo se podrá observar el resultado?"
+    },
+    {
+      "id": "positions",
+      "title": "distinción de posiciones",
+      "body": "¿qué se apoyó, se objetó, se aplazó o quedó sin respuesta?"
+    },
+    {
+      "id": "review",
+      "title": "revisión",
+      "body": "¿se conservaron los fundamentos, los límites y el derecho a elegir?"
+    },
+    {
+      "id": "decision",
+      "title": "borrador de resultado",
+      "body": "¿qué queda en HOLD y qué decisión debe tomar una persona?"
+    },
+    {
+      "id": "trace",
+      "title": "huella y regreso",
+      "body": "guardar lo elegido, verificar el resultado, corregir o cerrar"
+    }
+  ],
+  "positions": [
+    {
+      "id": "support",
+      "label": "apoyo",
+      "meaning": "apoyo a la propuesta indicada dentro del ámbito señalado"
+    },
+    {
+      "id": "objection",
+      "label": "objeción",
+      "meaning": "una limitación, un riesgo o una explicación alternativa concretos"
+    },
+    {
+      "id": "abstain",
+      "label": "abstención",
+      "meaning": "por ahora no se adopta una posición; el motivo puede seguir siendo desconocido"
+    },
+    {
+      "id": "no_response",
+      "label": "sin respuesta",
+      "meaning": "no se recibió una respuesta; no equivale a consentimiento ni a abstención"
+    }
+  ],
+  "claims": [
+    {
+      "id": "FACT",
+      "label": "hecho"
+    },
+    {
+      "id": "OBSERVATION",
+      "label": "observación"
+    },
+    {
+      "id": "INTERPRETATION",
+      "label": "interpretación"
+    },
+    {
+      "id": "HYPOTHESIS",
+      "label": "hipótesis"
+    },
+    {
+      "id": "EVALUATION",
+      "label": "evaluación"
+    },
+    {
+      "id": "SYMBOL",
+      "label": "símbolo"
+    },
+    {
+      "id": "UNKNOWN",
+      "label": "desconocido"
+    }
+  ],
+  "modules": [
+    {
+      "id": "SUTI.angels",
+      "alias": ".angels",
+      "title": "roles de ángeles de cuidado",
+      "function": "roles voluntarios de ayuda, traspaso de tareas y límites claros de participación"
+    },
+    {
+      "id": "SUTI.care",
+      "alias": ".care",
+      "title": "cuidado como acción",
+      "function": "pregunta, paso posible, recurso, persona responsable y retroalimentación"
+    },
+    {
+      "id": "SUTI.verenium",
+      "alias": ".verenium",
+      "title": "interfaz cuidadosa",
+      "function": "propuesta clara, lenguaje corriente, pausa, corrección y salida"
+    },
+    {
+      "id": "SUTI.veche",
+      "alias": ".veche",
+      "title": "deliberación conjunta",
+      "function": "propuestas, posiciones distinguibles, fundamentos y resultado con una persona responsable"
+    },
+    {
+      "id": "SUTI.os",
+      "alias": ".os",
+      "title": "núcleo de trabajo",
+      "function": "contratos, roles, versiones, límites de datos y reversibilidad"
+    },
+    {
+      "id": "SUTI.lab",
+      "alias": ".lab",
+      "title": "laboratorio",
+      "function": "ejemplos sintéticos, experimentos acotados y verificaciones reproducibles"
+    },
+    {
+      "id": "SUTI.uni",
+      "alias": ".uni",
+      "title": "aprendizaje",
+      "function": "práctica breve, ejemplo propio y verificación de la comprensión"
+    },
+    {
+      "id": "SUTI.world",
+      "alias": ".world",
+      "title": "entrada común",
+      "function": "navegación accesible por los métodos y las rutas elegidas por la persona"
+    },
+    {
+      "id": "SUTI.clan",
+      "alias": ".clan",
+      "title": "círculo voluntario",
+      "function": "invitación, aceptación del rol, condiciones compartidas y salida"
+    },
+    {
+      "id": "SUTI.audit",
+      "alias": ".audit",
+      "title": "auditoría",
+      "function": "ámbito preciso de verificación, pruebas, errores y correcciones"
+    },
+    {
+      "id": "SUTI.crystal",
+      "alias": ".crystal",
+      "title": "cristal de conocimiento",
+      "function": "método comprensible por sí solo, con fuente, límites y versión"
+    },
+    {
+      "id": "SUTI.oracle",
+      "alias": ".oracle",
+      "title": "preguntas alternativas",
+      "function": "varias perspectivas con un estado explícito de hipótesis o símbolo"
+    },
+    {
+      "id": "SUTI.sotkan",
+      "alias": ".sotkan",
+      "title": "vínculos",
+      "function": "entidades, relaciones, dependencias y procedencia sin fusiones ocultas"
+    },
+    {
+      "id": "SUTI.game",
+      "alias": ".game",
+      "title": "juego y práctica",
+      "function": "recorrido lúdico voluntario con una formulación corriente y un paso observable"
+    },
+    {
+      "id": "SUTI.logos",
+      "alias": ".logos",
+      "title": "lenguaje y expresión",
+      "function": "términos, voz, transcreaciones directas y revisión de pérdidas de significado"
+    }
+  ]
+}

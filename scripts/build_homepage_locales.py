@@ -9,7 +9,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCALES = ROOT / "locales/homepage"
-ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr", "hi": "ltr", "bn": "ltr", "eo": "ltr"}
+ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr", "hi": "ltr", "bn": "ltr", "eo": "ltr", "sa": "ltr", "la": "ltr"}
 SCRIPT = re.compile(r'(<script type="application/json" id="homepage-locale-data">).*?(</script>)', re.S)
 ROUTE_KEYS = {"speak", "listen", "read", "write", "study", "travel"}
 
@@ -29,6 +29,11 @@ def main():
     static = read("static-source.json")
     required = set(read("required-keys.json"))
     ui = read("edition-ui.json")
+    ui_keys = {"review", "homeCoverage", "vaultCoverage", "formLanguage", "playerTitle", "playerLoaded", "gameLanguage"}
+    if set(ui) != {"ru", "en", "es", "pt"} | set(ADDED):
+        raise SystemExit("Homepage review/control labels must cover exactly twelve runtime editions")
+    if any(set(words) != ui_keys or not all(isinstance(value, str) and value.strip() for value in words.values()) for words in ui.values()):
+        raise SystemExit("Incomplete homepage review/control labels")
     editions = {}
     review = {
         locale: {"renderedLanguage": "pt-BR" if locale == "pt" else ("es-419" if locale == "es" else locale),
@@ -57,10 +62,10 @@ def main():
         }
         review[locale] = {
             "renderedLanguage": locale, "direction": direction,
-            "status": "fluent-review-pending" if locale == "eo" else "native-review-pending",
+            "status": "qualified-review-pending" if locale in {"sa", "la"} else "fluent-review-pending" if locale == "eo" else "native-review-pending",
             "dictionaryKeys": len(words), "additionalStrings": len(extras), "practiceTracks": len(ROUTE_KEYS),
         }
-    for locale in ("sa", "la", "yzh"):
+    for locale in ("yzh",):
         review[locale] = {"renderedLanguage": "ru", "direction": "ltr",
                           "status": "hold-authorial-language" if locale == "yzh" else "russian-fallback"}
     payload = json.dumps({"editions": editions, "ui": ui}, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")

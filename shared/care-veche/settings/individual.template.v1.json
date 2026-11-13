@@ -1,0 +1,35 @@
+{
+  "schema": "suti.individual-settings.template.v1",
+  "kind": "editable-template",
+  "visibility": "private",
+  "subject_id": null,
+  "preferred_locale": null,
+  "enabled_modules": [
+    "SUTI.angels",
+    "SUTI.care",
+    "SUTI.verenium",
+    "SUTI.veche",
+    "SUTI.os",
+    "SUTI.lab",
+    "SUTI.uni",
+    "SUTI.world",
+    "SUTI.clan",
+    "SUTI.audit",
+    "SUTI.crystal",
+    "SUTI.oracle",
+    "SUTI.sotkan",
+    "SUTI.game",
+    "SUTI.logos"
+  ],
+  "optional_pseudonym": null,
+  "accessibility": {
+    "font_scale": 1,
+    "reduced_motion": true
+  },
+  "imagery": "optional",
+  "personal_context": null,
+  "sharing": "none",
+  "permissions": [],
+  "runtime": "OFF",
+  "publication": "HOLD"
+}

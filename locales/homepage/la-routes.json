@@ -1,0 +1,35 @@
+{
+  "title": "iter exercitationis breve",
+  "items": {
+    "speak": [
+      "a salutatione incipe",
+      "unam praesentationem tui para",
+      "eam clare pronuntia"
+    ],
+    "listen": [
+      "verba nota cape",
+      "materiam sonoram 20 secundorum elige",
+      "audi et tria verba nota indica"
+    ],
+    "read": [
+      "fragmentum parvum lege",
+      "paragraphum brevem elige",
+      "sententiam principalem et unum verbum novum inveni"
+    ],
+    "write": [
+      "unam cogitationem scribe",
+      "quod hodie refert elige",
+      "simpliciter scribe et relege"
+    ],
+    "study": [
+      "quaestionem ad rem para",
+      "unam quaestionem operis elige",
+      "roga ut definiatur aut explicetur"
+    ],
+    "travel": [
+      "directionem necessariam inveni",
+      "locum inveniendum elige",
+      "quaestionem brevem compone"
+    ]
+  }
+}

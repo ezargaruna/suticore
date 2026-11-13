@@ -1,0 +1,18 @@
+{
+  "title": "world workshop",
+  "lead": "shape a place for language, practice and care",
+  "name": "world name",
+  "seed": "generation seed",
+  "layout": "space",
+  "size": "size",
+  "garden": "garden",
+  "temple": "temple",
+  "island": "island",
+  "generate": "create a sketch",
+  "blueprint": "save JSON",
+  "roblox": "Roblox Studio sketch",
+  "minecraft": "Minecraft Bedrock sketch",
+  "boundary": "the local generator creates geometry and a map of places. it does not connect to platforms; game-engine behavior and world publishing have not been tested here",
+  "testWorld": "scripts are for an empty test copy of a world. review the code before running it manually; Minecraft commands replace blocks in the indicated area",
+  "rooms": "places and links"
+}

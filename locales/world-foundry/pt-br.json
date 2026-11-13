@@ -1,0 +1,18 @@
+{
+  "title": "oficina de mundos",
+  "lead": "crie um lugar para linguagem, prática e cuidado",
+  "name": "nome do mundo",
+  "seed": "semente de geração",
+  "layout": "espaço",
+  "size": "tamanho",
+  "garden": "jardim",
+  "temple": "templo",
+  "island": "ilha",
+  "generate": "criar esboço",
+  "blueprint": "salvar JSON",
+  "roblox": "esboço para Roblox Studio",
+  "minecraft": "esboço para Minecraft Bedrock",
+  "boundary": "o gerador local cria geometria e um mapa de lugares. não se conecta a plataformas; o motor do jogo e a publicação do mundo não foram testados aqui",
+  "testWorld": "os scripts são para uma cópia de teste vazia. revise o código antes de executá-lo manualmente; os comandos do Minecraft substituem blocos na área indicada",
+  "rooms": "lugares e vínculos"
+}

@@ -1,0 +1,11 @@
+{
+  "validation": "VALID_CONTROLLED_SYNTAX_AND_TYPES",
+  "source_human_fields": 153,
+  "compiled_claims": 153,
+  "truth_status": "NOT_EVALUATED",
+  "semantic_support": "UNKNOWN",
+  "execution": "NONE",
+  "poetic_translation": "NOT_ESTABLISHED",
+  "author_adoption": "NOT_ESTABLISHED",
+  "source_projection_bytes": 37743
+}

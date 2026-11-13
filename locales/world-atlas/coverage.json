@@ -1,0 +1,118 @@
+{
+  "schema": "suti.world-atlas.coverage.v1",
+  "source_locale": "ru",
+  "source_sha256": "3e9462d5a9ff9d1bb8cadffc534312ee05db40032ed1080e4ca18ef0911424ba",
+  "route_inventory": 366,
+  "source_records": 74,
+  "module_methods": 15,
+  "atlas_records": 429,
+  "routes": {
+    "ru": {
+      "href": "world-atlas.html?lang=ru",
+      "contentLanguage": "ru",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "en": {
+      "href": "world-atlas.html?lang=en",
+      "contentLanguage": "en",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "es": {
+      "href": "world-atlas.html?lang=es",
+      "contentLanguage": "es-419",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "pt-br": {
+      "href": "world-atlas.html?lang=pt-br",
+      "contentLanguage": "pt-BR",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "zh-hans": {
+      "href": "world-atlas.html?lang=zh-hans",
+      "contentLanguage": "zh-Hans",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "hi": {
+      "href": "world-atlas.html?lang=hi",
+      "contentLanguage": "hi",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "fr": {
+      "href": "world-atlas.html?lang=fr",
+      "contentLanguage": "fr",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "ar": {
+      "href": "world-atlas.html?lang=ar",
+      "contentLanguage": "ar",
+      "direction": "rtl",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "bn": {
+      "href": "world-atlas.html?lang=bn",
+      "contentLanguage": "bn",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "eo": {
+      "href": "world-atlas.html?lang=eo",
+      "contentLanguage": "eo",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "sa": {
+      "href": "world-atlas.html?lang=sa",
+      "contentLanguage": "sa",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "la": {
+      "href": "world-atlas.html?lang=la",
+      "contentLanguage": "la",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "editorial-draft-native-review-pending",
+      "native_review": "HOLD"
+    },
+    "yzh": {
+      "href": "world-atlas.html?lang=yzh",
+      "contentLanguage": "ru",
+      "direction": "ltr",
+      "fields": 60,
+      "status": "author-gloss-HOLD",
+      "native_review": "HOLD"
+    }
+  },
+  "whole_legacy": "not implied",
+  "scope": "published static route inventory, 74 public source references, 15 care-veche module methods; no private record projection",
+  "published_text_inputs": "own project labels and already-public catalog/path metadata; private stories and case identities excluded"
+}

@@ -6,6 +6,8 @@ This repository contains public specifications, the canonical source and deploym
 
 ## Choose a starting point
 
+- [World atlas · 13 language routes](https://ezargaruna.github.io/suticore/world-atlas.html) — one searchable map of the published pages, public source catalog, care methods and local tools. [Text studio](https://ezargaruna.github.io/suticore/text-studio.html) keeps source and preview separate. [World workshop](https://ezargaruna.github.io/suticore/world-foundry.html) generates local geometry sketches and manual Roblox Studio / Minecraft Bedrock code exports; engine acceptance and platform gateways are not implemented or tested. [Care and veche workshop](https://ezargaruna.github.io/suticore/shared/care-veche/portal.html) keeps records in page memory with explicit private export; identities, human votes and quorum are not verified.
+
 - [Common living system · thirteen routes](https://ezargaruna.github.io/suticore/system/) · [13-language system guide and configurations](https://ezargaruna.github.io/suticore/modules/ai-soul-13l/) · [portable review release](https://github.com/ezargaruna/SUTI.os/releases/tag/living-system-2026-11-13-qa3). Published as unreviewed authorial drafts; the common layer's YZH route remains a Russian-gloss/HOLD scaffold. Source snapshots do not activate services or financial operations; see [publication scope](system/publication-note.html).
 
 - [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
@@ -45,7 +47,7 @@ The repositories link to each other but have separate payloads and release histo
 
 ## Language navigation
 
-The site opens in Russian unless a visitor has saved another language or supplied an explicit locale. It exposes 13 language or authorial-language choices. The homepage has Russian, English, Latin American Spanish, Brazilian Portuguese, French, Arabic, Simplified Chinese, Hindi, Bengali, and Esperanto runtime dictionaries. The remaining three choices show labeled Russian fallback and link to visitor previews. See the [homepage coverage and review record](locales/homepage/coverage.json). The 13 previews are not full interface translations and remain review drafts. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
+The site opens in Russian unless a visitor has saved another language or supplied an explicit locale. The homepage interface and its six local practice routes now have twelve written language editions: Russian, English, Spanish, Brazilian Portuguese, French, Arabic, Simplified Chinese, Hindi, Bengali, Esperanto, Sanskrit and Latin. Yazekh remains an authorial route with an explicit Russian semantic gloss. The atlas, text studio, world workshop and care/veche wrapper expose thirteen corresponding routes. These are editorial drafts: independent native/expert review is pending, and linked historical documents keep their own source-language and review states. This does not establish complete transcreation of the entire legacy site or source vault. See [homepage coverage](locales/homepage/coverage.json), [atlas coverage](locales/world-atlas/coverage.json) and the [language matrix](docs/language-layers.md).
 
 ## Rights and status
 

@@ -1,0 +1,79 @@
+{
+  "schema": "suti.world-foundry.coverage.v1",
+  "source_locale": "ru",
+  "source_sha256": "3aef39cebac923d1bd73e047c7b71c2fe391ce16ab915bf6e67e14e9f8db58de",
+  "routes": {
+    "ru": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "en": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "es": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "pt-br": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "fr": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "zh-hans": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "hi": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "ar": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "bn": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "eo": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "sa": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "la": {
+      "fields": 16,
+      "status": "editorial-draft-native-review-pending",
+      "engine_acceptance": "NOT_TESTED"
+    },
+    "yzh": {
+      "fields": 16,
+      "status": "Russian-gloss-HOLD",
+      "engine_acceptance": "NOT_TESTED"
+    }
+  },
+  "generator": "local deterministic geometry prototype",
+  "platform_gateway": "NOT_IMPLEMENTED",
+  "official_references": [
+    "https://create.roblox.com/docs/parts",
+    "https://learn.microsoft.com/en-us/minecraft/creator/documents/functionsintroduction?view=minecraft-bedrock-stable"
+  ],
+  "privacy": "page-memory only; no network or text persistence"
+}

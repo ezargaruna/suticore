@@ -1,0 +1,18 @@
+{
+  "title": "世界工坊",
+  "lead": "为语言、实践与关怀构建一个空间",
+  "name": "世界名称",
+  "seed": "生成种子",
+  "layout": "空间",
+  "size": "大小",
+  "garden": "花园",
+  "temple": "殿堂",
+  "island": "岛屿",
+  "generate": "生成草图",
+  "blueprint": "保存 JSON",
+  "roblox": "Roblox Studio 草图",
+  "minecraft": "Minecraft Bedrock 草图",
+  "boundary": "本地生成器创建几何形状和地点地图，不连接平台；尚未在此验证游戏引擎运行或世界发布",
+  "testWorld": "脚本用于空白测试世界副本。手动运行前请检查代码；Minecraft 命令会替换指定区域内的方块",
+  "rooms": "地点与连接"
+}

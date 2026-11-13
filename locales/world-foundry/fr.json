@@ -1,0 +1,18 @@
+{
+  "title": "atelier des mondes",
+  "lead": "compose un lieu pour le langage, la pratique et le soin",
+  "name": "nom du monde",
+  "seed": "graine de génération",
+  "layout": "espace",
+  "size": "taille",
+  "garden": "jardin",
+  "temple": "temple",
+  "island": "île",
+  "generate": "créer une esquisse",
+  "blueprint": "enregistrer JSON",
+  "roblox": "esquisse pour Roblox Studio",
+  "minecraft": "esquisse pour Minecraft Bedrock",
+  "boundary": "le générateur local crée une géométrie et une carte des lieux. il ne se connecte pas aux plateformes ; le moteur de jeu et la publication du monde ne sont pas testés ici",
+  "testWorld": "les scripts sont destinés à une copie de test vide. vérifie le code avant de le lancer manuellement ; les commandes Minecraft remplacent les blocs dans la zone indiquée",
+  "rooms": "lieux et liens"
+}

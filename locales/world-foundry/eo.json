@@ -1,0 +1,18 @@
+{
+  "title": "metiejo de mondoj",
+  "lead": "konstruu lokon por lingvo, praktiko kaj zorgo",
+  "name": "nomo de la mondo",
+  "seed": "genera semo",
+  "layout": "spaco",
+  "size": "grandeco",
+  "garden": "ĝardeno",
+  "temple": "templo",
+  "island": "insulo",
+  "generate": "krei skizon",
+  "blueprint": "konservi JSON",
+  "roblox": "skizo por Roblox Studio",
+  "minecraft": "skizo por Minecraft Bedrock",
+  "boundary": "la loka generatoro kreas geometrion kaj mapon de lokoj. ĝi ne konektiĝas al platformoj; la ludmotoro kaj publikigo de la mondo ne estas ĉi tie provitaj",
+  "testWorld": "la skriptoj celas malplenan testkopion de mondo. kontrolu la kodon antaŭ mana rulado; Minecraft-komandoj anstataŭigas blokojn en la indikita areo",
+  "rooms": "lokoj kaj ligoj"
+}

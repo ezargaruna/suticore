@@ -28,19 +28,15 @@ The public entry page offers 13 language and authorial-language layers:
 | Arabic (`ar`) | Arabic (RTL) | Editorial translation, native review pending | [ar](https://suti.world/?lang=ar) |
 | Bengali (`bn`) | Bengali | Editorial translation, native review pending | [bn](https://suti.world/?lang=bn) |
 | Esperanto (`eo`) | Esperanto | Editorial translation, fluent-reader review pending | [eo](https://suti.world/?lang=eo) |
-| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
-| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
+| Sanskrit (`sa`) | Sanskrit | Full homepage editorial draft; qualified review pending | [sa](https://suti.world/entry/sa/) |
+| Latin (`la`) | Latin | Full homepage editorial draft; qualified review pending | [la](https://suti.world/entry/la/) |
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
 The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
 
-The selector exposes the intended language layer. It does not claim that all
-13 layers have complete translations. For a layer without full runtime content,
-the page keeps the selection visible, labels the Russian fallback, and links to
-a static visitor-entry preview. The preview is publicly accessible but marked
-`noindex` while its editorial review remains pending. The app `lang` attribute continues
-to describe the language actually rendered. Russian is the default only when a
-visitor has not saved another locale or supplied an explicit language query.
+Hindi, Bengali, Esperanto, Sanskrit and Latin now have complete homepage dictionary drafts (479 fields each), 83 supplementary static/accessibility labels, six three-step practice tracks and seven review/control labels. They are wired into the homepage runtime rather than a silent Russian fallback. Their language quality remains subject to independent review; Sanskrit and Latin require qualified review.
+
+The selector exposes twelve written homepage editions and the separate Yazekh authorial route. Yazekh continues to show a labeled Russian semantic gloss. A translated homepage does not translate every linked historical document, game or external form. Static visitor previews remain separate, publicly accessible `noindex` drafts. The page language and Arabic RTL direction follow the content actually rendered. Russian is the default when no explicit or stored language is selected.
 
 The matching SUTI.os language catalog is [`language-packs/manifest.json`](https://github.com/ezargaruna/SUTI.os/blob/main/language-packs/manifest.json). It records all 13 layer identifiers, but only the Russian full vault and partial English, Spanish, and Brazilian Portuguese entry packs have downloadable files. The remaining nine layers have no SUTI.os archive. These boundaries are also summarized in [repository contours](repository-contours.v1.md).
 
@@ -85,8 +81,8 @@ content language, and the Arabic link sets RTL direction.
 | Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Editorial translation, independent review pending |
 | Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Editorial translation, independent review pending |
 | Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Editorial translation, fluent-reader review pending |
-| Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
-| Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Russian fallback on homepage |
+| Sanskrit (`sa`) | Sanskrit | Full homepage editorial draft; qualified review pending | [sa](https://suti.world/entry/sa/) |
+| Latin (`la`) | Latin | Full homepage editorial draft; qualified review pending | [la](https://suti.world/entry/la/) |
 | Yazekh (`yzh`) | `HOLD` — author grammar and vocabulary not confirmed; see `docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md` | Russian fallback on homepage |
 
 A linked editorial draft is not a reviewed edition and does not mean the homepage itself is localized. The Russian edition awaits author comparison; Spanish, Brazilian Portuguese, French, Simplified Chinese, Hindi, Arabic, Bengali, and Esperanto await independent language review; Sanskrit and Latin await qualified language review. Yazekh remains `HOLD` until the author confirms its grammar and vocabulary. These statuses describe review state, not the value of a language.
@@ -107,8 +103,8 @@ The care constellation is a proposed self-guided concept, not a connected servic
 | Arabic (`ar`, RTL) | [`care-constellation-ar.html`](../care-constellation-ar.html) | Editorial translation | Independent linguistic and cultural review pending; RTL layout, Arabic font file, and OFL are shipped. |
 | Bengali (`bn`) | [`care-constellation-bn.html`](../care-constellation-bn.html) | Editorial translation | Independent linguistic and cultural review pending; Bengali font file and OFL are shipped locally. |
 | Esperanto (`eo`) | [`care-constellation-eo.html`](../care-constellation-eo.html) | Editorial translation | Independent linguistic review pending. |
-| Sanskrit (`sa`) | [`care-constellation-sa.html`](../care-constellation-sa.html) | Editorial draft | Qualified Sanskrit review pending; Devanagari font file and OFL are shipped locally. |
-| Latin (`la`) | [`care-constellation-la.html`](../care-constellation-la.html) | Editorial draft | Qualified Latin review pending; this is not represented as verified classical Latin. |
+| Sanskrit (`sa`) | Sanskrit | Full homepage editorial draft; qualified review pending | [sa](https://suti.world/entry/sa/) |
+| Latin (`la`) | Latin | Full homepage editorial draft; qualified review pending | [la](https://suti.world/entry/la/) |
 | Yazekh (`yzh`) | — | `HOLD` · no care-page edition | Author-confirmed grammar and vocabulary are needed before transcreation; see the [Yazekh review record](../docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md). |
 
 The twelve written-language editions are cross-linked and embedded byte-for-byte in the unified single-file interface. Yazekh has no fabricated page or route. Per-page inclusion does not localize the homepage, Google Form, or other SUTI destinations. Each published edition retains its own canonical route and `lang` metadata.
@@ -260,17 +256,15 @@ route remains a labeled Russian fallback pending the author's grammar and lexico
 
 ## Homepage interface · 2026-11-13
 
-French, Arabic and Simplified Chinese have homepage dictionaries, supplementary
-static and accessible labels, and six language-practice tracks. The review
-notice is visible for editorial editions. Arabic uses right-to-left page
-direction. The URL preserves a language selection and accepts the common
-ES-419, PT-BR and zh-CN aliases.
+The [homepage coverage record](../locales/homepage/coverage.json) now lists twelve natural-language runtime editions. The five added editions are Hindi, Bengali, Esperanto, Sanskrit and Latin. The existing Russian, English, Spanish, Brazilian Portuguese, French, Arabic and Simplified Chinese surfaces are preserved. All translations remain editorial drafts; no native-language or specialist acceptance is inferred. Yazekh remains Russian-gloss/HOLD.
 
-The [homepage record](../locales/homepage/coverage.json) lists Russian,
-English, Spanish, Brazilian Portuguese, French, Arabic and Simplified
-Chinese as runtime editions. HI, BN, EO, SA and LA have labeled Russian
-fallbacks on the homepage. YZH remains on HOLD pending authorial grammar
-and lexicon. Existing translated visitor entries and standalone pages have
-their own coverage. The NITYA link discloses an English destination where
-a matching edition is absent. The external form language may differ from
-the homepage language. Existing assets and linked services retain their own terms.
+
+## Unified world atlas and local workshops · 2026-11-13
+
+The [world atlas](../world-atlas.html) connects the published static route inventory, 74 public module-source records, 15 care/veche methods and four original SUTI local interface contracts. It keeps source-language labels separate from interface wording and preserves the private contour outside the public record projection. The [coverage record](../locales/world-atlas/coverage.json) describes its exact scope.
+
+The [text studio](../text-studio.html) has thirteen interface routes with source/preview, seven profiles, protected terms, clipboard/manual copy and explicit reset. Only display settings are stored; text stays in page memory. The [world workshop](../world-foundry.html) produces a deterministic local blueprint and optional manual Roblox Studio / Minecraft Bedrock code sketches. They have not been accepted in either game engine and do not connect to external platforms.
+
+The [care and veche portal](../shared/care-veche/portal.html) wraps the exact selected 43-file local prototype. Changing wrapper language or theme does not reload its in-memory discussion. Identities and human votes remain unverified; no fund, donation intake or global agent gateway is activated. Publication of the code and empty templates does not publish a participant's future records.
+
+All four surfaces offer twelve language editions plus an explicit Russian-gloss Yazekh route. Native/expert review remains pending. Existing assets and external services retain their individual rights and conditions.
