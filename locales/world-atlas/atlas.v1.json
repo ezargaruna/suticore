@@ -2384,6 +2384,17 @@
       ]
     },
     {
+      "id": "page:f7525812c07688a7",
+      "category": "governance",
+      "status": "source",
+      "path": "shared/care-veche/index.html",
+      "title": "SUTI · care × veche",
+      "sourceLanguage": "ru",
+      "tags": [
+        "shared/care-veche/index.html"
+      ]
+    },
+    {
       "id": "page:606ace8da55dd17d",
       "category": "care",
       "status": "source",
@@ -4683,6 +4694,17 @@
       ]
     },
     {
+      "id": "page:95ef85414985a823",
+      "category": "governance",
+      "status": "source",
+      "path": "system/ru/SUTI.veche/living-system.html",
+      "title": "SUTI.veche",
+      "sourceLanguage": "ru",
+      "tags": [
+        "system/ru/SUTI.veche/living-system.html"
+      ]
+    },
+    {
       "id": "page:46d0d820ff0d7347",
       "category": "governance",
       "status": "source",
@@ -5197,6 +5219,17 @@
       "sourceLanguage": "ru",
       "tags": [
         "virenium.html"
+      ]
+    },
+    {
+      "id": "page:b48167dd005fb1d2",
+      "category": "learning",
+      "status": "source",
+      "path": "world-atlas.html",
+      "title": "атлас сути мира · SUTI.worldSUTIcore · synaura · язык · забота · миры · вече",
+      "sourceLanguage": "ru",
+      "tags": [
+        "world-atlas.html"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "schema": "suti.published-static-route-inventory.v1",
-  "source_revision": "c5c80f3d53a6105d914db7d9e9d4cb0b218b7ee0",
-  "scope": "exact original Pages prepare artifact HTML paths, not React routes or private vault; authoring HTML templates excluded from the live route set",
+  "source_revision": "b743bd6b089eb4ca624d0820aa154c86c9e019c5",
+  "scope": "complete prepared Pages HTML path inventory, authoring templates excluded; availability map, not language or engine acceptance",
   "routes": [
     {
       "id": "page:4b3f00dd8ef026a4",
@@ -681,6 +681,20 @@
       "title": "∴ самураи дхармы · SUTI.world",
       "language": "ru",
       "category": "worlds"
+    },
+    {
+      "id": "page:f7525812c07688a7",
+      "path": "shared/care-veche/index.html",
+      "title": "SUTI · care × veche",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:b9dde3dd986800f3",
+      "path": "shared/care-veche/portal.html",
+      "title": "SUTI.world · care × veche",
+      "language": "ru",
+      "category": "governance"
     },
     {
       "id": "page:606ace8da55dd17d",
@@ -2237,6 +2251,13 @@
       "category": "governance"
     },
     {
+      "id": "page:95ef85414985a823",
+      "path": "system/ru/SUTI.veche/living-system.html",
+      "title": "SUTI.veche",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
       "id": "page:46d0d820ff0d7347",
       "path": "system/sa/SUTI.audit/living-system.html",
       "title": "SUTI.audit · परीक्षणम्",
@@ -2552,6 +2573,13 @@
       "category": "learning"
     },
     {
+      "id": "page:7f64be88720be4d8",
+      "path": "text-studio.html",
+      "title": "SUTI.world · text studio",
+      "language": "ru",
+      "category": "language"
+    },
+    {
       "id": "page:98407333c6fb9262",
       "path": "verenium.html",
       "title": "Verenium · мастерская заботы",
@@ -2564,6 +2592,20 @@
       "title": "Verenium · мастерская заботы",
       "language": "ru",
       "category": "learning"
+    },
+    {
+      "id": "page:b48167dd005fb1d2",
+      "path": "world-atlas.html",
+      "title": "атлас сути мира · SUTI.worldSUTIcore · synaura · язык · забота · миры · вече",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:4154cc4c49a072c6",
+      "path": "world-foundry.html",
+      "title": "мастерская миров · SUTI.worldSUTI.world",
+      "language": "ru",
+      "category": "worlds"
     }
   ]
 }

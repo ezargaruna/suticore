@@ -2,10 +2,10 @@
   "schema": "suti.world-atlas.coverage.v1",
   "source_locale": "ru",
   "source_sha256": "3e9462d5a9ff9d1bb8cadffc534312ee05db40032ed1080e4ca18ef0911424ba",
-  "route_inventory": 366,
+  "route_inventory": 372,
   "source_records": 74,
   "module_methods": 15,
-  "atlas_records": 429,
+  "atlas_records": 432,
   "routes": {
     "ru": {
       "href": "world-atlas.html?lang=ru",
