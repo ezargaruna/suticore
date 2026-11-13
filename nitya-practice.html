@@ -492,6 +492,7 @@
     const edition = editions[contentLanguage] || editions.ru;
     const locale = ({ 'es-419': 'es', 'zh-Hans': 'zh-hans' })[contentLanguage] || contentLanguage.toLowerCase();
     const guideLocale = language === 'yzh' ? 'yzh' : locale;
+    const systemLocale = locale === 'ru' ? '_techne/human/collective-living-system-v1/ru' : locale;
     const open = new Set([...document.querySelectorAll('[data-atlas-panel][open]')].map(x => x.dataset.atlasPanel));
     top.lang = paths.lang = contentLanguage;
     top.dir = paths.dir = direction;
@@ -524,7 +525,7 @@
     for (const [name, href, attrs] of [
       ['practice', '#nitya-90-day-practice'], ['care', '#care-questionnaire'],
       ['verenium', pages + 'downloads/Verenium.zip'],
-      ['veche', pages + 'system/' + locale + '/SUTI.veche/living-system.html'],
+      ['veche', pages + 'system/' + systemLocale + '/SUTI.veche/living-system.html'],
       ['archive', github + 'SUTI.os/releases/latest'],
       ['prices', source + 'docs/commercial-catalog.v1.md', { hreflang: 'en' }],
     ]) links.append(link(edition.nav[name], href, attrs));
@@ -555,7 +556,7 @@
         item.append(el('span', name + ' · HOLD', { lang: 'en' }));
       } else {
         const href = ref.startsWith('https:') || ref.startsWith('#') ? ref
-          : (ref.endsWith('.md') ? source : pages) + ref.replace('{locale}', ref.includes('/guide/') ? guideLocale : locale);
+          : (ref.endsWith('.md') ? source : pages) + ref.replace('{locale}', ref.includes('/guide/') ? guideLocale : systemLocale);
         const attrs = ref.endsWith('.md') ? { hreflang: ['.luna', '.astro'].includes(name) ? 'en' : 'ru' } : {};
         item.append(link(name, href, attrs));
       }
