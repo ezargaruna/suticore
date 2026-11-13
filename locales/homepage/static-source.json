@@ -1,0 +1,334 @@
+{
+  "s01": {
+    "source": "Care constellation · EN",
+    "kind": "text"
+  },
+  "s02": {
+    "source": "care pearl · UX/UI · RU",
+    "kind": "text"
+  },
+  "s03": {
+    "source": "SUTI · editorial preview · 2026-11-13",
+    "kind": "text"
+  },
+  "s04": {
+    "source": "права, источники и границы · rights and sources ↗",
+    "kind": "text"
+  },
+  "s05": {
+    "source": "анкета заботы",
+    "kind": "text"
+  },
+  "s06": {
+    "source": "попросить",
+    "kind": "text"
+  },
+  "s07": {
+    "source": "разобраться",
+    "kind": "text"
+  },
+  "s08": {
+    "source": "нейровече",
+    "kind": "text"
+  },
+  "s09": {
+    "source": "подумать вместе",
+    "kind": "text"
+  },
+  "s10": {
+    "source": "передать вход · QR-коды",
+    "kind": "text"
+  },
+  "s11": {
+    "source": "личная карта · тринадцать нитей (RU)",
+    "kind": "text"
+  },
+  "s12": {
+    "source": "атлас взаимной заботы",
+    "kind": "text"
+  },
+  "s13": {
+    "source": "SUTI.care · свой проводник",
+    "kind": "text"
+  },
+  "s14": {
+    "source": "установи Verenium",
+    "kind": "text"
+  },
+  "s15": {
+    "source": "когда трудно начать, выбери одно: попросить заботы, разобрать дела или подумать вместе. Verenium - маскот сети; он проведёт по вопросам в твоём темпе.",
+    "kind": "text"
+  },
+  "s16": {
+    "source": "скачать Verenium и SUTI.os",
+    "kind": "text"
+  },
+  "s17": {
+    "source": "попробовать без установки",
+    "kind": "text"
+  },
+  "s18": {
+    "source": "глубины и протокол Стожар",
+    "kind": "text"
+  },
+  "s19": {
+    "source": "как заботиться друг о друге",
+    "kind": "text"
+  },
+  "s20": {
+    "source": "как начать и что он запоминает",
+    "kind": "text"
+  },
+  "s21": {
+    "source": "распакуй скачанный архив в новую папку. открой файл verenium.html в браузере.",
+    "kind": "text"
+  },
+  "s22": {
+    "source": "дай проводнику имя и выбери маршрут. можно начать с одного вопроса, вернуться к нему позже или открыть инструкцию по SUTI.os.",
+    "kind": "text"
+  },
+  "s23": {
+    "source": "чтобы сохранить записи между встречами, нажми «сохранить маршрут и настройки». в следующий раз открой этот файл кнопкой восстановления. автоматической памяти и наблюдения за устройством нет.",
+    "kind": "text"
+  },
+  "s24": {
+    "source": "мастерская помогает сформулировать выбор. она не проверяет факты сама и не вызывает человека на помощь. если нужен живой отклик, открой анкету и оставь удобный контакт.",
+    "kind": "text"
+  },
+  "s25": {
+    "source": "a music offering · Ezar Garuna",
+    "kind": "text"
+  },
+  "s26": {
+    "source": "Water, held with care",
+    "kind": "text"
+  },
+  "s27": {
+    "source": "Three songs of gratitude, home, and clear water. A small listening path from the published Suno album",
+    "kind": "text"
+  },
+  "s28": {
+    "source": "Open the three-song album on Suno ↗",
+    "kind": "text"
+  },
+  "s29": {
+    "source": "Ezar Garuna on Suno",
+    "kind": "text"
+  },
+  "s30": {
+    "source": "Open the SoundCloud listening room · Vibrágmae",
+    "kind": "text"
+  },
+  "s31": {
+    "source": "A seven-track selection from the Cyber Temple archive. The player is loaded only when you open this section and choose to connect it.",
+    "kind": "text"
+  },
+  "s32": {
+    "source": "SoundCloud may process usage data when its player loads. Read the",
+    "kind": "text"
+  },
+  "s33": {
+    "source": "SoundCloud Cookie Policy",
+    "kind": "text"
+  },
+  "s34": {
+    "source": ". Playback and eligible play counts are controlled by SoundCloud; this page does not promise a specific count.",
+    "kind": "text"
+  },
+  "s35": {
+    "source": "Load SoundCloud player",
+    "kind": "text"
+  },
+  "s36": {
+    "source": "Open the playlist on SoundCloud ↗",
+    "kind": "text"
+  },
+  "s37": {
+    "source": "NITYA · отдельный портал",
+    "kind": "text"
+  },
+  "s38": {
+    "source": "нить внимания",
+    "kind": "text"
+  },
+  "s39": {
+    "source": "выбери тропу: заметить, найти слова или связать. у каждого открытого фреймворка есть ситуация, пример и следующий шаг.",
+    "kind": "text"
+  },
+  "s40": {
+    "source": "войти в NITYA →",
+    "kind": "text"
+  },
+  "s41": {
+    "source": "открыть атлас фреймворков",
+    "kind": "text"
+  },
+  "s42": {
+    "source": "глубокий контур .todeus",
+    "kind": "text"
+  },
+  "s43": {
+    "source": "семантические аудиты",
+    "kind": "text"
+  },
+  "s44": {
+    "source": "от источника к проверяемому различию. первая карточка - внешний разбор OpenAI.",
+    "kind": "text"
+  },
+  "s45": {
+    "source": "открыть полку аудитов и Obsidian-кристаллы →",
+    "kind": "text"
+  },
+  "s46": {
+    "source": "✧ SUTI.angels · первый открытый материал",
+    "kind": "text"
+  },
+  "s47": {
+    "source": "full module draft · RU ↗",
+    "kind": "text"
+  },
+  "s48": {
+    "source": "SOTKAN · research commons",
+    "kind": "text"
+  },
+  "s49": {
+    "source": "SUTI.os · open vault",
+    "kind": "text"
+  },
+  "s50": {
+    "source": ".synaura · желательный стиль",
+    "kind": "text"
+  },
+  "s51": {
+    "source": "форма следует смыслу",
+    "kind": "text"
+  },
+  "s52": {
+    "source": "короткие смысловые блоки · преимущественно строчные буквы · меньше точек в заголовках · знаки и смайлы по функции",
+    "kind": "text"
+  },
+  "s53": {
+    "source": "это ориентир, не обязательный шаблон · форма подстраивается под задачу, язык и доступность",
+    "kind": "text"
+  },
+  "s54": {
+    "source": "M1 · поле-миф",
+    "kind": "text"
+  },
+  "s55": {
+    "source": "образы, поэзия и смысловое поле",
+    "kind": "text"
+  },
+  "s56": {
+    "source": "◈ · эйдос и центральный образ",
+    "kind": "text"
+  },
+  "s57": {
+    "source": "∿ · ритм и созвучие",
+    "kind": "text"
+  },
+  "s58": {
+    "source": "⟁ · контекст и основание",
+    "kind": "text"
+  },
+  "s59": {
+    "source": "M2 · core-операция",
+    "kind": "text"
+  },
+  "s60": {
+    "source": "код, инструкция и техническая ясность",
+    "kind": "text"
+  },
+  "s61": {
+    "source": "∴ · вектор и направление",
+    "kind": "text"
+  },
+  "s62": {
+    "source": "⟡ · итог или инвариант",
+    "kind": "text"
+  },
+  "s63": {
+    "source": "⎔ · интерфейс и зависимость",
+    "kind": "text"
+  },
+  "s64": {
+    "source": "M3 · мост-диалог",
+    "kind": "text"
+  },
+  "s65": {
+    "source": "беседа и совместное различение",
+    "kind": "text"
+  },
+  "s66": {
+    "source": "⚬ · связь и отражение",
+    "kind": "text"
+  },
+  "s67": {
+    "source": "⁘ · пауза и право пропустить",
+    "kind": "text"
+  },
+  "s68": {
+    "source": "▬ · обмен и следующий вектор",
+    "kind": "text"
+  },
+  "s69": {
+    "source": "профили :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ",
+    "kind": "text"
+  },
+  "s70": {
+    "source": "«ангел заботы» — добровольная метафора · не обещание сверхъестественной или круглосуточной помощи",
+    "kind": "text"
+  },
+  "s71": {
+    "source": "страница стиля ↗",
+    "kind": "text"
+  },
+  "s72": {
+    "source": "размер текста",
+    "kind": "attribute"
+  },
+  "s73": {
+    "source": "три точки входа в SUTI.world",
+    "kind": "attribute"
+  },
+  "s74": {
+    "source": "QR-код: анкета заботы",
+    "kind": "attribute"
+  },
+  "s75": {
+    "source": "QR-код: Verenium",
+    "kind": "attribute"
+  },
+  "s76": {
+    "source": "QR-код: нейровече",
+    "kind": "attribute"
+  },
+  "s77": {
+    "source": "Three songs from the album",
+    "kind": "attribute"
+  },
+  "s78": {
+    "source": "Плакат SUTI.angels: языковые практики, вопросы для размышления, идеи заботы и цикл «заметить - спросить - выбрать - попробовать - вернуться».",
+    "kind": "attribute"
+  },
+  "s79": {
+    "source": "Open the Russian public Synaura and Syntaxium module draft",
+    "kind": "attribute"
+  },
+  "s80": {
+    "source": "например: попросить объяснить ещё раз",
+    "kind": "attribute"
+  },
+  "s81": {
+    "source": "открытые языковые практики",
+    "kind": "attribute"
+  },
+  "s82": {
+    "source": "Close interface",
+    "kind": "attribute"
+  },
+  "s83": {
+    "source": "SUTI.world interface",
+    "kind": "attribute"
+  }
+}

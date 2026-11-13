@@ -1,0 +1,95 @@
+{
+  "scope": "Homepage interface and local practice outputs. Linked materials, games and external forms have separate coverage.",
+  "baseline": "ab525f4f50521beb3154d5ac54d179d7db32dbb0",
+  "rights": "Editorial derivatives of the public homepage. Existing media and external services retain their own terms.",
+  "payloadSha256": "d2bd04159e7cc324a653899159a1e521aa01f923a64915a3033c98ad3e3ae245",
+  "routes": {
+    "ru": {
+      "href": "?lang=ru",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "source-edition"
+    },
+    "en": {
+      "href": "?lang=en",
+      "renderedLanguage": "en",
+      "direction": "ltr",
+      "status": "native-review-pending"
+    },
+    "es": {
+      "href": "?lang=es",
+      "renderedLanguage": "es-419",
+      "direction": "ltr",
+      "status": "native-review-pending"
+    },
+    "pt-BR": {
+      "href": "?lang=pt-BR",
+      "renderedLanguage": "pt-BR",
+      "direction": "ltr",
+      "status": "native-review-pending"
+    },
+    "fr": {
+      "href": "?lang=fr",
+      "renderedLanguage": "fr",
+      "direction": "ltr",
+      "status": "native-review-pending",
+      "dictionaryKeys": 479,
+      "additionalStrings": 83,
+      "practiceTracks": 6
+    },
+    "ar": {
+      "href": "?lang=ar",
+      "renderedLanguage": "ar",
+      "direction": "rtl",
+      "status": "native-review-pending",
+      "dictionaryKeys": 479,
+      "additionalStrings": 83,
+      "practiceTracks": 6
+    },
+    "zh-Hans": {
+      "href": "?lang=zh-Hans",
+      "renderedLanguage": "zh-Hans",
+      "direction": "ltr",
+      "status": "native-review-pending",
+      "dictionaryKeys": 479,
+      "additionalStrings": 83,
+      "practiceTracks": 6
+    },
+    "hi": {
+      "href": "?lang=hi",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "russian-fallback"
+    },
+    "bn": {
+      "href": "?lang=bn",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "russian-fallback"
+    },
+    "eo": {
+      "href": "?lang=eo",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "russian-fallback"
+    },
+    "sa": {
+      "href": "?lang=sa",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "russian-fallback"
+    },
+    "la": {
+      "href": "?lang=la",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "russian-fallback"
+    },
+    "yzh": {
+      "href": "?lang=yzh",
+      "renderedLanguage": "ru",
+      "direction": "ltr",
+      "status": "hold-authorial-language"
+    }
+  }
+}

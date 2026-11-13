@@ -41,7 +41,7 @@ interactive, accessibility, localization, or Workers-runtime certification.
 
 ## State summary
 
-- Thirteen language choices are exposed on the home page. Four full home-page runtime dictionaries are present: Russian, English, Spanish, and Brazilian Portuguese. Other language choices retain a visible Russian fallback for the rest of the interface. The translated research briefs are individual open materials and do not change full homepage runtime coverage.
+- Thirteen language settings are exposed on the home page. The homepage has seven runtime dictionaries after the French, Arabic and Simplified Chinese wave. Six settings retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.
@@ -56,7 +56,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 
 | Artifact | Source/rendered language | Current locale coverage | Translation/review state |
 |---|---|---|---|
-| `index.html` | English source shell | RU / EN / ES / PT-BR runtime; 13 entry microcopy layers | Four page dictionaries; nine full-page fallbacks. Native/cultural review is not recorded. |
+| `index.html?lang=…` | Homepage with locale-aware interaction and generated practice copy | RU, EN, ES-419, PT-BR, FR, AR, zh-Hans; six labeled Russian fallback settings | The three added dictionaries cover 479 strings, 83 supplementary strings and six language practice tracks each. See the [homepage coverage record](../../locales/homepage/coverage.json). Independent review pending. |
 | `nitya.html` | Russian | RU | Russian source edition; no complete 13-language runtime. |
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |

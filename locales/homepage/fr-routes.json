@@ -1,0 +1,35 @@
+{
+  "title": "un court parcours d’entraînement",
+  "items": {
+    "speak": [
+      "commence par saluer",
+      "prépare une courte présentation",
+      "dis-la à voix haute"
+    ],
+    "listen": [
+      "repère les mots familiers",
+      "choisis un extrait de 20 secondes",
+      "note trois mots que tu reconnais"
+    ],
+    "read": [
+      "lis un court passage",
+      "choisis un paragraphe",
+      "repère son idée principale et un mot nouveau"
+    ],
+    "write": [
+      "écris une idée",
+      "choisis ce qui compte aujourd’hui",
+      "écris simplement, puis relis"
+    ],
+    "study": [
+      "prépare une question pour le travail",
+      "choisis une question utile",
+      "demande une précision"
+    ],
+    "travel": [
+      "trouve ton chemin",
+      "choisis un lieu à localiser",
+      "prépare une question courte"
+    ]
+  }
+}

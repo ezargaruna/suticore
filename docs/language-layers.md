@@ -22,10 +22,10 @@ The public entry page offers 13 language and authorial-language layers:
 | English (`en`) | English | Available | [en](https://suti.world/?lang=en) |
 | Spanish (`es`) | Spanish | Available | [es](https://suti.world/?lang=es) |
 | Brazilian Portuguese (`pt-BR`) | Portuguese (`pt`) | Available; legacy `pt` links remain supported | [pt-BR](https://suti.world/?lang=pt-BR) |
-| Simplified Chinese (`zh-Hans`) | Russian fallback | Translation not reviewed | [zh-Hans](https://suti.world/entry/zh-hans/) |
+| Simplified Chinese (`zh-Hans`) | Simplified Chinese | Editorial translation, native review pending | [zh-Hans](https://suti.world/?lang=zh-Hans) |
 | Hindi (`hi`) | Russian fallback | Translation not reviewed | [hi](https://suti.world/entry/hi/) |
-| French (`fr`) | Russian fallback | Translation not reviewed | [fr](https://suti.world/entry/fr/) |
-| Arabic (`ar`) | Russian fallback | Translation not reviewed | [ar](https://suti.world/entry/ar/) |
+| French (`fr`) | French | Editorial translation, native review pending | [fr](https://suti.world/?lang=fr) |
+| Arabic (`ar`) | Arabic (RTL) | Editorial translation, native review pending | [ar](https://suti.world/?lang=ar) |
 | Bengali (`bn`) | Russian fallback | Translation not reviewed | [bn](https://suti.world/entry/bn/) |
 | Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/entry/eo/) |
 | Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
@@ -62,7 +62,7 @@ values in each active runtime dictionary. See
 ## Research collaboration brief
 
 `docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.
-The short invitation on the public home page is transcreated for the four
+The initial homepage invitation was transcreated for the four
 runtime interfaces. Those summaries are not translations of the full brief. A
 compact disclosure links the translated brief editions; the link identifies the
 content language, and the Arabic link sets RTL direction.
@@ -73,10 +73,10 @@ content language, and the Arabic link sets RTL direction.
 | Russian (`ru`) | Editorial edition at `docs/research/SUTI_RESEARCH_COLLABORATION.ru.md`; author comparison pending | Available |
 | Spanish (`es`) | Editorial Spanish translation at `docs/research/SUTI_INVESTIGACION_COLABORACION.es.md`; independent review pending | Available |
 | Brazilian Portuguese (`pt-BR`) | Editorial translation at `docs/research/SUTI_PESQUISA_COLABORACAO.pt-BR.md`; independent review pending | Available |
-| Simplified Chinese (`zh-Hans`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md`; independent review pending | Russian fallback on homepage |
+| Simplified Chinese (`zh-Hans`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.zh-Hans.md`; independent review pending | Editorial translation, independent review pending |
 | Hindi (`hi`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.hi.md`; independent review pending | Russian fallback on homepage |
-| French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Russian fallback on homepage |
-| Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Russian fallback on homepage |
+| French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Editorial translation, independent review pending |
+| Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Editorial translation, independent review pending |
 | Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Russian fallback on homepage |
 | Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Russian fallback on homepage |
 | Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
@@ -251,3 +251,20 @@ captures the baseline, rights scope, per-edition hashes and review states.
 Eleven editorial translations await independent review. Esperanto awaits
 fluent review, Sanskrit and Latin await specialist review, and the Yazekh
 route remains a labeled Russian fallback pending the author's grammar and lexicon.
+
+## Homepage interface · 2026-11-13
+
+French, Arabic and Simplified Chinese have homepage dictionaries, supplementary
+static and accessible labels, and six language-practice tracks. The review
+notice is visible for editorial editions. Arabic uses right-to-left page
+direction. The URL preserves a language selection and accepts the common
+ES-419, PT-BR and zh-CN aliases.
+
+The [homepage record](../locales/homepage/coverage.json) lists Russian,
+English, Spanish, Brazilian Portuguese, French, Arabic and Simplified
+Chinese as runtime editions. HI, BN, EO, SA and LA have labeled Russian
+fallbacks on the homepage. YZH remains on HOLD pending authorial grammar
+and lexicon. Existing translated visitor entries and standalone pages have
+their own coverage. The NITYA link discloses an English destination where
+a matching edition is absent. The external form language may differ from
+the homepage language. Existing assets and linked services retain their own terms.
