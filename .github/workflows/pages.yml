@@ -71,6 +71,19 @@ jobs:
           mkdir -p _site/modules
           python3 scripts/build_system_publication.py
           cp -R system _site/system
+          mkdir -p _site/system/ru/SUTI.veche
+          cat > _site/system/ru/SUTI.veche/living-system.html <<'EOF'
+          <!doctype html>
+          <html lang="ru">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="refresh" content="0;url=../../_techne/human/collective-living-system-v1/ru/SUTI.veche/living-system.html">
+            <title>SUTI.veche</title>
+          </head>
+          <body><a href="../../_techne/human/collective-living-system-v1/ru/SUTI.veche/living-system.html">открыть нейровече</a></body>
+          </html>
+          EOF
           cp -R modules/ai-soul-13l _site/modules/ai-soul-13l
           cp modules/ai-soul-13l.NOTICE.md _site/modules/ai-soul-13l.NOTICE.md
           cp downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip.sha256 downloads/SUTI-ai-soul-system-contour-13L-v1.1.1-draft.zip downloads/SUTI-ai-soul-system-contour-13L-v1.1.1-draft.zip.sha256 _site/downloads/
