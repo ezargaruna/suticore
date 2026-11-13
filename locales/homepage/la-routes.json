@@ -1,0 +1,11 @@
+{
+  "title": "breve iter exercitationis",
+  "items": {
+    "speak": ["a salutatione incipe", "brevem tui introductionem para", "eam clara voce dic"],
+    "listen": ["verba tibi familiaria ausculta", "partem viginti secundorum elige", "tria verba quae agnoscis nota"],
+    "read": ["brevem locum lege", "unam paragraphum elige", "sententiam principalem et unum verbum novum reperi"],
+    "write": ["unam cogitationem scribe", "quod hodie interest elige", "simpliciter scribe et relege"],
+    "study": ["quaestionem ad opus para", "unam quaestionem utilem elige", "roga ut res clarius explicetur"],
+    "travel": ["viam reperi", "locum quem quaeras elige", "brevem quaestionem para"]
+  }
+}

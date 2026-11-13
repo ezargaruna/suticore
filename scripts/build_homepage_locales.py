@@ -9,7 +9,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCALES = ROOT / "locales/homepage"
-ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr", "hi": "ltr", "bn": "ltr", "eo": "ltr"}
+ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr", "hi": "ltr", "bn": "ltr", "eo": "ltr", "sa": "ltr", "la": "ltr"}
 SCRIPT = re.compile(r'(<script type="application/json" id="homepage-locale-data">).*?(</script>)', re.S)
 ROUTE_KEYS = {"speak", "listen", "read", "write", "study", "travel"}
 
@@ -57,12 +57,11 @@ def main():
         }
         review[locale] = {
             "renderedLanguage": locale, "direction": direction,
-            "status": "fluent-review-pending" if locale == "eo" else "native-review-pending",
+            "status": {"eo": "fluent-review-pending", "sa": "qualified-review-pending",
+                       "la": "qualified-review-pending"}.get(locale, "native-review-pending"),
             "dictionaryKeys": len(words), "additionalStrings": len(extras), "practiceTracks": len(ROUTE_KEYS),
         }
-    for locale in ("sa", "la", "yzh"):
-        review[locale] = {"renderedLanguage": "ru", "direction": "ltr",
-                          "status": "hold-authorial-language" if locale == "yzh" else "russian-fallback"}
+    review["yzh"] = {"renderedLanguage": "ru", "direction": "ltr", "status": "hold-authorial-language"}
     payload = json.dumps({"editions": editions, "ui": ui}, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
     path = ROOT / "index.html"
     original = path.read_text(encoding="utf-8")

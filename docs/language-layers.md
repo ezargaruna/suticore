@@ -28,11 +28,11 @@ The public entry page offers 13 language and authorial-language layers:
 | Arabic (`ar`) | Arabic (RTL) | Editorial translation, native review pending | [ar](https://suti.world/?lang=ar) |
 | Bengali (`bn`) | Bengali | Editorial translation, native review pending | [bn](https://suti.world/?lang=bn) |
 | Esperanto (`eo`) | Esperanto | Editorial translation, fluent-reader review pending | [eo](https://suti.world/?lang=eo) |
-| Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
-| Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
+| Sanskrit (`sa`) | Sanskrit | Editorial draft, qualified review pending | [sa](https://suti.world/?lang=sa) |
+| Latin (`la`) | Latin | Editorial draft, qualified review pending | [la](https://suti.world/?lang=la) |
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
-The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
+The Sanskrit and Latin homepage editions and the separate care editions await qualified review.
 
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without full runtime content,
@@ -85,8 +85,8 @@ content language, and the Arabic link sets RTL direction.
 | Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Editorial translation, independent review pending |
 | Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Editorial translation, independent review pending |
 | Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Editorial translation, fluent-reader review pending |
-| Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
-| Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Russian fallback on homepage |
+| Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Editorial draft, qualified review pending |
+| Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Editorial draft, qualified review pending |
 | Yazekh (`yzh`) | `HOLD` — author grammar and vocabulary not confirmed; see `docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md` | Russian fallback on homepage |
 
 A linked editorial draft is not a reviewed edition and does not mean the homepage itself is localized. The Russian edition awaits author comparison; Spanish, Brazilian Portuguese, French, Simplified Chinese, Hindi, Arabic, Bengali, and Esperanto await independent language review; Sanskrit and Latin await qualified language review. Yazekh remains `HOLD` until the author confirms its grammar and vocabulary. These statuses describe review state, not the value of a language.

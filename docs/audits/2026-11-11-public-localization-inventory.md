@@ -43,7 +43,7 @@ interactive, accessibility, localization, or Workers-runtime certification.
 
 - Update, 2026-11-13. The separate NITYA 90-day practice offers twelve written editions with explicit Yazekh fallback. The optional four-decision branch also renders in twelve written languages. Review is pending on editorial translations. The authorial Yazekh translation is pending, with a labeled Russian fallback. See the [route and review notes](../language-layers.md#nitya-and-todeus-passport).
 
-- Thirteen language settings are exposed on the home page. The homepage has ten runtime dictionaries, including the Hindi, Bengali and Esperanto editorial editions. Sanskrit, Latin and Yazekh retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
+- Thirteen language settings are exposed on the home page. The homepage has twelve runtime dictionaries, including the Sanskrit and Latin editorial drafts. Yazekh retains a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.
@@ -58,7 +58,8 @@ The publisher copies the following root HTML files into `_site`. “Available la
 
 | Artifact | Source/rendered language | Current locale coverage | Translation/review state |
 |---|---|---|---|
-| `index.html?lang=…` | Homepage with locale-aware interaction and generated practice copy | RU, EN, ES-419, PT-BR, FR, AR, zh-Hans, HI, BN; four labeled Russian fallback settings | The five added dictionaries cover 479 strings, 83 supplementary strings and six language practice tracks each. See the [homepage coverage record](../../locales/homepage/coverage.json). Independent review pending. |
+| `index.html?lang=…` | Homepage with locale-aware interaction and generated practice copy | Twelve written editions and a labeled Russian fallback for Yazekh | Eight added dictionaries cover 479 strings, 83 supplementary strings and six tracks each. See the [homepage coverage record](../../locales/homepage/coverage.json). Independent or qualified review pending. |
+| `nitya-practice.html?lang=…` | Interactive atlas, care questionnaire and games | Twelve written editions and a labeled Russian fallback for Yazekh | Care prompts, countdown controls, atlas and four-decision game are localized. Linked legacy and third-party content retains its own edition and rights. |
 | `nitya.html` | Russian | RU | Russian source edition; no complete 13-language runtime. |
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
