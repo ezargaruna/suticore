@@ -1,0 +1,145 @@
+{
+  "ru": {
+    "page-title": "карта открытых модулей",
+    "page-intro": "собраны материалы текущего публичного репозитория",
+    "page-caveat": "каталог ведёт к исходным файлам на GitHub. публикация файла не означает, что модуль запущен или прошёл научную, клиническую либо независимую проверку.",
+    "source-label": "источник",
+    "rights-note": "условия повторного использования проверяйте в каждом источнике. публичная доступность не означает общую лицензию на все материалы.",
+    "group-core": "основы и протоколы",
+    "group-proposed": "предложения и интерфейсы",
+    "group-verenium": "Verenium · документация и прототип",
+    "language-label": "язык страницы"
+  },
+  "en": {
+    "page-title": "open module atlas",
+    "page-intro": "materials from the current public repository",
+    "page-caveat": "This catalogue links to source files on GitHub. A listed file does not mean its module is running or independently, scientifically, or clinically validated.",
+    "source-label": "source",
+    "rights-note": "Check reuse terms in each source. Public availability is not a blanket license for every item.",
+    "group-core": "foundations and protocols",
+    "group-proposed": "proposals and interfaces",
+    "group-verenium": "Verenium · docs and prototype",
+    "language-label": "page language"
+  },
+  "es": {
+    "page-title": "atlas abierto de módulos",
+    "page-intro": "materiales del repositorio público actual",
+    "page-caveat": "Este catálogo enlaza a los archivos fuente en GitHub. Que un archivo aparezca aquí no significa que el módulo esté activo ni que haya sido validado de forma científica, clínica o independiente.",
+    "source-label": "fuente",
+    "rights-note": "Consulta las condiciones de reutilización de cada fuente. La disponibilidad pública no concede una licencia general para todos los materiales.",
+    "group-core": "bases y protocolos",
+    "group-proposed": "propuestas e interfaces",
+    "group-verenium": "Verenium · documentación y prototipo",
+    "language-label": "idioma de la página"
+  },
+  "pt-BR": {
+    "page-title": "atlas aberto de módulos",
+    "page-intro": "materiais do repositório público atual",
+    "page-caveat": "Este catálogo aponta para os arquivos-fonte no GitHub. A presença de um arquivo não significa que o módulo esteja em funcionamento nem que tenha validação científica, clínica ou independente.",
+    "source-label": "fonte",
+    "rights-note": "Confira as condições de reutilização em cada fonte. A disponibilidade pública não concede uma licença geral para todos os materiais.",
+    "group-core": "fundamentos e protocolos",
+    "group-proposed": "propostas e interfaces",
+    "group-verenium": "Verenium · documentação e protótipo",
+    "language-label": "idioma da página"
+  },
+  "zh-Hans": {
+    "page-title": "开放模块图谱",
+    "page-intro": "当前公开仓库中的材料",
+    "page-caveat": "本目录链接到 GitHub 源文件。文件列在此处不代表模块正在运行，也不代表其通过了独立、科学或临床验证。",
+    "source-label": "来源",
+    "rights-note": "请查看各源文件中的再使用条件。公开可见不等于所有材料均可自由授权使用。",
+    "group-core": "基础与协议",
+    "group-proposed": "提案与界面",
+    "group-verenium": "Verenium · 文档与原型",
+    "language-label": "页面语言"
+  },
+  "hi": {
+    "page-title": "खुले मॉड्यूल का मानचित्र",
+    "page-intro": "वर्तमान सार्वजनिक रिपॉज़िटरी की सामग्री",
+    "page-caveat": "यह सूची GitHub पर स्रोत फ़ाइलों तक ले जाती है। किसी फ़ाइल का सूची में होना यह नहीं बताता कि मॉड्यूल चल रहा है या उसकी स्वतंत्र, वैज्ञानिक अथवा चिकित्सकीय पुष्टि हुई है।",
+    "source-label": "स्रोत",
+    "rights-note": "हर स्रोत में पुनः उपयोग की शर्तें देखें। सार्वजनिक उपलब्धता सभी सामग्रियों के लिए सामान्य लाइसेंस नहीं है।",
+    "group-core": "आधार और प्रोटोकॉल",
+    "group-proposed": "प्रस्ताव और इंटरफ़ेस",
+    "group-verenium": "Verenium · दस्तावेज़ और प्रोटोटाइप",
+    "language-label": "पृष्ठ की भाषा"
+  },
+  "fr": {
+    "page-title": "atlas ouvert des modules",
+    "page-intro": "documents du dépôt public actuel",
+    "page-caveat": "Ce catalogue mène aux fichiers source sur GitHub. La présence d’un fichier ne signifie pas que le module fonctionne ni qu’il a été validé de façon indépendante, scientifique ou clinique.",
+    "source-label": "source",
+    "rights-note": "Vérifiez les conditions de réutilisation dans chaque source. La disponibilité publique ne vaut pas licence générale pour tous les contenus.",
+    "group-core": "fondations et protocoles",
+    "group-proposed": "propositions et interfaces",
+    "group-verenium": "Verenium · documentation et prototype",
+    "language-label": "langue de la page"
+  },
+  "ar": {
+    "page-title": "فهرس الوحدات المفتوحة",
+    "page-intro": "مواد المستودع العام الحالي",
+    "page-caveat": "يؤدي هذا الفهرس إلى ملفات المصدر على GitHub. إدراج ملف لا يعني أن الوحدة تعمل أو أنها خضعت للتحقق المستقل أو العلمي أو السريري.",
+    "source-label": "المصدر",
+    "rights-note": "تحقق من شروط إعادة الاستخدام في كل مصدر. الإتاحة العامة لا تمنح ترخيصًا شاملًا لكل المواد.",
+    "group-core": "الأسس والبروتوكولات",
+    "group-proposed": "المقترحات والواجهات",
+    "group-verenium": "Verenium · الوثائق والنموذج الأولي",
+    "language-label": "لغة الصفحة"
+  },
+  "bn": {
+    "page-title": "উন্মুক্ত মডিউল মানচিত্র",
+    "page-intro": "বর্তমান প্রকাশ্য রিপোজিটরির উপকরণ",
+    "page-caveat": "এই তালিকা GitHub-এর উৎস ফাইলে নিয়ে যায়। কোনো ফাইল তালিকাভুক্ত থাকা মানে মডিউলটি চালু বা স্বাধীন, বৈজ্ঞানিক কিংবা চিকিৎসাগতভাবে যাচাইকৃত—এমন নয়।",
+    "source-label": "উৎস",
+    "rights-note": "প্রতিটি উৎসে পুনর্ব্যবহারের শর্ত দেখুন। প্রকাশ্যে থাকা মানেই সব উপকরণের জন্য সাধারণ লাইসেন্স নয়।",
+    "group-core": "ভিত্তি ও প্রোটোকল",
+    "group-proposed": "প্রস্তাব ও ইন্টারফেস",
+    "group-verenium": "Verenium · নথি ও প্রোটোটাইপ",
+    "language-label": "পাতার ভাষা"
+  },
+  "eo": {
+    "page-title": "malferma modulo-atlaso",
+    "page-intro": "materialoj en la nuna publika deponejo",
+    "page-caveat": "Ĉi tiu katalogo ligas al fontdosieroj ĉe GitHub. Listigo ne signifas, ke modulo funkcias aŭ havas sendependan, sciencan aŭ klinikan validigon.",
+    "source-label": "fonto",
+    "rights-note": "Kontrolu reuzkondiĉojn en ĉiu fonto. Publika haveblo ne estas ĝenerala permesilo por ĉiuj materialoj.",
+    "group-core": "fundamentoj kaj protokoloj",
+    "group-proposed": "proponoj kaj interfacoj",
+    "group-verenium": "Verenium · dokumentoj kaj prototipo",
+    "language-label": "lingvo de la paĝo"
+  },
+  "sa": {
+    "page-title": "मुक्त-मॉड्यूल-सूची",
+    "page-intro": "वर्तमान-सार्वजनिक-संग्रहस्य सामग्री",
+    "page-caveat": "एषा सूची GitHub-स्रोतपत्राणि दर्शयति। सूचीकरणेन मॉड्यूलस्य कार्यशीलता, स्वतन्त्र-वैज्ञानिक-चिकित्सकीय-प्रमाणनं वा न सिद्ध्यति।",
+    "source-label": "स्रोतः",
+    "rights-note": "प्रत्येकस्रोतस्य पुनरुपयोगनियमाः परीक्ष्यन्ताम्। सार्वजनिकदृश्यता सर्वसामग्रीणां सामान्य-अनुज्ञापत्रं न भवति।",
+    "group-core": "आधाराः प्रोटोकॉलाश्च",
+    "group-proposed": "प्रस्तावाः अन्तरफलकानि च",
+    "group-verenium": "Verenium · दस्तावेजाः प्रारूपं च",
+    "language-label": "पृष्ठभाषा"
+  },
+  "la": {
+    "page-title": "atlas modulorum apertorum",
+    "page-intro": "materia in repositorio publico hodierno",
+    "page-caveat": "Hic index ad fontes in GitHub ducit. Enumeratio non probat modulum operari neque scientifice, clinice aut independenter comprobari.",
+    "source-label": "fons",
+    "rights-note": "Conditio usus in singulis fontibus inspicienda est. Publica accessibilitas licentiam generalem omnibus materiis non dat.",
+    "group-core": "fundamenta et protocolla",
+    "group-proposed": "propositiones et interfacies",
+    "group-verenium": "Verenium · documenta et exemplar",
+    "language-label": "lingua paginae"
+  },
+  "yzh": {
+    "page-title": "карта открытых модулей",
+    "page-intro": "собраны материалы текущего публичного репозитория",
+    "page-caveat": "каталог ведёт к исходным файлам на GitHub. публикация файла не означает, что модуль запущен или прошёл научную, клиническую либо независимую проверку.",
+    "source-label": "источник",
+    "rights-note": "условия повторного использования проверяйте в каждом источнике. публичная доступность не означает общую лицензию на все материалы.",
+    "group-core": "основы и протоколы",
+    "group-proposed": "предложения и интерфейсы",
+    "group-verenium": "Verenium · документация и прототип",
+    "language-label": "язык страницы"
+  }
+}

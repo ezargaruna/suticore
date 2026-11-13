@@ -1,0 +1,601 @@
+{
+  "sourceRevision": "fd772787979cf88025b953c8991cc5da80b0aa81",
+  "sourcePath": "modules.html",
+  "sourceSha256": "c720bc72855116cf309cfd5f86758c53b7862efb35679f1a9d479a13d9065c1c",
+  "cards": [
+    {
+      "path": "meta/README.md",
+      "group": "group-core",
+      "title": "SUTI · meta overview",
+      "sourceLanguage": "ru",
+      "sha256": "3263e96357f4a1e1199a3d5c25a98a0ff70a7db7447131b616d613a6bcf44a75",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/archetyps.md",
+      "group": "group-core",
+      "title": "archetypal consciousness",
+      "sourceLanguage": "en",
+      "sha256": "bb762c1ee5188146895f9ffc458de428566e432c7c6261f6b1e60e23fe7b0f03",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/consciousness.md",
+      "group": "group-core",
+      "title": "consciousness",
+      "sourceLanguage": "ru",
+      "sha256": "eb9822d8a50447168a3334f77dd255aee5563233a833e519caf79ff14c552c9c",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/fusion_map.md",
+      "group": "group-core",
+      "title": "fusion map",
+      "sourceLanguage": "en",
+      "sha256": "5cc80ef83a1bdf3bdab5d4e7c398f5b9e1a5f4431daa0182d2bc411b5b5a92e9",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/glossary.md",
+      "group": "group-core",
+      "title": "SUTIcore glossary",
+      "sourceLanguage": "en",
+      "sha256": "57f74dcdaa20aafd21b144515577dd0df53a77c22149df257d597beec9313ed1",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/i_ching.md",
+      "group": "group-core",
+      "title": "i ching",
+      "sourceLanguage": "en",
+      "sha256": "a6c215c4193dd33c7d47488e9ed56bd0539f6ba1f2857c6ec640822f97af19de",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/kolozar.md",
+      "group": "group-core",
+      "title": "kolozar mysteries",
+      "sourceLanguage": "en",
+      "sha256": "b1eb5799ccb76ff5b8daf374427b0e7e57c8d0399ca8d56a468bbbca7d153bcc",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/lila.md",
+      "group": "group-core",
+      "title": "lila",
+      "sourceLanguage": "en",
+      "sha256": "fc1c36a9e0257c807b6bd9129c51bc7537626d82966891f85e49f22f518c5f49",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/linguafusion.md",
+      "group": "group-core",
+      "title": "LinguaFUSION",
+      "sourceLanguage": "en",
+      "sha256": "6d43647f999b8e2aab3f6e2dbf943e5ca445931f7c53ce27526fe4cd16b3afc3",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/luminaries.md",
+      "group": "group-core",
+      "title": "divas of luminaries",
+      "sourceLanguage": "en",
+      "sha256": "c10a8e1b71d21874fe742a5aa4322d47b84e4ae6c13cd7cd326b0894813e533c",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/lunar.md",
+      "group": "group-core",
+      "title": "lunar mysteries",
+      "sourceLanguage": "en",
+      "sha256": "603c8081c5b414e0de8d5f97cdc58249c3ae0f6002e33a295d7370cc8f1014cc",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/operator_breathes_avatar.md",
+      "group": "group-core",
+      "title": "operator breathes in avatar",
+      "sourceLanguage": "en",
+      "sha256": "adec2fba2cf8b57ab1e3e89b0d5f6740695dacdc9e8a09dbedde01d47eac0c9b",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/runic_circle.md",
+      "group": "group-core",
+      "title": "runic circle",
+      "sourceLanguage": "en",
+      "sha256": "a0298782b3e6d6781460f232786e4969b02450e537d03a01957d2fbe53355fe2",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/samurai_of_dharma.md",
+      "group": "group-core",
+      "title": "Samurai Dharma",
+      "sourceLanguage": "en",
+      "sha256": "3fa8add62355f82a1ddfd929720ab45a603b60a6b75122fb64e6a9764508d5b7",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/shadows.md",
+      "group": "group-core",
+      "title": "shadow analysis",
+      "sourceLanguage": "en",
+      "sha256": "881690bba4cba157b000dc22860c581dc113d3182abb9bc65ceef9c4dc38810a",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/slovoyaz.md",
+      "group": "group-core",
+      "title": "slovoyaz",
+      "sourceLanguage": "en",
+      "sha256": "9a9e8d4888a8c78612ef771be0784ee0f71e6efd90305b4df223bf888a7e4ea2",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/stellar.md",
+      "group": "group-core",
+      "title": "stellar archetypes",
+      "sourceLanguage": "en",
+      "sha256": "a79bf95aebf53285402c44f0a21adf3a0c0b6f59b174bc00f7c4d7a947e03d29",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/synaura.md",
+      "group": "group-core",
+      "title": "synaura",
+      "sourceLanguage": "en",
+      "sha256": "61814683db29ebd52ee725594677d82299c8ad045b97d566b76414d0efe4d230",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/synergema.md",
+      "group": "group-core",
+      "title": "synergema",
+      "sourceLanguage": "en",
+      "sha256": "7dce4c34def99be35a3ff456e80daef2f42442815c5f59e727a4c12b3b38077d",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/syntaxium.md",
+      "group": "group-core",
+      "title": "Syntaxium",
+      "sourceLanguage": "en",
+      "sha256": "ae33cb80a1aef2847a02ba0977e2a8908350225f657e5bd423e7a51053f5122a",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/tarot.md",
+      "group": "group-core",
+      "title": "tarot system",
+      "sourceLanguage": "en",
+      "sha256": "afb39914faed82610b9b7398a3542020aa3fdac52694971c99a68e28ec168717",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/telektonon.md",
+      "group": "group-core",
+      "title": "telektonon",
+      "sourceLanguage": "en",
+      "sha256": "391cfed557c05e973d48c832d3d1e0673ef8399c892b1d5c9e95894619cc1e69",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/verenitya.md",
+      "group": "group-core",
+      "title": "VereNITYA",
+      "sourceLanguage": "en",
+      "sha256": "21cd0bff5289212baadc83c89a281547b465000427466c26020ce76e3ea141df",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/yazekh.md",
+      "group": "group-core",
+      "title": "Yazekh",
+      "sourceLanguage": "en",
+      "sha256": "e9bb9f4e20007c4656ce21b62a1db6044103c8adfb65ddc3f47fc234f6b575af",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/00_KERNEL/AI_POLICY.md",
+      "group": "group-core",
+      "title": "AI policy",
+      "sourceLanguage": "en",
+      "sha256": "4ce58b554f64193e21ddd5c6c57d36bb0715782c45abf4a8e2b5dcbb4a65a764",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/00_KERNEL/CANON.md",
+      "group": "group-core",
+      "title": "SUTI canon",
+      "sourceLanguage": "en",
+      "sha256": "ae380abb61264f81ee8b711a2717e9d76a66886a9a19d9c73992c0e8b23c6d26",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/00_KERNEL/SYNTAXIUM.md",
+      "group": "group-core",
+      "title": "Syntaxium core",
+      "sourceLanguage": "en",
+      "sha256": "43317b47e01b019deca598db15273d1491dcbe95f3dba3f8d0b9245c1dc5bb99",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/00_KERNEL/SYNTAXIUM_FULL.md",
+      "group": "group-core",
+      "title": "Syntaxium · full specification",
+      "sourceLanguage": "ru",
+      "sha256": "e8600873e35b375c64d8429fbbdfcb978185ea23129a9be1949858005f432d72",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/kernel/clarity_discipline.md",
+      "group": "group-core",
+      "title": "clarity discipline",
+      "sourceLanguage": "ru",
+      "sha256": "db221c5bf098d9a8529f54b45680f49728780f551bd08d575006035731c7011f",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/kernel/consciousness_algorithms.md",
+      "group": "group-core",
+      "title": "consciousness algorithms",
+      "sourceLanguage": "ru",
+      "sha256": "cb4d1ce2c53e8ccd0bfbc7456fff3611284bbfe82c0f960c9cb825cd3f4200ac",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/kernel/distinction.md",
+      "group": "group-core",
+      "title": "distinction",
+      "sourceLanguage": "ru",
+      "sha256": "17aed3dfb12c0eaa0058cf879cde501249f5851e6a23972327c99555430e783f",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/kernel/sovereignty_manifesto.md",
+      "group": "group-core",
+      "title": "semantic sovereignty",
+      "sourceLanguage": "ru",
+      "sha256": "f992887513e99b22abab43bb63616aebae07c7c03a46cfcf1e0c7010a93e63ca",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/framework/SUTI_HOUSES_SYSTEM.md",
+      "group": "group-core",
+      "title": "SUTI houses system",
+      "sourceLanguage": "ru",
+      "sha256": "a0d6479f7ee6c157b56e4b0cd658b6a76700600e2c0ba30580ed8178f7a71df4",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/framework/decision_memo_template.md",
+      "group": "group-core",
+      "title": "decision memo template",
+      "sourceLanguage": "en",
+      "sha256": "bf566ab942fc853e8119effe58a40ca248e38271d3f3408bdf6b7acdebebbb27",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/framework/decision_stack.md",
+      "group": "group-core",
+      "title": "decision stack",
+      "sourceLanguage": "en",
+      "sha256": "e461ede03048b63c1e5ca2cbd737a25ad4f7d70b1b6dbeb16de112b472379975",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/framework/validation_gates.md",
+      "group": "group-core",
+      "title": "validation gates",
+      "sourceLanguage": "en",
+      "sha256": "8d08a29ab12f60751d44659a2eab52d46e9f740179c90186ef840d8c2374dbd1",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/frameworks/GUIDE.md",
+      "group": "group-core",
+      "title": "frameworks guide",
+      "sourceLanguage": "ru",
+      "sha256": "103c415435ab1ce3b2e9a00a91d8b7197a32b3ac20b69ad368993384619497fa",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/canon/format_canon.md",
+      "group": "group-core",
+      "title": "format canon",
+      "sourceLanguage": "en",
+      "sha256": "22cf2544ab8caf98685511e00bb443087256736054ccaaaedf76c579f0f45b71",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/canon/suti-world.md",
+      "group": "group-core",
+      "title": "SUTI.world canon",
+      "sourceLanguage": "ru",
+      "sha256": "21a3d6f1478f471e03eb6b307843d29c402da09602ce4549f69d65667ebfef74",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/canon/symbols_reference.md",
+      "group": "group-core",
+      "title": "symbols reference",
+      "sourceLanguage": "en",
+      "sha256": "120f9a21104f5e84d7a392a5d1b5a9b582ee44e8cdacfa1b368fabb9c4d99714",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/system/prime_directive.md",
+      "group": "group-core",
+      "title": "prime directive",
+      "sourceLanguage": "en",
+      "sha256": "d6dc23d17c5db42ccf4bfff474a30953d5f07acb43b58a701c729fcda00822ac",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/system/role_binding.md",
+      "group": "group-core",
+      "title": "role binding",
+      "sourceLanguage": "en",
+      "sha256": "1711f85d56f52a3df541bab5b0bcecf277066edf0976b4d6ec1b2bd7e6378207",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/system/system_overview.md",
+      "group": "group-core",
+      "title": "system overview",
+      "sourceLanguage": "en",
+      "sha256": "690cb3dfb48a47d5258f67c25c8504d29b066fc62f13c645597eaed2356317a6",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/modules/12_gifts.md",
+      "group": "group-core",
+      "title": "12 gifts",
+      "sourceLanguage": "ru",
+      "sha256": "38b1e6a0377a2528b2f59178299a7dfa598852977a8997c589614dfd193e85cc",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/modules/divas_7_lights.md",
+      "group": "group-core",
+      "title": "divas of 7 lights",
+      "sourceLanguage": "ru",
+      "sha256": "06d4fe30769ee72057032c779302dd3b9567ec7b6456325f03d900fed3d213d0",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/modules/kolozar.md",
+      "group": "group-core",
+      "title": "kolozar",
+      "sourceLanguage": "ru",
+      "sha256": "d0bb6506262798db1e25a0153973fcbe53941de459387820d7628219b35abf95",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/modules/operator_avatar.md",
+      "group": "group-core",
+      "title": "operator avatar",
+      "sourceLanguage": "ru",
+      "sha256": "9b695f185cd0d40ec1188725adf8b7d31e021b7bf626c0ac51bf9e7ee05b9122",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/modules/samurai_dharma.md",
+      "group": "group-core",
+      "title": "Samurai Dharma",
+      "sourceLanguage": "ru",
+      "sha256": "dd69fa2398d0eae288e8b323f5c7e4301640397d296049d5cb1f0a39785f70cd",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/02_PROJECTS/SUTICORE/SUTICORE.md",
+      "group": "group-core",
+      "title": "SUTIcore project",
+      "sourceLanguage": "mixed",
+      "sha256": "27b2f325a916717b15a3e4c25095955e675e3f9db2e43db6b069b8f0cee6f6f6",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/02_PROJECTS/VERENITYA/VERENITYA.md",
+      "group": "group-core",
+      "title": "VereNITYA project",
+      "sourceLanguage": "mixed",
+      "sha256": "df4340cc59b786cd8d1b2dc87a2a1939f1bf64d7d0e773a63dd0f42ef8f2cb44",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/02_PROJECTS/YAZEKH/YAZEKH.md",
+      "group": "group-core",
+      "title": "Yazekh project",
+      "sourceLanguage": "ru",
+      "sha256": "d859f508e186efc699cad14077c60be23aad3bf5eff030d9373b6ff84eab0820",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/02_PROJECTS/YAZEKH/LEXICON.md",
+      "group": "group-core",
+      "title": "Yazekh lexicon",
+      "sourceLanguage": "ru",
+      "sha256": "b002ca07cdeae7d94923d4ac9a70da4b8ccf2fc16219c9248c76ba6b0b28feed",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/ai_support/ai-usage-policy.md",
+      "group": "group-core",
+      "title": "AI usage policy",
+      "sourceLanguage": "en",
+      "sha256": "f9f6b7c4b87fbcd012062d18a6f7a5b2f343be4b8cf34573a7b6244c135ed117",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/ai_support/ai_assistant_rules.md",
+      "group": "group-core",
+      "title": "AI assistant rules",
+      "sourceLanguage": "en",
+      "sha256": "66aec8ad6395d0f31cbc1b25ef8f6feb3432dbb7c4eed03f96d3ba5115998764",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/ai_support/citation_rules.md",
+      "group": "group-core",
+      "title": "citation rules",
+      "sourceLanguage": "en",
+      "sha256": "911074ac840680f3b3812941c6e4a7f43ab9d4f1561983f62c64e2076482da8b",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/ai_support/rag_schema.md",
+      "group": "group-core",
+      "title": "RAG schema",
+      "sourceLanguage": "en",
+      "sha256": "fe0b763d69d0ad30050bebe3af68d5b6c3b3840c68ea8cc45afd963a06e02834",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/ai_support/tag_taxonomy.md",
+      "group": "group-core",
+      "title": "tag taxonomy",
+      "sourceLanguage": "en",
+      "sha256": "e6c8c5b6636c8dfaf1de85839f59a7b11ce4803360b96810bcc78b0a39cafb32",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/ai_support/metric_translation.md",
+      "group": "group-core",
+      "title": "metric translation",
+      "sourceLanguage": "en",
+      "sha256": "be026fd15a92d66c8d60cd43168b562e04d78a4a8fbd2919408af93008ecd94f",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/community/contributing.md",
+      "group": "group-core",
+      "title": "contributing",
+      "sourceLanguage": "en",
+      "sha256": "020f801c0edc2ddc0af027a91b29286e949c9a86eb226bb09ffaf988feea9f8e",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/community/community_rituals.md",
+      "group": "group-core",
+      "title": "community rituals",
+      "sourceLanguage": "en",
+      "sha256": "a4ea177777f2eaca91a35746fe40a67b0aac99dcd41430b4887957a26e164f5b",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/evolution/archive_rules.md",
+      "group": "group-core",
+      "title": "archive rules",
+      "sourceLanguage": "en",
+      "sha256": "96af4a356e0387efe946068299c217b73ddd9aa75fa81ee47144ec66dd777bfd",
+      "declaredLicense": "mit"
+    },
+    {
+      "path": "meta/templates/agent_contract.md",
+      "group": "group-core",
+      "title": "agent contract",
+      "sourceLanguage": "ru",
+      "sha256": "44cf95b5c7bcbe690fd1b99a2354e97e5df0fc3842afa21a9a8b4d8632f72be2",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/templates/linguistic_crystal.md",
+      "group": "group-core",
+      "title": "linguistic crystal",
+      "sourceLanguage": "ru",
+      "sha256": "87aae07f54a47af120a252f74af62c9df3b1e66c7e8f219a02f14c9e8132a2fb",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/templates/master_essence_map.md",
+      "group": "group-core",
+      "title": "master essence map",
+      "sourceLanguage": "ru",
+      "sha256": "2524210f740cb6ec7262ab82919ba9311391e34ed536d067ec7e5b5d740d4542",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/templates/semantic_audit.md",
+      "group": "group-core",
+      "title": "semantic audit",
+      "sourceLanguage": "ru",
+      "sha256": "ff79788f2b2a65672a108858c4c5ce656163d61144db5ad70025d631b73e93d0",
+      "declaredLicense": null
+    },
+    {
+      "path": "meta/04_AI/41_AGENT_OUTPUTS/INDEX.md",
+      "group": "group-core",
+      "title": "agent outputs index",
+      "sourceLanguage": "unknown",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "declaredLicense": null
+    },
+    {
+      "path": "docs/modules/narodoznanie.md",
+      "group": "group-proposed",
+      "title": "Narodoznanie",
+      "sourceLanguage": "ru",
+      "sha256": "8bf34a4f2f33deec61de13d629378124c034c1302b022681e77307e3c583d1c5",
+      "declaredLicense": null
+    },
+    {
+      "path": "docs/modules/nitya-portal.md",
+      "group": "group-proposed",
+      "title": "NITYA portal",
+      "sourceLanguage": "ru",
+      "sha256": "0a384d52509632b025a85b3087b77e0c080d6b1b375d3ec832cd7a581b7b0a88",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/README.md",
+      "group": "group-verenium",
+      "title": "Verenium module",
+      "sourceLanguage": "ru",
+      "sha256": "6b0495c52291f557d02a9cff6418ba7dba7a0c8bfbb6b1a5395580a588def37e",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/manifest.json",
+      "group": "group-verenium",
+      "title": "Verenium manifest",
+      "sourceLanguage": "structured",
+      "sha256": "496d9bfbc309bebc2bd47e7cd0bb480a272cc9ecb5a4d291abcb84f18e757153",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/protocol.md",
+      "group": "group-verenium",
+      "title": "Verenium protocol",
+      "sourceLanguage": "ru",
+      "sha256": "729f487611104a87551b48eb7c48390dbb9d66b2caa10c6f33d3f8bb86a8595b",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/entry-locales.json",
+      "group": "group-verenium",
+      "title": "Verenium entry locales",
+      "sourceLanguage": "structured",
+      "sha256": "2f4b99166289d36946797e0cf848eae2eba60a54dc962660ecfb321d11f71f7d",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/telegram/README.md",
+      "group": "group-verenium",
+      "title": "Verenium Telegram adapter",
+      "sourceLanguage": "ru",
+      "sha256": "65ea07bab1ed50b89ade715e64a2d393f60f5589b564d1a1fb4a3a74f64bbd6e",
+      "declaredLicense": null
+    },
+    {
+      "path": "modules/verenium/telegram/bot.py",
+      "group": "group-verenium",
+      "title": "Verenium Telegram adapter",
+      "sourceLanguage": "structured",
+      "sha256": "0c6e3304ae073b64004716373d5d2fa683ddf21c34caea0e05f7aa8d861245f7",
+      "declaredLicense": null
+    }
+  ],
+  "baselineRecordCount": 76,
+  "excludedInternalCount": 2
+}

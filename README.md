@@ -11,6 +11,7 @@ This repository contains public specifications, the canonical source and deploym
 - [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
 - [Care atlas](https://ezargaruna.github.io/suticore/care-atlas.html) · [private care map](https://ezargaruna.github.io/suticore/care-map.html) · [Verenium workshop](https://ezargaruna.github.io/suticore/verenium.html) · [complete offline bundle](https://ezargaruna.github.io/suticore/downloads/Verenium.zip). The workshop stores notes only when the visitor exports them.
 - [Download SUTI.os](https://github.com/ezargaruna/SUTI.os/releases/latest) — a separate, portable Markdown vault with a full Russian edition and partial English, Spanish, and Brazilian Portuguese entry packs.
+- [Public module catalog · 13 language routes](https://ezargaruna.github.io/suticore/modules.html?lang=en) — searchable titles and source-language labels.
 - [Language layer status](docs/language-layers.md) — what is translated, what falls back to Russian, and what still needs review across the 13 navigation layers.
 - [.synaura editorial guide · 13 language routes](https://ezargaruna.github.io/suticore/modules/synaura/guide/en.html) — full optional editorial guide in HTML and Markdown, with [per-edition review and rights](modules/synaura/guide/coverage.json).
 - [Synaura × Syntaxium · modules 00–12](synaura-modules.html) — Russian-language public draft; parser, runtime, and research validation are not claimed.

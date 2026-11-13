@@ -44,6 +44,10 @@ jobs:
           python3 scripts/build_care_atlas_editions.py
           python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
           python3 scripts/verify_care_atlas_locales.py
+          python3 -B scripts/build_module_catalog.py --check
+          python3 scripts/sync_single_interface_routes.py modules.html
+          mkdir -p _site/locales/module-catalog
+          cp locales/module-catalog/coverage.json _site/locales/module-catalog/
           python3 scripts/build_suti_angels_editions.py --check
           python3 scripts/sync_single_interface_routes.py suti-angels*.html
           mkdir -p _site/locales/suti-angels

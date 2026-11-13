@@ -218,3 +218,21 @@ qualified review for Sanskrit and Latin. The [MIT notice](../modules/synaura/LIC
 applies to this module. The guide is distinct from the `synaura.html` landing
 page, the 2026.11 interaction protocol, and the release announcement. Their
 coverage is recorded separately.
+
+## Public module catalog · 2026-11-13
+
+The [module catalog](../modules.html?lang=en) localizes all 74 displayed
+record titles and the search, navigation, metadata and review labels. Search
+matches the current title, original title and source path. The chosen language
+has a shareable query route. A labeled Russian edition remains readable when
+JavaScript is unavailable. The architectural map at `modules/index.html`
+continues as a Russian resource and is labeled accordingly.
+
+The [catalog coverage and rights record](../locales/module-catalog/coverage.json)
+distinguishes the editor's source language assessment from the interface
+language and records individual declarations of rights, where present. Catalog
+links are pinned to the revision used for those assessments.
+Two older references to documents marked internal were removed from the public
+catalog. One source index is empty and its language is undetermined.
+The 11 translation editions await independent language review. Sanskrit and
+Latin require specialist review. Yazekh displays Russian copy on HOLD.

@@ -60,7 +60,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `nitya.html` | Russian | RU | Russian source edition; no complete 13-language runtime. |
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
-| `modules.html` | Mixed RU/EN | RU-first catalog with selected English labels | Two translation markers do not establish a translated catalog. |
+| `modules.html?lang=…` | Localized catalog with separate source language labels | 12 written-language editions and Russian fallback for YZH | 74 records. Two older references to sources marked internal were removed from public navigation. Native review remains pending. See the [catalog coverage and rights record](../../locales/module-catalog/coverage.json). |
 | `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
 | `care-atlas.html` | Russian | RU | Source guide; discloses that it is not medical/emergency support and requests are not auto-routed; links to all written editions and marks YZH `HOLD`. |
 | `care-atlas-en.html` | English (`en`) | EN | Full editorial draft; age/consent boundaries and service limits retained; independent review pending. |
