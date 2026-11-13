@@ -704,7 +704,7 @@
       : t.review;
 
     const heading = node('div', '', { class: 'nitya-practice__heading' });
-    heading.append(node('p', t.kicker, { class: 'nitya-practice__kicker' }), node('h1', t.title, { id: titleId }));
+    heading.append(node('p', t.kicker, { class: 'nitya-practice__kicker' }), node('h2', t.title, { id: titleId }));
     view.replaceChildren(localeField, heading, node('p', t.lead));
 
     if (phase === 'closed' || phase === 'complete') {

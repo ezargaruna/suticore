@@ -1,0 +1,113 @@
+[data-atlas-top],
+[data-atlas-care],
+[data-atlas-paths] {
+  margin-block: 1.25rem;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+[data-atlas-top] {
+  background: var(--suti-angel-card);
+  border-block-start: .25rem solid var(--suti-angel-teal);
+  border-radius: .7rem;
+  padding: clamp(1rem, 4vw, 2.5rem);
+}
+[data-atlas-top] h1 {
+  margin-block: .25rem;
+  font-size: clamp(2rem, 6vw, 3.8rem);
+}
+.atlas-kicker {
+  color: var(--suti-angel-teal);
+  margin-block-end: 0;
+  font-weight: 700;
+}
+.atlas-lead {
+  max-inline-size: 35ch;
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+}
+.atlas-links,
+.atlas-modules,
+.atlas-care__controls,
+.atlas-care__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+}
+.atlas-modules { padding-inline-start: 0; list-style: none; }
+.atlas-links a,
+.atlas-modules a,
+[data-atlas-care] button,
+[data-atlas-care] select,
+[data-atlas-top] input {
+  display: inline-flex;
+  min-block-size: 44px;
+  align-items: center;
+  max-inline-size: 100%;
+  padding: .35rem .65rem;
+  color: var(--suti-angel-ink);
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+  background: var(--suti-angel-card);
+}
+.atlas-links a:first-child,
+[data-atlas-care] button[aria-pressed="true"] {
+  background: var(--suti-angel-teal);
+  color: var(--suti-angel-card);
+}
+[data-atlas-panel],
+[data-atlas-care] {
+  border: 1px solid var(--suti-angel-line);
+  border-radius: .6rem;
+  margin-block: .8rem;
+  padding: .8rem;
+}
+[data-atlas-panel] summary {
+  cursor: pointer;
+  min-block-size: 44px;
+  padding-block: .45rem;
+  font-weight: 700;
+}
+[data-atlas-panel] label { display: block; }
+.atlas-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: .7rem;
+  padding-inline-start: 1.4rem;
+}
+.atlas-cards li {
+  padding: .95rem;
+  background: var(--suti-angel-card);
+  border: 1px solid var(--suti-angel-line);
+  border-radius: .6rem;
+}
+.atlas-cards h3, .atlas-cards p { margin-block: .25rem; }
+.atlas-care__answer {
+  min-block-size: 6rem;
+  inline-size: 100%;
+  margin-block: .45rem;
+  background: var(--suti-angel-card);
+  color: var(--suti-angel-ink);
+  border: 1px solid currentColor;
+  padding: .65rem;
+}
+[data-atlas-care] select { display: inline-block; }
+[data-atlas-care] button { cursor: pointer; }
+:where([data-atlas-top], [data-atlas-care], [data-atlas-paths]) :focus-visible {
+  outline: 3px solid var(--suti-angel-focus);
+  outline-offset: 3px;
+}
+[data-atlas-top] button {
+  min-block-size: 44px;
+  padding: .35rem .65rem;
+  margin-inline-start: .45rem;
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+  color: var(--suti-angel-ink);
+  background: var(--suti-angel-card);
+}
+.atlas-cards summary {
+  min-block-size: 44px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.atlas-review { font-size: .95em; }

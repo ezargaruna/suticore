@@ -2,6 +2,7 @@
 """Assemble the portable NITYA practice page from its public components."""
 
 from argparse import ArgumentParser
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,6 +14,7 @@ SHELL = """<!doctype html>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NITYA · SUTI.world</title>
+  <meta name="description" content="атлас Нитьи · 90 дней практики, голос и забота">
   <link rel="stylesheet" href="{assets}/css/suti-angels-editorial.css?v=20261111-clean1">
   <style>
     @font-face {{font-family:NotoArabic;src:url("{assets}/fonts/notosansarabic/regular.woff2") format("woff2");font-display:swap}}
@@ -35,10 +37,13 @@ SHELL = """<!doctype html>
 <body>
   <main class="nitya-page">
     <a class="nitya-page__brand" href="https://suti.world/">SUTI.world</a>
+    <header data-atlas-top></header>
     <section id="nitya-90-day-practice" data-nitya-practice
       data-samurai-url="https://ezargaruna.github.io/suticore/samurai-dharma.html"
       data-angels-locales data-angels-url="https://ezargaruna.github.io/suticore/suti-angels.html"></section>
     <section data-nitya-route></section>
+    <section id="care-questionnaire" data-atlas-care></section>
+    <div data-atlas-paths></div>
     <noscript>
       <p lang="ru">для практики NITYA нужен JavaScript</p>
       <p lang="en">NITYA practice requires JavaScript</p>
@@ -51,19 +56,24 @@ SHELL = """<!doctype html>
       document.documentElement.lang = contentLanguage;
       document.documentElement.dir = direction;
       pageBrand.href = "https://suti.world/?lang=" + encodeURIComponent(language);
-      const heading = document.querySelector("[data-nitya-practice] h1");
-      if (heading) document.title = "NITYA · " + heading.textContent;
     }});
     if (window.parent !== window) {{
       pageBrand.target = "_blank";
       pageBrand.rel = "noopener noreferrer";
     }}
   </script>
+  <script type="application/json" id="nitya-atlas-copy">{atlas_copy}</script>
+  <script>
+{atlas}
+  </script>
   <script>
 {practice}
   </script>
   <script>
 {route}
+  </script>
+  <script>
+{care}
   </script>
 </body>
 </html>
@@ -82,9 +92,12 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("--check", action="store_true")
     options = parser.parse_args()
-    styles = "\n".join(read_component(name, "css") for name in ("nitya-practice", "nitya-route"))
-    html = SHELL.format(assets=ASSETS, styles=styles, practice=read_component("nitya-practice", "js"),
-                        route=read_component("nitya-route", "js"))
+    styles = "\n".join(read_component(name, "css") for name in ("nitya-practice", "nitya-route", "nitya-atlas"))
+    copy = json.loads((ROOT / "locales/nitya-atlas.json").read_text(encoding="utf-8"))
+    source = json.dumps(copy, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+    html = SHELL.format(assets=ASSETS, styles=styles, atlas_copy=source,
+                        atlas=read_component("nitya-atlas", "js"), care=read_component("nitya-atlas-care", "js"),
+                        practice=read_component("nitya-practice", "js"), route=read_component("nitya-route", "js"))
     output = ROOT / "nitya-practice.html"
     if options.check:
         if not output.is_file() or output.read_text(encoding="utf-8") != html:

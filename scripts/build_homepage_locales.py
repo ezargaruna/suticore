@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and embed the reviewed-source homepage locale payloads."""
+"""Validate and embed the homepage locale payloads and review statuses."""
 
 from argparse import ArgumentParser
 from hashlib import sha256
@@ -9,7 +9,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCALES = ROOT / "locales/homepage"
-ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr"}
+ADDED = {"fr": "ltr", "ar": "rtl", "zh-Hans": "ltr", "hi": "ltr", "bn": "ltr"}
 SCRIPT = re.compile(r'(<script type="application/json" id="homepage-locale-data">).*?(</script>)', re.S)
 ROUTE_KEYS = {"speak", "listen", "read", "write", "study", "travel"}
 
@@ -59,7 +59,7 @@ def main():
             "renderedLanguage": locale, "direction": direction, "status": "native-review-pending",
             "dictionaryKeys": len(words), "additionalStrings": len(extras), "practiceTracks": len(ROUTE_KEYS),
         }
-    for locale in ("hi", "bn", "eo", "sa", "la", "yzh"):
+    for locale in ("eo", "sa", "la", "yzh"):
         review[locale] = {"renderedLanguage": "ru", "direction": "ltr",
                           "status": "hold-authorial-language" if locale == "yzh" else "russian-fallback"}
     payload = json.dumps({"editions": editions, "ui": ui}, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")

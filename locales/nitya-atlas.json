@@ -1,0 +1,1154 @@
+{
+  "ru": {
+    "title": "атлас Нитьи",
+    "intro": "90 дней, чтобы услышать свой голос, сберечь силы и выбрать один шаг заботы",
+    "countdown": "до начала нового цикла",
+    "started": "твой отсчёт завершён",
+    "seasonTitle": "от Йоля до Имболка · время беречь огонь",
+    "seasonText": "в сюжете Нитьи этот отрезок посвящён отдыху. Выбери паузу, тихое занятие или заботу об общем месте в ритме, подходящем твоему краю",
+    "nav": {
+      "practice": "начать практику",
+      "care": "открыть анкету заботы",
+      "verenium": "открыть VereNium",
+      "veche": "открыть нейровече",
+      "archive": "открыть архив",
+      "prices": "услуги и цены"
+    },
+    "audienceTitle": "выбрать, как играть",
+    "audiences": {
+      "family": [
+        "5+ · со взрослым",
+        "вместе найдите три цвета рядом и подарите одному из них имя"
+      ],
+      "teen": [
+        "подросткам",
+        "придумай персонажа, который просит о паузе. Как он скажет это своим голосом?"
+      ],
+      "adult": [
+        "взрослым",
+        "выбери одну задачу и назови шаг, который можно сделать за десять минут"
+      ],
+      "elder": [
+        "старшим",
+        "выбери два удобных слова для сегодняшнего дня и произнеси их в своём темпе"
+      ],
+      "team": [
+        "группам и командам",
+        "спросите, что стоит упростить. Дайте каждому возможность ответить или пропустить"
+      ]
+    },
+    "geographyTitle": "места на карте",
+    "regions": {
+      "siberia": [
+        "Сибирь · Иркутск и Красноярск",
+        "найди слово для того, что сегодня даёт тебе опору"
+      ],
+      "brazil": [
+        "Бразилия · Сан-Паулу, Рио-де-Жанейро и Бразилиа",
+        "найди тень на знакомой улице и придумай, как сделать это место уютнее"
+      ],
+      "colombia": [
+        "Колумбия · Богота, Фландес, Хирардот, Сильвания, Вилья-де-Лейва и Санта-Марта",
+        "выбери образ рядом с тобой и опиши его тремя словами"
+      ],
+      "asia": [
+        "Китай, Индия и арабоязычные регионы",
+        "запиши местное слово для приглашения и поясни, когда его говорят"
+      ],
+      "world": [
+        "Абья-Яла, Карибы, Европа, США и другие земли",
+        "положи на карту образ места, где отдыхают или встречаются, и назови его на своём языке"
+      ]
+    },
+    "unknownStart": "дата нового цикла уточняется",
+    "questTitle": "квест городских шаманов",
+    "questIntro": "заметь, что уже поддерживает жизнь рядом. Преврати это наблюдение в один небольшой жест заботы",
+    "questSteps": [
+      [
+        "заметить",
+        "какая деталь сегодня стоит внимания?"
+      ],
+      [
+        "назвать",
+        "каким словом ты её назовёшь?"
+      ],
+      [
+        "позаботиться",
+        "какой маленький шаг уместен здесь?"
+      ],
+      [
+        "собрать жемчужину",
+        "что из этого опыта хочется взять дальше?"
+      ]
+    ],
+    "geographyNote": "это редакционные приглашения для разных мест. География не означает участие людей или организаций",
+    "tartaryNote": "Тартария доступна как историческое название и образ для исследования источников",
+    "dateLabel": "выбери дату отсчёта",
+    "days": "дней",
+    "moduleTitle": "жемчужины и модули",
+    "finist": "Финист — ясный сокол",
+    "sources": "издания и источники",
+    "review": "русская исходная редакция",
+    "openNote": "альбом и задания открыты всем",
+    "questEnd": "сохранить вопрос для себя",
+    "personalCount": "личный отсчёт",
+    "questContinue": "перейти к практике",
+    "clearCountdown": "обнулить отсчёт"
+  },
+  "en": {
+    "title": "NITYA atlas",
+    "intro": "90 days to hear your own voice, keep your strength, and choose one act of care",
+    "countdown": "time until the new cycle opens",
+    "started": "your countdown has ended",
+    "seasonTitle": "Yule to Imbolc · tending the fire",
+    "seasonText": "in NITYA’s story, this is a season of rest. Take a pause, make something quietly, or care for a shared place at a pace that suits where you live",
+    "nav": {
+      "practice": "start the practice",
+      "care": "open the care questionnaire",
+      "verenium": "open VereNium",
+      "veche": "open Neuroveche",
+      "archive": "open the archive",
+      "prices": "services and prices"
+    },
+    "audienceTitle": "choose how to play",
+    "audiences": {
+      "family": [
+        "ages 5+ · with an adult",
+        "find three colours together and give one a name"
+      ],
+      "teen": [
+        "for teens",
+        "invent a character who needs a pause. How would they ask for it in their own voice?"
+      ],
+      "adult": [
+        "for adults",
+        "pick one task and name a step that fits into ten minutes"
+      ],
+      "elder": [
+        "for older adults",
+        "choose two words that feel right for today and say them at your own pace"
+      ],
+      "team": [
+        "for groups and teams",
+        "ask what could be simpler. Give each person room to answer or pass"
+      ]
+    },
+    "geographyTitle": "places on the map",
+    "regions": {
+      "siberia": [
+        "Siberia · Irkutsk and Krasnoyarsk",
+        "find a word for something that steadies you today"
+      ],
+      "brazil": [
+        "Brazil · São Paulo, Rio de Janeiro and Brasília",
+        "find shade on a familiar street and imagine what could make that spot more inviting"
+      ],
+      "colombia": [
+        "Colombia · Bogotá, Flandes, Girardot, Silvania, Villa de Leyva and Santa Marta",
+        "choose one thing you see nearby and describe it in three words"
+      ],
+      "asia": [
+        "China, India and Arabic-speaking regions",
+        "write down a local word of welcome and say when people use it"
+      ],
+      "world": [
+        "Abya Yala, the Caribbean, Europe, the US and other lands",
+        "add an image of somewhere people rest or meet, and name it in your own language"
+      ]
+    },
+    "unknownStart": "the new cycle date is yet to be announced",
+    "questTitle": "urban shamans quest",
+    "questIntro": "notice what already supports life around you. Turn that observation into one small gesture of care",
+    "questSteps": [
+      [
+        "notice",
+        "what detail deserves your attention today?"
+      ],
+      [
+        "name",
+        "what word would you give it?"
+      ],
+      [
+        "care",
+        "what small step would be welcome here?"
+      ],
+      [
+        "gather a pearl",
+        "what would you carry forward from this experience?"
+      ]
+    ],
+    "geographyNote": "these are editorial prompts for different places. A place on the map does not indicate participation by people or organisations",
+    "tartaryNote": "Tartary appears as a historical name and a prompt to explore sources",
+    "dateLabel": "choose a countdown date",
+    "days": "days",
+    "moduleTitle": "pearls and modules",
+    "finist": "Finist, the bright falcon",
+    "sources": "editions and sources",
+    "review": "editorial edition · independent review pending",
+    "openNote": "the atlas and prompts are open to everyone",
+    "questEnd": "keep a question for yourself",
+    "personalCount": "personal countdown",
+    "questContinue": "go to the practice",
+    "clearCountdown": "clear the countdown"
+  },
+  "es-419": {
+    "title": "atlas de NITYA",
+    "intro": "90 días para escuchar tu propia voz, cuidar tus fuerzas y elegir un pequeño gesto de cuidado",
+    "countdown": "tiempo para el inicio del nuevo ciclo",
+    "started": "terminó tu cuenta regresiva",
+    "seasonTitle": "de Yule a Imbolc · cuidar el fuego",
+    "seasonText": "en la historia de NITYA, esta es una temporada de descanso. Haz una pausa, crea algo en calma o cuida un espacio compartido al ritmo de donde vives",
+    "nav": {
+      "practice": "empezar la práctica",
+      "care": "abrir el formulario de cuidado",
+      "verenium": "abrir VereNium",
+      "veche": "abrir Neuroveche",
+      "archive": "abrir el archivo",
+      "prices": "servicios y precios"
+    },
+    "audienceTitle": "elige cómo jugar",
+    "audiences": {
+      "family": [
+        "desde los 5 años · en compañía de una persona adulta",
+        "busquen tres colores y pónganle nombre a uno"
+      ],
+      "teen": [
+        "para adolescentes",
+        "imagina un personaje que necesita una pausa. ¿Cómo la pediría con sus propias palabras?"
+      ],
+      "adult": [
+        "para personas adultas",
+        "elige una tarea y encuentra un paso que puedas dar en diez minutos"
+      ],
+      "elder": [
+        "para personas mayores",
+        "elige dos palabras para el día de hoy y dilas a tu ritmo"
+      ],
+      "team": [
+        "para grupos y equipos",
+        "pregunten qué se puede simplificar. Cada persona puede responder o pasar"
+      ]
+    },
+    "geographyTitle": "lugares en el mapa",
+    "regions": {
+      "siberia": [
+        "Siberia · Irkutsk y Krasnoyarsk",
+        "encuentra una palabra para algo que te da estabilidad hoy"
+      ],
+      "brazil": [
+        "Brasil · São Paulo, Río de Janeiro y Brasilia",
+        "busca sombra en una calle conocida e imagina cómo hacer más acogedor ese lugar"
+      ],
+      "colombia": [
+        "Colombia · Bogotá, Flandes, Girardot, Silvania, Villa de Leyva y Santa Marta",
+        "elige algo que veas cerca y descríbelo en tres palabras"
+      ],
+      "asia": [
+        "China, India y regiones de habla árabe",
+        "anota una palabra de bienvenida de tu localidad y cuenta cuándo se usa"
+      ],
+      "world": [
+        "Abya Yala, el Caribe, Europa, Estados Unidos y otras tierras",
+        "agrega la imagen de un lugar de descanso o de encuentro y nómbralo en tu propio idioma"
+      ]
+    },
+    "unknownStart": "falta anunciar la fecha del nuevo ciclo",
+    "questTitle": "misión de chamanes urbanos",
+    "questIntro": "observa qué sostiene la vida a tu alrededor. Convierte esa observación en un pequeño gesto de cuidado",
+    "questSteps": [
+      [
+        "observar",
+        "¿qué detalle merece tu atención hoy?"
+      ],
+      [
+        "nombrar",
+        "¿qué palabra le darías?"
+      ],
+      [
+        "cuidar",
+        "¿qué pequeño paso sería bienvenido aquí?"
+      ],
+      [
+        "recoger una perla",
+        "¿qué te gustaría llevarte de esta experiencia?"
+      ]
+    ],
+    "geographyNote": "son propuestas editoriales para distintos lugares. Que un lugar aparezca en el mapa no implica la participación de personas u organizaciones",
+    "tartaryNote": "Tartaria aparece como nombre histórico y como invitación a examinar las fuentes",
+    "dateLabel": "elige la fecha de inicio",
+    "days": "días",
+    "moduleTitle": "perlas y módulos",
+    "finist": "Finist, el halcón luminoso",
+    "sources": "ediciones y fuentes",
+    "review": "edición editorial · revisión independiente pendiente",
+    "openNote": "el atlas y las consignas están abiertos a todos",
+    "questEnd": "guarda una pregunta para ti",
+    "personalCount": "cuenta regresiva personal",
+    "questContinue": "ir a la práctica",
+    "clearCountdown": "borrar la cuenta regresiva"
+  },
+  "pt-BR": {
+    "title": "atlas de NITYA",
+    "intro": "90 dias para ouvir a própria voz, preservar suas forças e escolher um pequeno gesto de cuidado",
+    "countdown": "tempo até o início do novo ciclo",
+    "started": "sua contagem chegou ao fim",
+    "seasonTitle": "de Yule a Imbolc · cuidar do fogo",
+    "seasonText": "na história de NITYA, esta é uma estação de descanso. Faça uma pausa, crie algo com calma ou cuide de um espaço compartilhado no ritmo de onde você vive",
+    "nav": {
+      "practice": "começar a prática",
+      "care": "abrir o formulário de cuidado",
+      "verenium": "abrir VereNium",
+      "veche": "abrir Neuroveche",
+      "archive": "abrir o arquivo",
+      "prices": "serviços e preços"
+    },
+    "audienceTitle": "escolha como jogar",
+    "audiences": {
+      "family": [
+        "a partir de 5 anos · com uma pessoa adulta",
+        "encontrem três cores e deem um nome a uma delas"
+      ],
+      "teen": [
+        "para adolescentes",
+        "imagine uma personagem que precisa de uma pausa. Como ela pediria isso com as próprias palavras?"
+      ],
+      "adult": [
+        "para adultos",
+        "escolha uma tarefa e pense num passo que caiba em dez minutos"
+      ],
+      "elder": [
+        "para pessoas idosas",
+        "escolha duas palavras para o dia de hoje e diga cada uma no seu ritmo"
+      ],
+      "team": [
+        "para grupos e equipes",
+        "perguntem o que pode ser simplificado. Cada pessoa pode responder ou passar"
+      ]
+    },
+    "geographyTitle": "lugares no mapa",
+    "regions": {
+      "siberia": [
+        "Sibéria · Irkutsk e Krasnoyarsk",
+        "encontre uma palavra para algo que te dá apoio hoje"
+      ],
+      "brazil": [
+        "Brasil · São Paulo, Rio de Janeiro e Brasília",
+        "procure sombra numa rua conhecida e imagine como deixar aquele lugar mais acolhedor"
+      ],
+      "colombia": [
+        "Colômbia · Bogotá, Flandes, Girardot, Silvania, Villa de Leyva e Santa Marta",
+        "escolha algo que você vê por perto e descreva em três palavras"
+      ],
+      "asia": [
+        "China, Índia e regiões de língua árabe",
+        "anote uma palavra de boas-vindas da sua região e conte quando ela é usada"
+      ],
+      "world": [
+        "Abya Yala, Caribe, Europa, Estados Unidos e outras terras",
+        "acrescente a imagem de um lugar de descanso ou encontro e dê a ele um nome na sua língua"
+      ]
+    },
+    "unknownStart": "a data do novo ciclo ainda será anunciada",
+    "questTitle": "missão dos xamãs urbanos",
+    "questIntro": "perceba o que já sustenta a vida ao seu redor. Transforme essa observação em um pequeno gesto de cuidado",
+    "questSteps": [
+      [
+        "perceber",
+        "que detalhe merece sua atenção hoje?"
+      ],
+      [
+        "nomear",
+        "que palavra você daria a ele?"
+      ],
+      [
+        "cuidar",
+        "que pequeno passo seria bem-vindo aqui?"
+      ],
+      [
+        "recolher uma pérola",
+        "o que você quer levar dessa experiência?"
+      ]
+    ],
+    "geographyNote": "são propostas editoriais para lugares diferentes. A presença de um lugar no mapa não indica participação de pessoas ou organizações",
+    "tartaryNote": "Tartária aparece como nome histórico e como convite para examinar as fontes",
+    "dateLabel": "escolha a data de início",
+    "days": "dias",
+    "moduleTitle": "pérolas e módulos",
+    "finist": "Finist, o falcão luminoso",
+    "sources": "edições e fontes",
+    "review": "edição editorial · revisão independente pendente",
+    "openNote": "o atlas e as propostas são abertos a todos",
+    "questEnd": "guarde uma pergunta para você",
+    "personalCount": "contagem pessoal",
+    "questContinue": "ir à prática",
+    "clearCountdown": "limpar a contagem"
+  },
+  "fr": {
+    "title": "atlas de NITYA",
+    "intro": "90 jours pour écouter ta propre voix, préserver tes forces et choisir un geste de soin",
+    "countdown": "temps avant l’ouverture du nouveau cycle",
+    "started": "ton compte à rebours est terminé",
+    "seasonTitle": "de Yule à Imbolc · veiller sur le feu",
+    "seasonText": "dans le récit de NITYA, c’est un temps de repos. Fais une pause, crée tranquillement ou prends soin d’un lieu commun, au rythme qui convient à l’endroit où tu vis",
+    "nav": {
+      "practice": "commencer la pratique",
+      "care": "ouvrir le questionnaire de soutien",
+      "verenium": "ouvrir VereNium",
+      "veche": "ouvrir Neuroveche",
+      "archive": "ouvrir les archives",
+      "prices": "services et tarifs"
+    },
+    "audienceTitle": "choisis comment jouer",
+    "audiences": {
+      "family": [
+        "dès 5 ans · avec un adulte",
+        "trouvez trois couleurs ensemble et donnez un nom à l’une d’elles"
+      ],
+      "teen": [
+        "pour les ados",
+        "invente un personnage qui a besoin d’une pause. Comment le dirait-il avec ses mots ?"
+      ],
+      "adult": [
+        "pour les adultes",
+        "choisis une tâche et formule une étape réalisable en dix minutes"
+      ],
+      "elder": [
+        "pour les personnes âgées",
+        "choisis deux mots pour aujourd’hui et dis-les à ton rythme"
+      ],
+      "team": [
+        "pour les groupes et les équipes",
+        "demandez ce qui pourrait être simplifié. Chacun peut répondre ou passer son tour"
+      ]
+    },
+    "geographyTitle": "lieux sur la carte",
+    "regions": {
+      "siberia": [
+        "Sibérie · Irkoutsk et Krasnoïarsk",
+        "trouve un mot pour ce qui t’aide à garder ton équilibre aujourd’hui"
+      ],
+      "brazil": [
+        "Brésil · São Paulo, Rio de Janeiro et Brasília",
+        "trouve un coin d’ombre dans une rue familière et imagine comment rendre ce lieu plus accueillant"
+      ],
+      "colombia": [
+        "Colombie · Bogotá, Flandes, Girardot, Silvania, Villa de Leyva et Santa Marta",
+        "choisis quelque chose dans les environs et décris-le en trois mots"
+      ],
+      "asia": [
+        "Chine, Inde et régions arabophones",
+        "note un mot d’accueil de chez toi et dis quand il s’emploie"
+      ],
+      "world": [
+        "Abya Yala, Caraïbes, Europe, États-Unis et autres terres",
+        "ajoute l’image d’un lieu de repos ou de rencontre et donne-lui un nom dans ta langue"
+      ]
+    },
+    "unknownStart": "la date du nouveau cycle reste à annoncer",
+    "questTitle": "quête des chamans urbains",
+    "questIntro": "remarque ce qui fait déjà vivre les lieux autour de toi. À partir de cette observation, choisis un petit geste de soin",
+    "questSteps": [
+      [
+        "remarquer",
+        "quel détail mérite ton attention aujourd’hui ?"
+      ],
+      [
+        "nommer",
+        "quel mot choisirais-tu pour lui ?"
+      ],
+      [
+        "prendre soin",
+        "quel petit geste serait bienvenu ici ?"
+      ],
+      [
+        "cueillir une perle",
+        "que souhaites-tu emporter de cette expérience ?"
+      ]
+    ],
+    "geographyNote": "ces propositions éditoriales s’adressent à différents lieux. La présence d’un lieu sur la carte ne signale aucune participation de personnes ou d’organisations",
+    "tartaryNote": "Tartarie figure comme un nom historique et une invitation à consulter les sources",
+    "dateLabel": "choisis la date de départ",
+    "days": "jours",
+    "moduleTitle": "perles et modules",
+    "finist": "Finist, le faucon de lumière",
+    "sources": "éditions et sources",
+    "review": "version éditoriale · relecture indépendante à venir",
+    "openNote": "l’atlas et les activités sont ouverts à tous",
+    "questEnd": "garde une question pour toi",
+    "personalCount": "compte à rebours personnel",
+    "questContinue": "aller à la pratique",
+    "clearCountdown": "effacer le compte à rebours"
+  },
+  "ar": {
+    "title": "أطلس NITYA",
+    "intro": "٩٠ يومًا لتسمع صوتك، وتحفظ طاقتك، وتختار لفتة رعاية صغيرة",
+    "countdown": "الوقت المتبقي لبدء الدورة الجديدة",
+    "started": "انتهى العد التنازلي الخاص بك",
+    "seasonTitle": "من يول إلى إيمبولك · رعاية الموقد",
+    "seasonText": "في حكاية NITYA هذا وقت للراحة. خذ استراحة، أو اصنع شيئًا بهدوء، أو اعتنِ بمكان مشترك بإيقاع يناسب مكان إقامتك",
+    "nav": {
+      "practice": "ابدأ التمرين",
+      "care": "افتح استبيان الرعاية",
+      "verenium": "افتح VereNium",
+      "veche": "افتح Neuroveche",
+      "archive": "افتح الأرشيف",
+      "prices": "الخدمات والأسعار"
+    },
+    "audienceTitle": "اختر طريقة اللعب",
+    "audiences": {
+      "family": [
+        "من سن الخامسة · مع شخص بالغ",
+        "ابحثا عن ثلاثة ألوان معًا وأطلقا اسمًا على أحدها"
+      ],
+      "teen": [
+        "للمراهقين",
+        "تخيّل شخصية تحتاج إلى استراحة. كيف تطلبها بكلماتها الخاصة؟"
+      ],
+      "adult": [
+        "للبالغين",
+        "اختر مهمة وحدّد خطوة يمكنك إنجازها في عشر دقائق"
+      ],
+      "elder": [
+        "لكبار السن",
+        "اختر كلمتين تناسبان يومك وقلهما على مهل"
+      ],
+      "team": [
+        "للمجموعات والفرق",
+        "اسألوا عمّا يمكن تبسيطه. يمكن لكل شخص أن يجيب أو يتجاوز دوره"
+      ]
+    },
+    "geographyTitle": "أماكن على الخريطة",
+    "regions": {
+      "siberia": [
+        "سيبيريا · إيركوتسك وكراسنويارسك",
+        "ابحث عن كلمة لشيء يمنحك الثبات اليوم"
+      ],
+      "brazil": [
+        "البرازيل · ساو باولو وريو دي جانيرو وبرازيليا",
+        "ابحث عن الظل في شارع تعرفه وتخيّل ما يجعل المكان أكثر ترحيبًا"
+      ],
+      "colombia": [
+        "كولومبيا · بوغوتا وفلانديس وخيراردوت وسيلفانيا وفيّا دي لييفا وسانتا مارتا",
+        "اختر شيئًا تراه قريبًا وصِفه بثلاث كلمات"
+      ],
+      "asia": [
+        "الصين والهند والمناطق الناطقة بالعربية",
+        "دوّن كلمة ترحيب محلية واذكر متى تقال"
+      ],
+      "world": [
+        "أبيا يالا والكاريبي وأوروبا والولايات المتحدة وأراضٍ أخرى",
+        "أضف صورة لمكان يرتاح فيه الناس أو يلتقون، وسمّه بلغتك"
+      ]
+    },
+    "unknownStart": "لم يُعلن بعد عن موعد الدورة الجديدة",
+    "questTitle": "مهمّة شامانات المدينة",
+    "questIntro": "لاحظ ما يدعم الحياة من حولك بالفعل. حوّل ملاحظتك إلى لفتة رعاية صغيرة",
+    "questSteps": [
+      [
+        "لاحظ",
+        "أي تفصيل يستحق انتباهك اليوم؟"
+      ],
+      [
+        "سمِّ",
+        "ما الكلمة التي تختارها له؟"
+      ],
+      [
+        "اعتنِ",
+        "ما الخطوة الصغيرة التي قد تكون موضع ترحيب هنا؟"
+      ],
+      [
+        "اجمع لؤلؤة",
+        "ما الذي تودّ أن تحمله معك من هذه التجربة؟"
+      ]
+    ],
+    "geographyNote": "هذه دعوات تحريرية لأماكن مختلفة. ورود مكان على الخريطة لا يعني مشاركة أشخاص أو مؤسسات",
+    "tartaryNote": "ترد «تارتاريا» هنا اسمًا تاريخيًا ودعوة إلى الاطلاع على المصادر",
+    "dateLabel": "اختر تاريخ البدء",
+    "days": "أيام",
+    "moduleTitle": "اللآلئ والوحدات",
+    "finist": "فينيست، الصقر المضيء",
+    "sources": "الإصدارات والمصادر",
+    "review": "نسخة تحريرية · بانتظار مراجعة مستقلة",
+    "openNote": "الأطلس والأنشطة متاحة للجميع",
+    "questEnd": "احتفظ بسؤال لنفسك",
+    "personalCount": "عدّ تنازلي شخصي",
+    "questContinue": "انتقل إلى التمرين",
+    "clearCountdown": "امسح العد التنازلي"
+  },
+  "zh-Hans": {
+    "title": "NITYA 地图册",
+    "intro": "用九十天听见自己的声音，留一份力，选一件可以做的关怀小事",
+    "countdown": "距离新一轮开始",
+    "started": "你的倒计时已结束",
+    "seasonTitle": "从尤尔节到因博尔克节 · 守护炉火",
+    "seasonText": "在 NITYA 的故事里，这是一段休息的时光。可以停一停，安静地做点什么，也可以按当地的节奏照料一个共用的地方",
+    "nav": {
+      "practice": "开始练习",
+      "care": "打开关怀问卷",
+      "verenium": "打开 VereNium",
+      "veche": "打开 Neuroveche",
+      "archive": "打开档案",
+      "prices": "服务与价格"
+    },
+    "audienceTitle": "选择自己的玩法",
+    "audiences": {
+      "family": [
+        "五岁起 · 由成人陪伴",
+        "一起找三种颜色，选一种给它取名"
+      ],
+      "teen": [
+        "青少年",
+        "想象一个需要休息的角色。用这个角色自己的话，会怎么开口？"
+      ],
+      "adult": [
+        "成人",
+        "选一件事，找出十分钟内能做的一步"
+      ],
+      "elder": [
+        "年长者",
+        "选两个适合今天的词，按自己的节奏说出来"
+      ],
+      "team": [
+        "小组和团队",
+        "一起问问，有什么可以变得更简单？每个人都可以回答，也可以跳过"
+      ]
+    },
+    "geographyTitle": "地图上的地方",
+    "regions": {
+      "siberia": [
+        "西伯利亚 · 伊尔库茨克和克拉斯诺亚尔斯克",
+        "选一个词，说出今天什么让你感到安定"
+      ],
+      "brazil": [
+        "巴西 · 圣保罗、里约热内卢和巴西利亚",
+        "在熟悉的街道上找一处树荫，想象怎样让它更宜人"
+      ],
+      "colombia": [
+        "哥伦比亚 · 波哥大、弗兰德斯、希拉尔多特、锡尔瓦尼亚、莱瓦镇和圣玛尔塔",
+        "选一样身边看得见的东西，用三个词描述它"
+      ],
+      "asia": [
+        "中国、印度和阿拉伯语地区",
+        "写下当地一句欢迎的话，说说什么时候用"
+      ],
+      "world": [
+        "阿比亚亚拉、加勒比地区、欧洲、美国及其他地方",
+        "描绘一处人们休息或相聚的地方，再用自己的语言给它取名"
+      ]
+    },
+    "unknownStart": "新一轮的日期尚未公布",
+    "questTitle": "城市萨满任务",
+    "questIntro": "留意身边已经在支持生命的事物，把这份观察变成一个关怀的小举动",
+    "questSteps": [
+      [
+        "留意",
+        "今天什么细节值得你留意？"
+      ],
+      [
+        "命名",
+        "你会用什么词来称呼它？"
+      ],
+      [
+        "关怀",
+        "在这里，做哪件小事会合适？"
+      ],
+      [
+        "拾起一颗珍珠",
+        "这段经历中，你想把什么带到下一步？"
+      ]
+    ],
+    "geographyNote": "地图上的各地都配有编辑拟写的练习。地名出现在地图上，不代表当地个人或组织参与",
+    "tartaryNote": "「鞑靼利亚」在这里是历史名称，也是一条查阅资料的线索",
+    "dateLabel": "选择开始日期",
+    "days": "天",
+    "moduleTitle": "珍珠与模块",
+    "finist": "菲尼斯特，明亮的猎鹰",
+    "sources": "版本与来源",
+    "review": "编辑译稿 · 待独立审校",
+    "openNote": "地图与活动向所有人开放",
+    "questEnd": "给自己留一个问题",
+    "personalCount": "个人倒计时",
+    "questContinue": "前往练习",
+    "clearCountdown": "清除倒计时"
+  },
+  "hi": {
+    "title": "NITYA का मानचित्र",
+    "intro": "अपनी आवाज़ सुनने, अपनी ताकत सँभालने और देखभाल का एक छोटा कदम चुनने के लिए 90 दिन",
+    "countdown": "नया चक्र शुरू होने में बचा समय",
+    "started": "तुम्हारी उलटी गिनती पूरी हुई",
+    "seasonTitle": "यूल से इम्बोल्क तक · आग को सँभालने का समय",
+    "seasonText": "NITYA की कहानी में यह आराम का समय है। ठहरें, शांति से कुछ बनाएँ या किसी साझा जगह का खयाल रखें। रफ़्तार वही चुनें जो जहाँ आप रहते हैं, वहाँ ठीक लगे",
+    "nav": {
+      "practice": "अभ्यास शुरू करें",
+      "care": "देखभाल की प्रश्नावली खोलें",
+      "verenium": "VereNium खोलें",
+      "veche": "Neuroveche खोलें",
+      "archive": "संग्रह खोलें",
+      "prices": "सेवाएँ और कीमतें"
+    },
+    "audienceTitle": "खेलने का तरीका चुनें",
+    "audiences": {
+      "family": [
+        "5 साल से · किसी वयस्क के साथ",
+        "साथ में तीन रंग ढूँढ़ें और किसी एक को नाम दें"
+      ],
+      "teen": [
+        "किशोरों के लिए",
+        "किसी ऐसे पात्र की कल्पना करें जिसे थोड़ा रुकना है। वह अपने शब्दों में कैसे कहेगा?"
+      ],
+      "adult": [
+        "वयस्कों के लिए",
+        "एक काम चुनें और ऐसा कदम सोचें जो दस मिनट में हो सके"
+      ],
+      "elder": [
+        "वरिष्ठ लोगों के लिए",
+        "आज के लिए अपने मन के दो शब्द चुनें और अपनी गति से कहें"
+      ],
+      "team": [
+        "समूहों और टीमों के लिए",
+        "पूछें, किस काम को आसान बनाया जा सकता है? हर व्यक्ति जवाब दे सकता है या अपनी बारी छोड़ सकता है"
+      ]
+    },
+    "geographyTitle": "मानचित्र पर स्थान",
+    "regions": {
+      "siberia": [
+        "साइबेरिया · इरकुत्स्क और क्रास्नोयार्स्क",
+        "जो चीज़ आज आपको सँभालती है, उसके लिए एक शब्द ढूँढ़ें"
+      ],
+      "brazil": [
+        "ब्राज़ील · साओ पाउलो, रियो डी जेनेरो और ब्रासीलिया",
+        "परिचित सड़क पर छाँव खोजें और सोचें कि यह जगह और स्वागतपूर्ण कैसे होगी"
+      ],
+      "colombia": [
+        "कोलंबिया · बोगोता, फ़्लांदेस, हिरार्दोत, सिल्वानिया, विला दे लेइवा और सांता मार्ता",
+        "पास में दिखती कोई एक चीज़ चुनें और तीन शब्दों में बताएँ"
+      ],
+      "asia": [
+        "चीन, भारत और अरबीभाषी क्षेत्र",
+        "अपने इलाके का स्वागत का एक शब्द लिखें और बताएँ कि उसे कब कहा जाता है"
+      ],
+      "world": [
+        "अब्या याला, कैरेबियन, यूरोप, अमेरिका और अन्य क्षेत्र",
+        "ऐसी जगह का चित्र जोड़ें जहाँ लोग आराम करते या मिलते हैं। उसे अपनी भाषा में नाम दें"
+      ]
+    },
+    "unknownStart": "नए चक्र की तारीख़ अभी घोषित नहीं हुई है",
+    "questTitle": "शहरी शमन की खोज",
+    "questIntro": "देखें कि आसपास कौन सी चीज़ पहले से जीवन का सहारा है। इस अवलोकन को देखभाल के एक छोटे काम में बदलें",
+    "questSteps": [
+      [
+        "ध्यान दें",
+        "आज किस छोटी बात पर ध्यान देना चाहेंगे?"
+      ],
+      [
+        "नाम दें",
+        "आप उसके लिए कौन सा शब्द चुनेंगे?"
+      ],
+      [
+        "खयाल रखें",
+        "इस जगह कौन सा छोटा कदम ठीक रहेगा?"
+      ],
+      [
+        "एक मोती सहेजें",
+        "इस अनुभव से आप क्या आगे ले जाना चाहेंगे?"
+      ]
+    ],
+    "geographyNote": "अलग-अलग जगहों के लिए ये संपादकीय सुझाव हैं। नक्शे में किसी जगह का नाम होने से वहाँ के लोगों या संगठनों की भागीदारी साबित नहीं होती",
+    "tartaryNote": "‘टार्टरी’ यहाँ एक ऐतिहासिक नाम है और स्रोतों को तलाशने का निमंत्रण है",
+    "dateLabel": "शुरू करने की तारीख़ चुनो",
+    "days": "दिन",
+    "moduleTitle": "मोती और मॉड्यूल",
+    "finist": "फ़िनिस्त, उजला बाज़",
+    "sources": "संस्करण और स्रोत",
+    "review": "संपादकीय संस्करण · स्वतंत्र समीक्षा बाकी है",
+    "openNote": "मानचित्र और अभ्यास सभी के लिए खुले हैं",
+    "questEnd": "एक सवाल अपने लिए रखो",
+    "personalCount": "अपनी उलटी गिनती",
+    "questContinue": "अभ्यास पर जाओ",
+    "clearCountdown": "उलटी गिनती हटाओ"
+  },
+  "bn": {
+    "title": "NITYA মানচিত্র",
+    "intro": "নিজের কণ্ঠ শোনা, শক্তি ধরে রাখা আর যত্নের একটি ছোট কাজ বেছে নেওয়ার ৯০ দিন",
+    "countdown": "নতুন পর্ব শুরুর বাকি সময়",
+    "started": "তোমার দিন গোনা শেষ হয়েছে",
+    "seasonTitle": "ইউল থেকে ইম্বল্ক · আগুন আগলে রাখার সময়",
+    "seasonText": "NITYA-র গল্পে এটি বিশ্রামের সময়। খানিক থামুন, শান্তভাবে কিছু তৈরি করুন কিংবা সবাই ব্যবহার করে এমন একটি জায়গার যত্ন নিন। নিজের এলাকার উপযোগী ছন্দ বেছে নিন",
+    "nav": {
+      "practice": "অনুশীলন শুরু করুন",
+      "care": "যত্নের প্রশ্নপত্র খুলুন",
+      "verenium": "VereNium খুলুন",
+      "veche": "Neuroveche খুলুন",
+      "archive": "সংগ্রহ খুলুন",
+      "prices": "সেবা ও দাম"
+    },
+    "audienceTitle": "কীভাবে খেলবেন বেছে নিন",
+    "audiences": {
+      "family": [
+        "৫ বছর থেকে · একজন প্রাপ্তবয়স্কের সঙ্গে",
+        "একসঙ্গে তিনটি রং খুঁজুন, একটির নাম দিন"
+      ],
+      "teen": [
+        "কিশোর-কিশোরীদের জন্য",
+        "এমন একটি চরিত্র ভাবুন যার বিরতি দরকার। নিজের ভাষায় চরিত্রটি কীভাবে বলবে?"
+      ],
+      "adult": [
+        "প্রাপ্তবয়স্কদের জন্য",
+        "একটি কাজ বেছে নিন এবং দশ মিনিটের মধ্যে করা যায় এমন একটি ধাপ ভাবুন"
+      ],
+      "elder": [
+        "বয়োজ্যেষ্ঠদের জন্য",
+        "আজকের জন্য দুটি মনের মতো শব্দ বেছে নিন; নিজের গতিতে বলুন"
+      ],
+      "team": [
+        "দল ও গোষ্ঠীর জন্য",
+        "জিজ্ঞেস করুন, কী সহজ করা যায়। প্রত্যেকে উত্তর দিতে পারেন বা নিজের পালা ছেড়ে দিতে পারেন"
+      ]
+    },
+    "geographyTitle": "মানচিত্রে জায়গা",
+    "regions": {
+      "siberia": [
+        "সাইবেরিয়া · ইরকুৎস্ক ও ক্রাসনোয়ার্স্ক",
+        "আজ যা আপনাকে স্থির থাকতে সাহায্য করে, তার জন্য একটি শব্দ খুঁজুন"
+      ],
+      "brazil": [
+        "ব্রাজিল · সাও পাওলো, রিও দে জেনেইরো ও ব্রাসিলিয়া",
+        "চেনা রাস্তায় ছায়া খুঁজুন এবং জায়গাটি কীভাবে আরও স্বাগতপূর্ণ হবে ভাবুন"
+      ],
+      "colombia": [
+        "কলম্বিয়া · বোগোতা, ফ্লান্দেস, হিরারদোত, সিলভানিয়া, ভিয়া দে লেইভা ও সান্তা মার্তা",
+        "কাছাকাছি দেখা যায় এমন কিছু বেছে নিয়ে তিনটি শব্দে বর্ণনা করুন"
+      ],
+      "asia": [
+        "চীন, ভারত ও আরবিভাষী অঞ্চল",
+        "নিজের এলাকার স্বাগত জানানোর একটি শব্দ লিখুন এবং কখন বলা হয় জানান"
+      ],
+      "world": [
+        "আবিয়া ইয়ালা, ক্যারিবীয় অঞ্চল, ইউরোপ, যুক্তরাষ্ট্র ও অন্যান্য অঞ্চল",
+        "যেখানে মানুষ বিশ্রাম নেয় বা দেখা করে এমন একটি জায়গার ছবি যোগ করুন এবং নিজের ভাষায় নাম দিন"
+      ]
+    },
+    "unknownStart": "নতুন পর্বের তারিখ এখনও ঘোষণা করা হয়নি",
+    "questTitle": "নগর শামানের অভিযান",
+    "questIntro": "আশপাশে কী ইতিমধ্যে জীবনকে টিকিয়ে রাখে, খেয়াল করুন। সেই দেখা থেকে যত্নের একটি ছোট কাজ বেছে নিন",
+    "questSteps": [
+      [
+        "খেয়াল করুন",
+        "আজ কোন ছোট বিষয়টি মনোযোগ পাওয়ার যোগ্য?"
+      ],
+      [
+        "নাম দিন",
+        "এর জন্য কোন শব্দটি বেছে নেবেন?"
+      ],
+      [
+        "যত্ন নিন",
+        "এখানে কোন ছোট পদক্ষেপটি মানানসই হবে?"
+      ],
+      [
+        "একটি মুক্তো রাখুন",
+        "এই অভিজ্ঞতা থেকে কী সঙ্গে নিতে চান?"
+      ]
+    ],
+    "geographyNote": "বিভিন্ন জায়গা নিয়ে এগুলি সম্পাদিত অনুশীলনের প্রস্তাব। মানচিত্রে জায়গার নাম থাকলেই সেখানকার মানুষ বা সংস্থার অংশগ্রহণ বোঝায় না",
+    "tartaryNote": "‘টার্টারি’ এখানে একটি ঐতিহাসিক নাম, যা উৎস ঘেঁটে দেখার আমন্ত্রণ জানায়",
+    "dateLabel": "শুরুর তারিখ বেছে নাও",
+    "days": "দিন",
+    "moduleTitle": "মুক্তো ও মডিউল",
+    "finist": "ফিনিস্ত, আলোর বাজ",
+    "sources": "সংস্করণ ও উৎস",
+    "review": "সম্পাদকীয় সংস্করণ · স্বাধীন পর্যালোচনা বাকি",
+    "openNote": "মানচিত্র ও অনুশীলন সবার জন্য খোলা",
+    "questEnd": "একটি প্রশ্ন নিজের জন্য রাখো",
+    "personalCount": "নিজের দিন গোনা",
+    "questContinue": "অনুশীলনে যাও",
+    "clearCountdown": "দিন গোনা মুছে দাও"
+  },
+  "eo": {
+    "title": "atlaso de NITYA",
+    "intro": "90 tagoj por aŭdi vian propran voĉon, konservi viajn fortojn kaj elekti unu etan zorgagon",
+    "countdown": "tempo ĝis la komenco de la nova ciklo",
+    "started": "via retronombrado finiĝis",
+    "seasonTitle": "de Julo ĝis Imbolko · prizorgi la fajron",
+    "seasonText": "en la rakonto de NITYA, jen ripoztempo. Paŭzu, kreu ion trankvile aŭ zorgu pri komuna loko laŭ ritmo taŭga tie, kie vi loĝas",
+    "nav": {
+      "practice": "komenci la praktikon",
+      "care": "malfermi la demandaron pri zorgo",
+      "verenium": "malfermi VereNium",
+      "veche": "malfermi Neuroveche",
+      "archive": "malfermi la arkivon",
+      "prices": "servoj kaj prezoj"
+    },
+    "audienceTitle": "elektu kiel ludi",
+    "audiences": {
+      "family": [
+        "ekde 5 jaroj · kun plenkreskulo",
+        "trovu kune tri kolorojn kaj nomu unu el ili"
+      ],
+      "teen": [
+        "por adoleskantoj",
+        "imagu rolulon, kiu bezonas paŭzon. Kiel tiu petus ĝin per siaj propraj vortoj?"
+      ],
+      "adult": [
+        "por plenkreskuloj",
+        "elektu unu taskon kaj nomu paŝon fareblan en dek minutoj"
+      ],
+      "elder": [
+        "por pli aĝaj plenkreskuloj",
+        "elektu du vortojn por la hodiaŭa tago kaj diru ilin laŭ via propra ritmo"
+      ],
+      "team": [
+        "por grupoj kaj teamoj",
+        "demandu, kion eblus simpligi. Ĉiu rajtas respondi aŭ preterlasi sian vicon"
+      ]
+    },
+    "geographyTitle": "lokoj sur la mapo",
+    "regions": {
+      "siberia": [
+        "Siberio · Irkutsk kaj Krasnojarsk",
+        "trovu vorton por io, kio donas al vi stabilecon hodiaŭ"
+      ],
+      "brazil": [
+        "Brazilo · San-Paŭlo, Rio-de-Ĵanejro kaj Braziljo",
+        "trovu ombron sur konata strato kaj imagu, kio igus la lokon pli bonveniga"
+      ],
+      "colombia": [
+        "Kolombio · Bogoto, Flandes, Girardot, Silvania, Villa de Leyva kaj Santa Marta",
+        "elektu ion videblan proksime kaj priskribu ĝin per tri vortoj"
+      ],
+      "asia": [
+        "Ĉinio, Barato kaj arablingvaj regionoj",
+        "notu lokan bonvenigan vorton kaj diru, kiam oni uzas ĝin"
+      ],
+      "world": [
+        "Abja-Jala, Karibio, Eŭropo, Usono kaj aliaj landoj",
+        "aldonu bildon pri loko, kie homoj ripozas aŭ renkontiĝas, kaj nomu ĝin en via lingvo"
+      ]
+    },
+    "unknownStart": "la dato de la nova ciklo ankoraŭ ne estas anoncita",
+    "questTitle": "serĉado de urbaj ŝamanoj",
+    "questIntro": "rimarku, kio jam subtenas vivon ĉirkaŭ vi. El tiu observo faru unu etan zorgagon",
+    "questSteps": [
+      [
+        "rimarki",
+        "kiu detalo hodiaŭ meritas vian atenton?"
+      ],
+      [
+        "nomi",
+        "kiun vorton vi donus al ĝi?"
+      ],
+      [
+        "zorgi",
+        "kiu eta paŝo estus bonvena ĉi tie?"
+      ],
+      [
+        "kolekti perlon",
+        "kion vi ŝatus kunporti el tiu sperto?"
+      ]
+    ],
+    "geographyNote": "jen redaktitaj proponoj por diversaj lokoj. Loko sur la mapo ne indikas partoprenon de homoj aŭ organizaĵoj",
+    "tartaryNote": "Tartario aperas kiel historia nomo kaj invito esplori la fontojn",
+    "dateLabel": "elektu la komencdaton",
+    "days": "tagoj",
+    "moduleTitle": "perloj kaj moduloj",
+    "finist": "Finist, la hela falko",
+    "sources": "eldonoj kaj fontoj",
+    "review": "redakta eldono · sendependa revizio ankoraŭ bezonata",
+    "openNote": "la atlaso kaj la taskoj estas malfermitaj al ĉiuj",
+    "questEnd": "konservu demandon por vi",
+    "personalCount": "persona retronombrado",
+    "questContinue": "iri al la praktiko",
+    "clearCountdown": "forigi la retronombradon"
+  },
+  "sa": {
+    "title": "NITYA-स्थानचित्रसंग्रहः",
+    "intro": "स्ववाणीं श्रोतुं, बलं रक्षितुं, परिचर्यायाः एकं लघु कर्म वृणीतुं च नवतिः दिवसाः",
+    "countdown": "नवचक्रारम्भाय अवशिष्टः कालः",
+    "started": "तव प्रतिगणना समाप्ता",
+    "seasonTitle": "यूलपर्वणः इम्बोल्कपर्व यावत् · अग्निरक्षणस्य कालः",
+    "seasonText": "NITYA-कथायाम् एष विश्रामकालः। विरमत, शान्त्या किञ्चित् रचयत, अथवा सर्वेषां स्थानं पालयत। यत्र वसथ, तत्रोचितां गतिं वृणुत",
+    "nav": {
+      "practice": "अभ्यासम् आरभत",
+      "care": "परिचर्याप्रश्नावलीम् उद्घाटयत",
+      "verenium": "VereNium उद्घाटयत",
+      "veche": "Neuroveche उद्घाटयत",
+      "archive": "सङ्ग्रहम् उद्घाटयत",
+      "prices": "सेवाः मूल्यानि च"
+    },
+    "audienceTitle": "कथं क्रीडितुम् इच्छथ?",
+    "audiences": {
+      "family": [
+        "पञ्चवर्षतः · वयस्केन सह",
+        "मिलित्वा त्रीन् वर्णान् पश्यत, तेषाम् एकस्मै नाम दत्त"
+      ],
+      "teen": [
+        "किशोराणां कृते",
+        "विश्रामम् इच्छन्तं कथापात्रं कल्पयत। तत् स्वशब्दैः कथं याचेत?"
+      ],
+      "adult": [
+        "वयस्कानां कृते",
+        "एकं कार्यं वृणुत तथा दश निमेषेषु साध्यं पदं चिन्तयत"
+      ],
+      "elder": [
+        "वृद्धानां कृते",
+        "अद्यतनदिनाय द्वौ शब्दौ वृणुत, स्वगत्या तौ वदत च"
+      ],
+      "team": [
+        "समूहानां दलानां च कृते",
+        "किं सरलं कर्तुं शक्यते इति पृच्छत। प्रत्येकः उत्तरं दातुं मौनं वा वृणीतुं शक्नोति"
+      ]
+    },
+    "geographyTitle": "स्थानचित्रे प्रदेशाः",
+    "regions": {
+      "siberia": [
+        "साइबेरिया · इर्कुत्स्क् क्रास्नोयार्स्क् च",
+        "अद्य आश्रयं यल्लभ्यते, तदर्थम् एकं शब्दं चिन्तयत"
+      ],
+      "brazil": [
+        "ब्राजील् · साओ पाउलो, रियो दे जानेइरो, ब्रासीलिया च",
+        "परिचितायां वीथ्यां छायां पश्यत। तत् स्थानं कथं रमणीयतरं भवेदिति कल्पयत"
+      ],
+      "colombia": [
+        "कोलम्बिया · बोगोता, फ्लान्देस्, हिरार्दोत्, सिल्वानिया, विया दे लेइवा, सान्ता मार्ता च",
+        "समीपे दृश्यमानं किञ्चिद् वृणुत, त्रिभिः शब्दैः वर्णयत च"
+      ],
+      "asia": [
+        "चीनः, भारतम्, अरबीभाषिप्रदेशाश्च",
+        "स्वागतस्य स्थानीयं शब्दं लिखत। सः कदा प्रयुज्यते इति वदत"
+      ],
+      "world": [
+        "अब्या याला, कैरिबीयप्रदेशः, यूरोपः, संयुक्तराज्यानि, अन्ये प्रदेशाश्च",
+        "यत्र जनाः विश्राम्यन्ति मिलन्ति वा, तस्य चित्रं योजयत, स्वभाषया नाम दत्त"
+      ]
+    },
+    "unknownStart": "नवचक्रस्य दिनाङ्कः अद्यापि न प्रकाशितः",
+    "questTitle": "नगरशामनानाम् अन्वेषणम्",
+    "questIntro": "परितः किं जीवनं धारयतीति पश्यत। तस्मात् दर्शनात् परिचर्यायाः एकं लघु कर्म वृणुत",
+    "questSteps": [
+      [
+        "अवलोकयत",
+        "अद्य कस्यां लघुवस्तुनि मनो दातुम् इच्छथ?"
+      ],
+      [
+        "नाम दत्त",
+        "तस्य कृते कं शब्दं वृणीध्वे?"
+      ],
+      [
+        "परिचरत",
+        "अत्र किं लघु पदम् उचितं स्यात्?"
+      ],
+      [
+        "मुक्ताम् आदत्त",
+        "अस्माद् अनुभवात् किं स्मर्तुम् इच्छथ?"
+      ]
+    ],
+    "geographyNote": "एते विविधप्रदेशानां कृते सम्पादिताः अभ्यासप्रस्तावाः। स्थानचित्रे नाममात्रेण जनानां संस्थानां वा सहभागः न ज्ञायते",
+    "tartaryNote": "टार्टरी इति अत्र ऐतिहासिकं नाम, स्रोतसाम् अन्वेषणाय निमन्त्रणं च",
+    "dateLabel": "आरम्भदिनं वृणु",
+    "days": "दिनानि",
+    "moduleTitle": "मुक्ताफलानि विभागाश्च",
+    "finist": "फिनिस्त् · दीप्तः श्येनः",
+    "sources": "संस्करणानि स्रोतांसि च",
+    "review": "सम्पादितसंस्करणम् · स्वतन्त्रपरीक्षा अपेक्षिता",
+    "openNote": "मानचित्रम् अभ्यासाश्च सर्वेभ्यः सुलभाः",
+    "questEnd": "एकं प्रश्नम् आत्मने धारय",
+    "personalCount": "व्यक्तिगतप्रतिगणना",
+    "questContinue": "अभ्यासं गच्छ",
+    "clearCountdown": "प्रतिगणनाम् अपनय"
+  },
+  "la": {
+    "title": "atlas NITYA",
+    "intro": "nonaginta dies ad vocem tuam audiendam, vires servandas et parvum curae opus eligendum",
+    "countdown": "tempus usque ad principium novi cursus",
+    "started": "numeratio tua confecta est",
+    "seasonTitle": "a festo Yule ad Imbolc · tempus ignem alendi",
+    "seasonText": "in fabula NITYA hoc tempus quietis est. Pausa, aliquid placide finge, aut locum communem cura eo gradu qui loco tuo convenit",
+    "nav": {
+      "practice": "exercitationem inire",
+      "care": "quaestiones de cura aperire",
+      "verenium": "VereNium aperire",
+      "veche": "Neuroveche aperire",
+      "archive": "archivum aperire",
+      "prices": "ministeria et pretia"
+    },
+    "audienceTitle": "elige quomodo ludere velis",
+    "audiences": {
+      "family": [
+        "a quinque annis · cum adulto",
+        "tres colores simul invenite et uni nomen date"
+      ],
+      "teen": [
+        "adulescentibus",
+        "personam quietem desiderantem finge. Quibus suis verbis eam peteret?"
+      ],
+      "adult": [
+        "adultis",
+        "unum opus elige et gradum intra decem minuta possibilem propone"
+      ],
+      "elder": [
+        "senioribus",
+        "duo verba hodierna elige et tuo modo profer"
+      ],
+      "team": [
+        "gregibus et sociis",
+        "rogate quid simplicius fieri possit. Quisque respondere vel vicem omittere potest"
+      ]
+    },
+    "geographyTitle": "loci in tabula",
+    "regions": {
+      "siberia": [
+        "Siberia · Irkutsk et Krasnoyarsk",
+        "verbum inveni pro re quae te hodie sustentat"
+      ],
+      "brazil": [
+        "Brasilia · São Paulo, Rio de Janeiro et Brasília",
+        "umbram in via nota quaere et finge quid locum hospitaliorem faciat"
+      ],
+      "colombia": [
+        "Colombia · Bogotá, Flandes, Girardot, Silvania, Villa de Leyva et Santa Marta",
+        "rem prope visam elige et tribus verbis describe"
+      ],
+      "asia": [
+        "Sinae, India et regiones Arabice loquentes",
+        "verbum locale salutandi nota et dic quando adhibeatur"
+      ],
+      "world": [
+        "Abya Yala, Caribaea, Europa, Civitates Foederatae et aliae terrae",
+        "imaginem loci adde ubi homines quiescunt aut conveniunt, et tua lingua locum nomina"
+      ]
+    },
+    "unknownStart": "dies novi cursus nondum nuntiatus est",
+    "questTitle": "quaestus samanorum urbanorum",
+    "questIntro": "observa quid vitam circa te iam sustineat. Ex observatione unum parvum curae opus elige",
+    "questSteps": [
+      [
+        "observa",
+        "quae res parva hodie attentionem tuam meretur?"
+      ],
+      [
+        "nomina",
+        "quo verbo eam appellaveris?"
+      ],
+      [
+        "cura",
+        "quis parvus gradus hic gratus sit?"
+      ],
+      [
+        "margaritam collige",
+        "quid ex hac experientia tecum ferre velis?"
+      ]
+    ],
+    "geographyNote": "hae exercitationes a redactoribus pro variis locis propositae sunt. Locus in tabula participationem hominum institutorumve non indicat",
+    "tartaryNote": "Tartaria hic nomen historicum est et invitatio ad fontes inspiciendos",
+    "dateLabel": "diem initii elige",
+    "days": "dies",
+    "moduleTitle": "margaritae et moduli",
+    "finist": "Finist, falco lucidus",
+    "sources": "editiones et fontes",
+    "review": "editio redactorum · recognitio independens exspectatur",
+    "openNote": "atlas et exercitationes omnibus patent",
+    "questEnd": "quaestionem tibi serva",
+    "personalCount": "numeratio tua",
+    "questContinue": "ad exercitationem perge",
+    "clearCountdown": "numerationem dele"
+  }
+}

@@ -43,7 +43,7 @@ interactive, accessibility, localization, or Workers-runtime certification.
 
 - Update, 2026-11-13. The separate NITYA 90-day practice offers twelve written editions with explicit Yazekh fallback. The optional four-decision branch renders in RU, EN, ES-419 and PT-BR, with visible fallback elsewhere. See the [route and review notes](../language-layers.md#nitya-and-todeus-passport).
 
-- Thirteen language settings are exposed on the home page. The homepage has seven runtime dictionaries after the French, Arabic and Simplified Chinese wave. Six settings retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
+- Thirteen language settings are exposed on the home page. The homepage has nine runtime dictionaries, including the Hindi and Bengali editorial editions. Esperanto, Sanskrit, Latin and Yazekh retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.
@@ -58,7 +58,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 
 | Artifact | Source/rendered language | Current locale coverage | Translation/review state |
 |---|---|---|---|
-| `index.html?lang=…` | Homepage with locale-aware interaction and generated practice copy | RU, EN, ES-419, PT-BR, FR, AR, zh-Hans; six labeled Russian fallback settings | The three added dictionaries cover 479 strings, 83 supplementary strings and six language practice tracks each. See the [homepage coverage record](../../locales/homepage/coverage.json). Independent review pending. |
+| `index.html?lang=…` | Homepage with locale-aware interaction and generated practice copy | RU, EN, ES-419, PT-BR, FR, AR, zh-Hans, HI, BN; four labeled Russian fallback settings | The five added dictionaries cover 479 strings, 83 supplementary strings and six language practice tracks each. See the [homepage coverage record](../../locales/homepage/coverage.json). Independent review pending. |
 | `nitya.html` | Russian | RU | Russian source edition; no complete 13-language runtime. |
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
@@ -205,7 +205,7 @@ The bundled Noto Sans Bengali font and its OFL text both returned HTTP 200 from
 GitHub Pages with `font/ttf` and `text/plain` content types and permissive CORS.
 Independent linguistic and cultural review remains pending; this check does not
 certify visual rendering, keyboard or screen-reader behavior, nor full Bengali
-homepage coverage. Bengali remains a Russian fallback in the homepage runtime.
+homepage coverage. At the time of that recheck, Bengali was still a Russian fallback in the homepage runtime.
 
 ## Live recheck after Esperanto care-route integration :: 2026-11-11
 

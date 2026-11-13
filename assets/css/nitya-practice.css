@@ -25,12 +25,12 @@
   display: none;
 }
 
-[data-nitya-practice] :is(h1, h3) {
+[data-nitya-practice] :is(h2, h3) {
   margin: 0;
   line-height: 1.2;
 }
 
-[data-nitya-practice] h1 {
+[data-nitya-practice] h2 {
   font-size: clamp(1.8rem, 4.5vw, 3rem);
 }
 
@@ -152,7 +152,7 @@
   font-size: .9em;
 }
 
-[data-nitya-practice]:is(:lang(ar), :lang(bn), :lang(hi), :lang(sa), :lang(zh)) :is(h1, h3) {
+[data-nitya-practice]:is(:lang(ar), :lang(bn), :lang(hi), :lang(sa), :lang(zh)) :is(h2, h3) {
   font-family: inherit;
   letter-spacing: normal;
   line-height: 1.4;

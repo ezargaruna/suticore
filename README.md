@@ -19,7 +19,7 @@ This repository contains public specifications, the canonical source and deploym
 - [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.
 - [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
 - [`.veche` research](docs/research/veche-consensus-research.v1.md) — claim audit, protocol reverse-engineering, threat model, and implementation gates.
-- [NITYA · 90-day practice](https://suti.world/nitya-practice.html?lang=en) — twelve written editions, optional four-decision route, and explicit Russian fallback for Yazekh.
+- [NITYA · 90-day atlas and care questionnaire](https://suti.world/nitya-practice.html?lang=en) — twelve written editions, optional four-decision route, and explicit Russian fallback for Yazekh.
 - [NITYA × .todeus passport](nitya-todeus.html) — the NITYA branch map, the optional narrative lens contract, and a 13-layer transcreation ledger with review states.
 
 ## SUTIcore scope
@@ -45,7 +45,7 @@ The repositories link to each other but have separate payloads and release histo
 
 ## Language navigation
 
-The site opens in Russian unless a visitor has saved another language or supplied an explicit locale. It exposes 13 language or authorial-language choices. The homepage has Russian, English, Latin American Spanish, Brazilian Portuguese, French, Arabic, and Simplified Chinese runtime dictionaries. The remaining six choices show labeled Russian fallback and link to visitor previews. See the [homepage coverage and review record](locales/homepage/coverage.json). The 13 previews are not full interface translations and remain review drafts. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
+The site opens in Russian unless a visitor has saved another language or supplied an explicit locale. It exposes 13 language or authorial-language choices. The homepage has Russian, English, Latin American Spanish, Brazilian Portuguese, French, Arabic, Simplified Chinese, Hindi, and Bengali runtime dictionaries. The remaining four choices show labeled Russian fallback and link to visitor previews. See the [homepage coverage and review record](locales/homepage/coverage.json). The 13 previews are not full interface translations and remain review drafts. SUTI.os has a full Russian vault and three partial entry packs; the other languages do not yet have downloadable vault editions. See the [language matrix](docs/language-layers.md) before describing translation coverage.
 
 ## Rights and status
 

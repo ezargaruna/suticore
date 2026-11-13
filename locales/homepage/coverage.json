@@ -2,7 +2,7 @@
   "scope": "Homepage interface and local practice outputs. Linked materials, games and external forms have separate coverage.",
   "baseline": "ab525f4f50521beb3154d5ac54d179d7db32dbb0",
   "rights": "Editorial derivatives of the public homepage. Existing media and external services retain their own terms.",
-  "payloadSha256": "d2bd04159e7cc324a653899159a1e521aa01f923a64915a3033c98ad3e3ae245",
+  "payloadSha256": "9e121ba8953988ec24addb6126e8b01c6304fd281f1a5d4068952bff9f81436d",
   "routes": {
     "ru": {
       "href": "?lang=ru",
@@ -57,15 +57,21 @@
     },
     "hi": {
       "href": "?lang=hi",
-      "renderedLanguage": "ru",
+      "renderedLanguage": "hi",
       "direction": "ltr",
-      "status": "russian-fallback"
+      "status": "native-review-pending",
+      "dictionaryKeys": 479,
+      "additionalStrings": 83,
+      "practiceTracks": 6
     },
     "bn": {
       "href": "?lang=bn",
-      "renderedLanguage": "ru",
+      "renderedLanguage": "bn",
       "direction": "ltr",
-      "status": "russian-fallback"
+      "status": "native-review-pending",
+      "dictionaryKeys": 479,
+      "additionalStrings": 83,
+      "practiceTracks": 6
     },
     "eo": {
       "href": "?lang=eo",
