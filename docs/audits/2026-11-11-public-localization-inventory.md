@@ -43,7 +43,7 @@ interactive, accessibility, localization, or Workers-runtime certification.
 
 - Update, 2026-11-13. The separate NITYA 90-day practice offers twelve written editions with explicit Yazekh fallback. The optional four-decision branch renders in RU, EN, ES-419 and PT-BR, with visible fallback elsewhere. See the [route and review notes](../language-layers.md#nitya-and-todeus-passport).
 
-- Thirteen language settings are exposed on the home page. The homepage has nine runtime dictionaries, including the Hindi and Bengali editorial editions. Esperanto, Sanskrit, Latin and Yazekh retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
+- Thirteen language settings are exposed on the home page. The homepage has ten runtime dictionaries, including the Hindi, Bengali and Esperanto editorial editions. Sanskrit, Latin and Yazekh retain a visible Russian fallback. Linked pages, forms and the vault have separate coverage.
 - The home page has short entry, disclosure, and reflection copy for thirteen language layers. These small strings do not localize the rest of the page, the linked Google Form, or every destination.
 - NITYA has a Russian edition and an English edition. The English edition is an editorial translation; independent native-language review is not recorded.
 - NITYA × `.todeus` contains one short phrase in thirteen layers. It is a phrase ledger, not thirteen translated pages.

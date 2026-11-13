@@ -27,12 +27,12 @@ The public entry page offers 13 language and authorial-language layers:
 | French (`fr`) | French | Editorial translation, native review pending | [fr](https://suti.world/?lang=fr) |
 | Arabic (`ar`) | Arabic (RTL) | Editorial translation, native review pending | [ar](https://suti.world/?lang=ar) |
 | Bengali (`bn`) | Bengali | Editorial translation, native review pending | [bn](https://suti.world/?lang=bn) |
-| Esperanto (`eo`) | Russian fallback | Translation not reviewed | [eo](https://suti.world/entry/eo/) |
+| Esperanto (`eo`) | Esperanto | Editorial translation, fluent-reader review pending | [eo](https://suti.world/?lang=eo) |
 | Sanskrit (`sa`) | Russian fallback | Translation not reviewed | [sa](https://suti.world/entry/sa/) |
 | Latin (`la`) | Russian fallback | Translation not reviewed | [la](https://suti.world/entry/la/) |
 | Yazekh (`yzh`) | Russian fallback | Authorial transcreation not reviewed | [yzh](https://suti.world/entry/yzh/) |
 
-The Esperanto edition is also a separate editorial page; the Esperanto homepage layer remains Russian fallback pending full runtime translation and review. The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
+The Sanskrit care edition remains an editorial draft pending qualified review; it does not activate Sanskrit homepage runtime. The Latin care edition is likewise an editorial draft pending qualified review; it does not activate Latin homepage runtime.
 
 The selector exposes the intended language layer. It does not claim that all
 13 layers have complete translations. For a layer without full runtime content,
@@ -84,7 +84,7 @@ content language, and the Arabic link sets RTL direction.
 | French (`fr`) | Editorial translation at `docs/research/SUTI_RECHERCHE_COLLABORATION.fr.md`; independent review pending | Editorial translation, independent review pending |
 | Arabic (`ar`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.ar.md`; independent review pending; RTL metadata recorded | Editorial translation, independent review pending |
 | Bengali (`bn`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.bn.md`; independent review pending | Editorial translation, independent review pending |
-| Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Russian fallback on homepage |
+| Esperanto (`eo`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.eo.md`; independent review pending | Editorial translation, fluent-reader review pending |
 | Sanskrit (`sa`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.sa.md`; qualified review pending | Russian fallback on homepage |
 | Latin (`la`) | Editorial translation at `docs/research/SUTI_RESEARCH_COLLABORATION.la.md`; qualified review pending | Russian fallback on homepage |
 | Yazekh (`yzh`) | `HOLD` — author grammar and vocabulary not confirmed; see `docs/research/SUTI_RESEARCH_COLLABORATION.yzh-HOLD.md` | Russian fallback on homepage |

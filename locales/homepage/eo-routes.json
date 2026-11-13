@@ -1,0 +1,11 @@
+{
+  "title": "mallonga praktikvojo",
+  "items": {
+    "speak": ["komencu per saluto", "preparu mallongan sinprezenton", "diru ĝin laŭte"],
+    "listen": ["aŭskultu por kapti konatajn vortojn", "elektu 20-sekundan fragmenton", "notu tri vortojn, kiujn vi rekonas"],
+    "read": ["legu mallongan tekston", "elektu unu alineon", "trovu ties ĉefan ideon kaj unu novan vorton"],
+    "write": ["skribu unu penson", "elektu tion, kio gravas hodiaŭ", "skribu simple kaj relegu"],
+    "study": ["preparu demandon por la laboro", "elektu unu utilan demandon", "petu klarigon"],
+    "travel": ["trovu direkton", "elektu lokon, kiun vi volas trovi", "preparu mallongan demandon"]
+  }
+}

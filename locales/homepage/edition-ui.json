@@ -1,7 +1,7 @@
 {
   "ru": {
     "review": "Русский исходник.",
-    "homeCoverage": "На главной доступны девять языков, включая хинди и бенгальский. Для эсперанто, санскрита, латыни и язэхъ показан русский текст с пояснением.",
+    "homeCoverage": "на главной доступны десять языков. Для санскрита, латыни и язэхъ показан русский текст с пояснением.",
     "vaultCoverage": "Переводы главной и открытые материалы имеют отдельные статусы проверки. Полное исходное хранилище доступно на русском. Вводные пакеты EN, ES и PT-BR частичные.",
     "formLanguage": "Язык внешней анкеты может отличаться. Контактные данные необязательны.",
     "playerTitle": "Проигрыватель SoundCloud: Vibrágmae · Cyber Temple",
@@ -10,7 +10,7 @@
   },
   "en": {
     "review": "Editorial edition. Independent review by native speakers is pending.",
-    "homeCoverage": "The homepage is available in nine languages, including Hindi and Bengali. Esperanto, Sanskrit, Latin and Yazekh show a labeled Russian version.",
+    "homeCoverage": "The homepage is available in ten languages. Sanskrit, Latin and Yazekh show a labeled Russian version.",
     "vaultCoverage": "Homepage translations and open materials have separate review statuses. The complete source vault is in Russian. The EN, ES and PT-BR starter packs are partial.",
     "formLanguage": "The external form may use a different language. Contact information is optional.",
     "playerTitle": "SoundCloud player: Vibrágmae by Cyber Temple",
@@ -19,7 +19,7 @@
   },
   "es": {
     "review": "Edición editorial. Pendiente de revisión independiente por hablantes nativos.",
-    "homeCoverage": "La página principal está disponible en nueve idiomas, entre ellos el hindi y el bengalí. Las opciones de esperanto, sánscrito, latín y yazekh muestran una versión en ruso identificada como tal.",
+    "homeCoverage": "La página principal está disponible en diez idiomas. Las opciones de sánscrito, latín y yazekh muestran una versión en ruso con un aviso.",
     "vaultCoverage": "Las traducciones de la página principal y los materiales abiertos tienen estados de revisión propios. El archivo fuente completo está en ruso. Los paquetes iniciales en EN, ES y PT-BR son parciales.",
     "formLanguage": "El formulario externo puede estar en otro idioma. Los datos de contacto son opcionales.",
     "playerTitle": "Reproductor de SoundCloud: Vibrágmae de Cyber Temple",
@@ -28,7 +28,7 @@
   },
   "pt": {
     "review": "Edição editorial. Revisão independente por falantes nativos pendente.",
-    "homeCoverage": "A página inicial está disponível em nove idiomas, entre eles o hindi e o bengali. As opções em esperanto, sânscrito, latim e yazekh mostram uma versão em russo com aviso.",
+    "homeCoverage": "A página inicial está disponível em dez idiomas. As opções em sânscrito, latim e yazekh mostram uma versão em russo com aviso.",
     "vaultCoverage": "As traduções da página inicial e os materiais abertos têm estados de revisão próprios. O acervo de origem completo está em russo. Os pacotes iniciais em EN, ES e PT-BR são parciais.",
     "formLanguage": "O formulário externo pode estar em outro idioma. Os dados de contato são opcionais.",
     "playerTitle": "Reprodutor do SoundCloud: Vibrágmae de Cyber Temple",
@@ -37,7 +37,7 @@
   },
   "fr": {
     "review": "Traduction éditoriale. Une relecture indépendante par des personnes de langue maternelle française reste à faire.",
-    "homeCoverage": "La page d’accueil est disponible en neuf langues, dont le hindi et le bengali. Les options espéranto, sanskrit, latin et yazekh affichent une version russe signalée comme telle.",
+    "homeCoverage": "La page d’accueil est disponible en dix langues. Les options sanskrit, latin et yazekh affichent une version russe signalée comme telle.",
     "vaultCoverage": "Les traductions de la page d’accueil et les ressources ouvertes ont leurs propres statuts de relecture. Le coffre source complet est en russe. Les dossiers de démarrage EN, ES et PT-BR sont partiels.",
     "formLanguage": "Le formulaire externe peut s’afficher dans une autre langue. Les coordonnées sont facultatives.",
     "playerTitle": "Lecteur SoundCloud : Vibrágmae de Cyber Temple",
@@ -46,7 +46,7 @@
   },
   "ar": {
     "review": "ترجمة تحريرية تنتظر مراجعة مستقلة من ناطقين بالعربية كلغة أم.",
-    "homeCoverage": "تتوفر الصفحة الرئيسية بتسع لغات، منها الهندية والبنغالية. وتعرض خيارات الإسبرانتو والسنسكريتية واللاتينية واليازِخ نسخة روسية مع تنبيه واضح.",
+    "homeCoverage": "تتوفر الصفحة الرئيسية بعشر لغات. وتعرض خيارات السنسكريتية واللاتينية واليازِخ نسخة روسية مع تنبيه واضح.",
     "vaultCoverage": "تُراجع ترجمات الصفحة الرئيسية والمواد المفتوحة بصورة مستقلة. الأرشيف الأصلي الكامل بالروسية. وحزم البداية بالإنجليزية والإسبانية والبرتغالية البرازيلية جزئية.",
     "formLanguage": "قد يظهر النموذج الخارجي بلغة أخرى. بيانات الاتصال اختيارية.",
     "playerTitle": "مشغّل SoundCloud: ‏Vibrágmae من Cyber Temple",
@@ -55,7 +55,7 @@
   },
   "zh-Hans": {
     "review": "编辑译稿，尚待母语使用者独立审校。",
-    "homeCoverage": "首页现提供九种语言版本，包括印地语和孟加拉语。选择世界语、梵语、拉丁语或 Yazekh 时，页面会显示带说明的俄语版本。",
+    "homeCoverage": "首页现提供十种语言版本。选择梵语、拉丁语或 Yazekh 时，会显示带说明的俄语版本。",
     "vaultCoverage": "首页译文和开放资料有各自的审校状态。完整的源资料库为俄语版。英语、西班牙语和巴西葡萄牙语入门包仅涵盖部分内容。",
     "formLanguage": "外部表单可能使用其他语言。联系方式为选填项。",
     "playerTitle": "SoundCloud 播放器：Cyber Temple 的 Vibrágmae",
@@ -64,7 +64,7 @@
   },
   "hi": {
     "review": "संपादकीय अनुवाद। हिंदी मातृभाषियों की स्वतंत्र समीक्षा अभी बाकी है।",
-    "homeCoverage": "मुखपृष्ठ नौ भाषाओं में उपलब्ध है, जिनमें हिंदी और बांग्ला शामिल हैं। एस्पेरान्तो, संस्कृत, लैटिन और याज़ेख़ चुनने पर सूचना के साथ रूसी संस्करण दिखता है।",
+    "homeCoverage": "मुखपृष्ठ दस भाषाओं में उपलब्ध है। संस्कृत, लैटिन और याज़ेख़ चुनने पर सूचना के साथ रूसी संस्करण दिखता है।",
     "vaultCoverage": "मुखपृष्ठ के अनुवाद और खुली सामग्री की समीक्षा की स्थिति अलग-अलग है। पूरा मूल संग्रह रूसी में है। अंग्रेज़ी, स्पेनी और ब्राज़ीली पुर्तगाली की शुरुआती सामग्री आंशिक है।",
     "formLanguage": "बाहरी फ़ॉर्म किसी और भाषा में हो सकता है। संपर्क विवरण देना वैकल्पिक है।",
     "playerTitle": "SoundCloud प्लेयर — Cyber Temple का Vibrágmae",
@@ -73,11 +73,20 @@
   },
   "bn": {
     "review": "সম্পাদকীয় অনুবাদ। বাংলাভাষীদের স্বাধীন পর্যালোচনা বাকি আছে।",
-    "homeCoverage": "প্রথম পৃষ্ঠাটি নয়টি ভাষায় পাওয়া যায়, যার মধ্যে হিন্দি ও বাংলা রয়েছে। এসপেরান্তো, সংস্কৃত, লাতিন ও ইয়াজেখ্ বেছে নিলে একটি নোটসহ রুশ সংস্করণ দেখা যায়।",
+    "homeCoverage": "প্রথম পৃষ্ঠাটি দশটি ভাষায় পাওয়া যায়। সংস্কৃত, লাতিন ও ইয়াজেখ্ বেছে নিলে একটি নোটসহ রুশ সংস্করণ দেখা যায়।",
     "vaultCoverage": "প্রথম পৃষ্ঠার অনুবাদ ও উন্মুক্ত উপকরণের পর্যালোচনার অবস্থা আলাদা। পূর্ণ উৎসভাণ্ডার রুশ ভাষায়। ইংরেজি, স্প্যানিশ ও ব্রাজিলীয় পর্তুগিজের প্রাথমিক প্যাকগুলো আংশিক।",
     "formLanguage": "বাইরের ফর্মটি অন্য ভাষায় থাকতে পারে। যোগাযোগের তথ্য দেওয়া ঐচ্ছিক।",
     "playerTitle": "SoundCloud প্লেয়ার — Cyber Temple-এর Vibrágmae",
     "playerLoaded": "SoundCloud প্লেয়ার সংযুক্ত হয়েছে",
     "gameLanguage": "খেলার প্রবেশপথ"
+  },
+  "eo": {
+    "review": "redakta traduko · ankoraŭ bezonatas sendependa revizio de flua esperantisto",
+    "homeCoverage": "La ĉefpaĝo haveblas en dek lingvoj. Por la sanskrita, latina kaj jazĥa elektoj aperas etikeditaj rusaj versioj.",
+    "vaultCoverage": "La arkivo havas apartan lingvan kovron. La kompleta arkivo estas en la rusa. La eniraj pakaĵoj en la angla, hispana kaj brazila portugala estas partaj.",
+    "formLanguage": "La ekstera formularo povas aperi en alia lingvo. Kontaktinformoj estas nedevigaj.",
+    "playerTitle": "SoundCloud-ludilo: Vibrágmae de Cyber Temple",
+    "playerLoaded": "SoundCloud-ludilo ŝargita",
+    "gameLanguage": "enirejo al la ludo"
   }
 }
