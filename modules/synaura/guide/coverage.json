@@ -1,0 +1,148 @@
+{
+  "artifact": "module.synaura.preferred-style",
+  "source": {
+    "file": "../README.md",
+    "language": "ru",
+    "version": "1.0.0",
+    "sha256": "9890ec8e960611424f792cda26f69886e6261614333b3c140b6d93c1117e5b9b"
+  },
+  "scope": "Complete optional editorial guide, sections 01–10 and compact instructions.",
+  "rights": {
+    "license": "MIT",
+    "notice": "../LICENSE",
+    "source_declaration": "../manifest.json",
+    "copyright": "2026 Ezar Garuna"
+  },
+  "routes": {
+    "ru": {
+      "html": "ru.html",
+      "markdown": "ru.md",
+      "lang": "ru",
+      "dir": "ltr",
+      "review_status": "source-edition",
+      "notice": "Русское авторское издание · версия 1.0.0.",
+      "html_sha256": "2aeb51d7565f59c9b7d8e047af86154ef18f3e66403fc0eaaded26cf4438803d",
+      "markdown_sha256": "e525965e33252c6e3c1e4d6ecc7d793aca14987609d7abb5db2f0b1c25cee078"
+    },
+    "en": {
+      "html": "en.html",
+      "markdown": "en.md",
+      "lang": "en",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "Editorial translation. Independent native-language review is pending.",
+      "html_sha256": "92bb34a4aa45423d0ea58e2f23eaeb06e7efb4336fd4445de51e5aab9f63ab5a",
+      "markdown_sha256": "c067bec24708061e2012745db73f0ee2d07c31da31246c9c670744ea3fe92af4"
+    },
+    "es": {
+      "html": "es.html",
+      "markdown": "es.md",
+      "lang": "es-419",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "Traducción editorial al español latinoamericano. Pendiente de revisión independiente por hablantes nativos.",
+      "html_sha256": "a6a36af12d0772cd5f9c400c346837e37cac1e1417b7929139908a61eea4e64b",
+      "markdown_sha256": "40029bf3774b72fc8ca0c87a29b7ad85a40b6dda5739a798e80f41a241e0b913"
+    },
+    "pt-br": {
+      "html": "pt-br.html",
+      "markdown": "pt-br.md",
+      "lang": "pt-BR",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "Tradução editorial em português brasileiro. Ainda aguarda revisão independente por falantes nativos.",
+      "html_sha256": "f3deb0b08a5348b8b9bef5beb225c39bc05a306fa4058d09827dea97d8cbf946",
+      "markdown_sha256": "55b89d3cf630eba262257e2c81e6e97c2ad83787d15774ff8f3052a346f30693"
+    },
+    "fr": {
+      "html": "fr.html",
+      "markdown": "fr.md",
+      "lang": "fr",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "Traduction éditoriale française. La relecture indépendante par des locuteurs natifs reste à faire.",
+      "html_sha256": "b136bf59e10187d3e650fd81bef335f2777aecc8150bf2504ac75ece61776af1",
+      "markdown_sha256": "88866b1fe056ea901c99be8ab9c7cb55cac04e959f6d42461a6398313a3f8f2f"
+    },
+    "zh-hans": {
+      "html": "zh-hans.html",
+      "markdown": "zh-hans.md",
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "简体中文编辑译稿，尚待母语使用者独立审校。",
+      "html_sha256": "1f0b18906c3014056d08e3ddbca21c8dc76b86e44f61bab948ec283d159e6fa0",
+      "markdown_sha256": "50557db3e1ae08a55cb6a9c5b435ad1d24d9772f6e7b38cea369da7e01572f56"
+    },
+    "hi": {
+      "html": "hi.html",
+      "markdown": "hi.md",
+      "lang": "hi",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "संपादकीय अनुवाद का मसौदा। मातृभाषी हिंदी वक्ताओं द्वारा स्वतंत्र समीक्षा अभी बाकी है।",
+      "html_sha256": "ebb240527a299e1ffcf512ab3f19458f04e53e1156d8538e32b97f78b53c2451",
+      "markdown_sha256": "5c4fda3285fe202ee4eb7ad0a910a5a2d704faf797904ea3ac71a0bf630d778f"
+    },
+    "ar": {
+      "html": "ar.html",
+      "markdown": "ar.md",
+      "lang": "ar",
+      "dir": "rtl",
+      "review_status": "native-review-pending",
+      "notice": "مسودة ترجمة تحريرية بانتظار مراجعة مستقلة من ناطقين بالعربية كلغة أم.",
+      "html_sha256": "97ed36614692dd86c35b65862ac144cec246e9c5331dfb90d253c1e7ec3345d8",
+      "markdown_sha256": "85d4fe6752796919ac4f06c0418190b1d363a746792a8cf5769d6969c0f3ea9f"
+    },
+    "bn": {
+      "html": "bn.html",
+      "markdown": "bn.md",
+      "lang": "bn",
+      "dir": "ltr",
+      "review_status": "native-review-pending",
+      "notice": "সম্পাদিত অনুবাদের খসড়া। বাংলা মাতৃভাষীদের স্বাধীন পর্যালোচনা এখনও বাকি।",
+      "html_sha256": "9b0fa4adbc2dd749f99814e2b8c7ed1fd7bc498a8e36eb4aa7d1c241b361838b",
+      "markdown_sha256": "6f7c6e9a668b87f5826a4558eb31ccf45ca4a9e2a9cff70b5c2645b15cdf455f"
+    },
+    "eo": {
+      "html": "eo.html",
+      "markdown": "eo.md",
+      "lang": "eo",
+      "dir": "ltr",
+      "review_status": "independent-fluent-review-pending",
+      "notice": "Redakcia tradukmalneto. Sendependa revizio fare de spertaj parolantoj de Esperanto ankoraŭ mankas.",
+      "html_sha256": "729ed8318621a3ac1c8c43a97f5526e282ebba2c92a85ee6b2f8f9824c6e2a70",
+      "markdown_sha256": "8aba5198602646b9ee7c03d8ba08dc0123a650202fe058a42c117afa07289c32"
+    },
+    "sa": {
+      "html": "sa.html",
+      "markdown": "sa.md",
+      "lang": "sa",
+      "dir": "ltr",
+      "review_status": "qualified-review-pending",
+      "notice": "सम्पादकीयः अनुवादप्रारूपः। संस्कृतविशेषज्ञेन स्वतन्त्रा समीक्षा अद्याप्यपेक्ष्यते।",
+      "html_sha256": "c372859756d91539e04becf0ef8b4aa7c64a9252ebe144424eb34e53af8f2f7c",
+      "markdown_sha256": "2ee4cfe2518fe972740a203a51e2973e4d9bef9aedca6d4102b66fa1841dc90a"
+    },
+    "la": {
+      "html": "la.html",
+      "markdown": "la.md",
+      "lang": "la",
+      "dir": "ltr",
+      "review_status": "qualified-review-pending",
+      "notice": "Versio editorialis. Recensio independens a perito linguae Latinae adhuc requiritur.",
+      "html_sha256": "2add255fb85419a6b5d3d10edf0dc8e9530c53b312afbe084df0aaf38be71acb",
+      "markdown_sha256": "9299b65f3b6df5fbe46529aebc522e6af8becf1764ff0301af4e09f242b1eede"
+    },
+    "yzh": {
+      "html": "yzh.html",
+      "markdown": "yzh.md",
+      "lang": "ru",
+      "dir": "ltr",
+      "review_status": "hold-author-grammar-and-lexicon",
+      "notice": "Язэхъ · HOLD. Показан русский текст. Перевод ожидает утверждённых автором грамматики и словаря.",
+      "html_sha256": "9d5f566c3bce1dfbc782a4cc41dbfc3a879f69d1a17a450b41847cf9a4d35a76",
+      "markdown_sha256": "33908000a036f26b95aacf598db446ad8b5c7fed77643b973e3b99be667fcf45"
+    }
+  }
+}

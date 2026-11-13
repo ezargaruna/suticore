@@ -202,3 +202,19 @@ The original poster still contains Russian text. Its provenance is recorded
 and separate reuse rights remain unverified. The external Google Forms
 questionnaire and Telegram channel retain their own language and conditions.
 See `scripts/build_suti_angels_editions.py` for generation and drift checks.
+
+## .synaura editorial guide · 2026-11-13
+
+The [optional editorial guide](../modules/synaura/guide/ru.html) has 13 routes
+in static HTML and downloadable Markdown. Its Russian source and 11 editorial
+translations contain all 10 numbered sections and the compact instructions.
+The Yazekh route displays Russian copy with a HOLD notice until the author
+approves a grammar and lexicon. The homepage links to the selected edition.
+
+The [coverage record](../modules/synaura/guide/coverage.json) includes exact
+file hashes and individual review states. Native review remains pending for
+living-language translations, independent fluent review for Esperanto, and
+qualified review for Sanskrit and Latin. The [MIT notice](../modules/synaura/LICENSE)
+applies to this module. The guide is distinct from the `synaura.html` landing
+page, the 2026.11 interaction protocol, and the release announcement. Their
+coverage is recorded separately.

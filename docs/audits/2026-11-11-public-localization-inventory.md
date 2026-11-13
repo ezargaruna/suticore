@@ -135,7 +135,7 @@ The workflow also publishes these nested HTML screens from `modules/`:
 | `modules/suti/synaura-2026.9.md` | RU | RU | Earlier Russian specification; version lineage is separate from the English 2026.11 draft. |
 | `modules/index.html` | RU | RU | Module overview; names and linked English specs do not make the catalog multilingual. |
 | `modules/suti/README.md` | RU + EN | RU/EN | README distinguishes three English master specs from the earlier Russian document. |
-| `modules/synaura/README.md`, `manifest.json` | EN / structured metadata | EN | `README.md` declares MIT for that module; this does not license the whole SUTI site or third-party assets. |
+| `modules/synaura/guide/` | Russian original plus localized HTML and Markdown | RU, EN, ES-419, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, LA, YZH Russian fallback | The full optional editorial guide is covered. The [review and rights record](../../modules/synaura/guide/coverage.json) records independent review pending, YZH HOLD, original version, and the module-specific MIT notice. |
 | `audit-crystal.zip` | EN | Three-file English audit packet | No translated edition; source links and author's testimonial remain distinct; not an endorsement or partnership. |
 | `modules/verenium/README.md`, `protocol.md`, `telegram/README.md` | RU | RU | Russian source materials; Telegram copy does not claim an active bot or staffed support. |
 | `modules/verenium/entry-locales.json` | 13 short language sets | Short entry labels/reflections only | Locale strings have no per-string native-review metadata; keep them as editorial copy until reviewed. |

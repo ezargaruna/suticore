@@ -1,0 +1,119 @@
+{
+  "ru": {
+    "languages": "языки руководства",
+    "skip": "к содержанию",
+    "back": "вернуться на SUTI.world",
+    "markdown_label": "скачать Markdown",
+    "source_label": "русский оригинал",
+    "review": "Русское авторское издание · версия 1.0.0.",
+    "title": "Редакционное руководство .synaura"
+  },
+  "en": {
+    "languages": "Guide languages",
+    "skip": "Skip to content",
+    "back": "Return to SUTI.world",
+    "markdown_label": "Download Markdown",
+    "source_label": "Russian source",
+    "review": "Editorial translation. Independent native-language review is pending.",
+    "title": "The .synaura editorial guide"
+  },
+  "es": {
+    "languages": "Idiomas de la guía",
+    "skip": "Ir al contenido",
+    "back": "Volver a SUTI.world",
+    "markdown_label": "Descargar Markdown",
+    "source_label": "Original en ruso",
+    "review": "Traducción editorial al español latinoamericano. Pendiente de revisión independiente por hablantes nativos.",
+    "title": "Guía editorial de .synaura"
+  },
+  "pt-br": {
+    "languages": "Idiomas do guia",
+    "skip": "Ir para o conteúdo",
+    "back": "Voltar à SUTI.world",
+    "markdown_label": "Baixar Markdown",
+    "source_label": "Original em russo",
+    "review": "Tradução editorial em português brasileiro. Ainda aguarda revisão independente por falantes nativos.",
+    "title": "Guia editorial .synaura"
+  },
+  "fr": {
+    "languages": "Langues du guide",
+    "skip": "Aller au contenu",
+    "back": "Retour à SUTI.world",
+    "markdown_label": "Télécharger le Markdown",
+    "source_label": "Original russe",
+    "review": "Traduction éditoriale française. La relecture indépendante par des locuteurs natifs reste à faire.",
+    "title": "Guide éditorial .synaura"
+  },
+  "zh-hans": {
+    "languages": "指南语言",
+    "skip": "跳到正文",
+    "back": "返回 SUTI.world",
+    "markdown_label": "下载 Markdown",
+    "source_label": "俄语原文",
+    "review": "简体中文编辑译稿，尚待母语使用者独立审校。",
+    "title": ".synaura 编辑指南"
+  },
+  "hi": {
+    "languages": "मार्गदर्शिका की भाषाएँ",
+    "skip": "मुख्य सामग्री पर जाएँ",
+    "back": "SUTI.world पर लौटें",
+    "markdown_label": "Markdown डाउनलोड करें",
+    "source_label": "रूसी मूल पाठ",
+    "review": "संपादकीय अनुवाद का मसौदा। मातृभाषी हिंदी वक्ताओं द्वारा स्वतंत्र समीक्षा अभी बाकी है।",
+    "title": ".synaura संपादकीय मार्गदर्शिका"
+  },
+  "ar": {
+    "languages": "لغات الدليل",
+    "skip": "انتقل إلى المحتوى",
+    "back": "العودة إلى SUTI.world",
+    "markdown_label": "نزّل ملف Markdown",
+    "source_label": "الأصل الروسي",
+    "review": "مسودة ترجمة تحريرية بانتظار مراجعة مستقلة من ناطقين بالعربية كلغة أم.",
+    "title": "دليل .synaura التحريري"
+  },
+  "bn": {
+    "languages": "নির্দেশিকার ভাষা",
+    "skip": "মূল বিষয়বস্তুতে যান",
+    "back": "SUTI.world-এ ফিরুন",
+    "markdown_label": "Markdown ডাউনলোড করুন",
+    "source_label": "রুশ মূল লেখা",
+    "review": "সম্পাদিত অনুবাদের খসড়া। বাংলা মাতৃভাষীদের স্বাধীন পর্যালোচনা এখনও বাকি।",
+    "title": ".synaura সম্পাদকীয় নির্দেশিকা"
+  },
+  "eo": {
+    "languages": "Lingvoj de la gvidilo",
+    "skip": "Iri al la enhavo",
+    "back": "Reiri al SUTI.world",
+    "markdown_label": "Elŝuti la Markdown-dosieron",
+    "source_label": "Rusa originalo",
+    "review": "Redakcia tradukmalneto. Sendependa revizio fare de spertaj parolantoj de Esperanto ankoraŭ mankas.",
+    "title": "Redakcia gvidilo de .synaura"
+  },
+  "sa": {
+    "languages": "मार्गदर्शिकायाः भाषाः",
+    "skip": "विषयं प्रति गच्छ",
+    "back": "SUTI.world प्रति प्रत्यागच्छ",
+    "markdown_label": "Markdown सञ्चिकां प्राप्नुहि",
+    "source_label": "रूसीभाषायां मूलग्रन्थः",
+    "review": "सम्पादकीयः अनुवादप्रारूपः। संस्कृतविशेषज्ञेन स्वतन्त्रा समीक्षा अद्याप्यपेक्ष्यते।",
+    "title": ".synaura सम्पादकीयमार्गदर्शिका"
+  },
+  "la": {
+    "languages": "Linguae ducis",
+    "skip": "Ad materiam transi",
+    "back": "Redi ad SUTI.world",
+    "markdown_label": "Fasciculum Markdown demitte",
+    "source_label": "Fons Russicus",
+    "review": "Versio editorialis. Recensio independens a perito linguae Latinae adhuc requiritur.",
+    "title": "Dux editorialis .synaura"
+  },
+  "yzh": {
+    "languages": "языки руководства",
+    "skip": "к содержанию",
+    "back": "вернуться на SUTI.world",
+    "markdown_label": "скачать Markdown",
+    "source_label": "русский оригинал",
+    "review": "Язэхъ · HOLD. Показан русский текст. Перевод ожидает утверждённых автором грамматики и словаря.",
+    "title": "Руководство .synaura · русский текст"
+  }
+}
