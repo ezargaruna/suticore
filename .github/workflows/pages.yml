@@ -45,6 +45,9 @@ jobs:
           python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
           python3 scripts/verify_care_atlas_locales.py
           python3 -B scripts/build_homepage_locales.py --check
+          python3 -B scripts/build_nitya_practice.py --check
+          python3 scripts/sync_single_interface_routes.py nitya-practice.html
+          cp nitya-practice.html _site/
           mkdir -p _site/locales/homepage
           cp locales/homepage/coverage.json _site/locales/homepage/
           python3 -B scripts/build_module_catalog.py --check

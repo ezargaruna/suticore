@@ -1,0 +1,179 @@
+[data-nitya-practice] {
+  --practice-ink: var(--suti-angel-ink, #25342f);
+  --practice-surface: var(--suti-angel-card, #fbf8f1);
+  --practice-paper: var(--suti-angel-paper, #f4f0e8);
+  --practice-action: var(--suti-angel-teal, #135b60);
+  --practice-line: var(--suti-angel-line, #cbd8d5);
+  --practice-focus: var(--suti-angel-focus, #135b60);
+  position: relative;
+  box-sizing: border-box;
+  inline-size: min(100%, 52rem);
+  min-inline-size: 0;
+  margin-inline: auto;
+  padding: clamp(1.1rem, 5vw, 3rem);
+  border: 1px solid var(--practice-line);
+  border-radius: 1.25rem;
+  background: var(--practice-surface);
+  color: var(--practice-ink);
+  font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
+  line-height: 1.65;
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+[data-nitya-practice]:empty {
+  display: none;
+}
+
+[data-nitya-practice] :is(h1, h3) {
+  margin: 0;
+  line-height: 1.2;
+}
+
+[data-nitya-practice] h1 {
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+}
+
+[data-nitya-practice] .nitya-practice__heading {
+  margin-block: 1.5rem 1rem;
+}
+
+[data-nitya-practice] p {
+  max-inline-size: 66ch;
+  margin-block: .75rem;
+}
+
+[data-nitya-practice] .nitya-practice__kicker {
+  margin-block: 0 .35rem;
+  color: var(--practice-action);
+  font-size: .9em;
+  font-weight: 650;
+}
+
+[data-nitya-practice] .nitya-practice__language {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: start;
+  gap: .25rem;
+  margin-inline-start: auto;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+}
+
+[data-nitya-practice] label {
+  color: var(--practice-ink);
+  font-size: .875em;
+}
+
+[data-nitya-practice] :is(select, button) {
+  box-sizing: border-box;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  border: 1px solid currentColor;
+  border-radius: .55rem;
+  background: var(--practice-surface);
+  color: var(--practice-ink);
+  font: inherit;
+}
+
+[data-nitya-practice] select {
+  padding: .3rem;
+}
+
+[data-nitya-practice] button {
+  padding: .45rem .85rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+[data-nitya-practice] .nitya-practice__primary {
+  border: 2px solid var(--practice-action);
+  background: var(--practice-paper);
+  color: var(--practice-action);
+  font-weight: 750;
+}
+
+[data-nitya-practice] button[aria-pressed="true"] {
+  box-shadow: inset 0 0 0 1px currentColor;
+  background: var(--practice-paper);
+  color: var(--practice-action);
+  font-weight: 750;
+}
+
+[data-nitya-practice] :is(button, select, summary, a, [tabindex]):focus-visible {
+  outline: 3px solid var(--practice-focus);
+  outline-offset: 3px;
+}
+
+[data-nitya-practice] :is(.nitya-practice__choices, .nitya-practice__actions, .nitya-practice__links) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-block: 1rem;
+}
+
+[data-nitya-practice] details {
+  margin-block: .8rem;
+  padding-inline: .85rem;
+  border: 1px solid var(--practice-line);
+  border-radius: .55rem;
+  background: var(--practice-paper);
+}
+
+[data-nitya-practice] summary {
+  min-block-size: 44px;
+  padding-block: .5rem;
+  box-sizing: border-box;
+  color: var(--practice-ink);
+  cursor: pointer;
+}
+
+[data-nitya-practice] :is(ol, ul) {
+  padding-inline-start: 1.35rem;
+}
+
+[data-nitya-practice] .nitya-practice__turn {
+  margin-block: 1.3rem;
+}
+
+[data-nitya-practice] .nitya-practice__prompt {
+  padding: .85rem;
+  border-inline-start: 3px solid var(--practice-action);
+  background: var(--practice-paper);
+}
+
+[data-nitya-practice] a {
+  color: var(--practice-action);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+
+[data-nitya-practice] :is(.nitya-practice__review, .nitya-practice__privacy, .nitya-practice__dates) {
+  font-size: .9em;
+}
+
+[data-nitya-practice]:is(:lang(ar), :lang(bn), :lang(hi), :lang(sa), :lang(zh)) :is(h1, h3) {
+  font-family: inherit;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+@media (forced-colors: active) {
+  [data-nitya-practice] button[aria-pressed="true"] {
+    outline: 1px solid ButtonText;
+    outline-offset: -3px;
+  }
+}
+
+[data-nitya-practice] .nitya-practice__announcer {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}

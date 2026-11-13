@@ -1,0 +1,83 @@
+[data-nitya-route] {
+  color: var(--suti-angel-ink, #25342f);
+  margin-block-start: 1rem;
+  overflow-wrap: anywhere;
+}
+
+[data-nitya-route] details {
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  padding: 0 clamp(.75rem, 3vw, 1.4rem);
+}
+
+[data-nitya-route] summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding-block: .75rem;
+}
+
+[data-nitya-route] .nitya-route__panel {
+  padding-block: 0 1rem;
+}
+
+[data-nitya-route] .nitya-route__notice {
+  font-size: .9em;
+  margin-block: 0 .5rem;
+}
+
+[data-nitya-route] fieldset {
+  border: 0;
+  margin: 0;
+  min-inline-size: 0;
+  padding: 0;
+}
+
+[data-nitya-route] legend {
+  margin-block-end: .4rem;
+  padding: 0;
+}
+
+[data-nitya-route] .nitya-route__choice {
+  align-items: baseline;
+  cursor: pointer;
+  display: flex;
+  gap: .6rem;
+  min-block-size: 44px;
+  padding: .45rem .25rem;
+}
+
+[data-nitya-route] input[type="radio"] {
+  accent-color: var(--suti-petrol, #365958);
+  inline-size: 1.1rem;
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+[data-nitya-route] .nitya-route__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-block-start: .65rem;
+}
+
+[data-nitya-route] button {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  min-block-size: 44px;
+  padding: .4rem .75rem;
+}
+
+[data-nitya-route] button:disabled {
+  cursor: default;
+  opacity: .68;
+}
+
+[data-nitya-route] :focus-visible,
+[data-nitya-route] .nitya-route__choice:focus-within {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

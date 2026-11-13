@@ -19,6 +19,7 @@ This repository contains public specifications, the canonical source and deploym
 - [Repository contours](docs/repository-contours.v1.md) — ownership, release boundaries, and links between the repositories.
 - [Care architecture](docs/care/suti-care-architecture.v1.md) — public design proposal and current runtime limits.
 - [`.veche` research](docs/research/veche-consensus-research.v1.md) — claim audit, protocol reverse-engineering, threat model, and implementation gates.
+- [NITYA · 90-day practice](https://suti.world/nitya-practice.html?lang=en) — twelve written editions, optional four-decision route, and explicit Russian fallback for Yazekh.
 - [NITYA × .todeus passport](nitya-todeus.html) — the NITYA branch map, the optional narrative lens contract, and a 13-layer transcreation ledger with review states.
 
 ## SUTIcore scope
