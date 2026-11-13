@@ -1,0 +1,125 @@
+{
+  "artifact": "SUTI.world architecture map",
+  "source": {
+    "revision": "07318700aa4adec741cdd20617d27e4ca2b6b886",
+    "path": "modules/index.html",
+    "sha256": "2236003d830cf3de570c8982534550323272a73c904fbae24dc3a7a11e818ba9",
+    "url": "https://github.com/ezargaruna/suticore/blob/07318700aa4adec741cdd20617d27e4ca2b6b886/modules/index.html"
+  },
+  "scope": {
+    "cardCount": 24,
+    "sectionCount": 5,
+    "resourceLinks": "Destination languages are identified separately from translated labels."
+  },
+  "rights": {
+    "basis": "Editorial translation of the repository's public authorial architecture map.",
+    "notice": "https://github.com/ezargaruna/suticore/blob/07318700aa4adec741cdd20617d27e4ca2b6b886/LICENSE",
+    "linkedResources": "Reuse terms apply per destination. No additional grant is made for linked documents, code, names, or logos."
+  },
+  "routes": {
+    "ru": {
+      "path": "modules/index.html",
+      "lang": "ru",
+      "dir": "ltr",
+      "review": "source-editorial-edition",
+      "notice": "Русское авторское издание с редакционными уточнениями.",
+      "sha256": "87312eefcf953199a5ba200b0613b1db101e0ba2b40a5f51303a95bab1e4100f"
+    },
+    "en": {
+      "path": "modules/architecture/en.html",
+      "lang": "en",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "Editorial translation. Independent review by native English speakers is pending.",
+      "sha256": "9749de90392f07e14f872e364481895c8a09d07b0c525cd68ae4ee990f1ecb55"
+    },
+    "es": {
+      "path": "modules/architecture/es.html",
+      "lang": "es-419",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "Traducción editorial al español latinoamericano. Pendiente de revisión independiente por hablantes nativos.",
+      "sha256": "3624cc62611ef3154d678b1657dbaa6d9a62c868a80cb10fada8fb0516d83271"
+    },
+    "pt-BR": {
+      "path": "modules/architecture/pt-br.html",
+      "lang": "pt-BR",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "Tradução editorial em português brasileiro. Ainda aguarda revisão independente por falantes nativos.",
+      "sha256": "f19acb51f9bb45512f2d09edf51bdb2a8125c30d1f4309d6144102bcc8712b50"
+    },
+    "fr": {
+      "path": "modules/architecture/fr.html",
+      "lang": "fr",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "Traduction éditoriale en français. Une relecture indépendante par des locuteurs natifs reste à faire.",
+      "sha256": "a7b31d168fb0e90007b03d7d8b09a0beb38ebbd8fe2af5a6d9a9eeb175845cb5"
+    },
+    "zh-Hans": {
+      "path": "modules/architecture/zh-hans.html",
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "简体中文编辑译稿。尚待母语使用者独立审校。",
+      "sha256": "470f8b25d66e509e1958cffa464eedb27996e7cdb657ba7e19f8a77c75a06f25"
+    },
+    "hi": {
+      "path": "modules/architecture/hi.html",
+      "lang": "hi",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "संपादकीय अनुवाद का मसौदा। हिन्दी के मातृभाषी वक्ताओं की स्वतंत्र समीक्षा अभी बाकी है।",
+      "sha256": "aede921284cd33b54eec1ccb8745122312fc360f1e11908741da52afc7183e17"
+    },
+    "ar": {
+      "path": "modules/architecture/ar.html",
+      "lang": "ar",
+      "dir": "rtl",
+      "review": "native-review-pending",
+      "notice": "مسودة ترجمة تحريرية بانتظار مراجعة مستقلة من ناطقين بالعربية كلغة أم.",
+      "sha256": "336d7a0529f97049a7e9ab70904fe54f8818433fe38a68f6925386a6230a1c9c"
+    },
+    "bn": {
+      "path": "modules/architecture/bn.html",
+      "lang": "bn",
+      "dir": "ltr",
+      "review": "native-review-pending",
+      "notice": "সম্পাদকীয় অনুবাদের খসড়া। বাংলা মাতৃভাষীদের স্বাধীন পর্যালোচনা এখনও বাকি।",
+      "sha256": "d8740ed75b85c8e11b16f7dacb7bd47cf93abfbfb87c01ad8288b91cfd26a630"
+    },
+    "eo": {
+      "path": "modules/architecture/eo.html",
+      "lang": "eo",
+      "dir": "ltr",
+      "review": "fluent-review-pending",
+      "notice": "Redakta tradukmalneto. Sendependa revizio fare de fluaj parolantoj de Esperanto ankoraŭ atendas.",
+      "sha256": "da8863f8cf13bd6a8656fff25e8f96514075128ace78a03d36c867ef74f8c4c6"
+    },
+    "sa": {
+      "path": "modules/architecture/sa.html",
+      "lang": "sa",
+      "dir": "ltr",
+      "review": "qualified-review-pending",
+      "notice": "सम्पादकीयम् अनुवादप्रारूपम्। संस्कृतविशेषज्ञेन स्वतन्त्रा समीक्षा अद्याप्यपेक्ष्यते।",
+      "sha256": "73eda57e276216cdfad3109dec3e293611e0bd8316d56afb9b6157a8c401da7a"
+    },
+    "la": {
+      "path": "modules/architecture/la.html",
+      "lang": "la",
+      "dir": "ltr",
+      "review": "qualified-review-pending",
+      "notice": "Versio editorialis. Recensio independens a perito linguae Latinae adhuc exspectatur.",
+      "sha256": "a7fbebb0d92d594828c50635c1410bf4efe451595a0ebbd57690eec519893894"
+    },
+    "yzh": {
+      "path": "modules/architecture/yzh.html",
+      "lang": "ru",
+      "dir": "ltr",
+      "review": "hold-author-grammar-and-lexicon",
+      "notice": "Язэхъ · HOLD. Показан русский текст до утверждения автором грамматики и словаря.",
+      "sha256": "174474c782c1801b70ec0032145127922cde423f43c97615de648f03c5f87370"
+    }
+  }
+}

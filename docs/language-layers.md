@@ -225,8 +225,8 @@ The [module catalog](../modules.html?lang=en) localizes all 74 displayed
 record titles and the search, navigation, metadata and review labels. Search
 matches the current title, original title and source path. The chosen language
 has a shareable query route. A labeled Russian edition remains readable when
-JavaScript is unavailable. The architectural map at `modules/index.html`
-continues as a Russian resource and is labeled accordingly.
+JavaScript is unavailable. The catalog links to the architecture map in the
+selected language.
 
 The [catalog coverage and rights record](../locales/module-catalog/coverage.json)
 distinguishes the editor's source language assessment from the interface
@@ -236,3 +236,18 @@ Two older references to documents marked internal were removed from the public
 catalog. One source index is empty and its language is undetermined.
 The 11 translation editions await independent language review. Sanskrit and
 Latin require specialist review. Yazekh displays Russian copy on HOLD.
+
+## Module architecture map · 2026-11-13
+
+The [architecture map](../modules/index.html) has 13 standalone routes that
+preserve all 24 cards and five thematic sections. The home page and module
+catalog link to the corresponding edition. The map keeps resource names and
+destination languages visible and offers a return to the matching catalog.
+The original English technical specifications and the older Russian
+specification retain their source languages and distinct revision status.
+
+The [architecture coverage record](../modules/architecture/coverage.json)
+captures the baseline, rights scope, per-edition hashes and review states.
+Eleven editorial translations await independent review. Esperanto awaits
+fluent review, Sanskrit and Latin await specialist review, and the Yazekh
+route remains a labeled Russian fallback pending the author's grammar and lexicon.

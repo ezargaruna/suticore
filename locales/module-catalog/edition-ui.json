@@ -13,7 +13,7 @@
     "mixedLanguage": "Source includes multiple languages",
     "structuredLanguage": "Structured data or code",
     "returnLabel": "Return to SUTI.world",
-    "moduleMap": "Architecture map · in Russian"
+    "moduleMap": "Architecture map"
   },
   "ru": {
     "nav": "навигация SUTI.world",
@@ -29,7 +29,7 @@
     "mixedLanguage": "исходник на нескольких языках",
     "structuredLanguage": "структурированные данные или код",
     "returnLabel": "вернуться на SUTI.world",
-    "moduleMap": "карта архитектуры · на русском"
+    "moduleMap": "архитектурная карта"
   },
   "es": {
     "nav": "navegación de SUTI.world",
@@ -45,7 +45,7 @@
     "mixedLanguage": "archivo fuente en varios idiomas",
     "structuredLanguage": "datos estructurados o código",
     "returnLabel": "volver a SUTI.world",
-    "moduleMap": "mapa de arquitectura · en ruso"
+    "moduleMap": "mapa de arquitectura"
   },
   "pt-BR": {
     "nav": "navegação do SUTI.world",
@@ -61,7 +61,7 @@
     "mixedLanguage": "arquivo-fonte em vários idiomas",
     "structuredLanguage": "dados estruturados ou código",
     "returnLabel": "voltar ao SUTI.world",
-    "moduleMap": "mapa da arquitetura · em russo"
+    "moduleMap": "mapa da arquitetura"
   },
   "fr": {
     "nav": "navigation de SUTI.world",
@@ -77,7 +77,7 @@
     "mixedLanguage": "fichier source en plusieurs langues",
     "structuredLanguage": "données structurées ou code",
     "returnLabel": "retour à SUTI.world",
-    "moduleMap": "carte de l’architecture · en russe"
+    "moduleMap": "carte de l’architecture"
   },
   "zh-Hans": {
     "nav": "站点导航",
@@ -93,7 +93,7 @@
     "mixedLanguage": "源文件使用多种语言",
     "structuredLanguage": "结构化数据或代码",
     "returnLabel": "返回 SUTI.world",
-    "moduleMap": "模块架构图（俄语）"
+    "moduleMap": "模块架构图"
   },
   "hi": {
     "nav": "साइट का नेविगेशन",
@@ -109,7 +109,7 @@
     "mixedLanguage": "स्रोत फ़ाइल में एक से अधिक भाषाएँ हैं",
     "structuredLanguage": "संरचित डेटा या कोड",
     "returnLabel": "SUTI.world पर लौटें",
-    "moduleMap": "मॉड्यूल वास्तुकला का मानचित्र (रूसी में)"
+    "moduleMap": "मॉड्यूल वास्तुकला का मानचित्र"
   },
   "ar": {
     "nav": "التنقّل في الموقع",
@@ -125,7 +125,7 @@
     "mixedLanguage": "الملف المصدر متعدّد اللغات",
     "structuredLanguage": "بيانات منظّمة أو شيفرة",
     "returnLabel": "العودة إلى SUTI.world",
-    "moduleMap": "خريطة بنية الوحدات (بالروسية)"
+    "moduleMap": "خريطة بنية الوحدات"
   },
   "bn": {
     "nav": "সাইটের নেভিগেশন",
@@ -141,7 +141,7 @@
     "mixedLanguage": "উৎস ফাইলে একাধিক ভাষা আছে",
     "structuredLanguage": "কাঠামোবদ্ধ ডেটা বা কোড",
     "returnLabel": "SUTI.world-এ ফিরুন",
-    "moduleMap": "মডিউলগুলোর স্থাপত্যের মানচিত্র (রুশ ভাষায়)"
+    "moduleMap": "মডিউলগুলোর স্থাপত্যের মানচিত্র"
   },
   "eo": {
     "nav": "Ĉefa navigado de SUTI.world",
@@ -157,7 +157,7 @@
     "mixedLanguage": "Fonto en pluraj lingvoj",
     "structuredLanguage": "Strukturitaj datumoj",
     "returnLabel": "Reiri al SUTI.world",
-    "moduleMap": "Arkitektura mapo de la moduloj (en la rusa)"
+    "moduleMap": "Arkitektura mapo de la moduloj"
   },
   "sa": {
     "nav": "SUTI.world · मुख्यसञ्चरणम्",
@@ -173,7 +173,7 @@
     "mixedLanguage": "बहुभाषिकं स्रोतः",
     "structuredLanguage": "संरचितदत्तांशाः",
     "returnLabel": "SUTI.world प्रति प्रत्यागच्छ",
-    "moduleMap": "कार्यखण्डानां संरचनामानचित्रम् (रूसीभाषायाम्)"
+    "moduleMap": "कार्यखण्डानां संरचनामानचित्रम्"
   },
   "la": {
     "nav": "Navigatio principalis SUTI.world",
@@ -189,7 +189,7 @@
     "mixedLanguage": "Fons pluribus linguis scriptus",
     "structuredLanguage": "Data structura ordinata",
     "returnLabel": "Redi ad SUTI.world",
-    "moduleMap": "Tabula structurae modulorum (Russice)"
+    "moduleMap": "Tabula structurae modulorum"
   },
   "yzh": {
     "nav": "навигация SUTI.world",
@@ -205,6 +205,6 @@
     "mixedLanguage": "исходник на нескольких языках",
     "structuredLanguage": "структурированные данные или код",
     "returnLabel": "вернуться на SUTI.world",
-    "moduleMap": "карта архитектуры · на русском"
+    "moduleMap": "архитектурная карта · русский текст"
   }
 }

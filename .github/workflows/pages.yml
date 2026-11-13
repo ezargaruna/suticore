@@ -71,7 +71,9 @@ jobs:
           cp -R modules/verenium _site/modules/
           python3 -B scripts/build_synaura_guide.py --check
           cp -R modules/synaura _site/modules/
+          python3 -B scripts/build_module_architecture.py --check
           cp modules/index.html _site/modules/index.html
+          cp -R modules/architecture _site/modules/
           cp -R modules/suti _site/modules/
           cp assets/fonts/NunitoSans-variable.ttf _site/assets/fonts/NunitoSans-variable.ttf
           cp assets/fonts/Manrope-variable.ttf _site/assets/fonts/Manrope-variable.ttf

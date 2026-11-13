@@ -53,6 +53,10 @@
     const home = "https://suti.world/?lang=" + encodeURIComponent(current) + "#library";
     document.getElementById("catalog-home").href = home;
     document.getElementById("catalog-return").href = home;
+    const mapLink = document.getElementById("architecture-map");
+    const map = current === "ru" ? "index.html" : "architecture/" + current.toLowerCase() + ".html";
+    mapLink.href = "https://ezargaruna.github.io/suticore/modules/" + map;
+    mapLink.hreflang = edition.lang;
     if (updateUrl && /^https?:$/.test(location.protocol)) {
       const url = new URL(location.href);
       url.searchParams.set("lang", current);

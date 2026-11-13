@@ -116,7 +116,7 @@ The workflow also publishes these nested HTML screens from `modules/`:
 
 | Artifact | Source/rendered language | Current locale coverage | Translation/review state |
 |---|---|---|---|
-| `modules/index.html` | Russian | RU | Russian module directory. |
+| `modules/index.html`, `modules/architecture/*.html` | Russian source and full editorial architecture map editions | 12 written-language editions plus YZH Russian fallback | All 24 cards, scope and resource labels are localized. Destination languages are disclosed. See [architecture coverage and rights](../../modules/architecture/coverage.json). |
 | `modules/suti/suticore-2026.11.en.html` | English | EN | English interactive specification; no other locale edition. |
 | `modules/suti/synaura-2026.11.en.html` | English | EN | English interactive specification; no other locale edition. |
 | `modules/suti/syntaxium-2026.11.en.html` | English | EN | English interactive specification; no other locale edition. |
