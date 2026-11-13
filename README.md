@@ -6,6 +6,8 @@ This repository contains public specifications, the canonical source and deploym
 
 ## Choose a starting point
 
+- [Common living system · thirteen routes](https://ezargaruna.github.io/suticore/system/) · [13-language system guide and configurations](https://ezargaruna.github.io/suticore/modules/ai-soul-13l/) · [portable review release](https://github.com/ezargaruna/SUTI.os/releases/tag/living-system-2026-11-13). Published as unreviewed authorial drafts; the common layer's YZH route remains a Russian-gloss/HOLD scaffold. Source snapshots do not activate services or financial operations; see [publication scope](system/publication-note.html).
+
 - [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
 - [Care atlas](https://ezargaruna.github.io/suticore/care-atlas.html) · [private care map](https://ezargaruna.github.io/suticore/care-map.html) · [Verenium workshop](https://ezargaruna.github.io/suticore/verenium.html) · [complete offline bundle](https://ezargaruna.github.io/suticore/downloads/Verenium.zip). The workshop stores notes only when the visitor exports them.
 - [Download SUTI.os](https://github.com/ezargaruna/SUTI.os/releases/latest) — a separate, portable Markdown vault with a full Russian edition and partial English, Spanish, and Brazilian Portuguese entry packs.
