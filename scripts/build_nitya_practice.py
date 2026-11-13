@@ -63,6 +63,7 @@ SHELL = """<!doctype html>
     }}
   </script>
   <script type="application/json" id="nitya-atlas-copy">{atlas_copy}</script>
+  <script type="application/json" id="nitya-route-copy">{route_copy}</script>
   <script>
 {atlas}
   </script>
@@ -88,14 +89,41 @@ def read_component(name, extension):
     return source.rstrip()
 
 
+def embedded_json(data):
+    return json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
+
+
+def require_translation_shape(reference, edition, path):
+    if isinstance(reference, dict):
+        if not isinstance(edition, dict) or reference.keys() != edition.keys():
+            raise SystemExit(f"Missing or unexpected NITYA route fields at {path}")
+        for key, value in reference.items():
+            if key == "id" and value != edition[key]:
+                raise SystemExit(f"Changed choice ID at {path}: {edition[key]}")
+            require_translation_shape(value, edition[key], f"{path}.{key}")
+    elif isinstance(reference, list):
+        if not isinstance(edition, list) or len(reference) != len(edition):
+            raise SystemExit(f"Invalid NITYA route sequence at {path}")
+        for index, (value, translation) in enumerate(zip(reference, edition)):
+            require_translation_shape(value, translation, f"{path}[{index}]")
+    elif not isinstance(edition, str) or not edition.strip():
+        raise SystemExit(f"Empty NITYA route copy at {path}")
+
+
 def main():
     parser = ArgumentParser()
     parser.add_argument("--check", action="store_true")
     options = parser.parse_args()
     styles = "\n".join(read_component(name, "css") for name in ("nitya-practice", "nitya-route", "nitya-atlas"))
     copy = json.loads((ROOT / "locales/nitya-atlas.json").read_text(encoding="utf-8"))
-    source = json.dumps(copy, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
-    html = SHELL.format(assets=ASSETS, styles=styles, atlas_copy=source,
+    routes = json.loads((ROOT / "locales/nitya-route.json").read_text(encoding="utf-8"))
+    if routes.keys() != ((copy.keys() - {"es-419"}) | {"es"}):
+        raise SystemExit("NITYA route needs one edition per atlas language")
+    for code, edition in routes.items():
+        require_translation_shape(routes["en"]["engine"], edition["engine"], f"{code}.engine")
+        require_translation_shape(routes["en"]["labels"], edition["labels"], f"{code}.labels")
+    html = SHELL.format(assets=ASSETS, styles=styles, atlas_copy=embedded_json(copy),
+                        route_copy=embedded_json(routes),
                         atlas=read_component("nitya-atlas", "js"), care=read_component("nitya-atlas-care", "js"),
                         practice=read_component("nitya-practice", "js"), route=read_component("nitya-route", "js"))
     output = ROOT / "nitya-practice.html"

@@ -68,6 +68,7 @@
     top.dir = paths.dir = direction;
     top.dataset.language = language;
     document.title = 'NITYA · ' + edition.title;
+    document.querySelector('meta[name="description"]').content = edition.intro;
 
     const counter = el('p', '', { id: 'atlas-countdown-status', role: 'status' });
     const date = el('input', '', { type: 'date', id: 'atlas-countdown-date', 'aria-describedby': counter.id });
