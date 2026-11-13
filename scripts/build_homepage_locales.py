@@ -62,12 +62,11 @@ def main():
         }
         review[locale] = {
             "renderedLanguage": locale, "direction": direction,
-            "status": "qualified-review-pending" if locale in {"sa", "la"} else "fluent-review-pending" if locale == "eo" else "native-review-pending",
+            "status": {"eo": "fluent-review-pending", "sa": "qualified-review-pending",
+                       "la": "qualified-review-pending"}.get(locale, "native-review-pending"),
             "dictionaryKeys": len(words), "additionalStrings": len(extras), "practiceTracks": len(ROUTE_KEYS),
         }
-    for locale in ("yzh",):
-        review[locale] = {"renderedLanguage": "ru", "direction": "ltr",
-                          "status": "hold-authorial-language" if locale == "yzh" else "russian-fallback"}
+    review["yzh"] = {"renderedLanguage": "ru", "direction": "ltr", "status": "hold-authorial-language"}
     payload = json.dumps({"editions": editions, "ui": ui}, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
     path = ROOT / "index.html"
     original = path.read_text(encoding="utf-8")
