@@ -17,4 +17,4 @@ silento ne estas konsento; AI-revizio ne estas homa voĉdonado
 
 [SUTI · komuna vivanta sistemo](../living-system.md) · [fonduso por subteni la vivon kaj tiujn, kiuj amas la vivon · agentejo de zorgaj anĝeloj](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonto](../../_techne/machine/collective-living-system-v1/source.ru.json)

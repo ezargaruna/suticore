@@ -119,7 +119,7 @@ the system does not replace medical, psychological, legal, or emergency assistan
 ## version, provenance, and independent use
 
 this assembly version :: 1.1.0-draft
-source :: Russian master; target editions are checked directly against it
+source :: Russian source text; target editions are checked directly against it
 verification :: structure, examples, and package contents are checked separately from language, culture, accessibility, and service operation
 release :: a separate owner decision naming the exact contents and channel
 rollback :: previous files are retained in a local backup

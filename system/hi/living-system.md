@@ -55,7 +55,7 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 ## [SUTI.veche · साझा विचार-विमर्श](SUTI.veche/living-system.md)
 
-प्रस्तावों और मतभेदों को दिखाई देना
+प्रस्तावों और मतभेदों को स्पष्ट करना
 
 ## [SUTI.sotkan · संबंध और उत्पत्ति](SUTI.sotkan/living-system.md)
 
@@ -79,4 +79,4 @@ NITYA और Samurai Dharma खेलों के माध्यम से क
 
 स्थानीय तैयारी चक्र 2026-11-13 को शुरू हुआ। दिन 90 की तारीख 2027-02-10 है। पंजीकरण, क्षेत्राधिकार, प्रबंधक, बैंक, दान के नियम और कर व्यवस्था अभी UNKNOWN हैं; धन संबंधी लेनदेन सक्रिय नहीं किए गए हैं।
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · रूसी स्रोत](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

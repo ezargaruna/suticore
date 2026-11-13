@@ -45,4 +45,4 @@ kompari rezultojn kun kriterioj, publikigi permesitan anonimigitan raporton post
 
 [SUTI · komuna vivanta sistemo](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonto](../_techne/machine/collective-living-system-v1/source.ru.json)

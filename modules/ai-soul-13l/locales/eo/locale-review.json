@@ -50,5 +50,25 @@
   "source_path_base": "package-root",
   "guide_path": "locales/eo/guide.md",
   "source_vault_sha256": "61b51ce83b1ffdc18c8654a3b32a66fc2abb838d5598edd447530c069388eeaa",
-  "package_transformation": "relative machine link rebasing only"
+  "package_transformation": "relative machine link rebasing only",
+  "editorial_qa": {
+    "date": "2026-11-13",
+    "scope": "All 12 guide sections compared with packaged Russian source; model-assisted editorial review only",
+    "source_compared": "locales/ru/guide.md",
+    "source_sha256": "73d2ab00a04c8426d6009702bcb752dae0d668054b3dcf39d7fad0162009ff79",
+    "checks": [
+      "12 stable section IDs",
+      "eight workflow stages",
+      "eight configuration parameters",
+      "consent and data boundaries",
+      "intentional Russian worked-example output",
+      "recovery and independent-use instructions"
+    ],
+    "independent_language_review": "PENDING",
+    "review_limit": "No independent native, cultural, accessibility, legal or runtime acceptance; Latin additionally requires a Neo-Latin specialist",
+    "corrections": [
+      "Restore the full source epigraph distinction",
+      "Translate game quest rather than search"
+    ]
+  }
 }

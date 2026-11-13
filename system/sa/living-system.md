@@ -61,7 +61,7 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 ## [SUTI.sotkan · सम्बन्धाः उत्पत्तिश्च](SUTI.sotkan/living-system.md)
 
-सामग्रीं स्रोतसः परिवर्तनवृत्तान्तेन च योजयितुम्
+सामग्रीं स्रोतसा परिवर्तनवृत्तान्तेन च योजयितुम्
 
 ## [SUTI.game · स्वैच्छिकोऽभ्यासः](SUTI.game/living-system.md)
 
@@ -81,4 +81,4 @@ NITYA तथा Samurai Dharma इति क्रीडाभ्यां क�
 
 13 नवम्बर 2026 तमे दिने स्थानीयः सन्नाहचक्रः आरब्धः। 90 तमः दिवसः 10 फरवरी 2027 अस्ति। पञ्जीकरणं, विधिक्षेत्रं, प्रबन्धकाः, वित्तकोशः, दाननियमाः, करव्यवस्था च अद्यापि UNKNOWN; धनव्यवहाराः न प्रवर्तिताः।
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · रूसीस्रोतः](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

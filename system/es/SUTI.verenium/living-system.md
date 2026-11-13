@@ -15,6 +15,6 @@ Una ruta de apoyo elegida y una acción acordada.
 
 Ángel del cuidado es una imagen opcional; el servicio no es de urgencias ni clínico.
 
-[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y agencia de ángeles del cuidado](../care-90-days.md)
+[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y a quienes aman la vida · agencia de ángeles del cuidado](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fuente](../../_techne/machine/collective-living-system-v1/source.ru.json)

@@ -1,6 +1,7 @@
 ---
 artifact_id: suti.ai-soul-system-contour.package.v1
-version: 1.1.0-draft
+version: 1.1.1-draft
+source_guide_version: 1.1.0-draft
 updated: 2026-11-13
 source_locale: ru
 state: LOCAL_DRAFT / REVIEW_REQUIRED / RELEASE_HOLD

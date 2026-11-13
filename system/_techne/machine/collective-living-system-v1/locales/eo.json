@@ -52,7 +52,7 @@
   "contours": [
     {
       "id": "SUTI.os",
-      "title": "sistema aranĝo",
+      "title": "aranĝo de la sistemo",
       "purpose": "interkonsenti pri limoj, iloj, konservado kaj restarigo",
       "procedure": "elektu taskon kaj medion → priskribu eniron kaj rezulton → kontrolu aliron kaj revenon → konservu laborinstrukcion",
       "output": "mapo de la medio kaj ripetebla laborpaŝo",
@@ -144,7 +144,7 @@
       "purpose": "konservi signifon dum transiro inter lingvoj kaj medioj",
       "procedure": "elstarigu intencon kaj invarianton → traduku rekte el fonto → komparu kondiĉojn kaj certecon → petu sendependan revizion",
       "output": "komprenebla teksto, terminoj kaj stato de ĉiu lingvo",
-      "boundary": "malneto ne egalas kontrolitan tradukon; Jazeh postulas aŭtoran gloson"
+      "boundary": "malneto ne egalas kontrolitan tradukon; Yazekh postulas aŭtoran gloson"
     },
     {
       "id": "SUTI.verenium",

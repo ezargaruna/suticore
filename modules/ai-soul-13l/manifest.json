@@ -1,7 +1,7 @@
 {
   "schema": "suti.portable-package-manifest.v1",
   "artifact_id": "suti.ai-soul-system-contour.portable.v1",
-  "version": "1.1.0-draft",
+  "version": "1.1.1-draft",
   "date": "2026-11-13",
   "scope": "13 complete guide editions, 17 declared role contracts, configuration and exchange schemas; no module runtimes",
   "text_coverage": "13 x 12 source section IDs",
@@ -12,8 +12,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 4203,
-      "sha256": "0cec48050f852470c077edaeab019121ceb889c96f447531d8176f50246eb090"
+      "bytes": 4237,
+      "sha256": "8eeee8d6091a4c64b77a4f93704233ef85a0a73ac22c06ec4be9c42cf777ccb2"
     },
     {
       "path": "browser-verification.json",
@@ -22,8 +22,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 228672,
-      "sha256": "187f1260e11d270d8d2381947229729becaf8126096ceab4e13b6d3251c6b080"
+      "bytes": 239329,
+      "sha256": "1d6ff01dc68258c08e8b1ac485fa2e496a2a63a61dd679854b91a750a1d62676"
     },
     {
       "path": "locale-status.v1.json",
@@ -32,63 +32,63 @@
     },
     {
       "path": "locales/ar/guide.md",
-      "bytes": 12272,
-      "sha256": "3b176cfdff236de8fd96f5b84f8882b5b9a49521d64eefad3e4ec5069213be4a"
+      "bytes": 12273,
+      "sha256": "b8c6f0c0ed792ebc9289710a244a060cdc3ea08fa6939dc922e7b5306ee2a235"
     },
     {
       "path": "locales/ar/locale-review.json",
-      "bytes": 2249,
-      "sha256": "ae63c0331ff09358a43783c2172724b140311f5fd86447247016bb222134d8d3"
+      "bytes": 3611,
+      "sha256": "bfa8d0a135fa1674dca9ea5f62e4b5e4a9f7292b48f52d045829a284c5e69689"
     },
     {
       "path": "locales/bn/guide.md",
-      "bytes": 18206,
-      "sha256": "d12784d2e2727db6d55162dc8be2c0c3d24112309151241738a1b337895f4f2c"
+      "bytes": 18212,
+      "sha256": "97295a53896381aabea6cad9df5737ca31a6f1133e9e951cc066917556f23451"
     },
     {
       "path": "locales/bn/locale-review.json",
-      "bytes": 2147,
-      "sha256": "e88fc904ad0bc7e6565472701608d1b30067d8e745890ad53b6103ee8a256e2d"
+      "bytes": 3248,
+      "sha256": "d634ac523a14326f3e89b64ae947e85c1b4bc7d92e413a708cd880f20b86b77e"
     },
     {
       "path": "locales/en/guide.md",
-      "bytes": 8725,
-      "sha256": "866e2eb855f59bb99f879abe4b9a3575dbcb4bc67890e1412fba429507c4b24b"
+      "bytes": 8730,
+      "sha256": "7de72620eef0c83b391ae3edaba33b53e1c068899184d5b0447f1ed26d479c9a"
     },
     {
       "path": "locales/en/locale-review.json",
-      "bytes": 2317,
-      "sha256": "bbcefdf97e68da876c9c33c44befe2d78e6c75bb3431ae5ab34a7ac62fa6ace1"
+      "bytes": 3173,
+      "sha256": "5ab4b865e613ba2c6d88b9e8960950f48293d1e176719c8b5d08e71cfae168df"
     },
     {
       "path": "locales/eo/guide.md",
-      "bytes": 8803,
-      "sha256": "b96b747237b96bdfc63e454a8f49ee4bfffa907a10e0e4dd6f73489527d46bc2"
+      "bytes": 8827,
+      "sha256": "6fe47ac88237855a1d9848f61449943b6762010aca827e035d8d359f3b83f377"
     },
     {
       "path": "locales/eo/locale-review.json",
-      "bytes": 2583,
-      "sha256": "d622d397886357b28e32cc1cf64b7c64f991c9d2098a662da99e1910ea61c2fd"
+      "bytes": 3472,
+      "sha256": "82d77abc4d00ca93a4a7be5c85f08f8956feb97e6d7e476992893f57076cfed4"
     },
     {
       "path": "locales/es/guide.md",
-      "bytes": 9559,
-      "sha256": "26fa877be7878b0e603dea196fa5dc1f78cbce07adca2ccae645cf66beba2641"
+      "bytes": 9563,
+      "sha256": "0bcbc444ecc7e094583b0519c7c7901faad4aa93ed6e0ebd41f82e0e67f961e7"
     },
     {
       "path": "locales/es/locale-review.json",
-      "bytes": 2321,
-      "sha256": "2d2f70582ac2a0cb06c4d0a052ac6583fcc8ba0dd05fd25f76a80452f7d7d9a3"
+      "bytes": 3236,
+      "sha256": "76357b5965b23a12922a207cc409ce30b2f336b70d5a464f6b5217a48cc5428a"
     },
     {
       "path": "locales/fr/guide.md",
-      "bytes": 10279,
-      "sha256": "7552b67f52551e7908bb1931dea0f1b9318cbb36452c1ff29930a411a3ba62db"
+      "bytes": 10284,
+      "sha256": "06accfc12480495c4f2c314be29899591e64c05cadf9497ef9d4a778180f26a4"
     },
     {
       "path": "locales/fr/locale-review.json",
-      "bytes": 2317,
-      "sha256": "cf75b97c6135801710035fed8ade602b0ea8d4f429f3d321506d86bb6ac59db2"
+      "bytes": 3173,
+      "sha256": "fc1d08e64e38c11ff380e5490996b5f17c34bdcf7d71d837539edaa12c8407f9"
     },
     {
       "path": "locales/hi/guide.md",
@@ -97,28 +97,28 @@
     },
     {
       "path": "locales/hi/locale-review.json",
-      "bytes": 2147,
-      "sha256": "fbee6d370580c569fe6ba980ca7a04ad5424652e354b3e4b70f2220a4f9473b3"
+      "bytes": 3248,
+      "sha256": "216f0740595372c48634ad93c575ce37929ce6457ccde76ed79240ee0e72dc7f"
     },
     {
       "path": "locales/la/guide.md",
-      "bytes": 9285,
-      "sha256": "009477d5de7bbad01ece5969ef526512816e9d93d85a333b1243fed9c2a78c62"
+      "bytes": 9318,
+      "sha256": "b091cf65bc85d8a7a94a60abe355c11a658701e82b5e1aaa610ffd7a41a9aacb"
     },
     {
       "path": "locales/la/locale-review.json",
-      "bytes": 2669,
-      "sha256": "d705b836089d7eeb055e384e0b95425004d04981576f0ee6af24eac46ba3a54d"
+      "bytes": 3829,
+      "sha256": "850636813906096dbef1e976a00a4b214f58f2eb1bf0654dc192b0d4db9ed971"
     },
     {
       "path": "locales/pt-br/guide.md",
-      "bytes": 9432,
-      "sha256": "04821fe1c564308a83e72f085eff79cf6d90a0107ec0c7ec32208c50b1b2ac8e"
+      "bytes": 9450,
+      "sha256": "2158a03948f35b8183cfe4e8b444a8689a75b05ae331984fdd3c9e94ff845f8a"
     },
     {
       "path": "locales/pt-br/locale-review.json",
-      "bytes": 2326,
-      "sha256": "9ac65895550f08235d0e201e4810e9c7573062064aed66e54c054db541aef5d5"
+      "bytes": 3277,
+      "sha256": "165bc32300a72c43515720ff6c5b3ad7776569da68fa0f80de75c6f1788c6d56"
     },
     {
       "path": "locales/ru/guide.md",
@@ -132,13 +132,13 @@
     },
     {
       "path": "locales/sa/guide.md",
-      "bytes": 19958,
-      "sha256": "1d88a54da3d0853e9bb5b2ab60f6b97ca559b0d759f2262b52b0413d02f533ab"
+      "bytes": 19983,
+      "sha256": "e5d5a5ca89f739c4cbf4d80522fd351751645bd239e10b79bb8ed420a9c444a7"
     },
     {
       "path": "locales/sa/locale-review.json",
-      "bytes": 2733,
-      "sha256": "b29329b51f4033ffb94afa6f57a132f1b7b38613b42c52308d2cdfbb305f5d29"
+      "bytes": 3918,
+      "sha256": "1e4a8513a933621fe89a558dab31e453b7864c8c21825de2f97db29a6174ad5d"
     },
     {
       "path": "locales/yzh/guide.md",
@@ -147,8 +147,8 @@
     },
     {
       "path": "locales/yzh/locale-review.json",
-      "bytes": 2662,
-      "sha256": "b208522f4fefec54176965a64e63ebe44c302049e68b93f87cd3fe912384e451"
+      "bytes": 4026,
+      "sha256": "c0f367dd82ee75044b477614f281cde8c7c43ef423e619c1cfa78709e1a92d02"
     },
     {
       "path": "locales/zh-hans/guide.md",
@@ -157,8 +157,8 @@
     },
     {
       "path": "locales/zh-hans/locale-review.json",
-      "bytes": 2162,
-      "sha256": "91d4d8ce321c8aa62a1856bcc53ae1d9dfadb7e09c4c86ac73e2dcf364bbb45f"
+      "bytes": 3263,
+      "sha256": "289541a3b2a8812b0ce214322cda5a9446f245448ac88fa54e96eba0655c48e4"
     },
     {
       "path": "machine/configuration.schema.json",
@@ -262,8 +262,8 @@
     },
     {
       "path": "tools/build_viewer.py",
-      "bytes": 18666,
-      "sha256": "9a9d334871b4b3492af50524d180cec107ddf602e98a0dd53a3734c2a7328d4d"
+      "bytes": 21413,
+      "sha256": "2ff815a84bc2dbc62dc4d81de0ffef687f580701cd59df3a73998ff2a3b28d6f"
     },
     {
       "path": "tools/check_schemas.py",
@@ -272,8 +272,8 @@
     },
     {
       "path": "tools/ui-locales.json",
-      "bytes": 12514,
-      "sha256": "7db0816990f4172630fa08ebf2b21e26dc2bfdda85de8a274f28b19b68c42a2d"
+      "bytes": 13639,
+      "sha256": "544070605f0fc13610ed4818a0debe4ef4cd4a6140f6d64ab78bb259a86e04b1"
     },
     {
       "path": "tools/verify_package.py",
@@ -285,5 +285,7 @@
       "bytes": 340,
       "sha256": "f26228e37dfbbeb435e15439fbb8e875847ef412ad66cc5c06f384c7a9953825"
     }
-  ]
+  ],
+  "prior_manifest_sha256": "c8d83b126dfa5284b310c90cb9f27891729fd5f16879f8f7cf6708b658998317",
+  "qa_revision": "13-locale editorial, route, copy and configuration download correction; native review remains pending"
 }

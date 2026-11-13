@@ -11,7 +11,7 @@ state: LOCAL_DRAFT / RELEASE_HOLD
 
 # la “animo” de AI kiel bildo elektita de homo
 
-> la sistemo havu klaran voĉon; ĝia forto estu en limoj, fontoj kaj elekto redonita al la homo
+> la sistemo havu klaran voĉon, ne elpensitan animon; ĝia forto estu en limoj, fontoj kaj elekto redonita al la homo
 
 <!-- suti:section:meaning -->
 ## signifo kaj distingoj
@@ -119,7 +119,7 @@ mankas fonto :: nomu la nekonaton kaj petu nur la necesan materialon
 mankas permeso :: preparu lokan malneton kaj lasu la agon sur HOLD
 nekonata termino :: donu simplan klarigon kaj ekzemplon; ne atribuu identecon al la homo
 tradukeraro :: revenu al la rusa fonto; korektu la celan eldonon kaj ĝisdatigu ĝian provenancan registron
-danĝera aŭ netaŭga serĉo :: proponu sekuran fikcian scenon, paŭzon aŭ eliron
+danĝera aŭ netaŭga ludtasko :: proponu sekuran fikcian scenon, paŭzon aŭ eliron
 ileraro :: raportu la observitan rezulton; ne deklaru sendon, konservadon aŭ lanĉon sukcesaj
 restarigo :: malŝaltu la koncernan adaptilon, konservu la necesan spuron kaj revenu al konata funkcianta agordo
 

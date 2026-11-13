@@ -224,7 +224,22 @@ JS = """
     selector.appendChild(option);
   });
   function text(id, value) { document.getElementById(id).textContent = value; }
-  function show(locale) {
+  function normalizeLocale(value) {
+    if (typeof value !== "string") { return null; }
+    var key = value.trim().toLowerCase();
+    if (key === "es-419") { key = "es"; }
+    return Object.prototype.hasOwnProperty.call(ui, key) ? key : null;
+  }
+  function updateLocation(locale) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("lang", locale);
+      window.history.replaceState(null, "", url.href);
+    } catch (error) {
+      // Some offline hosts restrict history updates. Reading still works.
+    }
+  }
+  function show(locale, updateUrl, fallbackUsed) {
     if (!Object.prototype.hasOwnProperty.call(ui, locale)) { locale = "ru"; }
     current = locale;
     var labels = ui[locale];
@@ -251,15 +266,39 @@ JS = """
     text("privacy", labels.privacy);
     text("skip", labels.skip);
     text("copy-status", "");
-    document.getElementById("config-text").setAttribute("aria-label", labels.downloadConfig);
+    var configField = document.getElementById("config-text");
+    configField.setAttribute("aria-label", labels.downloadConfig);
+    configField.value = data.configurations[locale];
+    var configLink = document.getElementById("config-link");
+    configLink.href = "machine/configurations/" + locale + ".json";
+    configLink.download = "SUTI-configuration-" + locale + ".json";
+    var fallback = document.getElementById("fallback-notice");
+    fallback.hidden = !fallbackUsed;
+    fallback.textContent = fallbackUsed ? labels.fallback : "";
+    if (updateUrl) { updateLocation(locale); }
   }
-  selector.addEventListener("change", function () { show(selector.value); });
-  document.getElementById("config-text").value = data.configuration;
+  selector.addEventListener("change", function () { show(selector.value, true, false); });
+  document.getElementById("config-link").addEventListener("click", function (event) {
+    if (typeof Blob !== "function" || typeof URL.createObjectURL !== "function") { return; }
+    event.preventDefault();
+    var blob = new Blob([document.getElementById("config-text").value + "\\n"], { type: "application/json;charset=utf-8" });
+    var objectUrl = URL.createObjectURL(blob);
+    var link = document.createElement("a");
+    link.href = objectUrl;
+    link.download = "SUTI-configuration-" + current + ".json";
+    link.hidden = true;
+    document.body.appendChild(link);
+    link.click();
+    window.setTimeout(function () { URL.revokeObjectURL(objectUrl); link.remove(); }, 1000);
+  });
   document.getElementById("copy-config").addEventListener("click", function () {
     var field = document.getElementById("config-text");
     var state = document.getElementById("config-details");
+    var copyLocale = current;
+    var copyValue = field.value;
     state.open = true;
     function fallback() {
+      if (current !== copyLocale) { return; }
       field.focus();
       field.select();
       var copied = false;
@@ -267,12 +306,18 @@ JS = """
       text("copy-status", copied ? ui[current].copied : ui[current].manualCopy);
     }
     if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(data.configuration).then(function () {
-        text("copy-status", ui[current].copied);
+      navigator.clipboard.writeText(copyValue).then(function () {
+        if (current === copyLocale) { text("copy-status", ui[current].copied); }
       }, fallback);
     } else { fallback(); }
   });
-  show(current);
+  function showRequestedLocale() {
+    var requested = new URLSearchParams(window.location.search).get("lang");
+    var locale = normalizeLocale(requested);
+    show(locale || "ru", false, Boolean(requested && !locale));
+  }
+  window.addEventListener("popstate", showRequestedLocale);
+  showRequestedLocale();
 }());
 """
 
@@ -281,13 +326,22 @@ def main():
     ui = json.loads((Path(__file__).parent / "ui-locales.json").read_text(encoding="utf-8"))
     if sorted(ui) != sorted(LOCALES):
         raise ValueError("UI labels must cover exactly the 13 declared locales")
+    required_ui_keys = set(ui["ru"])
+    for locale in LOCALES:
+        if set(ui[locale]) != required_ui_keys or any(not isinstance(value, str) or not value.strip() for value in ui[locale].values()):
+            raise ValueError("UI labels are incomplete for locale: " + locale)
     guides = {}
     for locale in LOCALES:
         guide = PACKAGE / "locales" / locale / "guide.md"
         guides[locale] = render_markdown(guide.read_text(encoding="utf-8"), guide)
-    config_path = PACKAGE / "machine/default-configuration.json"
-    configuration = json.dumps(json.loads(config_path.read_text(encoding="utf-8")), ensure_ascii=False, indent=2)
-    payload = json.dumps({"locales": LOCALES, "tags": LANG_TAGS, "ui": ui, "guides": guides, "configuration": configuration}, ensure_ascii=False)
+    configurations = {}
+    for locale in LOCALES:
+        config_path = PACKAGE / "machine/configurations" / (locale + ".json")
+        configuration = json.loads(config_path.read_text(encoding="utf-8"))
+        if configuration.get("locale") != locale:
+            raise ValueError("Configuration locale does not match its declared route: " + locale)
+        configurations[locale] = json.dumps(configuration, ensure_ascii=False, indent=2)
+    payload = json.dumps({"locales": LOCALES, "tags": LANG_TAGS, "ui": ui, "guides": guides, "configurations": configurations}, ensure_ascii=False)
     payload = payload.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
     ru = ui["ru"]
     page = '''<!doctype html>
@@ -297,7 +351,7 @@ def main():
 <title>@@TITLE@@ · SUTI</title><style>@@CSS@@</style></head>
 <body><a id="skip" class="skip-link" href="#guide">@@SKIP@@</a>
 <div class="shell"><header><p class="brand">SUTI.world · synaura × Syntaxium · 1.1.0-draft</p><h1 id="page-title">@@TITLE@@</h1><p id="intro" class="intro">@@INTRO@@</p></header>
-<nav id="language-controls" class="controls" aria-label="@@LANGUAGE@@"><div class="field"><label id="language-label" for="locale">@@LANGUAGE@@</label><select id="locale"></select></div><span id="draft-status" class="badge">@@DRAFT@@</span><a id="source-guide" class="source" href="locales/ru/guide.md">@@SOURCE@@</a></nav>
+<nav id="language-controls" class="controls" aria-label="@@LANGUAGE@@"><div class="field"><label id="language-label" for="locale">@@LANGUAGE@@</label><select id="locale"></select></div><span id="draft-status" class="badge">@@DRAFT@@</span><a id="source-guide" class="source" href="locales/ru/guide.md">@@SOURCE@@</a><span id="fallback-notice" class="copy-status" role="status" hidden></span></nav>
 <main><article id="guide" class="guide" tabindex="-1">@@GUIDE@@</article>
 <section class="machine-panel" aria-labelledby="machine-title"><h2 id="machine-title">@@MACHINE@@</h2>
 <div class="downloads"><a id="contract-link" href="machine/contract.json" download>@@CONTRACT@@</a><a id="schema-link" href="machine/envelope.schema.json" download>@@SCHEMA@@</a><a id="config-link" href="machine/default-configuration.json" download>@@CONFIG@@</a></div>

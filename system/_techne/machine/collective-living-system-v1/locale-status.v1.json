@@ -11,7 +11,8 @@
       "contours": 13,
       "status": "source-draft",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "1d50a5516049850e8c01f9ac8c68b48a0be5fbaf47aff555600338a2f4575dd4"
     },
     {
       "locale": "en",
@@ -20,7 +21,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "67efa0ea16f81290b7365370de56d33a6fbb5ce5807d8de97ae9490401c51b3a"
     },
     {
       "locale": "es",
@@ -29,7 +31,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "1001768faca6714f9fabb580e635e91266fa61c68940762eef60dd5ddd0146c0"
     },
     {
       "locale": "pt-br",
@@ -38,7 +41,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "41b417ca7a4b2e95d3286214f14a38ca2de7f03a6d946da6ef34832f62e4a102"
     },
     {
       "locale": "zh-hans",
@@ -47,7 +51,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "10301521eaf70c7a6d337aa2788ed9f87a42c62f390a24daab292c38ad64a526"
     },
     {
       "locale": "hi",
@@ -56,7 +61,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "1ed6343af8c37882f0ac0449d9e64f01c20a90c8931913f73f63db677f531cca"
     },
     {
       "locale": "fr",
@@ -65,7 +71,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "7e42288b339ac79a1e7bda7c7a52ed117d466b18ad3b01d52b3fa4fdf0e6d75c"
     },
     {
       "locale": "ar",
@@ -74,7 +81,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "9a5bb51bf459a3504a86a7c5edb15d29ec6ef2623f8dacb2600b57fbad5fa5f5"
     },
     {
       "locale": "bn",
@@ -83,7 +91,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "4e6090ae01bc332858b0bd6c2920c8cd72fc31b8abd909f858611149a5229af2"
     },
     {
       "locale": "eo",
@@ -92,7 +101,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "ca4151b77dde64b9b73e51c93cb0bb92b14ced733e6a3ee1b2172832e86dbf53"
     },
     {
       "locale": "sa",
@@ -101,7 +111,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "8c0418cac1728295b51d6131eb6a3f13ba31616921b9cb91bc45608caba139dd"
     },
     {
       "locale": "la",
@@ -110,7 +121,8 @@
       "contours": 13,
       "status": "direct-source-draft-unreviewed",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "33b6734f10703bfa782be76ef0d56ae31bc1842151f4a50eca49c08caf93706a"
     },
     {
       "locale": "yzh",
@@ -119,7 +131,8 @@
       "contours": 13,
       "status": "not-started-author-gloss-required",
       "native_review": "pending",
-      "release": "HOLD"
+      "release": "HOLD",
+      "target_sha256": "b69b1802a9fbd469d1a02f66e38041bed257ccf87c8cbd43f8fb038d6bb1e95a"
     }
   ],
   "contours": [
@@ -1644,5 +1657,11 @@
       "release": "HOLD",
       "source_sha256": "a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b312"
     }
-  ]
+  ],
+  "editorial_qa": {
+    "date": "2026-11-13",
+    "kind": "AI-assisted source comparison and clear editorial corrections",
+    "native_review": "pending",
+    "details": "system/language-coverage.json"
+  }
 }

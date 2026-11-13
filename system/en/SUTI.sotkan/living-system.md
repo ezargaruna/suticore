@@ -15,6 +15,6 @@ A verifiable provenance trace.
 
 Text similarity does not establish authorship, licensing or transfer of rights.
 
-[SUTI · a shared living system](../living-system.md) · [Life-support fund and agency of care angels](../care-90-days.md)
+[SUTI · a shared living system](../living-system.md) · [Fund supporting life and people who love life · agency of care angels](../care-90-days.md)
 
 [ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)

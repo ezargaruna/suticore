@@ -79,4 +79,4 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 بدأت دورة التحضير المحلية في 2026-11-13. اليوم 90 يوافق 2027-02-10. التسجيل والاختصاص القانوني والإدارة والبنك وقواعد التبرعات والنظام الضريبي ما زالت UNKNOWN؛ ولم تُفعَّل المعاملات المالية.
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · المصدر الروسي](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

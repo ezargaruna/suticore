@@ -6,6 +6,7 @@ state :: not-started-author-gloss-required
 release :: HOLD
 source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b312
 
+Язэхъ :: русская смысловая развёртка / HOLD. Авторская языковая редакция этой страницы не создана; нужны глосс и проверка автора.
 
 проект открытой поддержки полезных инициатив: обучение, доступные инструменты, взаимопомощь и забота о живой среде. Название рабочее; участие и образ ангела добровольны.
 
@@ -45,4 +46,4 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 [SUTI · Язэхъ · смысловая развёртка](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · русский источник](../_techne/machine/collective-living-system-v1/source.ru.json)

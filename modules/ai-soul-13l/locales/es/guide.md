@@ -23,7 +23,7 @@ state: LOCAL_DRAFT / RELEASE_HOLD
 <!-- suti:section:voice-memory -->
 ## cómo se configura el carácter
 
-La voz describe rasgos observables de la respuesta: ritmo, vocabulario, estructura e imágenes. El carácter es una conducta repetible definida por políticas y configuración. La memoria solo contiene contexto seleccionado deliberadamente, con controles para consultarlo, corregirlo, exportarlo y borrarlo. Cuidar significa ofrecer opciones consideradas, no tutela ni disponibilidad garantizada.
+La voz describe rasgos observables de la respuesta: ritmo, vocabulario, estructura e imágenes. El carácter es una conducta repetible definida por políticas y configuración. La memoria solo contiene contexto seleccionado deliberadamente, con controles para consultarlo, corregirlo, exportarlo y borrarlo. Cuidar significa ofrecer opciones respetuosas, no tutela ni disponibilidad garantizada.
 
 <!-- suti:section:systems -->
 ## contorno de sistemas SUTI
@@ -119,7 +119,7 @@ el sistema no sustituye la atención médica, psicológica, jurídica ni de emer
 ## versión, procedencia y uso autónomo
 
 versión de esta compilación :: 1.1.0-draft
-fuente :: maestro en ruso; las ediciones de destino se comparan directamente con él
+fuente :: texto fuente en ruso; las ediciones de destino se comparan directamente con él
 verificación :: estructura, ejemplos y contenido del paquete se comprueban por separado del idioma, la cultura, la accesibilidad y el funcionamiento del servicio
 publicación :: decisión separada del propietario que indique el contenido exacto y el canal
 reversión :: los archivos anteriores se conservan en una copia de seguridad local

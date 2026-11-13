@@ -1,4 +1,4 @@
-# SUTI · 共同的活系统
+# SUTI · 共同的活态系统
 
 locale :: zh-hans
 source_locale :: ru
@@ -71,7 +71,7 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 ## [SUTI.verenium · 关怀导航](SUTI.verenium/living-system.md)
 
-帮助人们选择力所能及的帮助和自己的行动
+帮助人们选择可行的支持方式和自己的下一步行动
 
 ## [支持生命与热爱生命者的基金 · 关怀天使机构](care-90-days.md)
 
@@ -79,4 +79,4 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 本地筹备周期于2026-11-13开始。第90天为2027-02-10。注册、司法管辖区、管理人员、银行、捐赠规则和税务制度均为UNKNOWN；资金操作尚未启用。
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · 俄语来源](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

@@ -3,7 +3,7 @@
   "source_locale": "ru",
   "version": "2026-11-13.v1",
   "title": "SUTI · systema commune vivum",
-  "intro": "systema publicum methodorum et operis communis: rem gravem intellegere, verba invenire, gradum possibilem eligere. Quisque particeps auctoritatem operis sui et ius corrigendi, recusandi atque discedendi retinet.",
+  "intro": "systema publicum methodorum et operis communis: rem gravem intellegere, verba invenire, gradum possibilem eligere. Quisque particeps auctor operis sui manet et ius corrigendi, recusandi atque discedendi retinet.",
   "status": "novus ordo communis operandi: adumbratio editorialis localis; recognitio linguistica independens exspectatur; constitutio iuridica fundationis, pecuniae acceptio, rete mundanum operans et publicatio nondum comprobata sunt",
   "cycle": "quaestio → verba → nexus → tabula → gradus → vestigium → emendatio",
   "privacy": "in ambitu publico methodi, praecepta generalia et exempla comprobata manent. Notae personales, indicia contactus, commercium epistularum et res sensibiles separatim servantur nec in exportationem communem includuntur.",
@@ -47,14 +47,14 @@
     ]
   ],
   "fund_roles": "responsabilis programmatis; pecunia et rationum collatio independens; tutela datorum et securitas participum; recognitores linguarum; coordinatores experimenti; examen independens appellationum. Munera proponuntur; homines nondum nominati sunt.",
-  "fund_metrics": "participationem consentaneam, actiones utiles perfectas, tempus responsi, accessibilitatem, correctiones et impensas veras observare. Fines et limina numerica ante experimentum probantur; propagatio celeris et ambitus mundanus non praestantur.",
+  "fund_metrics": "participationem cui participes consenserunt, actiones utiles perfectas, tempus responsi, accessibilitatem, correctiones et impensas veras observare. Fines et limina numerica ante experimentum probantur; propagatio celeris et ambitus mundanus non praestantur.",
   "fund_pause": "discrepantia pecuniae et relationis, violatio consensus, effluxus datorum, querela de damno aut absentia responsabilis processum pertinentem sistunt; examen et decisio humana sequuntur.",
   "contours": [
     {
       "id": "SUTI.os",
       "title": "ordinatio systematis",
       "purpose": "fines, instrumenta, conservationem et restitutionem concordare",
-      "procedure": "opus et ambitum elige → initium et effectum describe → aditum et reditum examina → praeceptum operandi serva",
+      "procedure": "opus et ambitum elige → materiam acceptam et exitum exspectatum describe → aditum et reditum examina → praeceptum operandi serva",
       "output": "tabula ambitus et gradus operandi iterabilis",
       "boundary": "descriptio neque systema institutum neque securitatem comprobat"
     },
@@ -79,7 +79,7 @@
       "title": "cooperatio",
       "purpose": "munera, contributiones et fines participationis concordare",
       "procedure": "opus commune defini → participationem expressam pete → de iuribus et munere conveni → decisionem serva",
-      "output": "consensus participum et tabula responsabilitatum",
+      "output": "conventio participum et tabula responsabilitatum",
       "boundary": "nomen hominis vel institutionis in tabula neque societatem neque consensum significat"
     },
     {
@@ -104,7 +104,7 @@
       "purpose": "rem essentialem in artefacto per se intellegibili servare",
       "procedure": "quaestionem et fontem distingue → rem invariantem nomina → exemplum et limitem monstra → gradum proximum adde",
       "output": "scheda rei essentialis cum fonte et contextu",
-      "boundary": "brevitas amissionem condicionum, auctoritatis aut incertitudinis non excusat"
+      "boundary": "brevitas amissionem condicionum, indicii auctoris aut incertitudinis non excusat"
     },
     {
       "id": "SUTI.oracle",

@@ -11,10 +11,10 @@ munera, contributiones et fines participationis concordare
 
 opus commune defini → participationem expressam pete → de iuribus et munere conveni → decisionem serva
 
-consensus participum et tabula responsabilitatum
+conventio participum et tabula responsabilitatum
 
 nomen hominis vel institutionis in tabula neque societatem neque consensum significat
 
 [SUTI · systema commune vivum](../living-system.md) · [fundus ad vitam sustinendam et ad eos adiuvandos qui vitam amant · agentia angelorum curae](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fons](../../_techne/machine/collective-living-system-v1/source.ru.json)

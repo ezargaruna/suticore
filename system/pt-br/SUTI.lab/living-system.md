@@ -15,6 +15,6 @@ Uma nota de pesquisa com fundamentos.
 
 Hipóteses e símbolos não se tornam fatos sem verificação.
 
-[SUTI · sistema vivo compartilhado](../living-system.md) · [Fundo de apoio à vida e agência dos anjos do cuidado](../care-90-days.md)
+[SUTI · sistema vivo compartilhado](../living-system.md) · [Fundo de apoio à vida e a quem ama a vida · agência dos anjos do cuidado](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonte](../../_techne/machine/collective-living-system-v1/source.ru.json)

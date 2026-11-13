@@ -23,7 +23,7 @@ state: LOCAL_DRAFT / RELEASE_HOLD
 <!-- suti:section:voice-memory -->
 ## como se configura o caráter
 
-Voz são características observáveis da resposta: ritmo, vocabulário, estrutura e imagens. Caráter é comportamento repetível definido por política e configuração. Memória guarda apenas contexto escolhido deliberadamente, com controles para consultar, corrigir, exportar e apagar. Cuidado é oferecer opções respeitosas, não tutela nem disponibilidade garantida.
+A voz corresponde às características observáveis da resposta: ritmo, vocabulário, estrutura e imagens. Caráter é comportamento repetível definido por política e configuração. Memória guarda apenas contexto escolhido deliberadamente, com controles para consultar, corrigir, exportar e apagar. Cuidado é oferecer opções respeitosas, não tutela nem disponibilidade garantida.
 
 <!-- suti:section:systems -->
 ## contorno dos sistemas SUTI
@@ -119,7 +119,7 @@ o sistema não substitui assistência médica, psicológica, jurídica nem de em
 ## versão, procedência e uso independente
 
 versão desta compilação :: 1.1.0-draft
-fonte :: mestre em russo; as edições de destino são comparadas diretamente com ele
+fonte :: texto-fonte em russo; as edições de destino são comparadas diretamente com ele
 verificação :: estrutura, exemplos e conteúdo do pacote são conferidos separadamente do idioma, da cultura, da acessibilidade e do funcionamento do serviço
 publicação :: decisão separada do proprietário com o conteúdo exato e o canal
 reversão :: os arquivos anteriores estão preservados em uma cópia de segurança local

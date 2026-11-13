@@ -31,5 +31,38 @@
   "source_path_base": "package-root",
   "guide_path": "locales/bn/guide.md",
   "source_vault_sha256": "61b51ce83b1ffdc18c8654a3b32a66fc2abb838d5598edd447530c069388eeaa",
-  "package_transformation": "relative machine link rebasing only"
+  "package_transformation": "relative machine link rebasing only",
+  "editorial_audit": {
+    "audited_at": "2026-11-13",
+    "kind": "MODEL_ASSISTED_SECOND_PASS",
+    "source_basis": "package Russian master and published frozen core source",
+    "guide_section_ids_present": [
+      "meaning",
+      "voice-memory",
+      "systems",
+      "workflow",
+      "authority-data",
+      "configuration",
+      "maturity-release",
+      "quick-start",
+      "parameters",
+      "worked-example",
+      "recovery",
+      "version-trace"
+    ],
+    "guide_parameter_rows": 8,
+    "guide_recovery_cases": 7,
+    "exact_Russian_worked_example_preserved": true,
+    "unexplained_Russian_body_leaks": 0,
+    "independent_native_certification": false,
+    "status": "INDEPENDENT_NATIVE_AND_MEANING_REVIEW_PENDING",
+    "core_companion_pages_reviewed": 15,
+    "guide_fix_count": 1,
+    "open_review": [
+      "Independent meaning and terminology review",
+      "Native-script font shaping, wrapping, keyboard and screen-reader review",
+      "Owner acceptance and exact release decision",
+      "Runtime and deployed-tool behavior remain separate from this prose audit"
+    ]
+  }
 }

@@ -43,6 +43,6 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 依据标准核对结果，经许可后发布符合条件的匿名报告，决定下一周期及适用地区
 
-[SUTI · 共同的活系统](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[SUTI · 共同的活态系统](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · 俄语来源](../_techne/machine/collective-living-system-v1/source.ru.json)

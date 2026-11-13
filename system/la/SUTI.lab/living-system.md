@@ -17,4 +17,4 @@ hypothesis et symbolum sine probatione non fiunt res comprobatae
 
 [SUTI · systema commune vivum](../living-system.md) · [fundus ad vitam sustinendam et ad eos adiuvandos qui vitam amant · agentia angelorum curae](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fons](../../_techne/machine/collective-living-system-v1/source.ru.json)

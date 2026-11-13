@@ -17,4 +17,4 @@ PASS केवलं निर्दिष्टसंस्करणस्य �
 
 [SUTI · सामान्य जीवन्तव्यवस्था](../living-system.md) · [जीवनस्य जीवनप्रेमिणां च समर्थननिधिः · परिचर्यादूतानां संस्था](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · रूसीस्रोतः](../../_techne/machine/collective-living-system-v1/source.ru.json)

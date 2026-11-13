@@ -17,4 +17,4 @@ NITYA ও Samurai Dharma খেলার মাধ্যমে দক্ষত�
 
 [SUTI · যৌথ জীবন্ত ব্যবস্থা](../living-system.md) · [জীবন ও জীবনপ্রেমীদের সহায়তা তহবিল · যত্নের দেবদূতদের সংস্থা](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · রুশ উৎস](../../_techne/machine/collective-living-system-v1/source.ru.json)

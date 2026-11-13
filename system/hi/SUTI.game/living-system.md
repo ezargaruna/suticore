@@ -17,4 +17,4 @@ NITYA और Samurai Dharma खेलों के माध्यम से क
 
 [SUTI · साझा जीवंत प्रणाली](../living-system.md) · [जीवन और जीवनप्रेमियों की सहायता निधि · देखभाल के फ़रिश्तों की एजेंसी](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · रूसी स्रोत](../../_techne/machine/collective-living-system-v1/source.ru.json)

@@ -15,6 +15,6 @@ Un mapa de afirmaciones y fundamentos.
 
 Es un método de revisión; no predice ni decide de forma autónoma.
 
-[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y agencia de ángeles del cuidado](../care-90-days.md)
+[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y a quienes aman la vida · agencia de ángeles del cuidado](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fuente](../../_techne/machine/collective-living-system-v1/source.ru.json)

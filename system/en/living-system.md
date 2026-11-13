@@ -73,7 +73,7 @@ Preserve meaning across languages and settings.
 
 Help people choose feasible support and their own step.
 
-## [Life-support fund and agency of care angels](care-90-days.md)
+## [Fund supporting life and people who love life · agency of care angels](care-90-days.md)
 
 A proposed open programme supporting useful initiatives: learning, accessible tools, mutual aid and care for the living environment. The name is provisional; participation and angel imagery are optional.
 

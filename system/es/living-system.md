@@ -73,10 +73,10 @@ Conservar el sentido entre idiomas y entornos.
 
 Ayudar a elegir apoyo posible y un paso propio.
 
-## [Fondo de apoyo a la vida y agencia de ángeles del cuidado](care-90-days.md)
+## [Fondo de apoyo a la vida y a quienes aman la vida · agencia de ángeles del cuidado](care-90-days.md)
 
 Propuesta de un programa abierto para apoyar iniciativas útiles: aprendizaje, herramientas accesibles, ayuda mutua y cuidado del entorno vivo. El nombre es provisional; la participación y la imagen del ángel son opcionales.
 
 El ciclo local de preparación comenzó el 13 de noviembre de 2026. El día 90 es el 10 de febrero de 2027. El registro, la jurisdicción, los responsables de gestión, el banco, las reglas de donación y el régimen fiscal siguen UNKNOWN; no se han activado operaciones financieras.
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · fuente](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

@@ -79,4 +79,4 @@ NITYA ও Samurai Dharma খেলার মাধ্যমে দক্ষত�
 
 স্থানীয় প্রস্তুতি চক্র শুরু হয়েছে 2026-11-13 তারিখে। ৯০তম দিন হলো 2027-02-10। নিবন্ধন, আইনগত এখতিয়ার, পরিচালনাকারী, ব্যাংক, অনুদানের নিয়ম ও করব্যবস্থা এখনও UNKNOWN; আর্থিক লেনদেন চালু করা হয়নি।
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · রুশ উৎস](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

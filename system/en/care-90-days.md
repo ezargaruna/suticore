@@ -1,4 +1,4 @@
-# Life-support fund and agency of care angels
+# Fund supporting life and people who love life · agency of care angels
 
 locale :: en
 source_locale :: ru

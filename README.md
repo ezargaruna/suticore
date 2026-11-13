@@ -6,7 +6,7 @@ This repository contains public specifications, the canonical source and deploym
 
 ## Choose a starting point
 
-- [Common living system · thirteen routes](https://ezargaruna.github.io/suticore/system/) · [13-language system guide and configurations](https://ezargaruna.github.io/suticore/modules/ai-soul-13l/) · [portable review release](https://github.com/ezargaruna/SUTI.os/releases/tag/living-system-2026-11-13). Published as unreviewed authorial drafts; the common layer's YZH route remains a Russian-gloss/HOLD scaffold. Source snapshots do not activate services or financial operations; see [publication scope](system/publication-note.html).
+- [Common living system · thirteen routes](https://ezargaruna.github.io/suticore/system/) · [13-language system guide and configurations](https://ezargaruna.github.io/suticore/modules/ai-soul-13l/) · [portable review release](https://github.com/ezargaruna/SUTI.os/releases/tag/living-system-2026-11-13-qa2). Published as unreviewed authorial drafts; the common layer's YZH route remains a Russian-gloss/HOLD scaffold. Source snapshots do not activate services or financial operations; see [publication scope](system/publication-note.html).
 
 - [Open SUTI.world](https://suti.world/) — language practice, care navigation, and the public project entry.
 - [Care atlas](https://ezargaruna.github.io/suticore/care-atlas.html) · [private care map](https://ezargaruna.github.io/suticore/care-map.html) · [Verenium workshop](https://ezargaruna.github.io/suticore/verenium.html) · [complete offline bundle](https://ezargaruna.github.io/suticore/downloads/Verenium.zip). The workshop stores notes only when the visitor exports them.
@@ -50,3 +50,5 @@ Check the license and provenance attached to each artifact. The repository licen
 `CANON ≠ RUNTIME ≠ PUBLIC`
 
 `PASS ≠ COMMIT ≠ PUBLICATION`
+
+The 13 November QA correction checks every language route, selected-locale configuration downloads, source links and RTL metadata. See [the per-language coverage matrix](system/language-coverage.json). Detailed fund planning remains RU/EN and the full bot specification RU-only; independent language acceptance is pending.

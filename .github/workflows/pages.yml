@@ -58,7 +58,7 @@ jobs:
           cp -R system _site/system
           cp -R modules/ai-soul-13l _site/modules/ai-soul-13l
           cp modules/ai-soul-13l.NOTICE.md _site/modules/ai-soul-13l.NOTICE.md
-          cp downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip.sha256 _site/downloads/
+          cp downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip downloads/SUTI-ai-soul-system-contour-13L-v1.1.0-draft.zip.sha256 downloads/SUTI-ai-soul-system-contour-13L-v1.1.1-draft.zip downloads/SUTI-ai-soul-system-contour-13L-v1.1.1-draft.zip.sha256 _site/downloads/
           cp -R modules/verenium _site/modules/
           cp -R modules/synaura _site/modules/
           cp modules/index.html _site/modules/index.html

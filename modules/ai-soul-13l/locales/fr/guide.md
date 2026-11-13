@@ -119,7 +119,7 @@ le système ne remplace pas une assistance médicale, psychologique, juridique o
 ## version, provenance et usage autonome
 
 version de cet assemblage :: 1.1.0-draft
-source :: maître russe ; les éditions cibles sont comparées directement avec lui
+source :: texte source russe ; les éditions cibles sont comparées directement avec lui
 vérification :: structure, exemples et contenu du paquet sont contrôlés séparément de la langue, de la culture, de l’accessibilité et du fonctionnement du service
 publication :: décision distincte du propriétaire précisant le contenu exact et le canal
 retour arrière :: les fichiers précédents sont conservés dans une sauvegarde locale

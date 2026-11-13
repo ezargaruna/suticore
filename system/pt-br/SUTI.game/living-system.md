@@ -15,6 +15,6 @@ Experiência de prática e um próximo passo próprio.
 
 O jogo é voluntário; pausa, pular e sair ficam disponíveis; percursos por idade exigem revisão específica.
 
-[SUTI · sistema vivo compartilhado](../living-system.md) · [Fundo de apoio à vida e agência dos anjos do cuidado](../care-90-days.md)
+[SUTI · sistema vivo compartilhado](../living-system.md) · [Fundo de apoio à vida e a quem ama a vida · agência dos anjos do cuidado](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonte](../../_techne/machine/collective-living-system-v1/source.ru.json)

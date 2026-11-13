@@ -15,6 +15,6 @@ Una microlección, un ejemplo y retroalimentación.
 
 El aprendizaje no sustituye ayuda profesional ni acreditaciones.
 
-[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y agencia de ángeles del cuidado](../care-90-days.md)
+[SUTI · sistema vivo compartido](../living-system.md) · [Fondo de apoyo a la vida y a quienes aman la vida · agencia de ángeles del cuidado](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fuente](../../_techne/machine/collective-living-system-v1/source.ru.json)

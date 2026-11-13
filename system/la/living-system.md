@@ -9,7 +9,7 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 novus ordo communis operandi: adumbratio editorialis localis; recognitio linguistica independens exspectatur; constitutio iuridica fundationis, pecuniae acceptio, rete mundanum operans et publicatio nondum comprobata sunt
 
-systema publicum methodorum et operis communis: rem gravem intellegere, verba invenire, gradum possibilem eligere. Quisque particeps auctoritatem operis sui et ius corrigendi, recusandi atque discedendi retinet.
+systema publicum methodorum et operis communis: rem gravem intellegere, verba invenire, gradum possibilem eligere. Quisque particeps auctor operis sui manet et ius corrigendi, recusandi atque discedendi retinet.
 
 quaestio → verba → nexus → tabula → gradus → vestigium → emendatio
 
@@ -81,4 +81,4 @@ propositum apertum ad incepta utilia sustinenda: doctrinam, instrumenta accessib
 
 die 13 Novembris 2026 cyclus localis praeparationis inceptus est. Dies 90 est 10 Februarii 2027. Inscriptio, iurisdictio, administratores, argentaria, regulae donationum et ratio tributorum adhuc UNKNOWN sunt; operationes pecuniariae non sunt activatae.
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · fons](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

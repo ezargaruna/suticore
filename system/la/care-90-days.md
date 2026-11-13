@@ -15,7 +15,7 @@ petitio aperta sine rebus sensibilibus → convenientiam cum proposito et facult
 
 responsabilis programmatis; pecunia et rationum collatio independens; tutela datorum et securitas participum; recognitores linguarum; coordinatores experimenti; examen independens appellationum. Munera proponuntur; homines nondum nominati sunt.
 
-participationem consentaneam, actiones utiles perfectas, tempus responsi, accessibilitatem, correctiones et impensas veras observare. Fines et limina numerica ante experimentum probantur; propagatio celeris et ambitus mundanus non praestantur.
+participationem cui participes consenserunt, actiones utiles perfectas, tempus responsi, accessibilitatem, correctiones et impensas veras observare. Fines et limina numerica ante experimentum probantur; propagatio celeris et ambitus mundanus non praestantur.
 
 discrepantia pecuniae et relationis, violatio consensus, effluxus datorum, querela de damno aut absentia responsabilis processum pertinentem sistunt; examen et decisio humana sequuntur.
 
@@ -45,4 +45,4 @@ effectus cum criteriis conferre, relationem permissam et personarum indiciis pri
 
 [SUTI · systema commune vivum](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fons](../_techne/machine/collective-living-system-v1/source.ru.json)

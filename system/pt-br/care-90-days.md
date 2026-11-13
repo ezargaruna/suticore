@@ -1,4 +1,4 @@
-# Fundo de apoio à vida e agência dos anjos do cuidado
+# Fundo de apoio à vida e a quem ama a vida · agência dos anjos do cuidado
 
 locale :: pt-br
 source_locale :: ru
@@ -45,4 +45,4 @@ Comparar resultados com critérios, publicar um relatório anonimizado adequado 
 
 [SUTI · sistema vivo compartilhado](living-system.md) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonte](../_techne/machine/collective-living-system-v1/source.ru.json)

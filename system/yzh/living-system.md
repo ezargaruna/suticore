@@ -81,4 +81,4 @@ source_sha256 :: a546e8b55ba1f9ab230d5001e68ad7caed47a02a7afc3542535413b9a138b31
 
 13 ноября 2026 начат локальный цикл подготовки. День 90 — 10 февраля 2027. Регистрация, юрисдикция, управляющие, банк, правила пожертвований и налоговый режим пока UNKNOWN; денежные операции не активированы.
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · русский источник](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)

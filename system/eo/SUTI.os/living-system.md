@@ -1,4 +1,4 @@
-# SUTI.os · sistema aranĝo
+# SUTI.os · aranĝo de la sistemo
 
 locale :: eo
 source_locale :: ru
@@ -17,4 +17,4 @@ priskribo ne konfirmas instalitan sistemon aŭ sekurecon
 
 [SUTI · komuna vivanta sistemo](../living-system.md) · [fonduso por subteni la vivon kaj tiujn, kiuj amas la vivon · agentejo de zorgaj anĝeloj](../care-90-days.md)
 
-[ru · source](../../_techne/machine/collective-living-system-v1/source.ru.json)
+[ru · fonto](../../_techne/machine/collective-living-system-v1/source.ru.json)

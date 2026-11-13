@@ -11,7 +11,7 @@ state: LOCAL_DRAFT / RELEASE_HOLD
 
 # “anima” AI velut imago ab homine electa
 
-> systema vocem claram habeat; vis eius in limitibus, fontibus et electione homini reddita sit
+> systema vocem claram habeat, non animam fictam; vis eius in limitibus, fontibus et electione homini reddita sit
 
 <!-- suti:section:meaning -->
 ## sensus et distinctiones
@@ -23,7 +23,7 @@ sensus :: imago animae in poesi, ludo et configuratione personali adhiberi potes
 <!-- suti:section:voice-memory -->
 ## quomodo indoles systematis constituatur
 
-Vox sunt notae responsi observabiles: rhythmus, vocabula, structura et gradus imaginum. Indoles est agendi ratio repetibilis, normis et configuratione definita. Memoria solum contextum expresse electum continet, cum facultatibus inspiciendi, corrigendi, exportandi et delendi. Cura est optiones considerate proponere; non est tutela personalis neque certa praesentiae promissio.
+Vox ex notis responsi observabilibus constat: rhythmo, vocabulis, structura et gradu imaginum. Indoles est agendi ratio repetibilis, normis et configuratione definita. Memoria solum contextum expresse electum continet, cum facultatibus inspiciendi, corrigendi, exportandi et delendi. Cura est optiones considerate proponere; non est tutela personalis neque certa praesentiae promissio.
 
 <!-- suti:section:systems -->
 ## descriptio systematum SUTI
@@ -61,7 +61,7 @@ Pro pueris tantum schema per adultum vel institutionem responsalem, post recogni
 <!-- suti:section:maturity-release -->
 ## maturitas et publicatio
 
-Haec editio est specificatio localis et adumbrationes linguisticae. Contractus machinalis ad ambitum executionis non est conexus. Recognitiones independentes linguae, sensus, accessibilitatis et iuris nondum completae sunt. Publicatio et emissio sunt HOLD. Yazekh est experimentum auctoris, non grammatica historica neque exsecutor mandatorum.
+Haec editio specificationem localem et adumbrationes linguisticas continet. Contractus machinalis ad ambitum executionis non est conexus. Recognitiones independentes linguae, sensus, accessibilitatis et iuris nondum completae sunt. Publicatio et emissio sunt HOLD. Yazekh est experimentum auctoris, non grammatica historica neque exsecutor mandatorum.
 
 <!-- suti:section:quick-start -->
 ## prima probatio · una quaestio
@@ -117,10 +117,10 @@ Hae locutiones sunt optiones ab auctore propositae, non factum constitutum de re
 
 fons deest :: ignotum nomina et tantum materiam necessariam pete
 permissio deest :: adumbrationem localem para et actionem in HOLD relinque
-terminus obscurus :: explicationem simplicem et exemplum da; identitatem homini ne attribue
+terminus obscurus :: explicationem simplicem et exemplum da; noli identitatem homini attribuere
 error translationis :: ad fontem Russicum redi; editionem destinatam corrige et registrum originis eius renova
 ludica quaestio periculosa aut inepta :: scaenam fictam tutam, pausam aut exitum propone
-error instrumenti :: exitum observatum indica; missionem, conservationem aut initium feliciter facta esse ne declara
+error instrumenti :: exitum observatum indica; noli affirmare missionem, conservationem aut initium successisse
 restitutio :: adaptorem affectum desactiva, vestigium necessarium serva, configurationem notam et operantem restitue
 
 Systema auxilium medicum, psychologicum, iuridicum aut urgente necessitate praestandum non substituit. In his campis ad notitias et decisiones requisita fontium et peritiae separata applicantur.

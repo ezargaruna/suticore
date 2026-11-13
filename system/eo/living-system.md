@@ -21,7 +21,7 @@ aŭtoreco, videbleco, permesilo kaj permesitaj agoj estas difinataj aparte por �
 
 proponu ŝanĝon kun fonto kaj kialo → priskribu la kontrolon → petu konsenton de la koncernaj partoprenantoj → respondeculo akceptas aŭ prokrastas la ŝanĝon → konservu la spuron kaj eblon malfari
 
-## [SUTI.os · sistema aranĝo](SUTI.os/living-system.md)
+## [SUTI.os · aranĝo de la sistemo](SUTI.os/living-system.md)
 
 interkonsenti pri limoj, iloj, konservado kaj restarigo
 
@@ -79,4 +79,4 @@ projekto por malferme subteni utilajn iniciatojn: lernadon, alireblajn ilojn, in
 
 la loka prepara ciklo komenciĝis la 13-an de novembro 2026. Tago 90 estas la 10-a de februaro 2027. Registrado, jurisdikcio, administrantoj, banko, donacreguloj kaj imposta reĝimo restas UNKNOWN; monaj operacioj ne estas aktivigitaj.
 
-[ru · source](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
+[ru · fonto](../_techne/machine/collective-living-system-v1/source.ru.json) · [SUTI](../_techne/human/collective-living-system-v1/README.md)
