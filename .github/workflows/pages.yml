@@ -37,10 +37,12 @@ jobs:
           with ZipFile('downloads/Virenium.zip') as z:
               assert z.testzip() is None
               assert Path('downloads/Verenium.zip').read_bytes() == Path('downloads/Virenium.zip').read_bytes()
-              for name in ['nitya.html','nitya-todeus.html','verenium.html','modules/verenium/telegram/bot.py','modules/verenium/telegram/README.md','modules/verenium/entry-locales.json','modules/verenium/protocol.md','modules/verenium/README.md','modules/verenium/manifest.json','virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
+              for name in ['nitya.html','nitya-todeus.html','downloads/SUTI.verenium.md','verenium.html','modules/verenium/telegram/bot.py','modules/verenium/telegram/README.md','modules/verenium/entry-locales.json','modules/verenium/protocol.md','modules/verenium/README.md','modules/verenium/manifest.json','virenium.html','care-map.html','care-atlas.html','SUTI.os.zip','SUTI.os.zip.sha256',*map(str,Path('assets/care').glob('*.png'))]:
                   source = Path('downloads', name) if name.startswith('SUTI.os.') else Path(name)
                   assert z.read(name) == source.read_bytes(), name
           PY
+          python3 -B scripts/build_verenium_workshop.py --check
+          python3 scripts/sync_single_interface_routes.py verenium.html
           python3 scripts/build_care_atlas_editions.py
           python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
           python3 scripts/verify_care_atlas_locales.py

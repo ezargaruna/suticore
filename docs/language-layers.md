@@ -65,6 +65,14 @@ visible labels that had bypassed those markers; all 300 marked strings now have
 values in each active runtime dictionary. See
 [`docs/audits/2026-11-04-suti-world-language-audit.md`](audits/2026-11-04-suti-world-language-audit.md).
 
+## VereNium workshop
+
+[The local workshop](https://ezargaruna.github.io/suticore/verenium.html?lang=en) has twelve written interface editions. This covers its four routes, prompts, depth controls and import and export messages. The Yazekh choice explicitly displays the Russian edition. Editorial translations await independent review, including a fluent Esperanto reviewer and qualified Sanskrit and Latin reviewers.
+
+Language and route are carried through standalone and embedded links. The offline bundle includes the same workshop and retains v1/v2 profile compatibility. Notes remain in the tab until the visitor explicitly saves a local file. The separate Google form and linked PDFs, archives, protocol and care resources have their own languages and terms. In the offline bundle the linked care atlas is Russian.
+
+Source: the existing public workshop and newly written editorial translations. The translated interface introduces no new external assets or media license. The ZIP keeps the previous bundle members and refreshes the workshop and its legacy alias. See [locale source and scope](../locales/verenium/README.md).
+
 ## Research collaboration brief
 
 `docs/research/SUTI_RESEARCH_COLLABORATION.md` has an English canonical edition.

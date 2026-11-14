@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · officina curae",
+  "kicker": "∴ SUTI.world · officina in hoc instrumento",
+  "byline": "SUTI.verenium · comes in cura",
+  "intro": "quid tibi hodie prosit? viam elige. annotationes in hac pagina manent, dum eam apertam tenes. exemplum ipse servare potes.",
+  "language": "lingua officinae",
+  "stop": "hic consistere licet",
+  "review": "versio editoria · recognitio a perito Latinitatis exspectatur",
+  "activation": "uno gradu incipe",
+  "activationText": "formam initialem adhibe. ea Verenium, viam curae et unum quaesitum proponit. annotationes tuae integrae manent.",
+  "apply": "formam initialem adhibe",
+  "applied": "forma initialis in hac pagina adhibita est. viam et optiones serva, si iis iterum uti vis.",
+  "protocol": "praecepta lege",
+  "bundle": "fasciculum sine reti adhibendum deprome",
+  "alias": "quid ducem tuum appellabis?",
+  "route": "unde incipiamus?",
+  "depth": "quantum hodie explicari vis?",
+  "modes": [
+    "curam pete",
+    "rem compone",
+    "schedam consilii aperi",
+    "SUTI.os dispone"
+  ],
+  "depths": [
+    "tactus · unum quaesitum",
+    "discretio · propius inspice",
+    "compositio · scheda tota"
+  ],
+  "mapNitya": "atlas rationum NITYA",
+  "atlasCare": "atlas curae mutuae",
+  "mapCare": "tabula tua · tredecim fila",
+  "care": "angeli curae",
+  "careText": "una sententia sufficit · «nunc mihi opus est…»",
+  "careLocal": "tabulam tuam aperi · in hoc instrumento manet",
+  "careExternal": "formulam externam Google aperi · Anglice et Russice",
+  "formNote": "si formulam mittis, Google et dominus formulae accipiunt quod ibi scribis. annotationes huius officinae hic manent.",
+  "order": "unus gradus quem facere potes",
+  "orderFields": [
+    "quid animum tuum occupat?",
+    "quid differre potes?",
+    "quem gradum hodie facere potes?"
+  ],
+  "council": "consilium curae et perspicuitatis",
+  "councilLead": "quaesitum → indicia → voces diversae → electio → recognitio. nota quid profuerit et quid iterum inspiciendum sit.",
+  "councilBoundary": "hac scheda adhibita una deliberare potestis. quisque pro se loquitur. scheda neque homines neque intelligentiam artificialem vocat.",
+  "councilFields": [
+    "quaesitum commune",
+    "quid scimus? quibus indiciis nititur?",
+    "proposita, obiectiones, abstentiones, responsum nullum",
+    "quid electum est, qui consenserunt et quando rem recognoscemus?"
+  ],
+  "setup": "SUTI.os tuum",
+  "setupFirst": "si totum fasciculum Verenium deprompsisti, contenta fasciculi SUTI.os.zip in novum indicem directorium extrahe.",
+  "setupDownload": "SUTI.os 0.2.4 deprome",
+  "setupNext": "SUTI.os/vault aperi ut archivum separatum in Obsidian vel ut indicem directorium in editore Markdown.",
+  "setupLast": "a plica «начать.md» incipe. annotationes etiam sine ratione usoris et sine nexu retis servare potes.",
+  "verify": "fasciculum comproba",
+  "verifyText": "in indice directorio SUTI.os iussum python3 install.py --verify-only exsequere (in Windows: py install.py --verify-only). hoc iussum plicas tantum comprobat.",
+  "glossary": "Stozhary · verba curae et carmen aquae",
+  "glossaryText": "soyuzhestvo · duo consenserunt se una operaturos esse. sotsvetie · quisque donum suum affert. sozvezdie · nexus patent et quisque discedere potest. Stozhary · iterum convenimus et quaesivimus «cui hoc profuit?»",
+  "water": "vodovol · aquam tibi infundam?",
+  "wait": "tkokh · responsum tuum exspectabo.",
+  "saveNote": "plica privata etiam responsa continet quae in hoc gradu latent.",
+  "save": "viam et optiones serva",
+  "restore": "viam antea servatam restitue",
+  "saved": "plicam in loco privato serva. annotationes tuas continet.",
+  "restored": "via restituta",
+  "invalid": "haec plica adhiberi nequit. annotationes tuae in hac pagina manent.",
+  "principles": "principia officinae",
+  "principlesText": "primum roga. quod observasti ab eo quod conicis distingue. da locum recusandi. silentium consensum non significat. elige gradum quem facere potes et inspice utrum profuerit. aliis permitte ut ipsi res suas narrent.",
+  "pace": "tu cursum moderaris",
+  "cues": [
+    [
+      "quid tibi nunc prosit?",
+      "quale auxilium tibi conveniat?",
+      "quid commutare velis?"
+    ],
+    [
+      "quid animum tuum occupat?",
+      "quid differri potest?",
+      "quem gradum eliges?"
+    ],
+    [
+      "quod quaesitum commune habemus?",
+      "quid scimus et quomodo id probare possumus?",
+      "quorum sententias audivimus et de quibus rebus consensimus?"
+    ],
+    [
+      "officinam aperi",
+      "indicem directorium elige",
+      "optiones serva et conare eas restituere"
+    ]
+  ]
+}

@@ -92,8 +92,8 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `care-app-audit.html` | Russian | RU | Single-language audit page. |
 | `suti-angels*.html` | Russian source; standalone editorial editions | RU, EN, ES-419, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, LA; YZH Russian fallback | 13 routes in the 2026-11-13 candidate. The 11 translations are drafts pending independent review. See the [coverage and rights record](../../locales/suti-angels/coverage.json). |
 | `samurai-dharma.html` | Russian | RU | Single-language page. |
-| `verenium.html` | Russian | RU page + short entry locale data | `entry-locales.json` contains 13 short-copy sets; page body is not thereby fully translated. |
-| `virenium.html` | Russian | RU compatibility alias | Same source as `verenium.html`; keep legacy route only for compatibility. |
+| `verenium.html?lang=…` | Local workshop, four routes, import and export | 12 written editions and labeled Russian fallback for Yazekh | Complete workshop interface, including the offline copy. Independent or qualified review pending. Linked protocol and forms have their own coverage. |
+| `virenium.html` | Compatibility alias | Same language support as the canonical workshop | Byte-identical to `verenium.html` and kept in both offline ZIP aliases. |
 | `synaura.html` | Russian | RU | Single-language page. |
 | `synaura-modules.html` | Russian | RU | Single-language page. |
 | `openai-crystal.html` | English UI; RU/EN examples | EN | Bilingual examples are not a translated interface. |

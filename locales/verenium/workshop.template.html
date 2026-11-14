@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verenium · мастерская заботы</title>
+<style>/* workshop-theme */</style>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; background: var(--suti-angel-paper, #f4f0e8); color: var(--suti-angel-ink, #25342f); font: 1.0625rem/1.65 "SUTI Manrope", system-ui, sans-serif }
+main { max-inline-size: 48rem; margin-inline: auto; padding: clamp(1rem, 4vw, 3rem); overflow-wrap: anywhere }
+h1 { font: 700 clamp(2.8rem, 9vw, 5rem)/1.15 "SUTI Nunito", system-ui, sans-serif; margin-block: .25em }
+h2 { line-height: 1.25 }
+section, details { background: var(--suti-angel-card, #fffdf7); border: 1px solid var(--suti-angel-fg-muted, #687064); border-radius: .85rem; padding: 1rem; margin-block: 1rem }
+[hidden] { display: none !important }
+label { display: block; margin-block: .6rem }
+textarea, input, select, button { font: inherit; min-block-size: 44px; max-inline-size: 100%; padding: .35rem; color: inherit; background-color: var(--suti-angel-card, #fffdf7); border: 1px solid currentColor; border-radius: .35rem }
+textarea { display: block; inline-size: 100%; min-block-size: 5rem }
+a { color: var(--suti-angel-teal, #205c51); text-underline-offset: .15em }
+button, summary { cursor: pointer }
+summary { min-block-size: 44px }
+small { color: var(--suti-angel-petrol, #415d55) }
+.resources { display: flex; gap: .6rem 1rem; flex-wrap: wrap }
+:focus-visible { outline: 3px solid var(--suti-angel-focus, #205c51); outline-offset: 3px }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+</style>
+</head>
+<body>
+<main>
+  <small data-copy="kicker"></small>
+  <h1>Verenium</h1>
+  <small data-copy="byline"></small>
+  <p data-copy="intro"></p>
+  <section aria-labelledby="reflection-title">
+    <label for="entrylang" data-copy="language"></label>
+    <select id="entrylang"></select>
+    <h2 id="reflection-title"></h2>
+    <p data-copy="stop"></p>
+    <small id="reflection-language"></small>
+  </section>
+  <details lang="es">
+    <summary>empezar con un solo archivo</summary>
+    <p>copia la guía en tu chat y dile: «ayúdame con una receta». puedes ponerle el nombre que quieras.</p>
+    <a href="downloads/SUTI.verenium.md" hreflang="es" download>guardar la guía en español (.md)</a>
+  </details>
+  <section id="activation" aria-labelledby="activation-title">
+    <h2 id="activation-title" data-copy="activation"></h2>
+    <p data-copy="activationText"></p>
+    <button type="button" id="apply" data-copy="apply"></button>
+    <p id="applied" role="status"></p>
+    <p class="resources"><a href="modules/verenium/protocol.md" data-copy="protocol" hreflang="ru" data-ru-link></a>
+    <a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip" data-copy="bundle"></a></p>
+  </section>
+  <label for="alias" data-copy="alias"></label><input id="alias" value="Verenium" maxlength="64" dir="auto">
+  <label for="route" data-copy="route"></label><select id="route">
+    <option value="care" data-copy="modes.0"></option>
+    <option value="order" data-copy="modes.1"></option>
+    <option value="council" data-copy="modes.2"></option>
+    <option value="setup" data-copy="modes.3"></option>
+  </select>
+  <label for="depth" data-copy="depth"></label><select id="depth">
+    <option value="0" data-copy="depths.0"></option>
+    <option value="1" data-copy="depths.1"></option>
+    <option value="2" data-copy="depths.2"></option>
+  </select>
+  <p id="cue" aria-live="polite"></p><small id="voice" aria-live="polite"></small>
+
+  <nav class="resources" aria-label="SUTI">
+    <a href="nitya.html#atlas" data-copy="mapNitya" hreflang="ru" data-ru-link></a>
+    <a id="care-atlas" href="care-atlas.html" data-copy="atlasCare"></a>
+    <a href="care-map.html" data-copy="mapCare" hreflang="ru" data-ru-link></a>
+  </nav>
+  <section id="care">
+    <h2 data-copy="care"></h2><p data-copy="careText"></p>
+    <p><a href="care-map.html" data-copy="careLocal" hreflang="ru" data-ru-link></a></p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform" data-copy="careExternal" aria-describedby="form-note"></a></p>
+    <p id="form-note" data-copy="formNote"></p>
+  </section>
+  <section id="order" hidden>
+    <h2 data-copy="order"></h2>
+    <div class="note"><label for="attention" data-copy="orderFields.0"></label><textarea id="attention" dir="auto"></textarea></div>
+    <div class="note"><label for="wait" data-copy="orderFields.1"></label><textarea id="wait" dir="auto"></textarea></div>
+    <div class="note"><label for="step" data-copy="orderFields.2"></label><textarea id="step" dir="auto"></textarea></div>
+  </section>
+  <section id="council" hidden>
+    <h2 data-copy="council"></h2>
+    <p data-copy="councilLead"></p><p data-copy="councilBoundary"></p>
+    <div class="note"><label for="question" data-copy="councilFields.0"></label><textarea id="question" dir="auto"></textarea></div>
+    <div class="note"><label for="evidence" data-copy="councilFields.1"></label><textarea id="evidence" dir="auto"></textarea></div>
+    <div class="note"><label for="voices" data-copy="councilFields.2"></label><textarea id="voices" dir="auto"></textarea></div>
+    <div class="note"><label for="choice" data-copy="councilFields.3"></label><textarea id="choice" dir="auto"></textarea></div>
+  </section>
+  <section id="setup" hidden>
+    <h2 data-copy="setup"></h2>
+    <ol><li><span data-copy="setupFirst"></span> <a href="https://github.com/ezargaruna/SUTI.os/releases/download/v0.2.4/SUTI.os.zip" data-copy="setupDownload" hreflang="ru" data-ru-link></a></li>
+    <li data-copy="setupNext"></li><li data-copy="setupLast"></li></ol>
+    <details><summary data-copy="verify"></summary><p data-copy="verifyText"></p></details>
+  </section>
+  <details>
+    <summary data-copy="glossary"></summary><p data-copy="glossaryText"></p>
+    <p><span data-copy="water"></span><br><span data-copy="wait"></span></p>
+    <a href="modules/verenium/protocol.md" data-copy="protocol" hreflang="ru" data-ru-link></a>
+  </details>
+  <p><small data-copy="saveNote"></small></p>
+  <button type="button" id="save" data-copy="save"></button>
+  <label for="restore" data-copy="restore"></label><input id="restore" type="file" accept=".json,application/json">
+  <p id="msg" role="status"></p>
+  <details><summary data-copy="principles"></summary><p data-copy="principlesText"></p></details>
+  <noscript><p lang="ru">мастерской нужен JavaScript. <a href="modules/verenium/protocol.md">читать протокол</a></p></noscript>
+</main>
+<script type="application/json" id="workshop-locales"><!-- workshop-locales --></script>
+<script>
+/* workshop-script */
+</script>
+</body>
+</html>

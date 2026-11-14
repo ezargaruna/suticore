@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · taller de cuidado",
+  "kicker": "∴ SUTI.world · taller local",
+  "byline": "SUTI.verenium · un compañero para cuidar",
+  "intro": "¿qué te ayudaría hoy? elige un recorrido. las notas se quedan en esta pestaña hasta que la cierres. puedes guardar una copia por tu cuenta.",
+  "language": "idioma del taller",
+  "stop": "puedes parar aquí",
+  "review": "traducción editorial · revisión lingüística independiente pendiente",
+  "activation": "empieza con un paso",
+  "activationText": "aplica el perfil inicial de Verenium con el recorrido de cuidado y la vista de una sola pregunta. tus notas se conservan.",
+  "apply": "aplicar el perfil inicial",
+  "applied": "perfil inicial aplicado en esta pestaña. guarda el recorrido y los ajustes para volver a usarlos.",
+  "protocol": "leer el protocolo",
+  "bundle": "descargar el paquete para usar sin conexión",
+  "alias": "¿cómo quieres llamar a tu guía?",
+  "route": "¿por dónde empezamos?",
+  "depth": "¿cuánto detalle te sirve hoy?",
+  "modes": [
+    "pedir cuidado",
+    "organizar una tarea",
+    "abrir una hoja de trabajo del consejo",
+    "configurar SUTI.os"
+  ],
+  "depths": [
+    "primer contacto · una pregunta",
+    "discernimiento · un poco más cerca",
+    "integración · toda la hoja"
+  ],
+  "mapNitya": "atlas de marcos de NITYA",
+  "atlasCare": "atlas de cuidado mutuo",
+  "mapCare": "mapa personal · 13 hilos",
+  "care": "ángeles del cuidado",
+  "careText": "basta una frase: «lo que necesito ahora es…»",
+  "careLocal": "abrir el mapa personal · se queda en tu dispositivo",
+  "careExternal": "abrir el formulario externo de Google · inglés y ruso",
+  "formNote": "si envías el formulario, Google y quien lo administra reciben lo que escribas allí. las notas de este taller se quedan aquí.",
+  "order": "un paso a tu alcance",
+  "orderFields": [
+    "¿qué ocupa tu atención?",
+    "¿qué puede esperar?",
+    "¿qué paso puedes dar hoy?"
+  ],
+  "council": "consejo de cuidado y claridad",
+  "councilLead": "pregunta → evidencias → distintas voces → elección → revisión. anota qué ayudó y qué conviene volver a mirar.",
+  "councilBoundary": "esta hoja sirve para pensar en conjunto. cada persona habla por sí misma. la hoja no convoca a nadie ni activa una IA.",
+  "councilFields": [
+    "pregunta compartida",
+    "¿qué sabemos y en qué nos basamos?",
+    "propuestas, objeciones, abstenciones o falta de respuesta",
+    "¿qué se eligió, quién estuvo de acuerdo y cuándo lo revisaremos?"
+  ],
+  "setup": "tu propio SUTI.os",
+  "setupFirst": "si descargaste el paquete completo de Verenium, descomprime SUTI.os.zip en una carpeta nueva.",
+  "setupDownload": "descargar SUTI.os 0.2.4",
+  "setupNext": "abre SUTI.os/vault como una bóveda independiente en Obsidian o como una carpeta en un editor de Markdown.",
+  "setupLast": "empieza por «начать.md». puedes conservar tus notas sin cuenta y sin conexión.",
+  "verify": "verificar el paquete",
+  "verifyText": "en la carpeta SUTI.os, ejecuta python3 install.py --verify-only (en Windows: py install.py --verify-only). este comando solo comprueba los archivos.",
+  "glossary": "Stozhary · palabras de cuidado y canto del agua",
+  "glossaryText": "soyuzhestvo: dos personas acordaron trabajar juntas. sotsvetie: cada quien trae un don. sozvezdie: los vínculos están a la vista y cualquiera puede retirarse. Stozhary: nos volvimos a encontrar y preguntamos «¿a quién le sirvió?»",
+  "water": "vodovol · ¿te sirvo un poco de agua?",
+  "wait": "tkokh · esperaré tu respuesta.",
+  "saveNote": "el archivo personal incluye las respuestas ocultas por el nivel de detalle actual.",
+  "save": "guardar el recorrido y los ajustes",
+  "restore": "restaurar un recorrido guardado",
+  "saved": "guarda el archivo en un lugar privado. contiene tus notas.",
+  "restored": "recorrido restaurado",
+  "invalid": "este archivo no es compatible. tus notas actuales siguen en esta pestaña.",
+  "principles": "principios del taller",
+  "principlesText": "pregunta primero. distingue lo que observas de lo que supones. deja espacio para decir que no. el silencio no equivale a consentimiento. elige un paso posible y comprueba si ayudó. deja que las demás personas cuenten su propia historia.",
+  "pace": "tú marcas el ritmo",
+  "cues": [
+    [
+      "¿qué te ayudaría ahora mismo?",
+      "¿qué tipo de apoyo te serviría?",
+      "¿qué te gustaría intercambiar?"
+    ],
+    [
+      "¿qué ocupa tu atención?",
+      "¿qué puede esperar?",
+      "¿qué paso eliges?"
+    ],
+    [
+      "¿qué pregunta compartimos?",
+      "¿qué sabemos y cómo podemos comprobarlo?",
+      "¿a quién escuchamos y en qué quedamos?"
+    ],
+    [
+      "abre el taller",
+      "elige tu carpeta",
+      "guarda tus ajustes e intenta restaurarlos"
+    ]
+  ]
+}

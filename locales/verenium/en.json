@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · care workshop",
+  "kicker": "∴ SUTI.world · local workshop",
+  "byline": "SUTI.verenium · a companion for care",
+  "intro": "what would help today? choose a route. notes stay in this tab until you close it. you can save a copy yourself.",
+  "language": "workshop language",
+  "stop": "you can stop here",
+  "review": "editorial translation · independent language review pending",
+  "activation": "start with one step",
+  "activationText": "apply the starting profile: Verenium, care route, and one-question view. your notes stay as they are.",
+  "apply": "apply starting profile",
+  "applied": "starting profile applied in this tab. save the route and settings to use them again.",
+  "protocol": "read the protocol",
+  "bundle": "download the offline bundle",
+  "alias": "what would you call your guide?",
+  "route": "where shall we start?",
+  "depth": "how much detail feels right today?",
+  "modes": [
+    "ask for care",
+    "organize a task",
+    "open a council worksheet",
+    "set up SUTI.os"
+  ],
+  "depths": [
+    "touch · one question",
+    "discernment · a little closer",
+    "assembly · the whole sheet"
+  ],
+  "mapNitya": "NITYA framework atlas",
+  "atlasCare": "mutual care atlas",
+  "mapCare": "personal map · 13 threads",
+  "care": "angels of care",
+  "careText": "one phrase is enough: “what I need right now is…”",
+  "careLocal": "open the personal map · stays local",
+  "careExternal": "open the external Google form · English and Russian",
+  "formNote": "if you submit the form, Google and its owner receive what you write there. notes from this workshop stay here.",
+  "order": "one manageable step",
+  "orderFields": [
+    "what is taking up your attention?",
+    "what could wait?",
+    "what is one step you can take today?"
+  ],
+  "council": "council for care and clarity",
+  "councilLead": "question → evidence → different voices → choice → review. note what helped and what needs another look.",
+  "councilBoundary": "this is a worksheet for thinking together. each person speaks for themselves. it does not call people or AI.",
+  "councilFields": [
+    "shared question",
+    "what do we know, and what supports it?",
+    "proposals, objections, abstentions, no response",
+    "what was chosen, who agreed, and when will we review?"
+  ],
+  "setup": "your own SUTI.os",
+  "setupFirst": "if you downloaded the full Verenium bundle, unpack SUTI.os.zip into a new folder.",
+  "setupDownload": "download SUTI.os 0.2.4",
+  "setupNext": "open SUTI.os/vault as a separate vault in Obsidian or as a folder in a Markdown editor.",
+  "setupLast": "start with «начать.md». you can keep notes without an account or a network connection.",
+  "verify": "check the package",
+  "verifyText": "in the SUTI.os folder, run python3 install.py --verify-only (Windows: py install.py --verify-only). this command only checks the files.",
+  "glossary": "Stozhary · words of care and the song of water",
+  "glossaryText": "soyuzhestvo: two people agreed to work together. sotsvetie: each brings a gift. sozvezdie: the links are visible and anyone can leave. Stozhary: we met again and asked, “who did this help?”",
+  "water": "vodovol · shall I pour you some water?",
+  "wait": "tkokh · I’ll wait for your answer.",
+  "saveNote": "the personal file includes answers hidden by the current level of detail.",
+  "save": "save route and settings",
+  "restore": "restore a previously saved route",
+  "saved": "keep the file somewhere private. it contains your notes.",
+  "restored": "route restored",
+  "invalid": "this file is not compatible. your current notes remain in this tab.",
+  "principles": "workshop principles",
+  "principlesText": "ask first. distinguish observation from a guess. leave room to decline. silence is not consent. choose a manageable step and check whether it helped. leave others room to tell their own stories.",
+  "pace": "you choose the pace",
+  "cues": [
+    [
+      "what would help right now?",
+      "what kind of support fits?",
+      "what would you like to exchange?"
+    ],
+    [
+      "what is taking up your attention?",
+      "what can wait?",
+      "what step will you choose?"
+    ],
+    [
+      "what question do we share?",
+      "what do we know, and how can we check it?",
+      "whose views did we hear, and what did we agree on?"
+    ],
+    [
+      "open the workshop",
+      "choose your folder",
+      "save your settings and try restoring them"
+    ]
+  ]
+}

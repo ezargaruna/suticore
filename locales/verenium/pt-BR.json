@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · oficina de cuidado",
+  "kicker": "∴ SUTI.world · oficina local",
+  "byline": "SUTI.verenium · uma companhia para cuidar",
+  "intro": "o que ajudaria hoje? escolha um caminho. as notas ficam nesta aba até você fechá-la. você pode salvar uma cópia por conta própria.",
+  "language": "idioma da oficina",
+  "stop": "você pode parar aqui",
+  "review": "tradução editorial · revisão linguística independente pendente",
+  "activation": "comece com um passo",
+  "activationText": "aplique o perfil inicial do Verenium com o caminho de cuidado e a visualização de uma só pergunta. suas notas ficam como estão.",
+  "apply": "aplicar o perfil inicial",
+  "applied": "perfil inicial aplicado nesta aba. salve o caminho e as configurações para usá-los novamente.",
+  "protocol": "ler o protocolo",
+  "bundle": "baixar o pacote para usar sem internet",
+  "alias": "como você quer chamar seu guia?",
+  "route": "por onde começamos?",
+  "depth": "quanto detalhe faz sentido hoje?",
+  "modes": [
+    "pedir cuidado",
+    "organizar uma tarefa",
+    "abrir a ficha da roda de conversa",
+    "configurar o SUTI.os"
+  ],
+  "depths": [
+    "primeiro contato · uma pergunta",
+    "discernimento · um pouco mais de perto",
+    "integração · a ficha inteira"
+  ],
+  "mapNitya": "atlas de estruturas do NITYA",
+  "atlasCare": "atlas de cuidado mútuo",
+  "mapCare": "mapa pessoal · 13 fios",
+  "care": "anjos do cuidado",
+  "careText": "uma frase já basta: “o que eu preciso agora é…”",
+  "careLocal": "abrir o mapa pessoal · fica no dispositivo",
+  "careExternal": "abrir o formulário externo do Google · inglês e russo",
+  "formNote": "se você enviar o formulário, o Google e quem o administra recebem o que você escrever lá. as notas desta oficina ficam aqui.",
+  "order": "um passo ao seu alcance",
+  "orderFields": [
+    "o que está tomando a sua atenção?",
+    "o que pode esperar?",
+    "qual passo você consegue dar hoje?"
+  ],
+  "council": "roda de conversa para cuidado e clareza",
+  "councilLead": "pergunta → evidências → vozes diferentes → escolha → revisão. anote o que ajudou e o que merece outro olhar.",
+  "councilBoundary": "esta ficha ajuda a pensar em conjunto. cada pessoa fala por si. ela não convoca pessoas nem aciona uma IA.",
+  "councilFields": [
+    "pergunta em comum",
+    "o que sabemos e em que nos baseamos?",
+    "propostas, objeções, abstenções ou ausência de resposta",
+    "o que foi escolhido, quem concordou e quando vamos rever?"
+  ],
+  "setup": "seu próprio SUTI.os",
+  "setupFirst": "se você baixou o pacote completo do Verenium, descompacte SUTI.os.zip em uma pasta nova.",
+  "setupDownload": "baixar o SUTI.os 0.2.4",
+  "setupNext": "abra SUTI.os/vault como um cofre separado no Obsidian ou como uma pasta em um editor de Markdown.",
+  "setupLast": "comece pelo arquivo «начать.md». você pode manter suas notas sem conta e sem internet.",
+  "verify": "verificar o pacote",
+  "verifyText": "na pasta SUTI.os, execute python3 install.py --verify-only (no Windows: py install.py --verify-only). esse comando só verifica os arquivos.",
+  "glossary": "Stozhary · palavras de cuidado e canto da água",
+  "glossaryText": "soyuzhestvo: duas pessoas combinaram trabalhar juntas. sotsvetie: cada pessoa traz um dom. sozvezdie: os vínculos ficam visíveis e qualquer pessoa pode sair. Stozhary: nos reencontramos e perguntamos “a quem isso ajudou?”",
+  "water": "vodovol · quer que eu sirva um pouco de água?",
+  "wait": "tkokh · vou esperar sua resposta.",
+  "saveNote": "o arquivo pessoal inclui as respostas ocultas pelo nível de detalhe atual.",
+  "save": "salvar o caminho e as configurações",
+  "restore": "restaurar um caminho salvo",
+  "saved": "guarde o arquivo em um lugar privado. ele contém suas notas.",
+  "restored": "caminho restaurado",
+  "invalid": "este arquivo não é compatível. suas notas atuais continuam nesta aba.",
+  "principles": "princípios da oficina",
+  "principlesText": "pergunte primeiro. diferencie o que você observa do que você supõe. deixe espaço para recusar. silêncio não é consentimento. escolha um passo possível e veja se ajudou. deixe que as outras pessoas contem as próprias histórias.",
+  "pace": "você escolhe o ritmo",
+  "cues": [
+    [
+      "o que ajudaria agora?",
+      "que tipo de apoio faria sentido?",
+      "o que você gostaria de trocar?"
+    ],
+    [
+      "o que está tomando a sua atenção?",
+      "o que pode esperar?",
+      "qual passo você escolhe?"
+    ],
+    [
+      "que pergunta temos em comum?",
+      "o que sabemos e como podemos verificar?",
+      "quem ouvimos e sobre o que chegamos a um acordo?"
+    ],
+    [
+      "abra a oficina",
+      "escolha sua pasta",
+      "salve suas configurações e tente restaurá-las"
+    ]
+  ]
+}
