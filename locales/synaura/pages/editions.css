@@ -1,0 +1,17 @@
+main { overflow-wrap:anywhere; }
+.public-edition { margin-block-end:1.5rem; }
+.public-edition select {
+  color:var(--suti-angel-ink);
+  background:var(--suti-angel-card);
+  border:1px solid var(--suti-angel-line);
+  border-radius:.4rem;
+  font:inherit;
+  min-block-size:44px;
+  max-inline-size:100%;
+}
+.public-edition p { margin-block:.45rem 0; font-size:.9rem; }
+html[data-theme="night"] { color-scheme:dark; }
+[dir="rtl"] .glyph { padding-inline-start:1.15rem; padding-inline-end:0; }
+pre { white-space:pre-wrap; }
+pre code { unicode-bidi:plaintext; }
+@media print { .public-edition select,.public-edition label { display:none; } }

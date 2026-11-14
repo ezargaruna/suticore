@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Открытый проектный пакет Synaura × Syntaxium: 13 модулей, ясные границы доказательств и статуса реализации." data-copy-content="t001">
+
+  <title data-copy="t002">Synaura × Syntaxium · открытые модули · SUTI.world</title>
+  <style>
+/* edition-theme */
+    :root { --page-max: 74rem; }
+    body { margin: 0; }
+    main { width: min(calc(100% - 2rem), var(--page-max)); margin: 0 auto; padding: clamp(2rem, 6vw, 5rem) 0; }
+    header, section, footer { margin-block: 2rem; }
+    .eyebrow { color: var(--suti-angel-teal); font-size: .82rem; font-weight: 700; letter-spacing: .08em; }
+    h1 { max-width: 16ch; font-size: clamp(2.25rem, 7vw, 4.5rem); }
+    .lead, .boundary { max-width: 72ch; }
+    .boundary { padding: 1rem 1.25rem; border-inline-start: 4px solid var(--suti-angel-copper); background: var(--suti-angel-card); }
+    nav ul { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding: 0; list-style: none; }
+    .module-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1rem; padding: 0; list-style: none; }
+    .module-list a { display: block; min-height: 100%; padding: .85rem 1rem; border: 1px solid var(--suti-angel-line); border-radius: .75rem; background: var(--suti-angel-card); text-decoration: none; }
+    .module-list a:hover { text-decoration: underline; }
+    article { padding-block: 1.25rem; border-top: 1px solid var(--suti-angel-line); scroll-margin-top: 1rem; }
+    article h2 { margin-bottom: .35rem; }
+    .status { color: var(--suti-angel-teal); font-size: .88rem; font-weight: 700; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    pre { overflow-x: auto; padding: 1rem; border: 1px solid var(--suti-angel-line); border-radius: .75rem; background: var(--suti-angel-card); }
+    footer { padding-top: 1rem; border-top: 1px solid var(--suti-angel-line); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  /* edition-style */
+  </style>
+</head>
+<body>
+<main id="main" tabindex="-1">
+  <header>
+    <div class="public-edition"><label for="page-language" data-edition-label>язык страницы</label> <select id="page-language" data-edition-picker></select><p data-edition-review></p></div>
+    <p class="eyebrow"><span data-copy="t003">SUTI.world · открытый проектный материал</span></p>
+    <h1>Synaura × Syntaxium</h1>
+    <p class="lead"><span data-copy="t004">Synaura помогает различить, что важно. Syntaxium помогает явно выразить связи. Этот пакет собирает 13 модулей для работы с языком, структурой и адаптацией выражения.</span></p>
+    <p class="boundary"><strong><span data-copy="t005">статус :: проектный черновик</span></strong> <span data-copy="t006">· Это авторская методика и предложение по устройству инструментов, а не завершённый формальный стандарт. Здесь не заявляются работающий парсер, развёрнутая служба, научная валидация, универсальные метрики или системная активация модели.</span></p>
+    <p><span data-copy="t007">Сложность остаётся внутри. Человеку видны вопрос, основания, варианты и доступное действие.</span></p>
+    <nav aria-label="Навигация по странице" data-copy-aria-label="t008">
+      <ul>
+        <li><a href="#modules"><span data-copy="t009">к модулям</span></a></li>
+        <li><a href="index.html" data-edition-link><span data-copy="t010">на главную SUTI.world</span></a></li>
+        <li><a href="https://github.com/ezargaruna/suticore/blob/main/synaura-modules.html"><span data-copy="t011">исходник на GitHub ↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section aria-labelledby="principles-title">
+    <h2 id="principles-title"><span data-copy="t012">короткая карта</span></h2>
+    <p><span data-copy="t013">Вопрос → различение → связи → варианты → выбор человека → действие → наблюдаемый след → пересмотр.</span></p>
+    <p><span data-copy="t014">Факт, наблюдение, интерпретация, гипотеза, оценка, символ и неизвестное сохраняют разные обозначения. Форма не заменяет основания.</span></p>
+  </section>
+
+  <nav id="modules" tabindex="-1" aria-label="Модули Synaura и Syntaxium" data-copy-aria-label="t015">
+    <h2><span data-copy="t016">модули 00–12</span></h2>
+    <ol class="module-list">
+      <li><a href="#m00"><span data-copy="t017">00 · назначение и манифест</span></a></li>
+      <li><a href="#m01"><span data-copy="t018">01 · принципы</span></a></li>
+      <li><a href="#m02"><span data-copy="t019">02 · адаптивный стиль</span></a></li>
+      <li><a href="#m03"><span data-copy="t020">03 · Syntaxium и запись</span></a></li>
+      <li><a href="#m04"><span data-copy="t021">04 · реестр операторов</span></a></li>
+      <li><a href="#m05"><span data-copy="t022">05 · визуальные адаптеры</span></a></li>
+      <li><a href="#m06"><span data-copy="t023">06 · AST и парсер</span></a></li>
+      <li><a href="#m07"><span data-copy="t024">07 · стоимость токенов</span></a></li>
+      <li><a href="#m08"><span data-copy="t025">08 · рабочий цикл</span></a></li>
+      <li><a href="#m09"><span data-copy="t026">09 · исследовательский протокол</span></a></li>
+      <li><a href="#m10"><span data-copy="t027">10 · проверка и метрики</span></a></li>
+      <li><a href="#m11"><span data-copy="t028">11 · архитектура</span></a></li>
+      <li><a href="#m12"><span data-copy="t029">12 · шаблон и перенос</span></a></li>
+    </ol>
+  </nav>
+
+  <section aria-label="Подробные описания модулей" data-copy-aria-label="t030">
+    <article id="m00" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t031">модуль 00</span></p><h2><span data-copy="t032">назначение и манифест</span></h2>
+      <p><span data-copy="t033">Synaura — авторский способ навигации по смыслу. Syntaxium — способ обозначить структуру и отношения. Их можно применять по отдельности или вместе, если задача этого требует.</span></p>
+      <p><span data-copy="t034">Активация означает только выбранный контекст для текущей задачи. Она не отменяет системные правила среды, не меняет права доступа и не запускает внешние действия.</span></p>
+      <p class="status"><span data-copy="t035">статус :: описание метода · без обещания реализации</span></p>
+    </article>
+
+    <article id="m01" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t036">модуль 01</span></p><h2><span data-copy="t037">принципы</span></h2>
+      <ul><li><span data-copy="t038">Сначала установить вопрос и контекст.</span></li><li><span data-copy="t039">Разделять источник, факт, наблюдение, интерпретацию и неизвестное.</span></li><li><span data-copy="t040">Сохранять право человека выбрать, исправить, пропустить или остановиться.</span></li><li><span data-copy="t041">Добавлять структуру, только если она помогает различить важное.</span></li><li><span data-copy="t042">Проверять, что преобразование не усилило исходное утверждение.</span></li></ul>
+      <p><span data-copy="t043">Это рабочие принципы проекта. Их полезность оценивается в конкретной задаче, а не предполагается заранее.</span></p>
+    </article>
+
+    <article id="m02" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t044">модуль 02</span></p><h2><span data-copy="t045">адаптивный стиль</span></h2>
+      <p><span data-copy="t046">Форма следует задаче, языку, аудитории и среде. Тихий ритм или краткие блоки могут быть полезны; они не становятся обязательной визуальной эстетикой для всех проектов.</span></p>
+      <p><span data-copy="t047">Публичный интерфейс SUTI.world использует собственную дизайн-систему. Этот модуль не предписывает чёрную палитру, фиксированный процент пустоты, шрифт или одинаковый вид для каждого носителя.</span></p>
+      <p><span data-copy="t048">Обычный текст остаётся полноценным вариантом, если символ или схема затрудняет чтение.</span></p>
+    </article>
+
+    <article id="m03" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t049">модуль 03</span></p><h2><span data-copy="t050">Syntaxium и запись</span></h2>
+      <p><span data-copy="t051">Syntaxium описывает, как части сообщения соотносятся друг с другом. Основой остаётся понятная человеку фраза; знак можно убрать, не теряя доступ к смыслу.</span></p>
+      <ul><li><code>∴</code> <span data-copy="t052">— принцип или ядро.</span></li><li><code>⧖</code> <span data-copy="t053">— пауза или процесс.</span></li><li><code>⟁</code> <span data-copy="t054">— шаг или действие.</span></li><li><code>〄</code> <span data-copy="t055">— сборка или интеграция.</span></li><li><code>↺</code> <span data-copy="t056">— пересмотр с обратной связью.</span></li></ul>
+      <p><span data-copy="t057">Это минимальный набор данной редакции, а не полный алфавит. Обозначения — соглашения проекта, не исполняемые команды парсера. Остальные и экспериментальные знаки требуют сверки и явной пометы.</span></p>
+    </article>
+
+    <article id="m04" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t058">модуль 04</span></p><h2><span data-copy="t059">реестр операторов</span></h2>
+      <p><span data-copy="t060">Предложенный паспорт знака может включать идентификатор, написание, текстовый эквивалент, функцию, область действия, статус, происхождение, пример и условия неоднозначности.</span></p>
+      <p><span data-copy="t061">Сначала фиксируется функция словами, затем знак. Неизвестная функция означает</span> <code dir="ltr">HOLD</code><span data-copy="t062">; новый знак не становится каноническим только потому, что появился в примере.</span></p>
+      <p class="status"><span data-copy="t063">статус :: схема реестра предложена · полнота и совместимость требуют отдельной сверки</span></p>
+    </article>
+
+    <article id="m05" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t064">модуль 05</span></p><h2><span data-copy="t065">визуальные адаптеры</span></h2>
+      <p><span data-copy="t066">Типографика, расстояние, цвет, геометрия, изображение, движение и звук могут показывать выбранные отношения. Соответствие «форма — восприятие» рассматривается как проверяемая гипотеза, а не универсальный закон.</span></p>
+      <p><span data-copy="t067">Адаптация учитывает читаемость, контраст, клавиатуру, скринридер, письменность, устройство и reduced motion. Смысл не должен зависеть только от цвета, анимации или глифа.</span></p>
+      <p><span data-copy="t068">Геометрическая карта не заменяет подписи узлов и связей.</span></p>
+    </article>
+
+    <article id="m06" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t069">модуль 06</span></p><h2><span data-copy="t070">AST и парсер</span></h2>
+      <p><span data-copy="t071">Предлагаемое направление: текст → распознавание обозначений → синтаксические связи → семантическое представление → AST → при необходимости граф или визуальная форма.</span></p>
+      <p><span data-copy="t072">Точный формат AST, грамматика, нормализация Unicode, правила пробелов, обработка ошибок и соответствие между парсерами ещё требуют определения и испытаний. Этот пакет не содержит подтверждённой реализации парсера.</span></p>
+      <p class="status"><span data-copy="t073">статус :: архитектурное предложение · runtime не проверен</span></p>
+    </article>
+
+    <article id="m07" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t074">модуль 07</span></p><h2><span data-copy="t075">стоимость токенов</span></h2>
+      <p><span data-copy="t076">Стоимость знака зависит от модели, токенизатора и версии. Её нельзя надёжно вывести из числа UTF-8 байтов или распространить на все модели без измерения.</span></p>
+      <p><span data-copy="t077">Для эксперимента записываются модель, версия токенизатора, входной текст, способ подсчёта и результат. Читаемость для человека и точность не уступают экономии токенов.</span></p>
+      <p class="status"><span data-copy="t078">статус :: универсальный token-cost snapshot не опубликован</span></p>
+    </article>
+
+    <article id="m08" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t079">модуль 08</span></p><h2><span data-copy="t080">рабочий цикл</span></h2>
+      <p><span data-copy="t081">Заметь задачу → назови различия → свяжи основания → предложи варианты → проверь понимание → действуй по запросу и в пределах полномочий → сохрани наблюдаемый след → пересмотри карту.</span></p>
+      <p><span data-copy="t082">Цикл может остановиться на достаточном ответе, паузе или неизвестном. Он не означает фонового агента, телеметрии, автономного доступа или постоянной памяти.</span></p>
+    </article>
+
+    <article id="m09" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t083">модуль 09</span></p><h2><span data-copy="t084">исследовательский протокол</span></h2>
+      <p><span data-copy="t085">Сравнение начинается с вопроса, корпуса и критерия. Если проверяется вклад одного изменения, остальные условия по возможности удерживаются одинаковыми.</span></p>
+      <p><span data-copy="t086">Журнал указывает источник, язык, версию материала, среду и ограничения. Работа с людьми требует понятного согласия и отдельной защиты их данных; личные ответы не становятся открытым тестовым корпусом автоматически.</span></p>
+    </article>
+
+    <article id="m10" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t087">модуль 10</span></p><h2><span data-copy="t088">проверка и метрики</span></h2>
+      <p><span data-copy="t089">Возможные критерии: сохранение смысла, ясность, структурная целостность, доступность, устойчивость поиска и стоимость обработки. Для каждого критерия сначала нужна воспроизводимая процедура и подходящий корпус.</span></p>
+      <p><span data-copy="t090">Числовые пороги и формулы из ранних черновиков не считаются валидированными результатами. Без теста и базовой линии значение остаётся неизвестным.</span></p>
+    </article>
+
+    <article id="m11" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t091">модуль 11</span></p><h2><span data-copy="t092">архитектура</span></h2>
+      <p><span data-copy="t093">SUTI.world — публичный вход и применение. SUTIcore — проектные принципы и ограничения. Synaura — семантическая навигация. Syntaxium — структура записи. Визуальные адаптеры, AST, парсер и runtime подключаются только при наличии конкретной реализации и проверки.</span></p>
+      <p><span data-copy="t094">Название модуля, схема или документ сами по себе не доказывают наличие работающего приложения.</span></p>
+    </article>
+
+    <article id="m12" tabindex="-1">
+      <p class="eyebrow"><span data-copy="t095">модуль 12</span></p><h2><span data-copy="t096">шаблон и перенос</span></h2>
+      <p><span data-copy="t097">Минимальная запись должна оставаться понятной без специальных знаков:</span></p>
+      <pre><code><span data-copy="t098">принцип :: сохранить вопрос и основания
+варианты :: показать несколько путей
+шаг :: выбранное человеком действие</span></code></pre>
+      <p><span data-copy="t099">При переносе между языками и средами сравнивают вопрос, источник, силу утверждения, неопределённость, доступность и право выбора. Переносимость считается проверенной только в явно описанных условиях.</span></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="boundary-title">
+    <h2 id="boundary-title"><span data-copy="t100">публичная граница</span></h2>
+    <p><span data-copy="t101">Эта страница содержит общую методику и проектные предложения. Она не включает персональные профили, ответы участников анкеты, контакты, частные архивы, закрытые схемы доступа или обещания поддержки от людей.</span></p>
+    <p><span data-copy="t102">Состояния документа, реализации, проверки и публикации различаются. Эта страница подтверждает только публикацию данного проектного описания.</span></p>
+  </section>
+
+  <footer>
+    <p><span data-copy="t103">версия материала :: v2026.11 · public draft 1</span></p>
+    <p><span data-copy="t104">авторская методика :: Ezar Garuna · SUTI.world</span></p>
+    <p><span data-copy="t105">лицензия ::</span> <a href="https://github.com/ezargaruna/suticore/blob/main/LICENSE"><span data-copy="t106">LICENSE репозитория</span></a><span data-copy="t107">; права на сторонние источники сохраняются.</span></p>
+    <p><a href="index.html" data-edition-link>SUTI.world</a> · <a href="https://github.com/ezargaruna/suticore/blob/main/synaura-modules.html"><span data-copy="t108">исходник и история версий на GitHub</span></a></p>
+  </footer>
+</main>
+<script type="application/json" id="public-editions"><!-- edition-locales --></script>
+<script>/* edition-runtime */</script>
+</body>
+</html>

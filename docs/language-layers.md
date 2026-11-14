@@ -245,6 +245,17 @@ applies to this module. The guide is distinct from the `synaura.html` landing
 page, the 2026.11 interaction protocol, and the release announcement. Their
 coverage is recorded separately.
 
+The [.synaura style page](https://suti.world/synaura.html?lang=en) and the
+[Synaura × Syntaxium specification](https://suti.world/synaura-modules.html?lang=en)
+each offer twelve written editions and a labeled Russian fallback for Yazekh.
+The specification translates all thirteen modules, navigation, statuses and the
+three-line Syntaxium example. The editions retain the source's design-draft
+status and repository MIT notice. Translations await independent review, with
+fluent-reader review for Esperanto and specialist review for Sanskrit and Latin.
+The [coverage record](../locales/synaura/pages/coverage.json) identifies the source
+revision, route language, direction, review state and page hashes. The 2026.11
+interactive protocol and other linked documents have their own coverage.
+
 ## Public module catalog · 2026-11-13
 
 The [module catalog](../modules.html?lang=en) localizes all 74 displayed

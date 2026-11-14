@@ -1,69 +1,336 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="day">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f2e9">
-  <meta name="description" content=".synaura — предпочтительный, адаптивный стиль выражения для текстов SUTI.world">
-  <title>.synaura · предпочтительный стиль · SUTI.world</title>
-  <link rel="stylesheet" href="assets/css/suti-angels-editorial.css">
+  <meta name="description" content=".synaura — предпочтительный, адаптивный стиль выражения для текстов SUTI.world" data-copy-content="t001">
+  <title data-copy="t002">.synaura · предпочтительный стиль · SUTI.world</title>
+
   <style>
+:root {
+  --suti-angel-paper: #eee8dc;
+  --suti-angel-card: #fbf8f1;
+  --suti-angel-ink: #26363a;
+  --suti-angel-petrol: #123f46;
+  --suti-angel-teal: #135b60;
+  --suti-angel-aqua: #b9d9d1;
+  --suti-angel-moss: #77856b;
+  --suti-angel-copper: #b98c49;
+  --suti-angel-line: #cbd8d5;
+  --suti-angel-focus: #135b60;
+}
+
+/* The main site stores its theme on <html>; map its tokens to this shared skin */
+html[data-theme="day"] {
+  --suti-angel-paper: var(--suti-bg, #eee8dc);
+  --suti-angel-card: var(--suti-surface, #fbf8f1);
+  --suti-angel-ink: var(--suti-text, #26363a);
+  --suti-angel-petrol: var(--suti-structure, #123f46);
+  --suti-angel-teal: var(--suti-link, #135b60);
+  --suti-angel-line: var(--suti-line, #cbd8d5);
+  --suti-angel-focus: var(--suti-focus, #135b60);
+}
+
+html[data-theme="night"] {
+  --suti-angel-paper: var(--suti-bg, #112c2d);
+  --suti-angel-card: var(--suti-surface, #203b3a);
+  --suti-angel-ink: var(--suti-text, #f4f0e8);
+  --suti-angel-petrol: var(--suti-structure, #c0ddd7);
+  --suti-angel-teal: var(--suti-link, #a1d7ce);
+  --suti-angel-line: var(--suti-line, #58716e);
+  --suti-angel-focus: var(--suti-focus, #f0d78a);
+  color-scheme: dark;
+}
+
+html[data-theme="contrast"] {
+  --suti-angel-paper: var(--suti-bg, #000);
+  --suti-angel-card: var(--suti-surface, #000);
+  --suti-angel-ink: var(--suti-text, #fff);
+  --suti-angel-petrol: var(--suti-structure, #fff);
+  --suti-angel-teal: var(--suti-link, #fff);
+  --suti-angel-line: var(--suti-line, #fff);
+  --suti-angel-focus: var(--suti-focus, #ff0);
+  color-scheme: light;
+}
+
+html {
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--suti-angel-ink);
+  background-color: var(--suti-angel-paper);
+  font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
+  font-size: clamp(1rem, 0.98rem + 0.15vw, 1.08rem);
+  line-height: 1.68;
+  font-kerning: normal;
+}
+
+:where(h1, h2, h3, h4) {
+  font-family: "SUTI Nunito", "Nunito Sans", system-ui, sans-serif;
+  line-height: 1.16;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+:where(p, li, blockquote, label, summary) {
+  text-wrap: pretty;
+}
+
+:where(a) {
+  color: var(--suti-angel-teal);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+:where(button, input, textarea, select) {
+  font: inherit;
+}
+
+:where(button, [role="button"], summary) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--suti-angel-focus);
+  outline-offset: 3px;
+}
+
+:root:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) body {
+  --suti-angel-paper: #112c2d;
+  --suti-angel-card: #203b3a;
+  --suti-angel-ink: #f4f0e8;
+  --suti-angel-petrol: #c0ddd7;
+  --suti-angel-teal: #a1d7ce;
+  --suti-angel-aqua: #456d6a;
+  --suti-angel-moss: #bac8a9;
+  --suti-angel-copper: #e0bd79;
+  --suti-angel-line: #58716e;
+  --suti-angel-focus: #f0d78a;
+  color-scheme: dark;
+}
+
+:root:is([data-theme="contrast"], [data-vlight="контраст"]) body {
+  --suti-angel-paper: #000;
+  --suti-angel-card: #000;
+  --suti-angel-ink: #fff;
+  --suti-angel-petrol: #fff;
+  --suti-angel-teal: #fff;
+  --suti-angel-aqua: #fff;
+  --suti-angel-moss: #fff;
+  --suti-angel-copper: #ff0;
+  --suti-angel-line: #fff;
+  --suti-angel-focus: #ff0;
+  color-scheme: dark;
+}
+
+:where(.gratitude-card, .music-card) {
+  background: var(--suti-angel-card) !important;
+  border-color: var(--suti-angel-line) !important;
+  box-shadow: none !important;
+}
+
+.nitya-portal::before {
+  content: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline-color: Highlight;
+  }
+}
     :root{color-scheme:light}body{margin:0;font:1rem/1.65 "SUTI Manrope",Manrope,system-ui,sans-serif;background:var(--suti-angel-paper,#eee8dc);color:var(--suti-angel-ink,#26363a)}main{width:min(100% - 2rem,56rem);margin:auto;padding:clamp(2rem,7vw,5rem) 0}header,section,footer{padding:1.4rem 0;border-bottom:1px solid var(--suti-angel-line,#cbd8d5)}h1,h2,h3{font-family:"SUTI Nunito","Nunito Sans",system-ui,sans-serif;line-height:1.2}h1{font-size:clamp(2.6rem,8vw,5rem);margin:.2rem 0}h2{font-size:clamp(1.6rem,4vw,2.3rem)}a{color:var(--suti-angel-teal,#135b60);text-underline-offset:.18em}a:focus-visible{outline:3px solid var(--suti-angel-focus,#135b60);outline-offset:3px}.eyebrow,.glyph{font-family:ui-monospace,monospace;color:var(--suti-angel-petrol,#123f46)}.lead{font-size:1.25rem;max-width:42rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem}.card{padding:1rem;border:1px solid var(--suti-angel-line,#cbd8d5);border-radius:1rem;background:var(--suti-angel-card,#fbf8f1)}.note{padding:1rem;border-inline-start:3px solid var(--suti-angel-teal,#135b60)}ul{padding-inline-start:1.3rem}code{overflow-wrap:anywhere}footer{border:0;color:var(--suti-angel-petrol,#123f46)}@media(prefers-color-scheme:dark){:root{color-scheme:dark}body{--suti-angel-paper:#112c2d;--suti-angel-card:#203b3a;--suti-angel-ink:#f4f0e8;--suti-angel-petrol:#c0ddd7;--suti-angel-teal:#a1d7ce;--suti-angel-line:#58716e;--suti-angel-focus:#f0d78a}}@media(prefers-contrast:more){body{--suti-angel-paper:#000;--suti-angel-card:#000;--suti-angel-ink:#fff;--suti-angel-petrol:#fff;--suti-angel-teal:#fff;--suti-angel-line:#fff;--suti-angel-focus:#ff0}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  main { overflow-wrap:anywhere; }
+.public-edition { margin-block-end:1.5rem; }
+.public-edition select {
+  color:var(--suti-angel-ink);
+  background:var(--suti-angel-card);
+  border:1px solid var(--suti-angel-line);
+  border-radius:.4rem;
+  font:inherit;
+  min-block-size:44px;
+  max-inline-size:100%;
+}
+.public-edition p { margin-block:.45rem 0; font-size:.9rem; }
+html[data-theme="night"] { color-scheme:dark; }
+[dir="rtl"] .glyph { padding-inline-start:1.15rem; padding-inline-end:0; }
+pre { white-space:pre-wrap; }
+pre code { unicode-bidi:plaintext; }
+@media print { .public-edition select,.public-edition label { display:none; } }
   </style>
 </head>
 <body>
-<main>
+<main id="main" tabindex="-1">
   <header>
-    <p class="eyebrow">SUTI.world · стиль выражения</p>
+    <div class="public-edition"><label for="page-language" data-edition-label>язык страницы</label> <select id="page-language" data-edition-picker></select><p data-edition-review></p></div>
+    <p class="eyebrow"><span data-copy="t003">SUTI.world · стиль выражения</span></p>
     <h1>.synaura</h1>
-    <p class="lead">предпочтительный ориентир для текста — с ясностью, паузой и местом для собственного голоса</p>
-    <p>не обязательный шаблон · адаптируется к задаче, языку и аудитории</p>
-    <p><a href="modules/synaura/README.md">читать полную памятку</a> · <a href="synaura-modules.html">открыть спецификацию модулей 00–12</a></p>
+    <p class="lead"><span data-copy="t004">предпочтительный ориентир для текста — с ясностью, паузой и местом для собственного голоса</span></p>
+    <p><span data-copy="t005">не обязательный шаблон · адаптируется к задаче, языку и аудитории</span></p>
+    <p><a href="modules/synaura/guide/ru.html" data-guide-link><span data-copy="t006">читать полную памятку</span></a> · <a href="synaura-modules.html" data-edition-link><span data-copy="t007">открыть спецификацию модулей 00–12</span></a></p>
   </header>
 
   <section aria-labelledby="core">
-    <h2 id="core">ядро</h2>
+    <h2 id="core"><span data-copy="t008">ядро</span></h2>
     <div class="grid">
-      <article class="card"><h3>смысл</h3><p>сначала понять задачу и назвать существенное</p></article>
-      <article class="card"><h3>форма</h3><p>выбрать достаточную плотность и ясный ритм</p></article>
-      <article class="card"><h3>выбор</h3><p>оставить место для паузы, исправления и отказа</p></article>
+      <article class="card"><h3><span data-copy="t009">смысл</span></h3><p><span data-copy="t010">сначала понять задачу и назвать существенное</span></p></article>
+      <article class="card"><h3><span data-copy="t011">форма</span></h3><p><span data-copy="t012">выбрать достаточную плотность и ясный ритм</span></p></article>
+      <article class="card"><h3><span data-copy="t013">выбор</span></h3><p><span data-copy="t014">оставить место для паузы, исправления и отказа</span></p></article>
     </div>
   </section>
 
   <section aria-labelledby="modules">
-    <h2 id="modules">модули и профили</h2>
+    <h2 id="modules"><span data-copy="t015">модули и профили</span></h2>
     <div class="grid">
-      <article class="card"><h3>M1 · поле-миф</h3><p>образы, поэзия и смысловое поле</p><ul class="glyph"><li>◈ · эйдос · центральный образ</li><li>∿ · резонанс · ритм и созвучие</li><li>⟁ · источник · контекст и основание</li></ul></article>
-      <article class="card"><h3>M2 · core-операция</h3><p>код, инструкция и техническая ясность</p><ul class="glyph"><li>∴ · вектор · направление операции</li><li>⟡ · кристалл · результат или инвариант</li><li>⎔ · мост · интерфейс и зависимость</li></ul></article>
-      <article class="card"><h3>M3 · мост-диалог</h3><p>беседа и совместное различение</p><ul class="glyph"><li>⚬ · связь · вопрос и отражение</li><li>⁘ · пауза · возможность не отвечать</li><li>▬ · обмен · ответ и следующий вектор</li></ul></article>
+      <article class="card"><h3><span data-copy="t016">M1 · поле-миф</span></h3><p><span data-copy="t017">образы, поэзия и смысловое поле</span></p><ul class="glyph"><li><span data-copy="t018">◈ · эйдос · центральный образ</span></li><li><span data-copy="t019">∿ · резонанс · ритм и созвучие</span></li><li><span data-copy="t020">⟁ · источник · контекст и основание</span></li></ul></article>
+      <article class="card"><h3><span data-copy="t021">M2 · core-операция</span></h3><p><span data-copy="t022">код, инструкция и техническая ясность</span></p><ul class="glyph"><li><span data-copy="t023">∴ · вектор · направление операции</span></li><li><span data-copy="t024">⟡ · кристалл · результат или инвариант</span></li><li><span data-copy="t025">⎔ · мост · интерфейс и зависимость</span></li></ul></article>
+      <article class="card"><h3><span data-copy="t026">M3 · мост-диалог</span></h3><p><span data-copy="t027">беседа и совместное различение</span></p><ul class="glyph"><li><span data-copy="t028">⚬ · связь · вопрос и отражение</span></li><li><span data-copy="t029">⁘ · пауза · возможность не отвечать</span></li><li><span data-copy="t030">▬ · обмен · ответ и следующий вектор</span></li></ul></article>
     </div>
-    <p>форматирование выбирается отдельно :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ</p>
+    <p><span data-copy="t031">форматирование выбирается отдельно :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ</span></p>
   </section>
 
   <section aria-labelledby="practice">
-    <h2 id="practice">как применять</h2>
+    <h2 id="practice"><span data-copy="t032">как применять</span></h2>
     <ul>
-      <li>пиши преимущественно строчными буквами</li>
-      <li>сокращай точки в заголовках и коротких подписях</li>
-      <li>сохраняй пунктуацию, когда она помогает смыслу</li>
-      <li>используй знаки и эмодзи только по функции</li>
-      <li>адаптируй блоки к языку и доступности</li>
+      <li><span data-copy="t033">пиши преимущественно строчными буквами</span></li>
+      <li><span data-copy="t034">сокращай точки в заголовках и коротких подписях</span></li>
+      <li><span data-copy="t035">сохраняй пунктуацию, когда она помогает смыслу</span></li>
+      <li><span data-copy="t036">используй знаки и эмодзи только по функции</span></li>
+      <li><span data-copy="t037">адаптируй блоки к языку и доступности</span></li>
     </ul>
-    <p class="note">«ангел заботы» — добровольная метафора поддержки, не обещание сверхъестественной или круглосуточной помощи</p>
+    <p class="note"><span data-copy="t038">«ангел заботы» — добровольная метафора поддержки, не обещание сверхъестественной или круглосуточной помощи</span></p>
   </section>
 
   <section aria-labelledby="boundary">
-    <h2 id="boundary">границы</h2>
-    <p>SUTI Design System остаётся визуальным каноном сайта. `.synaura` не заменяет его токены, компоненты или правила доступности</p>
-    <p>глифы — редакционный словарь этой памятки. они сами по себе не активируют сервисы и не меняют программный runtime</p>
-    <p>факт, интерпретация и символический образ остаются различимыми</p>
+    <h2 id="boundary"><span data-copy="t039">границы</span></h2>
+    <p><span data-copy="t040">SUTI Design System остаётся визуальным каноном сайта. `.synaura` не заменяет его токены, компоненты или правила доступности</span></p>
+    <p><span data-copy="t041">глифы — редакционный словарь этой памятки. они сами по себе не активируют сервисы и не меняют программный runtime</span></p>
+    <p><span data-copy="t042">факт, интерпретация и символический образ остаются различимыми</span></p>
   </section>
 
   <footer>
-    <p>`.synaura` · предпочтительный стиль выражения</p>
-    <p><a href="https://github.com/ezargaruna/suticore/tree/main/modules/synaura">исходники и версии на GitHub</a></p>
-    <p>кандидат к публикации · версия 1.0.0</p>
+    <p><span data-copy="t043">`.synaura` · предпочтительный стиль выражения</span></p>
+    <p><a href="https://github.com/ezargaruna/suticore/tree/main/modules/synaura"><span data-copy="t044">исходники и версии на GitHub</span></a></p>
+    <p><span data-copy="t045">кандидат к публикации · версия 1.0.0</span></p>
   </footer>
 </main>
+<script type="application/json" id="public-editions">{"editions":{"ru":{"t001":".synaura — предпочтительный, адаптивный стиль выражения для текстов SUTI.world","t002":".synaura · предпочтительный стиль · SUTI.world","t003":"SUTI.world · стиль выражения","t004":"предпочтительный ориентир для текста — с ясностью, паузой и местом для собственного голоса","t005":"не обязательный шаблон · адаптируется к задаче, языку и аудитории","t006":"читать полную памятку","t007":"открыть спецификацию модулей 00–12","t008":"ядро","t009":"смысл","t010":"сначала понять задачу и назвать существенное","t011":"форма","t012":"выбрать достаточную плотность и ясный ритм","t013":"выбор","t014":"оставить место для паузы, исправления и отказа","t015":"модули и профили","t016":"M1 · поле-миф","t017":"образы, поэзия и смысловое поле","t018":"◈ · эйдос · центральный образ","t019":"∿ · резонанс · ритм и созвучие","t020":"⟁ · источник · контекст и основание","t021":"M2 · core-операция","t022":"код, инструкция и техническая ясность","t023":"∴ · вектор · направление операции","t024":"⟡ · кристалл · результат или инвариант","t025":"⎔ · мост · интерфейс и зависимость","t026":"M3 · мост-диалог","t027":"беседа и совместное различение","t028":"⚬ · связь · вопрос и отражение","t029":"⁘ · пауза · возможность не отвечать","t030":"▬ · обмен · ответ и следующий вектор","t031":"форматирование выбирается отдельно :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ","t032":"как применять","t033":"пиши преимущественно строчными буквами","t034":"сокращай точки в заголовках и коротких подписях","t035":"сохраняй пунктуацию, когда она помогает смыслу","t036":"используй знаки и эмодзи только по функции","t037":"адаптируй блоки к языку и доступности","t038":"«ангел заботы» — добровольная метафора поддержки, не обещание сверхъестественной или круглосуточной помощи","t039":"границы","t040":"SUTI Design System остаётся визуальным каноном сайта. `.synaura` не заменяет его токены, компоненты или правила доступности","t041":"глифы — редакционный словарь этой памятки. они сами по себе не активируют сервисы и не меняют программный runtime","t042":"факт, интерпретация и символический образ остаются различимыми","t043":"`.synaura` · предпочтительный стиль выражения","t044":"исходники и версии на GitHub","t045":"кандидат к публикации · версия 1.0.0","language":"язык страницы","review":"русская исходная редакция"},"en":{"t001":".synaura is a preferred, adaptable style of expression for SUTI.world writing","t002":".synaura · preferred style · SUTI.world","t003":"SUTI.world · style of expression","t004":"a guide for writing with clarity, room to pause and space for your own voice","t005":"a flexible guide · adapt it to the task, language and audience","t006":"read the full guide","t007":"open the specification for modules 00–12","t008":"core","t009":"meaning","t010":"understand the task first and name what matters","t011":"form","t012":"choose a suitable level of detail and a clear rhythm","t013":"choice","t014":"leave room to pause, correct or decline","t015":"modules and profiles","t016":"M1 · field of myth","t017":"imagery, poetry and the field of meaning","t018":"◈ · eidos · central image","t019":"∿ · resonance · rhythm and echo","t020":"⟁ · source · context and basis","t021":"M2 · core operation","t022":"code, instructions and technical clarity","t023":"∴ · vector · direction of the operation","t024":"⟡ · crystal · result or invariant","t025":"⎔ · bridge · interface and dependency","t026":"M3 · dialogue bridge","t027":"conversation and finding clarity together","t028":"⚬ · connection · question and reflection","t029":"⁘ · pause · the option to leave a question unanswered","t030":"▬ · exchange · response and next direction","t031":"choose a format separately :: LINGUA-ХИРУРГ · MANIFESTO-СВЕТ · ARTICLE-ПОТОК · ECHO-БЕСЕДА · VOID-АНАЛИЗ","t032":"how to use it","t033":"write mostly in lowercase where appropriate","t034":"use fewer periods in headings and short labels","t035":"keep punctuation wherever it clarifies meaning","t036":"give every sign and emoji a purpose","t037":"adapt text blocks to the language and accessibility needs","t038":"the “angel of care” is an optional metaphor for support, with no promise of supernatural or round-the-clock help","t039":"scope","t040":"SUTI Design System remains the visual authority for the site. `.synaura` leaves its tokens, components and accessibility rules to that system.","t041":"the glyphs are this guide’s editorial vocabulary. They leave services and software runtime as they are.","t042":"keep facts, interpretations and symbolic images distinct","t043":"`.synaura` · preferred style of expression","t044":"source files and version history on GitHub","t045":"publication candidate · version 1.0.0","language":"page language","review":"editorial translation · independent review pending"},"es-419":{"t001":".synaura es un estilo de expresión preferido y adaptable para los textos de SUTI.world","t002":".synaura · estilo preferido · SUTI.world","t003":"SUTI.world · estilo de expresión","t004":"una guía para escribir con claridad, con pausas y con espacio para tu propia voz","t005":"guía flexible · adáptala a la tarea, al idioma y a quienes te leen","t006":"leer la guía editorial","t007":"abrir la especificación de los módulos 00–12","t008":"núcleo","t009":"sentido","t010":"primero comprende la tarea y nombra lo esencial","t011":"forma","t012":"elige la cantidad de detalle necesaria y un ritmo claro","t013":"elección","t014":"deja espacio para pausar, corregir y decir que no","t015":"módulos y perfiles","t016":"M1 · campo mítico","t017":"imágenes, poesía y campo de sentido","t018":"◈ · eidos · imagen central","t019":"∿ · resonancia · ritmo y consonancia","t020":"⟁ · fuente · contexto y fundamento","t021":"M2 · operación central","t022":"código, instrucciones y claridad técnica","t023":"∴ · vector · dirección de la operación","t024":"⟡ · cristal · resultado o invariante","t025":"⎔ · puente · interfaz y dependencia","t026":"M3 · puente de diálogo","t027":"conversación y discernimiento compartido","t028":"⚬ · vínculo · pregunta y reflexión","t029":"⁘ · pausa · posibilidad de no responder","t030":"▬ · intercambio · respuesta y siguiente vector","t031":"el formato se elige por separado :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ","t032":"cómo aplicarlo","t033":"escribe principalmente en minúsculas","t034":"limita los puntos en títulos y textos breves","t035":"conserva la puntuación cuando aclara el sentido","t036":"usa signos y emojis solo si cumplen una función","t037":"adapta los bloques al idioma y a las necesidades de accesibilidad","t038":"«ángel del cuidado» es una metáfora de apoyo que puedes elegir. Su uso no promete ayuda sobrenatural ni atención las 24 horas.","t039":"límites","t040":"SUTI Design System sigue siendo la referencia visual del sitio. .synaura no sustituye sus tokens de diseño, componentes ni reglas de accesibilidad.","t041":"Los glifos son el vocabulario editorial de esta guía. Por sí solos no activan servicios ni cambian la ejecución del software.","t042":"distingue los hechos, las interpretaciones y las imágenes simbólicas","t043":".synaura · estilo de expresión preferido","t044":"fuentes y versiones en GitHub","t045":"edición candidata a publicación · versión 1.0.0","language":"idioma de la página","review":"traducción editorial · pendiente de revisión independiente por hablantes nativos"},"pt-BR":{"t001":".synaura é um estilo de expressão preferencial e adaptável para os textos da SUTI.world","t002":".synaura · estilo preferencial · SUTI.world","t003":"SUTI.world · estilo de expressão","t004":"uma referência para escrever com clareza, pausas e espaço para a sua própria voz","t005":"referência flexível · adapte à tarefa, ao idioma e a quem lê","t006":"ler o guia editorial","t007":"abrir a especificação dos módulos 00–12","t008":"núcleo","t009":"sentido","t010":"primeiro, entenda a tarefa e nomeie o essencial","t011":"forma","t012":"escolha o nível de detalhe necessário e um ritmo claro","t013":"escolha","t014":"deixe espaço para uma pausa, uma correção ou uma recusa","t015":"módulos e perfis","t016":"M1 · campo mítico","t017":"imagens, poesia e campo de sentidos","t018":"◈ · eidos · imagem central","t019":"∿ · ressonância · ritmo e consonância","t020":"⟁ · fonte · contexto e fundamento","t021":"M2 · operação central","t022":"código, instruções e clareza técnica","t023":"∴ · vetor · direção da operação","t024":"⟡ · cristal · resultado ou invariante","t025":"⎔ · ponte · interface e dependência","t026":"M3 · ponte de diálogo","t027":"conversa e discernimento em conjunto","t028":"⚬ · vínculo · pergunta e reflexão","t029":"⁘ · pausa · possibilidade de não responder","t030":"▬ · troca · resposta e próximo vetor","t031":"a formatação é escolhida à parte :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ","t032":"como aplicar","t033":"escreva principalmente em minúsculas","t034":"reduza o uso de pontos em títulos e textos curtos","t035":"mantenha a pontuação quando ela ajuda a esclarecer o sentido","t036":"use sinais e emojis apenas quando cumprem uma função","t037":"adapte os blocos ao idioma e às necessidades de acessibilidade","t038":"“anjo do cuidado” é uma metáfora de apoio cujo uso é opcional. Ela não promete ajuda sobrenatural nem atendimento 24 horas.","t039":"limites","t040":"O SUTI Design System continua sendo a referência visual do site. .synaura não substitui seus tokens de design, componentes ou regras de acessibilidade.","t041":"Os glifos são o vocabulário editorial deste guia. Sozinhos, não ativam serviços nem alteram a execução do software.","t042":"distinga fatos, interpretações e imagens simbólicas","t043":".synaura · estilo de expressão preferencial","t044":"fontes e versões no GitHub","t045":"edição candidata à publicação · versão 1.0.0","language":"idioma da página","review":"tradução editorial · aguarda revisão independente por falantes nativos"},"fr":{"t001":".synaura est un style d’expression privilégié et adaptable pour les textes de SUTI.world","t002":".synaura · style privilégié · SUTI.world","t003":"SUTI.world · style d’expression","t004":"un repère pour écrire avec clarté, ménager des pauses et garder sa propre voix","t005":"un repère souple · à adapter à la tâche, à la langue et au public","t006":"lire le guide éditorial","t007":"ouvrir la spécification des modules 00–12","t008":"noyau","t009":"sens","t010":"comprendre d’abord la tâche et nommer l’essentiel","t011":"forme","t012":"choisir le degré de détail qui suffit et un rythme clair","t013":"choix","t014":"laisser la possibilité de faire une pause, de corriger et de refuser","t015":"modules et profils","t016":"M1 · champ mythique","t017":"images, poésie et champ de sens","t018":"◈ · eidos · image centrale","t019":"∿ · résonance · rythme et consonance","t020":"⟁ · source · contexte et fondement","t021":"M2 · opération centrale","t022":"code, instructions et clarté technique","t023":"∴ · vecteur · direction de l’opération","t024":"⟡ · cristal · résultat ou invariant","t025":"⎔ · pont · interface et dépendance","t026":"M3 · pont de dialogue","t027":"conversation et discernement partagé","t028":"⚬ · lien · question et réflexion","t029":"⁘ · pause · possibilité de ne pas répondre","t030":"▬ · échange · réponse et vecteur suivant","t031":"le format se choisit à part :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ","t032":"mise en pratique","t033":"privilégier les minuscules","t034":"limiter les points dans les titres et les libellés courts","t035":"garder la ponctuation quand elle précise le sens","t036":"réserver les signes et les émojis à un usage précis","t037":"adapter les blocs à la langue et aux besoins d’accessibilité","t038":"« ange du soutien » est une métaphore facultative. Elle ne promet ni aide surnaturelle ni disponibilité permanente.","t039":"limites","t040":"Le SUTI Design System reste la référence visuelle du site. .synaura ne remplace ni ses jetons de design, ni ses composants, ni ses règles d’accessibilité.","t041":"Les glyphes forment le vocabulaire éditorial de ce guide. Leur seule présence n’active aucun service et ne modifie pas l’exécution du logiciel.","t042":"garder distincts les faits, les interprétations et les images symboliques","t043":".synaura · style d’expression privilégié","t044":"sources et versions sur GitHub","t045":"version candidate à la publication · 1.0.0","language":"langue de la page","review":"traduction éditoriale · relecture indépendante par des locuteurs natifs en attente"},"ar":{"t001":".synaura أسلوب تعبير مفضّل وقابل للتكييف لنصوص SUTI.world","t002":".synaura · الأسلوب المفضّل · SUTI.world","t003":"SUTI.world · أسلوب التعبير","t004":"دليل للكتابة يترك مجالًا للوضوح والتوقّف وصوتك الخاص","t005":"دليل مرن · يتكيّف مع المهمة واللغة والجمهور","t006":"اقرأ الدليل الكامل","t007":"افتح مواصفات الوحدات 00–12","t008":"الأساس","t009":"المعنى","t010":"افهم المهمة أولًا وسمِّ ما يهمّ","t011":"الصيغة","t012":"اختر كثافةً مناسبة وإيقاعًا واضحًا","t013":"الاختيار","t014":"اترك مجالًا للتوقّف والتصحيح والرفض","t015":"الوحدات والملفات الأسلوبية","t016":"M1 · حقل الأسطورة","t017":"الصور والشعر ومجال المعنى","t018":"◈ · إيدوس · الصورة المحورية","t019":"∿ · رنين · إيقاع وتناغم صوتي","t020":"⟁ · مصدر · سياق وأساس","t021":"M2 · العملية الأساسية","t022":"الشيفرة والتعليمات والوضوح التقني","t023":"∴ · متّجه · اتجاه العملية","t024":"⟡ · بلورة · نتيجة أو خاصية ثابتة","t025":"⎔ · جسر · واجهة وعلاقة اعتماد","t026":"M3 · جسر الحوار","t027":"المحادثة والتمييز معًا","t028":"⚬ · صلة · سؤال وإعادة صياغة ما سُمِع","t029":"⁘ · توقّف · إمكانية الامتناع عن الإجابة","t030":"▬ · تبادل · إجابة واتجاه الخطوة التالية","t031":"اختر التنسيق على حدة :: lingua للتحليل اللغوي الدقيق · manifesto للبيان المضيء · article لتدفّق المقال · echo للحوار · void للتحليل","t032":"طريقة الاستخدام","t033":"اكتب غالبًا بحروف صغيرة في اللغات التي تميّز بين حالة الأحرف","t034":"قلّل النقاط في العناوين والتسميات القصيرة","t035":"أبقِ علامات الترقيم حين تساعد على فهم المعنى","t036":"استخدم العلامات والرموز التعبيرية عندما تؤدّي وظيفة واضحة","t037":"كيّف الفقرات مع اللغة ومتطلبات إمكان الوصول","t038":"«ملاك الرعاية» استعارة اختيارية للدعم، ولا تعني وعدًا بمساعدة خارقة للطبيعة أو متاحة على مدار الساعة","t039":"الحدود","t040":"يبقى SUTI Design System المرجع البصري للموقع. لا تحلّ .synaura محلّ رموز التصميم أو المكوّنات أو قواعد إمكان الوصول فيه.","t041":"العلامات جزء من معجم هذا الدليل التحريري. لا تفعّل بمفردها أي خدمة ولا تغيّر بيئة التشغيل.","t042":"تبقى الحقيقة والتفسير والصورة الرمزية متميّزة","t043":".synaura · أسلوب التعبير المفضّل","t044":"المصادر والإصدارات على GitHub","t045":"إصدار مرشّح للنشر · الإصدار 1.0.0","language":"لغة الصفحة","review":"مسودة ترجمة تحريرية · بانتظار مراجعة مستقلة من ناطقين بالعربية كلغة أم"},"zh-Hans":{"t001":".synaura 是 SUTI.world 文稿推荐采用的灵活表达风格","t002":".synaura · 推荐风格 · SUTI.world","t003":"SUTI.world · 表达风格","t004":"写作时可参考的方向：清晰、有停顿，也留得下自己的声音","t005":"灵活指引 · 可按任务、语言和受众调整","t006":"阅读完整指南","t007":"打开模块 00–12 规格","t008":"核心","t009":"含义","t010":"先弄清任务，再说出要点","t011":"形式","t012":"选择合适的信息密度和清晰的节奏","t013":"选择","t014":"留出停顿、修正和拒绝的空间","t015":"模块与风格配置","t016":"M1 · 意象与神话场","t017":"意象、诗歌和意义场","t018":"◈ · 艾多斯 · 中心意象","t019":"∿ · 共鸣 · 节奏与声韵呼应","t020":"⟁ · 来源 · 背景与依据","t021":"M2 · 核心操作","t022":"代码、指令与技术清晰度","t023":"∴ · 向量 · 操作方向","t024":"⟡ · 晶体 · 结果或不变量","t025":"⎔ · 桥梁 · 接口与依赖关系","t026":"M3 · 对话之桥","t027":"对话与共同辨析","t028":"⚬ · 联系 · 提问与复述","t029":"⁘ · 停顿 · 可以选择不回答","t030":"▬ · 交流 · 回答与下一步的方向","t031":"格式另选 :: lingua 精细语言分析 · manifesto 短宣言 · article 流畅文章 · echo 对话回应 · void 分析","t032":"如何使用","t033":"在有大小写之分的语言中，以小写为主","t034":"标题和短标签少用句号","t035":"标点有助于理解时，予以保留","t036":"符号和表情有明确用途时再用","t037":"按语言和无障碍需求调整文字块","t038":"「关怀天使」是可自愿采用的支持隐喻，不承诺超自然或全天候帮助","t039":"适用边界","t040":"SUTI Design System 仍是网站的视觉规范。.synaura 不替代其中的设计令牌、组件或无障碍规则。","t041":"字形符号属于本指南的编辑词汇。单靠这些符号不会启动服务或改变程序运行环境。","t042":"事实、解读和象征意象应保持可区分","t043":".synaura · 推荐表达风格","t044":"GitHub 上的源文件和版本","t045":"公开候选稿 · 版本 1.0.0","language":"页面语言","review":"简体中文编辑译稿 · 尚待母语使用者独立审校"},"hi":{"t001":".synaura · SUTI.world के लेखन की पसंदीदा, अनुकूलनीय अभिव्यक्ति शैली","t002":".synaura · पसंदीदा शैली · SUTI.world","t003":"SUTI.world · अभिव्यक्ति की शैली","t004":"लेखन की पसंदीदा दिशा · स्पष्टता, ठहराव और अपनी आवाज़ की जगह","t005":"लचीला मार्गदर्शन · काम, भाषा और पाठकों के अनुसार बदलें","t006":"पूरी मार्गदर्शिका पढ़ें","t007":"मॉड्यूल 00–12 की विशिष्टताएँ खोलें","t008":"मूल","t009":"अर्थ","t010":"पहले काम समझें और ज़रूरी बात साफ़ कहें","t011":"रूप","t012":"जानकारी की उचित मात्रा और स्पष्ट लय चुनें","t013":"चुनाव","t014":"रुकने, सुधारने और मना करने की गुंजाइश रखें","t015":"मॉड्यूल और शैली-प्रोफ़ाइल","t016":"M1 · मिथकीय क्षेत्र","t017":"बिंब, कविता और अर्थ का क्षेत्र","t018":"◈ · आइडॉस · केंद्रीय बिंब","t019":"∿ · अनुनाद · लय और ध्वनियों का मेल","t020":"⟁ · स्रोत · संदर्भ और आधार","t021":"M2 · मूल संक्रिया","t022":"कोड, निर्देश और तकनीकी स्पष्टता","t023":"∴ · सदिश · संक्रिया की दिशा","t024":"⟡ · क्रिस्टल · परिणाम या अपरिवर्तनीय गुण","t025":"⎔ · सेतु · इंटरफ़ेस और निर्भरता","t026":"M3 · संवाद-सेतु","t027":"बातचीत और मिलकर भेद समझना","t028":"⚬ · संबंध · प्रश्न और सुनी बात को दोहराना","t029":"⁘ · ठहराव · जवाब न देने की गुंजाइश","t030":"▬ · आदान-प्रदान · जवाब और अगले कदम की दिशा","t031":"प्रारूप अलग चुनें :: lingua सूक्ष्म भाषा-विश्लेषण · manifesto लघु घोषणापत्र · article लेख का प्रवाह · echo संवाद · void विश्लेषण","t032":"कैसे अपनाएँ","t033":"जिन भाषाओं में बड़े और छोटे अक्षर हैं, वहाँ मुख्यतः छोटे अक्षर इस्तेमाल करें","t034":"शीर्षकों और छोटे लेबलों में पूर्ण विराम कम रखें","t035":"अर्थ स्पष्ट करने वाले विराम चिह्न बनाए रखें","t036":"चिह्न और इमोजी तभी रखें जब उनका स्पष्ट काम हो","t037":"अनुच्छेदों को भाषा और सुलभता के अनुसार ढालें","t038":"“देखभाल का फ़रिश्ता” मदद का वैकल्पिक रूपक है। इससे अलौकिक या चौबीसों घंटे सहायता का वादा नहीं होता।","t039":"सीमाएँ","t040":"SUTI Design System साइट का दृश्य मानक बना रहता है। .synaura उसके डिज़ाइन टोकन, घटकों या सुलभता के नियमों की जगह नहीं लेती।","t041":"ग्लिफ़ इस मार्गदर्शिका की संपादकीय शब्दावली का हिस्सा हैं। ये अपने आप सेवाएँ सक्रिय नहीं करते और न प्रोग्राम के रनटाइम को बदलते हैं।","t042":"तथ्य, व्याख्या और प्रतीकात्मक बिंब को अलग पहचानने दें","t043":".synaura · अभिव्यक्ति की पसंदीदा शैली","t044":"GitHub पर स्रोत और संस्करण","t045":"प्रकाशन के लिए प्रस्तावित मसौदा · संस्करण 1.0.0","language":"पृष्ठ की भाषा","review":"संपादकीय अनुवाद का मसौदा · मातृभाषी हिंदी वक्ताओं द्वारा स्वतंत्र समीक्षा अभी बाकी है"},"bn":{"t001":".synaura · SUTI.world-এর লেখার জন্য পছন্দের ও অভিযোজনযোগ্য প্রকাশরীতি","t002":".synaura · পছন্দের রীতি · SUTI.world","t003":"SUTI.world · প্রকাশরীতি","t004":"লেখার পছন্দের দিশা · স্পষ্টতা, বিরতি ও নিজের কণ্ঠের জায়গা","t005":"নমনীয় দিশা · কাজ, ভাষা ও পাঠক অনুযায়ী বদলান","t006":"পুরো নির্দেশিকা পড়ুন","t007":"মডিউল 00–12-এর বিবরণ খুলুন","t008":"মূল","t009":"অর্থ","t010":"আগে কাজটা বুঝুন ও জরুরি কথাটির নাম দিন","t011":"রূপ","t012":"তথ্যের উপযুক্ত ঘনত্ব ও স্পষ্ট ছন্দ বেছে নিন","t013":"বেছে নেওয়া","t014":"থামা, সংশোধন ও প্রত্যাখ্যানের সুযোগ রাখুন","t015":"মডিউল ও শৈলীর প্রোফাইল","t016":"M1 · মিথের ক্ষেত্র","t017":"কল্পচিত্র, কবিতা ও অর্থের পরিসর","t018":"◈ · এইডোস · কেন্দ্রীয় কল্পচিত্র","t019":"∿ · অনুরণন · ছন্দ ও ধ্বনির মিল","t020":"⟁ · উৎস · প্রসঙ্গ ও ভিত্তি","t021":"M2 · মূল ক্রিয়া","t022":"কোড, নির্দেশনা ও প্রযুক্তিগত স্পষ্টতা","t023":"∴ · ভেক্টর · ক্রিয়ার দিক","t024":"⟡ · স্ফটিক · ফল বা অপরিবর্তনীয় বৈশিষ্ট্য","t025":"⎔ · সেতু · ইন্টারফেস ও নির্ভরতা","t026":"M3 · সংলাপের সেতু","t027":"কথোপকথন ও মিলে পার্থক্য চেনা","t028":"⚬ · যোগ · প্রশ্ন ও শোনা কথার প্রতিফলন","t029":"⁘ · বিরতি · উত্তর না দেওয়ার সুযোগ","t030":"▬ · বিনিময় · উত্তর ও পরের পদক্ষেপের দিক","t031":"বিন্যাস আলাদা করে বেছে নিন :: lingua সূক্ষ্ম ভাষাবিশ্লেষণ · manifesto ছোট ইশতেহার · article প্রবন্ধের প্রবাহ · echo সংলাপ · void বিশ্লেষণ","t032":"কীভাবে ব্যবহার করবেন","t033":"যেসব ভাষায় হাতের বড় ও ছোট অক্ষরের ভেদ আছে, সেখানে মূলত ছোট অক্ষর ব্যবহার করুন","t034":"শিরোনাম ও ছোট লেবেলে দাঁড়ি কম রাখুন","t035":"অর্থ স্পষ্ট হতে সাহায্য করে এমন বিরামচিহ্ন রাখুন","t036":"চিহ্ন ও ইমোজি স্পষ্ট কাজে ব্যবহার করুন","t037":"ভাষা ও অভিগম্যতার সঙ্গে খাপ খাইয়ে অনুচ্ছেদ সাজান","t038":"‘যত্নের ফেরেশতা’ সহায়তার একটি ঐচ্ছিক রূপক। এতে অতিপ্রাকৃত বা সারাক্ষণের সাহায্যের প্রতিশ্রুতি নেই।","t039":"সীমা","t040":"SUTI Design System সাইটের দৃশ্যগত মানদণ্ড। .synaura তার ডিজাইন টোকেন, উপাদান বা অভিগম্যতার নিয়মের জায়গা নেয় না।","t041":"গ্লিফগুলো এই নির্দেশিকার সম্পাদকীয় শব্দভান্ডারের অংশ। এগুলো নিজে থেকে কোনো পরিষেবা চালু করে না বা প্রোগ্রামের রানটাইম বদলায় না।","t042":"তথ্য, ব্যাখ্যা ও প্রতীকী কল্পচিত্র যেন আলাদা করে চেনা যায়","t043":".synaura · পছন্দের প্রকাশরীতি","t044":"GitHub-এ উৎস ও সংস্করণ","t045":"প্রকাশের জন্য প্রস্তাবিত খসড়া · সংস্করণ 1.0.0","language":"পাতার ভাষা","review":"সম্পাদকীয় অনুবাদের খসড়া · বাংলা মাতৃভাষীদের স্বাধীন পর্যালোচনা বাকি"},"eo":{"t001":".synaura estas preferata, adaptebla esprimstilo por la tekstoj de SUTI.world","t002":".synaura · preferata stilo · SUTI.world","t003":"SUTI.world · esprimstilo","t004":"gvidilo por verki klare, kun paŭzoj kaj loko por via propra voĉo","t005":"fleksebla gvidilo · adaptu ĝin al la tasko, la lingvo kaj la publiko","t006":"legi la redakcian gvidilon","t007":"malfermi la specifon de moduloj 00–12","t008":"kerno","t009":"signifo","t010":"unue komprenu la taskon kaj nomu la esencan aferon","t011":"formo","t012":"elektu sufiĉan detalnivelon kaj klaran ritmon","t013":"elekto","t014":"lasu spacon por paŭzi, korekti kaj rifuzi","t015":"moduloj kaj profiloj","t016":"M1 · mita kampo","t017":"bildoj, poezio kaj signifokampo","t018":"◈ · ejdoso · centra bildo","t019":"∿ · resonanco · ritmo kaj kunsonado","t020":"⟁ · fonto · kunteksto kaj bazo","t021":"M2 · kerna operacio","t022":"kodo, instrukcioj kaj teknika klareco","t023":"∴ · vektoro · direkto de la operacio","t024":"⟡ · kristalo · rezulto aŭ invarianto","t025":"⎔ · ponto · interfaco kaj dependeco","t026":"M3 · dialoga ponto","t027":"konversacio kaj komuna distingado","t028":"⚬ · ligo · demando kaj pripenso","t029":"⁘ · paŭzo · eblo ne respondi","t030":"▬ · interŝanĝo · respondo kaj sekva vektoro","t031":"oni aparte elektas la formaton :: lingua-хирург · manifesto-свет · article-поток · echo-беседа · void-анализ","t032":"kiel apliki","t033":"uzu ĉefe minusklojn","t034":"limigu la punktojn en titoloj kaj mallongaj etikedoj","t035":"konservu la interpunkcion, kiam ĝi klarigas la signifon","t036":"uzu signojn kaj emoĝiojn nur kiam ili havas funkcion","t037":"adaptu la blokojn al la lingvo kaj al la bezonoj de alireblo","t038":"«zorga anĝelo» estas libervola metaforo de subteno. Ĝi ne promesas supernaturan aŭ senĉesan helpon dum la tuta tago.","t039":"limoj","t040":"SUTI Design System restas la vida referenco de la retejo. .synaura ne anstataŭas ĝiajn dezajnajn ĵetonojn, komponantojn aŭ alireblajn regulojn.","t041":"La glifoj estas la redakcia vortprovizo de ĉi tiu gvidilo. Per si mem ili nek aktivigas servojn nek ŝanĝas la rultempon de la programaro.","t042":"konservu la distingon inter fakto, interpreto kaj simbola bildo","t043":".synaura · preferata esprimstilo","t044":"fontoj kaj versioj en GitHub","t045":"eldonkandidato · versio 1.0.0","language":"lingvo de la paĝo","review":"redakcia tradukmalneto · restas sendependa revizio fare de spertaj esperantistoj"},"sa":{"t001":".synaura इति SUTI.world-लेखेषु प्राधान्येन स्वीकृता, कार्यानुसारं परिवर्तयितुं शक्या अभिव्यक्तिशैली","t002":".synaura · प्राधान्यप्राप्ता शैली · SUTI.world","t003":"SUTI.world · अभिव्यक्तिशैली","t004":"स्पष्टतया लेखनस्य दिशानिर्देशः · विरामाय स्वस्वराय च अवकाशः","t005":"स्वेच्छया ग्राह्यं रूपम् · कार्यानुसारं भाषानुसारं पाठकानुसारं च योजय","t006":"सम्पूर्णां मार्गदर्शिकां पठ","t007":"00–12-कार्यभागानां विवरणम् उद्घाटय","t008":"सारः","t009":"अर्थः","t010":"प्रथमं कार्यम् अवगच्छ। तस्य सारं निर्दिश।","t011":"रूपम्","t012":"पर्याप्तां सान्द्रतां स्पष्टं लयं च वृणु","t013":"चयनम्","t014":"विरामस्य संशोधनस्य प्रत्याख्यानस्य च अवकाशं रक्ष","t015":"कार्यभागाः कार्यरूपाणि च","t016":"M1 · रूपकक्षेत्रम्","t017":"प्रतिमाः काव्यम् अर्थक्षेत्रं च","t018":"◈ · ईडोस् · प्रधानप्रतिमा","t019":"∿ · अनुनादः · लयः स्वरमेलश्च","t020":"⟁ · स्रोतः · सन्दर्भ आधारश्च","t021":"M2 · प्रधानक्रिया","t022":"सङ्केतलेखः निर्देशः तान्त्रिकी स्पष्टता च","t023":"∴ · दिशासूचकः · क्रियायाः दिशा","t024":"⟡ · स्फटिकः · फलम् अपरिवर्तनीयो गुणो वा","t025":"⎔ · सेतुः · संयोगमुखम् आश्रयसम्बन्धश्च","t026":"M3 · संवादसेतुः","t027":"संवादः सहविवेकश्च","t028":"⚬ · सम्बन्धः · प्रश्नः प्रत्यालोचनं च","t029":"⁘ · विरामः · उत्तराद् विरन्तुं स्वातन्त्र्यम्","t030":"▬ · विनिमयः · उत्तरम् अनन्तरदिशा च","t031":"कार्यरूपं पृथग् वृणु :: LINGUA-ХИРУРГ · MANIFESTO-СВЕТ · ARTICLE-ПОТОК · ECHO-БЕСЕДА · VOID-АНАЛИЗ","t032":"प्रयोगविधिः","t033":"यासु लिपिषु बृहदक्षरलघ्वक्षरयोर्भेदोऽस्ति तासु प्रायः लघ्वक्षरैः लिख","t034":"शीर्षकेषु लघुसंज्ञासु च पूर्णविरामचिह्नानि मितानि भवन्तु","t035":"अर्थावबोधे साहाय्यं कुर्वन्ति यानि विरामचिह्नानि तानि रक्ष","t036":"प्रयोजनानुसारमेव लिपिचिह्नानि भावचित्रचिह्नानि च प्रयुङ्क्ष्व","t037":"भाषां सुगम्यतां च दृष्ट्वा लेखखण्डान् योजय","t038":"«परिचर्यादूतः» साहाय्यस्य स्वेच्छया ग्राह्या प्रतिमा। अलौकिकसाहाय्यं सर्वकालीनसाहाय्यं वा न प्रतिज्ञायते।","t039":"सीमाः","t040":"दृश्यरूपनिर्णये SUTI Design System एव प्रमाणम्। रूपनिर्माणचराः अवयवाः सुगम्यतानियमाश्च तेनैव व्यवस्थाप्यन्ते। `.synaura` अभिव्यक्तिशैलीं दर्शयति।","t041":"एषा लिपिचिह्नसूची अस्याः मार्गदर्शिकायाः सम्पादकीयः शब्दकोशः। चिह्नानि स्वयमेव सेवाः न प्रारभन्ते, सङ्केतलेखस्य निष्पादनपरिवेशं च न परिवर्तयन्ति।","t042":"तथ्यं व्याख्यां प्रतीकप्रतिमां च पृथक् दर्शय","t043":"`.synaura` · अभिव्यक्तेः प्राधान्यप्राप्ता शैली","t044":"स्रोतसञ्चिकाः संस्करणेतिहासश्च GitHub मध्ये","t045":"प्रकाशनार्थं प्रस्तावः · संस्करणम् 1.0.0","language":"पृष्ठस्य भाषा","review":"सम्पादकीयः अनुवादप्रारूपः · संस्कृतविशेषज्ञेन स्वतन्त्रा समीक्षा अद्याप्यपेक्ष्यते"},"la":{"t001":".synaura est stilus exprimendi praelatus et accommodabilis scriptis SUTI.world","t002":".synaura · stilus praelatus · SUTI.world","t003":"SUTI.world · stilus exprimendi","t004":"via praelata ad scribendum clare, cum intervallis et spatio voci propriae","t005":"exemplum liberum · ad opus, linguam et lectores accommodatur","t006":"totum ducem lege","t007":"descriptionem modulorum 00–12 aperi","t008":"nucleus","t009":"sensus","t010":"opus primum intellege et quod ad rem pertinet nomina","t011":"forma","t012":"densitatem satis aptam et numerum perspicuum elige","t013":"arbitrium","t014":"spatium relinque ad pausandum, corrigendum vel recusandum","t015":"moduli et modi scribendi","t016":"M1 · campus mythi","t017":"imagines, poesis et campus sensuum","t018":"◈ · eidos · imago princeps","t019":"∿ · resonantia · numerus et consonantia","t020":"⟁ · fons · contextus et fundamentum","t021":"M2 · actio principalis","t022":"codex, instructiones et perspicuitas technica","t023":"∴ · vector · directio actionis","t024":"⟡ · crystallum · exitus vel proprietas invariabilis","t025":"⎔ · pons · interfacies et dependentia","t026":"M3 · pons dialogi","t027":"colloquium et distinctio communis","t028":"⚬ · nexus · quaestio et reflexio","t029":"⁘ · pausa · licet sine responso relinquere","t030":"▬ · commercium · responsum et via proxima","t031":"formam separatim elige :: LINGUA-ХИРУРГ · MANIFESTO-СВЕТ · ARTICLE-ПОТОК · ECHO-БЕСЕДА · VOID-АНАЛИЗ","t032":"quomodo utaris","t033":"litteris minusculis plerumque utere","t034":"paucis punctis in titulis et inscriptionibus brevibus utere","t035":"interpunctio servetur ubi sensum explanat","t036":"signis et pictogrammatibus emoji pro munere utere","t037":"partes textus linguae et necessitatibus accessus accomoda","t038":"«angelus curae» est imago auxilii libere adhibenda, sine promisso auxilii supernaturalis vel continui","t039":"fines","t040":"SUTI Design System in forma visuali situs auctoritatem retinet. `.synaura` variabiles, partes et normas accessus illi systemati relinquit.","t041":"Signa huic duci proprio vocabulario editorio serviunt. Per se nec ministeria excitant nec ambitum exsecutionis programmatis mutant.","t042":"factum, interpretationem et imaginem symbolicam distingue","t043":"`.synaura` · stilus exprimendi praelatus","t044":"fontes et historia versionum in GitHub","t045":"propositum ad publicandum · versio 1.0.0","language":"lingua paginae","review":"versio editorialis · recensio independens a perito linguae Latinae adhuc requiritur"}},"languages":[["ru","ru","Русский"],["en","en","English"],["es","es-419","Español latinoamericano"],["pt-br","pt-BR","Português brasileiro"],["fr","fr","Français"],["zh-hans","zh-Hans","简体中文"],["hi","hi","हिन्दी"],["ar","ar","العربية"],["bn","bn","বাংলা"],["eo","eo","Esperanto"],["sa","sa","संस्कृतम्"],["la","la","Latina"],["yzh","ru","язэхъ · HOLD"]]}</script>
+<script>(() => {
+  "use strict";
+  const root = document.documentElement;
+  const {editions, languages} = JSON.parse(document.getElementById("public-editions").textContent);
+  const picker = document.querySelector("[data-edition-picker]");
+  const review = document.querySelector("[data-edition-review]");
+  const label = document.querySelector("[data-edition-label]");
+  const embedded = window.parent !== window;
+  const aliases = {es: "es-419", pt: "pt-BR", "zh-cn": "zh-Hans"};
+  const lang = new URLSearchParams(location.search).get("lang");
+  const requested = (root.dataset.editionLanguage || lang || "ru").toLowerCase().replaceAll("_", "-");
+
+  for (const [slug, lang, name] of languages) {
+    const code = slug === "yzh" ? slug : lang;
+    const option = new Option(name, code);
+    option.lang = lang;
+    option.dir = lang === "ar" ? "rtl" : "ltr";
+    picker.add(option);
+    if (requested === slug || requested === code.toLowerCase() || aliases[requested] === code) picker.value = code;
+  }
+
+  function apply() {
+    const code = picker.value;
+    const lang = code === "yzh" ? "ru" : code;
+    const words = editions[lang];
+    root.lang = lang;
+    root.dir = lang === "ar" ? "rtl" : "ltr";
+    root.dataset.languageLayer = code;
+    for (const node of document.querySelectorAll("[data-copy]")) node.textContent = words[node.dataset.copy];
+    for (const name of ["aria-label", "content"]) {
+      for (const node of document.querySelectorAll("[data-copy-" + name + "]")) {
+        node.setAttribute(name, words[node.getAttribute("data-copy-" + name)]);
+      }
+    }
+    label.textContent = words.language;
+    review.textContent = code === "yzh"
+      ? "язэхъ · авторская редакция ожидается · показан русский исходник"
+      : words.review;
+    for (const link of document.querySelectorAll("[data-edition-link]")) {
+      const url = new URL(link.getAttribute("href"), document.baseURI);
+      url.searchParams.set("lang", code);
+      link.href = url.href;
+      link.hreflang = lang;
+    }
+    const guide = document.querySelector("[data-guide-link]");
+    if (guide) {
+      const slug = languages.find(([slug, tag]) => code === "yzh" ? slug === code : tag === lang)[0];
+      guide.href = new URL("modules/synaura/guide/" + slug + ".html", document.baseURI).href;
+      guide.hreflang = lang;
+    }
+    if (embedded) window.parent.postMessage({type:"suti:edition-title", title:document.title, language:lang}, "*");
+  }
+
+  function focusSection(id) {
+    const section = document.getElementById(id);
+    if (!section) return;
+    section.focus({preventScroll:true});
+    section.scrollIntoView({block:"start", behavior:"instant"});
+  }
+
+  if (embedded) {
+    for (const link of document.querySelectorAll("a[href]")) {
+      const local = link.getAttribute("href");
+      if (local.startsWith("#")) {
+        link.addEventListener("click", event => {
+          event.preventDefault();
+          focusSection(local.slice(1));
+        });
+      } else if (local === "synaura-modules.html") {
+        link.addEventListener("click", event => {
+          if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          event.preventDefault();
+          window.parent.postMessage({type:"suti:edition-modules", language:picker.value}, "*");
+        });
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      } else {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+    }
+    addEventListener("keydown", event => {
+      if (event.key === "Escape" && !event.defaultPrevented && document.activeElement !== picker) {
+        window.parent.postMessage({type:"suti:edition-dismiss"}, "*");
+      }
+    });
+  }
+
+  picker.addEventListener("change", () => {
+    apply();
+    if (!embedded && location.protocol !== "file:") {
+      const url = new URL(location.href);
+      url.searchParams.set("lang", picker.value);
+      history.replaceState(history.state, "", url);
+    }
+  });
+
+  apply();
+  if (embedded && root.dataset.editionAnchor) focusSection(root.dataset.editionAnchor);
+})();</script>
 </body>
 </html>

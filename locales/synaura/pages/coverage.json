@@ -1,0 +1,177 @@
+{
+  "baseline": "8e2f22263c8dae4ee8f1d797522f6c5522c68d17",
+  "rights": "Editorial derivatives of two public first-party documents; repository MIT notice and separate rights of linked materials apply.",
+  "artifactStatus": "method and design drafts; software implementation and validation are separate",
+  "pages": {
+    "synaura": {
+      "fieldsPerWrittenEdition": 47,
+      "writtenEditions": 12,
+      "sha256": "8a9a77a0a1a7c7e6904963acb3eb6ef4b57175a9c4646073d3d7eccfa2d7d156",
+      "routes": {
+        "ru": {
+          "href": "/synaura.html?lang=ru",
+          "lang": "ru",
+          "dir": "ltr",
+          "review": "source-edition"
+        },
+        "en": {
+          "href": "/synaura.html?lang=en",
+          "lang": "en",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "es-419": {
+          "href": "/synaura.html?lang=es-419",
+          "lang": "es-419",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "pt-BR": {
+          "href": "/synaura.html?lang=pt-BR",
+          "lang": "pt-BR",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "fr": {
+          "href": "/synaura.html?lang=fr",
+          "lang": "fr",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "zh-Hans": {
+          "href": "/synaura.html?lang=zh-Hans",
+          "lang": "zh-Hans",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "hi": {
+          "href": "/synaura.html?lang=hi",
+          "lang": "hi",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "ar": {
+          "href": "/synaura.html?lang=ar",
+          "lang": "ar",
+          "dir": "rtl",
+          "review": "independent-language-review-pending"
+        },
+        "bn": {
+          "href": "/synaura.html?lang=bn",
+          "lang": "bn",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "eo": {
+          "href": "/synaura.html?lang=eo",
+          "lang": "eo",
+          "dir": "ltr",
+          "review": "independent-fluent-review-pending"
+        },
+        "sa": {
+          "href": "/synaura.html?lang=sa",
+          "lang": "sa",
+          "dir": "ltr",
+          "review": "qualified-review-pending"
+        },
+        "la": {
+          "href": "/synaura.html?lang=la",
+          "lang": "la",
+          "dir": "ltr",
+          "review": "qualified-review-pending"
+        },
+        "yzh": {
+          "href": "/synaura.html?lang=yzh",
+          "lang": "ru",
+          "dir": "ltr",
+          "review": "authorial-hold-russian-fallback"
+        }
+      }
+    },
+    "synaura-modules": {
+      "fieldsPerWrittenEdition": 110,
+      "writtenEditions": 12,
+      "sha256": "12f2cfee31c2af64df976f2b2fd79a4db6447f8d2315ea796fcd8c553c82f205",
+      "routes": {
+        "ru": {
+          "href": "/synaura-modules.html?lang=ru",
+          "lang": "ru",
+          "dir": "ltr",
+          "review": "source-edition"
+        },
+        "en": {
+          "href": "/synaura-modules.html?lang=en",
+          "lang": "en",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "es-419": {
+          "href": "/synaura-modules.html?lang=es-419",
+          "lang": "es-419",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "pt-BR": {
+          "href": "/synaura-modules.html?lang=pt-BR",
+          "lang": "pt-BR",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "fr": {
+          "href": "/synaura-modules.html?lang=fr",
+          "lang": "fr",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "zh-Hans": {
+          "href": "/synaura-modules.html?lang=zh-Hans",
+          "lang": "zh-Hans",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "hi": {
+          "href": "/synaura-modules.html?lang=hi",
+          "lang": "hi",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "ar": {
+          "href": "/synaura-modules.html?lang=ar",
+          "lang": "ar",
+          "dir": "rtl",
+          "review": "independent-language-review-pending"
+        },
+        "bn": {
+          "href": "/synaura-modules.html?lang=bn",
+          "lang": "bn",
+          "dir": "ltr",
+          "review": "independent-language-review-pending"
+        },
+        "eo": {
+          "href": "/synaura-modules.html?lang=eo",
+          "lang": "eo",
+          "dir": "ltr",
+          "review": "independent-fluent-review-pending"
+        },
+        "sa": {
+          "href": "/synaura-modules.html?lang=sa",
+          "lang": "sa",
+          "dir": "ltr",
+          "review": "qualified-review-pending"
+        },
+        "la": {
+          "href": "/synaura-modules.html?lang=la",
+          "lang": "la",
+          "dir": "ltr",
+          "review": "qualified-review-pending"
+        },
+        "yzh": {
+          "href": "/synaura-modules.html?lang=yzh",
+          "lang": "ru",
+          "dir": "ltr",
+          "review": "authorial-hold-russian-fallback"
+        }
+      }
+    }
+  }
+}

@@ -94,8 +94,8 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `samurai-dharma.html?lang=…` | Route, symbolic prompts and local Markdown download | Twelve written editions and labeled Russian fallback for Yazekh | Complete editorial page localization, including the copy and download controls. Review pending. Linked archives retain their own language and rights. |
 | `verenium.html?lang=…` | Local workshop, four routes, import and export | 12 written editions and labeled Russian fallback for Yazekh | Complete workshop interface, including the offline copy. Independent or qualified review pending. Linked protocol and forms have their own coverage. |
 | `virenium.html` | Compatibility alias | Same language support as the canonical workshop | Byte-identical to `verenium.html` and kept in both offline ZIP aliases. |
-| `synaura.html` | Russian | RU | Single-language page. |
-| `synaura-modules.html` | Russian | RU | Single-language page. |
+| `synaura.html` | Russian source | 12 written editions · Yazekh displays Russian | Editorial style page with independent language review pending. Localized guide and module links. |
+| `synaura-modules.html` | Russian source | 12 written editions · Yazekh displays Russian | All 13 module descriptions, headings and example translated. Design-draft status and rights notice retained. See [coverage](../../locales/synaura/pages/coverage.json). |
 | `openai-crystal.html` | English UI; RU/EN examples | EN | Bilingual examples are not a translated interface. |
 | `audits.html` | English source | 12 written editions · Yazekh displays English | Independent language review pending. The linked crystal and ZIP have separate coverage. |
 | `clear-water.html` | English | EN | Original practice page; links to RU, ES, FR, and PT-BR editions. |
