@@ -1,10 +1,435 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Verenium · мастерская заботы</title><style>*{box-sizing:border-box}body{margin:auto;max-width:48rem;padding:clamp(1rem,5vw,4rem);background:linear-gradient(135deg,#e2eeea,#fff8e8,#f2dac9);color:#25342f;font:1.08rem/1.6 system-ui}section,details{border:1px solid #afbbb0;background:#fffdf7;border-radius:24px;padding:1.2rem;margin:1rem 0}h1{font:clamp(3rem,9vw,5rem)/1 Georgia}[hidden]{display:none!important}label{display:block;margin:.8rem 0}textarea,input,select,button{font:inherit;max-width:100%;padding:.35rem;color:inherit}textarea{width:100%}a{color:#205c51}button{cursor:pointer}pre{white-space:pre-wrap}small{color:#415d55}</style><link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1"></head><main><small>∴ SUTI.world · локальная мастерская</small><h1>Verenium</h1><small>SUTI.verenium · друг заботы</small><p>сначала - что тебе нужно сегодня? выбери маршрут. личные записи остаются в этой вкладке до закрытия; сохранить их можно самостоятельно.</p>
-<section aria-labelledby="reflection-title"><label>язык первого шага · language <select id="entrylang"></select></label><h2 id="reflection-title"></h2><p id="reflection-stop"></p><small id="reflection-language"></small></section><section lang="es"><h2>empezar con un solo archivo</h2><p>copia la guía en tu chat y dile: «ayúdame con una receta». puedes ponerle el nombre que quieras.</p><a href="downloads/SUTI.verenium.md" download>guardar la guía en español (.md)</a></section><section id="activation"><h2>ретвеление · начать с одного шага</h2><p>одним нажатием включи стартовый профиль: Verenium, маршрут заботы, глубина «касание». откроются карта, атлас, протокол и маршруты SUTI.os. твои записи останутся на месте.</p><button id="apply">применить стартовый профиль</button><p id="applied" role="status"></p><a href="modules/verenium/protocol.md">протокол</a> · <a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip">скачать комплект для работы без сети</a></section><label>как назвать проводника? <input id="alias" value="Verenium" maxlength="64"></label><label>с чего начнём? <select id="route"><option value="care">попросить заботы</option><option value="order">навести порядок в задаче</option><option value="council">собрать нейровече</option><option value="setup">настроить SUTI.os</option></select></label><label>сколько глубины сегодня? <select id="depth"><option value="0">касание · один вопрос</option><option value="1">различение · чуть ближе</option><option value="2">сборка · весь лист</option></select></label><p id="cue" aria-live="polite"></p><small id="voice" aria-live="polite"></small>
-<p><a href="nitya.html#atlas">атлас фреймворков NITYA</a> · <a href="care-atlas.html">атлас взаимной заботы</a> · <a href="care-map.html">13 нитей личной карты</a></p><section id="care"><h2>ангелы заботы</h2><p>достаточно одной фразы: «мне сейчас нужно…»</p><p><a href="care-map.html">открыть личную карту · без отправки</a></p><a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">передать запрос через Google-анкету ↗</a></section>
-<section id="order" hidden><h2>один доступный шаг</h2><label>что занимает внимание?<textarea></textarea></label><label>что можно отложить?<textarea></textarea></label><label>какой один шаг по силам сегодня?<textarea></textarea></label></section>
-<section id="council" hidden><h2>нейровече заботы и правды</h2><p>вопрос → основания → разные голоса → выбор → проверка. запишите, что помогло, а что нужно пересмотреть.</p><p>это лист для совместного разбора. он не вызывает людей или AI. каждый говорит за себя.</p><label>общий вопрос<textarea></textarea></label><label>что известно и на чём основано?<textarea></textarea></label><label>предложения, возражения, воздержание, нет ответа<textarea></textarea></label><label>что выбрали, кто согласился, когда проверим?<textarea></textarea></label></section>
-<section id="setup" hidden><h2>свой SUTI.os</h2><ol><li>если ты скачал полный Verenium, распакуй вложенный SUTI.os.zip в новую папку. онлайн: <a href="https://github.com/ezargaruna/SUTI.os/releases/download/v0.2.4/SUTI.os.zip">скачать SUTI.os 0.2.4</a>.</li><li>открой SUTI.os/vault как отдельное хранилище в Obsidian или как папку в редакторе Markdown.</li><li>начни с файла «начать.md». хранить заметки можно без аккаунта и без сети.</li></ol><details><summary>проверка пакета</summary>в папке SUTI.os выполни python3 install.py --verify-only (Windows: py install.py --verify-only). эта команда только проверяет файлы.</details></section>
-<details><summary>Стожары · словарь заботы и песнь воды</summary><p>союжество - об одном деле договорились двое. соцветие - каждый добавил свой дар. созвездие - связи видны, и каждый может выйти. Стожары - мы встретились снова и спросили: «кому помогло?»</p><p>водоволь · налить тебе воды?<br>ткохь · я подожду ответа.</p><a href="modules/verenium/protocol.md">читать протокол целиком</a></details><small>при сохранении в личный файл попадут и ответы, скрытые выбранной глубиной.</small><br><button id="save">сохранить маршрут и настройки</button><label>вернуть ранее сохранённый маршрут <input id="restore" type="file" accept=".json"></label><p id="msg" role="status"></p>
-<details><summary>принципы мастерской</summary><p>сначала спросить. отличать наблюдение от догадки. дать место отказу. не принимать тишину за согласие. выбрать посильный шаг и проверить, помог ли он. рассказывая о другом, оставлять ему право на свою историю.</p></details></main><script>
-const el=id=>document.getElementById(id),modes=['care','order','council','setup'],notes=[...document.querySelectorAll('textarea')];const cues={care:['что нужно прямо сейчас?','какая поддержка подходит?','чем хочется обменяться?'],order:['что занимает внимание?','что можно пока отложить?','какой шаг выбираешь?'],council:['какой вопрос общий?','что известно и как это проверить?','какие голоса услышаны и о чём договорились?'],setup:['открой мастерскую','выбери свою папку','сохрани настройки и попробуй восстановить их']};const layerNotes={"ru": "анкета на русском; в мастерской переводится первый вопрос.", "en": "the form is in Russian; the workshop offers its opening question in your language.", "es": "el formulario está en ruso; la primera pregunta del taller está en tu idioma.", "pt-BR": "o formulário está em russo; a primeira pergunta da oficina está no seu idioma.", "zh-Hans": "问卷为俄语；工作室的第一个问题有中文版本。", "hi": "फ़ॉर्म रूसी में है। कार्यशाला का पहला प्रश्न हिन्दी में भी है।", "fr": "le questionnaire est en russe ; la première question de l’atelier est disponible en français.", "ar": "الاستمارة بالروسية؛ والسؤال الأول في الورشة متاح بالعربية.", "bn": "ফর্মটি রুশ ভাষায়। কর্মশালার প্রথম প্রশ্নটি বাংলাতেও আছে।", "eo": "la demandaro estas en la rusa; la unua demando de la laborejo estas ankaŭ en Esperanto.", "sa": "प्रश्नावली रूसीयभाषायाम् अस्ति। कार्यशालायाः प्रथमः प्रश्नः संस्कृतेऽपि अस्ति।", "la": "quaestiones Russice scriptae sunt; prima officinae quaestio etiam Latine legitur.", "yzh": "берег · анкета по-русски. первая нить мастерской звучит на язэхъ."};const layers={"ru": ["забота", "попросить поддержки", "разобраться самому", "нейровече", "подумать вместе", "передать вход · QR", "что тебе нужно сегодня?", "какой один шаг тебе по силам?", "что мы знаем и о чём согласны?", "можно остановиться здесь."], "en": ["care", "ask for support", "find my next step", "council", "think together", "share an entrance · QR", "what would help today?", "what is one step you can take?", "what do we know, and where do we agree?", "you can stop here."], "es": ["cuidado", "pedir apoyo", "encontrar mi próximo paso", "consejo", "pensar en compañía", "compartir una entrada · QR", "¿qué te ayudaría hoy?", "¿qué paso está a tu alcance?", "¿qué sabemos y en qué estamos de acuerdo?", "puedes dejarlo aquí."], "pt-BR": ["cuidado", "pedir apoio", "encontrar meu próximo passo", "roda de conversa", "pensar juntos", "compartilhar uma entrada · QR", "o que ajudaria hoje?", "que passo está ao seu alcance?", "o que sabemos e em que concordamos?", "pode parar por aqui."], "zh-Hans": ["关怀", "寻求支持", "理清下一步", "共议", "一起想一想", "分享入口 · QR", "今天什么能帮到你？", "哪一步是你现在做得到的？", "我们知道什么？在哪些地方有共识？", "到这里就可以了。"], "hi": ["देखभाल", "सहारा माँगें", "अपना अगला कदम सोचें", "संवाद सभा", "मिलकर विचार करें", "प्रवेश साझा करें · QR", "आज आपको किस चीज़ से मदद मिलेगी?", "अभी आप कौन सा एक कदम उठा सकते हैं?", "हमें क्या मालूम है और हम किन बातों पर सहमत हैं?", "आप चाहें तो यहीं रुक सकते हैं।"], "fr": ["prendre soin", "demander du soutien", "trouver mon prochain pas", "conseil", "réfléchir ensemble", "partager une entrée · QR", "qu’est-ce qui vous aiderait aujourd’hui ?", "quel petit pas est à votre portée ?", "que savons-nous et sur quoi sommes-nous d’accord ?", "vous pouvez vous arrêter ici."], "ar": ["الرعاية", "طلب الدعم", "تحديد خطوتي التالية", "مجلس الحوار", "نفكّر معًا", "مشاركة المدخل · QR", "ما الذي قد يساعدك اليوم؟", "ما الخطوة التي تستطيع اتخاذها الآن؟", "ماذا نعرف، وعلى ماذا نتفق؟", "يمكنك التوقّف هنا."], "bn": ["যত্ন", "সহায়তা চাই", "নিজের পরের পদক্ষেপ খুঁজি", "আলোচনার আসর", "একসঙ্গে ভাবি", "প্রবেশের পথ ভাগ করুন · QR", "আজ কী পেলে আপনার সুবিধা হবে?", "এখন কোন ছোট পদক্ষেপটি আপনার সাধ্যের মধ্যে?", "আমরা কী জানি আর কোন বিষয়ে একমত?", "চাইলে এখানেই থামতে পারেন।"], "eo": ["zorgo", "peti subtenon", "trovi mian sekvan paŝon", "konsilio", "pensi kune", "konigi enirejon · QR", "kio helpus vin hodiaŭ?", "kiun paŝon vi kapablas fari nun?", "kion ni scias kaj pri kio ni konsentas?", "vi rajtas halti ĉi tie."], "sa": ["परिचर्या", "साहाय्यं याचे", "अग्रे किं करवाणि", "सभा", "सह चिन्तयामः", "प्रवेशमार्गं दर्शय · QR", "अद्य किं तव सहायकं स्यात्?", "इदानीं किं कर्तुं शक्नोषि?", "किं जानीमः? कुत्र वयं सम्मताः?", "अत्र विरन्तुं शक्नोषि।"], "la": ["cura", "auxilium petere", "proximum gradum invenire", "consilium", "una deliberare", "aditum communicare · QR", "quid tibi hodie prosit?", "quem gradum nunc facere potes?", "quid scimus et de quibus consentimus?", "hic consistere licet."], "yzh": ["бережь", "водоволь · попросить", "ткохь · различить", "вече", "соцветие · мыслить вместе", "передать нить · QR", "водоволь · налить тебе воды?", "ткохь · какой шаг по силам?", "Стожары · что знаем? в чём согласны?", "берег · можно помолчать."]};let picker=el('entrylang');for(const k of Object.keys(layers)){let o=document.createElement('option');o.value=k;o.textContent=({ru:'русский',en:'English',es:'español','pt-BR':'português',fr:'français',eo:'Esperanto',la:'Latina',ar:'العربية',hi:'हिन्दी',bn:'বাংলা','zh-Hans':'简体中文',sa:'संस्कृतम्',yzh:'метаславие · язэхъ'})[k];picker.append(o)}const initial=new URLSearchParams(location.search).get('lang');picker.value=Object.hasOwn(layers,initial)?initial:'ru';picker.onchange=show;function show(){const k=picker.value,w=layers[k],rp=el('reflection-title').parentNode;rp.lang=k==='yzh'?'ru':k;rp.dir=k==='ar'?'rtl':'ltr';el('reflection-title').textContent=w[el('route').value==='council'?8:el('route').value==='care'?6:7];el('reflection-stop').textContent=w[9];el('reflection-language').textContent=layerNotes[k];let d=Number(el('depth').value);el('cue').textContent=cues[el('route').value][d];for(const id of ['order','council'])Array.from(el(id).querySelectorAll('label')).forEach((l,i)=>l.hidden=d<2&&i>d);for(const id of modes)el(id).hidden=id!==el('route').value;el('voice').textContent=(el('alias').value||'Verenium')+' · ты выбираешь темп.'}el('depth').onchange=el('route').onchange=el('alias').oninput=show;if(modes.includes(location.hash.slice(1)))el('route').value=location.hash.slice(1);show();el('apply').onclick=()=>{el('alias').value='Verenium';el('route').value='care';el('depth').value='0';show();el('applied').textContent='профиль включён в этой вкладке. чтобы вернуться к нему позже, сохрани маршрут и настройки.'};if(location.hash==='#activate')el('activation').scrollIntoView();el('save').onclick=()=>{const uri=URL.createObjectURL(new Blob([JSON.stringify({v:2,depth:el('depth').value,name:el('alias').value,mode:el('route').value,notes:notes.map(n=>n.value)},null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=uri;a.download='virenium-private.json';a.click();setTimeout(()=>URL.revokeObjectURL(uri),1000);el('msg').textContent='сохрани файл у себя: в нём твои записи.'};el('restore').onchange=async e=>{try{let x=JSON.parse(await e.target.files[0].text());if(![1,2].includes(x.v)||(x.v===2&&!['0','1','2'].includes(x.depth))||!modes.includes(x.mode)||typeof x.name!=='string'||!Array.isArray(x.notes)||x.notes.length!==notes.length||!x.notes.every(t=>typeof t==='string'))throw Error();el('depth').value=x.v===1?'2':x.depth;el('route').value=x.mode;el('alias').value=x.name;notes.forEach((n,i)=>n.value=x.notes[i]);show();el('msg').textContent='маршрут восстановлен.'}catch{el('msg').textContent='этот файл не подходит. текущие записи сохранены во вкладке.'}};
-</script></html>
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verenium · мастерская заботы</title>
+<style>
+
+
+
+:root {
+  --suti-angel-paper: #eee8dc;
+  --suti-angel-card: #fbf8f1;
+  --suti-angel-ink: #26363a;
+  --suti-angel-petrol: #123f46;
+  --suti-angel-teal: #135b60;
+  --suti-angel-aqua: #b9d9d1;
+  --suti-angel-moss: #77856b;
+  --suti-angel-copper: #b98c49;
+  --suti-angel-line: #cbd8d5;
+  --suti-angel-focus: #135b60;
+}
+
+/* The main site stores its theme on <html>; map its tokens to this shared skin */
+html[data-theme="day"] {
+  --suti-angel-paper: var(--suti-bg, #eee8dc);
+  --suti-angel-card: var(--suti-surface, #fbf8f1);
+  --suti-angel-ink: var(--suti-text, #26363a);
+  --suti-angel-petrol: var(--suti-structure, #123f46);
+  --suti-angel-teal: var(--suti-link, #135b60);
+  --suti-angel-line: var(--suti-line, #cbd8d5);
+  --suti-angel-focus: var(--suti-focus, #135b60);
+}
+
+html[data-theme="night"] {
+  --suti-angel-paper: var(--suti-bg, #112c2d);
+  --suti-angel-card: var(--suti-surface, #203b3a);
+  --suti-angel-ink: var(--suti-text, #f4f0e8);
+  --suti-angel-petrol: var(--suti-structure, #c0ddd7);
+  --suti-angel-teal: var(--suti-link, #a1d7ce);
+  --suti-angel-line: var(--suti-line, #58716e);
+  --suti-angel-focus: var(--suti-focus, #f0d78a);
+  color-scheme: dark;
+}
+
+html[data-theme="contrast"] {
+  --suti-angel-paper: var(--suti-bg, #000);
+  --suti-angel-card: var(--suti-surface, #000);
+  --suti-angel-ink: var(--suti-text, #fff);
+  --suti-angel-petrol: var(--suti-structure, #fff);
+  --suti-angel-teal: var(--suti-link, #fff);
+  --suti-angel-line: var(--suti-line, #fff);
+  --suti-angel-focus: var(--suti-focus, #ff0);
+  color-scheme: light;
+}
+
+html {
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--suti-angel-ink);
+  background-color: var(--suti-angel-paper);
+  font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
+  font-size: clamp(1rem, 0.98rem + 0.15vw, 1.08rem);
+  line-height: 1.68;
+  font-kerning: normal;
+}
+
+:where(h1, h2, h3, h4) {
+  font-family: "SUTI Nunito", "Nunito Sans", system-ui, sans-serif;
+  line-height: 1.16;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+:where(p, li, blockquote, label, summary) {
+  text-wrap: pretty;
+}
+
+:where(a) {
+  color: var(--suti-angel-teal);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+:where(button, input, textarea, select) {
+  font: inherit;
+}
+
+:where(button, [role="button"], summary) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--suti-angel-focus);
+  outline-offset: 3px;
+}
+
+:root:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) body {
+  --suti-angel-paper: #112c2d;
+  --suti-angel-card: #203b3a;
+  --suti-angel-ink: #f4f0e8;
+  --suti-angel-petrol: #c0ddd7;
+  --suti-angel-teal: #a1d7ce;
+  --suti-angel-aqua: #456d6a;
+  --suti-angel-moss: #bac8a9;
+  --suti-angel-copper: #e0bd79;
+  --suti-angel-line: #58716e;
+  --suti-angel-focus: #f0d78a;
+  color-scheme: dark;
+}
+
+:root:is([data-theme="contrast"], [data-vlight="контраст"]) body {
+  --suti-angel-paper: #000;
+  --suti-angel-card: #000;
+  --suti-angel-ink: #fff;
+  --suti-angel-petrol: #fff;
+  --suti-angel-teal: #fff;
+  --suti-angel-aqua: #fff;
+  --suti-angel-moss: #fff;
+  --suti-angel-copper: #ff0;
+  --suti-angel-line: #fff;
+  --suti-angel-focus: #ff0;
+  color-scheme: dark;
+}
+
+:where(.gratitude-card, .music-card) {
+  background: var(--suti-angel-card) !important;
+  border-color: var(--suti-angel-line) !important;
+  box-shadow: none !important;
+}
+
+.nitya-portal::before {
+  content: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline-color: Highlight;
+  }
+}</style>
+<style>
+* { box-sizing: border-box }
+body { margin: 0; background: var(--suti-angel-paper, #f4f0e8); color: var(--suti-angel-ink, #25342f); font: 1.0625rem/1.65 "SUTI Manrope", system-ui, sans-serif }
+main { max-inline-size: 48rem; margin-inline: auto; padding: clamp(1rem, 4vw, 3rem); overflow-wrap: anywhere }
+h1 { font: 700 clamp(2.8rem, 9vw, 5rem)/1.15 "SUTI Nunito", system-ui, sans-serif; margin-block: .25em }
+h2 { line-height: 1.25 }
+section, details { background: var(--suti-angel-card, #fffdf7); border: 1px solid var(--suti-angel-fg-muted, #687064); border-radius: .85rem; padding: 1rem; margin-block: 1rem }
+[hidden] { display: none !important }
+label { display: block; margin-block: .6rem }
+textarea, input, select, button { font: inherit; min-block-size: 44px; max-inline-size: 100%; padding: .35rem; color: inherit; background-color: var(--suti-angel-card, #fffdf7); border: 1px solid currentColor; border-radius: .35rem }
+textarea { display: block; inline-size: 100%; min-block-size: 5rem }
+a { color: var(--suti-angel-teal, #205c51); text-underline-offset: .15em }
+button, summary { cursor: pointer }
+summary { min-block-size: 44px }
+small { color: var(--suti-angel-petrol, #415d55) }
+.resources { display: flex; gap: .6rem 1rem; flex-wrap: wrap }
+:focus-visible { outline: 3px solid var(--suti-angel-focus, #205c51); outline-offset: 3px }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+</style>
+</head>
+<body>
+<main>
+  <small data-copy="kicker"></small>
+  <h1>Verenium</h1>
+  <small data-copy="byline"></small>
+  <p data-copy="intro"></p>
+  <section aria-labelledby="reflection-title">
+    <label for="entrylang" data-copy="language"></label>
+    <select id="entrylang"></select>
+    <h2 id="reflection-title"></h2>
+    <p data-copy="stop"></p>
+    <small id="reflection-language"></small>
+  </section>
+  <details lang="es">
+    <summary>empezar con un solo archivo</summary>
+    <p>copia la guía en tu chat y dile: «ayúdame con una receta». puedes ponerle el nombre que quieras.</p>
+    <a href="downloads/SUTI.verenium.md" hreflang="es" download>guardar la guía en español (.md)</a>
+  </details>
+  <section id="activation" aria-labelledby="activation-title">
+    <h2 id="activation-title" data-copy="activation"></h2>
+    <p data-copy="activationText"></p>
+    <button type="button" id="apply" data-copy="apply"></button>
+    <p id="applied" role="status"></p>
+    <p class="resources"><a href="modules/verenium/protocol.md" data-copy="protocol" hreflang="ru" data-ru-link></a>
+    <a href="https://ezargaruna.github.io/suticore/downloads/Verenium.zip" data-copy="bundle"></a></p>
+  </section>
+  <label for="alias" data-copy="alias"></label><input id="alias" value="Verenium" maxlength="64" dir="auto">
+  <label for="route" data-copy="route"></label><select id="route">
+    <option value="care" data-copy="modes.0"></option>
+    <option value="order" data-copy="modes.1"></option>
+    <option value="council" data-copy="modes.2"></option>
+    <option value="setup" data-copy="modes.3"></option>
+  </select>
+  <label for="depth" data-copy="depth"></label><select id="depth">
+    <option value="0" data-copy="depths.0"></option>
+    <option value="1" data-copy="depths.1"></option>
+    <option value="2" data-copy="depths.2"></option>
+  </select>
+  <p id="cue" aria-live="polite"></p><small id="voice" aria-live="polite"></small>
+
+  <nav class="resources" aria-label="SUTI">
+    <a href="nitya.html#atlas" data-copy="mapNitya" hreflang="ru" data-ru-link></a>
+    <a id="care-atlas" href="care-atlas.html" data-copy="atlasCare"></a>
+    <a href="care-map.html" data-copy="mapCare" data-care-map></a>
+  </nav>
+  <section id="care">
+    <h2 data-copy="care"></h2><p data-copy="careText"></p>
+    <p><a href="care-map.html" data-copy="careLocal" data-care-map></a></p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform" data-copy="careExternal" aria-describedby="form-note"></a></p>
+    <p id="form-note" data-copy="formNote"></p>
+  </section>
+  <section id="order" hidden>
+    <h2 data-copy="order"></h2>
+    <div class="note"><label for="attention" data-copy="orderFields.0"></label><textarea id="attention" dir="auto"></textarea></div>
+    <div class="note"><label for="wait" data-copy="orderFields.1"></label><textarea id="wait" dir="auto"></textarea></div>
+    <div class="note"><label for="step" data-copy="orderFields.2"></label><textarea id="step" dir="auto"></textarea></div>
+  </section>
+  <section id="council" hidden>
+    <h2 data-copy="council"></h2>
+    <p data-copy="councilLead"></p><p data-copy="councilBoundary"></p>
+    <div class="note"><label for="question" data-copy="councilFields.0"></label><textarea id="question" dir="auto"></textarea></div>
+    <div class="note"><label for="evidence" data-copy="councilFields.1"></label><textarea id="evidence" dir="auto"></textarea></div>
+    <div class="note"><label for="voices" data-copy="councilFields.2"></label><textarea id="voices" dir="auto"></textarea></div>
+    <div class="note"><label for="choice" data-copy="councilFields.3"></label><textarea id="choice" dir="auto"></textarea></div>
+  </section>
+  <section id="setup" hidden>
+    <h2 data-copy="setup"></h2>
+    <ol><li><span data-copy="setupFirst"></span> <a href="https://github.com/ezargaruna/SUTI.os/releases/download/v0.2.4/SUTI.os.zip" data-copy="setupDownload" hreflang="ru" data-ru-link></a></li>
+    <li data-copy="setupNext"></li><li data-copy="setupLast"></li></ol>
+    <details><summary data-copy="verify"></summary><p data-copy="verifyText"></p></details>
+  </section>
+  <details>
+    <summary data-copy="glossary"></summary><p data-copy="glossaryText"></p>
+    <p><span data-copy="water"></span><br><span data-copy="wait"></span></p>
+    <a href="modules/verenium/protocol.md" data-copy="protocol" hreflang="ru" data-ru-link></a>
+  </details>
+  <p><small data-copy="saveNote"></small></p>
+  <button type="button" id="save" data-copy="save"></button>
+  <label for="restore" data-copy="restore"></label><input id="restore" type="file" accept=".json,application/json">
+  <p id="msg" role="status"></p>
+  <details><summary data-copy="principles"></summary><p data-copy="principlesText"></p></details>
+  <noscript><p lang="ru">мастерской нужен JavaScript. <a href="modules/verenium/protocol.md">читать протокол</a></p></noscript>
+</main>
+<script type="application/json" id="workshop-locales">{"ru":{"title":"Verenium · мастерская заботы","kicker":"∴ SUTI.world · локальная мастерская","byline":"SUTI.verenium · друг заботы","intro":"что тебе нужно сегодня? выбери маршрут. записи остаются в этой вкладке, пока ты её не закроешь. при желании сохрани копию.","language":"язык мастерской","stop":"можно остановиться здесь","review":"русская исходная редакция","activation":"начать с одного шага","activationText":"включи стартовый профиль: Verenium, маршрут заботы, один вопрос. твои записи останутся на месте.","apply":"применить стартовый профиль","applied":"профиль включён в этой вкладке. чтобы вернуться к нему позже, сохрани маршрут и настройки.","protocol":"читать протокол","bundle":"скачать комплект для работы без сети","alias":"как назвать проводника?","route":"с чего начнём?","depth":"сколько подробностей сегодня?","modes":["попросить заботы","навести порядок в задаче","открыть лист нейровече","настроить SUTI.os"],"depths":["касание · один вопрос","различение · чуть ближе","сборка · весь лист"],"mapNitya":"атлас фреймворков NITYA","atlasCare":"атлас взаимной заботы","mapCare":"личная карта · 13 нитей","care":"ангелы заботы","careText":"достаточно одной фразы: «мне сейчас нужно…»","careLocal":"открыть личную карту · без отправки","careExternal":"открыть внешнюю анкету Google · английский и русский","formNote":"если отправить анкету, её ответы получат Google и владелец формы. записи из этой мастерской остаются здесь.","order":"один доступный шаг","orderFields":["что занимает внимание?","что можно отложить?","какой один шаг по силам сегодня?"],"council":"нейровече заботы и ясности","councilLead":"вопрос → основания → разные голоса → выбор → проверка. запиши, что помогло и что стоит пересмотреть.","councilBoundary":"это лист для совместного разбора. каждый говорит за себя. мастерская не вызывает людей или ИИ.","councilFields":["общий вопрос","что известно и на чём основано?","предложения, возражения, воздержание, нет ответа","что выбрали, кто согласился и когда проверим?"],"setup":"свой SUTI.os","setupFirst":"если ты скачал полный комплект Verenium, распакуй вложенный SUTI.os.zip в новую папку.","setupDownload":"скачать SUTI.os 0.2.4","setupNext":"открой SUTI.os/vault как отдельное хранилище в Obsidian или как папку в редакторе Markdown.","setupLast":"начни с файла «начать.md». хранить заметки можно без аккаунта и без сети.","verify":"проверка пакета","verifyText":"в папке SUTI.os выполни python3 install.py --verify-only (Windows: py install.py --verify-only). эта команда только проверяет файлы.","glossary":"Стожары · словарь заботы и песнь воды","glossaryText":"союжество: об одном деле договорились двое. соцветие: каждый добавил свой дар. созвездие: связи видны, и каждый может выйти. Стожары: мы встретились снова и спросили, кому помогло.","water":"водоволь · налить тебе воды?","wait":"ткохь · я подожду ответа.","saveNote":"при сохранении в личный файл попадут и ответы, скрытые выбранной глубиной.","save":"сохранить маршрут и настройки","restore":"вернуть ранее сохранённый маршрут","saved":"сохрани файл у себя: в нём твои записи.","restored":"маршрут восстановлен","invalid":"этот файл не подходит. текущие записи сохранены во вкладке.","principles":"принципы мастерской","principlesText":"сначала спросить. отличать наблюдение от догадки. дать место отказу. не принимать тишину за согласие. выбрать посильный шаг и проверить, помог ли он. оставить другим право рассказать свою историю.","pace":"ты выбираешь темп","cues":[["что нужно прямо сейчас?","какая поддержка подходит?","чем хочется обменяться?"],["что занимает внимание?","что можно пока отложить?","какой шаг выбираешь?"],["какой вопрос общий?","что известно и как это проверить?","какие голоса услышаны и о чём договорились?"],["открой мастерскую","выбери свою папку","сохрани настройки и попробуй восстановить их"]]},"en":{"title":"Verenium · care workshop","kicker":"∴ SUTI.world · local workshop","byline":"SUTI.verenium · a companion for care","intro":"what would help today? choose a route. notes stay in this tab until you close it. you can save a copy yourself.","language":"workshop language","stop":"you can stop here","review":"editorial translation · independent language review pending","activation":"start with one step","activationText":"apply the starting profile: Verenium, care route, and one-question view. your notes stay as they are.","apply":"apply starting profile","applied":"starting profile applied in this tab. save the route and settings to use them again.","protocol":"read the protocol","bundle":"download the offline bundle","alias":"what would you call your guide?","route":"where shall we start?","depth":"how much detail feels right today?","modes":["ask for care","organize a task","open a council worksheet","set up SUTI.os"],"depths":["touch · one question","discernment · a little closer","assembly · the whole sheet"],"mapNitya":"NITYA framework atlas","atlasCare":"mutual care atlas","mapCare":"personal map · 13 threads","care":"angels of care","careText":"one phrase is enough: “what I need right now is…”","careLocal":"open the personal map · stays local","careExternal":"open the external Google form · English and Russian","formNote":"if you submit the form, Google and its owner receive what you write there. notes from this workshop stay here.","order":"one manageable step","orderFields":["what is taking up your attention?","what could wait?","what is one step you can take today?"],"council":"council for care and clarity","councilLead":"question → evidence → different voices → choice → review. note what helped and what needs another look.","councilBoundary":"this is a worksheet for thinking together. each person speaks for themselves. it does not call people or AI.","councilFields":["shared question","what do we know, and what supports it?","proposals, objections, abstentions, no response","what was chosen, who agreed, and when will we review?"],"setup":"your own SUTI.os","setupFirst":"if you downloaded the full Verenium bundle, unpack SUTI.os.zip into a new folder.","setupDownload":"download SUTI.os 0.2.4","setupNext":"open SUTI.os/vault as a separate vault in Obsidian or as a folder in a Markdown editor.","setupLast":"start with «начать.md». you can keep notes without an account or a network connection.","verify":"check the package","verifyText":"in the SUTI.os folder, run python3 install.py --verify-only (Windows: py install.py --verify-only). this command only checks the files.","glossary":"Stozhary · words of care and the song of water","glossaryText":"soyuzhestvo: two people agreed to work together. sotsvetie: each brings a gift. sozvezdie: the links are visible and anyone can leave. Stozhary: we met again and asked, “who did this help?”","water":"vodovol · shall I pour you some water?","wait":"tkokh · I’ll wait for your answer.","saveNote":"the personal file includes answers hidden by the current level of detail.","save":"save route and settings","restore":"restore a previously saved route","saved":"keep the file somewhere private. it contains your notes.","restored":"route restored","invalid":"this file is not compatible. your current notes remain in this tab.","principles":"workshop principles","principlesText":"ask first. distinguish observation from a guess. leave room to decline. silence is not consent. choose a manageable step and check whether it helped. leave others room to tell their own stories.","pace":"you choose the pace","cues":[["what would help right now?","what kind of support fits?","what would you like to exchange?"],["what is taking up your attention?","what can wait?","what step will you choose?"],["what question do we share?","what do we know, and how can we check it?","whose views did we hear, and what did we agree on?"],["open the workshop","choose your folder","save your settings and try restoring them"]]},"es-419":{"title":"Verenium · taller de cuidado","kicker":"∴ SUTI.world · taller local","byline":"SUTI.verenium · un compañero para cuidar","intro":"¿qué te ayudaría hoy? elige un recorrido. las notas se quedan en esta pestaña hasta que la cierres. puedes guardar una copia por tu cuenta.","language":"idioma del taller","stop":"puedes parar aquí","review":"traducción editorial · revisión lingüística independiente pendiente","activation":"empieza con un paso","activationText":"aplica el perfil inicial de Verenium con el recorrido de cuidado y la vista de una sola pregunta. tus notas se conservan.","apply":"aplicar el perfil inicial","applied":"perfil inicial aplicado en esta pestaña. guarda el recorrido y los ajustes para volver a usarlos.","protocol":"leer el protocolo","bundle":"descargar el paquete para usar sin conexión","alias":"¿cómo quieres llamar a tu guía?","route":"¿por dónde empezamos?","depth":"¿cuánto detalle te sirve hoy?","modes":["pedir cuidado","organizar una tarea","abrir una hoja de trabajo del consejo","configurar SUTI.os"],"depths":["primer contacto · una pregunta","discernimiento · un poco más cerca","integración · toda la hoja"],"mapNitya":"atlas de marcos de NITYA","atlasCare":"atlas de cuidado mutuo","mapCare":"mapa personal · 13 hilos","care":"ángeles del cuidado","careText":"basta una frase: «lo que necesito ahora es…»","careLocal":"abrir el mapa personal · se queda en tu dispositivo","careExternal":"abrir el formulario externo de Google · inglés y ruso","formNote":"si envías el formulario, Google y quien lo administra reciben lo que escribas allí. las notas de este taller se quedan aquí.","order":"un paso a tu alcance","orderFields":["¿qué ocupa tu atención?","¿qué puede esperar?","¿qué paso puedes dar hoy?"],"council":"consejo de cuidado y claridad","councilLead":"pregunta → evidencias → distintas voces → elección → revisión. anota qué ayudó y qué conviene volver a mirar.","councilBoundary":"esta hoja sirve para pensar en conjunto. cada persona habla por sí misma. la hoja no convoca a nadie ni activa una IA.","councilFields":["pregunta compartida","¿qué sabemos y en qué nos basamos?","propuestas, objeciones, abstenciones o falta de respuesta","¿qué se eligió, quién estuvo de acuerdo y cuándo lo revisaremos?"],"setup":"tu propio SUTI.os","setupFirst":"si descargaste el paquete completo de Verenium, descomprime SUTI.os.zip en una carpeta nueva.","setupDownload":"descargar SUTI.os 0.2.4","setupNext":"abre SUTI.os/vault como una bóveda independiente en Obsidian o como una carpeta en un editor de Markdown.","setupLast":"empieza por «начать.md». puedes conservar tus notas sin cuenta y sin conexión.","verify":"verificar el paquete","verifyText":"en la carpeta SUTI.os, ejecuta python3 install.py --verify-only (en Windows: py install.py --verify-only). este comando solo comprueba los archivos.","glossary":"Stozhary · palabras de cuidado y canto del agua","glossaryText":"soyuzhestvo: dos personas acordaron trabajar juntas. sotsvetie: cada quien trae un don. sozvezdie: los vínculos están a la vista y cualquiera puede retirarse. Stozhary: nos volvimos a encontrar y preguntamos «¿a quién le sirvió?»","water":"vodovol · ¿te sirvo un poco de agua?","wait":"tkokh · esperaré tu respuesta.","saveNote":"el archivo personal incluye las respuestas ocultas por el nivel de detalle actual.","save":"guardar el recorrido y los ajustes","restore":"restaurar un recorrido guardado","saved":"guarda el archivo en un lugar privado. contiene tus notas.","restored":"recorrido restaurado","invalid":"este archivo no es compatible. tus notas actuales siguen en esta pestaña.","principles":"principios del taller","principlesText":"pregunta primero. distingue lo que observas de lo que supones. deja espacio para decir que no. el silencio no equivale a consentimiento. elige un paso posible y comprueba si ayudó. deja que las demás personas cuenten su propia historia.","pace":"tú marcas el ritmo","cues":[["¿qué te ayudaría ahora mismo?","¿qué tipo de apoyo te serviría?","¿qué te gustaría intercambiar?"],["¿qué ocupa tu atención?","¿qué puede esperar?","¿qué paso eliges?"],["¿qué pregunta compartimos?","¿qué sabemos y cómo podemos comprobarlo?","¿a quién escuchamos y en qué quedamos?"],["abre el taller","elige tu carpeta","guarda tus ajustes e intenta restaurarlos"]]},"pt-BR":{"title":"Verenium · oficina de cuidado","kicker":"∴ SUTI.world · oficina local","byline":"SUTI.verenium · uma companhia para cuidar","intro":"o que ajudaria hoje? escolha um caminho. as notas ficam nesta aba até você fechá-la. você pode salvar uma cópia por conta própria.","language":"idioma da oficina","stop":"você pode parar aqui","review":"tradução editorial · revisão linguística independente pendente","activation":"comece com um passo","activationText":"aplique o perfil inicial do Verenium com o caminho de cuidado e a visualização de uma só pergunta. suas notas ficam como estão.","apply":"aplicar o perfil inicial","applied":"perfil inicial aplicado nesta aba. salve o caminho e as configurações para usá-los novamente.","protocol":"ler o protocolo","bundle":"baixar o pacote para usar sem internet","alias":"como você quer chamar seu guia?","route":"por onde começamos?","depth":"quanto detalhe faz sentido hoje?","modes":["pedir cuidado","organizar uma tarefa","abrir a ficha da roda de conversa","configurar o SUTI.os"],"depths":["primeiro contato · uma pergunta","discernimento · um pouco mais de perto","integração · a ficha inteira"],"mapNitya":"atlas de estruturas do NITYA","atlasCare":"atlas de cuidado mútuo","mapCare":"mapa pessoal · 13 fios","care":"anjos do cuidado","careText":"uma frase já basta: “o que eu preciso agora é…”","careLocal":"abrir o mapa pessoal · fica no dispositivo","careExternal":"abrir o formulário externo do Google · inglês e russo","formNote":"se você enviar o formulário, o Google e quem o administra recebem o que você escrever lá. as notas desta oficina ficam aqui.","order":"um passo ao seu alcance","orderFields":["o que está tomando a sua atenção?","o que pode esperar?","qual passo você consegue dar hoje?"],"council":"roda de conversa para cuidado e clareza","councilLead":"pergunta → evidências → vozes diferentes → escolha → revisão. anote o que ajudou e o que merece outro olhar.","councilBoundary":"esta ficha ajuda a pensar em conjunto. cada pessoa fala por si. ela não convoca pessoas nem aciona uma IA.","councilFields":["pergunta em comum","o que sabemos e em que nos baseamos?","propostas, objeções, abstenções ou ausência de resposta","o que foi escolhido, quem concordou e quando vamos rever?"],"setup":"seu próprio SUTI.os","setupFirst":"se você baixou o pacote completo do Verenium, descompacte SUTI.os.zip em uma pasta nova.","setupDownload":"baixar o SUTI.os 0.2.4","setupNext":"abra SUTI.os/vault como um cofre separado no Obsidian ou como uma pasta em um editor de Markdown.","setupLast":"comece pelo arquivo «начать.md». você pode manter suas notas sem conta e sem internet.","verify":"verificar o pacote","verifyText":"na pasta SUTI.os, execute python3 install.py --verify-only (no Windows: py install.py --verify-only). esse comando só verifica os arquivos.","glossary":"Stozhary · palavras de cuidado e canto da água","glossaryText":"soyuzhestvo: duas pessoas combinaram trabalhar juntas. sotsvetie: cada pessoa traz um dom. sozvezdie: os vínculos ficam visíveis e qualquer pessoa pode sair. Stozhary: nos reencontramos e perguntamos “a quem isso ajudou?”","water":"vodovol · quer que eu sirva um pouco de água?","wait":"tkokh · vou esperar sua resposta.","saveNote":"o arquivo pessoal inclui as respostas ocultas pelo nível de detalhe atual.","save":"salvar o caminho e as configurações","restore":"restaurar um caminho salvo","saved":"guarde o arquivo em um lugar privado. ele contém suas notas.","restored":"caminho restaurado","invalid":"este arquivo não é compatível. suas notas atuais continuam nesta aba.","principles":"princípios da oficina","principlesText":"pergunte primeiro. diferencie o que você observa do que você supõe. deixe espaço para recusar. silêncio não é consentimento. escolha um passo possível e veja se ajudou. deixe que as outras pessoas contem as próprias histórias.","pace":"você escolhe o ritmo","cues":[["o que ajudaria agora?","que tipo de apoio faria sentido?","o que você gostaria de trocar?"],["o que está tomando a sua atenção?","o que pode esperar?","qual passo você escolhe?"],["que pergunta temos em comum?","o que sabemos e como podemos verificar?","quem ouvimos e sobre o que chegamos a um acordo?"],["abra a oficina","escolha sua pasta","salve suas configurações e tente restaurá-las"]]},"fr":{"title":"Verenium · atelier de bienveillance","kicker":"∴ SUTI.world · atelier local","byline":"SUTI.verenium · un compagnon pour prendre soin","intro":"qu’est-ce qui vous aiderait aujourd’hui ? choisissez un parcours. vos notes restent dans cet onglet jusqu’à sa fermeture. vous pouvez en enregistrer une copie.","language":"langue de l’atelier","stop":"vous pouvez vous arrêter ici","review":"traduction éditoriale · relecture linguistique indépendante en attente","activation":"commencer par un pas","activationText":"appliquez le profil de départ de Verenium, avec le parcours de bienveillance et l’affichage d’une seule question. vos notes restent telles quelles.","apply":"appliquer le profil de départ","applied":"profil de départ appliqué dans cet onglet. enregistrez le parcours et les réglages pour les réutiliser.","protocol":"lire le protocole","bundle":"télécharger le kit pour l’utiliser hors ligne","alias":"comment souhaitez-vous appeler votre guide ?","route":"par où commencer ?","depth":"quel niveau de détail vous convient aujourd’hui ?","modes":["demander du soutien","organiser une tâche","ouvrir la fiche du conseil","configurer SUTI.os"],"depths":["premier contact · une question","discernement · un peu plus près","assemblage · toute la fiche"],"mapNitya":"atlas des cadres de NITYA","atlasCare":"atlas de l’entraide","mapCare":"carte personnelle · 13 fils","care":"anges de la bienveillance","careText":"une phrase suffit : « en ce moment, j’ai besoin de… »","careLocal":"ouvrir la carte personnelle · elle reste sur votre appareil","careExternal":"ouvrir le formulaire externe Google · anglais et russe","formNote":"si vous envoyez le formulaire, Google et la personne qui le gère reçoivent ce que vous y écrivez. les notes de cet atelier restent ici.","order":"un pas à votre portée","orderFields":["qu’est-ce qui occupe votre attention ?","qu’est-ce qui peut attendre ?","quel pas pouvez-vous faire aujourd’hui ?"],"council":"conseil de bienveillance et de clarté","councilLead":"question → éléments vérifiables → différentes voix → choix → bilan. notez ce qui a aidé et ce qui mérite un nouvel examen.","councilBoundary":"cette fiche sert à réfléchir ensemble. chaque personne parle en son nom. la fiche ne sollicite ni personnes ni IA.","councilFields":["question commune","que savons-nous et sur quoi nous appuyons-nous ?","propositions, objections, abstentions ou absence de réponse","qu’avons-nous choisi, qui a donné son accord et quand ferons-nous le point ?"],"setup":"votre propre SUTI.os","setupFirst":"si vous avez téléchargé le kit Verenium complet, décompressez SUTI.os.zip dans un nouveau dossier.","setupDownload":"télécharger SUTI.os 0.2.4","setupNext":"ouvrez SUTI.os/vault comme un espace distinct dans Obsidian ou comme un dossier dans un éditeur Markdown.","setupLast":"commencez par « начать.md ». vous pouvez garder vos notes sans compte et hors ligne.","verify":"vérifier le kit","verifyText":"dans le dossier SUTI.os, exécutez python3 install.py --verify-only (sous Windows : py install.py --verify-only). cette commande se limite à vérifier les fichiers.","glossary":"Stozhary · mots de bienveillance et chant de l’eau","glossaryText":"soyuzhestvo : deux personnes ont convenu de travailler ensemble. sotsvetie : chaque personne apporte un don. sozvezdie : les liens sont visibles et chacun peut se retirer. Stozhary : nous nous sommes retrouvés et avons demandé « à qui cela a-t-il été utile ? »","water":"vodovol · je vous sers un peu d’eau ?","wait":"tkokh · j’attendrai votre réponse.","saveNote":"le fichier personnel contient aussi les réponses masquées par le niveau de détail actuel.","save":"enregistrer le parcours et les réglages","restore":"restaurer un parcours enregistré","saved":"gardez le fichier dans un endroit privé. il contient vos notes.","restored":"parcours restauré","invalid":"ce fichier est incompatible. vos notes actuelles restent dans cet onglet.","principles":"principes de l’atelier","principlesText":"commencez par demander. distinguez ce que vous observez de ce que vous supposez. laissez la possibilité de refuser. le silence ne vaut pas consentement. choisissez un pas à votre portée et vérifiez s’il a aidé. laissez aux autres le soin de raconter leur propre histoire.","pace":"vous choisissez le rythme","cues":[["qu’est-ce qui vous aiderait maintenant ?","quel type de soutien vous conviendrait ?","qu’aimeriez-vous échanger ?"],["qu’est-ce qui occupe votre attention ?","qu’est-ce qui peut attendre ?","quel pas choisissez-vous ?"],["quelle question avons-nous en commun ?","que savons-nous et comment le vérifier ?","quels avis avons-nous entendus et sur quoi sommes-nous d’accord ?"],["ouvrez l’atelier","choisissez votre dossier","enregistrez vos réglages et essayez de les restaurer"]]},"ar":{"title":"Verenium · ورشة الرعاية","kicker":"∴ SUTI.world · ورشة محلية","byline":"SUTI.verenium · رفيق في الرعاية","intro":"ما الذي قد يساعدك اليوم؟ اختر مسارًا. تبقى ملاحظاتك في علامة التبويب هذه حتى تغلقها. يمكنك حفظ نسخة بنفسك.","language":"لغة الورشة","stop":"يمكنك التوقّف هنا","review":"ترجمة تحريرية · بانتظار مراجعة لغوية مستقلة","activation":"ابدأ بخطوة واحدة","activationText":"طبّق إعدادات البداية: Verenium، ومسار الرعاية، وعرض سؤال واحد. تبقى ملاحظاتك كما هي.","apply":"طبّق إعدادات البداية","applied":"طُبّقت إعدادات البداية في علامة التبويب هذه. احفظ المسار والإعدادات لاستخدامها من جديد.","protocol":"اقرأ البروتوكول","bundle":"نزّل الحزمة للعمل دون اتصال","alias":"ماذا تود أن تسمّي مرشدك؟","route":"من أين نبدأ؟","depth":"ما قدر التفاصيل الذي يناسبك اليوم؟","modes":["اطلب الدعم","رتّب مهمة","افتح ورقة عمل للمجلس","أعِدّ SUTI.os"],"depths":["لمسة · سؤال واحد","تمييز · نظرة أقرب","تركيب · الورقة كاملة"],"mapNitya":"أطلس أطر عمل NITYA","atlasCare":"أطلس الرعاية المتبادلة","mapCare":"خريطة شخصية · 13 خيطًا","care":"ملائكة الرعاية","careText":"تكفي عبارة واحدة: «ما أحتاجه الآن هو…»","careLocal":"افتح الخريطة الشخصية · تبقى على جهازك","careExternal":"افتح نموذج Google الخارجي · بالإنجليزية والروسية","formNote":"إذا أرسلت النموذج، تتلقى Google وصاحب النموذج ما تكتبه فيه. تبقى ملاحظات الورشة هنا.","order":"خطوة واحدة في متناولك","orderFields":["ما الذي يشغل انتباهك؟","ما الذي يمكن تأجيله؟","ما الخطوة التي يمكنك اتخاذها اليوم؟"],"council":"مجلس للرعاية والوضوح","councilLead":"سؤال، ثم أدلة، ثم أصوات مختلفة، ثم اختيار، ثم مراجعة. دوّن ما ساعد وما يحتاج إلى نظرة أخرى.","councilBoundary":"هذه ورقة عمل للتفكير معًا. يتحدث كل شخص عن نفسه. الورقة لا تستدعي أشخاصًا أو ذكاءً اصطناعيًا.","councilFields":["السؤال المشترك","ماذا نعرف، وما الذي يسند معرفتنا؟","المقترحات، والاعتراضات، والامتناع عن التصويت، وعدم الرد","ماذا اخترنا، ومن وافق، ومتى نراجع الاختيار؟"],"setup":"نسختك الخاصة من SUTI.os","setupFirst":"إذا نزّلت حزمة Verenium الكاملة، فك ضغط SUTI.os.zip في مجلد جديد.","setupDownload":"نزّل SUTI.os 0.2.4","setupNext":"افتح SUTI.os/vault كمستودع مستقل في Obsidian أو كمجلد في محرّر Markdown.","setupLast":"ابدأ بملف «начать.md». يمكنك تدوين الملاحظات دون حساب أو اتصال بالشبكة.","verify":"تحقّق من الحزمة","verifyText":"في مجلد SUTI.os، شغّل python3 install.py --verify-only (في Windows: py install.py --verify-only). يتحقّق هذا الأمر من الملفات فقط.","glossary":"Stozhary · كلمات الرعاية وأغنية الماء","glossaryText":"soyuzhestvo: اتفق شخصان على العمل معًا. sotsvetie: يأتي كل شخص بهدية. sozvezdie: الروابط ظاهرة ولكل شخص حرية المغادرة. Stozhary: التقينا مجددًا وسألنا «من الذي ساعده هذا؟»","water":"vodovol · هل أسكب لك بعض الماء؟","wait":"tkokh · سأنتظر جوابك","saveNote":"يتضمّن ملفك الشخصي أيضًا الإجابات التي يخفيها مستوى التفاصيل الحالي.","save":"احفظ المسار والإعدادات","restore":"استعد مسارًا محفوظًا من قبل","saved":"احتفظ بهذا الملف في مكان خاص. فهو يتضمّن ملاحظاتك.","restored":"تمّت استعادة المسار","invalid":"هذا الملف غير متوافق. تبقى ملاحظاتك الحالية في علامة التبويب هذه.","principles":"مبادئ الورشة","principlesText":"اسأل أولًا. ميّز بين الملاحظة والتخمين. اترك مجالًا للرفض. الصمت ليس موافقة. اختر خطوة في متناولك، ثم تحقّق هل ساعدت. واترك للآخرين مجالًا لرواية قصصهم بأنفسهم.","pace":"أنت من يختار الوتيرة","cues":[["ما الذي قد يساعد الآن؟","أيّ نوع من الدعم يناسبك؟","ما الذي تود تبادله؟"],["ما الذي يشغل انتباهك؟","ما الذي يمكن أن ينتظر؟","ما الخطوة التي ستختارها؟"],["ما السؤال الذي يجمعنا؟","ماذا نعرف، وكيف نتحقّق منه؟","إلى آراء من استمعنا، وعلى ماذا اتفقنا؟"],["افتح الورشة","اختر مجلدك","احفظ إعداداتك وجرّب استعادتها"]]},"zh-Hans":{"title":"Verenium · 关怀工作室","kicker":"∴ SUTI.world · 本地工作室","byline":"SUTI.verenium · 关怀同行者","intro":"今天什么能帮到你？选一条路线吧。关闭此标签页前，笔记会留在这里。你也可以自行保存副本。","language":"工作室语言","stop":"你可以在这里停下","review":"编辑译稿 · 尚待独立语言审校","activation":"从一步开始","activationText":"应用起始设置：Verenium、关怀路线、单题视图。已有的笔记会保留原样。","apply":"应用起始设置","applied":"起始设置已在此标签页应用。保存路线和设置，就能再次使用。","protocol":"阅读协议","bundle":"下载离线套件","alias":"你想给引导伙伴取什么名字？","route":"我们从哪里开始？","depth":"今天想了解多少细节？","modes":["寻求关怀","理清一项任务","打开共议记录表","设置 SUTI.os"],"depths":["轻触 · 一个问题","辨明 · 再看近一点","汇整 · 完整记录表"],"mapNitya":"NITYA 框架图谱","atlasCare":"互相关怀图谱","mapCare":"个人地图 · 13 条线索","care":"关怀天使","careText":"一句话就够了：“我现在需要的是……”","careLocal":"打开个人地图 · 内容留在本地","careExternal":"打开外部 Google 表单 · 英语和俄语","formNote":"如果提交表单，Google 和表单所有者会收到你在表单里填写的信息。工作室的笔记仍留在这里。","order":"力所能及的一步","orderFields":["什么正在占据你的注意力？","什么可以先放一放？","今天你能做哪一件事？"],"council":"关怀与澄清的共议","councilLead":"提问 → 依据 → 不同声音 → 选择 → 回顾。记下哪些做法有帮助，哪些需要再看一看。","councilBoundary":"这是一张供大家一起思考的记录表。每个人只代表自己发言。记录表不会召集他人或人工智能。","councilFields":["共同的问题","我们知道什么？依据是什么？","提议、异议、弃权、未回应","作出了什么选择？谁同意了？何时回顾？"],"setup":"你自己的 SUTI.os","setupFirst":"如果下载了完整的 Verenium 套件，请把 SUTI.os.zip 解压到一个新建的文件夹。","setupDownload":"下载 SUTI.os 0.2.4","setupNext":"在 Obsidian 中将 SUTI.os/vault 打开为独立仓库，或在 Markdown 编辑器中将它打开为文件夹。","setupLast":"从 «начать.md» 文件开始。无需账号或网络连接也可以记录笔记。","verify":"检查套件","verifyText":"在 SUTI.os 文件夹中运行 python3 install.py --verify-only（Windows：py install.py --verify-only）。此命令只检查文件。","glossary":"Stozhary · 关怀之词与水之歌","glossaryText":"soyuzhestvo：两个人约好一起做事。sotsvetie：每个人都带来一份礼物。sozvezdie：彼此的联系清晰可见，每个人都可以离开。Stozhary：我们再次相遇，并问道：“这对谁有帮助？”","water":"vodovol · 要我给你倒点水吗？","wait":"tkokh · 我会等你的回答","saveNote":"个人文件也会包含在当前详情层级中隐藏的回答。","save":"保存路线和设置","restore":"恢复之前保存的路线","saved":"请将文件保存在私密位置。里面有你的笔记。","restored":"路线已恢复","invalid":"此文件不兼容。现有笔记仍保留在此标签页中。","principles":"工作室原则","principlesText":"先问一声。分清观察和猜测。给拒绝留出空间。沉默不等于同意。选一个力所能及的步骤，再看看有没有帮助。让别人自己讲述自己的故事。","pace":"由你决定节奏","cues":[["现在什么能帮到你？","哪种支持适合你？","你想交换些什么？"],["什么正在占据你的注意力？","什么可以等一等？","你想选择哪一步？"],["我们共同面对什么问题？","我们知道什么？如何核实？","我们听到了谁的意见？又在哪些事情上达成一致？"],["打开工作室","选一个自己的文件夹","保存设置，再试着恢复"]]},"hi":{"title":"Verenium · देखभाल की कार्यशाला","kicker":"∴ SUTI.world · स्थानीय कार्यशाला","byline":"SUTI.verenium · देखभाल का साथी","intro":"आज किस चीज़ से आपको मदद मिलेगी? एक रास्ता चुनें। आपके नोट इस टैब में इसके बंद होने तक रहते हैं। आप चाहें तो उनकी एक प्रति खुद सहेज सकते हैं।","language":"कार्यशाला की भाषा","stop":"आप यहाँ रुक सकते हैं","review":"संपादकीय अनुवाद · स्वतंत्र भाषाई समीक्षा बाकी है","activation":"एक कदम से शुरू करें","activationText":"शुरुआती सेटिंग लागू करें: Verenium, देखभाल का रास्ता और एक बार में एक सवाल। आपके नोट वैसे ही रहेंगे।","apply":"शुरुआती सेटिंग लागू करें","applied":"इस टैब में शुरुआती सेटिंग लागू हो गई है। इन्हें दोबारा इस्तेमाल करने के लिए रास्ता और सेटिंग सहेज लें।","protocol":"प्रोटोकॉल पढ़ें","bundle":"बिना इंटरनेट इस्तेमाल करने का पैकेज डाउनलोड करें","alias":"आप अपने मार्गदर्शक का क्या नाम रखना चाहेंगे?","route":"हम कहाँ से शुरू करें?","depth":"आज कितनी जानकारी आपके लिए ठीक रहेगी?","modes":["सहारा माँगें","किसी काम को व्यवस्थित करें","संवाद सभा की कार्यपत्रिका खोलें","SUTI.os सेट करें"],"depths":["पहली झलक · एक सवाल","समझ · थोड़ा और करीब से","संकलन · पूरी कार्यपत्रिका"],"mapNitya":"NITYA के ढाँचों का मानचित्र","atlasCare":"आपसी देखभाल का मानचित्र","mapCare":"निजी मानचित्र · 13 सूत्र","care":"देखभाल के फ़रिश्ते","careText":"एक वाक्य काफ़ी है: “इस समय मुझे ज़रूरत है…”","careLocal":"निजी मानचित्र खोलें · जानकारी आपके डिवाइस पर रहती है","careExternal":"बाहरी Google फ़ॉर्म खोलें · अंग्रेज़ी और रूसी में","formNote":"अगर आप फ़ॉर्म भेजते हैं, तो उसमें लिखी जानकारी Google और फ़ॉर्म के मालिक को मिलती है। कार्यशाला के नोट यहीं रहते हैं।","order":"बस एक कदम जो आप उठा सकें","orderFields":["किस बात में आपका ध्यान लगा है?","कौन-सी बात कुछ देर रुक सकती है?","आज आप कौन-सा एक कदम उठा सकते हैं?"],"council":"देखभाल और स्पष्टता की संवाद सभा","councilLead":"सवाल → आधार → अलग-अलग आवाज़ें → चुनाव → समीक्षा। लिखें कि किस बात से मदद मिली और किसे फिर से देखने की ज़रूरत है।","councilBoundary":"यह साथ बैठकर सोचने की कार्यपत्रिका है। हर व्यक्ति अपनी ओर से बोलता है। यह लोगों या AI को नहीं बुलाती।","councilFields":["साझा सवाल","हम क्या जानते हैं और उसका आधार क्या है?","प्रस्ताव, आपत्तियाँ, मतदान से विरति, कोई जवाब नहीं","क्या चुना गया, कौन सहमत था और हम कब समीक्षा करेंगे?"],"setup":"आपका अपना SUTI.os","setupFirst":"अगर आपने पूरा Verenium पैकेज डाउनलोड किया है, तो SUTI.os.zip को एक नए फ़ोल्डर में खोलें।","setupDownload":"SUTI.os 0.2.4 डाउनलोड करें","setupNext":"Obsidian में SUTI.os/vault को अलग वॉल्ट के रूप में खोलें, या Markdown संपादक में इसे एक फ़ोल्डर की तरह खोलें।","setupLast":"«начать.md» से शुरू करें। नोट रखने के लिए खाते या इंटरनेट की ज़रूरत नहीं है।","verify":"पैकेज की जाँच करें","verifyText":"SUTI.os फ़ोल्डर में python3 install.py --verify-only चलाएँ (Windows: py install.py --verify-only)। यह कमांड केवल फ़ाइलों की जाँच करती है।","glossary":"Stozhary · देखभाल के शब्द और पानी का गीत","glossaryText":"soyuzhestvo: दो लोगों ने साथ काम करने पर सहमति दी। sotsvetie: हर कोई एक उपहार लाता है। sozvezdie: संबंध साफ़ दिखते हैं और कोई भी जा सकता है। Stozhary: हम फिर मिले और पूछा, “इससे किसे मदद मिली?”","water":"vodovol · क्या मैं आपके लिए थोड़ा पानी डालूँ?","wait":"tkokh · मैं आपके जवाब का इंतज़ार करूँगा","saveNote":"निजी फ़ाइल में वे जवाब भी शामिल होंगे जो इस समय चुने गए विवरण के स्तर पर छिपे हैं।","save":"रास्ता और सेटिंग सहेजें","restore":"पहले से सहेजा रास्ता वापस खोलें","saved":"फ़ाइल किसी निजी जगह पर रखें। इसमें आपके नोट हैं।","restored":"सहेजा हुआ रास्ता वापस खुल गया है","invalid":"इस फ़ाइल का फ़ॉर्मैट नहीं पहचाना गया। आपके मौजूदा नोट इस टैब में हैं।","principles":"कार्यशाला के सिद्धांत","principlesText":"पहले पूछें। जो देखा है उसे अनुमान से अलग रखें। मना करने की गुंजाइश दें। चुप्पी सहमति नहीं है। अपनी पहुँच का एक कदम चुनें और देखें कि उससे मदद मिली या नहीं। दूसरों को अपनी कहानी खुद कहने की जगह दें।","pace":"गति आप चुनते हैं","cues":[["अभी किससे मदद मिलेगी?","किस तरह का सहारा ठीक लगेगा?","आप क्या एक-दूसरे से बाँटना चाहेंगे?"],["किस बात में आपका ध्यान लगा है?","कौन-सी बात इंतज़ार कर सकती है?","आप कौन-सा कदम चुनेंगे?"],["हमारा साझा सवाल क्या है?","हम क्या जानते हैं और उसकी जाँच कैसे करें?","हमने किनकी राय सुनी और किस बात पर सहमति बनी?"],["कार्यशाला खोलें","अपना फ़ोल्डर चुनें","सेटिंग सहेजें और उन्हें वापस खोलकर देखें"]]},"bn":{"title":"Verenium · যত্নের কর্মশালা","kicker":"∴ SUTI.world · স্থানীয় কর্মশালা","byline":"SUTI.verenium · যত্নের সঙ্গী","intro":"আজ কী পেলে আপনার সুবিধা হবে? একটি পথ বেছে নিন। এই ট্যাব বন্ধ করা পর্যন্ত নোট এখানেই থাকে। চাইলে নিজেই একটি কপি সংরক্ষণ করতে পারেন।","language":"কর্মশালার ভাষা","stop":"চাইলে এখানেই থামতে পারেন","review":"সম্পাদকীয় অনুবাদ · স্বাধীন ভাষাগত পর্যালোচনা বাকি","activation":"একটি পদক্ষেপ দিয়ে শুরু করুন","activationText":"শুরুর সেটিংস প্রয়োগ করুন: Verenium, যত্নের পথ, আর পর্দায় একটি প্রশ্ন। আপনার নোট যেমন আছে তেমনই থাকবে।","apply":"শুরুর সেটিংস প্রয়োগ করুন","applied":"এই ট্যাবে শুরুর সেটিংস প্রয়োগ হয়েছে। আবার ব্যবহার করতে পথ ও সেটিংস সংরক্ষণ করুন।","protocol":"প্রোটোকল পড়ুন","bundle":"ইন্টারনেট ছাড়া ব্যবহারের প্যাকেজ ডাউনলোড করুন","alias":"পথ দেখানোর সঙ্গীকে কী নাম দেবেন?","route":"কোথা থেকে শুরু করব?","depth":"আজ কতটা বিস্তারিত আপনার জন্য সুবিধাজনক?","modes":["সহায়তা চান","একটি কাজ গুছিয়ে নিন","আলোচনা সভার কার্যপত্র খুলুন","SUTI.os সেট আপ করুন"],"depths":["প্রথম ছোঁয়া · একটি প্রশ্ন","বোঝাপড়া · একটু গভীরে","একসঙ্গে দেখা · সম্পূর্ণ কার্যপত্র"],"mapNitya":"NITYA কাঠামোর মানচিত্র","atlasCare":"পারস্পরিক যত্নের মানচিত্র","mapCare":"ব্যক্তিগত মানচিত্র · ১৩টি সূত্র","care":"যত্নের ফেরেশতা","careText":"একটি বাক্যই যথেষ্ট: “এই মুহূর্তে আমার দরকার…”","careLocal":"ব্যক্তিগত মানচিত্র খুলুন · তথ্য আপনার ডিভাইসেই থাকে","careExternal":"বাইরের Google ফর্ম খুলুন · ইংরেজি ও রুশ ভাষায়","formNote":"ফর্মটি জমা দিলে, সেখানে যা লিখবেন তা Google ও ফর্মের মালিক পাবেন। কর্মশালার নোট এখানেই থাকে।","order":"সাধ্যের মধ্যে একটি পদক্ষেপ","orderFields":["কোন বিষয়টি আপনার মনোযোগ জুড়ে আছে?","কোন কাজটি অপেক্ষা করতে পারে?","আজ কোন একটি পদক্ষেপ আপনি নিতে পারেন?"],"council":"যত্ন ও স্পষ্টতার আলোচনা সভা","councilLead":"প্রশ্ন → ভিত্তি → ভিন্ন মত → নির্বাচন → পর্যালোচনা। কোনটি কাজে লেগেছে আর কোনটি আবার দেখা দরকার, লিখে রাখুন।","councilBoundary":"এটি একসঙ্গে ভাবার কার্যপত্র। প্রত্যেকে নিজের হয়ে কথা বলেন। এটি কাউকে বা কোনো AI-কে ডাকে না।","councilFields":["সবার জন্য প্রযোজ্য প্রশ্ন","আমরা কী জানি ও তার ভিত্তি কী?","প্রস্তাব, আপত্তি, ভোটদানে বিরতি, উত্তর মেলেনি","কী বেছে নেওয়া হয়েছে, কে রাজি হয়েছেন, আর কবে আবার দেখব?"],"setup":"নিজের SUTI.os","setupFirst":"সম্পূর্ণ Verenium প্যাকেজ ডাউনলোড করে থাকলে, SUTI.os.zip একটি নতুন ফোল্ডারে আনজিপ করুন।","setupDownload":"SUTI.os 0.2.4 ডাউনলোড করুন","setupNext":"Obsidian-এ SUTI.os/vault আলাদা ভল্ট হিসেবে খুলুন, বা Markdown সম্পাদকে ফোল্ডার হিসেবে খুলুন।","setupLast":"«начать.md» দিয়ে শুরু করুন। অ্যাকাউন্ট বা ইন্টারনেট ছাড়াই নোট রাখতে পারবেন।","verify":"প্যাকেজ পরীক্ষা করুন","verifyText":"SUTI.os ফোল্ডারে python3 install.py --verify-only চালান (Windows: py install.py --verify-only)। এই কমান্ডটি শুধু ফাইল পরীক্ষা করে।","glossary":"Stozhary · যত্নের শব্দ আর জলের গান","glossaryText":"soyuzhestvo: দুজন একসঙ্গে কাজ করতে রাজি হয়েছেন। sotsvetie: প্রত্যেকে একটি উপহার নিয়ে আসেন। sozvezdie: সম্পর্কগুলো স্পষ্ট এবং যে কেউ চলে যেতে পারেন। Stozhary: আবার দেখা হলে আমরা জিজ্ঞেস করলাম, “এতে কার উপকার হলো?”","water":"vodovol · আপনার জন্য একটু জল ঢেলে দেব?","wait":"tkokh · আপনার উত্তরের জন্য অপেক্ষা করব","saveNote":"বর্তমানে লুকানো উত্তরগুলিও ব্যক্তিগত ফাইলে অন্তর্ভুক্ত থাকবে।","save":"পথ ও সেটিংস সংরক্ষণ করুন","restore":"আগে সংরক্ষিত পথ পুনরায় খুলুন","saved":"ফাইলটি ব্যক্তিগত জায়গায় রাখুন। এতে আপনার নোট রয়েছে।","restored":"সংরক্ষিত পথ আবার খুলেছে","invalid":"ফাইলটির ধরন গ্রহণযোগ্য নয়। আপনার বর্তমান নোট এই ট্যাবেই আছে।","principles":"কর্মশালার নীতি","principlesText":"আগে জিজ্ঞেস করুন। যা দেখেছেন তাকে অনুমান থেকে আলাদা রাখুন। না বলার সুযোগ দিন। নীরবতা সম্মতি নয়। সাধ্যের মধ্যে একটি পদক্ষেপ বেছে নিন এবং দেখে নিন সেটি কাজে লেগেছে কি না। অন্যদের নিজেদের গল্প বলার সুযোগ দিন।","pace":"গতি আপনি ঠিক করবেন","cues":[["এই মুহূর্তে কী সাহায্য করবে?","কেমন সহায়তা আপনার জন্য উপযুক্ত?","আপনি কী বিনিময় করতে চান?"],["কোন বিষয়টি আপনার মনোযোগ জুড়ে আছে?","কোনটি অপেক্ষা করতে পারে?","কোন পদক্ষেপটি বেছে নেবেন?"],["কোন প্রশ্নটি আমাদের সবার?","আমরা কী জানি, আর তা কীভাবে যাচাই করব?","আমরা কার কার মত শুনেছি আর কোন বিষয়ে একমত হয়েছি?"],["কর্মশালা খুলুন","আপনার ফোল্ডার বেছে নিন","সেটিংস সংরক্ষণ করুন এবং ফিরিয়ে এনে দেখুন"]]},"eo":{"title":"Verenium · laborejo de zorgo","kicker":"∴ SUTI.world · loka laborejo","byline":"SUTI.verenium · kunulo por zorgo","intro":"kio helpus vin hodiaŭ? elektu vojon. viaj notoj restas en ĉi tiu langeto ĝis vi fermas ĝin. vi povas mem konservi kopion.","language":"lingvo de la laborejo","stop":"vi povas halti ĉi tie","review":"redakta traduko · atendata estas sendependa revizio de flua esperantisto","activation":"komenci per unu paŝo","activationText":"apliki la komencan profilon: Verenium, vojo de zorgo kaj vido kun unu demando. viaj notoj restas tiaj, kiaj ili estas.","apply":"apliki la komencan profilon","applied":"la komenca profilo estas aplikita en ĉi tiu langeto. konservu la vojon kaj la agordojn por reuzi ilin.","protocol":"legi la protokolon","bundle":"elŝuti la senretan pakaĵon","alias":"kiel vi nomus vian gvidanton?","route":"per kio ni komencu?","depth":"kiom da detaloj konvenas al vi hodiaŭ?","modes":["peti zorgon","ordigi taskon","malfermi laborfolion por konsilio","agordi SUTI.os"],"depths":["tuŝo · unu demando","distingo · iom pli proksime","kunmeto · la tuta folio"],"mapNitya":"atlaso de la kadroj de NITYA","atlasCare":"atlaso de reciproka zorgo","mapCare":"persona mapo · 13 fadenoj","care":"anĝeloj de zorgo","careText":"unu frazo sufiĉas: «nun mi bezonas…»","careLocal":"malfermi la personan mapon · ĝi restas loka","careExternal":"malfermi la eksteran Google-formularon · angla kaj rusa","formNote":"se vi sendas la formularon, Google kaj la posedanto de la formularo ricevos tion, kion vi skribas tie. viaj notoj en ĉi tiu laborejo restas ĉi tie.","order":"unu farebla paŝo","orderFields":["kio okupas vian atenton?","kio povas atendi?","kiun paŝon vi povas fari hodiaŭ?"],"council":"konsilio por zorgo kaj klareco","councilLead":"demando → pruvoj → diversaj voĉoj → elekto → kontrolo. notu, kio helpis kaj kion necesas reekzameni.","councilBoundary":"ĉi tiu laborfolio helpas kune pripensi demandon. ĉiu parolas por si mem. ĝi ne invitas homojn aŭ artefaritan inteligenton.","councilFields":["komuna demando","kion ni scias, kaj sur kio tio baziĝas?","proponoj, kontraŭdiroj, sindetenoj, manko de respondo","kion ni elektis, kiu konsentis kaj kiam ni rekontrolos?"],"setup":"via propra SUTI.os","setupFirst":"se vi elŝutis la kompletan pakaĵon Verenium, malpaku SUTI.os.zip en novan dosierujon.","setupDownload":"elŝuti SUTI.os 0.2.4","setupNext":"malfermu SUTI.os/vault kiel apartan deponejon en Obsidian aŭ kiel dosierujon en Markdown-redaktilo.","setupLast":"komencu per «начать.md». vi povas konservi notojn sen konto aŭ retkonekto.","verify":"kontroli la pakaĵon","verifyText":"en la dosierujo SUTI.os, rulu python3 install.py --verify-only (en Windows: py install.py --verify-only). la komando nur kontrolas la dosierojn.","glossary":"Stozhary · vortoj de zorgo kaj la kanto de la akvo","glossaryText":"soyuzhestvo · du homoj interkonsentis labori kune. sotsvetie · ĉiu alportas donacon. sozvezdie · la ligoj estas videblaj kaj ĉiu rajtas foriri. Stozhary · ni denove renkontiĝis kaj demandis «al kiu tio helpis?»","water":"vodovol · ĉu mi verŝu al vi iom da akvo?","wait":"tkokh · mi atendos vian respondon.","saveNote":"la persona dosiero enhavas ankaŭ respondojn kaŝitajn ĉe la nuna detalnivelo.","save":"konservi vojon kaj agordojn","restore":"restarigi antaŭe konservitan vojon","saved":"konservu la dosieron en privata loko. ĝi enhavas viajn notojn.","restored":"vojo restarigita","invalid":"ĉi tiu dosiero ne estas kongrua. viaj nunaj notoj restas en ĉi tiu langeto.","principles":"principoj de la laborejo","principlesText":"unue demandu. distingu observitaĵon de supozo. lasu spacon por rifuzi. silento ne estas konsento. elektu fareblan paŝon kaj kontrolu, ĉu ĝi helpis. lasu al ĉiu la rajton rakonti sian propran historion.","pace":"vi elektas la ritmon","cues":[["kio helpus ĝuste nun?","kia subteno taŭgas al vi?","kion vi ŝatus interŝanĝi?"],["kio okupas vian atenton?","kio povas atendi?","kiun paŝon vi elektos?"],["kiun demandon ni havas komune?","kion ni scias, kaj kiel ni povas kontroli tion?","kies opiniojn ni aŭdis kaj pri kio ni interkonsentis?"],["malfermu la laborejon","elektu vian dosierujon","konservu la agordojn kaj provu restarigi ilin"]]},"sa":{"title":"Verenium · परिचर्याकार्यशाला","kicker":"∴ SUTI.world · स्थानीयकार्यशाला","byline":"SUTI.verenium · परिचर्यासखः","intro":"अद्य किं तव सहायकं स्यात्? मार्गं वृणु। यावत् त्वम् इदं पटलं न पिधत्से तावत् तव लेखाः अत्रैव तिष्ठन्ति। स्वयमेव प्रतिलिपिं रक्षितुं शक्नोषि।","language":"कार्यशालायाः भाषा","stop":"अत्र विरन्तुं शक्नोषि","review":"सम्पादितानुवादः · संस्कृतविशेषज्ञस्य स्वतन्त्रा समीक्षा अपेक्षिता","activation":"एकेन पदेन आरभस्व","activationText":"आरम्भविन्यासं प्रयोजय। तस्मिन् Verenium, परिचर्यामार्गः, एकप्रश्नदर्शनं च सन्ति। तव लेखाः यथास्थिताः तिष्ठन्ति।","apply":"आरम्भविन्यासं प्रयोजय","applied":"अस्मिन् पटले आरम्भविन्यासः प्रयुक्तः। पुनरुपयोगाय मार्गं विन्यासांश्च रक्ष।","protocol":"कार्यविधिं पठ","bundle":"जालं विना उपयोज्यं सङ्ग्रहं प्राप्नुहि","alias":"मार्गदर्शकस्य किं नाम दास्यसि?","route":"कुत आरभेमहि?","depth":"अद्य कियान् विस्तारः तव योग्यः?","modes":["साहाय्यं याचस्व","कार्यं व्यवस्थितं कुरु","सभायाः कार्यपत्रं उद्घाटय","SUTI.os विन्यस्य"],"depths":["स्पर्शः · एकः प्रश्नः","विवेकः · किञ्चिद् अधिकं पश्य","संयोजनम् · सम्पूर्णं पत्रम्"],"mapNitya":"NITYA-पद्धतीनां मानचित्रसङ्ग्रहः","atlasCare":"परस्परपरिचर्यायाः मानचित्रसङ्ग्रहः","mapCare":"व्यक्तिगतं मानचित्रम् · त्रयोदश सूत्राणि","care":"परिचर्यादूताः","careText":"एकं वाक्यम् पर्याप्तम्। «अधुना मम आवश्यकता…»","careLocal":"व्यक्तिगतं मानचित्रम् उद्घाटय · अत्रैव तिष्ठति","careExternal":"बाह्यं Google-प्रपत्रम् उद्घाटय · आङ्ग्लभाषा च रूसीभाषा च","formNote":"प्रपत्रं प्रेषयसि चेत् Google तस्य स्वामी च तत्र लिखितं प्राप्स्यतः। अस्याः कार्यशालायाः लेखाः अत्रैव तिष्ठन्ति।","order":"एकं शक्यं पदम्","orderFields":["तव ध्यानं किम् आकर्षति?","किं पश्चात् कर्तुं शक्यते?","अद्य किं पदं ग्रहीतुं शक्नोषि?"],"council":"परिचर्यायाः स्पष्टतायाश्च सभा","councilLead":"प्रश्नः → प्रमाणम् → भिन्नानि मतानि → वरणम् → पुनःपरीक्षा। किं हितकरम् अभवत् किं पुनः परीक्ष्यम् इति लिख।","councilBoundary":"इदं सह विचाराय कार्यपत्रम्। प्रत्येकः स्वपक्षं स्वयमेव वदति। पत्रम् इदं जनान् कृत्रिमबुद्धिं वा न आह्वयति।","councilFields":["सर्वेषां प्रश्नः","किं जानीमः? तस्य किं प्रमाणम्?","प्रस्तावाः, आपत्तयः, विरतिः, उत्तराभावः","किं वृतम्? कः सम्मतिं दत्तवान्? कदा पुनः परीक्षामहे?"],"setup":"तव स्वकीयं SUTI.os","setupFirst":"यदि सम्पूर्णो Verenium-सङ्ग्रहः प्राप्तः, तर्हि SUTI.os.zip इत्यस्य अन्तर्वस्तूनि नूतने सञ्चिकासङ्ग्रहे निष्कासय।","setupDownload":"SUTI.os 0.2.4 प्राप्नुहि","setupNext":"SUTI.os/vault इति Obsidian मध्ये पृथक् सङ्ग्रहरूपेण अथवा Markdown-सम्पादके सञ्चिकासङ्ग्रहरूपेण उद्घाटय।","setupLast":"«начать.md» इति सञ्चिकया आरभस्व। उपयोक्तृखातं वा जालसम्बन्धं वा विना लेखान् रक्षितुं शक्नोषि।","verify":"सङ्ग्रहं परीक्षस्व","verifyText":"SUTI.os इति सञ्चिकासङ्ग्रहे python3 install.py --verify-only इति आदेशं चालय (Windows मध्ये py install.py --verify-only)। अयम् आदेशः सञ्चिकाः केवलं परीक्षते।","glossary":"Stozhary · परिचर्याशब्दाः जलगीतं च","glossaryText":"soyuzhestvo · द्वौ सह कार्यं कर्तुं सम्मतौ। sotsvetie · प्रत्येकः स्वस्य दानम् आनयति। sozvezdie · सम्बन्धाः स्पष्टाः सन्ति, कोऽपि गन्तुं शक्नोति। Stozhary · वयं पुनः समेत्य अपृच्छाम «अनेन कस्य साहाय्यम् अभवत्?»","water":"vodovol · तुभ्यं जलं पातयेयम्?","wait":"tkokh · तव उत्तरं प्रतीक्षिष्ये।","saveNote":"अस्मिन् विस्तारे गुप्तानि उत्तराण्यपि व्यक्तिगतसञ्चिकायां भवन्ति।","save":"मार्गं विन्यासांश्च रक्ष","restore":"पूर्वरक्षितं मार्गं पुनः स्थापय","saved":"सञ्चिकां निजीये स्थाने रक्ष। तस्यां तव लेखाः सन्ति।","restored":"मार्गः पुनः स्थापितः","invalid":"इयं सञ्चिका अत्र न युज्यते। तव इदानीन्तना लेखाः अस्मिन् पटले तिष्ठन्ति।","principles":"कार्यशालायाः सिद्धान्ताः","principlesText":"प्रथमं पृच्छ। यद् दृष्टं तद् अनुमानात् पृथक् कुरु। असम्मतेः अवकाशं देहि। मौनं सम्मतिः न भवति। शक्यं पदं वृणु, तेन साहाय्यम् अभवत् वा इति परीक्षस्व। अन्येभ्यः स्वकथां स्वयमेव वक्तुम् अवकाशं देहि।","pace":"गतिं त्वमेव वृणोषि","cues":[["अधुना किं सहायकं स्यात्?","कीदृशं साहाय्यं तव योग्यं स्यात्?","किं परस्परं दातुम् आदातुं च इच्छसि?"],["तव ध्यानं किम् आकर्षति?","किं पश्चात् कर्तुं शक्यते?","किं पदं वृणोषि?"],["कः प्रश्नः सर्वेषाम् अस्ति?","किं जानीमः? कथं तत् परीक्षेमहि?","केषां मतानि श्रुतवन्तः? कस्मिन् विषये सम्मताः स्मः?"],["कार्यशालाम् उद्घाटय","स्वकीयं सञ्चिकासङ्ग्रहं वृणु","विन्यासान् रक्ष, ततः पुनः स्थापयितुं प्रयतस्व"]]},"la":{"title":"Verenium · officina curae","kicker":"∴ SUTI.world · officina in hoc instrumento","byline":"SUTI.verenium · comes in cura","intro":"quid tibi hodie prosit? viam elige. annotationes in hac pagina manent, dum eam apertam tenes. exemplum ipse servare potes.","language":"lingua officinae","stop":"hic consistere licet","review":"versio editoria · recognitio a perito Latinitatis exspectatur","activation":"uno gradu incipe","activationText":"formam initialem adhibe. ea Verenium, viam curae et unum quaesitum proponit. annotationes tuae integrae manent.","apply":"formam initialem adhibe","applied":"forma initialis in hac pagina adhibita est. viam et optiones serva, si iis iterum uti vis.","protocol":"praecepta lege","bundle":"fasciculum sine reti adhibendum deprome","alias":"quid ducem tuum appellabis?","route":"unde incipiamus?","depth":"quantum hodie explicari vis?","modes":["curam pete","rem compone","schedam consilii aperi","SUTI.os dispone"],"depths":["tactus · unum quaesitum","discretio · propius inspice","compositio · scheda tota"],"mapNitya":"atlas rationum NITYA","atlasCare":"atlas curae mutuae","mapCare":"tabula tua · tredecim fila","care":"angeli curae","careText":"una sententia sufficit · «nunc mihi opus est…»","careLocal":"tabulam tuam aperi · in hoc instrumento manet","careExternal":"formulam externam Google aperi · Anglice et Russice","formNote":"si formulam mittis, Google et dominus formulae accipiunt quod ibi scribis. annotationes huius officinae hic manent.","order":"unus gradus quem facere potes","orderFields":["quid animum tuum occupat?","quid differre potes?","quem gradum hodie facere potes?"],"council":"consilium curae et perspicuitatis","councilLead":"quaesitum → indicia → voces diversae → electio → recognitio. nota quid profuerit et quid iterum inspiciendum sit.","councilBoundary":"hac scheda adhibita una deliberare potestis. quisque pro se loquitur. scheda neque homines neque intelligentiam artificialem vocat.","councilFields":["quaesitum commune","quid scimus? quibus indiciis nititur?","proposita, obiectiones, abstentiones, responsum nullum","quid electum est, qui consenserunt et quando rem recognoscemus?"],"setup":"SUTI.os tuum","setupFirst":"si totum fasciculum Verenium deprompsisti, contenta fasciculi SUTI.os.zip in novum indicem directorium extrahe.","setupDownload":"SUTI.os 0.2.4 deprome","setupNext":"SUTI.os/vault aperi ut archivum separatum in Obsidian vel ut indicem directorium in editore Markdown.","setupLast":"a plica «начать.md» incipe. annotationes etiam sine ratione usoris et sine nexu retis servare potes.","verify":"fasciculum comproba","verifyText":"in indice directorio SUTI.os iussum python3 install.py --verify-only exsequere (in Windows: py install.py --verify-only). hoc iussum plicas tantum comprobat.","glossary":"Stozhary · verba curae et carmen aquae","glossaryText":"soyuzhestvo · duo consenserunt se una operaturos esse. sotsvetie · quisque donum suum affert. sozvezdie · nexus patent et quisque discedere potest. Stozhary · iterum convenimus et quaesivimus «cui hoc profuit?»","water":"vodovol · aquam tibi infundam?","wait":"tkokh · responsum tuum exspectabo.","saveNote":"plica privata etiam responsa continet quae in hoc gradu latent.","save":"viam et optiones serva","restore":"viam antea servatam restitue","saved":"plicam in loco privato serva. annotationes tuas continet.","restored":"via restituta","invalid":"haec plica adhiberi nequit. annotationes tuae in hac pagina manent.","principles":"principia officinae","principlesText":"primum roga. quod observasti ab eo quod conicis distingue. da locum recusandi. silentium consensum non significat. elige gradum quem facere potes et inspice utrum profuerit. aliis permitte ut ipsi res suas narrent.","pace":"tu cursum moderaris","cues":[["quid tibi nunc prosit?","quale auxilium tibi conveniat?","quid commutare velis?"],["quid animum tuum occupat?","quid differri potest?","quem gradum eliges?"],["quod quaesitum commune habemus?","quid scimus et quomodo id probare possumus?","quorum sententias audivimus et de quibus rebus consensimus?"],["officinam aperi","indicem directorium elige","optiones serva et conare eas restituere"]]}}</script>
+<script>
+(() => {
+  "use strict";
+  const el = id => document.getElementById(id);
+  const root = document.documentElement;
+  const editions = JSON.parse(el("workshop-locales").textContent);
+  const names = {
+    ru: "русский", en: "English", "es-419": "español latinoamericano",
+    "pt-BR": "português brasileiro", fr: "français", ar: "العربية",
+    "zh-Hans": "简体中文", hi: "हिन्दी", bn: "বাংলা", eo: "Esperanto",
+    sa: "संस्कृतम्", la: "Latina", yzh: "язэхъ",
+  };
+  const aliases = { es: "es-419", pt: "pt-BR", "pt-br": "pt-BR", "zh-hans": "zh-Hans", "zh-cn": "zh-Hans" };
+  const modes = ["care", "order", "council", "setup"];
+  const notes = [...document.querySelectorAll(".note textarea")];
+  const copyNodes = [...document.querySelectorAll("[data-copy]")];
+  const picker = el("entrylang");
+  const route = el("route");
+  const depth = el("depth");
+  const nickname = el("alias");
+  const restore = el("restore");
+  const atlas = el("care-atlas");
+  const base = "https://ezargaruna.github.io/suticore/";
+  const framed = window !== window.parent;
+  const offline = location.protocol === "file:";
+  let message = "";
+  let applied = false;
+  let restoreRequest = 0;
+
+  function normalize(value) {
+    const slug = (value || "").toLowerCase().replaceAll("_", "-");
+    return aliases[slug] || (Object.hasOwn(names, slug) ? slug : "ru");
+  }
+
+  for (const [code, name] of Object.entries(names)) {
+    const option = new Option(name, code);
+    if (code !== "yzh") option.lang = code;
+    option.dir = code === "ar" ? "rtl" : "ltr";
+    picker.add(option);
+  }
+
+  if (framed) {
+    for (const link of document.links) {
+      if (!/^https?:/.test(link.getAttribute("href"))) link.href = new URL(link.getAttribute("href"), base).href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  }
+
+  function updateLanguage() {
+    const requested = picker.value;
+    const language = requested === "yzh" ? "ru" : requested;
+    const words = editions[language];
+    root.lang = language;
+    root.dir = language === "ar" ? "rtl" : "ltr";
+    root.dataset.languageLayer = requested;
+    document.title = words.title;
+    for (const node of copyNodes) {
+      node.textContent = node.dataset.copy.split(".").reduce((item, key) => item[key], words);
+      if (node.hasAttribute("data-ru-link") && language !== "ru") {
+        const tag = document.createElement("span");
+        tag.lang = "ru";
+        tag.dir = "ltr";
+        tag.textContent = names.ru;
+        node.append(" · ", tag);
+      }
+    }
+    for (const link of document.querySelectorAll("[data-care-map]")) {
+      link.href = (framed ? base : "") + "care-map.html?lang=" + encodeURIComponent(requested);
+      link.hreflang = language;
+    }
+    const atlasLanguage = offline ? "ru" : language;
+    const suffix = { ru: "", "es-419": "-es", "pt-BR": "-pt" }[atlasLanguage] ?? "-" + atlasLanguage;
+    atlas.setAttribute("href", (framed ? base : "") + "care-atlas" + suffix + ".html");
+    atlas.hreflang = atlasLanguage;
+    if (atlasLanguage !== language) {
+      const tag = document.createElement("span");
+      tag.lang = "ru";
+      tag.dir = "ltr";
+      tag.textContent = names.ru;
+      atlas.append(" · ", tag);
+    }
+    el("reflection-language").textContent = requested === "yzh"
+      ? "язэхъ · пока показана русская редакция"
+      : words.review;
+  }
+
+  function show() {
+    const words = editions[root.lang];
+    const level = Number(depth.value);
+    const mode = modes.indexOf(route.value);
+    el("reflection-title").textContent = words.cues[mode][0];
+    el("cue").textContent = words.cues[mode][level];
+    el("voice").textContent = (nickname.value || "Verenium") + " · " + words.pace;
+    for (const id of ["order", "council"]) {
+      el(id).querySelectorAll(".note").forEach((field, index) => { field.hidden = level < 2 && index > level; });
+    }
+    for (const id of modes) el(id).hidden = id !== route.value;
+    el("applied").textContent = applied ? words.applied : "";
+    el("msg").textContent = message ? words[message] : "";
+  }
+
+  picker.addEventListener("change", () => {
+    updateLanguage();
+    show();
+    if (!framed && !offline) {
+      const url = new URL(location.href);
+      url.searchParams.set("lang", picker.value);
+      history.replaceState(history.state, "", url);
+    }
+  });
+  for (const input of [route, depth]) input.addEventListener("change", show);
+  nickname.addEventListener("input", show);
+
+  el("apply").addEventListener("click", () => {
+    nickname.value = "Verenium";
+    route.value = "care";
+    depth.value = "0";
+    applied = true;
+    show();
+  });
+
+  el("save").addEventListener("click", () => {
+    const profile = { v: 2, depth: depth.value, name: nickname.value, mode: route.value, notes: notes.map(node => node.value) };
+    const address = URL.createObjectURL(new Blob([JSON.stringify(profile, null, 2)], { type: "application/json" }));
+    const link = document.createElement("a");
+    link.href = address;
+    link.download = "virenium-private.json";
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(address), 1000);
+    message = "saved";
+    show();
+  });
+
+  restore.addEventListener("change", async () => {
+    const file = restore.files[0];
+    if (!file) return;
+    const request = ++restoreRequest;
+    try {
+      const profile = JSON.parse(await file.text());
+      if (request !== restoreRequest) return;
+      if (![1, 2].includes(profile.v) || (profile.v === 2 && !["0", "1", "2"].includes(profile.depth)) ||
+          !modes.includes(profile.mode) || typeof profile.name !== "string" ||
+          !Array.isArray(profile.notes) || profile.notes.length !== notes.length ||
+          !profile.notes.every(note => typeof note === "string")) throw new Error("Invalid profile");
+      depth.value = profile.v === 1 ? "2" : profile.depth;
+      route.value = profile.mode;
+      nickname.value = profile.name;
+      notes.forEach((node, index) => { node.value = profile.notes[index]; });
+      message = "restored";
+    } catch {
+      if (request !== restoreRequest) return;
+      message = "invalid";
+    } finally {
+      if (request === restoreRequest) {
+        restore.value = "";
+        show();
+      }
+    }
+  });
+
+  const requested = root.dataset.workshopLanguage || new URLSearchParams(location.search).get("lang");
+  const fragment = root.dataset.workshopAnchor || location.hash.slice(1);
+  picker.value = normalize(requested);
+  if (modes.includes(fragment)) route.value = fragment;
+  updateLanguage();
+  show();
+  if (fragment === "activate") el("activation").scrollIntoView();
+  else if (modes.includes(fragment)) el(fragment).scrollIntoView();
+})();
+</script>
+</body>
+</html>

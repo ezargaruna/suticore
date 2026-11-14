@@ -1,0 +1,183 @@
+{
+  "title": "fio do cuidado",
+  "kicker": "SUTI.world ∴ oficina pessoal",
+  "intro": "você pode trazer uma palavra ou um projeto inteiro. tem espaço para os dois. suas respostas ficam nesta aba até que você decida salvar ou compartilhar.",
+  "language": "idioma do mapa",
+  "review": "tradução editorial · revisão linguística independente pendente",
+  "seasonLabel": "os quatro chapéus de Freyja · escolha uma textura",
+  "seasons": [
+    "outono · lã e bordo acobreado",
+    "inverno · feltro e geada azul",
+    "primavera · linho e pistache",
+    "verão · algodão e água do mar"
+  ],
+  "seasonPrompts": [
+    "o que você gostaria de levar para o calor?",
+    "o que ajudaria você a descansar hoje?",
+    "a que você gostaria de dar uma pequena primeira chance?",
+    "o que você gostaria de compartilhar enquanto tem energia?"
+  ],
+  "seasonNote": "esta é uma imagem autoral da SUTI. você pode mudar de estação e manter suas respostas.",
+  "depth": "profundidade",
+  "depths": [
+    "primeiro contato · escolha palavras",
+    "um pouco mais perto · acrescente uma frase",
+    "mais a fundo · perceba uma diferença e escolha um passo"
+  ],
+  "threadsNote": "os sete luminares são uma história autoral. os nomes dos chakras são imagens para as perguntas. escolha um fio ou experimente os sete, com um oitavo opcional. depois vêm cinco perguntas ligadas aos elementos.",
+  "stop": "você pode parar aqui. agradeço pelo que você escolheu compartilhar. escolha um fio para levar consigo.",
+  "atlas": "atlas do cuidado mútuo",
+  "build": "montar meu mapa de fusão",
+  "clear": "limpar",
+  "cleared": "seu mapa e suas respostas foram apagados",
+  "result": "meu mapa para hoje",
+  "download": "salvar como texto",
+  "empty": "você pode deixar o mapa em branco",
+  "flowTitle": "a corrente Sviorenukh · deixar ir",
+  "flowText": "como a brisa do mar depois de um dia quente. respire e se pergunte o que gostaria de deixar ir e o que quer guardar. uma palavra basta. você também pode só ficar aqui.",
+  "gameTitle": "oficina Samurai Dharma · camada de jogo",
+  "gameText": "experimente uma máscara. o bobo muda a perspectiva, Finist tenta de novo, o flamingo procura companhia, Dragonis mantém um limite e um anjo do cuidado pede permissão. são papéis para hoje.",
+  "gamePrompt": "os doze dons e os sete luminares são imagens autorais. tente fazer o mesmo pedido na voz de duas máscaras. qual versão deixa mais espaço para escolher?",
+  "formText": "se quiser compartilhar algo com quem organiza, abra o formulário separado e copie só as palavras que você escolher. o mapa não envia nada automaticamente.",
+  "formLink": "formulário de cuidado · inglês e russo",
+  "contactText": "se quiser, me mande uma frase. posso escutar e dizer que ajuda consigo oferecer. se for sobre outra pessoa, você pode passar o contato para ela decidir se quer escrever.",
+  "closing": "os pés no chão. uma respiração. um copo d’água. vá só até onde fizer sentido para você hoje.",
+  "zones": [
+    [
+      "base · muladhara — de que seu corpo precisa agora?",
+      [
+        "comida",
+        "abrigo",
+        "sossego",
+        "descanso"
+      ],
+      "o que ajudaria hoje?",
+      "que pequeno passo você consegue dar agora?"
+    ],
+    [
+      "sensações · svadhisthana — o que é agradável para você?",
+      [
+        "calor",
+        "água",
+        "movimento",
+        "uma pausa"
+      ],
+      "do que você gostaria de ter um pouco mais?",
+      "onde está o seu limite?"
+    ],
+    [
+      "vontade · manipura — o que está ao seu alcance?",
+      [
+        "escolher",
+        "pedir",
+        "adiar"
+      ],
+      "qual escolha cabe a você agora?",
+      "o que você pode deixar de carregar?"
+    ],
+    [
+      "coração · anahata — que cuidado você gostaria de receber?",
+      [
+        "que me escutem",
+        "ter alguém por perto",
+        "encontrar a minha gente"
+      ],
+      "o que apoio significa para você?",
+      "você pode dizer que precisa de um espaço acolhedor para pessoas queer sem contar sua história pessoal"
+    ],
+    [
+      "voz · vishuddha — o que você gostaria de dizer?",
+      [
+        "sim",
+        "não",
+        "agora não",
+        "em outro idioma"
+      ],
+      "que frase você está procurando?",
+      "como você pode dizer isso de um jeito que entendam você?"
+    ],
+    [
+      "olhar · ajna — o que ficou mais claro?",
+      [
+        "percebo uma ligação",
+        "estou em dúvida",
+        "preciso de outro olhar"
+      ],
+      "o que você percebe?",
+      "o que ajudaria você a conferir sua hipótese?"
+    ],
+    [
+      "brilho · sahasrara — o que dá sentido para você?",
+      [
+        "criatividade",
+        "proximidade",
+        "liberdade",
+        "ainda não sei"
+      ],
+      "o que você gostaria de preservar?",
+      "que ação poderia expressar isso no cotidiano?"
+    ],
+    [
+      "espaço comum · transpessoal — o que você gostaria de trocar?",
+      [
+        "tempo",
+        "uma habilidade",
+        "um projeto",
+        "preciso de ajuda",
+        "pular"
+      ],
+      "há algum projeto coletivo que desperta seu interesse?",
+      "em que condições você conseguiria fazer essa troca?"
+    ],
+    [
+      "terra · apoio",
+      [
+        "descanso",
+        "comida",
+        "um lugar seguro"
+      ],
+      "o que daria mais firmeza ao seu dia?",
+      "que ajuda você poderia aceitar?"
+    ],
+    [
+      "água · mudança",
+      [
+        "mudar de ritmo",
+        "deixar ir",
+        "tentar de outro jeito"
+      ],
+      "onde você gostaria de mudar o ritmo?",
+      "o que poderia fazer com mais suavidade?"
+    ],
+    [
+      "fogo · desejo",
+      [
+        "começar",
+        "criar",
+        "se aquecer"
+      ],
+      "o que acende uma faísca, mesmo que por cinco minutos?",
+      "qual primeira tentativa você gostaria de fazer?"
+    ],
+    [
+      "ar · espaço",
+      [
+        "conversar",
+        "ficar em silêncio",
+        "liberar tempo"
+      ],
+      "a que você gostaria de dar mais espaço?",
+      "que limite ajudaria?"
+    ],
+    [
+      "éter · sonho",
+      [
+        "criar",
+        "sentir",
+        "me permitir algo"
+      ],
+      "imagine que tudo seja possível por um minuto. com o que você sonha?",
+      "que parte desse sonho você gostaria de trazer para hoje?"
+    ]
+  ]
+}

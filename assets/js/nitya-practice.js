@@ -778,20 +778,16 @@
       if (kind === 'angels' && mount.hasAttribute('data-angels-locales')) {
         const suffix = { 'es-419': 'es', 'pt-BR': 'pt' }[language] ?? language;
         if (suffix !== 'ru') address.pathname = address.pathname.replace(/\.html$/, `-${suffix}.html`);
-      } else if (kind !== 'samurai' && address.origin === location.origin) {
+      } else if (kind === 'samurai' || address.origin === location.origin) {
         address.searchParams.set('lang', language);
       }
       const attrs = { href: address.href };
-      if (kind === 'samurai') attrs.hreflang = 'ru';
+      if (kind === 'samurai') attrs.hreflang = locale;
       if (window.parent !== window) {
         attrs.target = '_blank';
         attrs.rel = 'noopener';
       }
-      const destination = node('a', text, attrs);
-      if (kind === 'samurai' && locale !== 'ru') {
-        destination.append(' · ', node('span', 'русский', { lang: 'ru', dir: 'ltr' }));
-      }
-      links.append(destination);
+      links.append(node('a', text, attrs));
     }
     if (links.children.length) view.append(links);
 

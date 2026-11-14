@@ -1,6 +1,6 @@
 {
   "schema": "suti.published-static-route-inventory.v1",
-  "source_revision": "b743bd6b089eb4ca624d0820aa154c86c9e019c5",
+  "source_revision": "8e2f22263c8dae4ee8f1d797522f6c5522c68d17",
   "scope": "complete prepared Pages HTML path inventory, authoring templates excluded; availability map, not language or engine acceptance",
   "routes": [
     {
@@ -503,7 +503,7 @@
     {
       "id": "page:a80dcc4aa2763def",
       "path": "modules/suti/synaura-2026.11.en.html",
-      "title": "SYNAURA · formal visual-semantic language\nproposal · SUTI.world",
+      "title": "SYNAURA · formal visual-semantic language proposal · SUTI.world",
       "language": "en",
       "category": "language"
     },

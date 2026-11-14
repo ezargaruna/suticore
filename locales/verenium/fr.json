@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · atelier de bienveillance",
+  "kicker": "∴ SUTI.world · atelier local",
+  "byline": "SUTI.verenium · un compagnon pour prendre soin",
+  "intro": "qu’est-ce qui vous aiderait aujourd’hui ? choisissez un parcours. vos notes restent dans cet onglet jusqu’à sa fermeture. vous pouvez en enregistrer une copie.",
+  "language": "langue de l’atelier",
+  "stop": "vous pouvez vous arrêter ici",
+  "review": "traduction éditoriale · relecture linguistique indépendante en attente",
+  "activation": "commencer par un pas",
+  "activationText": "appliquez le profil de départ de Verenium, avec le parcours de bienveillance et l’affichage d’une seule question. vos notes restent telles quelles.",
+  "apply": "appliquer le profil de départ",
+  "applied": "profil de départ appliqué dans cet onglet. enregistrez le parcours et les réglages pour les réutiliser.",
+  "protocol": "lire le protocole",
+  "bundle": "télécharger le kit pour l’utiliser hors ligne",
+  "alias": "comment souhaitez-vous appeler votre guide ?",
+  "route": "par où commencer ?",
+  "depth": "quel niveau de détail vous convient aujourd’hui ?",
+  "modes": [
+    "demander du soutien",
+    "organiser une tâche",
+    "ouvrir la fiche du conseil",
+    "configurer SUTI.os"
+  ],
+  "depths": [
+    "premier contact · une question",
+    "discernement · un peu plus près",
+    "assemblage · toute la fiche"
+  ],
+  "mapNitya": "atlas des cadres de NITYA",
+  "atlasCare": "atlas de l’entraide",
+  "mapCare": "carte personnelle · 13 fils",
+  "care": "anges de la bienveillance",
+  "careText": "une phrase suffit : « en ce moment, j’ai besoin de… »",
+  "careLocal": "ouvrir la carte personnelle · elle reste sur votre appareil",
+  "careExternal": "ouvrir le formulaire externe Google · anglais et russe",
+  "formNote": "si vous envoyez le formulaire, Google et la personne qui le gère reçoivent ce que vous y écrivez. les notes de cet atelier restent ici.",
+  "order": "un pas à votre portée",
+  "orderFields": [
+    "qu’est-ce qui occupe votre attention ?",
+    "qu’est-ce qui peut attendre ?",
+    "quel pas pouvez-vous faire aujourd’hui ?"
+  ],
+  "council": "conseil de bienveillance et de clarté",
+  "councilLead": "question → éléments vérifiables → différentes voix → choix → bilan. notez ce qui a aidé et ce qui mérite un nouvel examen.",
+  "councilBoundary": "cette fiche sert à réfléchir ensemble. chaque personne parle en son nom. la fiche ne sollicite ni personnes ni IA.",
+  "councilFields": [
+    "question commune",
+    "que savons-nous et sur quoi nous appuyons-nous ?",
+    "propositions, objections, abstentions ou absence de réponse",
+    "qu’avons-nous choisi, qui a donné son accord et quand ferons-nous le point ?"
+  ],
+  "setup": "votre propre SUTI.os",
+  "setupFirst": "si vous avez téléchargé le kit Verenium complet, décompressez SUTI.os.zip dans un nouveau dossier.",
+  "setupDownload": "télécharger SUTI.os 0.2.4",
+  "setupNext": "ouvrez SUTI.os/vault comme un espace distinct dans Obsidian ou comme un dossier dans un éditeur Markdown.",
+  "setupLast": "commencez par « начать.md ». vous pouvez garder vos notes sans compte et hors ligne.",
+  "verify": "vérifier le kit",
+  "verifyText": "dans le dossier SUTI.os, exécutez python3 install.py --verify-only (sous Windows : py install.py --verify-only). cette commande se limite à vérifier les fichiers.",
+  "glossary": "Stozhary · mots de bienveillance et chant de l’eau",
+  "glossaryText": "soyuzhestvo : deux personnes ont convenu de travailler ensemble. sotsvetie : chaque personne apporte un don. sozvezdie : les liens sont visibles et chacun peut se retirer. Stozhary : nous nous sommes retrouvés et avons demandé « à qui cela a-t-il été utile ? »",
+  "water": "vodovol · je vous sers un peu d’eau ?",
+  "wait": "tkokh · j’attendrai votre réponse.",
+  "saveNote": "le fichier personnel contient aussi les réponses masquées par le niveau de détail actuel.",
+  "save": "enregistrer le parcours et les réglages",
+  "restore": "restaurer un parcours enregistré",
+  "saved": "gardez le fichier dans un endroit privé. il contient vos notes.",
+  "restored": "parcours restauré",
+  "invalid": "ce fichier est incompatible. vos notes actuelles restent dans cet onglet.",
+  "principles": "principes de l’atelier",
+  "principlesText": "commencez par demander. distinguez ce que vous observez de ce que vous supposez. laissez la possibilité de refuser. le silence ne vaut pas consentement. choisissez un pas à votre portée et vérifiez s’il a aidé. laissez aux autres le soin de raconter leur propre histoire.",
+  "pace": "vous choisissez le rythme",
+  "cues": [
+    [
+      "qu’est-ce qui vous aiderait maintenant ?",
+      "quel type de soutien vous conviendrait ?",
+      "qu’aimeriez-vous échanger ?"
+    ],
+    [
+      "qu’est-ce qui occupe votre attention ?",
+      "qu’est-ce qui peut attendre ?",
+      "quel pas choisissez-vous ?"
+    ],
+    [
+      "quelle question avons-nous en commun ?",
+      "que savons-nous et comment le vérifier ?",
+      "quels avis avons-nous entendus et sur quoi sommes-nous d’accord ?"
+    ],
+    [
+      "ouvrez l’atelier",
+      "choisissez votre dossier",
+      "enregistrez vos réglages et essayez de les restaurer"
+    ]
+  ]
+}

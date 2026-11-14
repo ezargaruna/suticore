@@ -1,0 +1,94 @@
+{
+  "title": "Verenium · laborejo de zorgo",
+  "kicker": "∴ SUTI.world · loka laborejo",
+  "byline": "SUTI.verenium · kunulo por zorgo",
+  "intro": "kio helpus vin hodiaŭ? elektu vojon. viaj notoj restas en ĉi tiu langeto ĝis vi fermas ĝin. vi povas mem konservi kopion.",
+  "language": "lingvo de la laborejo",
+  "stop": "vi povas halti ĉi tie",
+  "review": "redakta traduko · atendata estas sendependa revizio de flua esperantisto",
+  "activation": "komenci per unu paŝo",
+  "activationText": "apliki la komencan profilon: Verenium, vojo de zorgo kaj vido kun unu demando. viaj notoj restas tiaj, kiaj ili estas.",
+  "apply": "apliki la komencan profilon",
+  "applied": "la komenca profilo estas aplikita en ĉi tiu langeto. konservu la vojon kaj la agordojn por reuzi ilin.",
+  "protocol": "legi la protokolon",
+  "bundle": "elŝuti la senretan pakaĵon",
+  "alias": "kiel vi nomus vian gvidanton?",
+  "route": "per kio ni komencu?",
+  "depth": "kiom da detaloj konvenas al vi hodiaŭ?",
+  "modes": [
+    "peti zorgon",
+    "ordigi taskon",
+    "malfermi laborfolion por konsilio",
+    "agordi SUTI.os"
+  ],
+  "depths": [
+    "tuŝo · unu demando",
+    "distingo · iom pli proksime",
+    "kunmeto · la tuta folio"
+  ],
+  "mapNitya": "atlaso de la kadroj de NITYA",
+  "atlasCare": "atlaso de reciproka zorgo",
+  "mapCare": "persona mapo · 13 fadenoj",
+  "care": "anĝeloj de zorgo",
+  "careText": "unu frazo sufiĉas: «nun mi bezonas…»",
+  "careLocal": "malfermi la personan mapon · ĝi restas loka",
+  "careExternal": "malfermi la eksteran Google-formularon · angla kaj rusa",
+  "formNote": "se vi sendas la formularon, Google kaj la posedanto de la formularo ricevos tion, kion vi skribas tie. viaj notoj en ĉi tiu laborejo restas ĉi tie.",
+  "order": "unu farebla paŝo",
+  "orderFields": [
+    "kio okupas vian atenton?",
+    "kio povas atendi?",
+    "kiun paŝon vi povas fari hodiaŭ?"
+  ],
+  "council": "konsilio por zorgo kaj klareco",
+  "councilLead": "demando → pruvoj → diversaj voĉoj → elekto → kontrolo. notu, kio helpis kaj kion necesas reekzameni.",
+  "councilBoundary": "ĉi tiu laborfolio helpas kune pripensi demandon. ĉiu parolas por si mem. ĝi ne invitas homojn aŭ artefaritan inteligenton.",
+  "councilFields": [
+    "komuna demando",
+    "kion ni scias, kaj sur kio tio baziĝas?",
+    "proponoj, kontraŭdiroj, sindetenoj, manko de respondo",
+    "kion ni elektis, kiu konsentis kaj kiam ni rekontrolos?"
+  ],
+  "setup": "via propra SUTI.os",
+  "setupFirst": "se vi elŝutis la kompletan pakaĵon Verenium, malpaku SUTI.os.zip en novan dosierujon.",
+  "setupDownload": "elŝuti SUTI.os 0.2.4",
+  "setupNext": "malfermu SUTI.os/vault kiel apartan deponejon en Obsidian aŭ kiel dosierujon en Markdown-redaktilo.",
+  "setupLast": "komencu per «начать.md». vi povas konservi notojn sen konto aŭ retkonekto.",
+  "verify": "kontroli la pakaĵon",
+  "verifyText": "en la dosierujo SUTI.os, rulu python3 install.py --verify-only (en Windows: py install.py --verify-only). la komando nur kontrolas la dosierojn.",
+  "glossary": "Stozhary · vortoj de zorgo kaj la kanto de la akvo",
+  "glossaryText": "soyuzhestvo · du homoj interkonsentis labori kune. sotsvetie · ĉiu alportas donacon. sozvezdie · la ligoj estas videblaj kaj ĉiu rajtas foriri. Stozhary · ni denove renkontiĝis kaj demandis «al kiu tio helpis?»",
+  "water": "vodovol · ĉu mi verŝu al vi iom da akvo?",
+  "wait": "tkokh · mi atendos vian respondon.",
+  "saveNote": "la persona dosiero enhavas ankaŭ respondojn kaŝitajn ĉe la nuna detalnivelo.",
+  "save": "konservi vojon kaj agordojn",
+  "restore": "restarigi antaŭe konservitan vojon",
+  "saved": "konservu la dosieron en privata loko. ĝi enhavas viajn notojn.",
+  "restored": "vojo restarigita",
+  "invalid": "ĉi tiu dosiero ne estas kongrua. viaj nunaj notoj restas en ĉi tiu langeto.",
+  "principles": "principoj de la laborejo",
+  "principlesText": "unue demandu. distingu observitaĵon de supozo. lasu spacon por rifuzi. silento ne estas konsento. elektu fareblan paŝon kaj kontrolu, ĉu ĝi helpis. lasu al ĉiu la rajton rakonti sian propran historion.",
+  "pace": "vi elektas la ritmon",
+  "cues": [
+    [
+      "kio helpus ĝuste nun?",
+      "kia subteno taŭgas al vi?",
+      "kion vi ŝatus interŝanĝi?"
+    ],
+    [
+      "kio okupas vian atenton?",
+      "kio povas atendi?",
+      "kiun paŝon vi elektos?"
+    ],
+    [
+      "kiun demandon ni havas komune?",
+      "kion ni scias, kaj kiel ni povas kontroli tion?",
+      "kies opiniojn ni aŭdis kaj pri kio ni interkonsentis?"
+    ],
+    [
+      "malfermu la laborejon",
+      "elektu vian dosierujon",
+      "konservu la agordojn kaj provu restarigi ilin"
+    ]
+  ]
+}

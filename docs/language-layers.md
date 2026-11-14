@@ -48,12 +48,18 @@ The matching SUTI.os language catalog is [`language-packs/manifest.json`](https:
 
 [`care-atlas.html`](../care-atlas.html) is the Russian source guide to mutual-care practices. Its eleven translated routes are [`English`](../care-atlas-en.html), [`español`](../care-atlas-es.html), [`português brasileiro`](../care-atlas-pt.html), [`简体中文`](../care-atlas-zh-Hans.html), [`हिन्दी`](../care-atlas-hi.html), [`français`](../care-atlas-fr.html), [`العربية`](../care-atlas-ar.html), [`বাংলা`](../care-atlas-bn.html), [`Esperanto`](../care-atlas-eo.html), [`संस्कृतम्`](../care-atlas-sa.html), and [`Latina`](../care-atlas-la.html). All twelve written editions are linked from each page and embedded in the unified HTML router. Every translation carries a visible review status, preserves the age and consent boundaries, and states that this guide is not an emergency or medical service. Independent review is pending for all translations; Sanskrit and Latin additionally require qualified review. Local Noto fonts are used for Arabic, Bengali, Hindi, and Sanskrit with their SIL OFL notices linked. The same three illustrations appear across editions. Their per-asset provenance and reuse rights are not confirmed by this language audit; translation does not grant a new license. Yazekh is `HOLD` until the author confirms grammar and vocabulary.
 
+## Personal care map
+
+[The personal care map](https://suti.world/care-map.html?lang=en) offers twelve written editions. This covers all thirteen threads, the choice buttons, seasonal and depth controls, and generated map text. Yazekh opens the Russian edition with a visible explanation. Editorial translations are pending independent review. Esperanto needs a fluent reviewer and Sanskrit and Latin need qualified specialists.
+
+The same page is available inside the VereNium offline ZIP. Switching the language keeps existing answers and choices in the current tab. An explicit text download contains the visible selection and answers available at the chosen depth. The map does not send notes to the linked Google form or contact. The offline care atlas remains Russian. The three existing decorative illustrations are unchanged, and their reuse rights remain separate from the translations. The public Russian page at revision `e4e14cd` is the source for this edition set.
+
 ## NITYA and .todeus passport
 
 The NITYA atlas is linked from the home page as its main practice entry. The atlas, interactive care questionnaire, 13 threads, geographic invitations and quest prompts have twelve written editorial editions. Yazekh explicitly shows the Russian edition pending authorial review. Regional invitations are fictional or self-guided prompts and establish no participant affiliation. New atlas copy derives from the public SUTI vocabulary and newly written prompts. Local prototypes informed navigation only. The links to individual materials retain their respective terms and content languages. The form keeps optional text in page memory and does not send it. The countdown counts to a date the visitor chooses. A shared Finist start date remains unconfirmed.
 
 
-The [90-day NITYA practice](https://suti.world/nitya-practice.html?lang=en) uses twelve written editions (RU, EN, ES-419, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA, LA). The Yazekh choice displays a labeled Russian fallback. Independent language review remains pending for translations, with qualified review for Sanskrit and Latin. The optional four-decision route uses the same twelve written editions, including prompts, the unknown branch, results and controls. Each edition exposes its review state. Yazekh displays the Russian route with an explicit note. The separate legacy Samurai Dharma page is labeled Russian. The practice window is 13 November 2026 to 10 February 2027, followed by five optional closing days through 15 February. Personal practice can start at any time. Choices and progress stay in page memory.
+The [90-day NITYA practice](https://suti.world/nitya-practice.html?lang=en) uses twelve written editions (RU, EN, ES-419, PT-BR, zh-Hans, HI, FR, AR, BN, EO, SA, LA). The Yazekh choice displays a labeled Russian fallback. Independent language review remains pending for translations, with qualified review for Sanskrit and Latin. The optional four-decision route uses the same twelve written editions, including prompts, the unknown branch, results and controls. Each edition exposes its review state. Yazekh displays the Russian route with an explicit note. The separate Samurai Dharma page inherits the selected language from NITYA. The practice window is 13 November 2026 to 10 February 2027, followed by five optional closing days through 15 February. Personal practice can start at any time. Choices and progress stay in page memory.
 
 
 The original public NITYA page remains Russian-first. A complete English interface edition is available at [`nitya-en.html`](../nitya-en.html), and remains directly accessible. The latest checked live root responses at `suti.world` and the GitHub Pages mirror returned the same unified NITYA-first shell. On `suti.world`, `/nitya-en.html` resolves to that shell; on GitHub Pages, `/suticore/nitya-en.html` serves the standalone edition, byte-identical to the checked-in source in the 2026-11-11 audit. This parity check does not establish that all locale routes are current. The English text remains an editorial translation; independent native-language review has not been completed. Its linked [NITYA × .todeus passport](../nitya-todeus.html) adds a short concept-level phrase in the 13 language layers and records the status of each string. Draft strings in that passport do not activate new runtime locales or mean that the NITYA interface has been fully translated. The English source and Russian page remain distinct; Simplified Chinese, Hindi, French, Arabic, Bengali, Esperanto, Sanskrit, and Latin drafts need language review. Yazekh remains an authorial seed pending the author's grammar and transcreation review.
@@ -64,6 +70,20 @@ cultural quality. The 2026-11-04 reverse UI audit found and corrected seven
 visible labels that had bypassed those markers; all 300 marked strings now have
 values in each active runtime dictionary. See
 [`docs/audits/2026-11-04-suti-world-language-audit.md`](audits/2026-11-04-suti-world-language-audit.md).
+
+## VereNium workshop
+
+[The local workshop](https://ezargaruna.github.io/suticore/verenium.html?lang=en) has twelve written interface editions. This covers its four routes, prompts, depth controls and import and export messages. The Yazekh choice explicitly displays the Russian edition. Editorial translations await independent review, including a fluent Esperanto reviewer and qualified Sanskrit and Latin reviewers.
+
+Language and route are carried through standalone and embedded links. The offline bundle includes the same workshop and retains v1/v2 profile compatibility. Notes remain in the tab until the visitor explicitly saves a local file. The separate Google form and linked PDFs, archives, protocol and care resources have their own languages and terms. In the offline bundle the linked care atlas is Russian.
+
+Source: the existing public workshop and newly written editorial translations. The translated interface introduces no new external assets or media license. The ZIP keeps the previous bundle members and refreshes the workshop and its legacy alias. See [locale source and scope](../locales/verenium/README.md).
+
+## Samurai Dharma
+
+[Samurai Dharma](https://suti.world/samurai-dharma.html?lang=en) has twelve written editions, including the complete route, depth table, symbolic prompts, boundaries and copy and download controls. The Markdown download contains the same prompt as the page. Yazekh explicitly opens the Russian source while authorial transcreation remains pending. The editorial translations await independent review, with fluent Esperanto review and qualified Sanskrit and Latin review called out separately.
+
+The source is the existing public Russian page at revision `943d950`. No new third-party media appears in the localization. Font licenses and the linked SUTI.os archive retain their own scope. Language-specific routing applies to the page and its return to the homepage. The linked vault has separate coverage.
 
 ## Research collaboration brief
 
@@ -274,6 +294,22 @@ and lexicon. Existing translated visitor entries and standalone pages have
 their own coverage. The NITYA link discloses an English destination where
 a matching edition is absent. The external form language may differ from
 the homepage language. Existing assets and linked services retain their own terms.
+
+## semantic audits and care app concepts
+
+The [semantic audit shelf](https://suti.world/audits.html?lang=en) and the
+[care app concept audit](https://suti.world/care-app-audit.html?lang=en) each
+offer twelve written editions. The picker keeps all thirteen language layers
+visible. Yazekh opens the labeled source edition, English on the shelf and
+Russian in the concept audit, pending authorial transcreation.
+
+Editorial translations are pending independent language review, including
+fluent review for Esperanto and specialist review for Sanskrit and Latin.
+The concept audit describes the Russian design candidate dated 11 November 2026.
+The interface translation covers headings, descriptions, controls, table
+labels and the diagram description. Linked resources retain their individual
+language and rights. The OpenAI crystal and its Obsidian archive remain
+separate from the shelf translations.
 
 ## Unified world atlas and local workshops · 2026-11-13
 

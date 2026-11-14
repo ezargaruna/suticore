@@ -64,7 +64,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
 | `modules.html?lang=…` | Localized catalog with separate source language labels | 12 written-language editions and Russian fallback for YZH | 74 records. Two older references to sources marked internal were removed from public navigation. Native review remains pending. See the [catalog coverage and rights record](../../locales/module-catalog/coverage.json). |
-| `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
+| `care-map.html?lang=…` | Personal reflection, 13 threads, seasonal prompts and text export | 12 written editions and labeled Russian fallback for Yazekh | Local drafts with independent or qualified review pending. The offline ZIP contains the same interface. Existing art and linked forms retain separate rights and coverage. |
 | `care-atlas.html` | Russian | RU | Source guide; discloses that it is not medical/emergency support and requests are not auto-routed; links to all written editions and marks YZH `HOLD`. |
 | `care-atlas-en.html` | English (`en`) | EN | Full editorial draft; age/consent boundaries and service limits retained; independent review pending. |
 | `care-atlas-es.html` | Latin American Spanish (`es-419`) | ES-419 | Full editorial draft; age/consent boundaries and service limits retained; independent linguistic/cultural review pending. |
@@ -89,15 +89,15 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `care-constellation-eo.html` | Esperanto (`eo`) | EO | Complete editorial translation of the care concept, age routes, boundaries, controls, and image description; embedded in the unified HTML route data and cross-linked; independent linguistic and cultural review pending; no live service is claimed. |
 | `care-constellation-sa.html` | Sanskrit (`sa`) | SA | Complete editorial draft with matching `lang` metadata and a locally bundled Noto Sans Devanagari font; font OFL is included in the Pages artifact; qualified linguistic and cultural review pending; no live service is claimed. |
 | `care-constellation-la.html` | Latin (`la`) | LA | Complete editorial draft of the care concept, age routes, boundaries, controls, and image description; embedded and cross-linked; qualified linguistic and cultural review pending; no live service is claimed. |
-| `care-app-audit.html` | Russian | RU | Single-language audit page. |
+| `care-app-audit.html` | Russian source dated 11 November 2026 | 12 written editions · Yazekh displays Russian | Independent language review pending. The 12+ concept remains design-only. |
 | `suti-angels*.html` | Russian source; standalone editorial editions | RU, EN, ES-419, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, LA; YZH Russian fallback | 13 routes in the 2026-11-13 candidate. The 11 translations are drafts pending independent review. See the [coverage and rights record](../../locales/suti-angels/coverage.json). |
-| `samurai-dharma.html` | Russian | RU | Single-language page. |
-| `verenium.html` | Russian | RU page + short entry locale data | `entry-locales.json` contains 13 short-copy sets; page body is not thereby fully translated. |
-| `virenium.html` | Russian | RU compatibility alias | Same source as `verenium.html`; keep legacy route only for compatibility. |
+| `samurai-dharma.html?lang=…` | Route, symbolic prompts and local Markdown download | Twelve written editions and labeled Russian fallback for Yazekh | Complete editorial page localization, including the copy and download controls. Review pending. Linked archives retain their own language and rights. |
+| `verenium.html?lang=…` | Local workshop, four routes, import and export | 12 written editions and labeled Russian fallback for Yazekh | Complete workshop interface, including the offline copy. Independent or qualified review pending. Linked protocol and forms have their own coverage. |
+| `virenium.html` | Compatibility alias | Same language support as the canonical workshop | Byte-identical to `verenium.html` and kept in both offline ZIP aliases. |
 | `synaura.html` | Russian | RU | Single-language page. |
 | `synaura-modules.html` | Russian | RU | Single-language page. |
 | `openai-crystal.html` | English UI; RU/EN examples | EN | Bilingual examples are not a translated interface. |
-| `audits.html` | English | EN | Single-language index page. |
+| `audits.html` | English source | 12 written editions · Yazekh displays English | Independent language review pending. The linked crystal and ZIP have separate coverage. |
 | `clear-water.html` | English | EN | Original practice page; links to RU, ES, FR, and PT-BR editions. |
 | `clear-water-es.html` | Spanish (`es`) | ES | Complete editorial translation of the thirteen prompts and interaction labels; independent review pending; Russian destinations are disclosed. |
 | `clear-water-fr.html` | French (`fr`) | FR | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent review pending; Russian destinations are disclosed. |

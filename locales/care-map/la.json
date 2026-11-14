@@ -1,0 +1,183 @@
+{
+  "title": "filum curae",
+  "kicker": "SUTI.world ∴ officina privata",
+  "intro": "unum verbum aut totum opus afferre potes. utrique locus est. responsa tua in hac pagina manent, donec ea ipse serves aut cum aliis communices.",
+  "language": "lingua tabulae",
+  "review": "translatio editoria · recensio a perito Latinitatis independente adhuc exspectatur",
+  "seasonLabel": "quattuor tegmina capitis Freyjae · texturam elige",
+  "seasons": [
+    "autumnus · lana et folium aceris aeneum",
+    "hiems · pannus coactus et pruina caerulea",
+    "ver · linum et pistacium",
+    "aestas · gossypium et aqua marina"
+  ],
+  "seasonPrompts": [
+    "quid in locum tepidum afferre velis?",
+    "quid te hodie adiuvet ut requiescas?",
+    "cui rei primam parvam occasionem dare velis?",
+    "quid cum aliis communicare velis, dum vires habes?"
+  ],
+  "seasonNote": "imago a SUTI ficta est. tempus anni mutare potes, responsis servatis.",
+  "depth": "altitudo deliberationis",
+  "depths": [
+    "primus tactus · verba elige",
+    "paulo propius · sententiam adde",
+    "altius · discrimen et gradum reperi"
+  ],
+  "threadsNote": "septem lumina ad fabulam ab auctoribus fictam pertinent. nomina chakrarum imagines quaestionibus praebent. unum filum elige aut septem tenta, octavo ad libitum. quinque quaestiones de elementis sequuntur.",
+  "stop": "hic consistere potes. gratias ago pro eo quod communicare voluisti. unum filum elige quod tecum feras.",
+  "atlas": "atlas curae mutuae",
+  "build": "tabulam coniunctionum mearum compone",
+  "clear": "dele",
+  "cleared": "tabula tua et responsa deleta sunt",
+  "result": "tabula mea hodierna",
+  "download": "ut textum serva",
+  "empty": "tabulam vacuam relinquere potes",
+  "flowTitle": "cursus Sviorenukh · dimittere",
+  "flowText": "velut aura marina post diem calidum. spiritum duc et te ipsum interroga quid dimittere et quid servare velis. unum verbum sufficit. hic manere potes.",
+  "gameTitle": "officina Samurai Dharma · pars ludica",
+  "gameText": "unam personam experire. scurra aliunde rem spectat, Finist iterum temptat, phoenicopterus socios quaerit, Dragonis fines tuetur, et Angelus Curae veniam rogat. hae partes hodie agi possunt.",
+  "gamePrompt": "duodecim dona et septem lumina imagines ab auctoribus fictae sunt. eandem petitionem duarum personarum vocibus profer. quae formula plus spatii ad eligendum relinquit?",
+  "formText": "si quid cum ordinatore communicare vis, formam separatam aperi et ea tantum verba in eam transcribe quae ipse eligis. tabula nihil sua sponte mittit.",
+  "formLink": "forma petitionis curae · Anglice et Russice",
+  "contactText": "si vis, unam sententiam ad me mitte. audire possum et dicere quid auxilii praebere possim. si res ad alium pertinet, ei indicare potes quomodo mecum communicet. ipse de scribendo decernat.",
+  "closing": "pedes in solo. unus spiritus. poculum aquae. eo tantum altius procede quo hodie commodum tibi videtur.",
+  "zones": [
+    [
+      "fundamentum · muladhara — quid corpus tuum nunc requirit?",
+      [
+        "cibus",
+        "perfugium",
+        "silentium",
+        "quies"
+      ],
+      "quid hodie tibi prosit?",
+      "quem parvum gradum nunc facere possis?"
+    ],
+    [
+      "sensus · svadhisthana — quid iucundum sentis?",
+      [
+        "calor",
+        "aqua",
+        "motus",
+        "pausa"
+      ],
+      "cuius rei paulo plus velis?",
+      "ubi finis tuus est?"
+    ],
+    [
+      "voluntas · manipura — quid in tua potestate est?",
+      [
+        "eligere",
+        "rogare",
+        "differre"
+      ],
+      "quid nunc tuo arbitrio est?",
+      "quod onus relinquere potes?"
+    ],
+    [
+      "cor · anahata — qualem curam velis?",
+      [
+        "ut me audiant",
+        "ut aliquis adsit",
+        "meos invenire"
+      ],
+      "quid tibi significat auxilium?",
+      "locum hominibus queer amicum desiderare te dicere potes, sine vita privata narranda"
+    ],
+    [
+      "vox · vishuddha — quid dicere velis?",
+      [
+        "ita",
+        "non",
+        "non nunc",
+        "alia lingua"
+      ],
+      "quam sententiam quaeris?",
+      "quomodo id dicere possis ut alii intellegant?"
+    ],
+    [
+      "aspectus · ajna — quid clarius factum est?",
+      [
+        "coniunctionem video",
+        "dubito",
+        "alio aspectu egeo"
+      ],
+      "quid animadvertis?",
+      "quid te adiuvet ut coniecturam explores?"
+    ],
+    [
+      "splendor · sahasrara — quid vitae tuae sensum dat?",
+      [
+        "facultas creandi",
+        "propinquitas",
+        "libertas",
+        "nondum scio"
+      ],
+      "quid tueri velis?",
+      "quo facto hoc in vita cotidiana exprimere possis?"
+    ],
+    [
+      "locus communis · ultra personam — quid permutare velis?",
+      [
+        "tempus",
+        "peritia",
+        "opus",
+        "auxilio egeo",
+        "praeteri"
+      ],
+      "estne opus commune quod te allicit?",
+      "quibus condicionibus haec permutatio facilior fiat?"
+    ],
+    [
+      "terra · fulcimentum",
+      [
+        "quies",
+        "cibus",
+        "locus tutus"
+      ],
+      "quid diem tuum stabiliorem reddat?",
+      "quale auxilium accipere possis?"
+    ],
+    [
+      "aqua · mutatio",
+      [
+        "gradum mutare",
+        "dimittere",
+        "aliter temptare"
+      ],
+      "qua in re gradum mutare velis?",
+      "quid mitius facere possis?"
+    ],
+    [
+      "ignis · desiderium",
+      [
+        "incipere",
+        "creare",
+        "calefieri"
+      ],
+      "quid scintillam excitet, vel per quinque minuta?",
+      "quem primum conatum libenter excipias?"
+    ],
+    [
+      "aer · spatium",
+      [
+        "loqui",
+        "tacere",
+        "tempus liberare"
+      ],
+      "cui rei plus loci dare velis?",
+      "qui finis tibi prosit?"
+    ],
+    [
+      "aether · somnium",
+      [
+        "creare",
+        "sentire",
+        "mihi permittere"
+      ],
+      "omnia paulisper fieri posse finge. quid somnias?",
+      "quam partem somnii huius in hodiernum diem afferre velis?"
+    ]
+  ]
+}
