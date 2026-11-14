@@ -42,15 +42,16 @@ jobs:
                   assert z.read(name) == source.read_bytes(), name
           PY
           python3 -B scripts/build_verenium_workshop.py --check
+          python3 -B scripts/build_samurai_dharma.py --check
           python3 -B scripts/build_care_map.py --check
-          python3 scripts/sync_single_interface_routes.py verenium.html care-map.html
+          python3 scripts/sync_single_interface_routes.py verenium.html care-map.html samurai-dharma.html
           python3 scripts/build_care_atlas_editions.py
           python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
           python3 scripts/verify_care_atlas_locales.py
           python3 -B scripts/build_homepage_locales.py --check
           python3 -B scripts/build_nitya_practice.py --check
           python3 scripts/sync_single_interface_routes.py nitya-practice.html
-          cp nitya-practice.html _site/
+          cp nitya-practice.html samurai-dharma.html _site/
           mkdir -p _site/locales/homepage
           cp locales/homepage/coverage.json _site/locales/homepage/
           python3 -B scripts/build_module_catalog.py --check
@@ -112,7 +113,6 @@ jobs:
           mkdir -p _site/assets/fonts/notosansbengali
           cp assets/fonts/notosansbengali/regular.ttf assets/fonts/notosansbengali/OFL.txt _site/assets/fonts/notosansbengali/
           cp assets/brand/suti-mark-main.png _site/assets/brand/suti-mark-main.png
-          cp samurai-dharma.html _site/samurai-dharma.html
           cp downloads/SUTI.os.zip _site/downloads/SUTI.os.zip
           cp downloads/SUTI.os.zip.sha256 _site/downloads/SUTI.os.zip.sha256
           for route in ru es pt essence ru/essence es/essence pt/essence; do
