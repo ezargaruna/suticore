@@ -1,0 +1,324 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:suti:care-veche:room-envelope:v1",
+  "title": "SUTI care / veche local private discussion envelope",
+  "description": "Source-bound local prototype format. All identities and roles are user-declared and unverified. Counts are records, not verified human votes. This format grants no capabilities, consent, execution, publication or external transport.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_version",
+    "source_sha256",
+    "visibility",
+    "decision",
+    "execution",
+    "transport",
+    "publish",
+    "identity_verification",
+    "consent_verification",
+    "records"
+  ],
+  "properties": {
+    "schema": {
+      "const": "suti.care-veche.room-envelope.v1"
+    },
+    "source_version": {
+      "const": "2026-11-13.v1"
+    },
+    "source_sha256": {
+      "const": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb"
+    },
+    "visibility": {
+      "const": "private"
+    },
+    "decision": {
+      "const": "HOLD"
+    },
+    "execution": {
+      "const": "OFF"
+    },
+    "transport": {
+      "const": "OFF"
+    },
+    "publish": {
+      "const": "HOLD"
+    },
+    "identity_verification": {
+      "const": "UNVERIFIED"
+    },
+    "consent_verification": {
+      "const": "UNVERIFIED"
+    },
+    "records": {
+      "type": "array",
+      "maxItems": 256,
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9._-]{0,95}$",
+      "maxLength": 96,
+      "not": {
+        "enum": [
+          "__proto__",
+          "prototype",
+          "constructor"
+        ]
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label",
+        "kind",
+        "role",
+        "identity"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 120,
+          "pattern": "^[^\\u0000-\\u0008\\u000B-\\u001F\\u007F-\\u009F\\u202A-\\u202E\\u2066-\\u2069]*$",
+          "minLength": 1,
+          "allOf": [
+            {
+              "pattern": "\\S"
+            }
+          ]
+        },
+        "kind": {
+          "enum": [
+            "human",
+            "agent",
+            "tool"
+          ]
+        },
+        "role": {
+          "enum": [
+            "initiator",
+            "contributor",
+            "reviewer",
+            "human_steward"
+          ]
+        },
+        "identity": {
+          "const": "UNVERIFIED"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "role": {
+                "const": "human_steward"
+              }
+            },
+            "required": [
+              "role"
+            ]
+          },
+          "then": {
+            "properties": {
+              "kind": {
+                "const": "human"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "created_at",
+        "actor",
+        "module_id",
+        "claim_type",
+        "title",
+        "body",
+        "source_ref",
+        "visibility",
+        "decision",
+        "execution"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "kind": {
+          "enum": [
+            "contribution",
+            "proposal",
+            "position",
+            "decision_draft"
+          ]
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{3})?Z$"
+        },
+        "actor": {
+          "$ref": "#/$defs/actor"
+        },
+        "module_id": {
+          "enum": [
+            "SUTI.angels",
+            "SUTI.care",
+            "SUTI.verenium",
+            "SUTI.veche",
+            "SUTI.os",
+            "SUTI.lab",
+            "SUTI.uni",
+            "SUTI.world",
+            "SUTI.clan",
+            "SUTI.audit",
+            "SUTI.crystal",
+            "SUTI.oracle",
+            "SUTI.sotkan",
+            "SUTI.game",
+            "SUTI.logos"
+          ]
+        },
+        "claim_type": {
+          "enum": [
+            "FACT",
+            "OBSERVATION",
+            "INTERPRETATION",
+            "HYPOTHESIS",
+            "EVALUATION",
+            "SYMBOL",
+            "UNKNOWN"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 160,
+          "pattern": "^[^\\u0000-\\u0008\\u000B-\\u001F\\u007F-\\u009F\\u202A-\\u202E\\u2066-\\u2069]*$"
+        },
+        "body": {
+          "type": "string",
+          "maxLength": 4000,
+          "pattern": "^[^\\u0000-\\u0008\\u000B-\\u001F\\u007F-\\u009F\\u202A-\\u202E\\u2066-\\u2069]*$",
+          "minLength": 1,
+          "allOf": [
+            {
+              "pattern": "\\S"
+            }
+          ]
+        },
+        "source_ref": {
+          "type": "string",
+          "maxLength": 4000,
+          "pattern": "^[^\\u0000-\\u0008\\u000B-\\u001F\\u007F-\\u009F\\u202A-\\u202E\\u2066-\\u2069]*$"
+        },
+        "proposal_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "position": {
+          "enum": [
+            "support",
+            "objection",
+            "abstain",
+            "no_response"
+          ]
+        },
+        "visibility": {
+          "const": "private"
+        },
+        "decision": {
+          "const": "HOLD"
+        },
+        "execution": {
+          "const": "OFF"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "position"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "proposal_id",
+              "position"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "decision_draft"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "proposal_id"
+            ],
+            "not": {
+              "required": [
+                "position"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "contribution",
+                  "proposal"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "proposal_id"
+                  ]
+                },
+                {
+                  "required": [
+                    "position"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$comment": "Core runtime additionally checks real UTC calendar dates; plain JSON descriptors and prototypes; raw and canonical UTF-8 JSON <= 1048576 bytes; ID uniqueness/conflicts; proposal references; and append-only transactionality. Equal duplicate IDs are idempotent. JSON Schema does not establish identity or authenticate source content. No network fetching of this schema is needed."
+}

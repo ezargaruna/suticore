@@ -1,0 +1,30 @@
+{
+  "schema": "suti.text-studio.public-provenance.v1",
+  "source_code_path": "apps/suti-world/src/services/text-studio.ts",
+  "public_source_copy": "locales/text-studio/formatter-source.ts",
+  "formatter_source_sha256": "5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa",
+  "ui_source_path": "apps/suti-world/src/pages/TextStudio.tsx",
+  "current_base_locales": [
+    "ru",
+    "en",
+    "es",
+    "pt-BR"
+  ],
+  "reconciled_draft_locales": [
+    "fr",
+    "zh-Hans",
+    "hi",
+    "ar",
+    "bn",
+    "eo",
+    "la",
+    "sa"
+  ],
+  "experimental_locale": "yzh is an explicitly labeled Russian gloss; poetic translation is not established",
+  "source_sha256": "599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2",
+  "license": "MIT; see LICENSE",
+  "copyright": "Copyright (c) 2026 Ezar Garuna",
+  "runtime_boundary": "User text is page memory only. No text storage, network transport, account, analytics or AI model.",
+  "classic_core_sha256": "1d53557770fbeba356e5231385f4f84254a4c246e0d90e536af58868e5243c21",
+  "build_check": "Full recompilation with --typescript or a locally resolved compiler; otherwise pinned core hash, source/license binding and deterministic standalone output check"
+}

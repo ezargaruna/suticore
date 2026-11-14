@@ -310,3 +310,13 @@ The interface translation covers headings, descriptions, controls, table
 labels and the diagram description. Linked resources retain their individual
 language and rights. The OpenAI crystal and its Obsidian archive remain
 separate from the shelf translations.
+
+## Unified world atlas and local workshops · 2026-11-13
+
+The [world atlas](../world-atlas.html) connects the published static route inventory, 74 public module-source records, 15 care/veche methods and four original SUTI local interface contracts. It keeps source-language labels separate from interface wording and preserves the private contour outside the public record projection. The [coverage record](../locales/world-atlas/coverage.json) describes its exact scope.
+
+The [text studio](../text-studio.html) has thirteen interface routes with source/preview, seven profiles, protected terms, clipboard/manual copy and explicit reset. Only display settings are stored; text stays in page memory. The [world workshop](../world-foundry.html) produces a deterministic local blueprint and optional manual Roblox Studio / Minecraft Bedrock code sketches. They have not been accepted in either game engine and do not connect to external platforms.
+
+The [care and veche portal](../shared/care-veche/portal.html) wraps the exact selected 43-file local prototype. Changing wrapper language or theme does not reload its in-memory discussion. Identities and human votes remain unverified; no fund, donation intake or global agent gateway is activated. Publication of the code and empty templates does not publish a participant's future records.
+
+All four surfaces offer twelve language editions plus an explicit Russian-gloss Yazekh route. Native/expert review remains pending. Existing assets and external services retain their individual rights and conditions.

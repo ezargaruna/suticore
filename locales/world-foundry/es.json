@@ -1,0 +1,18 @@
+{
+  "title": "taller de mundos",
+  "lead": "crea un lugar para el lenguaje, la práctica y el cuidado",
+  "name": "nombre del mundo",
+  "seed": "semilla de generación",
+  "layout": "espacio",
+  "size": "tamaño",
+  "garden": "jardín",
+  "temple": "templo",
+  "island": "isla",
+  "generate": "crear boceto",
+  "blueprint": "guardar JSON",
+  "roblox": "boceto para Roblox Studio",
+  "minecraft": "boceto para Minecraft Bedrock",
+  "boundary": "el generador local crea geometría y un mapa de lugares. no se conecta a plataformas; aquí no se han probado el motor del juego ni la publicación del mundo",
+  "testWorld": "los scripts son para una copia de prueba vacía. revisa el código antes de ejecutarlo manualmente; los comandos de Minecraft reemplazan bloques en la zona indicada",
+  "rooms": "lugares y vínculos"
+}

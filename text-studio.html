@@ -1,0 +1,428 @@
+<!doctype html><html lang="ru" dir="ltr" data-theme="day"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; font-src 'self'; connect-src 'none'; img-src data:; base-uri 'none'; form-action 'none'"><meta name="suti-formatter-source-sha256" content="5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa"><title>SUTI.world · text studio</title><style>@font-face {
+  font-family: "SUTI Nunito";
+  src: url("assets/fonts/NunitoSans-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SUTI Manrope";
+  src: url("assets/fonts/Manrope-variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+:root {
+  --suti-angel-paper: #eee8dc;
+  --suti-angel-card: #fbf8f1;
+  --suti-angel-ink: #26363a;
+  --suti-angel-petrol: #123f46;
+  --suti-angel-teal: #135b60;
+  --suti-angel-aqua: #b9d9d1;
+  --suti-angel-moss: #77856b;
+  --suti-angel-copper: #b98c49;
+  --suti-angel-line: #cbd8d5;
+  --suti-angel-focus: #135b60;
+}
+
+/* The main site stores its theme on <html>; map its tokens to this shared skin */
+html[data-theme="day"] {
+  --suti-angel-paper: var(--suti-bg, #eee8dc);
+  --suti-angel-card: var(--suti-surface, #fbf8f1);
+  --suti-angel-ink: var(--suti-text, #26363a);
+  --suti-angel-petrol: var(--suti-structure, #123f46);
+  --suti-angel-teal: var(--suti-link, #135b60);
+  --suti-angel-line: var(--suti-line, #cbd8d5);
+  --suti-angel-focus: var(--suti-focus, #135b60);
+}
+
+html[data-theme="night"] {
+  --suti-angel-paper: var(--suti-bg, #112c2d);
+  --suti-angel-card: var(--suti-surface, #203b3a);
+  --suti-angel-ink: var(--suti-text, #f4f0e8);
+  --suti-angel-petrol: var(--suti-structure, #c0ddd7);
+  --suti-angel-teal: var(--suti-link, #a1d7ce);
+  --suti-angel-line: var(--suti-line, #58716e);
+  --suti-angel-focus: var(--suti-focus, #f0d78a);
+  color-scheme: dark;
+}
+
+html[data-theme="contrast"] {
+  --suti-angel-paper: var(--suti-bg, #000);
+  --suti-angel-card: var(--suti-surface, #000);
+  --suti-angel-ink: var(--suti-text, #fff);
+  --suti-angel-petrol: var(--suti-structure, #fff);
+  --suti-angel-teal: var(--suti-link, #fff);
+  --suti-angel-line: var(--suti-line, #fff);
+  --suti-angel-focus: var(--suti-focus, #ff0);
+  color-scheme: light;
+}
+
+html {
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--suti-angel-ink);
+  background-color: var(--suti-angel-paper);
+  font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
+  font-size: clamp(1rem, 0.98rem + 0.15vw, 1.08rem);
+  line-height: 1.68;
+  font-kerning: normal;
+}
+
+:where(h1, h2, h3, h4) {
+  font-family: "SUTI Nunito", "Nunito Sans", system-ui, sans-serif;
+  line-height: 1.16;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+:where(p, li, blockquote, label, summary) {
+  text-wrap: pretty;
+}
+
+:where(a) {
+  color: var(--suti-angel-teal);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+:where(button, input, textarea, select) {
+  font: inherit;
+}
+
+:where(button, [role="button"], summary) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--suti-angel-focus);
+  outline-offset: 3px;
+}
+
+:root:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) body {
+  --suti-angel-paper: #112c2d;
+  --suti-angel-card: #203b3a;
+  --suti-angel-ink: #f4f0e8;
+  --suti-angel-petrol: #c0ddd7;
+  --suti-angel-teal: #a1d7ce;
+  --suti-angel-aqua: #456d6a;
+  --suti-angel-moss: #bac8a9;
+  --suti-angel-copper: #e0bd79;
+  --suti-angel-line: #58716e;
+  --suti-angel-focus: #f0d78a;
+  color-scheme: dark;
+}
+
+:root:is([data-theme="contrast"], [data-vlight="контраст"]) body {
+  --suti-angel-paper: #000;
+  --suti-angel-card: #000;
+  --suti-angel-ink: #fff;
+  --suti-angel-petrol: #fff;
+  --suti-angel-teal: #fff;
+  --suti-angel-aqua: #fff;
+  --suti-angel-moss: #fff;
+  --suti-angel-copper: #ff0;
+  --suti-angel-line: #fff;
+  --suti-angel-focus: #ff0;
+  color-scheme: dark;
+}
+
+:where(.gratitude-card, .music-card) {
+  background: var(--suti-angel-card) !important;
+  border-color: var(--suti-angel-line) !important;
+  box-shadow: none !important;
+}
+
+.nitya-portal::before {
+  content: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline-color: Highlight;
+  }
+}
+</style><style>:root{--suti-bg:#f4f0e8;--suti-surface:#fbf8f2;--suti-text:#25342f;--suti-structure:#365958;--suti-link:#285d59;--suti-line:#718372;--suti-focus:#365958;--atlas-tint:#e2ebe3;--atlas-accent:#d6ad58}
+html[data-theme=night]{--suti-bg:#122825;--suti-surface:#1d3631;--suti-text:#f4f0e8;--suti-structure:#c5e1d9;--suti-link:#a7ddd3;--suti-line:#8ba69a;--suti-focus:#f5d382;--atlas-tint:#29443c;--atlas-accent:#e5c57d;color-scheme:dark}
+html[data-theme=contrast]{--suti-bg:#000;--suti-surface:#000;--suti-text:#fff;--suti-structure:#fff;--suti-link:#fff;--suti-line:#fff;--suti-focus:#ff0;--atlas-tint:#000;--atlas-accent:#ff0;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--suti-bg);color:var(--suti-text)}a{color:var(--suti-link)}button,input,select,textarea{color:inherit;font:inherit}button,select,input,textarea{border:1px solid var(--suti-line);border-radius:.5rem;background:var(--suti-surface);padding:.65rem .9rem}button,a{touch-action:manipulation}button{cursor:pointer}button:disabled{opacity:.6;cursor:default}input,select,textarea{max-width:100%}textarea{width:100%;min-height:12rem;line-height:1.65;resize:vertical}label{display:grid;gap:.35rem}h1,h2,h3,p{margin-block-start:0}p{max-width:76ch}h1{font-size:clamp(2.4rem,6vw,5.5rem);max-width:15ch;line-height:1.02;letter-spacing:-.035em}h2{font-size:clamp(1.6rem,3vw,2.5rem)}h3{font-size:1.2rem}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--suti-focus);outline-offset:4px}.atlas-wrap{width:min(1320px,100% - 3rem);margin:auto}.atlas-header{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-block:1.3rem;border-bottom:1px solid var(--suti-line)}.atlas-brand{font-size:1.4rem;text-decoration:none;font-weight:800}.atlas-controls,.atlas-actions,.atlas-tabs{display:flex;flex-wrap:wrap;gap:.65rem;align-items:end}.atlas-controls label{font-size:.8rem}.atlas-hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,1fr);gap:3rem;align-items:center;padding-block:4rem 2.5rem}.atlas-eyebrow{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--suti-structure)}.atlas-lead{font-size:clamp(1.1rem,2vw,1.5rem);max-width:52ch}.atlas-constellation{width:100%;max-height:390px;color:var(--suti-structure)}.atlas-constellation line,.atlas-constellation path{stroke:currentColor;stroke-width:1.2;fill:none}.atlas-constellation circle{stroke:currentColor;fill:var(--suti-surface)}.atlas-constellation .core{fill:var(--atlas-tint);stroke-width:2}.atlas-constellation text{fill:var(--suti-text);font:13px system-ui,sans-serif;text-anchor:middle}.atlas-search{display:grid;grid-template-columns:minmax(0,2fr) 1fr auto;gap:1rem;padding:1.4rem;border:1px solid var(--suti-line);border-radius:.9rem;background:var(--suti-surface);align-items:end;margin-block:1.5rem}.atlas-search input{width:100%;font-size:1.1rem}.atlas-tabs{padding-block:.8rem}.atlas-tabs button[aria-pressed=true],.atlas-primary{background:var(--suti-structure);color:var(--suti-bg);border:1px solid var(--suti-structure);text-decoration:none;padding:.75rem 1rem;border-radius:.5rem}.atlas-count{min-height:1.8em;font-size:.9rem}.atlas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:1.1rem}.atlas-card{padding:1.5rem;border:1px solid var(--suti-line);border-radius:.7rem;background:var(--suti-surface);display:flex;flex-direction:column;gap:.6rem;min-width:0}.atlas-card p{margin:0}.atlas-card h3{margin:0}.atlas-card a{margin-top:auto;padding-block-start:.65rem;text-decoration-thickness:.1em}.atlas-card small{color:var(--suti-structure)}.atlas-card .atlas-path{overflow-wrap:anywhere;font-size:.75rem;font-family:ui-monospace,monospace;direction:ltr;unicode-bidi:isolate}.atlas-section{padding-block:2.5rem;border-top:1px solid var(--suti-line);margin-block-start:2.5rem}.atlas-step-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.atlas-step-grid article{border-inline-start:2px solid var(--atlas-accent);padding-inline-start:1rem}.atlas-step-grid .atlas-n{font:1.8rem ui-monospace,monospace;color:var(--suti-structure)}.atlas-note{border-inline-start:3px solid var(--atlas-accent);padding:.7rem 1rem;background:var(--atlas-tint);font-size:.9rem}.atlas-footer{margin-block:3rem 0;border-top:1px solid var(--suti-line);padding-block:2rem;font-size:.85rem}.atlas-footer nav{display:flex;gap:1rem;flex-wrap:wrap}.atlas-skip{position:absolute;inset-inline-start:1rem;top:-100px;z-index:100;padding:1rem;background:var(--suti-surface)}.atlas-skip:focus{top:.5rem}.atlas-empty{padding:2rem;border:1px dashed var(--suti-line)}.atlas-editor{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}.atlas-settings{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}.atlas-settings input[type=checkbox]{width:auto;accent-color:var(--suti-structure)}.atlas-settings label:has(input[type=checkbox]){display:flex;align-items:start}.atlas-result{white-space:pre-wrap;overflow-wrap:anywhere}.atlas-world{width:100%;min-height:280px;border:1px solid var(--suti-line);border-radius:.7rem;background:var(--atlas-tint)}.atlas-world rect{stroke:var(--suti-structure);fill:var(--suti-surface)}.atlas-world line{stroke:var(--suti-structure)}.atlas-world text{font:12px system-ui,sans-serif;fill:var(--suti-text);text-anchor:middle}.atlas-code{font:14px/1.6 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere}.atlas-hint{font-size:.85rem}.atlas-pill{display:inline-block;border:1px solid var(--suti-line);border-radius:2rem;padding:.15rem .6rem;font-size:.75rem}.atlas-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}
+@media(max-width:750px){.atlas-wrap{width:min(100% - 1.6rem,1320px)}.atlas-hero,.atlas-editor{grid-template-columns:1fr;gap:1.5rem}.atlas-hero{padding-block:2.5rem 1rem}.atlas-constellation{max-height:220px}.atlas-search{grid-template-columns:1fr;padding:1rem}.atlas-step-grid{grid-template-columns:1fr 1fr}.atlas-header{align-items:start}.atlas-controls{width:100%}.atlas-controls label{flex:1}.atlas-controls select{width:100%}}
+@media(max-width:380px){.atlas-step-grid{grid-template-columns:1fr}.atlas-card{padding:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media print{.atlas-controls,.atlas-search,.atlas-tabs,.atlas-actions{display:none}.atlas-grid{display:block}.atlas-card{break-inside:avoid;margin-block:1rem}body{background:white;color:black}}
+
+.studio-page{padding-block:2rem 4rem}.studio-page h1{font-size:clamp(2rem,5vw,3.8rem);max-width:24ch;line-height:1.1}.studio-header{margin-block:2rem}.studio-controls{display:grid;gap:1.2rem;margin-block:2rem;padding:1.3rem;border:1px solid var(--suti-structure);border-radius:.7rem;background:var(--suti-surface)}.studio-rule-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}.studio-rule-grid label{display:flex;align-items:flex-start;gap:.65rem;line-height:1.5}.studio-rule-grid input{width:auto;min-height:1.3rem;margin-block-start:.15rem;accent-color:var(--suti-structure)}.studio-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.4rem;align-items:start}.studio-pane{min-width:0;display:grid;gap:.7rem}.studio-pane textarea{min-height:25rem;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;tab-size:2;border-color:var(--suti-structure)}.studio-pane-title{display:flex;gap:.7rem;flex-wrap:wrap;align-items:center;justify-content:space-between}.studio-pane-title p{margin:0}.studio-count{font-size:.8rem}.studio-feedback{min-height:1.6em;margin:0;font-size:.9rem}.studio-protected textarea{min-height:5rem}.studio-structure-list{display:flex;gap:1rem;flex-wrap:wrap}.studio-footer{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.5rem;align-items:start;padding-block:2rem}.studio-provenance{font-size:.75rem;overflow-wrap:anywhere}.studio-provenance a{white-space:nowrap}.studio-native{font-size:.75rem;font-family:ui-monospace,monospace}.studio-note{font-size:.9rem}.studio-actions{display:flex;gap:.6rem;flex-wrap:wrap}.studio-language{min-width:10rem}#studio-protected{direction:auto}@media(max-width:750px){.studio-workspace,.studio-footer{grid-template-columns:1fr}.studio-pane textarea{min-height:19rem}.studio-controls{padding:1rem}.studio-page{padding-block-start:1rem}}@media print{.studio-controls,.studio-actions,.studio-footer button{display:none}.studio-workspace{grid-template-columns:1fr}.studio-pane textarea{min-height:10rem}}
+</style></head><body><a class="atlas-skip" href="#studio-main">SUTI.world ↓</a><div class="atlas-wrap"><header class="atlas-header"><a class="atlas-brand" id="studio-back" href="world-atlas.html?lang=ru">← SUTI.world</a><div class="atlas-controls"><label class="studio-language"><span id="studio-language-label">язык</span><select id="studio-language"></select></label><div class="studio-actions" role="group" aria-label="DAY / NIGHT / CONTRAST"><button type="button" data-theme-choice="day" aria-pressed="true">DAY</button><button type="button" data-theme-choice="night" aria-pressed="false">NIGHT</button><button type="button" data-theme-choice="contrast" aria-pressed="false">CONTRAST</button></div></div></header><main id="studio-main" class="studio-page"><header class="studio-header"><p class="atlas-eyebrow" data-studio-ui="eyebrow"></p><h1 data-studio-ui="title"></h1><p class="atlas-lead" data-studio-ui="lead"></p><p id="studio-review-note" class="studio-note"></p><p id="studio-review-status" class="studio-native"></p></header><section class="studio-controls"><label><span data-studio-ui="profile"></span><select id="studio-profile"></select><small id="studio-profile-description" aria-live="polite"></small></label><p class="studio-note" data-studio-ui="note"></p><div class="studio-rule-grid"><label><input id="rule-lowercase" type="checkbox"><span data-studio-ui="lowercase"></span></label><label><input id="rule-shortDashes" type="checkbox"><span data-studio-ui="dashes"></span></label><label><input id="rule-lightEndings" type="checkbox"><span data-studio-ui="endings"></span></label><label><input id="rule-cleanSpacing" type="checkbox"><span data-studio-ui="spacing"></span></label><label><input id="rule-protectQuotes" type="checkbox"><span data-studio-ui="protectQuotes"></span></label><label><input id="rule-protectMarkup" type="checkbox"><span data-studio-ui="protectMarkup"></span></label></div><label class="studio-protected"><span data-studio-ui="protect"></span><textarea id="studio-protected" rows="2" dir="auto" spellcheck="false" autocomplete="off"></textarea><small data-studio-ui="protectHint"></small></label></section><section class="studio-workspace"><label class="studio-pane"><span class="studio-pane-title"><span data-studio-ui="source"></span><small id="studio-source-count" class="studio-count"></small></span><textarea id="studio-source" dir="auto" spellcheck="false" autocomplete="off"></textarea></label><section class="studio-pane"><div class="studio-pane-title"><p><span data-studio-ui="result"></span> <small id="studio-result-count" class="studio-count"></small></p><div class="studio-actions"><button type="button" id="studio-copy" disabled data-studio-ui="copy"></button></div></div><p id="studio-feedback" class="studio-feedback" role="status" aria-live="polite"></p><textarea id="studio-result" dir="auto" readonly spellcheck="false" autocomplete="off"></textarea><button id="studio-manual" type="button" disabled data-studio-ui="selectResult"></button></section></section><section id="studio-structure-section" class="atlas-section" hidden><h2 data-studio-ui="structureTitle"></h2><div id="studio-structure" class="studio-structure-list"></div></section><footer class="studio-footer"><button id="studio-reset" type="button" data-studio-ui="reset"></button><div><p data-studio-ui="boundary"></p><p class="studio-note" data-studio-ui="caseNote"></p><a id="studio-catalog" href="modules.html?lang=ru" data-studio-ui="openCatalog"></a></div></footer><p class="studio-provenance"><a href="locales/text-studio/provenance.v1.json">provenance</a> · <a href="locales/text-studio/formatter-source.ts">formatter source</a> · <a href="LICENSE">MIT · Copyright (c) 2026 Ezar Garuna</a><br>formatter SHA-256 :: 5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa</p></main></div><script id="text-studio-data" type="application/json">{"schema":"suti.text-studio.runtime.v1","editions":{"ru":{"schema":"suti.text-studio.edition.v1","locale":"ru","slug":"ru","contentLanguage":"ru","direction":"ltr","status":"SOURCE_CURRENT","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"языковой черновик; независимая вычитка и принятие автором ожидаются","languageLabel":"язык","strings":{"eyebrow":"synaura · текстовая мастерская","title":"собрать текст в нужную форму","lead":"выбери тип текста и профиль. исходник остаётся рядом; изменения видны до копирования.","source":"исходный текст","result":"предпросмотр","profile":"тип текста и профиль","synaura":"synaura · тихая ясность","syntaxium":"Syntaxium · структура","clear":"обычный текст","message":"сообщение и письмо","compact":"заголовки и метки","poetry":"стихи и строковый ритм","faithful":"точная копия","protect":"сохранить написание этих имён и слов","protectHint":"по одному на строку","lowercase":"строчные буквы в обычном тексте","dashes":"короткий дефис вместо длинного тире","endings":"убрать точку в конце коротких строк","spacing":"убрать лишние пробелы и пустые строки","protectQuotes":"сохранять текст внутри кавычек","protectMarkup":"сохранять разметку, ссылки, адреса и имена модулей","copy":"скопировать результат","copied":"скопировано","copyFailed":"не удалось скопировать автоматически","selectResult":"выделить результат для ручного копирования","reset":"очистить поля","empty":"вставь текст слева - результат появится здесь","boundary":"работает локально в открытой вкладке. текст не отправляется и не сохраняется. сверь имена, цитаты, разметку и смысл перед использованием.","openCatalog":"каталог модулей","note":"профиль задаёт стартовые правила - каждое можно изменить вручную","prompt":"вставь или набери текст","noChanges":"изменений нет","previewReady":"предпросмотр обновлён - исходник не изменён","caseNote":"смена регистра механическая; проверь имена и правила конкретного языка","structureTitle":"Syntaxium · карта структуры исходника","structureLabels":{"lines":"строк","headings":"заголовков","paragraphs":"абзацев","listItems":"элементов списка","quotes":"цитатных строк","codeBlocks":"блоков кода","tableRows":"строк таблицы"},"countTemplate":"{count} знаков"},"profiles":{"synaura":"для авторской прозы: строчные буквы, лёгкие окончания и чистые интервалы","syntaxium":"для структурированных заметок: сохраняет регистр и пунктуацию, выравнивает интервалы","clear":"для общей прозы: сохраняет регистр и окончания, убирает избыток пробелов","message":"для писем и сообщений: меняет только выбранные правила","compact":"для заголовков и меток: может убрать точку в конце короткой строки","poetry":"для стихов: сохраняет переносы и интервалы; пунктуация коротких строк настраивается","faithful":"для цитат и исходников: все преобразования выключены"}},"en":{"schema":"suti.text-studio.edition.v1","locale":"en","slug":"en","contentLanguage":"en","direction":"ltr","status":"EXISTING_COPY_ADAPTED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"language draft; independent review and author acceptance are pending","languageLabel":"language","strings":{"eyebrow":"synaura · text studio","title":"shape a text for its purpose","lead":"Choose a text type and profile. The source stays beside the preview; changes are visible before copying.","source":"source text","result":"preview","profile":"text type and profile","synaura":"synaura · quiet clarity","syntaxium":"Syntaxium · structure","clear":"general prose","message":"message or email","compact":"headings and labels","poetry":"poetry and line rhythm","faithful":"exact copy","protect":"preserve spelling of names and terms","protectHint":"one per line","lowercase":"lowercase ordinary prose","dashes":"use short hyphens","endings":"remove periods from short line endings","spacing":"trim excess spaces and blank lines","protectQuotes":"preserve text inside quotation marks","protectMarkup":"preserve markup, links, addresses, and module names","copy":"copy result","copied":"copied","copyFailed":"automatic copy failed","selectResult":"select result for manual copy","reset":"clear fields","empty":"paste text on the left to see a preview","boundary":"Runs locally in this tab. Text is not sent or stored. Review names, quotations, markup, and meaning before use.","openCatalog":"module catalog","note":"profiles are starting rules - each can be changed","prompt":"paste or type text","noChanges":"no changes","previewReady":"preview updated - source unchanged","caseNote":"case conversion is mechanical; review names and language-specific rules","structureTitle":"Syntaxium · source structure map","structureLabels":{"lines":"lines","headings":"headings","paragraphs":"paragraphs","listItems":"list items","quotes":"quote lines","codeBlocks":"code blocks","tableRows":"table rows"},"countTemplate":"{count} characters"},"profiles":{"synaura":"for authorial prose: lowercase, lighter endings, and clean spacing","syntaxium":"for structured notes: keeps case and punctuation, tidies spacing","clear":"for general prose: keeps case and endings, trims excess spaces","message":"for messages and email: applies only the rules you choose","compact":"for headings and labels: can remove a period from a short line","poetry":"for verse: keeps line breaks and spacing; short-line punctuation is optional","faithful":"for quotations and source text: all transformations are off"}},"es":{"schema":"suti.text-studio.edition.v1","locale":"es","slug":"es","contentLanguage":"es","direction":"ltr","status":"EXISTING_COPY_ADAPTED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"borrador lingüístico; están pendientes la revisión independiente y la aceptación del autor","languageLabel":"idioma","strings":{"eyebrow":"synaura · taller de texto","title":"dar al texto la forma adecuada","lead":"Elige el tipo de texto y el perfil. El original permanece junto a la vista previa; puedes revisar cada cambio antes de copiar.","source":"texto original","result":"vista previa","profile":"tipo de texto y perfil","synaura":"synaura · claridad serena","syntaxium":"Syntaxium · estructura","clear":"prosa general","message":"mensaje o correo","compact":"títulos y etiquetas","poetry":"poesía y ritmo de línea","faithful":"copia exacta","protect":"conservar la escritura de nombres y términos","protectHint":"uno por línea","lowercase":"minúsculas en el texto corriente","dashes":"usar guiones cortos","endings":"quitar el punto final en líneas breves","spacing":"quitar espacios y líneas vacías de más","protectQuotes":"conservar el texto entre comillas","protectMarkup":"conservar marcado, enlaces, direcciones y nombres de módulos","copy":"copiar resultado","copied":"copiado","copyFailed":"falló la copia automática","selectResult":"seleccionar resultado para copiarlo manualmente","reset":"vaciar campos","empty":"pega el texto a la izquierda para ver la vista previa","boundary":"Funciona localmente en esta pestaña. El texto no se envía ni se guarda. Revisa nombres, citas, marcado y sentido antes de usarlo.","openCatalog":"catálogo de módulos","note":"el perfil propone reglas iniciales - puedes cambiar cada una","prompt":"pega o escribe el texto","noChanges":"sin cambios","previewReady":"vista previa actualizada - original intacto","caseNote":"el cambio de mayúsculas es mecánico; revisa nombres y reglas del idioma","structureTitle":"Syntaxium · mapa de la estructura original","structureLabels":{"lines":"líneas","headings":"títulos","paragraphs":"párrafos","listItems":"elementos de lista","quotes":"líneas citadas","codeBlocks":"bloques de código","tableRows":"filas de tabla"},"countTemplate":"{count} caracteres"},"profiles":{"synaura":"para prosa autoral: minúsculas, finales ligeros y espacios limpios","syntaxium":"para notas estructuradas: conserva mayúsculas y puntuación y ordena los espacios","clear":"para prosa general: conserva mayúsculas y finales y quita espacios sobrantes","message":"para mensajes y correos: aplica solo las reglas que elijas","compact":"para títulos y etiquetas: puede quitar el punto final de una línea breve","poetry":"para versos: conserva saltos y espacios; la puntuación breve es opcional","faithful":"para citas y fuentes: todas las transformaciones están desactivadas"}},"pt-br":{"schema":"suti.text-studio.edition.v1","locale":"pt-BR","slug":"pt-br","contentLanguage":"pt-BR","direction":"ltr","status":"EXISTING_COPY_ADAPTED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"rascunho linguístico; revisão independente e aceitação pelo autor estão pendentes","languageLabel":"idioma","strings":{"eyebrow":"synaura · oficina de texto","title":"dar ao texto a forma adequada","lead":"Escolha o tipo de texto e o perfil. O original fica ao lado da prévia; cada mudança pode ser revisada antes de copiar.","source":"texto original","result":"prévia","profile":"tipo de texto e perfil","synaura":"synaura · clareza serena","syntaxium":"Syntaxium · estrutura","clear":"prosa geral","message":"mensagem ou e-mail","compact":"títulos e rótulos","poetry":"poesia e ritmo de linha","faithful":"cópia exata","protect":"preservar a escrita destes nomes e termos","protectHint":"um por linha","lowercase":"minúsculas no texto comum","dashes":"usar hífens curtos","endings":"remover o ponto final de linhas curtas","spacing":"remover espaços e linhas vazias em excesso","protectQuotes":"preservar o texto entre aspas","protectMarkup":"preservar marcação, links, endereços e nomes de módulos","copy":"copiar resultado","copied":"copiado","copyFailed":"falha na cópia automática","selectResult":"selecionar resultado para copiar manualmente","reset":"limpar campos","empty":"cole o texto à esquerda para ver uma prévia","boundary":"Funciona localmente nesta aba. O texto não é enviado nem armazenado. Revise nomes, citações, marcação e sentido antes de usar.","openCatalog":"catálogo de módulos","note":"o perfil sugere regras iniciais - cada uma pode ser alterada","prompt":"cole ou digite o texto","noChanges":"sem mudanças","previewReady":"prévia atualizada - original intacto","caseNote":"a conversão de maiúsculas é mecânica; revise nomes e regras do idioma","structureTitle":"Syntaxium · mapa da estrutura original","structureLabels":{"lines":"linhas","headings":"títulos","paragraphs":"parágrafos","listItems":"itens de lista","quotes":"linhas citadas","codeBlocks":"blocos de código","tableRows":"linhas de tabela"},"countTemplate":"{count} caracteres"},"profiles":{"synaura":"para prosa autoral: minúsculas, finais leves e espaçamento limpo","syntaxium":"para notas estruturadas: preserva maiúsculas e pontuação e organiza os espaços","clear":"para prosa geral: preserva maiúsculas e finais e remove espaços excedentes","message":"para mensagens e e-mails: aplica apenas as regras que você escolher","compact":"para títulos e rótulos: pode remover o ponto final de uma linha curta","poetry":"para versos: preserva quebras e espaços; a pontuação curta é opcional","faithful":"para citações e fontes: todas as transformações ficam desativadas"}},"zh-hans":{"schema":"suti.text-studio.edition.v1","locale":"zh-Hans","slug":"zh-hans","contentLanguage":"zh-Hans","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"语言草稿；尚待独立校读及作者确认","languageLabel":"语言","strings":{"eyebrow":"synaura · 文本工作室","title":"让文本呈现合适的形式","lead":"选择文本类型和样式。原文与预览并列；复制前可以查看每项变化。","source":"原文","result":"预览","profile":"文本类型与样式","synaura":"synaura · 安静清晰","syntaxium":"Syntaxium · 结构","clear":"普通文本","message":"消息或邮件","compact":"标题与标签","poetry":"诗歌与行句节奏","faithful":"原样复制","protect":"保留这些名称和术语的拼写","protectHint":"每行一个","lowercase":"普通文本改为小写","dashes":"使用短连字符","endings":"移除短行末尾的句点","spacing":"清理多余空格和空行","protectQuotes":"保留引号内的文本","protectMarkup":"保留标记、链接、地址和模块名称","copy":"复制结果","copied":"已复制","copyFailed":"自动复制失败","selectResult":"选中结果以手动复制","reset":"清空输入","empty":"在左侧粘贴文本以查看预览","boundary":"仅在当前标签页本地处理。文本不会发送或保存。使用前请核对名称、引文、标记和含义。","openCatalog":"模块目录","note":"样式提供起始规则；每项都可以手动调整","prompt":"粘贴或输入文本","noChanges":"没有变化","previewReady":"预览已更新；原文未修改","caseNote":"大小写转换是机械操作；请核对名称和语言规则","structureTitle":"Syntaxium · 原文结构图","structureLabels":{"lines":"行","headings":"标题","paragraphs":"段落","listItems":"列表项","quotes":"引用行","codeBlocks":"代码块","tableRows":"表格行"},"countTemplate":"{count} 个字符"},"profiles":{"synaura":"用于作者文本：小写、轻收尾、清爽间距","syntaxium":"用于结构化笔记：保留大小写和标点，整理间距","clear":"用于普通文本：保留大小写和句尾，清理多余空格","message":"用于消息和邮件：只应用你选择的规则","compact":"用于标题和标签：可移除短行末尾的句点","poetry":"用于诗行：保留换行和间距；短行标点可调整","faithful":"用于引文和原始资料：关闭所有转换"}},"hi":{"schema":"suti.text-studio.edition.v1","locale":"hi","slug":"hi","contentLanguage":"hi","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"भाषाई मसौदा; स्वतंत्र संपादन-जाँच और लेखक की स्वीकृति की प्रतीक्षा है","languageLabel":"भाषा","strings":{"eyebrow":"synaura · पाठ कार्यशाला","title":"पाठ को उसके उद्देश्य के अनुसार रूप दें","lead":"पाठ का प्रकार और प्रोफ़ाइल चुनें। मूल पाठ पूर्वावलोकन के साथ रहता है; कॉपी करने से पहले बदलाव देखें।","source":"मूल पाठ","result":"पूर्वावलोकन","profile":"पाठ का प्रकार और प्रोफ़ाइल","synaura":"synaura · शांत स्पष्टता","syntaxium":"Syntaxium · संरचना","clear":"सामान्य गद्य","message":"संदेश या ईमेल","compact":"शीर्षक और लेबल","poetry":"कविता और पंक्ति-लय","faithful":"ज्यों का त्यों","protect":"इन नामों और शब्दों की वर्तनी सुरक्षित रखें","protectHint":"हर पंक्ति में एक","lowercase":"सामान्य गद्य को छोटे अक्षरों में रखें","dashes":"छोटे हाइफ़न इस्तेमाल करें","endings":"छोटी पंक्तियों के अंत से पूर्ण विराम हटाएँ","spacing":"अतिरिक्त रिक्त स्थान और खाली पंक्तियाँ हटाएँ","protectQuotes":"उद्धरण चिह्नों के भीतर का पाठ सुरक्षित रखें","protectMarkup":"मार्कअप, लिंक, पते और मॉड्यूल नाम सुरक्षित रखें","copy":"परिणाम कॉपी करें","copied":"कॉपी हो गया","copyFailed":"स्वचालित कॉपी नहीं हो सकी","selectResult":"हाथ से कॉपी करने के लिए परिणाम चुनें","reset":"खाने साफ़ करें","empty":"पूर्वावलोकन देखने के लिए बाईं ओर पाठ चिपकाएँ","boundary":"यह इसी खुले टैब में स्थानीय रूप से चलता है। पाठ भेजा या सहेजा नहीं जाता। उपयोग से पहले नाम, उद्धरण, मार्कअप और अर्थ जाँचें।","openCatalog":"मॉड्यूल सूची","note":"प्रोफ़ाइल शुरुआती नियम देती है; हर नियम बदला जा सकता है","prompt":"पाठ चिपकाएँ या लिखें","noChanges":"कोई बदलाव नहीं","previewReady":"पूर्वावलोकन अपडेट हुआ; मूल पाठ जस का तस है","caseNote":"अक्षर-रूप बदलना यांत्रिक है; नाम और भाषा-विशिष्ट नियम जाँचें","structureTitle":"Syntaxium · मूल पाठ की संरचना","structureLabels":{"lines":"पंक्तियाँ","headings":"शीर्षक","paragraphs":"अनुच्छेद","listItems":"सूची के बिंदु","quotes":"उद्धृत पंक्तियाँ","codeBlocks":"कोड खंड","tableRows":"तालिका पंक्तियाँ"},"countTemplate":"{count} वर्ण"},"profiles":{"synaura":"लेखकीय गद्य के लिए: छोटे अक्षर, हल्के समापन और साफ़ अंतराल","syntaxium":"संरचित नोट्स के लिए: अक्षर-रूप और विराम चिह्न बचाकर अंतराल व्यवस्थित करता है","clear":"सामान्य गद्य के लिए: अक्षर-रूप और वाक्य-अंत बचाकर अतिरिक्त जगह हटाता है","message":"संदेश और ईमेल के लिए: केवल चुने हुए नियम लागू करता है","compact":"शीर्षक और लेबल के लिए: छोटी पंक्ति का अंतिम पूर्ण विराम हटा सकता है","poetry":"कविता के लिए: पंक्ति-विभाजन और अंतराल बचाता है; छोटे अंत की विराम-चिह्न सेटिंग बदली जा सकती है","faithful":"उद्धरण और स्रोत-पाठ के लिए: सभी रूपांतरण बंद"}},"fr":{"schema":"suti.text-studio.edition.v1","locale":"fr","slug":"fr","contentLanguage":"fr","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"brouillon linguistique ; relecture indépendante et acceptation par l'auteur en attente","languageLabel":"langue","strings":{"eyebrow":"synaura · atelier de texte","title":"donner au texte la forme qui lui convient","lead":"Choisissez le type de texte et le profil. La source reste à côté de l’aperçu ; chaque changement est visible avant la copie.","source":"texte source","result":"aperçu","profile":"type de texte et profil","synaura":"synaura · clarté calme","syntaxium":"Syntaxium · structure","clear":"texte courant","message":"message ou courriel","compact":"titres et libellés","poetry":"poésie et rythme des lignes","faithful":"copie exacte","protect":"préserver l’orthographe de ces noms et termes","protectHint":"un par ligne","lowercase":"minuscules dans le texte courant","dashes":"utiliser des traits d’union courts","endings":"retirer le point final des lignes courtes","spacing":"réduire les espaces et lignes vides en trop","protectQuotes":"préserver le texte entre guillemets","protectMarkup":"préserver le balisage, les liens, les adresses et les noms de modules","copy":"copier le résultat","copied":"copié","copyFailed":"la copie automatique a échoué","selectResult":"sélectionner le résultat pour le copier manuellement","reset":"effacer les champs","empty":"collez le texte à gauche pour voir l’aperçu","boundary":"Le traitement reste dans cet onglet. Le texte n’est ni envoyé ni enregistré. Vérifiez les noms, citations, balises et le sens avant utilisation.","openCatalog":"catalogue des modules","note":"le profil propose des règles de départ ; chacune reste modifiable","prompt":"collez ou saisissez le texte","noChanges":"aucun changement","previewReady":"aperçu actualisé ; la source reste intacte","caseNote":"la conversion de casse est mécanique ; vérifiez les noms et les règles propres à la langue","structureTitle":"Syntaxium · structure de la source","structureLabels":{"lines":"lignes","headings":"titres","paragraphs":"paragraphes","listItems":"éléments de liste","quotes":"lignes citées","codeBlocks":"blocs de code","tableRows":"lignes de tableau"},"countTemplate":"{count} caractères"},"profiles":{"synaura":"pour la prose d’auteur : minuscules, fins allégées et espaces nets","syntaxium":"pour les notes structurées : conserve la casse et la ponctuation, ajuste les espaces","clear":"pour la prose courante : conserve la casse et les fins, retire les espaces en trop","message":"pour les messages et courriels : applique uniquement les règles choisies","compact":"pour les titres et libellés : peut retirer le point final d’une ligne courte","poetry":"pour les vers : conserve les retours et les espaces ; la ponctuation des lignes courtes est réglable","faithful":"pour les citations et sources : toutes les transformations sont désactivées"}},"ar":{"schema":"suti.text-studio.edition.v1","locale":"ar","slug":"ar","contentLanguage":"ar","direction":"rtl","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"مسودة لغوية؛ بانتظار تدقيق مستقل وقبول الكاتب","languageLabel":"اللغة","strings":{"eyebrow":"synaura · ورشة النص","title":"امنح النص الشكل المناسب لغرضه","lead":"اختر نوع النص والملف. يبقى الأصل بجانب المعاينة، ويمكن مراجعة التغييرات قبل النسخ.","source":"النص الأصلي","result":"معاينة","profile":"نوع النص والملف","synaura":"synaura · وضوح هادئ","syntaxium":"Syntaxium · بنية","clear":"نثر عام","message":"رسالة أو بريد إلكتروني","compact":"عناوين وتسميات","poetry":"شعر وإيقاع الأسطر","faithful":"نسخة مطابقة","protect":"حافظ على كتابة هذه الأسماء والمصطلحات","protectHint":"عنصر واحد في كل سطر","lowercase":"استخدم الأحرف الصغيرة في النثر العادي","dashes":"استخدم واصلات قصيرة","endings":"أزل النقطة من نهاية الأسطر القصيرة","spacing":"أزل المسافات والأسطر الفارغة الزائدة","protectQuotes":"حافظ على النص داخل علامات الاقتباس","protectMarkup":"حافظ على الترميز والروابط والعناوين وأسماء الوحدات","copy":"انسخ النتيجة","copied":"تم النسخ","copyFailed":"تعذر النسخ تلقائياً","selectResult":"حدد النتيجة لنسخها يدوياً","reset":"امسح الحقول","empty":"ألصق النص على اليسار لعرض المعاينة","boundary":"تعمل المعالجة محلياً في علامة التبويب المفتوحة. لا يُرسل النص ولا يُحفظ. راجع الأسماء والاقتباسات والترميز والمعنى قبل الاستخدام.","openCatalog":"فهرس الوحدات","note":"يحدد الملف قواعد أولية ويمكنك تعديل كل قاعدة","prompt":"ألصق النص أو اكتبه","noChanges":"لا تغييرات","previewReady":"تحدّثت المعاينة؛ بقي الأصل دون تغيير","caseNote":"تحويل حالة الأحرف آلي؛ راجع الأسماء وقواعد اللغة","structureTitle":"Syntaxium · خريطة بنية المصدر","structureLabels":{"lines":"أسطر","headings":"عناوين","paragraphs":"فقرات","listItems":"عناصر قائمة","quotes":"أسطر مقتبسة","codeBlocks":"كتل برمجية","tableRows":"صفوف جدول"},"countTemplate":"{count} حرفاً"},"profiles":{"synaura":"للنثر المؤلف: أحرف صغيرة ونهايات أخف ومسافات واضحة","syntaxium":"للملاحظات المنظمة: يحافظ على حالة الأحرف والترقيم وينظم المسافات","clear":"للنثر العام: يحافظ على حالة الأحرف والنهايات ويحذف المسافات الزائدة","message":"للرسائل والبريد: يطبق القواعد التي تختارها فقط","compact":"للعناوين والتسميات: قد يحذف النقطة من نهاية السطر القصير","poetry":"للشعر: يحافظ على فواصل الأسطر والمسافات؛ ويمكن ضبط ترقيم الأسطر القصيرة","faithful":"للاقتباسات والمصادر: جميع التحويلات متوقفة"}},"bn":{"schema":"suti.text-studio.edition.v1","locale":"bn","slug":"bn","contentLanguage":"bn","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"ভাষাগত খসড়া; স্বাধীন সম্পাদনা-পর্যালোচনা ও লেখকের গ্রহণের অপেক্ষায়","languageLabel":"ভাষা","strings":{"eyebrow":"synaura · লেখার কর্মশালা","title":"লেখাকে তার উদ্দেশ্য অনুযায়ী সাজান","lead":"লেখার ধরন ও প্রোফাইল বেছে নিন। মূল লেখা পূর্বরূপের পাশে থাকে; কপি করার আগে পরিবর্তন দেখা যায়।","source":"মূল লেখা","result":"পূর্বরূপ","profile":"লেখার ধরন ও প্রোফাইল","synaura":"synaura · শান্ত স্বচ্ছতা","syntaxium":"Syntaxium · কাঠামো","clear":"সাধারণ গদ্য","message":"বার্তা বা ইমেল","compact":"শিরোনাম ও লেবেল","poetry":"কবিতা ও পঙ্‌ক্তির ছন্দ","faithful":"হুবহু অনুলিপি","protect":"এই নাম ও পরিভাষার বানান অপরিবর্তিত রাখুন","protectHint":"প্রতি লাইনে একটি","lowercase":"সাধারণ গদ্যে ছোট হাতের অক্ষর ব্যবহার করুন","dashes":"ছোট হাইফেন ব্যবহার করুন","endings":"ছোট লাইনের শেষে থাকা পূর্ণচ্ছেদ সরান","spacing":"অতিরিক্ত ফাঁক ও খালি লাইন সরান","protectQuotes":"উদ্ধৃতি চিহ্নের ভেতরের লেখা অক্ষত রাখুন","protectMarkup":"মার্কআপ, লিংক, ঠিকানা ও মডিউলের নাম অক্ষত রাখুন","copy":"ফল কপি করুন","copied":"কপি হয়েছে","copyFailed":"স্বয়ংক্রিয় কপি করা যায়নি","selectResult":"হাতে কপি করতে ফল নির্বাচন করুন","reset":"ঘরগুলো মুছুন","empty":"পূর্বরূপ দেখতে বাঁ পাশে লেখা পেস্ট করুন","boundary":"এই খোলা ট্যাবেই স্থানীয়ভাবে চলে। লেখা পাঠানো বা সংরক্ষণ করা হয় না। ব্যবহারের আগে নাম, উদ্ধৃতি, মার্কআপ ও অর্থ যাচাই করুন।","openCatalog":"মডিউল ক্যাটালগ","note":"প্রোফাইল প্রাথমিক নিয়ম দেয়; প্রতিটি নিয়ম বদলানো যায়","prompt":"লেখা পেস্ট করুন বা টাইপ করুন","noChanges":"কোনো পরিবর্তন নেই","previewReady":"পূর্বরূপ হালনাগাদ হয়েছে; মূল লেখা অপরিবর্তিত","caseNote":"বড়-ছোট অক্ষর বদল যান্ত্রিক; নাম ও ভাষাভিত্তিক নিয়ম যাচাই করুন","structureTitle":"Syntaxium · মূল লেখার কাঠামো","structureLabels":{"lines":"লাইন","headings":"শিরোনাম","paragraphs":"অনুচ্ছেদ","listItems":"তালিকার উপাদান","quotes":"উদ্ধৃত লাইন","codeBlocks":"কোড ব্লক","tableRows":"সারণির সারি"},"countTemplate":"{count}টি অক্ষর"},"profiles":{"synaura":"লেখকের গদ্যের জন্য: ছোট হাতের অক্ষর, হালকা সমাপ্তি ও পরিচ্ছন্ন ফাঁক","syntaxium":"গঠিত নোটের জন্য: অক্ষরের ধরন ও বিরামচিহ্ন রেখে ফাঁক গুছিয়ে দেয়","clear":"সাধারণ গদ্যের জন্য: অক্ষরের ধরন ও বাক্যশেষ রেখে অতিরিক্ত ফাঁক সরায়","message":"বার্তা ও ইমেলের জন্য: শুধু আপনার বেছে নেওয়া নিয়ম প্রয়োগ করে","compact":"শিরোনাম ও লেবেলের জন্য: ছোট লাইনের শেষের পূর্ণচ্ছেদ সরাতে পারে","poetry":"কবিতার জন্য: লাইনবিরতি ও ফাঁক রাখে; ছোট লাইনের বিরামচিহ্ন বদলানো যায়","faithful":"উদ্ধৃতি ও উৎসপাঠের জন্য: সব রূপান্তর বন্ধ"}},"eo":{"schema":"suti.text-studio.edition.v1","locale":"eo","slug":"eo","contentLanguage":"eo","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"lingva malneto; sendependa provlegado kaj akcepto de la aŭtoro estas atendataj","languageLabel":"lingvo","strings":{"eyebrow":"synaura · teksta laborejo","title":"donu al la teksto ĝian taŭgan formon","lead":"Elektu tekstan tipon kaj profilon. La fonto restas apud la antaŭrigardo; ŝanĝoj videblas antaŭ kopiado.","source":"fonta teksto","result":"antaŭrigardo","profile":"teksta tipo kaj profilo","synaura":"synaura · trankvila klareco","syntaxium":"Syntaxium · strukturo","clear":"ĝenerala prozo","message":"mesaĝo aŭ retmesaĝo","compact":"titoloj kaj etikedoj","poetry":"poezio kaj linia ritmo","faithful":"preciza kopio","protect":"konservu la literumon de ĉi tiuj nomoj kaj terminoj","protectHint":"unu en ĉiu linio","lowercase":"minuskligu ordinaran prozon","dashes":"uzu mallongajn streketojn","endings":"forigu finan punkton de mallongaj linioj","spacing":"forigu superfluajn spacojn kaj malplenajn liniojn","protectQuotes":"konservu tekston ene de citiloj","protectMarkup":"konservu markadon, ligilojn, adresojn kaj modulnomojn","copy":"kopii rezulton","copied":"kopiita","copyFailed":"aŭtomata kopiado malsukcesis","selectResult":"elektu rezulton por mana kopiado","reset":"malplenigi kampojn","empty":"algluu tekston maldekstre por vidi antaŭrigardon","boundary":"Funkcias loke en ĉi tiu langeto. Teksto ne estas sendata aŭ konservata. Kontrolu nomojn, citaĵojn, markadon kaj signifon antaŭ uzo.","openCatalog":"modula katalogo","note":"profilo proponas komencajn regulojn; ĉiu regulo estas ŝanĝebla","prompt":"algluu aŭ tajpu tekston","noChanges":"neniu ŝanĝo","previewReady":"antaŭrigardo ĝisdatigita; fonto restas netuŝita","caseNote":"ŝanĝo de litergrandeco estas mekanika; kontrolu nomojn kaj lingvajn regulojn","structureTitle":"Syntaxium · fonta strukturo","structureLabels":{"lines":"linioj","headings":"titoloj","paragraphs":"alineoj","listItems":"listeroj","quotes":"cititaj linioj","codeBlocks":"kodblokoj","tableRows":"tabelvicoj"},"countTemplate":"{count} signoj"},"profiles":{"synaura":"por aŭtora prozo: minuskloj, mildaj finaĵoj kaj pura interspaco","syntaxium":"por strukturitaj notoj: konservas litergrandon kaj interpunkcion, ordigas spacojn","clear":"por ĝenerala prozo: konservas litergrandon kaj finaĵojn, forigas superfluajn spacojn","message":"por mesaĝoj kaj retmesaĝoj: aplikas nur elektitajn regulojn","compact":"por titoloj kaj etikedoj: povas forigi finan punkton de mallonga linio","poetry":"por versoj: konservas linisaltojn kaj spacojn; interpunkcio de mallongaj linioj estas agordebla","faithful":"por citaĵoj kaj fontoj: ĉiuj transformoj estas malŝaltitaj"}},"sa":{"schema":"suti.text-studio.edition.v1","locale":"sa","slug":"sa","contentLanguage":"sa","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"भाषाप्रारूपम्; स्वतन्त्रं पुनर्वाचनं लेखकस्य स्वीकृतिश्च प्रतीक्ष्येते","languageLabel":"भाषा","strings":{"eyebrow":"synaura · पाठशाला","title":"पाठस्य प्रयोजनानुसारं रूपं कुरु","lead":"पाठभेदं विन्यासं च वृणु। मूलपाठः पूर्वदृश्यस्य समीपे तिष्ठति; प्रतिलिपेः पूर्वं परिवर्तनानि पश्य।","source":"मूलपाठः","result":"पूर्वदृश्यम्","profile":"पाठभेदः विन्यासश्च","synaura":"synaura · शान्तिः स्पष्टता च","syntaxium":"Syntaxium · संरचना","clear":"सामान्यगद्यं","message":"सन्देशः अथवा पत्रम्","compact":"शीर्षकानि सङ्केतपदानि च","poetry":"काव्यं पङ्क्तिलयश्च","faithful":"यथावत् प्रतिलिपिः","protect":"एतेषां नाम्नां पदानां च लेखनरूपं रक्ष","protectHint":"प्रत्येकस्मिन् पङ्क्तौ एकम्","lowercase":"सामान्यगद्ये लघ्वक्षराणि प्रयुङ्क्ष्व","dashes":"ह्रस्वयोजकचिह्नानि प्रयुङ्क्ष्व","endings":"ह्रस्वपङ्क्तेः अन्त्यबिन्दुं निष्कासय","spacing":"अतिरिक्तस्थानानि रिक्तपङ्क्तयश्च निष्कासय","protectQuotes":"उद्धरणचिह्नान्तर्गतं पाठं रक्ष","protectMarkup":"चिह्ननं सम्पर्कसूत्राणि पतेः मॉड्यूलनामानि च रक्ष","copy":"परिणामं प्रतिलिख","copied":"प्रतिलिखितम्","copyFailed":"स्वयंचालितप्रतिलेखनं न सिद्धम्","selectResult":"हस्तप्रतिलेखनाय परिणामं चिनु","reset":"क्षेत्राणि शून्यीकुरु","empty":"पूर्वदृश्याय वामभागे पाठं निवेशय","boundary":"अस्मिन् उद्घाटितपटले एव स्थानीयं कार्यम्। पाठः न प्रेष्यते न च सञ्चीयते। उपयोगात् पूर्वं नामानि उद्धरणानि चिह्ननं अर्थं च परीक्षस्व।","openCatalog":"मॉड्यूलसूची","note":"विन्यासः प्रारम्भिकनियमान् ददाति; प्रत्येकं नियमं परिवर्तयितुं शक्यते","prompt":"पाठं निवेशय अथवा लिख","noChanges":"परिवर्तनं नास्ति","previewReady":"पूर्वदृश्यं नवीकृतम्; मूलपाठः अपरिवर्तितः","caseNote":"अक्षररूपपरिवर्तनं यान्त्रिकम्; नामानि भाषानियमांश्च परीक्षस्व","structureTitle":"Syntaxium · मूलपाठस्य संरचना","structureLabels":{"lines":"पङ्क्तयः","headings":"शीर्षकानि","paragraphs":"अनुच्छेदाः","listItems":"सूचीपदानि","quotes":"उद्धृतपङ्क्तयः","codeBlocks":"सङ्केतखण्डाः","tableRows":"सारिणीपङ्क्तयः"},"countTemplate":"{count} वर्णाः"},"profiles":{"synaura":"लेखकगद्याय: लघ्वक्षराणि, मृदुसमाप्तयः, स्वच्छानि अन्तराणि","syntaxium":"संरचितलेखनाय: अक्षररूपं विरामचिह्नानि च रक्षति, अन्तराणि संयोजयति","clear":"सामान्यगद्याय: अक्षररूपं वाक्यसमाप्तिं च रक्षति, अतिरिक्तस्थानानि हरति","message":"सन्देशपत्राभ्यां: त्वया चयनितान् नियमान् एव प्रयुङ्क्ते","compact":"शीर्षकसङ्केतपदाभ्यां: ह्रस्वपङ्क्तेः अन्त्यबिन्दुं हरितुं शक्नोति","poetry":"काव्याय: पङ्क्तिविभागं स्थानानि च रक्षति; ह्रस्वपङ्क्तेः विरामचिह्नं परिवर्तयितुं शक्यते","faithful":"उद्धरणस्रोतपाठाभ्यां: सर्वाणि रूपान्तरणानि निष्क्रियाणि"}},"la":{"schema":"suti.text-studio.edition.v1","locale":"la","slug":"la","contentLanguage":"la","direction":"ltr","status":"AI_DRAFT_RECONCILED","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"adumbratio linguistica; recognitio independens et acceptatio auctoris exspectantur","languageLabel":"lingua","strings":{"eyebrow":"synaura · officina textuum","title":"textui formam propositi aptam da","lead":"Genus textus et figuram elige. Fons iuxta praevisum manet; mutationes ante exscribendum videre potes.","source":"textus fons","result":"praevisum","profile":"genus textus et figura","synaura":"synaura · claritas quieta","syntaxium":"Syntaxium · structura","clear":"oratio communis","message":"nuntius vel epistula","compact":"tituli et pittacia","poetry":"carmina et numerus versuum","faithful":"exemplar idem","protect":"orthographiam horum nominum et vocabulorum serva","protectHint":"unum in singulis lineis","lowercase":"litteras minusculas in oratione communi adhibe","dashes":"lineolas breves adhibe","endings":"punctum in fine lineae brevis tolle","spacing":"spatia supervacua et lineas vacuas tolle","protectQuotes":"textum intra signa citationis serva","protectMarkup":"notationem, nexus, inscriptiones et nomina modulorum serva","copy":"exitum exscribe","copied":"exscriptum","copyFailed":"exscriptio automatica defecit","selectResult":"exitum elige ut manu exscribas","reset":"campos vacua","empty":"textum sinistrae impone ut praevisum videas","boundary":"In hac sola tabula aperta localiter operatur. Textus nec mittitur nec servatur. Nomina, citationes, notationem et sensum ante usum recognosce.","openCatalog":"catalogus modulorum","note":"figura regulas initiales proponit; singulae mutari possunt","prompt":"textum impone aut scribe","noChanges":"nulla mutatio","previewReady":"praevisum renovatum; fons immutatus manet","caseNote":"mutatio litterarum mechanica est; nomina et normas linguae recognosce","structureTitle":"Syntaxium · structura fontis","structureLabels":{"lines":"lineae","headings":"tituli","paragraphs":"paragraphi","listItems":"elementa indicis","quotes":"lineae citatae","codeBlocks":"segmenta codicis","tableRows":"ordines tabulae"},"countTemplate":"{count} signa"},"profiles":{"synaura":"pro oratione auctoris: minusculae, fines leniores et spatia munda","syntaxium":"pro notis ordinatis: litteras et interpunctionem servat, spatia componit","clear":"pro oratione communi: litteras et fines servat, spatia supervacua tollit","message":"pro nuntiis et epistulis: regulas tantum electas adhibet","compact":"pro titulis et pittaciis: punctum in fine lineae brevis tollere potest","poetry":"pro versibus: divisiones linearum et spatia servat; interpunctionem mutare potes","faithful":"pro citationibus et fontibus: omnes mutationes aversae sunt"}},"yzh":{"schema":"suti.text-studio.edition.v1","locale":"yzh","slug":"yzh","contentLanguage":"ru","direction":"ltr","status":"RU_GLOSS_EXPERIMENTAL","native_review":"HOLD","source_sha256":"599c6e2bdd35973e5a9b65eacdfbbec41a5ebfd711ceec57318c02cf57c2b5c2","formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa","reviewNote":"язэхъ — авторский эксперимент; здесь явно отмеченная смысловая развёртка и отдельная управляемая запись-кандидат","languageLabel":"язык","strings":{"eyebrow":"synaura · текстовая мастерская","title":"собрать текст в нужную форму","lead":"выбери тип текста и профиль. исходник остаётся рядом; изменения видны до копирования.","source":"исходный текст","result":"предпросмотр","profile":"тип текста и профиль","synaura":"synaura · тихая ясность","syntaxium":"Syntaxium · структура","clear":"обычный текст","message":"сообщение и письмо","compact":"заголовки и метки","poetry":"стихи и строковый ритм","faithful":"точная копия","protect":"сохранить написание этих имён и слов","protectHint":"по одному на строку","lowercase":"строчные буквы в обычном тексте","dashes":"короткий дефис вместо длинного тире","endings":"убрать точку в конце коротких строк","spacing":"убрать лишние пробелы и пустые строки","protectQuotes":"сохранять текст внутри кавычек","protectMarkup":"сохранять разметку, ссылки, адреса и имена модулей","copy":"скопировать результат","copied":"скопировано","copyFailed":"не удалось скопировать автоматически","selectResult":"выделить результат для ручного копирования","reset":"очистить поля","empty":"вставь текст слева - результат появится здесь","boundary":"работает локально в открытой вкладке. текст не отправляется и не сохраняется. сверь имена, цитаты, разметку и смысл перед использованием.","openCatalog":"каталог модулей","note":"профиль задаёт стартовые правила - каждое можно изменить вручную","prompt":"вставь или набери текст","noChanges":"изменений нет","previewReady":"предпросмотр обновлён - исходник не изменён","caseNote":"смена регистра механическая; проверь имена и правила конкретного языка","structureTitle":"Syntaxium · карта структуры исходника","structureLabels":{"lines":"строк","headings":"заголовков","paragraphs":"абзацев","listItems":"элементов списка","quotes":"цитатных строк","codeBlocks":"блоков кода","tableRows":"строк таблицы"},"countTemplate":"{count} знаков"},"profiles":{"synaura":"для авторской прозы: строчные буквы, лёгкие окончания и чистые интервалы","syntaxium":"для структурированных заметок: сохраняет регистр и пунктуацию, выравнивает интервалы","clear":"для общей прозы: сохраняет регистр и окончания, убирает избыток пробелов","message":"для писем и сообщений: меняет только выбранные правила","compact":"для заголовков и меток: может убрать точку в конце короткой строки","poetry":"для стихов: сохраняет переносы и интервалы; пунктуация коротких строк настраивается","faithful":"для цитат и исходников: все преобразования выключены"}}},"formatter_source_sha256":"5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa"}</script><script>/*!
+MIT License
+
+Copyright (c) 2026 Ezar Garuna
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED to the warranties of MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Source: apps/suti-world/src/services/text-studio.ts
+Source SHA-256: 5b98a646de41a42b376dd014f23fc461df850348b69ac9ab08b549d17febdaaa
+TypeScript: 6.0.3
+*/
+(function(root){'use strict';const exports={};
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.profileOptions = void 0;
+exports.formatText = formatText;
+exports.inspectTextStructure = inspectTextStructure;
+exports.profileOptions = {
+    synaura: { lowercase: true, shortDashes: true, lightEndings: true, cleanSpacing: true, protectQuotes: true, protectMarkup: true },
+    syntaxium: { lowercase: false, shortDashes: false, lightEndings: false, cleanSpacing: true, protectQuotes: true, protectMarkup: true },
+    clear: { lowercase: false, shortDashes: true, lightEndings: false, cleanSpacing: true, protectQuotes: true, protectMarkup: true },
+    message: { lowercase: false, shortDashes: true, lightEndings: false, cleanSpacing: true, protectQuotes: true, protectMarkup: true },
+    compact: { lowercase: false, shortDashes: true, lightEndings: true, cleanSpacing: true, protectQuotes: true, protectMarkup: true },
+    poetry: { lowercase: false, shortDashes: false, lightEndings: true, cleanSpacing: false, protectQuotes: true, protectMarkup: true },
+    faithful: { lowercase: false, shortDashes: false, lightEndings: false, cleanSpacing: false, protectQuotes: true, protectMarkup: true },
+};
+function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+function transformProse(source, options) {
+    const protectedChunks = [];
+    // A delimiter absent from the source keeps literal private-use glyphs intact.
+    // Encode arbitrary-size indices as private-use digits so prose rules cannot edit them.
+    let tokenPrefix = "\uE000";
+    while (source.includes(tokenPrefix))
+        tokenPrefix += "\uE000";
+    const tokenPattern = new RegExp(`${tokenPrefix}([\\uE100-\\uE109]+)\\uE001`, "g");
+    const systemTerms = ["SUTI.world", "SUTIcore", "synaura", "Syntaxium", "LinguaFUSION", "VereNITYA", "Psychonetica", "Eidographica", "SRETENIYA_OS", "NITYA", "VereNium", "ChatGPT"];
+    const terms = [...new Set([...options.protectedTerms, ...systemTerms])].filter(Boolean).sort((a, b) => b.length - a.length);
+    const protect = (value) => {
+        const index = protectedChunks.push(value) - 1;
+        const digits = String(index).replace(/\d/g, digit => String.fromCharCode(0xE100 + Number(digit)));
+        return `${tokenPrefix}${digits}\uE001`;
+    };
+    let text = source.replace(/`[^`\n]*`|https?:\/\/[^\s<>“”„«»‘’"]+|[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|@[\p{L}\p{N}_]{2,}/gu, protect);
+    // Preserve machine syntax and conventional quoted spans before prose rules run.
+    if (options.protectMarkup) {
+        text = text.replace(/<!--[\s\S]*?-->|<\/?[A-Za-z][^>\n]*>/g, protect);
+        text = text.replace(/\b(?:[A-Z]{2,}[A-Za-z0-9]*|[A-Z][a-z]+(?:[A-Z][A-Za-z0-9]*)+)\b/g, protect);
+        text = text.replace(/\b[A-Z][A-Z0-9]*(?:[._/-][A-Za-z0-9]+)+\b/g, protect);
+    }
+    if (options.protectQuotes) {
+        text = text.replace(/“[^”\n]*”|„[^”\n]*”|«[^»\n]*»|‘[^’\n]*’|"[^"\n]*"/g, protect);
+    }
+    if (terms.length) {
+        const termPattern = new RegExp(`(^|[^\\p{L}\\p{N}_])(${terms.map(escapeRegExp).join("|")})(?=$|[^\\p{L}\\p{N}_])`, "giu");
+        const protectTerms = (value) => value.replace(termPattern, (_match, prefix, term) => `${prefix}${protect(term)}`);
+        // Authored terms may themselves be private-use glyphs. Match only real-text
+        // gaps so such terms cannot split the delimiters of an existing shield.
+        let cursor = 0;
+        let withProtectedTerms = "";
+        for (const token of text.matchAll(tokenPattern)) {
+            withProtectedTerms += protectTerms(text.slice(cursor, token.index));
+            withProtectedTerms += token[0];
+            cursor = token.index + token[0].length;
+        }
+        text = withProtectedTerms + protectTerms(text.slice(cursor));
+    }
+    // Later chunks can wrap earlier ones, such as a quote containing code or a URL.
+    // Expand chunks in creation order so each outer chunk restores fully in one pass.
+    const restoredChunks = [];
+    const restore = (value) => value.replace(tokenPattern, (match, digits) => {
+        const index = Number([...digits].map(digit => digit.charCodeAt(0) - 0xE100).join(""));
+        return restoredChunks[index] ?? match;
+    });
+    for (const chunk of protectedChunks)
+        restoredChunks.push(restore(chunk));
+    if (options.cleanSpacing) {
+        // Two trailing spaces are a Markdown hard line break; keep them intact.
+        text = text.split("\n").map(line => line.replace(/[\t ]+$/g, trailing => trailing === "  " ? trailing : "")).join("\n");
+        text = text.replace(/\n{3,}/g, "\n\n");
+    }
+    if (options.shortDashes)
+        text = text.replace(/[–—]/g, "-");
+    if (options.lowercase)
+        text = text.toLowerCase();
+    if (options.lightEndings) {
+        text = text.split("\n").map(line => {
+            const plain = restore(line).trim();
+            const words = plain.match(/[\p{L}\p{N}]+/gu)?.length ?? 0;
+            return words > 0 && words <= 7 ? line.replace(/(?<!\.)\.(\s*)$/, "$1") : line;
+        }).join("\n");
+    }
+    return restore(text);
+}
+function formatText(source, options) {
+    const lines = source.match(/[^\n]*(?:\n|$)/g)?.filter(Boolean) ?? [];
+    let output = "";
+    let prose = "";
+    let fence;
+    // Obsidian/YAML front matter is machine metadata, not ordinary prose.
+    let frontMatter = lines[0]?.trim() === "---";
+    let firstLine = true;
+    for (const line of lines) {
+        if (frontMatter) {
+            output += line;
+            if (!firstLine && (line.trim() === "---" || line.trim() === "..."))
+                frontMatter = false;
+            firstLine = false;
+            continue;
+        }
+        const marker = line.match(/^\s*(`{3,}|~{3,})/);
+        if (!fence && marker) {
+            output += transformProse(prose, options);
+            prose = "";
+            fence = { marker: marker[1][0], length: marker[1].length };
+            output += line;
+            continue;
+        }
+        if (fence) {
+            output += line;
+            const closing = line.trim().match(/^(`+|~+)$/)?.[1];
+            if (closing && closing[0] === fence.marker && closing.length >= fence.length)
+                fence = undefined;
+            continue;
+        }
+        prose += line;
+    }
+    return output + transformProse(prose, options);
+}
+/** A deterministic, read-only Syntaxium view. It classifies visible structure
+ * without inserting markers or changing the source. */
+function inspectTextStructure(source) {
+    const summary = {
+        lines: source ? source.split("\n").length : 0,
+        headings: 0,
+        paragraphs: 0,
+        listItems: 0,
+        quotes: 0,
+        codeBlocks: 0,
+        tableRows: 0,
+    };
+    const lines = source.split("\n");
+    let codeFence;
+    let inParagraph = false;
+    for (const rawLine of lines) {
+        const line = rawLine.trim();
+        const marker = line.match(/^(`{3,}|~{3,})/);
+        if (!codeFence && marker) {
+            summary.codeBlocks += 1;
+            codeFence = { marker: marker[1][0], length: marker[1].length };
+            inParagraph = false;
+            continue;
+        }
+        if (codeFence) {
+            const closing = line.match(/^(`+|~+)$/)?.[1];
+            if (closing && closing[0] === codeFence.marker && closing.length >= codeFence.length)
+                codeFence = undefined;
+            continue;
+        }
+        if (!line) {
+            inParagraph = false;
+            continue;
+        }
+        if (/^#{1,6}\s+/.test(line)) {
+            summary.headings += 1;
+            inParagraph = false;
+        }
+        else if (/^(?:[-*+]\s+|\d+[.)]\s+)/.test(line)) {
+            summary.listItems += 1;
+            inParagraph = false;
+        }
+        else if (/^>\s?/.test(line)) {
+            summary.quotes += 1;
+            inParagraph = false;
+        }
+        else if (/^\|.*\|$/.test(line)) {
+            summary.tableRows += 1;
+            inParagraph = false;
+        }
+        else if (/^(?:[-*_]\s*){3,}$/.test(line)) {
+            inParagraph = false;
+        }
+        else if (!inParagraph) {
+            summary.paragraphs += 1;
+            inParagraph = true;
+        }
+    }
+    return summary;
+}
+
+const api=Object.freeze({profileOptions:exports.profileOptions,formatText:exports.formatText,inspectTextStructure:exports.inspectTextStructure});root.SutiTextStudioCore=api;if(typeof module==='object'&&module&&module.exports)module.exports=api;})(typeof globalThis==='object'?globalThis:this);
+</script><script>/* Copyright (c) 2026 Ezar Garuna. MIT License; see LICENSE.
+ * Local text studio controls. User text never enters preferences, URLs or requests. */
+(function () {
+  'use strict';
+  const data=JSON.parse(document.getElementById('text-studio-data').textContent);
+  const Core=globalThis.SutiTextStudioCore;
+  const $=id=>document.getElementById(id);
+  const editions=data.editions,codes=Object.keys(editions);
+  const profiles=['synaura','syntaxium','clear','message','compact','poetry','faithful'];
+  const rules=[['lowercase','lowercase'],['shortDashes','dashes'],['lightEndings','endings'],['cleanSpacing','spacing'],['protectQuotes','protectQuotes'],['protectMarkup','protectMarkup']];
+  const names={ru:'Русский',en:'English',es:'Español','pt-br':'Português brasileiro','zh-hans':'简体中文',hi:'हिन्दी',fr:'Français',ar:'العربية',bn:'বাংলা',eo:'Esperanto',sa:'संस्कृतम्',la:'Latina',yzh:'язэхъ · RU gloss'};
+  function normalize(value){const key=typeof value==='string'?value.trim().toLowerCase():'';const next=key==='es-419'?'es':key;return codes.includes(next)?next:null;}
+  function stored(key){try{return localStorage.getItem(key);}catch{return null;}}
+  function savePreference(key,value){try{localStorage.setItem(key,value);}catch{/* Display choice is optional. */}}
+  const query=new URLSearchParams(location.search),themes=['day','night','contrast'];
+  let language=normalize(query.get('lang'))||normalize(stored('suti-locale'))||'ru';
+  let theme=themes.includes(query.get('theme'))?query.get('theme'):themes.includes(stored('suti-theme'))?stored('suti-theme'):'day';
+  let profile='synaura',overrides={},copyEpoch=0,copyTimer=null,copyState='',formatFailed=false;
+  const source=$('studio-source'),result=$('studio-result'),protectedTerms=$('studio-protected');
+  const t=()=>editions[language].strings;
+  function element(tag,text){const node=document.createElement(tag);if(text!==undefined)node.textContent=text;return node;}
+  function setURL(){try{const url=new URL(location.href);url.searchParams.set('lang',language);url.searchParams.set('theme',theme);history.replaceState(history.state,'',url);}catch{/* The tool also works without history access. */}}
+  function currentOptions(){return {...Core.profileOptions[profile],...overrides,protectedTerms:protectedTerms.value.split('\n').map(term=>term.trim()).filter(Boolean)};}
+  function clearCopy(){copyEpoch++;if(copyTimer!==null){clearTimeout(copyTimer);copyTimer=null;}copyState='';}
+  function status(){const text=t();$('studio-copy').textContent=copyState==='copied'?text.copied:text.copy;$('studio-copy').disabled=!result.value;$('studio-manual').disabled=!result.value;$('studio-feedback').textContent=formatFailed?'FORMAT_ERROR · '+text.caseNote:(copyState==='failed'?text.copyFailed:(source.value===result.value?text.noChanges:text.previewReady));}
+  function structure(){const text=t(),summary=Core.inspectTextStructure(source.value),root=$('studio-structure');root.replaceChildren();for(const [key,count]of Object.entries(summary)){const item=element('span');item.append(element('strong',String(count)),document.createTextNode(' '+text.structureLabels[key]));root.append(item);}$('studio-structure-section').hidden=!source.value;}
+  function counters(){const text=t();$('studio-source-count').textContent=text.countTemplate.replace('{count}',String(source.value.length));$('studio-result-count').textContent=text.countTemplate.replace('{count}',String(result.value.length));}
+  function syncRules(){const options=currentOptions();for(const [key]of rules)$('rule-'+key).checked=options[key];$('studio-profile-description').textContent=editions[language].profiles[profile];}
+  function update(){clearCopy();formatFailed=false;try{result.value=Core.formatText(source.value,currentOptions());}catch{formatFailed=true;result.value=source.value;}syncRules();structure();counters();status();}
+  function renderLabels(){const edition=editions[language],text=t();document.documentElement.lang=edition.contentLanguage;document.documentElement.dir=edition.direction;document.title=text.title+' · SUTI.world';document.querySelectorAll('[data-studio-ui]').forEach(node=>node.textContent=text[node.dataset.studioUi]);$('studio-language-label').textContent=edition.languageLabel;$('studio-language').value=language;$('studio-review-note').textContent=edition.reviewNote;$('studio-review-status').textContent=edition.status+' · native review HOLD';$('studio-back').href='world-atlas.html?lang='+encodeURIComponent(language);$('studio-catalog').href='modules.html?lang='+encodeURIComponent(language);$('studio-profile').replaceChildren();for(const id of profiles){const option=element('option',text[id]);option.value=id;$('studio-profile').append(option);}$('studio-profile').value=profile;source.placeholder=text.prompt;result.placeholder=text.empty;result.setAttribute('aria-label',text.result);protectedTerms.placeholder=text.protectHint+'\nSUTI.world';syncRules();structure();counters();status();setURL();}
+  function setLanguage(next){const value=normalize(next);if(!value)return;language=value;renderLabels();savePreference('suti-locale',language);}
+  function setTheme(next,persist=true){if(!themes.includes(next))return;theme=next;document.documentElement.dataset.theme=theme;document.querySelectorAll('[data-theme-choice]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.themeChoice===theme)));setURL();if(persist)savePreference('suti-theme',theme);}
+  for(const code of codes){const option=element('option',names[code]);option.value=code;$('studio-language').append(option);}
+  $('studio-language').addEventListener('change',event=>setLanguage(event.target.value));
+  document.querySelectorAll('[data-theme-choice]').forEach(button=>button.addEventListener('click',()=>setTheme(button.dataset.themeChoice)));
+  source.addEventListener('input',update);protectedTerms.addEventListener('input',update);
+  $('studio-profile').addEventListener('change',event=>{if(!profiles.includes(event.target.value))return;profile=event.target.value;overrides={};update();});
+  for(const [key]of rules)$('rule-'+key).addEventListener('change',event=>{overrides={...overrides,[key]:event.target.checked};update();});
+  $('studio-copy').addEventListener('click',async()=>{clearCopy();status();const request=copyEpoch,value=result.value;if(!value)return;const current=()=>request===copyEpoch&&value===result.value;try{if(!navigator.clipboard?.writeText)throw new Error('CLIPBOARD_UNAVAILABLE');await navigator.clipboard.writeText(value);if(!current())return;copyState='copied';status();copyTimer=setTimeout(()=>{if(!current())return;copyTimer=null;copyState='';status();},1800);}catch{if(current()){copyState='failed';status();}}});
+  $('studio-manual').addEventListener('click',()=>{result.focus();result.select();});
+  $('studio-reset').addEventListener('click',()=>{clearCopy();source.value='';protectedTerms.value='';overrides={};update();source.focus();});
+  window.addEventListener('storage',event=>{if(event.key==='suti-theme')setTheme(event.newValue,false);if(event.key==='suti-locale'&&normalize(event.newValue))setLanguage(event.newValue);});
+  window.addEventListener('pagehide',clearCopy);
+  renderLabels();setTheme(theme,false);update();
+})();
+</script></body></html>

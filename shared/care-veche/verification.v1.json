@@ -1,0 +1,50 @@
+{
+  "schema": "suti.care-veche.verification.v1",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "scope": "new-local-care-veche-family-only",
+  "implementation": "LOCAL_PROTOTYPE",
+  "review": "AI_EDITORIAL_AND_FINITE_TECHNICAL",
+  "checks": {
+    "core_node_cases": 20,
+    "schema_fixtures": 23,
+    "strict_json_independent_cases": 19,
+    "final_handler_and_static_checks": 11,
+    "west_locale_human_fields": 918,
+    "east_locale_human_fields": 765,
+    "markdown_relative_links": 94,
+    "yzh_controlled_self_test": 28,
+    "yzh_full_projection_claims": 153,
+    "ui_earlier_revision": {
+      "locale_views": 13,
+      "synthetic_records_exported": 5,
+      "four_positions": "OBSERVED",
+      "pause": "OBSERVED",
+      "export": "PASS",
+      "file_import": "HOLD_NATIVE_PICKER",
+      "final_css_error_path_patch": "HANDLER_AND_STATIC_CHECKED_BROWSER_NOT_REPEATED"
+    }
+  },
+  "remaining": {
+    "native_review": "HOLD",
+    "specialist_review": "HOLD_WHERE_RELEVANT",
+    "owner_acceptance": "NOT_ESTABLISHED",
+    "whole_legacy_transcreation": "PARTIAL",
+    "manual_accessibility": "NOT_ESTABLISHED",
+    "poetic_yazekh_translation": "NOT_ESTABLISHED",
+    "identity_verification": "NOT_IMPLEMENTED",
+    "network_transport": "OFF",
+    "external_agent_gateway": "NOT_IMPLEMENTED",
+    "publication": "HOLD"
+  },
+  "preservation": {
+    "source_rewritten": false,
+    "legacy_deleted": false,
+    "raw_private_corpus_included": false
+  },
+  "limits": {
+    "date_time": "checked by core, not by Ajv format plugin",
+    "beforeunload": "protects added records; unsubmitted form text requires manual saving",
+    "local_data": "page memory only; explicit private export",
+    "peer_positions": "AI review only; no human consent or verified votes"
+  }
+}

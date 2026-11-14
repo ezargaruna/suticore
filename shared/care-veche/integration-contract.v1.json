@@ -1,0 +1,264 @@
+{
+  "schema": "suti.care-veche.integration-contract.v1",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "implementation": "bounded-local-prototype-candidate",
+  "network_transport": "OFF",
+  "external_agent_gateway": "NOT_IMPLEMENTED",
+  "verified_identity": "NOT_IMPLEMENTED",
+  "human_decision_authority": "NOT_IMPLEMENTED_BY_PROTOTYPE",
+  "fund_operator": "UNASSIGNED",
+  "local_protocol": {
+    "schema": "suti.care-veche.room-envelope.v1",
+    "entry": "index.html",
+    "core": "room-core.js",
+    "schema_file": "room-envelope.schema.v1.json",
+    "record_kinds": [
+      "contribution",
+      "proposal",
+      "position",
+      "decision_draft"
+    ],
+    "data_scope": "private",
+    "decision": "HOLD",
+    "execution": "OFF",
+    "source_code_is_not_content": true,
+    "append_only_import": true,
+    "conflicting_id": "reject-transaction",
+    "identical_id": "idempotent-skip",
+    "human_votes": "not verified or inferred"
+  },
+  "modules": [
+    {
+      "id": "SUTI.angels",
+      "alias": ".angels",
+      "role_pointer": "/modules/0",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.care",
+      "alias": ".care",
+      "role_pointer": "/modules/1",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.verenium",
+      "alias": ".verenium",
+      "role_pointer": "/modules/2",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.veche",
+      "alias": ".veche",
+      "role_pointer": "/modules/3",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.os",
+      "alias": ".os",
+      "role_pointer": "/modules/4",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.lab",
+      "alias": ".lab",
+      "role_pointer": "/modules/5",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.uni",
+      "alias": ".uni",
+      "role_pointer": "/modules/6",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.world",
+      "alias": ".world",
+      "role_pointer": "/modules/7",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.clan",
+      "alias": ".clan",
+      "role_pointer": "/modules/8",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.audit",
+      "alias": ".audit",
+      "role_pointer": "/modules/9",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.crystal",
+      "alias": ".crystal",
+      "role_pointer": "/modules/10",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.oracle",
+      "alias": ".oracle",
+      "role_pointer": "/modules/11",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.sotkan",
+      "alias": ".sotkan",
+      "role_pointer": "/modules/12",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.game",
+      "alias": ".game",
+      "role_pointer": "/modules/13",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    },
+    {
+      "id": "SUTI.logos",
+      "alias": ".logos",
+      "role_pointer": "/modules/14",
+      "capabilities_in_local_prototype": [
+        "read-guide",
+        "draft-contribution",
+        "draft-proposal",
+        "record-position",
+        "draft-outcome",
+        "export-private",
+        "import-selected-envelope"
+      ],
+      "automatic_external_actions": []
+    }
+  ],
+  "customization": {
+    "individual": "settings/individual.template.v1.json",
+    "collective": "settings/collective.template.v1.json",
+    "templates_only": true,
+    "permissions_granted_by_template": false,
+    "raw_personal_sources_in_common_layer": false
+  }
+}

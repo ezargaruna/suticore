@@ -1,0 +1,337 @@
+{
+  "schema": "suti.care-veche.locale.v1",
+  "version": "2026-11-13.v1",
+  "locale": "la",
+  "source_locale": "ru",
+  "direction": "ltr",
+  "source_sha256": "58b895e7af0ed3b057a2be1951af42023bc2b6f346432f569ade88577e9711fb",
+  "title": "spatium commune curae et veche",
+  "subtitle": "quaestio clara · voces distinctae · gradus possibilis · vestigium servatum",
+  "scope": "fundamentum commune a notitiis personalibus separatum pro systematibus singulorum et communitatum; officina localis colloquii",
+  "purpose": "scientiam, procurationem curae et considerationem communem coniungere, ut homo systema per se componere et proximum gradum probare possit",
+  "outcome": "methodum legere, contributionem aut sententiam adnotare, discrimina videre et fasciculum colloquii transferibilem servare",
+  "statusNote": "specificatio consilii et prototypum locale propositum; functiones agentium retialium, nuntiorum, pecuniae, institutionis iuridicae et publicationis inactivae sunt",
+  "preservation": "methodi utiles, versiones et materiae nondum solutae servantur; originalia non destruuntur, translationes selectae revocari possunt et habent source → target, SHA et testimonium receptionis",
+  "privacy": "in strato communi sunt methodi, munera et exemplaria vacua; narrationes personales, notitiae ad contactum, epistulae et notitiae sensibiles intra ambitum privatum electum manent",
+  "metaphor": "angelus curae est imago interfaciei ad libitum adhibenda; hominibus et agentibus praesto est descriptio ordinaria muneris, sine attributione identitatis aut experientiarum",
+  "localState": "adnotationes officinae in memoria paginae servantur; ante clausuram fasciculum JSON serva. importatio adnotationes probatas addit nec historiam originalem substituit",
+  "identityNote": "genus participis et nomen in hac officina locali ab auctore adnotationis declarantur; identitas, potestas et consensus aliorum participum hic non comprobantur",
+  "ui": {
+    "language": "lingua",
+    "guide": "methodus et structura",
+    "room": "officina colloquii",
+    "modules": "omnes ambitus",
+    "channel": "ambitus",
+    "actor": "nomen locale auctoris",
+    "actorKind": "genus participis",
+    "role": "munus",
+    "claim": "genus assertionis",
+    "body": "contributio aut explanatio",
+    "source": "fons aut fundamentum",
+    "proposal": "ID propositi",
+    "position": "sententia",
+    "add": "adnotationem localem addere",
+    "export": "colloquium servare · JSON",
+    "import": "adnotationes ex JSON addere",
+    "records": "adnotationes",
+    "positions": "sententiae de proposito",
+    "empty": "nullae adhuc adnotationes",
+    "noProposal": "colloquium generale",
+    "newProposal": "novum propositum",
+    "decisionDraft": "adumbratio exitus",
+    "contribution": "contributio",
+    "support": "favor",
+    "objection": "obiectio",
+    "abstain": "abstentio",
+    "noResponse": "responsum non receptum",
+    "human": "homo",
+    "agent": "agens",
+    "tool": "instrumentum",
+    "unknown": "ignotum",
+    "pause": "pausa",
+    "exit": "exitus",
+    "draftOnly": "adumbratio tantum; neque decisio facta neque initium datum est",
+    "saved": "adnotatio localis addita",
+    "imported": "adnotationes post probationem additae",
+    "error": "data recipi non potuerunt",
+    "privateExport": "exportatio privata est; publicatio electionem separatam requirit",
+    "countsNote": "numeratores adnotationes locales ostendunt, non suffragia humana comprobata neque numerum legitimorum participum ad deliberandum requisitum",
+    "sourceDraft": "adumbratio linguistica; recognitio independens et acceptatio auctoris exspectantur",
+    "yzhNote": "язэхъ est experimentum auctoris; hic est explicatio sensus expresse notata et adnotatio proposita separata atque moderata",
+    "limits": "fines et status",
+    "titleField": "titulus brevis",
+    "type": "genus adnotationis",
+    "createProposal": "propositum creare",
+    "recordPosition": "sententiam adnotare",
+    "draftOutcome": "adumbrationem exitus adnotare",
+    "identityUnverified": "identitas non comprobata",
+    "sourceOptional": "UNKNOWN relinqui potest",
+    "noExternal": "usus retis et actionum externarum inactivus est",
+    "fileChosen": "elige fasciculum JSON colloquii antea servatum"
+  },
+  "sections": [
+    {
+      "id": "preserve",
+      "title": "integritas et conservatio",
+      "body": "primum originale eiusque contextum servare, deinde discrimen transferibile seligere. fasciculi similes non sua sponte unus canon fiunt. quae nondum soluta sunt cum nota clara praesto manent; archiva laboris extra compagem communem purgatam servantur"
+    },
+    {
+      "id": "crystal",
+      "title": "nucleus communis sine notitiis personalibus",
+      "body": "unaquaeque methodus finem, invarians, ingressum, actionem, exitum, fontem, iura, versionem et fines describit. nomen aut narratio personalis ad methodum operandam non requiritur. separatio a notitiis personalibus discrimen utile servat nec casum singularem tamquam legem universalem proponit"
+    },
+    {
+      "id": "customise",
+      "title": "compositio singularis et communis",
+      "body": "profilum personale, lingua electa, rhythmus et accessibilitas separatim adiunguntur. communitas sua munera, visibilitatem et ambitum decisionum constituit. configurationes emendari et exportari possunt; identitas, consensus et participatio aliena ex exemplari non deducuntur"
+    },
+    {
+      "id": "agency",
+      "title": "procuratio curae",
+      "body": "ingressus a quaestione electa incipit. actum possibilem, subsidium necessarium et hominem decernentem definire. programma automaticum auxilia, subsidia pecuniaria, solutiones aut repraesentationem non attribuit. petitio explanari, homini idoneo tradi aut finiri potest"
+    },
+    {
+      "id": "agent-care",
+      "title": "cura in opere agentium",
+      "body": "agens munus clarum, fontes permissos, finem datorum et summam praesto constitutam accipit. incertitudinem, defectum repetitum, pausam et traditionem operis adnotat. haec est ordinatio operationalis processus; neque affectus neque dolor neque conscientia neque necessitates humanae agenti attribuuntur"
+    },
+    {
+      "id": "dialogue",
+      "title": "locus communicationis",
+      "body": "homines et agentes contributionem cum origine manifesta parare possunt. nuntius data ad considerationem praebet, non mandatum exsecutionis. ratiocinationes occultae, secreta, epistulae privatae nondum tractatae et adnotationes personales non petitae in fasciculum communem non includuntur"
+    },
+    {
+      "id": "veche",
+      "title": "ordo veche",
+      "body": "unumquodque propositum quaestionem, contextum et rationem probationis accipit. favor, obiectio, abstentio et absentia responsi separatim servantur. silentium pro consensu non habetur. prospectus AI non est suffragium humanum; exitui homo responsabilis assignatur et exitus adumbratio manet usque ad decisionem separatam illius hominis"
+    },
+    {
+      "id": "evidence",
+      "title": "probatio fundamentorum",
+      "body": "genus assertionis, fons, probatio et decisio campi diversi sunt. PASS ad criterium et ambitum manifeste definitos pertinet. UNKNOWN servatur ubi data desunt; pulchra locutio certitudinem non auget. COMMIT publicationi non aequatur, et specificatio ministerio operanti non aequatur"
+    },
+    {
+      "id": "boundaries",
+      "title": "fines participationis",
+      "body": "imago, ludus et participatio voluntaria sunt. sermo ordinarius, correctio, pausa et exitus praesto sunt. itinera secundum aetatem classificationem officialem non substituunt; receptio iuvenum inactiva est donec condiciones separatae statuantur, et primum experimentum adultis consentientibus destinatur. auxilium urgente necessitate praebendum aut clinicum hic non promittitur"
+    },
+    {
+      "id": "adapters",
+      "title": "coniunctio agentium iam operantium",
+      "body": "adaptatorium propositum tantum contributionem, munus, fontem, versionem et ambitum permissionis selectos transmittit. importatio auctorem, iura aut consensum non comprobat. transmissio per rete, secreta, permissiones, operator et diarium implementationem et probationem separatas requirunt; hae functiones nunc inactivae sunt"
+    },
+    {
+      "id": "languages",
+      "title": "linguae et translatio sensus",
+      "body": "unaquaeque editio fonti Russico eiusque SHA coniungitur. nomina, ID, enums et codex servantur. negationes, incertitudo, electio et consequentiae probantur. язэхъ statum experimentalem separatum accipit; sensus eius ignoti coniecturis non supplentur"
+    },
+    {
+      "id": "next-step",
+      "title": "exitus accessibilis",
+      "body": "elige ambitum et quaestionem; adde contributionem, propositum aut sententiam; proba fontem; serva fasciculum JSON; si opus est, adnotationes selectas in aliam officinam localem importa. exportatio propria non sua sponte communis aut publica fit"
+    }
+  ],
+  "roles": [
+    {
+      "id": "initiator",
+      "label": "initiator",
+      "scope": "quaestionem, contextum et criterium utilitatis formulat"
+    },
+    {
+      "id": "contributor",
+      "label": "particeps",
+      "scope": "fundamentum, optionem, exemplum aut limitationem addit"
+    },
+    {
+      "id": "reviewer",
+      "label": "examinator",
+      "scope": "fontes, consequentias et detrimenta sensus comparat"
+    },
+    {
+      "id": "human_steward",
+      "label": "homo responsabilis",
+      "scope": "separatim intra suum ambitum comprobatum decernit; nota localis muneris potestatem non creat"
+    }
+  ],
+  "workflow": [
+    {
+      "id": "question",
+      "title": "quaestio",
+      "body": "quid magni momenti est intellegere, exprimere aut probare?"
+    },
+    {
+      "id": "context",
+      "title": "contextus",
+      "body": "quid ad considerationem communem electum est et quo fundamento?"
+    },
+    {
+      "id": "proposal",
+      "title": "propositum",
+      "body": "quis gradus possibilis proponitur et quomodo exitus animadverti potest?"
+    },
+    {
+      "id": "positions",
+      "title": "distinctio sententiarum",
+      "body": "quid favorem accepit, quid impugnatum aut dilatum est, quid sine responso mansit?"
+    },
+    {
+      "id": "review",
+      "title": "examinatio",
+      "body": "suntne fundamenta, fines et ius eligendi servata?"
+    },
+    {
+      "id": "decision",
+      "title": "adumbratio exitus",
+      "body": "quid in HOLD manet et quam decisionem homo facere debet?"
+    },
+    {
+      "id": "trace",
+      "title": "vestigium et reditus",
+      "body": "electa servare, exitum probare, corrigere aut finire"
+    }
+  ],
+  "positions": [
+    {
+      "id": "support",
+      "label": "favor",
+      "meaning": "favor proposito indicato intra ambitum nominatum"
+    },
+    {
+      "id": "objection",
+      "label": "obiectio",
+      "meaning": "limitatio, periculum aut explanatio alternativa certa"
+    },
+    {
+      "id": "abstain",
+      "label": "abstentio",
+      "meaning": "sententia nondum sumitur; causa ignota manere potest"
+    },
+    {
+      "id": "no_response",
+      "label": "nullum responsum",
+      "meaning": "responsum non receptum est; hoc neque consensus neque abstentio est"
+    }
+  ],
+  "claims": [
+    {
+      "id": "FACT",
+      "label": "factum"
+    },
+    {
+      "id": "OBSERVATION",
+      "label": "observatio"
+    },
+    {
+      "id": "INTERPRETATION",
+      "label": "interpretatio"
+    },
+    {
+      "id": "HYPOTHESIS",
+      "label": "hypothesis"
+    },
+    {
+      "id": "EVALUATION",
+      "label": "aestimatio"
+    },
+    {
+      "id": "SYMBOL",
+      "label": "symbolum"
+    },
+    {
+      "id": "UNKNOWN",
+      "label": "ignotum"
+    }
+  ],
+  "modules": [
+    {
+      "id": "SUTI.angels",
+      "alias": ".angels",
+      "title": "munera angelorum curae",
+      "function": "munera auxilii voluntaria, traditio operis et fines participationis clari"
+    },
+    {
+      "id": "SUTI.care",
+      "alias": ".care",
+      "title": "cura ut actio",
+      "function": "quaestio, gradus possibilis, subsidium, homo responsabilis et responsio ad effectum"
+    },
+    {
+      "id": "SUTI.verenium",
+      "alias": ".verenium",
+      "title": "interfacies sollicita",
+      "function": "propositum clarum, sermo ordinarius, pausa, correctio et exitus"
+    },
+    {
+      "id": "SUTI.veche",
+      "alias": ".veche",
+      "title": "consideratio communis",
+      "function": "proposita, sententiae distinctae, fundamenta et exitus cum responsabilitate"
+    },
+    {
+      "id": "SUTI.os",
+      "alias": ".os",
+      "title": "nucleus laboris",
+      "function": "contractus, munera, versiones, fines datorum et facultas revocandi"
+    },
+    {
+      "id": "SUTI.lab",
+      "alias": ".lab",
+      "title": "laboratorium",
+      "function": "exempla synthetica, experimenta circumscripta et probationes iterabiles"
+    },
+    {
+      "id": "SUTI.uni",
+      "alias": ".uni",
+      "title": "disciplina",
+      "function": "exercitatio brevis, exemplum proprium et probatio intellegentiae"
+    },
+    {
+      "id": "SUTI.world",
+      "alias": ".world",
+      "title": "ingressus communis",
+      "function": "navigatio accessibilis per methodos et itinera ab homine electa"
+    },
+    {
+      "id": "SUTI.clan",
+      "alias": ".clan",
+      "title": "circulus voluntarius",
+      "function": "invitatio, acceptatio muneris, condiciones communes et exitus"
+    },
+    {
+      "id": "SUTI.audit",
+      "alias": ".audit",
+      "title": "recognitio",
+      "function": "ambitus probationis exactus, documenta probantia, errores et correctiones"
+    },
+    {
+      "id": "SUTI.crystal",
+      "alias": ".crystal",
+      "title": "crystallus scientiae",
+      "function": "methodus per se intellegibilis cum fonte, finibus et versione"
+    },
+    {
+      "id": "SUTI.oracle",
+      "alias": ".oracle",
+      "title": "quaestiones alternativae",
+      "function": "plures prospectus cum statu manifesto hypothesis aut symboli"
+    },
+    {
+      "id": "SUTI.sotkan",
+      "alias": ".sotkan",
+      "title": "nexus",
+      "function": "entia, relationes, dependentiae et origo sine confusione occulta"
+    },
+    {
+      "id": "SUTI.game",
+      "alias": ".game",
+      "title": "ludus et exercitatio",
+      "function": "iter ludicum voluntarium cum formula ordinaria et gradu observabili"
+    },
+    {
+      "id": "SUTI.logos",
+      "alias": ".logos",
+      "title": "lingua et expressio",
+      "function": "termini, vox, transcreationes directae et probatio detrimentorum sensus"
+    }
+  ]
+}

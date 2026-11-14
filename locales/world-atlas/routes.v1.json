@@ -1,0 +1,2611 @@
+{
+  "schema": "suti.published-static-route-inventory.v1",
+  "source_revision": "8e2f22263c8dae4ee8f1d797522f6c5522c68d17",
+  "scope": "complete prepared Pages HTML path inventory, authoring templates excluded; availability map, not language or engine acceptance",
+  "routes": [
+    {
+      "id": "page:4b3f00dd8ef026a4",
+      "path": "audits.html",
+      "title": "semantic audits · SUTI.world",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:555ee76d307b0696",
+      "path": "care-app-audit.html",
+      "title": "жемчужина аудита · приложения и UX/UI · SUTI.worldнить проходит через три открытых узла",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:1d3e52420ddd8940",
+      "path": "care-atlas-ar.html",
+      "title": "SUTI.care · أطلس الرعاية المتبادلة",
+      "language": "ar",
+      "category": "care"
+    },
+    {
+      "id": "page:3981bfc959b84f7d",
+      "path": "care-atlas-bn.html",
+      "title": "SUTI.care · পারস্পরিক যত্নের মানচিত্র",
+      "language": "bn",
+      "category": "care"
+    },
+    {
+      "id": "page:465e4c6aa84bea1b",
+      "path": "care-atlas-en.html",
+      "title": "SUTI.care · an atlas of mutual care",
+      "language": "en",
+      "category": "care"
+    },
+    {
+      "id": "page:36563ac73cc69d5a",
+      "path": "care-atlas-eo.html",
+      "title": "SUTI.care · atlaso de reciproka zorgo",
+      "language": "eo",
+      "category": "care"
+    },
+    {
+      "id": "page:d122536b867265fe",
+      "path": "care-atlas-es.html",
+      "title": "SUTI.care · atlas de cuidado mutuo",
+      "language": "es-419",
+      "category": "care"
+    },
+    {
+      "id": "page:81f1631513df310c",
+      "path": "care-atlas-fr.html",
+      "title": "SUTI.care · atlas de l’entraide",
+      "language": "fr",
+      "category": "care"
+    },
+    {
+      "id": "page:fbc24306e45cff7b",
+      "path": "care-atlas-hi.html",
+      "title": "SUTI.care · पारस्परिक देखभाल का एटलस",
+      "language": "hi",
+      "category": "care"
+    },
+    {
+      "id": "page:b3bdc5ec2ce21341",
+      "path": "care-atlas-la.html",
+      "title": "SUTI.care · atlas curae mutuae",
+      "language": "la",
+      "category": "care"
+    },
+    {
+      "id": "page:6dd41e4a799b85f9",
+      "path": "care-atlas-pt.html",
+      "title": "SUTI.care · atlas de cuidado mútuo",
+      "language": "pt-BR",
+      "category": "care"
+    },
+    {
+      "id": "page:857e3e739e148e48",
+      "path": "care-atlas-sa.html",
+      "title": "SUTI.care · परस्परपरिचर्यायाः मानचित्रम्",
+      "language": "sa",
+      "category": "care"
+    },
+    {
+      "id": "page:ab4e10aa5fb2a673",
+      "path": "care-atlas-zh-Hans.html",
+      "title": "SUTI.care · 互助关怀图谱",
+      "language": "zh-Hans",
+      "category": "care"
+    },
+    {
+      "id": "page:0ce4a6d5dc6d068e",
+      "path": "care-atlas.html",
+      "title": "SUTI.care · атлас взаимной заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:b03cb01e55db87a4",
+      "path": "care-constellation-ar.html",
+      "title": "كوكبة الرعاية · SUTI.worldحديقة ذات مسارات مفتوحة",
+      "language": "ar",
+      "category": "care"
+    },
+    {
+      "id": "page:93312d5bb3fcf0ee",
+      "path": "care-constellation-bn.html",
+      "title": "যত্নের নক্ষত্রমণ্ডল · SUTI.worldখোলা পথের একটি বাগান",
+      "language": "bn",
+      "category": "care"
+    },
+    {
+      "id": "page:1f32191dbf99b166",
+      "path": "care-constellation-eo.html",
+      "title": "Care Constellation · SUTI.worldĜardeno kun malfermitaj vojoj",
+      "language": "eo",
+      "category": "care"
+    },
+    {
+      "id": "page:e901dee037959f6b",
+      "path": "care-constellation-es.html",
+      "title": "Constelación del cuidado · SUTI.worldUn jardín de caminos abiertos",
+      "language": "es-419",
+      "category": "care"
+    },
+    {
+      "id": "page:7e2ba526e136a9ad",
+      "path": "care-constellation-fr.html",
+      "title": "Constellation du soin · SUTI.worldUn jardin aux chemins ouverts",
+      "language": "fr",
+      "category": "care"
+    },
+    {
+      "id": "page:7730a136e7659ce4",
+      "path": "care-constellation-hi.html",
+      "title": "देखभाल के नक्षत्र · SUTI.worldखुले रास्तों वाला बगीचा",
+      "language": "hi",
+      "category": "care"
+    },
+    {
+      "id": "page:62f13eb2c978b8ca",
+      "path": "care-constellation-la.html",
+      "title": "Constellatio curae · SUTI.worldHortus viis apertis",
+      "language": "la",
+      "category": "care"
+    },
+    {
+      "id": "page:f84c7c33cd587759",
+      "path": "care-constellation-pt.html",
+      "title": "Constelação do cuidado · SUTI.worldUm jardim de caminhos abertos",
+      "language": "pt-BR",
+      "category": "care"
+    },
+    {
+      "id": "page:c1fef937c9821665",
+      "path": "care-constellation-ru.html",
+      "title": "Созвездие заботы · SUTI.worldСад с открытыми тропами",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:73b6def80d3afce9",
+      "path": "care-constellation-sa.html",
+      "title": "Care Constellation · SUTI.worldमुक्तमार्गैः युक्तम् उद्यानम्",
+      "language": "sa",
+      "category": "care"
+    },
+    {
+      "id": "page:2f2eb19ee19e4f9e",
+      "path": "care-constellation-zh-Hans.html",
+      "title": "关怀星图 · SUTI.world一座有开放小径的花园",
+      "language": "zh-Hans",
+      "category": "care"
+    },
+    {
+      "id": "page:83733865b3f04431",
+      "path": "care-constellation.html",
+      "title": "Care Constellation · SUTI.worldA garden with open paths",
+      "language": "en",
+      "category": "care"
+    },
+    {
+      "id": "page:7332dbebaa2e5c6c",
+      "path": "care-map.html",
+      "title": "нить заботы ∴ SUTI.world",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:4aa1e4c3e0f7ea62",
+      "path": "clear-water-ar.html",
+      "title": "كأس من ماء صافٍ · لعبة لغوية من SUTI",
+      "language": "ar",
+      "category": "language"
+    },
+    {
+      "id": "page:1a33e4b283da6a57",
+      "path": "clear-water-bn.html",
+      "title": "এক গ্লাস স্বচ্ছ জল · SUTI ভাষার খেলা",
+      "language": "bn",
+      "category": "language"
+    },
+    {
+      "id": "page:9ed913ff125370f7",
+      "path": "clear-water-eo.html",
+      "title": "Glaso da klara akvo · lingva ludo de SUTI",
+      "language": "eo",
+      "category": "language"
+    },
+    {
+      "id": "page:5418b757a7ec5267",
+      "path": "clear-water-es.html",
+      "title": "Un vaso de agua clara · un juego de lenguaje de SUTI",
+      "language": "es",
+      "category": "language"
+    },
+    {
+      "id": "page:abe071a1601928ab",
+      "path": "clear-water-fr.html",
+      "title": "Un verre d’eau claire · un jeu de langage SUTI",
+      "language": "fr",
+      "category": "language"
+    },
+    {
+      "id": "page:8fc4b57fc7ec5b59",
+      "path": "clear-water-hi.html",
+      "title": "एक गिलास साफ़ पानी · SUTI भाषा-खेल",
+      "language": "hi",
+      "category": "language"
+    },
+    {
+      "id": "page:016d9a0dbca1d91e",
+      "path": "clear-water-la.html",
+      "title": "Calix aquae purae · ludus linguae SUTI",
+      "language": "la",
+      "category": "language"
+    },
+    {
+      "id": "page:09509040562037b2",
+      "path": "clear-water-pt.html",
+      "title": "Um copo de água clara · um jogo de linguagem SUTI",
+      "language": "pt-BR",
+      "category": "language"
+    },
+    {
+      "id": "page:0cd284b7d0f1e462",
+      "path": "clear-water-ru.html",
+      "title": "Стакан чистой воды · языковая игра SUTI",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:c94149a128be8418",
+      "path": "clear-water-sa.html",
+      "title": "निर्मलजलस्य पात्रम् · SUTI-भाषाक्रीडा",
+      "language": "sa",
+      "category": "language"
+    },
+    {
+      "id": "page:d3987ff99979e0b7",
+      "path": "clear-water-zh-Hans.html",
+      "title": "一杯清水 · SUTI 语言游戏",
+      "language": "zh-Hans",
+      "category": "language"
+    },
+    {
+      "id": "page:3550369db6ab0cc1",
+      "path": "clear-water.html",
+      "title": "A glass of clear water · a SUTI language game",
+      "language": "en",
+      "category": "language"
+    },
+    {
+      "id": "page:1ac91b2c0034b671",
+      "path": "entry/ar/index.html",
+      "title": "SUTI.world · اختر خطوة تالية واضحة · SUTI.world",
+      "language": "ar",
+      "category": "library"
+    },
+    {
+      "id": "page:1e3d42c64597b642",
+      "path": "entry/bn/index.html",
+      "title": "SUTI.world · পরের স্পষ্ট পদক্ষেপ খুঁজুন · SUTI.world",
+      "language": "bn",
+      "category": "library"
+    },
+    {
+      "id": "page:5fdfa68981b020f3",
+      "path": "entry/en/index.html",
+      "title": "SUTI.world · Find a clear next step · SUTI.world",
+      "language": "en",
+      "category": "library"
+    },
+    {
+      "id": "page:bc342bf71b714f72",
+      "path": "entry/eo/index.html",
+      "title": "SUTI.world · Elektu klaran sekvan paŝon · SUTI.world",
+      "language": "eo",
+      "category": "library"
+    },
+    {
+      "id": "page:c8a753a133ba804a",
+      "path": "entry/es/index.html",
+      "title": "SUTI.world · Encuentra un siguiente paso claro · SUTI.world",
+      "language": "es",
+      "category": "library"
+    },
+    {
+      "id": "page:3da7dd2a098a7f33",
+      "path": "entry/fr/index.html",
+      "title": "SUTI.world · Trouver une prochaine étape claire · SUTI.world",
+      "language": "fr",
+      "category": "library"
+    },
+    {
+      "id": "page:ad58e506678233eb",
+      "path": "entry/hi/index.html",
+      "title": "SUTI.world · अगला स्पष्ट कदम खोजें · SUTI.world",
+      "language": "hi",
+      "category": "library"
+    },
+    {
+      "id": "page:bf4982fa0da7154b",
+      "path": "entry/la/index.html",
+      "title": "SUTI.world · Gradum proximum clarum elige · SUTI.world",
+      "language": "la",
+      "category": "library"
+    },
+    {
+      "id": "page:f7711270c68c5a8a",
+      "path": "entry/pt-br/index.html",
+      "title": "SUTI.world · Encontre um próximo passo claro · SUTI.world",
+      "language": "pt-BR",
+      "category": "library"
+    },
+    {
+      "id": "page:474197958686c577",
+      "path": "entry/ru/index.html",
+      "title": "SUTI.world · найди ясный следующий шаг · SUTI.world",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:acdfbd8924888867",
+      "path": "entry/sa/index.html",
+      "title": "SUTI.world · स्पष्टं परवर्तिचरणं चिनुत · SUTI.world",
+      "language": "sa",
+      "category": "library"
+    },
+    {
+      "id": "page:a2bd75cbbbc6f338",
+      "path": "entry/yzh/index.html",
+      "title": "SUTI.world · найди ясный следующий шаг · SUTI.world",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:5aa792d06af8ff8b",
+      "path": "entry/zh-hans/index.html",
+      "title": "SUTI.world · 找到清晰的下一步 · SUTI.world",
+      "language": "zh-hans",
+      "category": "library"
+    },
+    {
+      "id": "page:c34cb854b76053d7",
+      "path": "es/essence/index.html",
+      "title": "SUTI.world",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:f38badf0070ef3b3",
+      "path": "es/index.html",
+      "title": "SUTI.world",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:7a954c9bc33c936d",
+      "path": "essence/index.html",
+      "title": "SUTI.world",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:0eb547304658805a",
+      "path": "index.html",
+      "title": "SUTI.world - language for your world",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:5e1804e97746b4d2",
+      "path": "modules/ai-soul-13l/index.html",
+      "title": "душа ИИ · голос, границы, выбор · SUTI",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:016c12dd82d42461",
+      "path": "modules/architecture/ar.html",
+      "title": "خريطة بنية SUTI.world",
+      "language": "ar",
+      "category": "library"
+    },
+    {
+      "id": "page:ed3134b4cfd60ce9",
+      "path": "modules/architecture/bn.html",
+      "title": "SUTI.world-এর স্থাপত্য মানচিত্র",
+      "language": "bn",
+      "category": "library"
+    },
+    {
+      "id": "page:6a3efab68bf57785",
+      "path": "modules/architecture/en.html",
+      "title": "SUTI.world architecture map",
+      "language": "en",
+      "category": "library"
+    },
+    {
+      "id": "page:9c2619bea804c795",
+      "path": "modules/architecture/eo.html",
+      "title": "arkitektura mapo de SUTI.world",
+      "language": "eo",
+      "category": "library"
+    },
+    {
+      "id": "page:0e03cf65f034cc55",
+      "path": "modules/architecture/es.html",
+      "title": "Mapa de arquitectura de SUTI.world",
+      "language": "es-419",
+      "category": "library"
+    },
+    {
+      "id": "page:7dcf7584e1e1d90f",
+      "path": "modules/architecture/fr.html",
+      "title": "Carte de l’architecture de SUTI.world",
+      "language": "fr",
+      "category": "library"
+    },
+    {
+      "id": "page:f0899cd8ea9b4a54",
+      "path": "modules/architecture/hi.html",
+      "title": "SUTI.world की संरचना का मानचित्र",
+      "language": "hi",
+      "category": "library"
+    },
+    {
+      "id": "page:f2a28b862cd6e46d",
+      "path": "modules/architecture/la.html",
+      "title": "tabula architecturae SUTI.world",
+      "language": "la",
+      "category": "library"
+    },
+    {
+      "id": "page:8f0cb8705acfb588",
+      "path": "modules/architecture/pt-br.html",
+      "title": "Mapa da arquitetura da SUTI.world",
+      "language": "pt-BR",
+      "category": "library"
+    },
+    {
+      "id": "page:077a962280c07fd5",
+      "path": "modules/architecture/sa.html",
+      "title": "SUTI.world इत्यस्य वास्तुरचनामानचित्रम्",
+      "language": "sa",
+      "category": "library"
+    },
+    {
+      "id": "page:4f6e0bb6d8641d89",
+      "path": "modules/architecture/yzh.html",
+      "title": "архитектурная карта SUTI.world",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:bb77a1acd625e73a",
+      "path": "modules/architecture/zh-hans.html",
+      "title": "SUTI.world 架构图",
+      "language": "zh-Hans",
+      "category": "library"
+    },
+    {
+      "id": "page:733e35ffc5af275a",
+      "path": "modules/index.html",
+      "title": "архитектурная карта SUTI.world",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:4b11a21858afa2a1",
+      "path": "modules/suti/suticore-2026.11.en.html",
+      "title": "SUTIcore · principles and system contract · SUTI.world",
+      "language": "en",
+      "category": "library"
+    },
+    {
+      "id": "page:a80dcc4aa2763def",
+      "path": "modules/suti/synaura-2026.11.en.html",
+      "title": "SYNAURA · formal visual-semantic language proposal · SUTI.world",
+      "language": "en",
+      "category": "language"
+    },
+    {
+      "id": "page:05a690517601bdf3",
+      "path": "modules/suti/syntaxium-2026.11.en.html",
+      "title": "Syntaxium · notation and grammar proposal · SUTI.world",
+      "language": "en",
+      "category": "library"
+    },
+    {
+      "id": "page:a29902ebfc08c251",
+      "path": "modules/synaura/guide/ar.html",
+      "title": "دليل .synaura التحريري",
+      "language": "ar",
+      "category": "language"
+    },
+    {
+      "id": "page:79041f5f75a8a3e5",
+      "path": "modules/synaura/guide/bn.html",
+      "title": ".synaura সম্পাদকীয় নির্দেশিকা",
+      "language": "bn",
+      "category": "language"
+    },
+    {
+      "id": "page:3938aada2c502e89",
+      "path": "modules/synaura/guide/en.html",
+      "title": "The .synaura editorial guide",
+      "language": "en",
+      "category": "language"
+    },
+    {
+      "id": "page:9b2e090b157fa9f6",
+      "path": "modules/synaura/guide/eo.html",
+      "title": "Redakcia gvidilo de .synaura",
+      "language": "eo",
+      "category": "language"
+    },
+    {
+      "id": "page:700061c0b9f4b83d",
+      "path": "modules/synaura/guide/es.html",
+      "title": "Guía editorial de .synaura",
+      "language": "es-419",
+      "category": "language"
+    },
+    {
+      "id": "page:62601d5911b46064",
+      "path": "modules/synaura/guide/fr.html",
+      "title": "Guide éditorial .synaura",
+      "language": "fr",
+      "category": "language"
+    },
+    {
+      "id": "page:03e5ceed28d6d455",
+      "path": "modules/synaura/guide/hi.html",
+      "title": ".synaura संपादकीय मार्गदर्शिका",
+      "language": "hi",
+      "category": "language"
+    },
+    {
+      "id": "page:57687b5e6112fc22",
+      "path": "modules/synaura/guide/la.html",
+      "title": "Dux editorialis .synaura",
+      "language": "la",
+      "category": "language"
+    },
+    {
+      "id": "page:9fa16e0e8a7c457e",
+      "path": "modules/synaura/guide/pt-br.html",
+      "title": "Guia editorial .synaura",
+      "language": "pt-BR",
+      "category": "language"
+    },
+    {
+      "id": "page:e23f649429e0c46d",
+      "path": "modules/synaura/guide/ru.html",
+      "title": "Редакционное руководство .synaura",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:c40e16b30cccbd38",
+      "path": "modules/synaura/guide/sa.html",
+      "title": ".synaura सम्पादकीयमार्गदर्शिका",
+      "language": "sa",
+      "category": "language"
+    },
+    {
+      "id": "page:2b51498d31fbba09",
+      "path": "modules/synaura/guide/yzh.html",
+      "title": "Руководство .synaura · русский текст",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:8b91694bfc421c01",
+      "path": "modules/synaura/guide/zh-hans.html",
+      "title": ".synaura 编辑指南",
+      "language": "zh-Hans",
+      "category": "language"
+    },
+    {
+      "id": "page:eb2db20f90061ad5",
+      "path": "modules.html",
+      "title": "карта открытых модулей · SUTI.world",
+      "language": "ru",
+      "category": "library"
+    },
+    {
+      "id": "page:884e390e8bfb1107",
+      "path": "nitya-en.html",
+      "title": "NITYA · a thread of attention",
+      "language": "en",
+      "category": "worlds"
+    },
+    {
+      "id": "page:d7b4112be8ce8503",
+      "path": "nitya-practice.html",
+      "title": "NITYA · SUTI.world",
+      "language": "ru",
+      "category": "worlds"
+    },
+    {
+      "id": "page:b4873691d6565574",
+      "path": "nitya-todeus.html",
+      "title": "NITYA × .todeus · system passport",
+      "language": "en",
+      "category": "worlds"
+    },
+    {
+      "id": "page:1db1c22ad7732230",
+      "path": "nitya.html",
+      "title": "NITYA · нить внимания",
+      "language": "ru",
+      "category": "worlds"
+    },
+    {
+      "id": "page:97a1b161311d4961",
+      "path": "openai-crystal.html",
+      "title": "semantic audits · SUTI.world",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:10e5fea1d9c32dbc",
+      "path": "pt/essence/index.html",
+      "title": "SUTI.world",
+      "language": "pt",
+      "category": "learning"
+    },
+    {
+      "id": "page:1d0d5b6a7dc26077",
+      "path": "pt/index.html",
+      "title": "SUTI.world",
+      "language": "pt",
+      "category": "learning"
+    },
+    {
+      "id": "page:35b2cdc76b9aa023",
+      "path": "ru/essence/index.html",
+      "title": "SUTI.world",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:c8e5ebe842a58681",
+      "path": "ru/index.html",
+      "title": "SUTI.world",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:b0c7afe4258a1d89",
+      "path": "samurai-dharma.html",
+      "title": "∴ самураи дхармы · SUTI.world",
+      "language": "ru",
+      "category": "worlds"
+    },
+    {
+      "id": "page:f7525812c07688a7",
+      "path": "shared/care-veche/index.html",
+      "title": "SUTI · care × veche",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:b9dde3dd986800f3",
+      "path": "shared/care-veche/portal.html",
+      "title": "SUTI.world · care × veche",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:606ace8da55dd17d",
+      "path": "suti-angels-ar.html",
+      "title": "SUTI.angels · ملائكة الرعاية",
+      "language": "ar",
+      "category": "care"
+    },
+    {
+      "id": "page:30d4dfc4b7656989",
+      "path": "suti-angels-bn.html",
+      "title": "SUTI.angels · যত্নের দেবদূতেরা",
+      "language": "bn",
+      "category": "care"
+    },
+    {
+      "id": "page:cc69daeb49e30cf5",
+      "path": "suti-angels-en.html",
+      "title": "SUTI.angels · Angels of care",
+      "language": "en",
+      "category": "care"
+    },
+    {
+      "id": "page:58dd8ba18223fa29",
+      "path": "suti-angels-eo.html",
+      "title": "SUTI.angels · Anĝeloj de zorgo",
+      "language": "eo",
+      "category": "care"
+    },
+    {
+      "id": "page:fdf4bdf56fb6dfd8",
+      "path": "suti-angels-es.html",
+      "title": "SUTI.angels · Ángeles del cuidado",
+      "language": "es-419",
+      "category": "care"
+    },
+    {
+      "id": "page:7ba903a415f782e5",
+      "path": "suti-angels-fr.html",
+      "title": "SUTI.angels · Anges du soin",
+      "language": "fr",
+      "category": "care"
+    },
+    {
+      "id": "page:b6598a72295bf355",
+      "path": "suti-angels-hi.html",
+      "title": "SUTI.angels · देखभाल के फ़रिश्ते",
+      "language": "hi",
+      "category": "care"
+    },
+    {
+      "id": "page:300b86ef6d963608",
+      "path": "suti-angels-la.html",
+      "title": "SUTI.angels · Angeli curae",
+      "language": "la",
+      "category": "care"
+    },
+    {
+      "id": "page:3818dbc63e936fac",
+      "path": "suti-angels-pt.html",
+      "title": "SUTI.angels · Anjos do cuidado",
+      "language": "pt-BR",
+      "category": "care"
+    },
+    {
+      "id": "page:5127dd7d6562fd15",
+      "path": "suti-angels-sa.html",
+      "title": "SUTI.angels · परिचर्यायाः सन्देशवाहकाः",
+      "language": "sa",
+      "category": "care"
+    },
+    {
+      "id": "page:a5574d3ed12378e2",
+      "path": "suti-angels-yzh.html",
+      "title": "SUTI.angels · Ангелы заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:f3b8deef9c83e82d",
+      "path": "suti-angels-zh-Hans.html",
+      "title": "SUTI.angels · 关怀天使",
+      "language": "zh-Hans",
+      "category": "care"
+    },
+    {
+      "id": "page:dd53d24f708be678",
+      "path": "suti-angels.html",
+      "title": "SUTI.angels · Ангелы заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:3d79b74e38e7adfc",
+      "path": "synaura-modules.html",
+      "title": "Synaura × Syntaxium · открытые модули · SUTI.world",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:8fb076bb3f78d048",
+      "path": "synaura.html",
+      "title": ".synaura · предпочтительный стиль · SUTI.world",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:3732d3ae4524bcfe",
+      "path": "system/_techne/human/collective-living-system-v1/README.html",
+      "title": "SUTI · общая живая система",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:8a98dbd06e160cb4",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ar.html",
+      "title": "بوت الرعاية × البنية التعاونية لـ SUTI",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:862fa23c8bbd02e4",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.bn.html",
+      "title": "যত্নের বট × SUTI-এর যৌথ স্থাপত্য",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:e60cbd97d12a1b8a",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.en.html",
+      "title": "care bot × SUTI collaborative architecture",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:d935a8e910816500",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.eo.html",
+      "title": "zorga boto × komuna arkitekturo de SUTI",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:ed90f823a50935d2",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.es.html",
+      "title": "bot de cuidados × arquitectura colaborativa SUTI",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:5e1554a5daf6446c",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.fr.html",
+      "title": "bot de soin × architecture collaborative SUTI",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:faf6eed944fc74dd",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.hi.html",
+      "title": "देखभाल बॉट × SUTI की सहयोगी संरचना",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:a2762fda972b9e2c",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.la.html",
+      "title": "robotum curae × architectura communis SUTI",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:efd98fd8f01cbb6e",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.pt-br.html",
+      "title": "bot de cuidado × arquitetura colaborativa SUTI",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:4268b49665c721dd",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.ru.html",
+      "title": "бот заботы × совместная архитектура SUTI",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:029aff9480cea6cb",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.sa.html",
+      "title": "परिचर्याबॉट् × SUTI-सहकार्यविन्यासः",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:73508fc36f9ae20a",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.yzh.html",
+      "title": "YZH :: бот заботы · полный русский смысловой глосс",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:49bf6ca1087bab01",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/bot-and-collaboration-spec.zh-hans.html",
+      "title": "关怀机器人 × SUTI 协作架构",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:438a8228e6559412",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ar.html",
+      "title": "تقويم 90 يومًا",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:595c3681fb0383b6",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.bn.html",
+      "title": "৯০ দিনের ক্যালেন্ডার",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:a9da9e480a708995",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.en.html",
+      "title": "90-day calendar",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:99e57db0a6084785",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.eo.html",
+      "title": "90-taga kalendaro",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:2767b06a1ed45d70",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.es.html",
+      "title": "calendario de 90 días",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:7bf3517cc488b2b7",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.fr.html",
+      "title": "calendrier de 90 jours",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:6baede3dcf618f13",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.hi.html",
+      "title": "90 दिनों का कैलेंडर",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:ebc51b6e70a58b5d",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.la.html",
+      "title": "calendarium 90 dierum",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:dd1c5555b046039c",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.pt-br.html",
+      "title": "calendário de 90 dias",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:733e6d6294d7141b",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.ru.html",
+      "title": "календарь на 90 дней",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:c15e0f7fa20b85ef",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.sa.html",
+      "title": "९०-दिवसदिनदर्शिका",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:f9f59dbd2f479cf1",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.yzh.html",
+      "title": "90 дней · русская глосса",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:e73bb9373f8cbf71",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/calendar-90-days.zh-hans.html",
+      "title": "90天日历",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:27293eddbacc83ac",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.ar.html",
+      "title": "صندوق دعم الحياة × وكالة ملائكة الرعاية",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:e01fcd765e62a7ee",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.bn.html",
+      "title": "জীবনকে সহায়তার তহবিল × যত্নদূতদের সংস্থা",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:501cd3e83df005d5",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.en.html",
+      "title": "life support fund × agency of care angels",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:65855139062aada9",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.eo.html",
+      "title": "fonduso por subteni la vivon × agentejo de zorgaj anĝeloj",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:e384393670cd3ec5",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.es.html",
+      "title": "fondo de apoyo a la vida × agencia de ángeles del cuidado",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:dd31081d055adc32",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.fr.html",
+      "title": "fonds de soutien à la vie × agence des anges du soin",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:f736cfa389678aa7",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.hi.html",
+      "title": "जीवन-सहायता निधि × देखभाल के दूतों की एजेंसी",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:e4eff3e09984dbb2",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.la.html",
+      "title": "fundus ad vitam sustinendam × agentia angelorum curae",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:aca025cc01ff8f59",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.pt-br.html",
+      "title": "fundo de apoio à vida × agência de anjos do cuidado",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:35fd246f91b5fa7d",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.ru.html",
+      "title": "фонд поддержки жизни × агентство ангелов заботы",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:d24f0696c28ecf8a",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.sa.html",
+      "title": "जीवनसमर्थननिधिः × परिचर्यादूतानां संस्था",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:95ccad9d5ca63534",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.yzh.html",
+      "title": "план заботы · YZH · русская смысловая глосса",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:9d37833e2eee4e2f",
+      "path": "system/_techne/human/collective-living-system-v1/fund-plan/plan.zh-hans.html",
+      "title": "生命支持基金 × 关怀天使机构",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:b8108da06e219d14",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · проверка",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:f145b5829682621e",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · сотрудничество",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:fae1937e6bb7fb6f",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · ясная форма",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:f1a472c09affaf70",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.game/living-system.html",
+      "title": "SUTI.game · добровольная практика",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:e08cff70aa520fa5",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · исследование",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:270492dd1fd68aa8",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · язык и транскреация",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:dfa15c81e24411db",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · различение оснований",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:616f375d1a9fbf72",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.os/living-system.html",
+      "title": "SUTI.os · устройство системы",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:cf454908f64a903e",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · связи и происхождение",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:41d4964128f778a4",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · самообразование",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:964d4887cce70931",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · совместное рассмотрение",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:3e0f60d72cf0ee4e",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · навигация заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:779e7e94dcdef900",
+      "path": "system/_techne/human/collective-living-system-v1/ru/SUTI.world/living-system.html",
+      "title": "SUTI.world · публичный вход",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:fc5c24b323cc2798",
+      "path": "system/_techne/human/collective-living-system-v1/ru/care-90-days.html",
+      "title": "фонд поддержки жизни и любящих жизнь · агентство ангелов заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:2b3240440fafc68a",
+      "path": "system/_techne/human/collective-living-system-v1/ru/living-system.html",
+      "title": "SUTI · общая живая система",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:1aa654781c3eb92e",
+      "path": "system/_techne/site/collective-living-system-v1/index.html",
+      "title": "SUTI · общая живая система",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:4d2ae51e6f3e182a",
+      "path": "system/_techne/site/collective-living-system-v1/portal.html",
+      "title": "SUTI · общая живая система",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:8b3520fa9f0230c3",
+      "path": "system/ar/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · الفحص",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:e9c9ee83fc21dd22",
+      "path": "system/ar/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · التعاون",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:1d064e0cc6135eed",
+      "path": "system/ar/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · صياغة واضحة",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:816706cc102f78a5",
+      "path": "system/ar/SUTI.game/living-system.html",
+      "title": "SUTI.game · ممارسة طوعية",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:a6fc54b210b669a3",
+      "path": "system/ar/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · البحث",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:7545217854a301ee",
+      "path": "system/ar/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · اللغة وإعادة الصياغة عبر اللغات",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:129cf5e6d39974d6",
+      "path": "system/ar/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · تمييز الأسانيد",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:c56ce18fb6358dd9",
+      "path": "system/ar/SUTI.os/living-system.html",
+      "title": "SUTI.os · بنية المنظومة",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:035ed83107b3766e",
+      "path": "system/ar/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · الروابط والمنشأ",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:c46f1d523a00d5a1",
+      "path": "system/ar/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · التعلّم الذاتي",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:0b9b55df01d67e87",
+      "path": "system/ar/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · النظر المشترك",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:93887320f59d2f40",
+      "path": "system/ar/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · إرشاد الرعاية",
+      "language": "ar",
+      "category": "care"
+    },
+    {
+      "id": "page:3ba7bf679c38b477",
+      "path": "system/ar/SUTI.world/living-system.html",
+      "title": "SUTI.world · المدخل العام",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:3324582a1f079db2",
+      "path": "system/ar/care-90-days.html",
+      "title": "صندوق دعم الحياة ومحبّي الحياة · وكالة ملائكة الرعاية",
+      "language": "ar",
+      "category": "care"
+    },
+    {
+      "id": "page:e00798cd116c886a",
+      "path": "system/ar/living-system.html",
+      "title": "SUTI · منظومة حيّة مشتركة",
+      "language": "ar",
+      "category": "learning"
+    },
+    {
+      "id": "page:f911e08d2d32c3b4",
+      "path": "system/bn/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · যাচাই",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:141e6fd7e8e18d6d",
+      "path": "system/bn/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · সহযোগিতা",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:b6b8a2e18c60d837",
+      "path": "system/bn/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · স্পষ্ট রূপ",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:913acbd38c5be084",
+      "path": "system/bn/SUTI.game/living-system.html",
+      "title": "SUTI.game · স্বেচ্ছামূলক অনুশীলন",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:de8005ef0a72ed4a",
+      "path": "system/bn/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · গবেষণা",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:363402410d41c2c1",
+      "path": "system/bn/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · ভাষা ও সৃজনশীল অর্থানুবাদ",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:938f6bc838845286",
+      "path": "system/bn/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · ভিত্তির পার্থক্য নির্ণয়",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:425b701c09ea6b9e",
+      "path": "system/bn/SUTI.os/living-system.html",
+      "title": "SUTI.os · ব্যবস্থার কাঠামো",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:d723dc56bd3dd61d",
+      "path": "system/bn/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · সংযোগ ও উৎসের ইতিহাস",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:9ff1c25c1bc04044",
+      "path": "system/bn/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · স্বশিক্ষা",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:fea1a491c7df7af0",
+      "path": "system/bn/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · যৌথ বিবেচনা",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:da94b64c4391474b",
+      "path": "system/bn/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · যত্নের পথনির্দেশ",
+      "language": "bn",
+      "category": "care"
+    },
+    {
+      "id": "page:7269f9c699189032",
+      "path": "system/bn/SUTI.world/living-system.html",
+      "title": "SUTI.world · উন্মুক্ত প্রবেশপথ",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:718a8c49dacc47fd",
+      "path": "system/bn/care-90-days.html",
+      "title": "জীবন ও জীবনপ্রেমীদের সহায়তা তহবিল · যত্নের দেবদূতদের সংস্থা",
+      "language": "bn",
+      "category": "care"
+    },
+    {
+      "id": "page:70f2f467c5465216",
+      "path": "system/bn/living-system.html",
+      "title": "SUTI · যৌথ জীবন্ত ব্যবস্থা",
+      "language": "bn",
+      "category": "learning"
+    },
+    {
+      "id": "page:85dc6ce7710dc2ad",
+      "path": "system/en/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · verification",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:9d46e48981602b25",
+      "path": "system/en/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · collaboration",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:a307bfacdc310725",
+      "path": "system/en/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · clear form",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:6d79b5ae52e020bb",
+      "path": "system/en/SUTI.game/living-system.html",
+      "title": "SUTI.game · voluntary practice",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:a0344b377a703b2d",
+      "path": "system/en/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · research",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:407d5eb8ef5d99c3",
+      "path": "system/en/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · language and transcreation",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:c881e946a56f0cc2",
+      "path": "system/en/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · grounds for claims",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:da4df597047fb82c",
+      "path": "system/en/SUTI.os/living-system.html",
+      "title": "SUTI.os · system structure",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:cfefdeb4509101cb",
+      "path": "system/en/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · connections and provenance",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:8e66a896e0cad7fd",
+      "path": "system/en/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · self-directed learning",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:f6dda88a5a3b9e19",
+      "path": "system/en/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · shared deliberation",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:7338475403596555",
+      "path": "system/en/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · care navigation",
+      "language": "en",
+      "category": "care"
+    },
+    {
+      "id": "page:2b84120597aa8245",
+      "path": "system/en/SUTI.world/living-system.html",
+      "title": "SUTI.world · public entry",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:b7516c528ec7284b",
+      "path": "system/en/care-90-days.html",
+      "title": "Fund supporting life and people who love life · agency of care angels",
+      "language": "en",
+      "category": "care"
+    },
+    {
+      "id": "page:492a31cc2e1a8a23",
+      "path": "system/en/living-system.html",
+      "title": "SUTI · a shared living system",
+      "language": "en",
+      "category": "learning"
+    },
+    {
+      "id": "page:b9907a84f323ff74",
+      "path": "system/eo/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · kontrolado",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:0925419c00656794",
+      "path": "system/eo/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · kunlaboro",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:8597932e6a41ada7",
+      "path": "system/eo/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · klara formo",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:16375d14b46c2edc",
+      "path": "system/eo/SUTI.game/living-system.html",
+      "title": "SUTI.game · libervola praktiko",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:1e31cd30f3806416",
+      "path": "system/eo/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · esplorado",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:c1fd8eeb28c0240d",
+      "path": "system/eo/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · lingvo kaj transkreado",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:b1176ba7b24f1c65",
+      "path": "system/eo/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · distingado de fundamentoj",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:f2476444d02c889e",
+      "path": "system/eo/SUTI.os/living-system.html",
+      "title": "SUTI.os · aranĝo de la sistemo",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:5295554aebb524dc",
+      "path": "system/eo/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · ligoj kaj deveno",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:bf0e84a63aa11305",
+      "path": "system/eo/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · memlernado",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:811612407cc4b8ab",
+      "path": "system/eo/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · komuna konsiderado",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:9959426580dadaa1",
+      "path": "system/eo/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · zorga navigado",
+      "language": "eo",
+      "category": "care"
+    },
+    {
+      "id": "page:3f66c8ad4c9123cb",
+      "path": "system/eo/SUTI.world/living-system.html",
+      "title": "SUTI.world · publika enirejo",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:387f4086dae755e2",
+      "path": "system/eo/care-90-days.html",
+      "title": "fonduso por subteni la vivon kaj tiujn, kiuj amas la vivon · agentejo de zorgaj anĝeloj",
+      "language": "eo",
+      "category": "care"
+    },
+    {
+      "id": "page:a0a8083f6160f42f",
+      "path": "system/eo/living-system.html",
+      "title": "SUTI · komuna vivanta sistemo",
+      "language": "eo",
+      "category": "learning"
+    },
+    {
+      "id": "page:a03e5d87a464057e",
+      "path": "system/es/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · verificación",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:9e42144c9aea637b",
+      "path": "system/es/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · colaboración",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:3755d4ad7b9e71ab",
+      "path": "system/es/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · forma clara",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:1b9d90e3cc721fb9",
+      "path": "system/es/SUTI.game/living-system.html",
+      "title": "SUTI.game · práctica voluntaria",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:bf1fb28957243ec6",
+      "path": "system/es/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · investigación",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:e189b13914580b7f",
+      "path": "system/es/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · lengua y transcreación",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:8e4692adf5c321da",
+      "path": "system/es/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · fundamentos de las afirmaciones",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:d246f96c09c6b71b",
+      "path": "system/es/SUTI.os/living-system.html",
+      "title": "SUTI.os · estructura del sistema",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:d78d202fbe99dba9",
+      "path": "system/es/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · vínculos y procedencia",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:10931c63802e7a29",
+      "path": "system/es/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · autoaprendizaje",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:6c8d8e9ced9f6abb",
+      "path": "system/es/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · deliberación compartida",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:534e687996d65fd5",
+      "path": "system/es/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · orientación para el cuidado",
+      "language": "es",
+      "category": "care"
+    },
+    {
+      "id": "page:f65044f1749f4bf3",
+      "path": "system/es/SUTI.world/living-system.html",
+      "title": "SUTI.world · entrada pública",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:32d3002e86e27fdc",
+      "path": "system/es/care-90-days.html",
+      "title": "Fondo de apoyo a la vida y a quienes aman la vida · agencia de ángeles del cuidado",
+      "language": "es",
+      "category": "care"
+    },
+    {
+      "id": "page:bb2c16edb1ce33d0",
+      "path": "system/es/living-system.html",
+      "title": "SUTI · sistema vivo compartido",
+      "language": "es",
+      "category": "learning"
+    },
+    {
+      "id": "page:04e8aebac608331b",
+      "path": "system/fr/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · vérification",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:988011159eb1b191",
+      "path": "system/fr/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · coopération",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:64c85a9e914b33b6",
+      "path": "system/fr/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · forme claire",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:f4b9f5159daa29b9",
+      "path": "system/fr/SUTI.game/living-system.html",
+      "title": "SUTI.game · pratique volontaire",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:ca2f833f07df8d59",
+      "path": "system/fr/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · recherche",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:a086d112333fb56e",
+      "path": "system/fr/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · langage et transcréation",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:3975d33f395e48d7",
+      "path": "system/fr/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · distinction des fondements",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:2d71ba90b4fdb903",
+      "path": "system/fr/SUTI.os/living-system.html",
+      "title": "SUTI.os · organisation du système",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:a1fa78f5ab7e6a48",
+      "path": "system/fr/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · liens et provenance",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:e2a0358251557c31",
+      "path": "system/fr/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · apprentissage autonome",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:d5604de09bcf16c6",
+      "path": "system/fr/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · examen collectif",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:36188caf6a24b9cb",
+      "path": "system/fr/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · orientation dans le soutien",
+      "language": "fr",
+      "category": "care"
+    },
+    {
+      "id": "page:54945b1d2f93cb3c",
+      "path": "system/fr/SUTI.world/living-system.html",
+      "title": "SUTI.world · entrée publique",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:b0d2d639f536817f",
+      "path": "system/fr/care-90-days.html",
+      "title": "fonds de soutien à la vie et aux personnes qui aiment la vie · agence des anges de sollicitude",
+      "language": "fr",
+      "category": "care"
+    },
+    {
+      "id": "page:262901ebb53e686d",
+      "path": "system/fr/living-system.html",
+      "title": "SUTI · un système vivant partagé",
+      "language": "fr",
+      "category": "learning"
+    },
+    {
+      "id": "page:23025944cffc1307",
+      "path": "system/hi/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · जाँच",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:b6e0bd4ecae69335",
+      "path": "system/hi/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · सहयोग",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:ea5943096b8d6d76",
+      "path": "system/hi/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · स्पष्ट रूप",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:816e4113f1af4af1",
+      "path": "system/hi/SUTI.game/living-system.html",
+      "title": "SUTI.game · स्वैच्छिक अभ्यास",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:09b4792a3dd75b31",
+      "path": "system/hi/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · अनुसंधान",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:f3d0d638cd6becb3",
+      "path": "system/hi/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · भाषा और भावानुवाद",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:4ba55fb9c810381e",
+      "path": "system/hi/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · आधारों में भेद",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:3fc20905fdf3ab94",
+      "path": "system/hi/SUTI.os/living-system.html",
+      "title": "SUTI.os · प्रणाली की संरचना",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:dc22f58f954c4c4c",
+      "path": "system/hi/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · संबंध और उत्पत्ति",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:157c8fcd9d8aed18",
+      "path": "system/hi/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · स्वाध्याय",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:ebd61f3281a39ae9",
+      "path": "system/hi/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · साझा विचार-विमर्श",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:9b6b28435be89b7f",
+      "path": "system/hi/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · देखभाल की राह",
+      "language": "hi",
+      "category": "care"
+    },
+    {
+      "id": "page:5e5e63a4893f620a",
+      "path": "system/hi/SUTI.world/living-system.html",
+      "title": "SUTI.world · सार्वजनिक प्रवेश",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:4f31f92dba7e93b9",
+      "path": "system/hi/care-90-days.html",
+      "title": "जीवन और जीवनप्रेमियों की सहायता निधि · देखभाल के फ़रिश्तों की एजेंसी",
+      "language": "hi",
+      "category": "care"
+    },
+    {
+      "id": "page:15a4d4ecf74a5cca",
+      "path": "system/hi/living-system.html",
+      "title": "SUTI · साझा जीवंत प्रणाली",
+      "language": "hi",
+      "category": "learning"
+    },
+    {
+      "id": "page:14d1ecf257dbb5a2",
+      "path": "system/index.html",
+      "title": "SUTI · общественная редакционная система",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:5cde325a65b6a965",
+      "path": "system/la/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · examinatio",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:6b0ba9d3e15cade7",
+      "path": "system/la/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · cooperatio",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:426e3b2a289c8595",
+      "path": "system/la/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · forma clara",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:b016b69c6a4dbd13",
+      "path": "system/la/SUTI.game/living-system.html",
+      "title": "SUTI.game · exercitatio voluntaria",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:8efa6f28ab891beb",
+      "path": "system/la/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · investigatio",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:ffc5e9525de9bb0c",
+      "path": "system/la/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · lingua et transcreatio",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:71c214218782ba4f",
+      "path": "system/la/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · discretio fundamentorum",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:488ae21c6c88f71b",
+      "path": "system/la/SUTI.os/living-system.html",
+      "title": "SUTI.os · ordinatio systematis",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:20254d6c20cb20e6",
+      "path": "system/la/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · nexus et origo",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:5ef184a888f57d82",
+      "path": "system/la/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · doctrina propria",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:1fb07d6a544720fd",
+      "path": "system/la/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · consideratio communis",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:415b0ff33d9630cc",
+      "path": "system/la/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · navigatio curae",
+      "language": "la",
+      "category": "care"
+    },
+    {
+      "id": "page:29fa5e86eefeebd9",
+      "path": "system/la/SUTI.world/living-system.html",
+      "title": "SUTI.world · aditus publicus",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:3ccca996047e18a8",
+      "path": "system/la/care-90-days.html",
+      "title": "fundus ad vitam sustinendam et ad eos adiuvandos qui vitam amant · agentia angelorum curae",
+      "language": "la",
+      "category": "care"
+    },
+    {
+      "id": "page:0c03d898cb4beb63",
+      "path": "system/la/living-system.html",
+      "title": "SUTI · systema commune vivum",
+      "language": "la",
+      "category": "learning"
+    },
+    {
+      "id": "page:f99d015171a14a6b",
+      "path": "system/pt-br/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · verificação",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:39b8046f14a1486d",
+      "path": "system/pt-br/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · colaboração",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:e5e813c21fe6ea09",
+      "path": "system/pt-br/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · forma clara",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:174335acd42b4ee5",
+      "path": "system/pt-br/SUTI.game/living-system.html",
+      "title": "SUTI.game · prática voluntária",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:569ea875f83fc749",
+      "path": "system/pt-br/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · pesquisa",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:17c79d93233c7166",
+      "path": "system/pt-br/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · língua e transcriação",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:0c52d128364cdbe7",
+      "path": "system/pt-br/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · fundamentos das afirmações",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:4ec7f5402135c769",
+      "path": "system/pt-br/SUTI.os/living-system.html",
+      "title": "SUTI.os · estrutura do sistema",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:b54bdc848107f567",
+      "path": "system/pt-br/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · vínculos e proveniência",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:a2548313925291e5",
+      "path": "system/pt-br/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · autoaprendizagem",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:3b9d1fbc733b9ac5",
+      "path": "system/pt-br/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · deliberação compartilhada",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:af3e5944b0cd78f5",
+      "path": "system/pt-br/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · orientação para o cuidado",
+      "language": "pt-BR",
+      "category": "care"
+    },
+    {
+      "id": "page:98131a444d8c25e3",
+      "path": "system/pt-br/SUTI.world/living-system.html",
+      "title": "SUTI.world · entrada pública",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:cd923e2f771c1e1e",
+      "path": "system/pt-br/care-90-days.html",
+      "title": "Fundo de apoio à vida e a quem ama a vida · agência dos anjos do cuidado",
+      "language": "pt-BR",
+      "category": "care"
+    },
+    {
+      "id": "page:c66c8f1db359be78",
+      "path": "system/pt-br/living-system.html",
+      "title": "SUTI · sistema vivo compartilhado",
+      "language": "pt-BR",
+      "category": "learning"
+    },
+    {
+      "id": "page:d9b6ed5498dcea29",
+      "path": "system/publication-note.ar.html",
+      "title": "النشر والحقوق",
+      "language": "ar",
+      "category": "governance"
+    },
+    {
+      "id": "page:9f4eaffe86194f1e",
+      "path": "system/publication-note.bn.html",
+      "title": "প্রকাশনা ও অধিকার",
+      "language": "bn",
+      "category": "governance"
+    },
+    {
+      "id": "page:bfac30100a68a5b4",
+      "path": "system/publication-note.en.html",
+      "title": "publication and rights",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:d89a4844793e3e87",
+      "path": "system/publication-note.eo.html",
+      "title": "publikigo kaj rajtoj",
+      "language": "eo",
+      "category": "governance"
+    },
+    {
+      "id": "page:7d86de2e85e4a515",
+      "path": "system/publication-note.es.html",
+      "title": "publicación y derechos",
+      "language": "es",
+      "category": "governance"
+    },
+    {
+      "id": "page:77acd85fa5befcc1",
+      "path": "system/publication-note.fr.html",
+      "title": "publication et droits",
+      "language": "fr",
+      "category": "governance"
+    },
+    {
+      "id": "page:e6df2935e4d86eb9",
+      "path": "system/publication-note.hi.html",
+      "title": "प्रकाशन और अधिकार",
+      "language": "hi",
+      "category": "governance"
+    },
+    {
+      "id": "page:038129a5e6e39435",
+      "path": "system/publication-note.html",
+      "title": "SUTI · publication / публикация",
+      "language": "en",
+      "category": "governance"
+    },
+    {
+      "id": "page:37915c93cc822237",
+      "path": "system/publication-note.la.html",
+      "title": "publicatio et iura",
+      "language": "la",
+      "category": "governance"
+    },
+    {
+      "id": "page:3149d71024c3b191",
+      "path": "system/publication-note.pt-br.html",
+      "title": "publicação e direitos",
+      "language": "pt-BR",
+      "category": "governance"
+    },
+    {
+      "id": "page:5025678ce9c372a4",
+      "path": "system/publication-note.ru.html",
+      "title": "публикация и права",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:0865bb4945bec570",
+      "path": "system/publication-note.sa.html",
+      "title": "प्रकाशनम् अधिकाराश्च",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:76bfa52276a82672",
+      "path": "system/publication-note.yzh.html",
+      "title": "публикация и права · русский глосс",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:88ac3e8e298be153",
+      "path": "system/publication-note.zh-hans.html",
+      "title": "发布与权利",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:95ef85414985a823",
+      "path": "system/ru/SUTI.veche/living-system.html",
+      "title": "SUTI.veche",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:46d0d820ff0d7347",
+      "path": "system/sa/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · परीक्षणम्",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:6cfed75d35175544",
+      "path": "system/sa/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · सहकार्यम्",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:aef14bbdd0899917",
+      "path": "system/sa/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · स्पष्टं रूपम्",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:9dba7c826de50739",
+      "path": "system/sa/SUTI.game/living-system.html",
+      "title": "SUTI.game · स्वैच्छिकोऽभ्यासः",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:91398526aa62dc24",
+      "path": "system/sa/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · अनुसन्धानम्",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:65b85f5c106d02e5",
+      "path": "system/sa/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · भाषा भावानुवादश्च",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:f69ff0a0ef0175c5",
+      "path": "system/sa/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · आधारविवेकः",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:f2cced1b8bc9da7c",
+      "path": "system/sa/SUTI.os/living-system.html",
+      "title": "SUTI.os · व्यवस्थायाः रचना",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:692388b02c9f3910",
+      "path": "system/sa/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · सम्बन्धाः उत्पत्तिश्च",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:32e668debaec8ef1",
+      "path": "system/sa/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · स्वाध्यायः",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:15d01c234246159e",
+      "path": "system/sa/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · सामूहिकसमीक्षा",
+      "language": "sa",
+      "category": "governance"
+    },
+    {
+      "id": "page:d9db73e08a7000ad",
+      "path": "system/sa/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · परिचर्यामार्गदर्शनम्",
+      "language": "sa",
+      "category": "care"
+    },
+    {
+      "id": "page:d8e97c6a43f45a91",
+      "path": "system/sa/SUTI.world/living-system.html",
+      "title": "SUTI.world · सार्वजनिकः प्रवेशः",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:b8be7d591ca30c85",
+      "path": "system/sa/care-90-days.html",
+      "title": "जीवनस्य जीवनप्रेमिणां च समर्थननिधिः · परिचर्यादूतानां संस्था",
+      "language": "sa",
+      "category": "care"
+    },
+    {
+      "id": "page:20d1ce64eaa6a288",
+      "path": "system/sa/living-system.html",
+      "title": "SUTI · सामान्य जीवन्तव्यवस्था",
+      "language": "sa",
+      "category": "learning"
+    },
+    {
+      "id": "page:f673b298b24a0981",
+      "path": "system/yzh/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · проверка",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:bd6cea86d49914cd",
+      "path": "system/yzh/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · сотрудничество",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:1b3d767841d282c3",
+      "path": "system/yzh/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · ясная форма",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:c235df1ceb256387",
+      "path": "system/yzh/SUTI.game/living-system.html",
+      "title": "SUTI.game · добровольная практика",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:c28c9e0911403f0b",
+      "path": "system/yzh/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · исследование",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:b7a399827026b210",
+      "path": "system/yzh/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · язык и транскреация",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:e4fb9118835a1f3a",
+      "path": "system/yzh/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · различение оснований",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:93955f70f473945b",
+      "path": "system/yzh/SUTI.os/living-system.html",
+      "title": "SUTI.os · устройство системы",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:c2b48f178942d23a",
+      "path": "system/yzh/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · связи и происхождение",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:7e5e96f277144ca8",
+      "path": "system/yzh/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · самообразование",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:27ee9f15f2e599a6",
+      "path": "system/yzh/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · совместное рассмотрение",
+      "language": "ru",
+      "category": "governance"
+    },
+    {
+      "id": "page:54c7cee700249c24",
+      "path": "system/yzh/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · навигация заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:5eb1e48aa7077938",
+      "path": "system/yzh/SUTI.world/living-system.html",
+      "title": "SUTI.world · публичный вход",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:c540dbd172a5beca",
+      "path": "system/yzh/care-90-days.html",
+      "title": "фонд поддержки жизни и любящих жизнь · агентство ангелов заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:875a5d2f0dc8b63c",
+      "path": "system/yzh/living-system.html",
+      "title": "SUTI · Язэхъ · смысловая развёртка",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:4ca7c78a2a7fdd59",
+      "path": "system/zh-hans/SUTI.audit/living-system.html",
+      "title": "SUTI.audit · 核查",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:f497a174c7c041af",
+      "path": "system/zh-hans/SUTI.clan/living-system.html",
+      "title": "SUTI.clan · 协作",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:83a8529caa3a9ca7",
+      "path": "system/zh-hans/SUTI.crystal/living-system.html",
+      "title": "SUTI.crystal · 清晰表达",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:0815844c42d6fa94",
+      "path": "system/zh-hans/SUTI.game/living-system.html",
+      "title": "SUTI.game · 自愿练习",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:b7b394a27027d409",
+      "path": "system/zh-hans/SUTI.lab/living-system.html",
+      "title": "SUTI.lab · 研究",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:aa22843775a57dcc",
+      "path": "system/zh-hans/SUTI.logos/living-system.html",
+      "title": "SUTI.logos · 语言与跨语境转创",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:034bad33cb8fc122",
+      "path": "system/zh-hans/SUTI.oracle/living-system.html",
+      "title": "SUTI.oracle · 辨别依据",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:e51b65e11215167a",
+      "path": "system/zh-hans/SUTI.os/living-system.html",
+      "title": "SUTI.os · 系统结构",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:ed6c54d81ba6e7db",
+      "path": "system/zh-hans/SUTI.sotkan/living-system.html",
+      "title": "SUTI.sotkan · 联系与来源",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:4594baf63c665558",
+      "path": "system/zh-hans/SUTI.uni/living-system.html",
+      "title": "SUTI.uni · 自主学习",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:7176774d740f1c46",
+      "path": "system/zh-hans/SUTI.veche/living-system.html",
+      "title": "SUTI.veche · 共同审议",
+      "language": "zh-Hans",
+      "category": "governance"
+    },
+    {
+      "id": "page:370306de89ac6814",
+      "path": "system/zh-hans/SUTI.verenium/living-system.html",
+      "title": "SUTI.verenium · 关怀导航",
+      "language": "zh-Hans",
+      "category": "care"
+    },
+    {
+      "id": "page:d39e883c404b8028",
+      "path": "system/zh-hans/SUTI.world/living-system.html",
+      "title": "SUTI.world · 公共入口",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:9fec770ff32cbb75",
+      "path": "system/zh-hans/care-90-days.html",
+      "title": "支持生命与热爱生命者的基金 · 关怀天使机构",
+      "language": "zh-Hans",
+      "category": "care"
+    },
+    {
+      "id": "page:cca9b2ff39135b96",
+      "path": "system/zh-hans/living-system.html",
+      "title": "SUTI · 共同的活态系统",
+      "language": "zh-Hans",
+      "category": "learning"
+    },
+    {
+      "id": "page:7f64be88720be4d8",
+      "path": "text-studio.html",
+      "title": "SUTI.world · text studio",
+      "language": "ru",
+      "category": "language"
+    },
+    {
+      "id": "page:98407333c6fb9262",
+      "path": "verenium.html",
+      "title": "Verenium · мастерская заботы",
+      "language": "ru",
+      "category": "care"
+    },
+    {
+      "id": "page:3dc2475e91fb7d2a",
+      "path": "virenium.html",
+      "title": "Verenium · мастерская заботы",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:b48167dd005fb1d2",
+      "path": "world-atlas.html",
+      "title": "атлас сути мира · SUTI.worldSUTIcore · synaura · язык · забота · миры · вече",
+      "language": "ru",
+      "category": "learning"
+    },
+    {
+      "id": "page:4154cc4c49a072c6",
+      "path": "world-foundry.html",
+      "title": "мастерская миров · SUTI.worldSUTI.world",
+      "language": "ru",
+      "category": "worlds"
+    }
+  ]
+}

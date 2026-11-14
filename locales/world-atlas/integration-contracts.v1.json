@@ -1,0 +1,13 @@
+{
+  "schema": "suti.world-atlas.integration-contracts.v1",
+  "scope": "SUTI-owned local interfaces; independent external projects keep their own authorship, data and decisions",
+  "external_gateway": "NOT_IMPLEMENTED",
+  "automatic_cross_contour_import": "OFF",
+  "private_case_records_included": false,
+  "adapters": [
+    {"id":"suti.clarity-workshop","label_key":"missionVoice","summary_key":"missionLanguage","entry":"text-studio.html","capabilities":["format-selected-text","source-and-preview","protected-terms","explicit-copy"],"input":"one user-selected text","output":"editable local preview","persistence":"NONE","network":"OFF"},
+    {"id":"suti.object-source-card","label_key":"missionEvidence","summary_key":"missionStatus","entry":"shared/care-veche/portal.html#SUTI.verenium","capabilities":["type-claim","record-source-reference","retain-unknown","private-export"],"input":"selected nonpersonal object or synthetic example","output":"typed contribution; no claims about unverified object properties","persistence":"page-memory","network":"OFF"},
+    {"id":"suti.player-language-world","label_key":"worlds","summary_key":"missionChoice","entry":"world-foundry.html","capabilities":["local-geometry","editable-blueprint","manual-code-export"],"input":"explicit world title, seed, layout and size","output":"local world sketch","engine_acceptance":"NOT_TESTED","persistence":"NONE","network":"OFF"},
+    {"id":"suti.voluntary-context","label_key":"missionPrivacy","summary_key":"missionHuman","entry":"shared/care-veche/portal.html#SUTI.care","capabilities":["selected-input-only","explicit-claim-type","pause","exit","private-export"],"input":"empty by default; user-selected minimum","output":"local contribution or no record","profile_inference":"OFF","persistence":"page-memory","network":"OFF"}
+  ]
+}
