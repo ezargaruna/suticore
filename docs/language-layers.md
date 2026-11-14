@@ -294,3 +294,19 @@ and lexicon. Existing translated visitor entries and standalone pages have
 their own coverage. The NITYA link discloses an English destination where
 a matching edition is absent. The external form language may differ from
 the homepage language. Existing assets and linked services retain their own terms.
+
+## semantic audits and care app concepts
+
+The [semantic audit shelf](https://suti.world/audits.html?lang=en) and the
+[care app concept audit](https://suti.world/care-app-audit.html?lang=en) each
+offer twelve written editions. The picker keeps all thirteen language layers
+visible. Yazekh opens the labeled source edition, English on the shelf and
+Russian in the concept audit, pending authorial transcreation.
+
+Editorial translations are pending independent language review, including
+fluent review for Esperanto and specialist review for Sanskrit and Latin.
+The concept audit describes the Russian design candidate dated 11 November 2026.
+The interface translation covers headings, descriptions, controls, table
+labels and the diagram description. Linked resources retain their individual
+language and rights. The OpenAI crystal and its Obsidian archive remain
+separate from the shelf translations.

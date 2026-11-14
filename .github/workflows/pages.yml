@@ -42,9 +42,10 @@ jobs:
                   assert z.read(name) == source.read_bytes(), name
           PY
           python3 -B scripts/build_verenium_workshop.py --check
+          python3 -B scripts/build_audit_editions.py --check
           python3 -B scripts/build_samurai_dharma.py --check
           python3 -B scripts/build_care_map.py --check
-          python3 scripts/sync_single_interface_routes.py verenium.html care-map.html samurai-dharma.html
+          python3 scripts/sync_single_interface_routes.py verenium.html care-map.html samurai-dharma.html audits.html care-app-audit.html care-constellation*.html
           python3 scripts/build_care_atlas_editions.py
           python3 scripts/sync_single_interface_routes.py care-atlas.html care-atlas-en.html care-atlas-es.html care-atlas-pt.html care-atlas-zh-Hans.html care-atlas-hi.html care-atlas-fr.html care-atlas-ar.html care-atlas-bn.html care-atlas-eo.html care-atlas-sa.html care-atlas-la.html
           python3 scripts/verify_care_atlas_locales.py

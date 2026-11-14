@@ -15,14 +15,19 @@ class TitleParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
         self.in_title = False
+        self.in_head = False
         self.parts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        if tag.lower() == "title":
+        if tag == "head":
+            self.in_head = True
+        if tag == "title" and self.in_head:
             self.in_title = True
 
     def handle_endtag(self, tag: str) -> None:
-        if tag.lower() == "title":
+        if tag == "head":
+            self.in_head = False
+        if tag == "title":
             self.in_title = False
 
     def handle_data(self, data: str) -> None:

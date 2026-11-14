@@ -1,1 +1,174 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>semantic audits · SUTI.world</title><style>*{box-sizing:border-box}body{margin:auto;max-width:48rem;padding:clamp(1rem,5vw,3rem);background:linear-gradient(150deg,#e0eeea,#fff7e5);color:#243731;font:1.1rem/1.6 system-ui}h1{font:clamp(3rem,8vw,5rem)/1 Georgia,serif}section,details{background:#fffdf7;border:1px solid #afc2b7;border-radius:20px;padding:1.2rem;margin:1rem 0}button,input,textarea{font:inherit;padding:.55rem;max-width:100%}button{margin:.2rem;cursor:pointer}textarea{width:100%}a{color:#215b53}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media print{section{break-inside:avoid}body{background:white}}</style><link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1"></head><main><small>SUTI.world · research shelf</small><h1>semantic crystals</h1><p>a library of independent readings, not a league table. a crystal is a small, revisable record: a question, public evidence, a limit and a next test.</p><section><small>01 · AI tools · public evidence</small><h2>OpenAI</h2><p>what makes a helpful response different from agreement? an example of feedback, a documented rollback and a test you can repeat.</p><a href="openai-crystal.html">read the crystal →</a> · <a href="audit-crystal.zip">Obsidian copy</a></section><details><summary>how another project joins this shelf</summary><p>organise by the question people face: access, language, collaboration or correction. every record needs a date, attributable sources, a counterexample or explicit gap, and a correction path. company size does not determine placement.</p></details></main></html>
+<!doctype html><html lang="en" data-theme="day"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title data-copy="t001">semantic audits · SUTI.world</title><style>*{box-sizing:border-box}body{margin:auto;max-width:48rem;padding:clamp(1rem,5vw,3rem);background:linear-gradient(150deg,#e0eeea,#fff7e5);color:#243731;font:1.1rem/1.6 system-ui}h1{font:clamp(3rem,8vw,5rem)/1 Georgia,serif}section,details{background:#fffdf7;border:1px solid #afc2b7;border-radius:20px;padding:1.2rem;margin:1rem 0}button,input,textarea{font:inherit;padding:.55rem;max-width:100%}button{margin:.2rem;cursor:pointer}textarea{width:100%}a{color:#215b53}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media print{section{break-inside:avoid}body{background:white}}body {overflow-wrap:anywhere;text-wrap:pretty}
+:where(h1,h2,h3) {text-wrap:balance}
+:where(a,button,input,summary,select):focus-visible {
+  outline:3px solid var(--focus,#135b60);
+  outline-offset:3px;
+}
+.audit-shelf {
+  --ink:#243731;
+  --surface:#fffdf7;
+  --petrol:#215b53;
+  --line:#afc2b7;
+  color:var(--ink);
+}
+.audit-shelf a {color:var(--petrol)}
+.audit-shelf section,.audit-shelf details {
+  background:var(--surface);
+  border-color:var(--line);
+}
+:is([data-theme="night"],[data-theme="contrast"]) .audit-shelf {
+  color-scheme:dark;
+  --ink:#f4f0e8;
+  --surface:#203b3a;
+  --petrol:#a1d7ce;
+  --focus:#f0d78a;
+  --line:#58716e;
+  background:#112c2d;
+}
+[data-theme="contrast"] .audit-shelf {
+  --ink:#fff;
+  --surface:#000;
+  --petrol:#fff;
+  --focus:#ff0;
+  --line:#fff;
+  background:#000;
+}
+@media print {
+  .audit-shelf,.audit-shelf section,.audit-shelf details {color:#111;background:#fff}
+  .audit-shelf a {color:#111}
+}
+.audit-edition {padding-block:1rem}
+.audit-edition select {
+  font:inherit;
+  min-block-size:44px;
+  max-inline-size:100%;
+  color:var(--ink,#243731);
+  background:var(--surface,#fffdf7);
+}
+.audit-edition p {margin-block:.5rem 0;font-size:.95em}
+.audit-edition label {display:inline-block}
+.skip {inset-inline-start:-9999px;left:auto}
+.skip:focus {inset-inline-start:1rem;left:auto}
+.status-grid article {border-left:0;border-inline-start:3px solid var(--teal)}
+.status-grid article.hold-card {border-inline-start-color:var(--peach)}
+.note {border-left:0;border-inline-start:3px solid var(--gold)}
+th,td {text-align:start}
+[dir="rtl"] .flow li+li::before {content:"← "}
+@media(max-width:760px) {[dir="rtl"] .flow li+li::before {content:""}}
+@media print {.audit-edition label,.audit-edition select,.skip {display:none}}</style></head><body class="audit-shelf"><main><div class="audit-edition"><label for="audit-language" id="audit-language-label"></label> <select id="audit-language"></select><p id="audit-review"></p></div><small><span data-copy="t002">SUTI.world · research shelf</span></small><h1><span data-copy="t003">semantic crystals</span></h1><p><span data-copy="t004">a library of independent readings, not a league table. a crystal is a small, revisable record: a question, public evidence, a limit and a next test.</span></p><section><small><span data-copy="t005">01 · AI tools · public evidence</span></small><h2>OpenAI</h2><p><span data-copy="t006">what makes a helpful response different from agreement? an example of feedback, a documented rollback and a test you can repeat.</span></p><a href="openai-crystal.html" hreflang="en"><span data-copy="t007">read the crystal →</span></a> <small lang="en">· English</small> · <a href="audit-crystal.zip" data-audit-archive><span data-copy="t008">Obsidian copy</span></a></section><details><summary><span data-copy="t009">how another project joins this shelf</span></summary><p><span data-copy="t010">organise by the question people face: access, language, collaboration or correction. every record needs a date, attributable sources, a counterexample or explicit gap, and a correction path. company size does not determine placement.</span></p></details></main><script type="application/json" id="audit-locales">{"ru":{"t001":"семантические аудиты · SUTI.world","t002":"SUTI.world · полка исследований","t003":"семантические кристаллы","t004":"библиотека независимых разборов. каждый кристалл — короткая запись, которую можно уточнить: вопрос, открытые свидетельства, предел вывода и следующая проверка.","t005":"01 · инструменты ИИ · открытые свидетельства","t006":"чем полезный ответ отличается от простого согласия? пример обратной связи, задокументированный откат и проверка, которую можно повторить.","t007":"прочитать кристалл →","t008":"копия для Obsidian","t009":"как добавить на полку другой проект","t010":"располагай материалы по вопросу человека: доступ, язык, сотрудничество или исправление. каждой записи нужны дата, указанные источники, контрпример или явно отмеченный пробел и способ внести поправку. размер компании на расположение не влияет.","language":"язык страницы","review":"перевод с английского · независимая вычитка впереди"},"en":{"t001":"semantic audits · SUTI.world","t002":"SUTI.world · research shelf","t003":"semantic crystals","t004":"a library of independent readings, not a league table. a crystal is a small, revisable record: a question, public evidence, a limit and a next test.","t005":"01 · AI tools · public evidence","t006":"what makes a helpful response different from agreement? an example of feedback, a documented rollback and a test you can repeat.","t007":"read the crystal →","t008":"Obsidian copy","t009":"how another project joins this shelf","t010":"organise by the question people face: access, language, collaboration or correction. every record needs a date, attributable sources, a counterexample or explicit gap, and a correction path. company size does not determine placement.","language":"page language","review":"English source edition"},"es-419":{"t001":"auditorías semánticas · SUTI.world","t002":"SUTI.world · biblioteca de investigación","t003":"cristales semánticos","t004":"una biblioteca de lecturas independientes. cada cristal reúne una pregunta, evidencias públicas, un límite y una próxima prueba en un registro breve y revisable.","t005":"01 · herramientas de IA · evidencias públicas","t006":"¿qué distingue una respuesta útil de una que solo nos da la razón? un ejemplo de retroalimentación, una reversión documentada y una prueba que puedes repetir.","t007":"leer el cristal →","t008":"copia para Obsidian","t009":"cómo sumar otro proyecto a la biblioteca","t010":"organiza los proyectos según las preguntas de las personas: acceso, idioma, colaboración o corrección. cada registro necesita fecha, fuentes identificables, un contraejemplo o un vacío explícito, y una forma de proponer correcciones. el tamaño de la empresa no influye en la ubicación.","language":"idioma de la página","review":"edición traducida del inglés · revisión independiente pendiente"},"pt-BR":{"t001":"auditorias semânticas · SUTI.world","t002":"SUTI.world · estante de pesquisa","t003":"cristais semânticos","t004":"uma biblioteca de leituras independentes. cada cristal reúne uma pergunta, evidências públicas, um limite e um próximo teste em um registro breve e revisável.","t005":"01 · ferramentas de IA · evidências públicas","t006":"o que diferencia uma resposta útil de uma que apenas concorda com você? um exemplo de feedback, uma reversão documentada e um teste que você pode repetir.","t007":"ler o cristal →","t008":"cópia para Obsidian","t009":"como incluir outro projeto na estante","t010":"organize os projetos pelas questões que as pessoas enfrentam: acesso, idioma, colaboração ou correção. cada registro precisa de data, fontes identificáveis, um contraexemplo ou uma lacuna explícita e um caminho para correções. o porte da empresa não determina a posição.","language":"idioma da página","review":"edição traduzida do inglês · revisão independente pendente"},"fr":{"t001":"audits sémantiques · SUTI.world","t002":"SUTI.world · bibliothèque de recherche","t003":"cristaux sémantiques","t004":"une bibliothèque de lectures indépendantes. chaque cristal réunit une question, des éléments publics, une limite et un prochain test dans une fiche courte et révisable.","t005":"01 · outils d’IA · éléments publics","t006":"qu’est-ce qui distingue une réponse utile d’une réponse qui se contente d’approuver ? un exemple de retour, une annulation documentée et un test reproductible.","t007":"lire le cristal →","t008":"copie pour Obsidian","t009":"comment ajouter un autre projet à la bibliothèque","t010":"classer les projets selon les questions rencontrées : accès, langue, collaboration ou correction. chaque fiche précise la date, des sources identifiables, un contre-exemple ou une lacune explicite, et la marche à suivre pour corriger. la taille de l’entreprise n’influe pas sur le classement.","language":"langue de la page","review":"édition traduite de l’anglais · relecture indépendante à venir"},"ar":{"t001":"المراجعات الدلالية · SUTI.world","t002":"SUTI.world · رفّ البحث","t003":"بلّورات المعنى","t004":"مكتبة لقراءات مستقلة. البلّورة سجلّ صغير قابل للمراجعة، فيه سؤال ودليل متاح للعموم وحدّ واختبار تالٍ","t005":"01 · أدوات الذكاء الاصطناعي · أدلّة متاحة للعموم","t006":"كيف نميّز الإجابة المفيدة من مجرّد الموافقة؟ مثال على الملاحظات، وتراجع موثّق عن تغيير، واختبار يمكنك تكراره","t007":"اقرأ البلّورة","t008":"نسخة Obsidian","t009":"كيف ينضمّ مشروع آخر إلى هذا الرفّ؟","t010":"رتّب السجلّات بحسب أسئلة الناس عن الإتاحة أو اللغة أو التعاون أو التصحيح. لكلّ سجلّ تاريخ ومصادر واضحة النسبة، ومثال مضاد أو ثغرة مبيّنة، وطريقة للتصحيح. حجم الشركة لا يحدّد الموضع","language":"لغة الصفحة","review":"صياغة عربية عن الأصل الإنجليزي · المراجعة المستقلّة معلّقة"},"zh-Hans":{"t001":"语义审阅 · SUTI.world","t002":"SUTI.world · 研究书架","t003":"语义晶石","t004":"这里收录独立解读。每枚晶石都是一份可修订的短记录，写下一个问题、公开证据、一项局限和下一次检验","t005":"01 · AI 工具 · 公开证据","t006":"有帮助的回答与一味赞同有何区别？这里有一个反馈实例、一次有记录的回退，以及一项可以复做的检验","t007":"阅读晶石","t008":"Obsidian 副本","t009":"其他项目如何进入这座书架？","t010":"按人们面对的问题归类：获取与使用、语言、协作或纠正。每份记录都应注明日期、可追溯来源、反例或明确的缺口，以及纠正途径。企业规模不决定归类","language":"页面语言","review":"依据英文原稿改写 · 尚待独立审校"},"hi":{"t001":"अर्थ-समीक्षाएँ · SUTI.world","t002":"SUTI.world · शोध की अलमारी","t003":"अर्थ के स्फटिक","t004":"स्वतंत्र पाठों का संग्रह। हर स्फटिक एक छोटा, संशोधित किया जा सकने वाला रिकॉर्ड है जिसमें एक सवाल, सार्वजनिक प्रमाण, एक सीमा और अगली जाँच है","t005":"01 · AI उपकरण · सार्वजनिक प्रमाण","t006":"उपयोगी जवाब और महज़ सहमति में क्या फ़र्क है? प्रतिक्रिया का एक उदाहरण, बदलाव वापस लेने की दर्ज प्रक्रिया और दोहराई जा सकने वाली एक जाँच","t007":"स्फटिक पढ़ें","t008":"Obsidian प्रति","t009":"किसी और परियोजना को यहाँ कैसे जोड़ें?","t010":"लोगों के सवाल के आधार पर सजाएँ—पहुँच, भाषा, सहयोग या सुधार। हर रिकॉर्ड में तारीख़, पहचान योग्य स्रोत, एक प्रतिउदाहरण या स्पष्ट कमी और सुधार की राह हो। कंपनी का आकार जगह तय नहीं करता","language":"पेज की भाषा","review":"अंग्रेज़ी मूल से हिंदी रूपांतरण · स्वतंत्र समीक्षा बाकी"},"bn":{"t001":"অর্থগত পর্যালোচনা · SUTI.world","t002":"SUTI.world · গবেষণার তাক","t003":"অর্থের স্ফটিক","t004":"স্বাধীন পাঠের সংগ্রহ। প্রতিটি স্ফটিক একটি ছোট, সংশোধনযোগ্য নথি—একটি প্রশ্ন, প্রকাশ্য প্রমাণ, একটি সীমা ও পরের যাচাই","t005":"01 · AI টুল · প্রকাশ্য প্রমাণ","t006":"সহায়ক উত্তর আর নিছক সম্মতির তফাত কোথায়? প্রতিক্রিয়ার একটি উদাহরণ, নথিভুক্তভাবে পরিবর্তন ফিরিয়ে নেওয়া এবং আবার করা যায় এমন একটি যাচাই","t007":"স্ফটিকটি পড়ুন","t008":"Obsidian কপি","t009":"অন্য প্রকল্প কীভাবে এই তাকে যোগ হবে?","t010":"মানুষের প্রশ্ন অনুযায়ী সাজান—ব্যবহারের সুযোগ, ভাষা, সহযোগিতা বা সংশোধন। প্রতিটি নথিতে চাই তারিখ, চিহ্নিত করা যায় এমন উৎস, একটি বিপরীত উদাহরণ বা স্পষ্ট ঘাটতি এবং সংশোধনের পথ। প্রতিষ্ঠানের আকার দিয়ে স্থান নির্ধারিত হয় না","language":"পাতার ভাষা","review":"ইংরেজি মূল থেকে বাংলা রূপান্তর · স্বাধীন পর্যালোচনা বাকি"},"eo":{"t001":"semantikaj revizioj · SUTI.world","t002":"SUTI.world · esplora biblioteko","t003":"semantikaj kristaloj","t004":"biblioteko de sendependaj interpretoj. ĉiu kristalo estas mallonga, korektebla registro kun demando, publika pruvo, limo kaj sekva provo.","t005":"01 · iloj de artefarita inteligenteco · publikaj pruvoj","t006":"kio distingas utilan respondon de simpla konsento? ekzemplo de retrosciigo, dokumentita malfaro kaj ripetebla provo.","t007":"legi la kristalon →","t008":"kopio por Obsidian","t009":"kiel aldoni alian projekton al la biblioteko","t010":"ordigu laŭ la demandoj de homoj: aliro, lingvo, kunlaboro aŭ korekto. ĉiu registro bezonas daton, identigeblajn fontojn, kontraŭekzemplon aŭ eksplicitan mankon kaj manieron proponi korekton. la grandeco de entrepreno ne influas la lokon.","language":"lingvo de la paĝo","review":"traduko el la angla · sendependa revizio ankoraŭ mankas"},"sa":{"t001":"अर्थपरीक्षाः · SUTI.world","t002":"SUTI.world · अनुसन्धानग्रन्थालयः","t003":"अर्थस्फटिकाः","t004":"अत्र स्वतन्त्राः समीक्षाः सङ्गृहीताः, क्रमाङ्कसूची नास्ति। स्फटिकः संशोध्यः संक्षिप्तो लेखः। तस्मिन् प्रश्नः, सार्वजनिकं प्रमाणम्, सीमा, अग्रिमा परीक्षा च लिख्यन्ते।","t005":"01 · कृत्रिमबुद्धिसाधनानि · सार्वजनिकं प्रमाणम्","t006":"केवलसम्मतेः उपयोगि प्रत्युत्तरम् कथं भिद्यते? प्रतिक्रियाया उदाहरणं, पूर्वावस्थां प्रत्यागमनस्य अभिलेखः, पुनः कर्तुं शक्या परीक्षा च।","t007":"स्फटिकं पठ →","t008":"Obsidian-प्रतिः","t009":"अन्या परियोजना कथम् अस्मिन् ग्रन्थालये स्थानं लभते?","t010":"जनानां प्रश्नानुसारं लेखान् विन्यस्यताम्। विषयाः प्रवेशः, भाषा, सहकार्यम्, संशोधनं वा। प्रत्येकस्मिन् लेखे दिनाङ्कं, ज्ञातकर्तृकाणि स्रोतांसि, प्रतिदृष्टान्तं वा स्पष्टां रिक्तिं, संशोधनमार्गं च लिख। संस्थायाः परिमाणेन स्थानं न निर्णीयते।","language":"पृष्ठस्य भाषा","review":"आङ्ग्लमूलात् संस्कृतरूपान्तरस्य प्रारूपम् · स्वतन्त्रैः संस्कृतविद्भिः परीक्षणम् अवशिष्टम्"},"la":{"t001":"examina sensuum · SUTI.world","t002":"SUTI.world · bibliotheca investigationis","t003":"crystalli sensuum","t004":"collectio lectionum independentium, a qua ordines meritorum absunt. crystallus est brevis commentarius emendabilis, qui quaestionem, testimonia publica, limitem et proximam probationem continet.","t005":"01 · instrumenta intelligentiae artificialis · testimonia publica","t006":"quid responsum utile a mera assensione distinguit? exemplum responsionis emendatricis, restitutio prioris status cuius documenta adsunt et probatio quam iterare potes.","t007":"lege crystallum →","t008":"exemplar Obsidian","t009":"quomodo aliud inceptum in hanc bibliothecam recipitur","t010":"res dispone secundum quaestionem hominum, sive de accessu, sive de lingua, sive de opera communi, sive de correctione. singulis commentariis adsint dies, fontes quibus auctor tribui possit, exemplum contrarium aut lacuna aperte indicata, et via emendandi. magnitudo societatis locum non definit.","language":"lingua paginae","review":"versio Latina adumbrata ex textu Anglico · recognitio peritorum independentium adhuc pendet"}}</script>
+<script>(() => {
+  "use strict";
+  const el = id => document.getElementById(id);
+  const root = document.documentElement;
+  const editions = JSON.parse(el("audit-locales").textContent);
+  const source = root.lang;
+  const picker = el("audit-language");
+  const framed = window !== window.parent;
+  const names = {
+    ru: "русский", en: "English", "es-419": "español latinoamericano",
+    "pt-BR": "português brasileiro", fr: "français", ar: "العربية",
+    "zh-Hans": "简体中文", hi: "हिन्दी", bn: "বাংলা", eo: "Esperanto",
+    sa: "संस्कृतम्", la: "Latina", yzh: "язэхъ",
+  };
+  const aliases = { es: "es-419", pt: "pt-BR", "pt-br": "pt-BR", "zh-hans": "zh-Hans", "zh-cn": "zh-Hans" };
+  const themes = [...document.querySelectorAll("button[data-theme]")];
+  const sizes = [...document.querySelectorAll("button[data-size]")];
+
+  for (const [code, name] of Object.entries(names)) {
+    const option = new Option(name, code);
+    if (code !== "yzh") option.lang = code;
+    option.dir = code === "ar" ? "rtl" : "ltr";
+    picker.add(option);
+  }
+
+  if (framed) {
+    addEventListener("keydown", event => {
+      if (event.key === "Escape" && !event.defaultPrevented && document.activeElement !== picker) {
+        window.parent.postMessage({type: "suti:audit-dismiss"}, "*");
+      }
+    });
+    el("audit-skip")?.addEventListener("click", event => {
+      event.preventDefault();
+      el("main").focus();
+      el("main").scrollIntoView({block: "start", behavior: "instant"});
+    });
+  }
+  for (const link of document.querySelectorAll("a[href]:not([href^='#'])")) {
+    link.dataset.originalHref = link.getAttribute("href");
+    if (framed && !link.hasAttribute("download")) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  }
+
+  function applyLanguage() {
+    const requested = picker.value;
+    const language = requested === "yzh" ? source : requested;
+    const copy = editions[language];
+    root.lang = language;
+    root.dir = language === "ar" ? "rtl" : "ltr";
+    root.dataset.languageLayer = requested;
+    for (const node of document.querySelectorAll("[data-copy]")) node.textContent = copy[node.dataset.copy];
+    for (const name of ["aria-label", "data-label", "content"]) {
+      for (const node of document.querySelectorAll("[data-copy-" + name + "]")) {
+        node.setAttribute(name, copy[node.getAttribute("data-copy-" + name)]);
+      }
+    }
+    if (framed) window.parent.postMessage({
+      type: "suti:audit-title",
+      title: document.title,
+      language,
+    }, "*");
+    el("audit-language-label").textContent = copy.language;
+    const review = el("audit-review");
+    review.lang = requested === "yzh" ? "ru" : language;
+    review.dir = requested === "yzh" ? "ltr" : root.dir;
+    review.textContent = requested === "yzh"
+      ? "язэхъ · авторская редакция ожидается · показан " + (source === "ru" ? "русский" : "английский") + " исходник"
+      : copy.review;
+
+    for (const link of document.querySelectorAll("[data-original-href]")) {
+      // The custom domain serves the HTML router for this binary path.
+      const base = link.hasAttribute("data-audit-archive") &&
+        new URL(document.baseURI).hostname === "suti.world"
+        ? "https://ezargaruna.github.io/suticore/" : document.baseURI;
+      const url = new URL(link.dataset.originalHref, base);
+      const suffix = {
+        en: "", ru: "-ru", "es-419": "-es", "pt-BR": "-pt",
+        fr: "-fr", ar: "-ar", "zh-Hans": "-zh-Hans", hi: "-hi", bn: "-bn", eo: "-eo", sa: "-sa", la: "-la",
+      }[language];
+      if (link.hasAttribute("data-constellation")) {
+        url.pathname = url.pathname.replace(/\.html$/, suffix + ".html");
+        link.hreflang = language;
+      } else if (link.hasAttribute("data-localized-destination")) {
+        url.searchParams.set("lang", requested);
+      }
+      link.href = url.href;
+    }
+  }
+
+  function applyTheme(theme) {
+    root.dataset.theme = theme;
+    themes.forEach(control => control.setAttribute("aria-pressed", String(control.dataset.theme === theme)));
+  }
+  themes.forEach(button => button.addEventListener("click", () => applyTheme(button.dataset.theme)));
+  sizes.forEach(button => button.addEventListener("click", () => {
+    root.style.setProperty("--scale", button.dataset.size);
+    sizes.forEach(control => control.setAttribute("aria-pressed", String(control === button)));
+  }));
+  picker.addEventListener("change", () => {
+    applyLanguage();
+    if (!framed && location.protocol !== "file:") {
+      const url = new URL(location.href);
+      url.searchParams.set("lang", picker.value);
+      history.replaceState(history.state, "", url);
+    }
+  });
+
+  const requested = root.dataset.auditLanguage || new URLSearchParams(location.search).get("lang");
+  const slug = (requested || "").toLowerCase().replaceAll("_", "-");
+  picker.value = aliases[slug] || (Object.hasOwn(names, slug) ? slug : source);
+  applyTheme(root.dataset.theme);
+  applyLanguage();
+})();</script>
+</body></html>
