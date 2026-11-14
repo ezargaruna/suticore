@@ -64,6 +64,10 @@
         node.append(" · ", tag);
       }
     }
+    for (const link of document.querySelectorAll("[data-care-map]")) {
+      link.href = (framed ? base : "") + "care-map.html?lang=" + encodeURIComponent(requested);
+      link.hreflang = language;
+    }
     const atlasLanguage = offline ? "ru" : language;
     const suffix = { ru: "", "es-419": "-es", "pt-BR": "-pt" }[atlasLanguage] ?? "-" + atlasLanguage;
     atlas.setAttribute("href", (framed ? base : "") + "care-atlas" + suffix + ".html");

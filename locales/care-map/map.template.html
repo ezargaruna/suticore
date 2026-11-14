@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>нить заботы ∴ SUTI.world</title>
+<style>/* map-theme */</style>
+<style>
+* { box-sizing: border-box }
+body {
+  margin: 0;
+  background: var(--suti-angel-paper, #f6f3eb);
+  color: var(--suti-angel-ink, #25312c);
+  font: 1.0625rem/1.6 system-ui, sans-serif;
+}
+main { max-inline-size: 46rem; margin-inline: auto; padding: clamp(1rem, 5vw, 3rem); overflow-wrap: anywhere }
+h1 { font-size: clamp(2rem, 7vw, 4rem); line-height: 1.1 }
+fieldset, details, .weave {
+  min-inline-size: 0;
+  margin: 1rem 0;
+  padding: .85rem;
+  border: 1px solid var(--suti-angel-line, #687064);
+  border-radius: .85rem;
+  background: var(--suti-angel-card, #fffcf5);
+}
+button, select, textarea {
+  font: inherit;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding: .35rem .6rem;
+  background: var(--suti-angel-card, #fffcf5);
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+  color: inherit;
+}
+button[aria-pressed="true"] { background: var(--suti-angel-teal, #285d53); color: var(--suti-angel-card, white) }
+textarea { display: block; inline-size: 100%; min-block-size: 4rem; margin-block-end: .6rem }
+label { display: block; margin-block: .6rem }
+p { max-inline-size: 70ch }
+img { display: block; inline-size: 100%; border-radius: .85rem }
+pre { white-space: pre-wrap; overflow-wrap: anywhere }
+button, summary { cursor: pointer }
+:focus-visible { outline: 3px solid var(--suti-angel-focus, #205c51); outline-offset: 3px }
+[hidden] { display: none !important }
+.actions { display: flex; flex-wrap: wrap; gap: .4rem }
+body[data-season="autumn"] { --season-edge: #b97045 }
+body[data-season="winter"] { --season-edge: #43717f }
+body[data-season="spring"] { --season-edge: #648254 }
+body[data-season="summer"] { --season-edge: #298c82 }
+[data-theme="day"] .weave { border-inline-start: .35rem solid var(--season-edge) }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+</style>
+</head>
+<body>
+<main>
+  <small data-copy="kicker"></small>
+  <h1 data-copy="title"></h1>
+  <p data-copy="intro"></p>
+  <label for="map-language" data-copy="language"></label>
+  <select id="map-language"></select>
+  <p><small id="map-review"></small></p>
+  <div class="weave">
+    <label for="season" data-copy="seasonLabel"></label>
+    <select id="season">
+      <option value="autumn" data-copy="seasons.0"></option>
+      <option value="winter" data-copy="seasons.1"></option>
+      <option value="spring" data-copy="seasons.2"></option>
+      <option value="summer" data-copy="seasons.3"></option>
+    </select>
+    <p id="season-note" aria-live="polite"></p>
+    <small data-copy="seasonNote"></small>
+  </div>
+  <label for="depth" data-copy="depth"></label>
+  <select id="depth">
+    <option value="0" data-copy="depths.0"></option>
+    <option value="1" data-copy="depths.1"></option>
+    <option value="2" data-copy="depths.2"></option>
+  </select>
+  <p data-copy="threadsNote"></p>
+  <div id="fields"></div>
+  <p data-copy="stop"></p>
+  <p><a id="care-atlas" href="care-atlas.html" data-copy="atlas"></a></p>
+  <div class="actions">
+    <button id="build" type="button" data-copy="build"></button>
+    <button id="clear" type="button" data-copy="clear"></button>
+  </div>
+  <p id="clear-message" role="status"></p>
+  <section id="result" hidden aria-labelledby="result-title">
+    <h2 id="result-title" data-copy="result" tabindex="-1"></h2>
+    <pre id="out" dir="auto"></pre>
+    <button id="download" type="button" data-copy="download"></button>
+  </section>
+  <details>
+    <summary data-copy="flowTitle"></summary><p data-copy="flowText"></p>
+  </details>
+  <details>
+    <summary data-copy="gameTitle"></summary><p data-copy="gameText"></p><p data-copy="gamePrompt"></p>
+  </details>
+  <p><span data-copy="formText"></span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform" data-copy="formLink"></a></p>
+  <p><span data-copy="contactText"></span> <a href="https://t.me/saritamah" dir="ltr">@saritamah</a></p>
+  <p data-copy="closing"></p>
+  <noscript><p lang="ru">карта работает в браузере с JavaScript. <a href="care-atlas.html">открыть атлас заботы</a></p></noscript>
+</main>
+<script type="application/json" id="map-copy"><!-- map-copy --></script>
+<script>
+/* map-script */
+</script>
+</body>
+</html>

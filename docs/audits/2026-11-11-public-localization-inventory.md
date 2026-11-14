@@ -64,7 +64,7 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `nitya-en.html` | English | EN | Editorial English edition; independent native review pending. |
 | `nitya-todeus.html` | English | EN page + 13 phrase entries | Twelve written-language phrase drafts and one Yazekh authorial seed; no full-page transcreation. |
 | `modules.html?lang=…` | Localized catalog with separate source language labels | 12 written-language editions and Russian fallback for YZH | 74 records. Two older references to sources marked internal were removed from public navigation. Native review remains pending. See the [catalog coverage and rights record](../../locales/module-catalog/coverage.json). |
-| `care-map.html` | Russian | RU | Russian reflection flow; seasonal controls are visual choices, not locale support. |
+| `care-map.html?lang=…` | Personal reflection, 13 threads, seasonal prompts and text export | 12 written editions and labeled Russian fallback for Yazekh | Local drafts with independent or qualified review pending. The offline ZIP contains the same interface. Existing art and linked forms retain separate rights and coverage. |
 | `care-atlas.html` | Russian | RU | Source guide; discloses that it is not medical/emergency support and requests are not auto-routed; links to all written editions and marks YZH `HOLD`. |
 | `care-atlas-en.html` | English (`en`) | EN | Full editorial draft; age/consent boundaries and service limits retained; independent review pending. |
 | `care-atlas-es.html` | Latin American Spanish (`es-419`) | ES-419 | Full editorial draft; age/consent boundaries and service limits retained; independent linguistic/cultural review pending. |

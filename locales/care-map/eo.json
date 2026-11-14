@@ -1,0 +1,183 @@
+{
+  "title": "fadeno de zorgo",
+  "kicker": "SUTI.world ∴ persona laborejo",
+  "intro": "vi povas kunporti unu vorton aŭ tutan projekton. por ambaŭ estas loko. viaj respondoj restas en ĉi tiu foliumila langeto ĝis vi mem konservos aŭ dividos ilin.",
+  "language": "lingvo de la mapo",
+  "review": "redakcia traduko · sendependa lingva revizio ankoraŭ atendata",
+  "seasonLabel": "la kvar ĉapeloj de Freyja · elektu teksturon",
+  "seasons": [
+    "aŭtuno · lano kaj kuprokolora acero",
+    "vintro · felto kaj blua prujno",
+    "printempo · lino kaj pistakverdo",
+    "somero · kotono kaj marakvo"
+  ],
+  "seasonPrompts": [
+    "kion vi ŝatus kunporti en la varmon?",
+    "kio helpus vin ripozi hodiaŭ?",
+    "al kio vi ŝatus doni etan unuan ŝancon?",
+    "kion vi ŝatus dividi dum vi ankoraŭ havas energion?"
+  ],
+  "seasonNote": "jen aŭtora bildo de SUTI. vi povas ŝanĝi la sezonon kaj konservi viajn respondojn.",
+  "depth": "profundo",
+  "depths": [
+    "unua tuŝo · elektu vortojn",
+    "iom pli proksime · aldonu frazon",
+    "pli profunde · trovu distingon kaj paŝon"
+  ],
+  "threadsNote": "la sep lumportantoj apartenas al aŭtora rakonto. la nomoj de la ĉakroj estas bildoj por la demandoj. elektu unu fadenon aŭ provu ĉiujn sep, kun okono laŭvole. poste venas kvin demandoj laŭ la elementoj.",
+  "stop": "vi povas halti ĉi tie. dankon pro tio, kion vi elektis dividi. elektu unu fadenon por kunporti.",
+  "atlas": "atlaso de reciproka zorgo",
+  "build": "faru mian kunfandan mapon",
+  "clear": "viŝi",
+  "cleared": "via mapo kaj viaj respondoj estas viŝitaj",
+  "result": "mia mapo por hodiaŭ",
+  "download": "konservi kiel tekston",
+  "empty": "vi povas lasi la mapon malplena",
+  "flowTitle": "la fluo Sviorenukh · lasi foriri",
+  "flowText": "kiel mara brizo post varmega tago. enspiru kaj demandu al vi, kion vi ŝatus lasi foriri kaj kion vi ŝatus konservi. unu vorto sufiĉas. vi povas simple resti ĉi tie.",
+  "gameTitle": "laborejo Samurai Dharma · luda tavolo",
+  "gameText": "provu unu maskon. la pajaco ŝanĝas vidpunkton, Finist provas denove, la flamengo serĉas kuneston, Dragonis gardas limon kaj anĝelo de zorgo petas permeson. jen roloj por hodiaŭ.",
+  "gamePrompt": "la dek du donacoj kaj la sep lumportantoj estas aŭtoraj bildoj. esprimu la saman peton per la voĉo de du maskoj. kiu versio lasas pli da spaco por elekti?",
+  "formText": "se vi ŝatus dividi ion kun la organizanto, malfermu la apartan formularon kaj kopiu nur la vortojn, kiujn vi elektas. la mapo nenion sendas aŭtomate.",
+  "formLink": "zorgoformularo · en la angla kaj la rusa",
+  "contactText": "se vi volas, sendu al mi unu frazon. mi povas aŭskulti kaj diri, kian helpon mi povas proponi. se temas pri alia persono, vi povas transdoni la kontakton kaj lasi al tiu persono la decidon, ĉu skribi.",
+  "closing": "piedoj sur la planko. unu spiro. glaso da akvo. iru nur tiel profunden, kiel konvenas al vi hodiaŭ.",
+  "zones": [
+    [
+      "enradikiĝo · muladhara — kion via korpo bezonas nun?",
+      [
+        "manĝaĵo",
+        "ŝirmejo",
+        "trankvilo",
+        "ripozo"
+      ],
+      "kio helpus hodiaŭ?",
+      "kiun etan paŝon vi povas fari ĝuste nun?"
+    ],
+    [
+      "sensoj · svadhisthana — kio senteblas agrabla?",
+      [
+        "varmo",
+        "akvo",
+        "movo",
+        "paŭzo"
+      ],
+      "kion vi ŝatus havi iom pli multe?",
+      "kie estas via limo?"
+    ],
+    [
+      "volo · manipura — kio estas en viaj manoj?",
+      [
+        "elekti",
+        "peti",
+        "prokrasti"
+      ],
+      "kiu decido estas via nun?",
+      "kian ŝarĝon vi povas demeti?"
+    ],
+    [
+      "koro · anahata — kian zorgon vi ŝatus?",
+      [
+        "esti aŭskultata",
+        "havi iun proksime",
+        "trovi miajn homojn"
+      ],
+      "kion subteno signifas por vi?",
+      "vi povas diri, ke vi bezonas spacon bonvenigan al kviraj homoj, sen rakonti vian personan historion"
+    ],
+    [
+      "voĉo · vishuddha — kion vi ŝatus diri?",
+      [
+        "jes",
+        "ne",
+        "ne nun",
+        "en alia lingvo"
+      ],
+      "kiun frazon vi serĉas?",
+      "kiel vi povus diri tion por ke oni komprenu vin?"
+    ],
+    [
+      "rigardo · ajna — kio fariĝis pli klara?",
+      [
+        "mi vidas ligon",
+        "mi dubas",
+        "mi bezonas alian vidpunkton"
+      ],
+      "kion vi rimarkas?",
+      "kio helpus vin kontroli vian supozon?"
+    ],
+    [
+      "radiado · sahasrara — kio donas signifon al via vivo?",
+      [
+        "kreemo",
+        "proksimeco",
+        "libereco",
+        "mi ankoraŭ ne scias"
+      ],
+      "kion vi ŝatus protekti?",
+      "kiu ago povus esprimi tion en la ĉiutaga vivo?"
+    ],
+    [
+      "komuna kampo · transpersona — kion vi ŝatus interŝanĝi?",
+      [
+        "tempon",
+        "kapablon",
+        "projekton",
+        "mi bezonas helpon",
+        "preterlasi"
+      ],
+      "ĉu komuna projekto allogas vin?",
+      "kiuj kondiĉoj igus la interŝanĝon farebla por vi?"
+    ],
+    [
+      "tero · apogo",
+      [
+        "ripozo",
+        "manĝaĵo",
+        "sekura loko"
+      ],
+      "kio donus pli da stabileco al via tago?",
+      "kian helpon vi povus akcepti?"
+    ],
+    [
+      "akvo · ŝanĝo",
+      [
+        "ŝanĝi ritmon",
+        "lasi foriri",
+        "provi alimaniere"
+      ],
+      "kie vi ŝatus ŝanĝi la ritmon?",
+      "kion vi povus fari pli milde?"
+    ],
+    [
+      "fajro · deziro",
+      [
+        "komenci",
+        "krei",
+        "varmiĝi"
+      ],
+      "kio ekbruligas fajreron, eĉ por kvin minutoj?",
+      "kian unuan provon vi bonvenigus?"
+    ],
+    [
+      "aero · spaco",
+      [
+        "paroli",
+        "silenti",
+        "liberigi tempon"
+      ],
+      "al kio vi ŝatus doni pli da spaco?",
+      "kiu limo helpus?"
+    ],
+    [
+      "etero · revo",
+      [
+        "krei",
+        "senti",
+        "permesi al mi ion"
+      ],
+      "imagu, ke ĉio eblas dum unu minuto. pri kio vi revas?",
+      "kiun parton de tiu revo vi ŝatus enporti en la hodiaŭan tagon?"
+    ]
+  ]
+}

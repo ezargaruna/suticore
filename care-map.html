@@ -1,16 +1,446 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>нить заботы ∴ SUTI.world</title><style>*{box-sizing:border-box}body{margin:0;background:#f6f3eb;color:#25312c;font:1.06rem/1.55 system-ui}main{max-width:46rem;margin:auto;padding:clamp(1rem,5vw,3rem)}h1{font:clamp(2.4rem,8vw,4rem)/1.05 Georgia,serif}small{color:#365e55}fieldset,details{border:1px solid #a8bbb3;border-radius:14px;padding:1rem;margin:1rem 0}legend{font-weight:650}button,select,textarea{font:inherit}button,select{padding:.45rem .8rem;margin:.15rem;background:#fffdf6;border:1px solid #497166;border-radius:1rem;color:inherit}button[aria-pressed=true]{background:#285d53;color:white}textarea{display:block;width:100%;min-height:4rem;margin:.5rem 0;background:#fffdf6;color:inherit}a{color:#245c52}pre{white-space:pre-wrap;overflow-wrap:anywhere}:focus-visible{outline:3px solid #a55317}summary{cursor:pointer}body{background:radial-gradient(ellipse at 96% 2%,#ffe9ae 0,transparent 28rem),linear-gradient(165deg,#dfefea,#faf3e6 40%,#f2d7c5)}fieldset,details{background:#fffcf5}legend{color:#285d53}main>small{display:block;border-top:3px solid #b97045;padding-top:1rem}body{--air:#e5ece3;--cloth:#fbf6ea;--edge:#c6a580;background:radial-gradient(ellipse at 95% 0,#ffdf9a,transparent 32rem),linear-gradient(155deg,var(--air),var(--cloth) 48%,#f4d9c7)}body[data-season=winter]{--air:#d8e7ec;--cloth:#f8f8f2;--edge:#94aeb5}body[data-season=spring]{--air:#ddeed8;--cloth:#fff6eb;--edge:#9eb59b}body[data-season=summer]{--air:#ccebe5;--cloth:#fff2da;--edge:#b7ab72}fieldset,details{background:var(--cloth);border-color:var(--edge)}.weave{padding:1rem;border-block:1px solid var(--edge);background:repeating-linear-gradient(92deg,transparent 0 4px,#ad865410 4px 5px),repeating-linear-gradient(2deg,transparent 0 5px,#ad865410 5px 6px),var(--cloth)}.weave label,.weave select{display:block}.weave select{max-width:100%}</style><link rel="stylesheet" href="https://ezargaruna.github.io/suticore/assets/css/suti-angels-editorial.css?v=20261111-clean1"></head><main><small>SUTI.world ∴ личная мастерская</small><h1>нить заботы</h1><p>можно прийти с одним словом. можно принести целый проект. здесь не нужно доказывать, кто ты. твои ответы остаются в этой вкладке, пока ты сам не сохранишь или не передашь их.</p><div class="weave"><label for="season">четыре шляпы Фреи · выбери ткань</label><select id="season"><option value="autumn">осень · шерсть и медный клён</option><option value="winter">зима · войлок и синий иней</option><option value="spring">весна · лён и фисташка</option><option value="summer">лето · хлопок и морская вода</option></select><p id="season-note" aria-live="polite">что хочется взять с собой в тепло?</p><small>авторский образ SUTI. сезон можно менять, ответы останутся на месте.</small></div><label>глубина <select id="depth"><option value="0">первое касание · выбрать слова</option><option value="1">чуть ближе · добавить свою фразу</option><option value="2">глубже · найти различие и шаг</option></select></label><p>дивы семи светил - авторская мистерия. названия чакр здесь служат образами для вопросов. выбери одну нить или пройди все семь; восьмая - по желанию.</p><div id="fields"></div><p>можно остановиться здесь. спасибо за то, чем ты захотел поделиться. выбери одну нить, которую возьмёшь с собой.</p><a href="care-atlas.html">атлас взаимной заботы →</a><br><button id="build">собрать мою fusion-карту</button><button id="clear">очистить</button><section hidden id="result"><h2>моя карта на сегодня</h2><pre id="out"></pre><button id="download">сохранить текст</button></section><details><summary>поток свиоренух · поток очищения</summary><p>как морской бриз после жаркого дня. можно выдохнуть и спросить себя: что я хочу отпустить? что хочу сохранить? одного слова достаточно. можно просто побыть здесь.</p></details><details><summary>мастерская Samurai Dharma · игровой слой</summary><p>выбери маску для одной пробы: скоморох меняет ракурс, Финист пробует заново, фламинго ищет компанию, драгонис держит границу, ангел заботы спрашивает разрешения. это роли на сегодня, не типы людей.</p><p>12 даров одоления и дивы семи светил - авторские образы мастерской. здесь достаточно одной пробы: скажи просьбу от лица двух масок. какая версия оставляет больше выбора?</p></details><p>чтобы поделиться с организатором, открой <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform">анкету заботы</a> и перенеси только выбранные слова. ничего не отправляется автоматически.</p><p>если хочется, напиши мне одну фразу: <a href="https://t.me/saritamah">@saritamah</a>. я могу выслушать и честно сказать, чем могу помочь. если речь о близком - передай ему контакт. пусть он сам выберет, писать ли.</p><p>ступни на полу. выдох. стакан воды.<br>столько глубины, сколько сегодня в радость.</p></main><script>
-const zones=[["опора · муладхара - что сейчас нужно телу?", ["еда", "кров", "тишина", "отдых"], "что помогло бы сегодня?", "какой маленький шаг доступен прямо сейчас?"], ["ощущения · свадхистхана - что тебе приятно?", ["тепло", "вода", "движение", "пауза"], "чего хочется чуть больше?", "где проходит твоя граница?"], ["воля · манипура - что в твоих силах?", ["выбрать", "попросить", "отложить"], "какой выбор сейчас твой?", "что можно не брать на себя?"], ["сердце · анахата - какой заботы хочется?", ["выслушать", "побыть рядом", "найти своих"], "что для тебя значит поддержка?", "можно назвать потребность в квир-дружественном пространстве без личной истории."], ["голос · вишуддха - что хочется сказать?", ["да", "нет", "не сейчас", "на другом языке"], "какую фразу ты ищешь?", "как сказать её так, чтобы тебя поняли?"], ["взгляд · аджна - что стало яснее?", ["вижу связь", "есть сомнение", "нужен другой взгляд"], "что ты замечаешь?", "что помогло бы проверить догадку?"], ["светимость · сахасрара - что придаёт смысл?", ["творчество", "близость", "свобода", "пока не знаю"], "что хочется сберечь?", "какой поступок выразит это в обычной жизни?"], ["общее поле · трансперсональное - чем хочется обменяться?", ["время", "умение", "проект", "нужна помощь", "пропустить"], "есть ли общее дело, к которому тянет?", "какие условия сделают обмен посильным?"]];
-zones.push(
-['земля · опора',['отдых','еда','надёжное место'],'что сделало бы день устойчивее?','какую помощь можно принять?'],
-['вода · перемена',['сменить темп','отпустить','попробовать иначе'],'где хочется сменить темп?','что можно сделать мягче?'],
-['огонь · желание',['начать','творить','согреться'],'что зажигает искру хотя бы на пять минут?','какой первой пробе ты рад?'],
-['воздух · простор',['поговорить','помолчать','освободить время'],'чему хочется дать больше места?','какая граница поможет?'],
-['эфир · мечта',['создать','почувствовать','позволить себе'],'представь, что на минуту возможно всё. о чём ты мечтаешь?','что из этой мечты хочется взять в сегодняшний день?']);
-const $=id=>document.getElementById(id),rows=[];function el(tag,txt){let e=document.createElement(tag);e.textContent=txt;return e}
-for(const [i,[q,choices,short,deep]] of zones.entries()){if([0,8,12].includes(i)){let pic=el('img','');pic.src='assets/care/'+({0:'shore',8:'tide',12:'dawn'}[i])+'.png';pic.alt='';pic.style='width:100%;border-radius:18px';$('fields').append(pic)}let box=el('fieldset','');box.append(el('legend',(i+1)+' · '+q));let bs=[];for(const v of choices){let b=el('button',v);b.setAttribute('aria-pressed','false');b.onclick=()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!=='true');refresh()};bs.push(b);box.append(b)}let ls=[short,deep].map(v=>{let l=el('label',v),t=el('textarea','');t.oninput=refresh;l.append(t);box.append(l);return l});rows.push({q,bs,ls});$('fields').append(box)}
-function level(){rows.forEach(r=>r.ls.forEach((l,i)=>l.hidden=i>=+$('depth').value));refresh()}
-function note(){return rows.map(({q,bs,ls})=>[q,[...bs.filter(b=>b.getAttribute('aria-pressed')==='true').map(b=>b.textContent),...ls.filter(l=>!l.hidden).map(l=>l.lastChild.value.trim())].filter(Boolean).join(' · ')]).filter(r=>r[1]).map(r=>r.join('\n')).join('\n\n')}
-function refresh(){if(!$('result').hidden)$('out').textContent=note()||'можно оставить карту пустой.'}
-$('depth').onchange=level;$('build').onclick=()=>{$('result').hidden=false;refresh();$('result').scrollIntoView()};$('clear').onclick=()=>{rows.forEach(r=>{r.bs.forEach(b=>b.setAttribute('aria-pressed','false'));r.ls.forEach(l=>l.lastChild.value='')});$('result').hidden=true;$('out').textContent='';$('depth').value='0';level()};$('download').onclick=()=>{let u=URL.createObjectURL(new Blob([note()],{type:'text/plain;charset=utf-8'})),a=el('a','');a.href=u;a.download='моя карта.txt';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};level()
-const seasons={autumn:'что хочется взять с собой в тепло?',winter:'что поможет тебе отдохнуть сегодня?',spring:'чему хочется дать первый маленький шанс?',summer:'чем хочется поделиться, пока есть силы?'};document.getElementById('season').onchange=e=>{document.body.dataset.season=e.target.value;document.getElementById('season-note').textContent=seasons[e.target.value]};
-</script></html>
+<!doctype html>
+<html lang="ru" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>нить заботы ∴ SUTI.world</title>
+<style>:root {
+  --suti-angel-paper: #eee8dc;
+  --suti-angel-card: #fbf8f1;
+  --suti-angel-ink: #26363a;
+  --suti-angel-petrol: #123f46;
+  --suti-angel-teal: #135b60;
+  --suti-angel-aqua: #b9d9d1;
+  --suti-angel-moss: #77856b;
+  --suti-angel-copper: #b98c49;
+  --suti-angel-line: #cbd8d5;
+  --suti-angel-focus: #135b60;
+}
+
+/* The main site stores its theme on <html>; map its tokens to this shared skin */
+html[data-theme="day"] {
+  --suti-angel-paper: var(--suti-bg, #eee8dc);
+  --suti-angel-card: var(--suti-surface, #fbf8f1);
+  --suti-angel-ink: var(--suti-text, #26363a);
+  --suti-angel-petrol: var(--suti-structure, #123f46);
+  --suti-angel-teal: var(--suti-link, #135b60);
+  --suti-angel-line: var(--suti-line, #cbd8d5);
+  --suti-angel-focus: var(--suti-focus, #135b60);
+}
+
+html[data-theme="night"] {
+  --suti-angel-paper: var(--suti-bg, #112c2d);
+  --suti-angel-card: var(--suti-surface, #203b3a);
+  --suti-angel-ink: var(--suti-text, #f4f0e8);
+  --suti-angel-petrol: var(--suti-structure, #c0ddd7);
+  --suti-angel-teal: var(--suti-link, #a1d7ce);
+  --suti-angel-line: var(--suti-line, #58716e);
+  --suti-angel-focus: var(--suti-focus, #f0d78a);
+  color-scheme: dark;
+}
+
+html[data-theme="contrast"] {
+  --suti-angel-paper: var(--suti-bg, #000);
+  --suti-angel-card: var(--suti-surface, #000);
+  --suti-angel-ink: var(--suti-text, #fff);
+  --suti-angel-petrol: var(--suti-structure, #fff);
+  --suti-angel-teal: var(--suti-link, #fff);
+  --suti-angel-line: var(--suti-line, #fff);
+  --suti-angel-focus: var(--suti-focus, #ff0);
+  color-scheme: light;
+}
+
+html {
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--suti-angel-ink);
+  background-color: var(--suti-angel-paper);
+  font-family: "SUTI Manrope", Manrope, system-ui, sans-serif;
+  font-size: clamp(1rem, 0.98rem + 0.15vw, 1.08rem);
+  line-height: 1.68;
+  font-kerning: normal;
+}
+
+:where(h1, h2, h3, h4) {
+  font-family: "SUTI Nunito", "Nunito Sans", system-ui, sans-serif;
+  line-height: 1.16;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+:where(p, li, blockquote, label, summary) {
+  text-wrap: pretty;
+}
+
+:where(a) {
+  color: var(--suti-angel-teal);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+:where(button, input, textarea, select) {
+  font: inherit;
+}
+
+:where(button, [role="button"], summary) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--suti-angel-focus);
+  outline-offset: 3px;
+}
+
+:root:is([data-theme="night"], [data-vlight="ночь"], [data-vlight="луна"]) body {
+  --suti-angel-paper: #112c2d;
+  --suti-angel-card: #203b3a;
+  --suti-angel-ink: #f4f0e8;
+  --suti-angel-petrol: #c0ddd7;
+  --suti-angel-teal: #a1d7ce;
+  --suti-angel-aqua: #456d6a;
+  --suti-angel-moss: #bac8a9;
+  --suti-angel-copper: #e0bd79;
+  --suti-angel-line: #58716e;
+  --suti-angel-focus: #f0d78a;
+  color-scheme: dark;
+}
+
+:root:is([data-theme="contrast"], [data-vlight="контраст"]) body {
+  --suti-angel-paper: #000;
+  --suti-angel-card: #000;
+  --suti-angel-ink: #fff;
+  --suti-angel-petrol: #fff;
+  --suti-angel-teal: #fff;
+  --suti-angel-aqua: #fff;
+  --suti-angel-moss: #fff;
+  --suti-angel-copper: #ff0;
+  --suti-angel-line: #fff;
+  --suti-angel-focus: #ff0;
+  color-scheme: dark;
+}
+
+:where(.gratitude-card, .music-card) {
+  background: var(--suti-angel-card) !important;
+  border-color: var(--suti-angel-line) !important;
+  box-shadow: none !important;
+}
+
+.nitya-portal::before {
+  content: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (forced-colors: active) {
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline-color: Highlight;
+  }
+}</style>
+<style>
+* { box-sizing: border-box }
+body {
+  margin: 0;
+  background: var(--suti-angel-paper, #f6f3eb);
+  color: var(--suti-angel-ink, #25312c);
+  font: 1.0625rem/1.6 system-ui, sans-serif;
+}
+main { max-inline-size: 46rem; margin-inline: auto; padding: clamp(1rem, 5vw, 3rem); overflow-wrap: anywhere }
+h1 { font-size: clamp(2rem, 7vw, 4rem); line-height: 1.1 }
+fieldset, details, .weave {
+  min-inline-size: 0;
+  margin: 1rem 0;
+  padding: .85rem;
+  border: 1px solid var(--suti-angel-line, #687064);
+  border-radius: .85rem;
+  background: var(--suti-angel-card, #fffcf5);
+}
+button, select, textarea {
+  font: inherit;
+  min-block-size: 44px;
+  max-inline-size: 100%;
+  padding: .35rem .6rem;
+  background: var(--suti-angel-card, #fffcf5);
+  border: 1px solid currentColor;
+  border-radius: .4rem;
+  color: inherit;
+}
+button[aria-pressed="true"] { background: var(--suti-angel-teal, #285d53); color: var(--suti-angel-card, white) }
+textarea { display: block; inline-size: 100%; min-block-size: 4rem; margin-block-end: .6rem }
+label { display: block; margin-block: .6rem }
+p { max-inline-size: 70ch }
+img { display: block; inline-size: 100%; border-radius: .85rem }
+pre { white-space: pre-wrap; overflow-wrap: anywhere }
+button, summary { cursor: pointer }
+:focus-visible { outline: 3px solid var(--suti-angel-focus, #205c51); outline-offset: 3px }
+[hidden] { display: none !important }
+.actions { display: flex; flex-wrap: wrap; gap: .4rem }
+body[data-season="autumn"] { --season-edge: #b97045 }
+body[data-season="winter"] { --season-edge: #43717f }
+body[data-season="spring"] { --season-edge: #648254 }
+body[data-season="summer"] { --season-edge: #298c82 }
+[data-theme="day"] .weave { border-inline-start: .35rem solid var(--season-edge) }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto } }
+</style>
+</head>
+<body>
+<main>
+  <small data-copy="kicker"></small>
+  <h1 data-copy="title"></h1>
+  <p data-copy="intro"></p>
+  <label for="map-language" data-copy="language"></label>
+  <select id="map-language"></select>
+  <p><small id="map-review"></small></p>
+  <div class="weave">
+    <label for="season" data-copy="seasonLabel"></label>
+    <select id="season">
+      <option value="autumn" data-copy="seasons.0"></option>
+      <option value="winter" data-copy="seasons.1"></option>
+      <option value="spring" data-copy="seasons.2"></option>
+      <option value="summer" data-copy="seasons.3"></option>
+    </select>
+    <p id="season-note" aria-live="polite"></p>
+    <small data-copy="seasonNote"></small>
+  </div>
+  <label for="depth" data-copy="depth"></label>
+  <select id="depth">
+    <option value="0" data-copy="depths.0"></option>
+    <option value="1" data-copy="depths.1"></option>
+    <option value="2" data-copy="depths.2"></option>
+  </select>
+  <p data-copy="threadsNote"></p>
+  <div id="fields"></div>
+  <p data-copy="stop"></p>
+  <p><a id="care-atlas" href="care-atlas.html" data-copy="atlas"></a></p>
+  <div class="actions">
+    <button id="build" type="button" data-copy="build"></button>
+    <button id="clear" type="button" data-copy="clear"></button>
+  </div>
+  <p id="clear-message" role="status"></p>
+  <section id="result" hidden aria-labelledby="result-title">
+    <h2 id="result-title" data-copy="result" tabindex="-1"></h2>
+    <pre id="out" dir="auto"></pre>
+    <button id="download" type="button" data-copy="download"></button>
+  </section>
+  <details>
+    <summary data-copy="flowTitle"></summary><p data-copy="flowText"></p>
+  </details>
+  <details>
+    <summary data-copy="gameTitle"></summary><p data-copy="gameText"></p><p data-copy="gamePrompt"></p>
+  </details>
+  <p><span data-copy="formText"></span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScXLTMQ3UUywSRd73n-817sHVL3bfWpas5jlu9KWCAdSDXlyg/viewform" data-copy="formLink"></a></p>
+  <p><span data-copy="contactText"></span> <a href="https://t.me/saritamah" dir="ltr">@saritamah</a></p>
+  <p data-copy="closing"></p>
+  <noscript><p lang="ru">карта работает в браузере с JavaScript. <a href="care-atlas.html">открыть атлас заботы</a></p></noscript>
+</main>
+<script type="application/json" id="map-copy">{"ru":{"title":"нить заботы","kicker":"SUTI.world ∴ личная мастерская","intro":"можно прийти с одним словом. можно принести целый проект. здесь не нужно доказывать, кто ты. твои ответы остаются в этой вкладке, пока ты сам не сохранишь или не передашь их.","language":"язык карты","review":"русская исходная редакция","seasonLabel":"четыре шляпы Фреи · выбери ткань","seasons":["осень · шерсть и медный клён","зима · войлок и синий иней","весна · лён и фисташка","лето · хлопок и морская вода"],"seasonPrompts":["что хочется взять с собой в тепло?","что поможет тебе отдохнуть сегодня?","чему хочется дать первый маленький шанс?","чем хочется поделиться, пока есть силы?"],"seasonNote":"авторский образ SUTI. сезон можно менять, ответы останутся на месте.","depth":"глубина","depths":["первое касание · выбрать слова","чуть ближе · добавить свою фразу","глубже · найти различие и шаг"],"threadsNote":"дивы семи светил — авторская мистерия. названия чакр служат образами для вопросов. выбери одну нить или пройди все семь. восьмая нить добровольна, дальше — пять вопросов о стихиях.","stop":"можно остановиться здесь. спасибо за то, чем ты захотел поделиться. выбери одну нить, которую возьмёшь с собой.","atlas":"атлас взаимной заботы","build":"собрать мою fusion-карту","clear":"очистить","cleared":"карта и ответы очищены","result":"моя карта на сегодня","download":"сохранить текст","empty":"можно оставить карту пустой","flowTitle":"поток свиоренух · отпустить лишнее","flowText":"как морской бриз после жаркого дня. можно выдохнуть и спросить себя, что хочется отпустить, а что сохранить. одного слова достаточно. можно просто побыть здесь.","gameTitle":"мастерская Samurai Dharma · игровой слой","gameText":"выбери маску для одной пробы: скоморох меняет ракурс, Финист пробует заново, фламинго ищет компанию, драгонис держит границу, ангел заботы спрашивает разрешения. это роли на сегодня.","gamePrompt":"12 даров одоления и дивы семи светил — авторские образы мастерской. скажи просьбу от лица двух масок. какая версия оставляет больше выбора?","formText":"если хочешь поделиться с организатором, открой отдельную анкету и перенеси только выбранные слова. карта ничего не отправляет автоматически.","formLink":"анкета заботы · английский и русский","contactText":"если хочется, напиши мне одну фразу. я могу выслушать и честно сказать, чем могу помочь. если речь о близком — передай ему контакт. пусть он сам выберет, писать ли.","closing":"ступни на полу. выдох. стакан воды. столько глубины, сколько сегодня в радость.","zones":[["опора · муладхара - что сейчас нужно телу?",["еда","кров","тишина","отдых"],"что помогло бы сегодня?","какой маленький шаг доступен прямо сейчас?"],["ощущения · свадхистхана - что тебе приятно?",["тепло","вода","движение","пауза"],"чего хочется чуть больше?","где проходит твоя граница?"],["воля · манипура - что в твоих силах?",["выбрать","попросить","отложить"],"какой выбор сейчас твой?","что можно не брать на себя?"],["сердце · анахата - какой заботы хочется?",["выслушать","побыть рядом","найти своих"],"что для тебя значит поддержка?","можно назвать потребность в квир-дружественном пространстве без личной истории."],["голос · вишуддха - что хочется сказать?",["да","нет","не сейчас","на другом языке"],"какую фразу ты ищешь?","как сказать её так, чтобы тебя поняли?"],["взгляд · аджна - что стало яснее?",["вижу связь","есть сомнение","нужен другой взгляд"],"что ты замечаешь?","что помогло бы проверить догадку?"],["светимость · сахасрара - что придаёт смысл?",["творчество","близость","свобода","пока не знаю"],"что хочется сберечь?","какой поступок выразит это в обычной жизни?"],["общее поле · трансперсональное - чем хочется обменяться?",["время","умение","проект","нужна помощь","пропустить"],"есть ли общее дело, к которому тянет?","какие условия сделают обмен посильным?"],["земля · опора",["отдых","еда","надёжное место"],"что сделало бы день устойчивее?","какую помощь можно принять?"],["вода · перемена",["сменить темп","отпустить","попробовать иначе"],"где хочется сменить темп?","что можно сделать мягче?"],["огонь · желание",["начать","творить","согреться"],"что зажигает искру хотя бы на пять минут?","какой первой пробе ты рад?"],["воздух · простор",["поговорить","помолчать","освободить время"],"чему хочется дать больше места?","какая граница поможет?"],["эфир · мечта",["создать","почувствовать","позволить себе"],"представь, что на минуту возможно всё. о чём ты мечтаешь?","что из этой мечты хочется взять в сегодняшний день?"]]},"en":{"title":"thread of care","kicker":"SUTI.world ∴ personal workshop","intro":"you can bring one word or a whole project. there is room for either. your answers stay in this tab until you save or share them yourself.","language":"map language","review":"editorial translation · independent language review pending","seasonLabel":"Freyja’s four hats · choose a texture","seasons":["autumn · wool and copper maple","winter · felt and blue frost","spring · linen and pistachio","summer · cotton and seawater"],"seasonPrompts":["what would you like to bring into the warmth?","what would help you rest today?","what would you like to give a small first chance?","what would you like to share while you have the energy?"],"seasonNote":"this is an authorial image from SUTI. you can change the season and keep your answers.","depth":"depth","depths":["first touch · choose words","a little closer · add a phrase","deeper · find a distinction and a step"],"threadsNote":"the seven luminaries are an authorial story. the chakra names are images for the questions. choose one thread or try all seven, with an optional eighth. five element prompts follow.","stop":"you can stop here. thank you for what you chose to share. choose one thread to take with you.","atlas":"mutual care atlas","build":"make my fusion map","clear":"clear","cleared":"your map and answers have been cleared","result":"my map for today","download":"save as text","empty":"you can leave the map empty","flowTitle":"the Sviorenukh current · letting go","flowText":"like a sea breeze after a hot day. take a breath and ask yourself what you would like to let go of and what you would like to keep. one word is enough. you can simply stay here.","gameTitle":"Samurai Dharma workshop · game layer","gameText":"try one mask. the jester changes perspective, Finist tries again, the flamingo seeks company, Dragonis holds a boundary, and an Angel of Care asks permission. these are roles for today.","gamePrompt":"the twelve gifts and seven luminaries are authorial images. try one request in the voice of two masks. which version leaves more room to choose?","formText":"if you wish to share with the organizer, open the separate form and copy only the words you choose. the map sends nothing automatically.","formLink":"care form · English and Russian","contactText":"if you wish, send me one phrase. I can listen and tell you what help I can offer. if this is about someone else, you can pass along the contact and let them decide whether to write.","closing":"feet on the floor. a breath. a glass of water. go only as deep as feels right today.","zones":[["grounding · muladhara — what does your body need now?",["food","shelter","quiet","rest"],"what would help today?","what small step is available right now?"],["sensation · svadhisthana — what feels pleasant?",["warmth","water","movement","a pause"],"what would you like a little more of?","where is your boundary?"],["will · manipura — what is in your hands?",["choose","ask","put it off"],"which choice is yours now?","what can you leave off your shoulders?"],["heart · anahata — what care would you like?",["be heard","have someone nearby","find my people"],"what does support mean to you?","you can name a need for a queer-friendly space without sharing your personal story"],["voice · vishuddha — what would you like to say?",["yes","no","not now","in another language"],"what phrase are you looking for?","how could you say it so you are understood?"],["view · ajna — what has become clearer?",["I see a connection","I have a doubt","I need another view"],"what do you notice?","what would help you check your guess?"],["radiance · sahasrara — what gives you meaning?",["creativity","closeness","freedom","I don’t know yet"],"what would you like to protect?","what action could express that in daily life?"],["shared field · transpersonal — what would you like to exchange?",["time","a skill","a project","I need help","skip"],"is there a shared project that draws you?","what conditions would make the exchange manageable?"],["earth · support",["rest","food","a safe place"],"what would steady your day?","what help could you accept?"],["water · change",["change pace","let go","try another way"],"where would you like to change the pace?","what could you do more gently?"],["fire · desire",["begin","create","warm up"],"what lights a spark, even for five minutes?","what first try would you welcome?"],["air · room",["talk","be quiet","free up time"],"what would you like to give more room?","what boundary would help?"],["ether · dream",["create","feel","allow myself"],"imagine anything were possible for a minute. what do you dream of?","what part of that dream would you like to bring into today?"]]},"es-419":{"title":"hilo del cuidado","kicker":"SUTI.world ∴ taller personal","intro":"puedes traer una palabra o un proyecto entero. hay espacio para cualquiera de los dos. tus respuestas quedan en esta pestaña hasta que tú decidas guardarlas o compartirlas.","language":"idioma del mapa","review":"traducción editorial · pendiente de revisión lingüística independiente","seasonLabel":"los cuatro sombreros de Freyja · elige una textura","seasons":["otoño · lana y arce cobrizo","invierno · fieltro y escarcha azul","primavera · lino y pistache","verano · algodón y agua de mar"],"seasonPrompts":["¿qué te gustaría llevar contigo al calor?","¿qué te ayudaría a descansar hoy?","¿a qué te gustaría darle una pequeña primera oportunidad?","¿qué te gustaría compartir mientras tienes energía?"],"seasonNote":"es una imagen de autoría de SUTI. puedes cambiar de estación sin perder tus respuestas.","depth":"profundidad","depths":["primer contacto · elige palabras","un poco más cerca · agrega una frase","más a fondo · distingue algo y elige un paso"],"threadsNote":"las siete luminarias son un relato de autoría propia. los nombres de los chakras son imágenes para las preguntas. elige un hilo o prueba los siete, con un octavo opcional. después hay cinco preguntas sobre los elementos.","stop":"puedes detenerte aquí. gracias por lo que elegiste compartir. elige un hilo para llevar contigo.","atlas":"atlas del cuidado mutuo","build":"armar mi mapa de fusión","clear":"borrar","cleared":"se borraron tu mapa y tus respuestas","result":"mi mapa de hoy","download":"guardar como texto","empty":"puedes dejar el mapa vacío","flowTitle":"la corriente Sviorenukh · soltar","flowText":"como la brisa del mar después de un día caluroso. respira y pregúntate qué te gustaría soltar y qué quisieras conservar. basta con una palabra. también puedes quedarte aquí.","gameTitle":"taller de Samurai Dharma · capa de juego","gameText":"prueba una máscara. el bufón cambia de perspectiva, Finist vuelve a intentarlo, el flamenco busca compañía, Dragonis sostiene un límite y un ángel del cuidado pide permiso. son papeles para hoy.","gamePrompt":"los doce dones y las siete luminarias son imágenes de autoría propia. haz el mismo pedido con la voz de dos máscaras. ¿qué versión deja más espacio para elegir?","formText":"si quieres compartir algo con quien organiza, abre el formulario aparte y copia solo las palabras que elijas. el mapa no envía nada automáticamente.","formLink":"formulario de cuidado · inglés y ruso","contactText":"si quieres, mándame una frase. puedo escucharte y decirte qué ayuda puedo ofrecer. si se trata de otra persona, puedes pasarle el contacto y dejar que decida si quiere escribir.","closing":"los pies en el suelo. una respiración. un vaso de agua. llega solo hasta donde te sientas a gusto hoy.","zones":[["enraizamiento · muladhara — ¿qué necesita tu cuerpo ahora?",["comida","refugio","silencio","descanso"],"¿qué te ayudaría hoy?","¿qué paso pequeño puedes dar ahora mismo?"],["sensación · svadhisthana — ¿qué te resulta agradable?",["calor","agua","movimiento","una pausa"],"¿de qué te gustaría tener un poquito más?","¿dónde está tu límite?"],["voluntad · manipura — ¿qué está en tus manos?",["elegir","pedir","posponer"],"¿qué decisión te corresponde ahora?","¿qué puedes dejar de cargar?"],["corazón · anahata — ¿qué tipo de cuidado quisieras?",["que me escuchen","tener a alguien cerca","encontrar a mi gente"],"¿qué significa para ti el apoyo?","puedes expresar que necesitas un espacio que acoja a las personas queer sin compartir tu historia personal"],["voz · vishuddha — ¿qué te gustaría decir?",["sí","no","ahora no","en otro idioma"],"¿qué frase estás buscando?","¿cómo la dirías para que te entiendan?"],["mirada · ajna — ¿qué se ha aclarado?",["veo una conexión","tengo una duda","necesito otra perspectiva"],"¿qué notas?","¿qué te ayudaría a comprobar tu suposición?"],["brillo · sahasrara — ¿qué te da sentido?",["creatividad","cercanía","libertad","todavía no sé"],"¿qué te gustaría proteger?","¿con qué acción podrías expresarlo en tu vida cotidiana?"],["espacio común · transpersonal — ¿qué te gustaría intercambiar?",["tiempo","una habilidad","un proyecto","necesito ayuda","pasar"],"¿hay algún proyecto compartido que te atraiga?","¿qué condiciones harían que el intercambio esté a tu alcance?"],["tierra · apoyo",["descanso","comida","un lugar seguro"],"¿qué le daría estabilidad a tu día?","¿qué ayuda podrías aceptar?"],["agua · cambio",["cambiar el ritmo","soltar","probar de otra manera"],"¿en qué te gustaría cambiar el ritmo?","¿qué podrías hacer con más suavidad?"],["fuego · deseo",["empezar","crear","entrar en calor"],"¿qué enciende una chispa, aunque sea por cinco minutos?","¿qué te gustaría intentar primero?"],["aire · espacio",["hablar","guardar silencio","hacer tiempo"],"¿a qué te gustaría darle más espacio?","¿qué límite te ayudaría?"],["éter · sueño",["crear","sentir","permitirme algo"],"imagina que todo fuera posible por un minuto. ¿con qué sueñas?","¿qué parte de ese sueño te gustaría traer al día de hoy?"]]},"pt-BR":{"title":"fio do cuidado","kicker":"SUTI.world ∴ oficina pessoal","intro":"você pode trazer uma palavra ou um projeto inteiro. tem espaço para os dois. suas respostas ficam nesta aba até que você decida salvar ou compartilhar.","language":"idioma do mapa","review":"tradução editorial · revisão linguística independente pendente","seasonLabel":"os quatro chapéus de Freyja · escolha uma textura","seasons":["outono · lã e bordo acobreado","inverno · feltro e geada azul","primavera · linho e pistache","verão · algodão e água do mar"],"seasonPrompts":["o que você gostaria de levar para o calor?","o que ajudaria você a descansar hoje?","a que você gostaria de dar uma pequena primeira chance?","o que você gostaria de compartilhar enquanto tem energia?"],"seasonNote":"esta é uma imagem autoral da SUTI. você pode mudar de estação e manter suas respostas.","depth":"profundidade","depths":["primeiro contato · escolha palavras","um pouco mais perto · acrescente uma frase","mais a fundo · perceba uma diferença e escolha um passo"],"threadsNote":"os sete luminares são uma história autoral. os nomes dos chakras são imagens para as perguntas. escolha um fio ou experimente os sete, com um oitavo opcional. depois vêm cinco perguntas ligadas aos elementos.","stop":"você pode parar aqui. agradeço pelo que você escolheu compartilhar. escolha um fio para levar consigo.","atlas":"atlas do cuidado mútuo","build":"montar meu mapa de fusão","clear":"limpar","cleared":"seu mapa e suas respostas foram apagados","result":"meu mapa para hoje","download":"salvar como texto","empty":"você pode deixar o mapa em branco","flowTitle":"a corrente Sviorenukh · deixar ir","flowText":"como a brisa do mar depois de um dia quente. respire e se pergunte o que gostaria de deixar ir e o que quer guardar. uma palavra basta. você também pode só ficar aqui.","gameTitle":"oficina Samurai Dharma · camada de jogo","gameText":"experimente uma máscara. o bobo muda a perspectiva, Finist tenta de novo, o flamingo procura companhia, Dragonis mantém um limite e um anjo do cuidado pede permissão. são papéis para hoje.","gamePrompt":"os doze dons e os sete luminares são imagens autorais. tente fazer o mesmo pedido na voz de duas máscaras. qual versão deixa mais espaço para escolher?","formText":"se quiser compartilhar algo com quem organiza, abra o formulário separado e copie só as palavras que você escolher. o mapa não envia nada automaticamente.","formLink":"formulário de cuidado · inglês e russo","contactText":"se quiser, me mande uma frase. posso escutar e dizer que ajuda consigo oferecer. se for sobre outra pessoa, você pode passar o contato para ela decidir se quer escrever.","closing":"os pés no chão. uma respiração. um copo d’água. vá só até onde fizer sentido para você hoje.","zones":[["base · muladhara — de que seu corpo precisa agora?",["comida","abrigo","sossego","descanso"],"o que ajudaria hoje?","que pequeno passo você consegue dar agora?"],["sensações · svadhisthana — o que é agradável para você?",["calor","água","movimento","uma pausa"],"do que você gostaria de ter um pouco mais?","onde está o seu limite?"],["vontade · manipura — o que está ao seu alcance?",["escolher","pedir","adiar"],"qual escolha cabe a você agora?","o que você pode deixar de carregar?"],["coração · anahata — que cuidado você gostaria de receber?",["que me escutem","ter alguém por perto","encontrar a minha gente"],"o que apoio significa para você?","você pode dizer que precisa de um espaço acolhedor para pessoas queer sem contar sua história pessoal"],["voz · vishuddha — o que você gostaria de dizer?",["sim","não","agora não","em outro idioma"],"que frase você está procurando?","como você pode dizer isso de um jeito que entendam você?"],["olhar · ajna — o que ficou mais claro?",["percebo uma ligação","estou em dúvida","preciso de outro olhar"],"o que você percebe?","o que ajudaria você a conferir sua hipótese?"],["brilho · sahasrara — o que dá sentido para você?",["criatividade","proximidade","liberdade","ainda não sei"],"o que você gostaria de preservar?","que ação poderia expressar isso no cotidiano?"],["espaço comum · transpessoal — o que você gostaria de trocar?",["tempo","uma habilidade","um projeto","preciso de ajuda","pular"],"há algum projeto coletivo que desperta seu interesse?","em que condições você conseguiria fazer essa troca?"],["terra · apoio",["descanso","comida","um lugar seguro"],"o que daria mais firmeza ao seu dia?","que ajuda você poderia aceitar?"],["água · mudança",["mudar de ritmo","deixar ir","tentar de outro jeito"],"onde você gostaria de mudar o ritmo?","o que poderia fazer com mais suavidade?"],["fogo · desejo",["começar","criar","se aquecer"],"o que acende uma faísca, mesmo que por cinco minutos?","qual primeira tentativa você gostaria de fazer?"],["ar · espaço",["conversar","ficar em silêncio","liberar tempo"],"a que você gostaria de dar mais espaço?","que limite ajudaria?"],["éter · sonho",["criar","sentir","me permitir algo"],"imagine que tudo seja possível por um minuto. com o que você sonha?","que parte desse sonho você gostaria de trazer para hoje?"]]},"fr":{"title":"fil du soin","kicker":"SUTI.world ∴ atelier personnel","intro":"tu peux venir avec un mot ou un projet entier. il y a de la place pour les deux. tes réponses restent dans cet onglet jusqu’à ce que tu les enregistres ou les partages toi-même.","language":"langue de la carte","review":"traduction éditoriale · relecture linguistique indépendante à venir","seasonLabel":"les quatre chapeaux de Freyja · choisis une texture","seasons":["automne · laine et érable cuivré","hiver · feutre et givre bleu","printemps · lin et pistache","été · coton et eau de mer"],"seasonPrompts":["qu’aimerais-tu emporter au chaud ?","qu’est-ce qui t’aiderait à te reposer aujourd’hui ?","à quoi aimerais-tu donner une petite première chance ?","qu’aimerais-tu partager tant que tu en as l’énergie ?"],"seasonNote":"c’est une image créée par SUTI. tu peux changer de saison et garder tes réponses.","depth":"profondeur","depths":["premier contact · choisis des mots","un peu plus près · ajoute une phrase","plus en profondeur · distingue ce qui compte et trouve un pas"],"threadsNote":"les sept luminaires relèvent d’un récit d’auteur. les noms des chakras servent d’images pour les questions. choisis un fil ou essaie les sept, avec un huitième si tu le souhaites. cinq questions liées aux éléments suivent.","stop":"tu peux t’arrêter ici. merci pour ce que tu as choisi de partager. choisis un fil à emporter.","atlas":"atlas de l’entraide","build":"créer ma carte fusion","clear":"effacer","cleared":"ta carte et tes réponses ont été effacées","result":"ma carte pour aujourd’hui","download":"enregistrer en texte","empty":"tu peux laisser la carte vide","flowTitle":"le courant Sviorenukh · lâcher prise","flowText":"comme une brise marine après une journée chaude. respire et demande-toi ce que tu aimerais laisser partir et ce que tu voudrais garder. un mot suffit. tu peux simplement rester ici.","gameTitle":"atelier Samurai Dharma · volet jeu","gameText":"essaie un masque. le bouffon change de perspective, Finist essaie de nouveau, le flamant cherche de la compagnie, Dragonis pose une limite et un ange du soin demande la permission. ce sont des rôles pour aujourd’hui.","gamePrompt":"les douze dons et les sept luminaires sont des images d’auteur. formule une même demande avec la voix de deux masques. quelle version laisse le plus de liberté de choisir ?","formText":"si tu souhaites partager quelque chose avec la personne qui organise, ouvre le formulaire séparé et copie uniquement les mots de ton choix. la carte n’envoie rien automatiquement.","formLink":"formulaire de soin · anglais et russe","contactText":"si tu le souhaites, envoie-moi une phrase. je peux t’écouter et te dire quelle aide je peux offrir. si cela concerne quelqu’un d’autre, tu peux lui transmettre le contact et lui laisser le choix d’écrire.","closing":"les pieds au sol. une respiration. un verre d’eau. va seulement aussi loin que cela te convient aujourd’hui.","zones":[["ancrage · muladhara — de quoi ton corps a-t-il besoin maintenant ?",["manger","un abri","du calme","du repos"],"qu’est-ce qui t’aiderait aujourd’hui ?","quel petit pas peux-tu faire maintenant ?"],["sensations · svadhisthana — qu’est-ce qui est agréable ?",["chaleur","eau","mouvement","une pause"],"qu’aimerais-tu avoir un peu plus ?","où se situe ta limite ?"],["volonté · manipura — qu’est-ce qui est à ta portée ?",["choisir","demander","reporter"],"quelle décision t’appartient maintenant ?","de quoi peux-tu te décharger ?"],["cœur · anahata — de quelle attention as-tu envie ?",["être écouté","avoir quelqu’un près de moi","trouver les miens"],"que veut dire le soutien pour toi ?","tu peux exprimer le besoin d’un espace accueillant pour les personnes queer sans raconter ton histoire personnelle"],["voix · vishuddha — qu’aimerais-tu dire ?",["oui","non","pas maintenant","dans une autre langue"],"quelle phrase cherches-tu ?","comment le dire pour que l’on te comprenne ?"],["regard · ajna — qu’est-ce qui est devenu plus clair ?",["je vois un lien","j’ai un doute","il me faut un autre regard"],"que remarques-tu ?","qu’est-ce qui t’aiderait à vérifier ton intuition ?"],["rayonnement · sahasrara — qu’est-ce qui te donne du sens ?",["créativité","proximité","liberté","je ne sais pas encore"],"qu’aimerais-tu préserver ?","quel geste pourrait l’exprimer au quotidien ?"],["espace commun · transpersonnel — qu’aimerais-tu échanger ?",["du temps","un savoir-faire","un projet","j’ai besoin d’aide","passer"],"y a-t-il un projet commun qui t’attire ?","quelles conditions rendraient l’échange possible pour toi ?"],["terre · appui",["du repos","de la nourriture","un endroit sûr"],"qu’est-ce qui donnerait plus de stabilité à ta journée ?","quelle aide pourrais-tu accepter ?"],["eau · changement",["changer de rythme","laisser partir","essayer autrement"],"où voudrais-tu changer de rythme ?","que pourrais-tu faire avec plus de douceur ?"],["feu · désir",["commencer","créer","se réchauffer"],"qu’est-ce qui fait naître une étincelle, même pour cinq minutes ?","quel premier essai te ferait envie ?"],["air · espace",["parler","garder le silence","libérer du temps"],"à quoi voudrais-tu faire plus de place ?","quelle limite t’aiderait ?"],["éther · rêve",["créer","ressentir","m’autoriser"],"imagine que tout soit possible pendant une minute. de quoi rêves-tu ?","quelle part de ce rêve aimerais-tu faire entrer dans ta journée ?"]]},"ar":{"title":"خيط الرعاية","kicker":"SUTI.world ∴ ورشة شخصية","intro":"يمكنك أن تأتي بكلمة واحدة أو بمشروع كامل. هنا متّسع لكليهما. تبقى إجاباتك في هذه التبويبة إلى أن تحفظها أو تشاركها بنفسك.","language":"لغة الخريطة","review":"ترجمة تحريرية · بانتظار مراجعة لغوية مستقلة","seasonLabel":"قبعات فريا الأربع · اختر ملمسًا","seasons":["الخريف · الصوف والقيقب النحاسي","الشتاء · اللباد والصقيع الأزرق","الربيع · الكتان والفستق","الصيف · القطن وماء البحر"],"seasonPrompts":["ماذا تود أن تحمل معك إلى الدفء؟","ما الذي يساعدك على الراحة اليوم؟","ما الذي تود أن تمنحه فرصة أولى صغيرة؟","ماذا تود أن تشارك ما دامت لديك طاقة؟"],"seasonNote":"هذه صورة من ابتكار SUTI. يمكنك تغيير الفصل والاحتفاظ بإجاباتك.","depth":"العمق","depths":["لمسة أولى · اختر كلمات","عن قرب قليلًا · أضف عبارة","أعمق · تبيّن فرقًا وحدّد خطوة"],"threadsNote":"الأنوار السبعة حكاية من ابتكار المؤلف. تُستخدم أسماء الشاكرات صورًا تساعد على تأمّل الأسئلة. اختر خيطًا واحدًا أو جرّب السبعة، ويمكنك اختيار خيط ثامن. ثم تأتي خمسة أسئلة عن العناصر.","stop":"يمكنك التوقّف هنا. شكرًا على ما اخترت مشاركته. اختر خيطًا واحدًا تأخذه معك.","atlas":"أطلس الرعاية المتبادلة","build":"أنشئ خريطتي الجامعة","clear":"امسح","cleared":"مُسحت خريطتك وإجاباتك","result":"خريطتي لليوم","download":"احفظ كنص","empty":"يمكنك ترك الخريطة فارغة","flowTitle":"تيّار سفيورينوخ · التخلّي","flowText":"كنسيم البحر بعد يوم حار. خذ نفسًا واسأل نفسك عمّا تودّ أن تتركه وما تودّ الاحتفاظ به. تكفي كلمة واحدة. ويمكنك ببساطة البقاء هنا.","gameTitle":"ورشة Samurai Dharma · طبقة اللعب","gameText":"جرّب قناعًا واحدًا. المهرّج يغيّر زاوية النظر، وفينيست يحاول من جديد، والفلامنغو يطلب الرفقة، ودراغونيس يحافظ على حدّ، وملاك الرعاية يستأذن. هذه أدوار لهذا اليوم.","gamePrompt":"الهبات الاثنتا عشرة والأنوار السبعة صور من ابتكار المؤلف. جرّب قول الطلب نفسه بصوت قناعين. أي صيغة تترك مجالًا أوسع للاختيار؟","formText":"إن رغبت في أن تشارك المنظّم، افتح النموذج المنفصل وانسخ فقط الكلمات التي تختارها. لا ترسل الخريطة شيئًا تلقائيًا.","formLink":"نموذج الرعاية · الإنجليزية والروسية","contactText":"إن رغبت، أرسل لي عبارة واحدة. يمكنني أن أصغي وأخبرك بما أستطيع تقديمه من مساعدة. وإذا كان الأمر يخصّ شخصًا آخر، يمكنك أن تمرّر إليه جهة الاتصال وتترك له قرار المراسلة.","closing":"القدمان على الأرض. نَفَس واحد. كوب ماء. تعمّق بالقدر الذي يناسبك اليوم.","zones":[["الثبات · مولادهارا — ما الذي يحتاجه جسدك الآن؟",["طعام","مأوى","هدوء","راحة"],"ما الذي قد يساعد اليوم؟","ما الخطوة الصغيرة المتاحة الآن؟"],["الإحساس · سفاديشتانا — ما الذي يبعث على الارتياح؟",["دفء","ماء","حركة","استراحة"],"ماذا تودّ أن يتوفّر أكثر قليلًا؟","أين تضع حدّك؟"],["الإرادة · مانيبورا — ما الذي تستطيع فعله؟",["أختار","أطلب","أؤجّل"],"أيّ خيار يعود إليك الآن؟","أيّ عبء يمكنك أن تضعه جانبًا؟"],["القلب · أناهاتا — أيّ رعاية تريد؟",["أن يُصغى إليّ","أن يبقى أحد بقربي","أن أجد من أنتمي إليهم"],"ماذا يعني لك الدعم؟","يمكنك أن تقول إنك بحاجة إلى مكان يرحّب بالكوير دون رواية قصّتك الشخصية"],["الصوت · فيشودها — ماذا تود أن تقول؟",["نعم","لا","ليس الآن","بلغة أخرى"],"عن أيّ عبارة تبحث؟","كيف يمكنك قولها كي تُفهم؟"],["النظرة · آجنا — ما الذي صار أوضح؟",["أرى صلة","لدي شكّ","أحتاج إلى نظرة أخرى"],"ماذا تلاحظ؟","ما الذي يساعدك على التحقّق من ظنّك؟"],["الإشراق · ساهاسرارا — ما الذي يمنحك معنى؟",["إبداع","ألفة","حرّيّة","لا أعرف بعد"],"ما الذي تودّ الحفاظ عليه؟","ما الفعل الذي يمكن أن يعبّر عن ذلك في حياتك اليومية؟"],["المساحة المشتركة · ما يتجاوز الفرد — ماذا تودّ أن تتبادل؟",["وقتًا","مهارة","مشروعًا","أحتاج إلى مساعدة","تخطَّ"],"هل هناك مشروع مشترك يجذبك؟","ما الشروط التي تجعل هذا التبادل في حدود استطاعتك؟"],["الأرض · السند",["راحة","طعام","مكان آمن"],"ما الذي يمنح يومك شيئًا من الاستقرار؟","أي مساعدة يمكنك قبولها؟"],["الماء · التغيير",["أغيّر الوتيرة","أتخلّى","أجرّب طريقة أخرى"],"أين تودّ تغيير الوتيرة؟","ما الذي يمكنك فعله برفق أكبر؟"],["النار · الرغبة",["أبدأ","أبتكر","أستدفئ"],"ما الذي يوقد شرارة ولو لخمس دقائق؟","ما المحاولة الأولى التي تودّ خوضها؟"],["الهواء · المتّسع",["أتحدّث","أصمت","أفرّغ بعض الوقت"],"لأيّ شيء تودّ أن تفسح مجالًا أكبر؟","ما الحدّ الذي قد يساعدك؟"],["الأثير · الحلم",["أبتكر","أشعر","أسمح لنفسي"],"تخيّل أن كلّ شيء ممكن لدقيقة. بمَ تحلم؟","أيّ جزء من الحلم تودّ أن تحمله معك إلى يومك؟"]]},"zh-Hans":{"title":"关怀之线","kicker":"SUTI.world ∴ 个人工作坊","intro":"你可以带来一个词，也可以带来一个完整的项目。这里都容得下。回答留在这个标签页里，由你亲自保存或分享。","language":"地图语言","review":"编辑译稿 · 待独立语言审校","seasonLabel":"弗蕾亚的四顶帽子 · 选一种质地","seasons":["秋 · 羊毛与铜红色枫叶","冬 · 毛毡与蓝霜","春 · 亚麻与开心果绿","夏 · 棉布与海水"],"seasonPrompts":["你想带什么一起走进温暖？","今天有什么能帮你休息？","你想先给什么一个小小的机会？","趁还有精力，你想分享什么？"],"seasonNote":"这是 SUTI 的原创意象。切换季节时，你的回答会保留。","depth":"深度","depths":["初次触碰 · 选几个词","再靠近一点 · 添一句话","再深一点 · 看清一处区别，找出下一步"],"threadsNote":"七曜是原创故事里的意象。脉轮的名称用来引出问题。选一条线，或试试七条；第八条可选。后面还有以五种元素为主题的问题。","stop":"你可以停在这里。谢谢你愿意分享。选一条想带走的线吧。","atlas":"互相关怀图册","build":"生成我的融合图","clear":"清空","cleared":"已清空你的地图和回答","result":"我今天的图","download":"保存为文本","empty":"你可以让地图留白","flowTitle":"斯维奥列努赫之流 · 放下","flowText":"就像炎热一天过后的海风。呼吸一下，问问自己想放下什么、想留住什么。一个词就够了。你也可以就这样待一会儿。","gameTitle":"Samurai Dharma 工作坊 · 游戏环节","gameText":"试试一张面具。弄臣换个角度，费尼斯特再试一次，火烈鸟寻找同伴，德拉戈尼斯守住边界，关怀天使先征求同意。这些都是今天可以尝试的角色。","gamePrompt":"十二份礼物与七曜都是原创意象。用两张面具的声音说出同一个请求。哪一种给人留下更多选择？","formText":"如果你想和组织者分享，请打开单独的表单，只复制你愿意分享的话。地图不会自动发送任何内容。","formLink":"关怀表单 · 英语和俄语","contactText":"如果你愿意，可以发我一句话。我可以听听，然后告诉你我能提供什么帮助。如果说的是别人，你可以把联系方式给那个人，由对方决定要不要写信。","closing":"双脚着地。呼吸一下。喝一杯水。今天想走多深，由你决定。","zones":[["扎根 · 海底轮 — 你的身体现在需要什么？",["食物","栖身之处","安静","休息"],"今天什么会有帮助？","此刻可以迈出哪一小步？"],["感受 · 生殖轮 — 什么让你感到舒服？",["温暖","水","活动","暂停"],"你想多一点什么？","你的界限在哪里？"],["意志 · 太阳神经丛轮 — 哪些事你能做主？",["作选择","开口请求","先放一放"],"你现在能自己做哪个决定？","什么可以不用自己扛？"],["心 · 心轮 — 你想得到怎样的关怀？",["有人倾听","有人陪在身边","找到同伴"],"对你来说，支持意味着什么？","你可以说自己需要一个对酷儿友好的空间，无须讲述个人经历"],["声音 · 喉轮 — 你想说什么？",["好","不","现在不行","换一种语言"],"你在找怎样的一句话？","怎么说才能让人听明白？"],["视角 · 眉心轮 — 什么变得更清楚了？",["我看见了联系","我还有疑问","我需要另一种看法"],"你注意到了什么？","什么能帮你验证猜想？"],["光芒 · 顶轮 — 什么让你觉得有意义？",["创造","亲近","自由","还不知道"],"你想珍惜什么？","在日常生活中，什么行动能表达这一点？"],["共同场域 · 超越个人 — 你想交换什么？",["时间","技能","项目","我需要帮助","跳过"],"有没有什么共同项目吸引你？","需要哪些条件，这次交换才做得来？"],["土 · 支撑",["休息","食物","安全的地方"],"什么能让你今天更安稳？","你能接受什么帮助？"],["水 · 改变",["调整节奏","放下","换种方法试试"],"你想在哪件事上换个节奏？","哪件事可以做得更柔和一些？"],["火 · 愿望",["开始","创造","暖一暖"],"什么能点亮一丝火花，哪怕只有五分钟？","你愿意先试试什么？"],["风 · 余地",["说话","安静一会儿","腾出时间"],"你想给什么留更多空间？","怎样的界限会有帮助？"],["以太 · 梦",["创造","感受","允许自己"],"想象有一分钟，一切皆有可能。你梦想什么？","你想把梦想中的哪一部分带进今天？"]]},"hi":{"title":"देखभाल की डोर","kicker":"SUTI.world ∴ निजी कार्यशाला","intro":"आप एक शब्द ला सकते हैं या पूरी परियोजना। यहाँ दोनों के लिए जगह है। आपके जवाब इसी टैब में रहते हैं, जब तक आप खुद उन्हें सहेजें या साझा करें।","language":"मानचित्र की भाषा","review":"संपादकीय अनुवाद · स्वतंत्र भाषा समीक्षा बाकी है","seasonLabel":"फ़्रेया की चार टोपियाँ · एक बनावट चुनें","seasons":["पतझड़ · ऊन और ताँबे जैसे मेपल के पत्ते","सर्दी · नमदा और नीली पाला-परत","वसंत · लिनन और पिस्तई रंग","गर्मी · सूती कपड़ा और समुद्र का पानी"],"seasonPrompts":["आप गरमाहट में अपने साथ क्या लाना चाहेंगे?","आज आराम करने में क्या मदद करेगा?","आप किस चीज़ को एक छोटा-सा पहला मौका देना चाहेंगे?","जब तक ऊर्जा है, आप क्या बाँटना चाहेंगे?"],"seasonNote":"यह SUTI की रची हुई एक छवि है। आप अपने जवाब बनाए रखते हुए ऋतु बदल सकते हैं।","depth":"गहराई","depths":["पहला स्पर्श · शब्द चुनें","थोड़ा और पास · एक वाक्यांश जोड़ें","और गहराई में · एक अंतर और एक कदम पहचानें"],"threadsNote":"सात आकाशदीप एक रची हुई कहानी का हिस्सा हैं। चक्रों के नाम सवालों के लिए रूपक हैं। एक डोर चुनें या सातों आज़माएँ। आठवीं वैकल्पिक है। इसके बाद पाँच तत्वों पर सवाल हैं।","stop":"आप यहाँ रुक सकते हैं। आपने जो साझा करना चुना, उसके लिए शुक्रिया। अपने साथ ले जाने के लिए एक डोर चुनें।","atlas":"आपसी देखभाल की मार्गदर्शिका","build":"मेरा फ़्यूज़न मानचित्र बनाएँ","clear":"साफ़ करें","cleared":"आपका मानचित्र और जवाब मिटा दिए गए हैं","result":"आज का मेरा मानचित्र","download":"टेक्स्ट फ़ाइल सहेजें","empty":"आप मानचित्र खाली छोड़ सकते हैं","flowTitle":"स्वियोरेनुख की धारा · छोड़ देना","flowText":"जैसे तपते दिन के बाद समुद्र से आती हवा। एक साँस लें और खुद से पूछें कि आप क्या छोड़ना और क्या रखना चाहते हैं। एक शब्द काफ़ी है। चाहें तो बस यहीं कुछ देर ठहरें।","gameTitle":"Samurai Dharma कार्यशाला · खेल का स्तर","gameText":"एक मुखौटा आज़माएँ। विदूषक नज़रिया बदलता है, फ़िनिस्त फिर कोशिश करता है, फ़्लेमिंगो साथ ढूँढ़ता है, ड्रागोनिस सीमा बनाए रखता है और देखभाल का फ़रिश्ता इजाज़त माँगता है। ये आज के लिए भूमिकाएँ हैं।","gamePrompt":"बारह उपहार और सात आकाशदीप रची हुई छवियाँ हैं। एक ही अनुरोध दो मुखौटों की आवाज़ में कहकर देखें। कौन-सा रूप चुनने के लिए ज़्यादा जगह छोड़ता है?","formText":"अगर आप आयोजक से कुछ साझा करना चाहते हैं, तो अलग फ़ॉर्म खोलें और केवल अपने चुने हुए शब्द वहाँ कॉपी करें। मानचित्र अपने आप कुछ नहीं भेजता।","formLink":"देखभाल का फ़ॉर्म · अंग्रेज़ी और रूसी","contactText":"चाहें तो मुझे एक वाक्य भेजें। मैं सुन सकता हूँ और बता सकता हूँ कि किस तरह मदद कर पाऊँगा। अगर बात किसी और की है, तो आप मेरा संपर्क उन्हें दे सकते हैं। लिखना है या नहीं, वे खुद तय करें।","closing":"पैर ज़मीन पर। एक साँस। एक गिलास पानी। आज उतनी ही गहराई में जाएँ जितनी ठीक लगे।","zones":[["आधार · मूलाधार — अभी आपके शरीर को क्या चाहिए?",["भोजन","ठिकाना","शांति","आराम"],"आज क्या मदद करेगा?","अभी कौन-सा छोटा कदम उठाया जा सकता है?"],["अनुभूति · स्वाधिष्ठान — क्या अच्छा लगता है?",["गरमाहट","पानी","हलचल","थोड़ा विराम"],"आप किस चीज़ को थोड़ा और चाहेंगे?","आपकी सीमा कहाँ है?"],["संकल्प · मणिपूर — आपके हाथ में क्या है?",["चुनना","माँगना","टालना"],"अभी कौन-सा निर्णय आपका है?","कौन-सा बोझ आप अपने कंधों से हटा सकते हैं?"],["हृदय · अनाहत — आपको कैसी देखभाल चाहिए?",["कोई मेरी बात सुने","कोई पास रहे","अपने जैसे लोग मिलें"],"आपके लिए सहारे का क्या मतलब है?","अपनी निजी कहानी बताए बिना भी आप कह सकते हैं कि आपको ऐसी जगह चाहिए जहाँ क्वियर लोगों का स्वागत हो"],["स्वर · विशुद्ध — आप क्या कहना चाहेंगे?",["हाँ","नहीं","अभी नहीं","किसी और भाषा में"],"आप किस वाक्य की तलाश में हैं?","आप इसे कैसे कह सकते हैं ताकि लोग समझें?"],["नज़रिया · आज्ञा — क्या ज़्यादा साफ़ हुआ है?",["मुझे एक संबंध दिखता है","मुझे संदेह है","मुझे दूसरा नज़रिया चाहिए"],"आप क्या देख रहे हैं?","अपना अंदाज़ा जाँचने में क्या मदद करेगा?"],["आभा · सहस्रार — आपको किससे अर्थ मिलता है?",["रचनात्मकता","अपनापन","आज़ादी","अभी पता नहीं"],"आप क्या सँजोकर रखना चाहेंगे?","रोज़मर्रा की ज़िंदगी में कौन-सा काम इसे व्यक्त कर सकता है?"],["साझा क्षेत्र · व्यक्ति से परे — आप किस चीज़ का आदान-प्रदान करना चाहेंगे?",["समय","कौशल","परियोजना","मुझे मदद चाहिए","छोड़ें"],"क्या कोई साझा काम है जो आपको अपनी ओर खींचता है?","किन शर्तों पर यह आदान-प्रदान आपकी क्षमता में रहेगा?"],["पृथ्वी · सहारा",["आराम","भोजन","सुरक्षित जगह"],"क्या आपके दिन को कुछ स्थिरता देगा?","आप कौन-सी मदद ले सकते हैं?"],["जल · बदलाव",["गति बदलना","छोड़ देना","कोई और तरीका आज़माना"],"कहाँ आप रफ़्तार बदलना चाहेंगे?","आप किस काम को और नरमी से कर सकते हैं?"],["अग्नि · इच्छा",["शुरू करना","कुछ रचना","गरम होना"],"क्या पाँच मिनट के लिए भी एक चिंगारी जगा सकता है?","कौन-सी पहली कोशिश आप खुशी से करेंगे?"],["वायु · जगह",["बात करना","चुप रहना","समय खाली करना"],"आप किस चीज़ को ज़्यादा जगह देना चाहेंगे?","कौन-सी सीमा मदद करेगी?"],["आकाश · सपना",["रचना","महसूस करना","खुद को इजाज़त देना"],"कल्पना करें कि एक मिनट के लिए कुछ भी मुमकिन है। आपका सपना क्या है?","आप उस सपने का कौन-सा हिस्सा आज के दिन में लाना चाहेंगे?"]]},"bn":{"title":"যত্নের সুতো","kicker":"SUTI.world ∴ ব্যক্তিগত কর্মশালা","intro":"আপনি একটি শব্দ বা একটি পুরো প্রকল্প নিয়ে আসতে পারেন। এখানে দুটোরই জায়গা আছে। নিজে সংরক্ষণ বা ভাগ করে নেওয়ার আগ পর্যন্ত আপনার উত্তরগুলো এই ট্যাবেই থাকে।","language":"মানচিত্রের ভাষা","review":"সম্পাদিত অনুবাদ · স্বাধীন ভাষা পর্যালোচনা বাকি","seasonLabel":"ফ্রেয়ার চার টুপি · একটি বুনন বেছে নিন","seasons":["শরৎ · উল আর তামাটে ম্যাপলপাতা","শীত · ফেল্ট আর নীল তুষার","বসন্ত · লিনেন আর পেস্তার সবুজ","গ্রীষ্ম · সুতির কাপড় আর সমুদ্রের জল"],"seasonPrompts":["উষ্ণতার কাছে কী নিয়ে যেতে চান?","আজ কী আপনাকে বিশ্রাম নিতে সাহায্য করবে?","কীকে প্রথম ছোট্ট একটা সুযোগ দিতে চান?","সামর্থ্য থাকতে কী ভাগ করে নিতে চান?"],"seasonNote":"এটি SUTI-র নিজস্ব কল্পচিত্র। ঋতু বদলালেও আপনার উত্তরগুলো থাকবে।","depth":"গভীরতা","depths":["প্রথম ছোঁয়া · কিছু শব্দ বেছে নিন","আরও একটু কাছে · একটি বাক্যাংশ যোগ করুন","আরও গভীরে · একটি পার্থক্য আর একটি পদক্ষেপ খুঁজুন"],"threadsNote":"সাত আকাশপ্রদীপ লেখকের রচিত গল্পের অংশ। চক্রের নামগুলো প্রশ্নের জন্য ব্যবহৃত কল্পচিত্র। একটি সুতো বেছে নিন বা সাতটিই দেখুন। অষ্টমটি ঐচ্ছিক। তারপর পাঁচটি উপাদান নিয়ে প্রশ্ন আছে।","stop":"আপনি এখানেই থামতে পারেন। যা ভাগ করে নিতে চেয়েছেন, তার জন্য ধন্যবাদ। সঙ্গে নেওয়ার জন্য একটি সুতো বেছে নিন।","atlas":"পারস্পরিক যত্নের মানচিত্রপুঞ্জ","build":"আমার ফিউশন মানচিত্র তৈরি করুন","clear":"মুছুন","cleared":"আপনার মানচিত্র ও উত্তর মুছে ফেলা হয়েছে","result":"আজকের জন্য আমার মানচিত্র","download":"টেক্সট ফাইল হিসেবে রাখুন","empty":"চাইলে মানচিত্র খালি রাখতে পারেন","flowTitle":"সভিওরেনুখের স্রোত · ছেড়ে দেওয়া","flowText":"যেন গরম এক দিনের পর সমুদ্রের হাওয়া। একবার শ্বাস নিন। নিজেকে জিজ্ঞেস করুন, কী ছেড়ে দিতে আর কী ধরে রাখতে চান। একটি শব্দই যথেষ্ট। চাইলে কিছু না বলে এখানেই একটু থাকতে পারেন।","gameTitle":"Samurai Dharma কর্মশালা · খেলার স্তর","gameText":"একটি মুখোশ পরখ করে দেখুন। বিদূষক দৃষ্টিকোণ বদলান, ফিনিস্ত আবার চেষ্টা করেন, ফ্ল্যামিঙ্গো সঙ্গ খোঁজে, ড্রাগোনিস একটি সীমা রক্ষা করেন আর যত্নের দূত অনুমতি চান। এগুলো আজকের ভূমিকা।","gamePrompt":"বারোটি উপহার আর সাত আকাশপ্রদীপ লেখকের কল্পচিত্র। একই অনুরোধ দুটি মুখোশের স্বরে বলুন। কোন কথাটি বেছে নেওয়ার বেশি অবকাশ দেয়?","formText":"আয়োজকের সঙ্গে কিছু ভাগ করতে চাইলে আলাদা ফর্মটি খুলুন এবং শুধু আপনার বেছে নেওয়া কথাগুলো কপি করুন। মানচিত্র নিজে থেকে কিছু পাঠায় না।","formLink":"যত্নের ফর্ম · ইংরেজি ও রুশ ভাষায়","contactText":"ইচ্ছে হলে আমাকে একটি বাক্য পাঠান। আমি শুনতে পারি এবং কীভাবে সাহায্য করতে পারি তা বলতে পারি। কথাটি অন্য কাউকে নিয়ে হলে তাঁকে যোগাযোগের ঠিকানা দিতে পারেন। লিখবেন কি না, তিনিই ঠিক করুন।","closing":"পা মেঝেতে। একবার শ্বাস নিন। এক গ্লাস জল। আজ যত দূর যেতে স্বস্তি হয়, ততটাই যান।","zones":[["ভিত · মূলাধার — এখন আপনার শরীরের কী দরকার?",["খাবার","আশ্রয়","নীরবতা","বিশ্রাম"],"আজ কী সাহায্য করতে পারে?","এখনই কোন ছোট পদক্ষেপটি নেওয়া যায়?"],["অনুভূতি · স্বাধিষ্ঠান — কী ভালো লাগে?",["উষ্ণতা","জল","নড়াচড়া","বিরতি"],"কী আরও একটু বেশি চান?","আপনার সীমা কোথায়?"],["ইচ্ছাশক্তি · মণিপুর — কী আপনার হাতে আছে?",["বেছে নেওয়া","চাওয়া","পরে করা"],"এখন কোন সিদ্ধান্তটি আপনার?","কোন বোঝাটি নিজের কাঁধ থেকে নামাতে পারেন?"],["হৃদয় · অনাহত — কী ধরনের যত্ন চান?",["কেউ আমার কথা শুনুক","কেউ পাশে থাকুক","আপন মানুষ খুঁজে পাই"],"সহায়তা আপনার কাছে কী বোঝায়?","ব্যক্তিগত কথা না বলেও জানাতে পারেন যে কুইয়ার-বান্ধব একটি পরিসর আপনার দরকার"],["কণ্ঠ · বিশুদ্ধ — কী বলতে চান?",["হ্যাঁ","না","এখন নয়","অন্য ভাষায়"],"কোন কথাটি খুঁজছেন?","কীভাবে বললে আপনার কথা বোঝা যাবে?"],["দৃষ্টি · আজ্ঞা — কী আরও স্পষ্ট হয়েছে?",["একটি যোগসূত্র দেখছি","আমার সন্দেহ আছে","আমার অন্য দৃষ্টিভঙ্গি দরকার"],"কী লক্ষ করছেন?","কী আপনার অনুমান যাচাই করতে সাহায্য করবে?"],["দীপ্তি · সহস্রার — কী আপনাকে অর্থ খুঁজে পেতে সাহায্য করে?",["সৃষ্টিশীলতা","ঘনিষ্ঠতা","স্বাধীনতা","এখনো জানি না"],"কী আগলে রাখতে চান?","দৈনন্দিন জীবনের কোন কাজে তা প্রকাশ পেতে পারে?"],["সবার পরিসর · ব্যক্তির ঊর্ধ্বে — কী বিনিময় করতে চান?",["সময়","দক্ষতা","প্রকল্প","আমার সাহায্য দরকার","এড়িয়ে যান"],"কোনো যৌথ কাজ কি আপনাকে টানছে?","কোন শর্তে এই বিনিময় আপনার পক্ষে করা সম্ভব হবে?"],["পৃথিবী · অবলম্বন",["বিশ্রাম","খাবার","নিরাপদ জায়গা"],"কী আপনার দিনটাকে একটু স্থির করতে পারে?","কোন সাহায্য আপনি নিতে পারেন?"],["জল · পরিবর্তন",["গতি বদলানো","ছেড়ে দেওয়া","অন্যভাবে চেষ্টা করা"],"কোথায় গতি বদলাতে চান?","কোন কাজটি আরও কোমলভাবে করতে পারেন?"],["আগুন · আকাঙ্ক্ষা",["শুরু করা","তৈরি করা","উষ্ণ হওয়া"],"কী পাঁচ মিনিটের জন্যও একটু স্ফুলিঙ্গ জ্বালাবে?","কোন কাজটি প্রথমে পরখ করে দেখতে খুশি হবেন?"],["বায়ু · জায়গা",["কথা বলা","চুপ থাকা","সময় বের করা"],"কিসের জন্য আরও জায়গা রাখতে চান?","কোন সীমাটি সহায়ক হবে?"],["আকাশ · স্বপ্ন",["তৈরি করা","অনুভব করা","নিজেকে অনুমতি দেওয়া"],"ভাবুন এক মিনিটের জন্য সবই সম্ভব। আপনার স্বপ্ন কী?","সেই স্বপ্নের কোন অংশটি আজকের দিনে নিয়ে আসতে চান?"]]},"eo":{"title":"fadeno de zorgo","kicker":"SUTI.world ∴ persona laborejo","intro":"vi povas kunporti unu vorton aŭ tutan projekton. por ambaŭ estas loko. viaj respondoj restas en ĉi tiu foliumila langeto ĝis vi mem konservos aŭ dividos ilin.","language":"lingvo de la mapo","review":"redakcia traduko · sendependa lingva revizio ankoraŭ atendata","seasonLabel":"la kvar ĉapeloj de Freyja · elektu teksturon","seasons":["aŭtuno · lano kaj kuprokolora acero","vintro · felto kaj blua prujno","printempo · lino kaj pistakverdo","somero · kotono kaj marakvo"],"seasonPrompts":["kion vi ŝatus kunporti en la varmon?","kio helpus vin ripozi hodiaŭ?","al kio vi ŝatus doni etan unuan ŝancon?","kion vi ŝatus dividi dum vi ankoraŭ havas energion?"],"seasonNote":"jen aŭtora bildo de SUTI. vi povas ŝanĝi la sezonon kaj konservi viajn respondojn.","depth":"profundo","depths":["unua tuŝo · elektu vortojn","iom pli proksime · aldonu frazon","pli profunde · trovu distingon kaj paŝon"],"threadsNote":"la sep lumportantoj apartenas al aŭtora rakonto. la nomoj de la ĉakroj estas bildoj por la demandoj. elektu unu fadenon aŭ provu ĉiujn sep, kun okono laŭvole. poste venas kvin demandoj laŭ la elementoj.","stop":"vi povas halti ĉi tie. dankon pro tio, kion vi elektis dividi. elektu unu fadenon por kunporti.","atlas":"atlaso de reciproka zorgo","build":"faru mian kunfandan mapon","clear":"viŝi","cleared":"via mapo kaj viaj respondoj estas viŝitaj","result":"mia mapo por hodiaŭ","download":"konservi kiel tekston","empty":"vi povas lasi la mapon malplena","flowTitle":"la fluo Sviorenukh · lasi foriri","flowText":"kiel mara brizo post varmega tago. enspiru kaj demandu al vi, kion vi ŝatus lasi foriri kaj kion vi ŝatus konservi. unu vorto sufiĉas. vi povas simple resti ĉi tie.","gameTitle":"laborejo Samurai Dharma · luda tavolo","gameText":"provu unu maskon. la pajaco ŝanĝas vidpunkton, Finist provas denove, la flamengo serĉas kuneston, Dragonis gardas limon kaj anĝelo de zorgo petas permeson. jen roloj por hodiaŭ.","gamePrompt":"la dek du donacoj kaj la sep lumportantoj estas aŭtoraj bildoj. esprimu la saman peton per la voĉo de du maskoj. kiu versio lasas pli da spaco por elekti?","formText":"se vi ŝatus dividi ion kun la organizanto, malfermu la apartan formularon kaj kopiu nur la vortojn, kiujn vi elektas. la mapo nenion sendas aŭtomate.","formLink":"zorgoformularo · en la angla kaj la rusa","contactText":"se vi volas, sendu al mi unu frazon. mi povas aŭskulti kaj diri, kian helpon mi povas proponi. se temas pri alia persono, vi povas transdoni la kontakton kaj lasi al tiu persono la decidon, ĉu skribi.","closing":"piedoj sur la planko. unu spiro. glaso da akvo. iru nur tiel profunden, kiel konvenas al vi hodiaŭ.","zones":[["enradikiĝo · muladhara — kion via korpo bezonas nun?",["manĝaĵo","ŝirmejo","trankvilo","ripozo"],"kio helpus hodiaŭ?","kiun etan paŝon vi povas fari ĝuste nun?"],["sensoj · svadhisthana — kio senteblas agrabla?",["varmo","akvo","movo","paŭzo"],"kion vi ŝatus havi iom pli multe?","kie estas via limo?"],["volo · manipura — kio estas en viaj manoj?",["elekti","peti","prokrasti"],"kiu decido estas via nun?","kian ŝarĝon vi povas demeti?"],["koro · anahata — kian zorgon vi ŝatus?",["esti aŭskultata","havi iun proksime","trovi miajn homojn"],"kion subteno signifas por vi?","vi povas diri, ke vi bezonas spacon bonvenigan al kviraj homoj, sen rakonti vian personan historion"],["voĉo · vishuddha — kion vi ŝatus diri?",["jes","ne","ne nun","en alia lingvo"],"kiun frazon vi serĉas?","kiel vi povus diri tion por ke oni komprenu vin?"],["rigardo · ajna — kio fariĝis pli klara?",["mi vidas ligon","mi dubas","mi bezonas alian vidpunkton"],"kion vi rimarkas?","kio helpus vin kontroli vian supozon?"],["radiado · sahasrara — kio donas signifon al via vivo?",["kreemo","proksimeco","libereco","mi ankoraŭ ne scias"],"kion vi ŝatus protekti?","kiu ago povus esprimi tion en la ĉiutaga vivo?"],["komuna kampo · transpersona — kion vi ŝatus interŝanĝi?",["tempon","kapablon","projekton","mi bezonas helpon","preterlasi"],"ĉu komuna projekto allogas vin?","kiuj kondiĉoj igus la interŝanĝon farebla por vi?"],["tero · apogo",["ripozo","manĝaĵo","sekura loko"],"kio donus pli da stabileco al via tago?","kian helpon vi povus akcepti?"],["akvo · ŝanĝo",["ŝanĝi ritmon","lasi foriri","provi alimaniere"],"kie vi ŝatus ŝanĝi la ritmon?","kion vi povus fari pli milde?"],["fajro · deziro",["komenci","krei","varmiĝi"],"kio ekbruligas fajreron, eĉ por kvin minutoj?","kian unuan provon vi bonvenigus?"],["aero · spaco",["paroli","silenti","liberigi tempon"],"al kio vi ŝatus doni pli da spaco?","kiu limo helpus?"],["etero · revo",["krei","senti","permesi al mi ion"],"imagu, ke ĉio eblas dum unu minuto. pri kio vi revas?","kiun parton de tiu revo vi ŝatus enporti en la hodiaŭan tagon?"]]},"sa":{"title":"परिचर्यायाः सूत्रम्","kicker":"SUTI.world ∴ स्वकार्यशाला","intro":"एकं पदम् अथवा सम्पूर्णं कार्यम् अत्र आनेतुं शक्नोषि। उभयोरपि स्थानम् अस्ति। यावत् स्वयम् उत्तराणि सञ्चिनोषि वा अन्यैः सह विभजसि वा, तावत् तानि अस्मिन्नेव पृष्ठफलके तिष्ठन्ति।","language":"मानचित्रस्य भाषा","review":"सम्पादितानुवादः · स्वतन्त्रो संस्कृतविशेषज्ञः अद्यापि समीक्षां न कृतवान्","seasonLabel":"फ्रेया-देव्याः चत्वारि शिरोवेष्टनानि · वस्त्रस्पर्शं वृणु","seasons":["शरत् · ऊर्णावस्त्रं ताम्रवर्णं च मेपलवृक्षपत्रम्","हेमन्तः · घनमूर्णावस्त्रं नीलतुषारश्च","वसन्तः · क्षौमवस्त्रं पिस्ताफलवर्णश्च","ग्रीष्मः · कार्पासवस्त्रं समुद्रजलं च"],"seasonPrompts":["उष्णं स्थानं प्रति किं नेतुम् इच्छसि?","अद्य विश्रान्त्यै किं ते साहाय्यं कुर्यात्?","कस्मै लघुम् आद्यावसरं दातुम् इच्छसि?","यावत् शक्तिरस्ति तावत् किं परैः सह विभक्तुम् इच्छसि?"],"seasonNote":"इदं SUTI-रचयितॄणां कल्पितं रूपकम्। ऋतुं परिवर्तयितुं शक्नोषि। उत्तराणि तिष्ठन्ति।","depth":"विचारगाम्भीर्यम्","depths":["प्रथमस्पर्शः · पदानि वृणु","किञ्चित् समीपम् · एकं वाक्यं लिख","गभीरतरम् · एकं भेदम् एकं च पदक्रमं पश्य"],"threadsNote":"सप्त ज्योतींषि रचयितॄणां कल्पितकथायाः अंशाः। चक्रनामानि प्रश्नानां रूपकाणि। एकं सूत्रं वृणु अथवा सप्तापि परीक्षस्व। अष्टमम् ऐच्छिकम्। अनन्तरं पञ्च महाभूतानां प्रश्नाः सन्ति।","stop":"अत्र विरन्तुं शक्नोषि। यत् स्वेच्छया विभजसि तदर्थं धन्यवादाः। एकं सूत्रं स्वेन सह नेतुं वृणु।","atlas":"परस्परपरिचर्यायाः मानचित्रसङ्ग्रहः","build":"मम संयोगमानचित्रं रचय","clear":"अपनय","cleared":"तव मानचित्रम् उत्तराणि च अपनीतानि","result":"अद्यतनं मम मानचित्रम्","download":"पाठरूपेण सञ्चिनु","empty":"मानचित्रं रिक्तमपि स्थापयितुं शक्नोषि","flowTitle":"स्वियोरेनुख्-प्रवाहः · त्यागः","flowText":"उष्णदिनानन्तरं समुद्रसमीर इव। एकं श्वासं गृहाण। किं त्यक्तुम् इच्छसि किं च रक्षितुम् इति स्वयम् आत्मानं पृच्छ। एकं पदं पर्याप्तम्। इच्छसि चेत् केवलम् अत्र तिष्ठ।","gameTitle":"Samurai Dharma-कार्यशाला · क्रीडास्तरः","gameText":"एकं मुखावरणं प्रयुज्य पश्य। विदूषको दृष्टिकोणं परिवर्तयति। फिनिस्त् पुनः प्रयतते। फ्लामिङ्गो सहचरम् अन्विष्यति। द्रागोनिस् मर्यादां रक्षति। परिचर्यादूतः अनुमतिं याचते। इमानि अद्यतनानि पात्राणि।","gamePrompt":"द्वादश दानानि सप्त ज्योतींषि च रचयितॄणां कल्पितरूपकाणि। एकां याचनां द्वयोः पात्रयोः स्वराभ्यां वद। कतरं वचनम् अधिकं विकल्पावकाशं ददाति?","formText":"आयोजकाय किञ्चित् ज्ञापयितुम् इच्छसि चेत् पृथक् प्रपत्रम् उद्घाटय। इच्छितानि पदान्येव तत्र लिख। मानचित्रात् किमपि स्वयमेव न प्रेष्यते।","formLink":"परिचर्या-प्रपत्रम् · आङ्ग्लभाषायां रूसीभाषायां च","contactText":"इच्छसि चेत् मह्यम् एकं वाक्यं प्रेषय। श्रोतुं शक्नोमि, कीदृशं साहाय्यं दातुं शक्नोमि इति वक्तुं च। अन्यस्य विषये चेत् सम्पर्कविवरणं तस्मै देहि। स एव लिखेद् वा न वेति निश्चिनोतु।","closing":"भूमौ पादौ। एकः श्वासः। एकं पात्रं जलम्। अद्य यावद् युक्तं मन्यसे तावदेव गभीरं गच्छ।","zones":[["आधारः · मूलाधारः — इदानीं तव शरीराय किं आवश्यकम्?",["आहारः","आश्रयः","मौनम्","विश्रान्तिः"],"अद्य किं ते उपकुर्यात्?","इदानीं कः लघुः पदक्रमः शक्यः?"],["संवेदना · स्वाधिष्ठानम् — किं सुखदं भाति?",["उष्णता","जलम्","चलनम्","विरामः"],"कस्य किञ्चिदधिकम् इच्छसि?","तव मर्यादा कुत्र अस्ति?"],["सङ्कल्पः · मणिपूरः — तव वशे किम् अस्ति?",["वरणम्","याचना","विलम्बः"],"इदानीं कः विकल्पः तव अधीनः?","कं भारं वोढुं न आवश्यकम्?"],["हृदयम् · अनाहतः — कीदृशीं परिचर्याम् इच्छसि?",["कश्चित् शृणोतु","कश्चित् समीपे तिष्ठतु","मम जनान् अन्वेष्टुम्"],"साहाय्यम् इति तव कृते किम्?","स्वकथाम् अकथयित्वापि क्वियर्-जनान् सत्कुर्वतः स्थानस्य आवश्यकतां वक्तुं शक्नोषि"],["स्वरः · विशुद्धम् — किं वक्तुम् इच्छसि?",["आम्","न","न इदानीम्","अन्यभाषया"],"किं वाक्यम् अन्विष्यसि?","अन्ये यथा बुध्येरन् तथा कथं वदेः?"],["दृष्टिः · आज्ञा — किं स्पष्टतरम् अभवत्?",["सम्बन्धं पश्यामि","सन्देहो मे अस्ति","अन्या दृष्टिरपेक्षिता"],"किं पश्यसि?","तव अनुमानं परीक्षितुं किं साहाय्यं कुर्यात्?"],["दीप्तिः · सहस्रारः — किं तव जीवनाय अर्थं ददाति?",["सृजनम्","सान्निध्यम्","स्वतन्त्रता","अद्यापि न जानामि"],"किं रक्षितुम् इच्छसि?","दैनन्दिने जीवने केन कर्मणा तद् व्यक्तं भवेत्?"],["साधारणक्षेत्रम् · व्यक्त्यतीतम् — किं परस्परं दातुम् आदातुं च इच्छसि?",["कालः","कौशलम्","कार्यम्","साहाय्यं मे आवश्यकम्","एतद् विहाय गच्छ"],"किमपि साधारणं कार्यं त्वाम् आकर्षति वा?","कैः नियमैः अयं विनिमयः सुकरो भवेत्?"],["पृथिवी · आधारः",["विश्रान्तिः","आहारः","सुरक्षितं स्थानम्"],"किं तव दिनं स्थिरतरं कुर्यात्?","किं साहाय्यं स्वीकर्तुं शक्नोषि?"],["जलम् · परिवर्तनम्",["गतिं परिवर्तयितुम्","त्यक्तुम्","अन्यथा प्रयतितुम्"],"कुत्र गतिं परिवर्तयितुम् इच्छसि?","किं मृदुतरया रीत्या कर्तुं शक्नोषि?"],["अग्निः · इच्छा",["आरब्धुम्","स्रष्टुम्","उष्णतां प्राप्तुम्"],"पञ्च निमेषानपि किम् उत्साहस्फुलिङ्गं जनयति?","कं प्रथमप्रयत्नं हर्षेण स्वीकरोषि?"],["वायुः · अवकाशः",["संवदितुम्","मौनं धारयितुम्","कालम् अवशेषयितुम्"],"कस्मै अधिकम् अवकाशं दातुम् इच्छसि?","का मर्यादा साहाय्यं कुर्यात्?"],["आकाशः · स्वप्नः",["स्रष्टुम्","अनुभवितुम्","आत्मने अनुमतिं दातुम्"],"क्षणमेकं सर्वं सम्भवतीति कल्पय। कः तव स्वप्नः?","तस्य स्वप्नस्य कं भागम् अद्यतने दिने आनेतुम् इच्छसि?"]]},"la":{"title":"filum curae","kicker":"SUTI.world ∴ officina privata","intro":"unum verbum aut totum opus afferre potes. utrique locus est. responsa tua in hac pagina manent, donec ea ipse serves aut cum aliis communices.","language":"lingua tabulae","review":"translatio editoria · recensio a perito Latinitatis independente adhuc exspectatur","seasonLabel":"quattuor tegmina capitis Freyjae · texturam elige","seasons":["autumnus · lana et folium aceris aeneum","hiems · pannus coactus et pruina caerulea","ver · linum et pistacium","aestas · gossypium et aqua marina"],"seasonPrompts":["quid in locum tepidum afferre velis?","quid te hodie adiuvet ut requiescas?","cui rei primam parvam occasionem dare velis?","quid cum aliis communicare velis, dum vires habes?"],"seasonNote":"imago a SUTI ficta est. tempus anni mutare potes, responsis servatis.","depth":"altitudo deliberationis","depths":["primus tactus · verba elige","paulo propius · sententiam adde","altius · discrimen et gradum reperi"],"threadsNote":"septem lumina ad fabulam ab auctoribus fictam pertinent. nomina chakrarum imagines quaestionibus praebent. unum filum elige aut septem tenta, octavo ad libitum. quinque quaestiones de elementis sequuntur.","stop":"hic consistere potes. gratias ago pro eo quod communicare voluisti. unum filum elige quod tecum feras.","atlas":"atlas curae mutuae","build":"tabulam coniunctionum mearum compone","clear":"dele","cleared":"tabula tua et responsa deleta sunt","result":"tabula mea hodierna","download":"ut textum serva","empty":"tabulam vacuam relinquere potes","flowTitle":"cursus Sviorenukh · dimittere","flowText":"velut aura marina post diem calidum. spiritum duc et te ipsum interroga quid dimittere et quid servare velis. unum verbum sufficit. hic manere potes.","gameTitle":"officina Samurai Dharma · pars ludica","gameText":"unam personam experire. scurra aliunde rem spectat, Finist iterum temptat, phoenicopterus socios quaerit, Dragonis fines tuetur, et Angelus Curae veniam rogat. hae partes hodie agi possunt.","gamePrompt":"duodecim dona et septem lumina imagines ab auctoribus fictae sunt. eandem petitionem duarum personarum vocibus profer. quae formula plus spatii ad eligendum relinquit?","formText":"si quid cum ordinatore communicare vis, formam separatam aperi et ea tantum verba in eam transcribe quae ipse eligis. tabula nihil sua sponte mittit.","formLink":"forma petitionis curae · Anglice et Russice","contactText":"si vis, unam sententiam ad me mitte. audire possum et dicere quid auxilii praebere possim. si res ad alium pertinet, ei indicare potes quomodo mecum communicet. ipse de scribendo decernat.","closing":"pedes in solo. unus spiritus. poculum aquae. eo tantum altius procede quo hodie commodum tibi videtur.","zones":[["fundamentum · muladhara — quid corpus tuum nunc requirit?",["cibus","perfugium","silentium","quies"],"quid hodie tibi prosit?","quem parvum gradum nunc facere possis?"],["sensus · svadhisthana — quid iucundum sentis?",["calor","aqua","motus","pausa"],"cuius rei paulo plus velis?","ubi finis tuus est?"],["voluntas · manipura — quid in tua potestate est?",["eligere","rogare","differre"],"quid nunc tuo arbitrio est?","quod onus relinquere potes?"],["cor · anahata — qualem curam velis?",["ut me audiant","ut aliquis adsit","meos invenire"],"quid tibi significat auxilium?","locum hominibus queer amicum desiderare te dicere potes, sine vita privata narranda"],["vox · vishuddha — quid dicere velis?",["ita","non","non nunc","alia lingua"],"quam sententiam quaeris?","quomodo id dicere possis ut alii intellegant?"],["aspectus · ajna — quid clarius factum est?",["coniunctionem video","dubito","alio aspectu egeo"],"quid animadvertis?","quid te adiuvet ut coniecturam explores?"],["splendor · sahasrara — quid vitae tuae sensum dat?",["facultas creandi","propinquitas","libertas","nondum scio"],"quid tueri velis?","quo facto hoc in vita cotidiana exprimere possis?"],["locus communis · ultra personam — quid permutare velis?",["tempus","peritia","opus","auxilio egeo","praeteri"],"estne opus commune quod te allicit?","quibus condicionibus haec permutatio facilior fiat?"],["terra · fulcimentum",["quies","cibus","locus tutus"],"quid diem tuum stabiliorem reddat?","quale auxilium accipere possis?"],["aqua · mutatio",["gradum mutare","dimittere","aliter temptare"],"qua in re gradum mutare velis?","quid mitius facere possis?"],["ignis · desiderium",["incipere","creare","calefieri"],"quid scintillam excitet, vel per quinque minuta?","quem primum conatum libenter excipias?"],["aer · spatium",["loqui","tacere","tempus liberare"],"cui rei plus loci dare velis?","qui finis tibi prosit?"],["aether · somnium",["creare","sentire","mihi permittere"],"omnia paulisper fieri posse finge. quid somnias?","quam partem somnii huius in hodiernum diem afferre velis?"]]}}</script>
+<script>
+(() => {
+  "use strict";
+
+  const el = id => document.getElementById(id);
+  const root = document.documentElement;
+  const editions = JSON.parse(el("map-copy").textContent);
+  const names = {
+    ru: "русский", en: "English", "es-419": "español latinoamericano",
+    "pt-BR": "português brasileiro", fr: "français", ar: "العربية",
+    "zh-Hans": "简体中文", hi: "हिन्दी", bn: "বাংলা", eo: "Esperanto",
+    sa: "संस्कृतम्", la: "Latina", yzh: "язэхъ",
+  };
+  const aliases = { es: "es-419", pt: "pt-BR", "pt-br": "pt-BR", "zh-hans": "zh-Hans", "zh-cn": "zh-Hans" };
+  const language = el("map-language");
+  const season = el("season");
+  const depth = el("depth");
+  const fields = el("fields");
+  const result = el("result");
+  const out = el("out");
+  const atlas = el("care-atlas");
+  const onlineOrigin = "https://ezargaruna.github.io/suticore/";
+  const framed = window !== window.parent;
+  const offline = location.protocol === "file:";
+  let words;
+
+  function node(tag, content = "") {
+    const element = document.createElement(tag);
+    element.textContent = content;
+    return element;
+  }
+
+  for (const [code, name] of Object.entries(names)) {
+    const option = new Option(name, code);
+    if (code !== "yzh") option.lang = code;
+    option.dir = code === "ar" ? "rtl" : "ltr";
+    language.add(option);
+  }
+
+  if (framed) {
+    for (const link of document.links) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+  }
+
+  const rows = editions.ru.zones.map(([, choices], index) => {
+    const illustration = { 0: "shore", 8: "tide", 12: "dawn" }[index];
+    if (illustration) {
+      const image = node("img");
+      image.src = (framed ? onlineOrigin : "") + "assets/care/" + illustration + ".png";
+      image.alt = "";
+      image.loading = "lazy";
+      fields.append(image);
+    }
+
+    const box = node("fieldset");
+    const legend = node("legend");
+    const controls = node("div");
+    controls.className = "actions";
+    const buttons = choices.map(() => {
+      const button = node("button");
+      button.type = "button";
+      button.setAttribute("aria-pressed", "false");
+      button.addEventListener("click", () => {
+        button.setAttribute("aria-pressed", button.getAttribute("aria-pressed") === "false" ? "true" : "false");
+        refresh();
+      });
+      controls.append(button);
+      return button;
+    });
+    box.append(legend, controls);
+    const inputs = [0, 1].map(field => {
+      const label = node("label");
+      const textarea = node("textarea");
+      textarea.id = "thread-" + (index + 1) + "-" + (field + 1);
+      label.htmlFor = textarea.id;
+      textarea.dir = "auto";
+      textarea.spellcheck = false;
+      textarea.setAttribute("autocorrect", "off");
+      textarea.addEventListener("input", refresh);
+      label.append(textarea);
+      box.append(label);
+      return { label, textarea };
+    });
+    fields.append(box);
+    return { legend, buttons, inputs };
+  });
+
+  function note() {
+    return rows.map(({ legend, buttons, inputs }) => {
+      const selected = buttons.filter(button => button.getAttribute("aria-pressed") === "true");
+      const responses = inputs.filter(({ label }) => !label.hidden);
+      const content = [...selected.map(button => button.textContent),
+        ...responses.map(({ textarea }) => textarea.value.trim())].filter(Boolean);
+      return content.length ? legend.textContent + "\n" + content.join(" · ") : "";
+    }).filter(Boolean).join("\n\n");
+  }
+
+  function refresh() {
+    if (!result.hidden) out.textContent = note() || words.empty;
+  }
+
+  function setDepth() {
+    for (const row of rows) {
+      row.inputs.forEach(({ label }, index) => { label.hidden = index >= Number(depth.value); });
+    }
+    refresh();
+  }
+
+  function setSeason() {
+    document.body.dataset.season = season.value;
+    el("season-note").textContent = words.seasonPrompts[season.selectedIndex];
+  }
+
+  function applyLanguage() {
+    const requested = language.value;
+    const code = requested === "yzh" ? "ru" : requested;
+    words = editions[code];
+    root.lang = code;
+    root.dir = code === "ar" ? "rtl" : "ltr";
+    root.dataset.languageLayer = requested;
+    document.title = words.title + " ∴ SUTI.world";
+
+    for (const item of document.querySelectorAll("[data-copy]")) {
+      item.textContent = item.dataset.copy.split(".").reduce((value, key) => value[key], words);
+    }
+    el("map-review").textContent = requested === "yzh" ? "язэхъ · показана русская редакция карты" : words.review;
+    rows.forEach(({ legend, buttons, inputs }, index) => {
+      const [title, choices, ...prompts] = words.zones[index];
+      legend.textContent = new Intl.NumberFormat(code).format(index + 1) + " · " + title;
+      buttons.forEach((button, option) => { button.textContent = choices[option]; });
+      inputs.forEach(({ label, textarea }, field) => label.replaceChildren(prompts[field], textarea));
+    });
+
+    const atlasLanguage = offline ? "ru" : code;
+    const suffix = { ru: "", "es-419": "-es", "pt-BR": "-pt" }[atlasLanguage] ?? "-" + atlasLanguage;
+    atlas.href = (framed ? onlineOrigin : "") + "care-atlas" + suffix + ".html";
+    atlas.hreflang = atlasLanguage;
+    if (atlasLanguage !== code) {
+      const marker = node("span", "русский");
+      marker.lang = "ru";
+      marker.dir = "ltr";
+      atlas.append(" · ", marker);
+    }
+
+    el("clear-message").textContent = "";
+    setSeason();
+    setDepth();
+  }
+
+  language.addEventListener("change", () => {
+    applyLanguage();
+    if (!framed && !offline) {
+      const url = new URL(location.href);
+      url.searchParams.set("lang", language.value);
+      history.replaceState(history.state, "", url);
+    }
+  });
+  depth.addEventListener("change", setDepth);
+  season.addEventListener("change", setSeason);
+  el("build").addEventListener("click", () => {
+    el("clear-message").textContent = "";
+    result.hidden = false;
+    refresh();
+    el("result-title").focus();
+  });
+  el("clear").addEventListener("click", () => {
+    for (const { buttons, inputs } of rows) {
+      buttons.forEach(button => button.setAttribute("aria-pressed", "false"));
+      inputs.forEach(({ textarea }) => { textarea.value = ""; });
+    }
+    result.hidden = true;
+    out.textContent = "";
+    depth.value = "0";
+    setDepth();
+    el("clear-message").textContent = words.cleared;
+  });
+  el("download").addEventListener("click", () => {
+    const address = URL.createObjectURL(new Blob([note()], { type: "text/plain;charset=utf-8" }));
+    const link = node("a");
+    link.href = address;
+    link.download = "care-map.txt";
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(address), 1000);
+  });
+
+  const requested = root.dataset.mapLanguage || new URLSearchParams(location.search).get("lang");
+  const slug = (requested || "").toLowerCase().replaceAll("_", "-");
+  language.value = aliases[slug] || (Object.hasOwn(names, slug) ? slug : "ru");
+  applyLanguage();
+})();
+</script>
+</body>
+</html>

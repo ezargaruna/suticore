@@ -1,0 +1,33 @@
+{
+"title":"thread of care","kicker":"SUTI.world ∴ personal workshop","intro":"you can bring one word or a whole project. there is room for either. your answers stay in this tab until you save or share them yourself.",
+"language":"map language","review":"editorial translation · independent language review pending",
+"seasonLabel":"Freyja’s four hats · choose a texture","seasons":["autumn · wool and copper maple","winter · felt and blue frost","spring · linen and pistachio","summer · cotton and seawater"],
+"seasonPrompts":["what would you like to bring into the warmth?","what would help you rest today?","what would you like to give a small first chance?","what would you like to share while you have the energy?"],
+"seasonNote":"this is an authorial image from SUTI. you can change the season and keep your answers.",
+"depth":"depth","depths":["first touch · choose words","a little closer · add a phrase","deeper · find a distinction and a step"],
+"threadsNote":"the seven luminaries are an authorial story. the chakra names are images for the questions. choose one thread or try all seven, with an optional eighth. five element prompts follow.",
+"stop":"you can stop here. thank you for what you chose to share. choose one thread to take with you.",
+"atlas":"mutual care atlas","build":"make my fusion map","clear":"clear","cleared":"your map and answers have been cleared","result":"my map for today","download":"save as text","empty":"you can leave the map empty",
+"flowTitle":"the Sviorenukh current · letting go","flowText":"like a sea breeze after a hot day. take a breath and ask yourself what you would like to let go of and what you would like to keep. one word is enough. you can simply stay here.",
+"gameTitle":"Samurai Dharma workshop · game layer","gameText":"try one mask. the jester changes perspective, Finist tries again, the flamingo seeks company, Dragonis holds a boundary, and an Angel of Care asks permission. these are roles for today.",
+"gamePrompt":"the twelve gifts and seven luminaries are authorial images. try one request in the voice of two masks. which version leaves more room to choose?",
+"formText":"if you wish to share with the organizer, open the separate form and copy only the words you choose. the map sends nothing automatically.",
+"formLink":"care form · English and Russian",
+"contactText":"if you wish, send me one phrase. I can listen and tell you what help I can offer. if this is about someone else, you can pass along the contact and let them decide whether to write.",
+"closing":"feet on the floor. a breath. a glass of water. go only as deep as feels right today.",
+"zones":[
+["grounding · muladhara — what does your body need now?",["food","shelter","quiet","rest"],"what would help today?","what small step is available right now?"],
+["sensation · svadhisthana — what feels pleasant?",["warmth","water","movement","a pause"],"what would you like a little more of?","where is your boundary?"],
+["will · manipura — what is in your hands?",["choose","ask","put it off"],"which choice is yours now?","what can you leave off your shoulders?"],
+["heart · anahata — what care would you like?",["be heard","have someone nearby","find my people"],"what does support mean to you?","you can name a need for a queer-friendly space without sharing your personal story"],
+["voice · vishuddha — what would you like to say?",["yes","no","not now","in another language"],"what phrase are you looking for?","how could you say it so you are understood?"],
+["view · ajna — what has become clearer?",["I see a connection","I have a doubt","I need another view"],"what do you notice?","what would help you check your guess?"],
+["radiance · sahasrara — what gives you meaning?",["creativity","closeness","freedom","I don’t know yet"],"what would you like to protect?","what action could express that in daily life?"],
+["shared field · transpersonal — what would you like to exchange?",["time","a skill","a project","I need help","skip"],"is there a shared project that draws you?","what conditions would make the exchange manageable?"],
+["earth · support",["rest","food","a safe place"],"what would steady your day?","what help could you accept?"],
+["water · change",["change pace","let go","try another way"],"where would you like to change the pace?","what could you do more gently?"],
+["fire · desire",["begin","create","warm up"],"what lights a spark, even for five minutes?","what first try would you welcome?"],
+["air · room",["talk","be quiet","free up time"],"what would you like to give more room?","what boundary would help?"],
+["ether · dream",["create","feel","allow myself"],"imagine anything were possible for a minute. what do you dream of?","what part of that dream would you like to bring into today?"]
+]
+}
