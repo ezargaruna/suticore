@@ -96,8 +96,8 @@ The publisher copies the following root HTML files into `_site`. “Available la
 | `virenium.html` | Compatibility alias | Same language support as the canonical workshop | Byte-identical to `verenium.html` and kept in both offline ZIP aliases. |
 | `synaura.html` | Russian source | 12 written editions · Yazekh displays Russian | Editorial style page with independent language review pending. Localized guide and module links. |
 | `synaura-modules.html` | Russian source | 12 written editions · Yazekh displays Russian | All 13 module descriptions, headings and example translated. Design-draft status and rights notice retained. See [coverage](../../locales/synaura/pages/coverage.json). |
-| `openai-crystal.html` | English UI; RU/EN examples | EN | Bilingual examples are not a translated interface. |
-| `audits.html` | English source | 12 written editions · Yazekh displays English | Independent language review pending. The linked crystal and ZIP have separate coverage. |
+| `openai-crystal.html` | English source | 12 written editions · Yazekh displays English | Editor review pending. Examples, pause and return, audit context, and archive link are localized. |
+| `audits.html` | English source | 12 written editions · Yazekh displays English | Independent language review pending. The linked crystal and ZIP follow the selected language. |
 | `clear-water.html` | English | EN | Original practice page; links to RU, ES, FR, and PT-BR editions. |
 | `clear-water-es.html` | Spanish (`es`) | ES | Complete editorial translation of the thirteen prompts and interaction labels; independent review pending; Russian destinations are disclosed. |
 | `clear-water-fr.html` | French (`fr`) | FR | Complete editorial translation of the thirteen prompts, interaction labels, and resource notes; independent review pending; Russian destinations are disclosed. |
@@ -139,7 +139,7 @@ The workflow also publishes these nested HTML screens from `modules/`:
 | `modules/index.html` | RU | RU | Module overview; names and linked English specs do not make the catalog multilingual. |
 | `modules/suti/README.md` | RU + EN | RU/EN | README distinguishes three English master specs from the earlier Russian document. |
 | `modules/synaura/guide/` | Russian original plus localized HTML and Markdown | RU, EN, ES-419, PT-BR, FR, zh-Hans, HI, AR, BN, EO, SA, LA, YZH Russian fallback | The full optional editorial guide is covered. The [review and rights record](../../modules/synaura/guide/coverage.json) records independent review pending, YZH HOLD, original version, and the module-specific MIT notice. |
-| `audit-crystal.zip` | EN | Three-file English audit packet | No translated edition; source links and author's testimonial remain distinct; not an endorsement or partnership. |
+| `audit-crystal.zip` and `downloads/openai-crystal/<locale>.zip` | EN source and 11 editorial translations | Three localized Obsidian notes plus MIT notice in each generated ZIP | Original ZIP retained. Public sources and the author’s testimonial remain distinct. Review and source hashes in [coverage](../../locales/audits/openai-crystal/coverage.json). |
 | `modules/verenium/README.md`, `protocol.md`, `telegram/README.md` | RU | RU | Russian source materials; Telegram copy does not claim an active bot or staffed support. |
 | `modules/verenium/entry-locales.json` | 13 short language sets | Short entry labels/reflections only | Locale strings have no per-string native-review metadata; keep them as editorial copy until reviewed. |
 | `downloads/SUTI.verenium.md` | Spanish-default profile | ES-first | Profile language metadata is not evidence that all linked pages are Spanish. |

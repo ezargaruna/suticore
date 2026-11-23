@@ -319,5 +319,15 @@ fluent review for Esperanto and specialist review for Sanskrit and Latin.
 The concept audit describes the Russian design candidate dated 11 November 2026.
 The interface translation covers headings, descriptions, controls, table
 labels and the diagram description. Linked resources retain their individual
-language and rights. The OpenAI crystal and its Obsidian archive remain
-separate from the shelf translations.
+language and rights.
+
+The [OpenAI crystal](https://suti.world/openai-crystal.html?lang=en) and its
+[Obsidian editions](https://ezargaruna.github.io/suticore/downloads/openai-crystal/coverage.json)
+each offer twelve written editions. Yazekh displays the English source and
+links to the English ZIP. The page includes localized examples, pause and return,
+navigation, and links to the selected Clear Water edition. Each ZIP contains
+three notes and the repository MIT notice. Its index records its own hash and
+the hash of the unchanged English source ZIP. The audit remains an editorial
+reading dated 6 November 2026, with an attributed testimonial and a proposed
+model test. The five linked public sources retain their own rights. Independent
+review of the translations is pending.

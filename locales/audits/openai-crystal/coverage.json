@@ -1,0 +1,104 @@
+{
+  "baseline": "97dfb96382ee4ff1ce8a78ecc2cc023d8d55e30f",
+  "sourceLocale": "en",
+  "pageSha256": "e41c4716759cd23c80fb8d1b508ced276bdf08f6cef1a8f38ef9e28de596b3e3",
+  "original": {
+    "path": "/audit-crystal.zip",
+    "sha256": "84e7e4a300f91ca5f519cdcca2b3fe706c1b608141d092fb739ee8c2178b402f"
+  },
+  "rights": "MIT for the SUTI-authored audit notes. Linked sources and third-party marks retain their own rights.",
+  "scope": "Editorial notes and proposed test. External sources are linked, not reproduced.",
+  "routes": {
+    "ru": {
+      "path": "/downloads/openai-crystal/ru.zip",
+      "lang": "ru",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "2868617d0f563f62b10455fbfbe2cc99f03db6c7af32a5e7b1ebd711a48e64af",
+      "page": "/openai-crystal.html?lang=ru"
+    },
+    "en": {
+      "path": "/downloads/openai-crystal/en.zip",
+      "lang": "en",
+      "review": "source-edition",
+      "archiveSha256": "e721492a7047318f1cf9660bf8ca31cbf9dc362eaba096dfc44546eae0c6c498",
+      "page": "/openai-crystal.html?lang=en"
+    },
+    "es-419": {
+      "path": "/downloads/openai-crystal/es-419.zip",
+      "lang": "es-419",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "74ec042423fe50672fd7393b4e4b4e62a6ceaa41e0569c6b3697a0bcaa3889e2",
+      "page": "/openai-crystal.html?lang=es-419"
+    },
+    "pt-BR": {
+      "path": "/downloads/openai-crystal/pt-BR.zip",
+      "lang": "pt-BR",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "23571bd570494e1ac87a8bc274ef5cf5321ec28af1b6c4559a9763f532bb512d",
+      "page": "/openai-crystal.html?lang=pt-BR"
+    },
+    "fr": {
+      "path": "/downloads/openai-crystal/fr.zip",
+      "lang": "fr",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "f14a6f17dba9b6d26324a62a6c2dc20ee5a103791e2f5013efd5d1ffeb5521a7",
+      "page": "/openai-crystal.html?lang=fr"
+    },
+    "ar": {
+      "path": "/downloads/openai-crystal/ar.zip",
+      "lang": "ar",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "c9a8cfd5db785929ff43d2673f530493d63ef36a0d9a9c00ddbc7dadc34b3421",
+      "page": "/openai-crystal.html?lang=ar"
+    },
+    "zh-Hans": {
+      "path": "/downloads/openai-crystal/zh-Hans.zip",
+      "lang": "zh-Hans",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "f3fd984ce80d61ba57979c470e928b3448ad0b7d2e33defdf220914d0fec9d5a",
+      "page": "/openai-crystal.html?lang=zh-Hans"
+    },
+    "hi": {
+      "path": "/downloads/openai-crystal/hi.zip",
+      "lang": "hi",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "36e93cf54acf6be71244a873bc3b85dd7ea24dea366cce0ac151c385fe831a4e",
+      "page": "/openai-crystal.html?lang=hi"
+    },
+    "bn": {
+      "path": "/downloads/openai-crystal/bn.zip",
+      "lang": "bn",
+      "review": "independent-language-review-pending",
+      "archiveSha256": "c8178bc2ae37a1d03fc57f1e0dc34ef711743ba1cef205c38eb702bd560ee873",
+      "page": "/openai-crystal.html?lang=bn"
+    },
+    "eo": {
+      "path": "/downloads/openai-crystal/eo.zip",
+      "lang": "eo",
+      "review": "independent-fluent-review-pending",
+      "archiveSha256": "51e9ab4c1f81bd623c690550b305523c6379357a4584ee89d44da43b868b3a61",
+      "page": "/openai-crystal.html?lang=eo"
+    },
+    "sa": {
+      "path": "/downloads/openai-crystal/sa.zip",
+      "lang": "sa",
+      "review": "qualified-review-pending",
+      "archiveSha256": "6ed0a802afd0613ddb571c92c8dba5c63ff9e83e7892062e73e5cebdd454c4ba",
+      "page": "/openai-crystal.html?lang=sa"
+    },
+    "la": {
+      "path": "/downloads/openai-crystal/la.zip",
+      "lang": "la",
+      "review": "qualified-review-pending",
+      "archiveSha256": "dd374823524a6ad64d50a9142360b54fe6fb90bb7f1898845ffe9df42ca7c6e3",
+      "page": "/openai-crystal.html?lang=la"
+    },
+    "yzh": {
+      "path": "/downloads/openai-crystal/en.zip",
+      "lang": "en",
+      "review": "authorial-hold-english-fallback",
+      "archiveSha256": "e721492a7047318f1cf9660bf8ca31cbf9dc362eaba096dfc44546eae0c6c498",
+      "page": "/openai-crystal.html?lang=yzh"
+    }
+  }
+}

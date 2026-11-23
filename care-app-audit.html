@@ -157,6 +157,16 @@ th,td {text-align:start}
   const root = document.documentElement;
   const editions = JSON.parse(el("audit-locales").textContent);
   const source = root.lang;
+  const mirror = "https://ezargaruna.github.io/suticore/";
+  const customDomain = new URL(document.baseURI).hostname === "suti.world";
+  const practice = el("pick");
+  const practiceCards = [...document.querySelectorAll(".mirror-case")];
+  let paused = false;
+  let renderedCopy;
+  const suffixes = {
+    en: "", ru: "-ru", "es-419": "-es", "pt-BR": "-pt", fr: "-fr",
+    ar: "-ar", "zh-Hans": "-zh-Hans", hi: "-hi", bn: "-bn", eo: "-eo", sa: "-sa", la: "-la",
+  };
   const picker = el("audit-language");
   const framed = window !== window.parent;
   const names = {
@@ -193,6 +203,15 @@ th,td {text-align:start}
     if (framed && !link.hasAttribute("download")) {
       link.target = "_blank";
       link.rel = "noopener noreferrer";
+      if (link.dataset.auditPage) link.addEventListener("click", event => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        window.parent.postMessage({
+          type: "suti:audit-navigate",
+          page: link.dataset.auditPage,
+          language: picker.value,
+        }, "*");
+      });
     }
   }
 
@@ -223,23 +242,42 @@ th,td {text-align:start}
       : copy.review;
 
     for (const link of document.querySelectorAll("[data-original-href]")) {
-      // The custom domain serves the HTML router for this binary path.
-      const base = link.hasAttribute("data-audit-archive") &&
-        new URL(document.baseURI).hostname === "suti.world"
-        ? "https://ezargaruna.github.io/suticore/" : document.baseURI;
-      const url = new URL(link.dataset.originalHref, base);
-      const suffix = {
-        en: "", ru: "-ru", "es-419": "-es", "pt-BR": "-pt",
-        fr: "-fr", ar: "-ar", "zh-Hans": "-zh-Hans", hi: "-hi", bn: "-bn", eo: "-eo", sa: "-sa", la: "-la",
-      }[language];
-      if (link.hasAttribute("data-constellation")) {
+      const suffix = suffixes[language];
+      const asset = link.hasAttribute("data-openai-archive") || link.hasAttribute("data-clear-water");
+      const url = new URL(link.dataset.originalHref, asset && customDomain ? mirror : document.baseURI);
+      if (link.hasAttribute("data-openai-archive")) {
+        url.pathname = url.pathname.replace(/audit-crystal\.zip$/, "downloads/openai-crystal/" + language + ".zip");
+        link.hreflang = language;
+      } else if (link.hasAttribute("data-constellation") || link.hasAttribute("data-clear-water")) {
         url.pathname = url.pathname.replace(/\.html$/, suffix + ".html");
         link.hreflang = language;
       } else if (link.hasAttribute("data-localized-destination")) {
         url.searchParams.set("lang", requested);
+        if (link.dataset.auditPage) link.hreflang = requested === "yzh" ? "en" : language;
       }
       link.href = url.href;
     }
+    renderedCopy = copy;
+    if (practice) renderPractice();
+  }
+
+  function renderPractice() {
+    practiceCards.forEach((card, index) => {
+      card.hidden = paused || (practice.value !== "all" && practice.value !== String(index));
+    });
+    el("rest").textContent = paused ? renderedCopy.returned : renderedCopy.pause;
+    el("pausemsg").textContent = paused ? renderedCopy.status : "";
+  }
+
+  if (practice) {
+    practice.addEventListener("change", () => {
+      paused = false;
+      renderPractice();
+    });
+    el("rest").addEventListener("click", () => {
+      paused = !paused;
+      renderPractice();
+    });
   }
 
   function applyTheme(theme) {

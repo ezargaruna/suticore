@@ -10,7 +10,7 @@ from build_verenium_workshop import CODES, check_shape
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "locales/audits"
-PAGES = {"audits": "en", "care-app-audit": "ru"}
+PAGES = {"audits": "en", "care-app-audit": "ru", "openai-crystal": "en"}
 
 
 def main():
@@ -28,7 +28,10 @@ def main():
         for code, words in editions.items():
             check_shape(editions[source], words, f"{name}.{code}")
         keys = set(re.findall(r'data-copy(?:-aria-label|-data-label|-content)?="([^"]+)"', template))
-        if keys | {"language", "review"} != editions[source].keys():
+        runtime_keys = {"language", "review"}
+        if name == "openai-crystal":
+            runtime_keys.update(("pause", "returned", "status"))
+        if keys | runtime_keys != editions[source].keys():
             raise SystemExit(f"Audit template and copy keys differ: {name}")
         payload = json.dumps(editions, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
         result = template.replace("<!-- audit-locales -->", payload)
