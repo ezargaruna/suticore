@@ -23,7 +23,9 @@ retained beside the generated derivatives.
 The language selection drives the page, its archive link and the Clear Water
 practice destination. The embedded library and crystal preserve the selected
 language when moving between them. A late dialog close event now checks the
-current open state before clearing a newly opened frame.
+current open state before clearing a newly opened frame. The embedded document
+is recreated for each open so a previously hidden browsing context is replaced.
+The frame fills the remaining dialog height as translated titles wrap.
 
 ## Verification performed on 23 November 2026
 

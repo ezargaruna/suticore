@@ -1846,12 +1846,13 @@ body {
 <!-- suti-single-interface:start -->
 <style>
   .interface-dialog { width:min(96vw,1440px); height:min(94vh,1000px); max-width:none; max-height:none; padding:0; border:1px solid var(--suti-line); border-radius:24px; color:var(--suti-text); background:var(--suti-surface); box-shadow:0 24px 90px #07131088; overflow:hidden; }
+  .interface-dialog[open] { display:flex; flex-direction:column; }
   .interface-dialog::backdrop { background:#071310b8; backdrop-filter:blur(8px); }
-  .interface-dialog__bar { min-height:60px; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:8px 18px; border-bottom:1px solid var(--suti-line); background:var(--suti-surface); }
+  .interface-dialog__bar { flex:none; min-height:60px; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:8px 18px; border-bottom:1px solid var(--suti-line); background:var(--suti-surface); }
   .interface-dialog__title { margin:0; font:600 1rem/1.3 var(--suti-font-display); }
   .interface-dialog__close { min-width:44px; min-height:44px; border:1px solid var(--suti-line); border-radius:12px; color:var(--suti-text); background:var(--suti-bg); cursor:pointer; }
-  .interface-dialog__frame { display:block; width:100%; height:calc(100% - 60px); border:0; background:var(--suti-bg); }
-  @media(max-width:680px) { .interface-dialog { inset:0; width:100vw; height:100dvh; margin:0; border:0; border-radius:0; } .interface-dialog__bar { min-height:56px; } .interface-dialog__frame { height:calc(100% - 56px); } }
+  .interface-dialog__frame { display:block; flex:1 1 auto; min-height:0; width:100%; height:auto; border:0; background:var(--suti-bg); }
+  @media(max-width:680px) { .interface-dialog { inset:0; width:100vw; height:100dvh; margin:0; border:0; border-radius:0; } .interface-dialog__bar { min-height:56px; } }
   @media(forced-colors:active) { .interface-dialog { border:2px solid CanvasText; } .interface-dialog::backdrop { background:Canvas; } }
 </style>
 <dialog class="interface-dialog" id="interface-dialog" aria-labelledby="interface-dialog-title">
@@ -1863,7 +1864,7 @@ body {
 (() => {
   const data = JSON.parse(document.getElementById('suti-single-interface-data').textContent);
   const dialog = document.getElementById('interface-dialog');
-  const frame = document.getElementById('interface-dialog-frame');
+  let frame = document.getElementById('interface-dialog-frame');
   const title = document.getElementById('interface-dialog-title');
   const close = document.getElementById('interface-dialog-close');
   function updateDialogLanguage(code) {
@@ -1918,6 +1919,10 @@ body {
     setEditionTitle(msg.title, msg.language);
   });
   const openPage = (page, trigger = null, href = location.href) => {
+    const replacement = frame.cloneNode(false);
+    replacement.removeAttribute('srcdoc');
+    frame.replaceWith(replacement);
+    frame = replacement;
     returnFocus = trigger;
     title.removeAttribute("lang");
     title.removeAttribute("dir");
