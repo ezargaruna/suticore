@@ -1,0 +1,22 @@
+body { overflow-wrap:anywhere; }
+.audit-edition { padding-block-end:1rem; }
+.audit-edition label { display:inline-block; }
+.audit-edition select {
+  min-block-size:44px;
+  max-inline-size:100%;
+  font:inherit;
+  color:var(--ink);
+  background:var(--card);
+  border:1px solid var(--line);
+}
+.audit-edition p { margin-block:.5rem 0; font-size:.92rem; }
+.scroll { overflow-x:auto; }
+.scroll table { min-inline-size:30rem; }
+[lang="ar"] th { white-space:normal; }
+html[data-theme="night"] { color-scheme:dark; }
+@media print {
+  .audit-edition select,.audit-edition label { display:none; }
+  .scroll { overflow:visible; }
+  .scroll table { min-inline-size:0; }
+  body,header,section,.card,.note { color:#111; background:#fff; }
+}

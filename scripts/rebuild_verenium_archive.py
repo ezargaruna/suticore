@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh allowlisted source members in the existing Verenium ZIP aliases.
+"""Refresh allowlisted source members and include the passport practice destination.
 
 Unlisted entries are preserved. The script does not establish rights, privacy,
 or provenance for preserved payloads; those remain separate release checks.
@@ -16,6 +16,7 @@ ALIAS = ROOT / "downloads" / "Virenium.zip"
 ALLOWLIST = {
     "nitya.html": "nitya.html",
     "nitya-todeus.html": "nitya-todeus.html",
+    "nitya-practice.html": "nitya-practice.html",
     "verenium.html": "verenium.html",
     "virenium.html": "virenium.html",
     "care-map.html": "care-map.html",
@@ -31,7 +32,7 @@ def main() -> None:
         names = original.namelist()
         if len(names) != len(set(names)):
             raise SystemExit("duplicate member names; refusing rebuild")
-        selected = {name: source for name, source in ALLOWLIST.items() if name in names}
+        selected = {name: source for name, source in ALLOWLIST.items() if name in names or name == "nitya-practice.html"}
         if "nitya-todeus.html" not in selected:
             raise SystemExit("required site source is absent from archive")
         for source in selected.values():
@@ -48,6 +49,8 @@ def main() -> None:
                     else:
                         payload = (ROOT / selected[info.filename]).read_bytes() if info.filename in selected else original.read(info.filename)
                         rebuilt.writestr(info, payload)
+                for name in selected.keys() - set(names):
+                    rebuilt.write(ROOT / selected[name], arcname=name)
             with ZipFile(temp_path) as rebuilt:
                 if rebuilt.testzip() is not None:
                     raise SystemExit("CRC validation failed")
@@ -58,7 +61,7 @@ def main() -> None:
             ALIAS.write_bytes(ARCHIVE.read_bytes())
         finally:
             temp_path.unlink(missing_ok=True)
-    print(f"refreshed {len(selected)} allowlisted members; preserved {len(names) - len(selected)} other entries")
+    print(f"refreshed {len(selected)} allowlisted members; preserved {len(set(names) - selected.keys())} other entries")
 
 
 if __name__ == "__main__":

@@ -107,11 +107,16 @@ th,td {text-align:start}
         window.parent.postMessage({type: "suti:audit-dismiss"}, "*");
       }
     });
-    el("audit-skip")?.addEventListener("click", event => {
-      event.preventDefault();
-      el("main").focus();
-      el("main").scrollIntoView({block: "start", behavior: "instant"});
-    });
+    for (const link of document.querySelectorAll("a[href^='#']")) {
+      link.addEventListener("click", event => {
+        const target = el(link.getAttribute("href").slice(1));
+        if (!target) return;
+        event.preventDefault();
+        if (!target.hasAttribute("tabindex")) target.tabIndex = -1;
+        target.focus({preventScroll: true});
+        target.scrollIntoView({block: "start", behavior: "instant"});
+      });
+    }
   }
   for (const link of document.querySelectorAll("a[href]:not([href^='#'])")) {
     link.dataset.originalHref = link.getAttribute("href");

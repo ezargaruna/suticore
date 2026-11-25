@@ -1,0 +1,103 @@
+{
+  "sourceRevision": "c20695d6780502f96390ce87e89b9a87babfcff4",
+  "sourceLocale": "en",
+  "sourceSha256": "8dab1fd9bf52c70c3f30f274430a99a9657879f93888a3558a009df5b2cc8b2d",
+  "rights": "Editorial derivative of the public first-party passport under the repository MIT notice. Linked materials retain their own terms.",
+  "fieldsPerWrittenEdition": 92,
+  "writtenEditions": 12,
+  "pageSha256": "be4484269b9a4a8cafb7ee21df3d81d18ea132eb20f2f6f799ecba7412d49909",
+  "originalPhraseSha256": {
+    "en": "418039a6b65bdc3511e1c77bab7797f18d1617c778179b7beb2ea0568be3d9ac",
+    "ru": "f0895eb6479fe1c74e52801705822c540fa32dd40380f30edd7c59c83ca35262",
+    "es-419": "9525feefa14d9e41520e503943ed3e1fed72de4faad6fec71572bccf4ccbe0f0",
+    "pt-BR": "c855b46a3b30d038b95514da1f3a1490705e105de0888886334af1d5a7b071be",
+    "zh-Hans": "6c6834adb6d02bb421fe357ad88d10833f3199e182ee3cd300cad88d52150901",
+    "hi": "9337c270a00d86e4e47beb62cbf85b946145d20d9482f48853f342191816750d",
+    "fr": "40e41c99bc527177bb09075c36e026e1419a03a3c09af0c68737f3dcd27834e1",
+    "ar": "c2f630edb84135e23ad444ec2bd2aa72d6eb81398b5f6b584bcb9f4b3375c064",
+    "bn": "731c11a7630b1e4143facc908f12acc650d3f9661e10c605d2041cf76b62f843",
+    "eo": "0f3b2c07ae285b987e39b6776a580e309c54e2a64711bae22be897c146fdd13b",
+    "sa": "8e4269ff139148a38f0b835dff50be789a7397f41992b9b1de7cca224a12d253",
+    "la": "c29feec89e022107c6eaf41adbd7b9cf499432352ec766b862ec530bc06d0270"
+  },
+  "routes": {
+    "ru": {
+      "href": "/nitya-todeus.html?lang=ru",
+      "lang": "ru",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "en": {
+      "href": "/nitya-todeus.html?lang=en",
+      "lang": "en",
+      "dir": "ltr",
+      "review": "source-edition"
+    },
+    "es-419": {
+      "href": "/nitya-todeus.html?lang=es-419",
+      "lang": "es-419",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "pt-BR": {
+      "href": "/nitya-todeus.html?lang=pt-BR",
+      "lang": "pt-BR",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "fr": {
+      "href": "/nitya-todeus.html?lang=fr",
+      "lang": "fr",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "ar": {
+      "href": "/nitya-todeus.html?lang=ar",
+      "lang": "ar",
+      "dir": "rtl",
+      "review": "independent-language-review-pending"
+    },
+    "zh-Hans": {
+      "href": "/nitya-todeus.html?lang=zh-Hans",
+      "lang": "zh-Hans",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "hi": {
+      "href": "/nitya-todeus.html?lang=hi",
+      "lang": "hi",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "bn": {
+      "href": "/nitya-todeus.html?lang=bn",
+      "lang": "bn",
+      "dir": "ltr",
+      "review": "independent-language-review-pending"
+    },
+    "eo": {
+      "href": "/nitya-todeus.html?lang=eo",
+      "lang": "eo",
+      "dir": "ltr",
+      "review": "independent-fluent-review-pending"
+    },
+    "sa": {
+      "href": "/nitya-todeus.html?lang=sa",
+      "lang": "sa",
+      "dir": "ltr",
+      "review": "qualified-review-pending"
+    },
+    "la": {
+      "href": "/nitya-todeus.html?lang=la",
+      "lang": "la",
+      "dir": "ltr",
+      "review": "qualified-review-pending"
+    },
+    "yzh": {
+      "href": "/nitya-todeus.html?lang=yzh",
+      "lang": "en",
+      "dir": "ltr",
+      "review": "authorial-hold-english-fallback"
+    }
+  }
+}
